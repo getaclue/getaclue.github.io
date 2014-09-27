@@ -1,0 +1,4 @@
+name: getaclue
+markdown: redcarpet
+pygments: true
+permalink: /:title
