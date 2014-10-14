@@ -1,7 +1,26 @@
+<h1>Current Links:</h1>
 <ul>
 {% for current_link in site.data.current_links %}
 	<li>
-		<a href="{{ current_link.URL }}" rel="nofollow" target="_blank">{{ current_link.URL_Title </a>
+		<a href="{{ current_link.URL }}" rel="nofollow" target="_blank">{{ current_link.URL_Title }}</a>
+	</li>
+{% endfor %}
+</ul><br />
+
+<h1>Fall 2014 Links:</h1>
+<ul>
+{% for fall_2014_link in site.data.fall_2014_links %}
+	<li>
+		<a href="{{fall_2014_link.URL}}" rel="nofollow" target="_blank">{{fall_2014_link.URL_Title}}</a>
+	</li>
+{% endfor %}
+</ul><br />
+
+<h1>Ongoing Link List:</h1>
+<ul>
+{% for useful_gen_link in site.data.useful_gen_links %}
+	<li>
+		<a href="{{useful_gen_link.URL}}" rel="nofollow" target="_blank">{{useful_gen_link.URL_Title}}</a>
 	</li>
 {% endfor %}
 </ul>
