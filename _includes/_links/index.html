@@ -1,0 +1,7 @@
+<ul>
+{% for current_link in site.data.current_links %}
+	<li>
+		<a href="{{ current_link.URL }}" rel="nofollow" target="_blank">{{ current_link.URL_Title </a>
+	</li>
+{% endfor %}
+</ul>
