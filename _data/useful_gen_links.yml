@@ -93,3 +93,6 @@
 
 - URL_Title: Check your IP
   URL: http://checkip.dyndns.com/
+
+- URL_Title: Securing your server environment (Ilya Grigorik Blog)
+  URL: https://www.igvita.com/2006/10/10/securing-your-rails-environment/
