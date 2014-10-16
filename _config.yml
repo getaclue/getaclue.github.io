@@ -1,4 +1,4 @@
 name: "Alex Kluew"
 markdown: redcarpet
-pygments: true
+highlighter: true
 permalink: /:year/:month/:day/:title
