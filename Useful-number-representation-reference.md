@@ -1,10 +1,3 @@
----
-layout: post
-title: Useful Number Representations (Binary, Octal, Hexadecimal, BCD, Decimal)
-meta_keywords: number, representations, binary, octal, hexadecimal, binary coded decimal, bcd, decimal, useful, tool, table
-meta_description: a, useful, table, for, various, number, representations, binary, octal, hexadecimal, binary coded decimal, bcd, decimal, useful, tool, table
----
-
 # Useful Number Representations #
 
 I get tired of searching (or redrawing) for this table every time I need to use it. So, I decided to make a reference that I can use whenever I need it.
@@ -33,6 +26,7 @@ I get tired of searching (or redrawing) for this table every time I need to use 
 # To Do #
 
 	[X] Make an initial reference table
+	[ ] Move the table to a visible location
 	[ ] Add signed magnitude representation
 	[ ] Add signed-1's complement representation
 	[ ] Add signed-2's complement representation
