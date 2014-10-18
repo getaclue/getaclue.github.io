@@ -3,7 +3,7 @@
 I get tired of searching (or redrawing) for this table every time I need to use it. So, I decided to make a reference that I can use whenever I need it.
 
 | Decimal | Binary    |   Octal    | Hexadecimal | Binary Coded Decimal |
-| ------- | --------- | ---------- | ----------- | -------------------- |
+| :-----: | :-------: | :--------: | :---------: | :------------------: |
 | 00      | 0000 0000 | 0000 0000  | 0           | 0000 0000            |  
 | 01 	  | 0000 0001 | 0000 0001  | 1           | 0000 0001            |
 | 02      | 0000 0010 | 0000 0010  | 2           | 0000 0010            |
