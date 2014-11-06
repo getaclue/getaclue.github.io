@@ -32,4 +32,13 @@
 	<a href="{{ java_link.URL }}" rel="nofollow" target="_blank">{{ java_link.URL_Title }}</a>
 	</li>
 {% endfor %}
-</ul>
+</ul><br />
+
+<h1>Ruby Links:</h1>
+<ul>
+<% for ruby_link in site.data.ruby_links %>
+	<li>
+		<a href="{{ ruby_link.URL }}" rel="nofollow" target="_blank">{{ ruby_link.URL_Title }}</a>
+	</li>
+<% endfor %>
+</ul><br />
