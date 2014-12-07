@@ -1,9 +1,21 @@
 - URL_Title: Programming in current age. (CodingHorror Blog)
-  URL: http://www.codinghorror.com/blog/2013/10/you-dont-need-millions-of-dollars.html 
+  URL: http://www.codinghorror.com/blog/2013/10/you-dont-need-millions-of-dollars.html
 
+- URL_Title: Maps, Sets and Iterators in JavaScript
+  URL: http://bjorn.tipling.com/maps-sets-and-iterators-in-javascript
+
+- URL_Title: HTTP Archive + BigQuery = Web Performance Answers (Superawesome!!!)
+  URL: https://www.igvita.com/2013/06/20/http-archive-bigquery-web-performance-answers/
+  
+- URL_Title: Why The Hell Would I Use Node.js? A Case-by-Case Tutorial
+  URL: http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
+  
 - URL_Title: Professional Software Development Book (Steve McConnell)
   URL: http://www.stevemcconnell.com/psd.htm
 
+- URL_Title: co-founder of Discourse Blog (Robin Ward)
+  URL: http://eviltrout.com/
+  
 - URL_Title: Privacy Issues
   URL: http://donttrack.us/
 
@@ -27,6 +39,9 @@
 
 - URL_Title: High Scalability (Bigger, faster, more reliable websites) Blog
   URL: http://highscalability.com/
+  
+- URL_Title: All Things Distributed (Blog)
+  URL: http://www.allthingsdistributed.com/
 
 - URL_Title: Software Engineering Program List (Ont. Wide)
   URL: http://www.canadian-universities.net/Universities/Programs/Software_Engineering-Ontario.html
@@ -112,5 +127,5 @@
 - URL_Title: 3 shell scripts to improve your writing, or My Ph.D. advisor rewrote himself in bash. (Blog post)
   URL: http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/
 
-- URL_Title: List of useful programming books.
+- URL_Title: List of useful programming books
   URL: https://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read
