@@ -1,8 +1,8 @@
 # Site settings
 title: getaclue
-email: info(a_t)getaclue.me
+email: alex(a_t)getakluew.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm just trying to make the world a better place by using the 
+  I'm just trying to make the world a better place by using the
   tools that make it possible.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://getaclue.github.io/" # the base hostname & protocol for your site
