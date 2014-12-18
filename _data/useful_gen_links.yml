@@ -6,16 +6,16 @@
 
 - URL_Title: HTTP Archive + BigQuery = Web Performance Answers (Super AWESOME)
   URL: https://www.igvita.com/2013/06/20/http-archive-bigquery-web-performance-answers/
-  
+
 - URL_Title: Why The Hell Would I Use Node.js? A Case-by-Case Tutorial
   URL: http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js
-  
+
 - URL_Title: Professional Software Development Book (Steve McConnell)
   URL: http://www.stevemcconnell.com/psd.htm
 
 - URL_Title: co-founder of Discourse Blog (Robin Ward)
   URL: http://eviltrout.com/
-  
+
 - URL_Title: Privacy Issues
   URL: http://donttrack.us/
 
@@ -39,7 +39,7 @@
 
 - URL_Title: High Scalability (Bigger, faster, more reliable websites) Blog
   URL: http://highscalability.com/
-  
+
 - URL_Title: All Things Distributed (Blog)
   URL: http://www.allthingsdistributed.com/
 
@@ -80,7 +80,7 @@
   URL: https://codenvy.com/
 
 - URL_Title: Compilr (Cloud Computing)
-  URL: https://compilr.com/ 
+  URL: https://compilr.com/
 
 - URL_Title: Sorting Algorithm Animations
   URL: http://www.sorting-algorithms.com/
@@ -114,18 +114,40 @@
 
 - URL_Title: Securing your server environment (Ilya Grigorik Blog)
   URL: https://www.igvita.com/2006/10/10/securing-your-rails-environment/
-  
+
 - URL_Title: Jonathan Zdziarski's Blog (Security)
   URL: http://www.zdziarski.com/blog/
-  
+
 - URL_Title: 12 resolutions for programmers (Blog Post)
   URL: http://matt.might.net/articles/programmers-resolutions/
-  
+
 - URL_Title: What every computer science major should know (Blog Post)
   URL: http://matt.might.net/articles/what-cs-majors-should-know/
-  
+
 - URL_Title: 3 shell scripts to improve your writing, or My Ph.D. advisor rewrote himself in bash. (Blog post)
   URL: http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/
 
 - URL_Title: List of useful programming books
   URL: https://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read
+
+- URL_Title: Web Fundamentals (Google on UI)
+  URL: https://developers.google.com/web/fundamentals/
+<<<<<<< HEAD
+
+- URL_Title: Reading files in JS using the File API
+  URL: http://www.html5rocks.com/en/tutorials/file/dndfiles/
+
+=======
+  
+- URL_Title: Reading files in JS using the File API
+  URL: http://www.html5rocks.com/en/tutorials/file/dndfiles/
+  
+>>>>>>> origin/master
+- URL_Title: JS File Encrypter
+  URL: http://tutorialzine.com/2013/11/javascript-file-encrypter/
+
+- URL_Title: An In-Depth Intro to Ember (JS)
+  URL: http://www.smashingmagazine.com/2013/11/07/an-in-depth-introduction-to-ember-js/
+
+- URL_Title: Javascript Development (Blog)
+  URL: http://www.2ality.com/
