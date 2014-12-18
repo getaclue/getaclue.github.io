@@ -1,8 +1,7 @@
 # MINE
-# Added _site
-# Added _drafts
-_drafts/
-_site/
+.sass-cache
+_drafts
+_site
 
 #################
 ## Eclipse
