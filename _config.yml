@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A dream is just a dream. A goal is a dream with a plan and a deadline.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://getaclue.github.io/" # the base hostname & protocol for your site
-twitter_username: alexkluew
+twitter_username: _getaclue
 github_username:  getaclue
 
 # Build settings
