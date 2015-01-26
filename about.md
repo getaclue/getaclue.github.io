@@ -22,10 +22,9 @@ I like the idea of using a tool regardless of the device and operating
 system. I believe that the user experience for your tool should be
 identical on all platforms and devices.
 
-I also like information security and I follow the topics of security primarily via
+I like knowledge. I try to explore the various branches of knowledge in order to understand our ever-changing world. Also, I find information security and cyber security extremely important. I try follow these topics (and many other) on the daily basis via
 twitter and [hacker news](https://news.ycombinator.com).
 
-I also like knowledge for its own sake.
-I have successfully taken courses at uOttawa in various disciplines ranging from
-Philosophy, Social Sciences, Business Management, Economics, Science,
-Mathematics, and Engineering just to name a few.
+Here is a video of my adventures during the [Ontario Summer Company 2014 Entrepreneurial Grant](http://www.ontario.ca/Start%20a%20summer%20company%3A%20students):
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/UkWgyN8AKXo" frameborder="0" allowfullscreen></iframe>
