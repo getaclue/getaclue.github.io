@@ -6,9 +6,7 @@ permalink: /about/
 
 Hi there!
 
-My name is Alex.
-
-I am a software engineer *in training*.
+My name is Alex. I am currently studying at the [University of Ottaw](http://www.uottawa.ca/academic/info/regist/1314/calendars/programs/1209.html)a as a Software Engineering student.
 
 I have a B. Sc.
 in Psychology. My honours thesis was "An fMRI investigation of working memory in chemotherapy-treated breast cancer patients".

@@ -22,7 +22,7 @@
 - URL_Title: Cryptome (Freedom of speech, cryptography, spying, surveillance)
   URL: http://cryptome.org/
 
-- URL_Title: Google's Transparacy Report
+- URL_Title: Googles Transparacy Report
   URL: https://www.google.com/transparencyreport/userdatarequests/
 
 - URL_Title: JavaScript FAQ (ru)
@@ -115,7 +115,7 @@
 - URL_Title: Securing your server environment (Ilya Grigorik Blog)
   URL: https://www.igvita.com/2006/10/10/securing-your-rails-environment/
 
-- URL_Title: Jonathan Zdziarski's Blog (Security)
+- URL_Title: Jonathan Zdziarskis Blog (Security)
   URL: http://www.zdziarski.com/blog/
 
 - URL_Title: 12 resolutions for programmers (Blog Post)
@@ -153,3 +153,6 @@
 
 - URL_Title: Mastering Github Markdown
   URL: https://guides.github.com/features/mastering-markdown/
+
+- URL_Title: Get iCloud, App Store and iMessage working on Mac OS X 10.9
+  URL: http://www.hackintoshosx.com/topic/19442-guide-get-icloud-app-store-and-imessage-working/
