@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>getaclue</title>
-    <description>I'm just trying to make the world a better place by using the  tools that make it possible.
+    <title>Alex Kluew - getaclue.me</title>
+    <description>A dream is just a dream. A goal is a dream with a plan and a deadline.
 </description>
     <link>http://getaclue.github.io//</link>
     <atom:link href="http://getaclue.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Dec 2014 14:03:47 -0500</pubDate>
-    <lastBuildDate>Thu, 18 Dec 2014 14:03:47 -0500</lastBuildDate>
-    <generator>Jekyll v2.5.2</generator>
+    <pubDate>Sat, 01 Aug 2015 11:29:55 -0400</pubDate>
+    <lastBuildDate>Sat, 01 Aug 2015 11:29:55 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Installing Yosemite on E8400</title>
+        <description>&lt;p&gt;First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.&lt;/p&gt;
+
+&lt;p&gt;Computer Hardware:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ark.intel.com/products/33910/Intel-Core2-Duo-Processor-E8400-6M-Cache-3_00-GHz-1333-MHz-FSB&quot;&gt;Intel Core 2 Duo E8400&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;www.gigabyte.com/products/product-page.aspx?pid=2615&amp;amp;kw=GA-P31-DS3L&quot;&gt;Gigabyte GA-P31-DS3L Motherboard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.newegg.ca/Product/Product.aspx?Item=N82E16814500187&quot;&gt;Nvidia GTS450 Graphics card&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;4 gb DDR2 Ram (667 MHz)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As you can see, my hardware is ‘old’ by today’s standards. However, I try to get the best bang for my buck without upgrading. I only upgrade my hardware when something fails. It has been working well so far. My computer is on 24/7/365 except for random reboots and power outages. I’ve had this PC on 24/7 since 2008. I’ve had it on 24/7/365 since 2010. I am on my second motherboard (lan failed on first one), second CPU cooler (by choice), and a 3rd GPU. This CPU is amazing.&lt;/p&gt;
+
+&lt;p&gt;I have not installed OS X after purchasing a new graphic card &lt;a href=&quot;http://www.newegg.ca/Product/Product.aspx?Item=N82E16814500187&quot;&gt;Nvidia GTS450&lt;/a&gt; earlier this year. I had an old 8600GTS before this graphic card. The prior graphic card had no problem with running OS X 10.6.&lt;/p&gt;
+
+&lt;p&gt;I decided to give the &lt;a href=&quot;http://tonymacx86.com/&quot;&gt;hackintosh project&lt;/a&gt; a shot. I installed &lt;a href=&quot;http://tonymacx86.blogspot.ca/2010/04/iboot-multibeast-install-mac-os-x-on.html&quot;&gt;OS X 10.6&lt;/a&gt; at first. However, I noticed that my GTS450 was not being recognized. I did perform several troubleshooting steps. After searching for a bit, I found out that GTS450 support improved as of 10.7. At this point, I was debating on whether or not to install 10.7 or to jump to 10.10.&lt;/p&gt;
+
+&lt;p&gt;I decided to jump to &lt;a href=&quot;http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html&quot;&gt;Yosemite 10.10&lt;/a&gt; after reading the tonymacx86 forums. A number of users reported successful bootings with Fermi graphic cards. I used my macbook to download the upgrade and make a &lt;a href=&quot;http://www.tonymacx86.com/downloads.php?do=file&amp;amp;id=249&quot;&gt;bootable USB&lt;/a&gt;. The system did not boot until I added the following flags:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;GraphicsEnabler=Yes, PCIRootUID=1, npci=0x2000 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can find out what each of these flags does &lt;a href=&quot;http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html&quot;&gt;here&lt;/a&gt;. After the inital install everything booted smoothly. I then ran &lt;a href=&quot;http://www.tonymacx86.com/downloads.php?do=file&amp;amp;id=252&quot;&gt;MultiBeast&lt;/a&gt;. I followed the specifications for my motherboard and installed the appropriate drives. Everything worked after a restart. However, I noticed that my system experienced random freezes.&lt;/p&gt;
+
+&lt;p&gt;There did not appear to be any pattern to the cause of the freeze. The freezing began by not responding to any key presses or mouse clicks. However, I was able to move the mouse across my dual screen setup. After some time, the mouse cursor finally disappeared from the display(s). The system then gives a black screen and instantaneously brings the Yosemite login screen. Upon entering my password and loading Yosemite, the bug report displayed a problem with my graphic card. I spent a few hours looking for a solution.&lt;/p&gt;
+
+&lt;p&gt;Rather than troubleshooting a graphic card that is not natively supported by Apple (yet? will it be?), I am leaning towards upgrading my graphic card. I had previous problems with the graphic card. It is not able to support my two monitors at the maximum resolutions. I am really pushing its performance when I am editing images. Therefore, I am leaning towards upgrading my graphic card.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, I am going to purchase a graphic card that brings my hardware closer to the Mac specifications outlined by Apple AND drives my two monitors easily (at max. resolution).&lt;/p&gt;
+
+&lt;p&gt;In conclusion, &lt;a href=&quot;http://tonymacx86.com/&quot;&gt;this group of people&lt;/a&gt; has done a fantastic job in easing the installation of OS X on any Intel-based hardware. Their guides are phenomenal. The difference between installing OS X 10.6 and 10.10 is night and day. It used to take me hours (or days) to research, prepare, compile, and install - took me a few hours for 10.10.&lt;/p&gt;
+
+&lt;p&gt;Not only do I have a working OS, but I also have a fully bootable USB that can be natively plugged into any Intel-based machine. Amazing.&lt;/p&gt;
+
+&lt;p&gt;Resource used:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html
+http://www.tonymacx86.com/basics/116220-do-i-need-graphicsenabler-injection-not.html
+http://www.tonymacx86.com/graphics/131937-chimera-hd-graphics-bootflags-igpenabler-igplatformid-igpdeviceid.html
+http://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html
+http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Sun, 21 Dec 2014 00:00:00 -0500</pubDate>
+        <link>http://getaclue.github.io//2014/12/21/Installing-Yosemite-on-E8400.html</link>
+        <guid isPermaLink="true">http://getaclue.github.io//2014/12/21/Installing-Yosemite-on-E8400.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>A different archival strategy for pictures on CentOS 7</title>
-        <description>&lt;p&gt;I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies. &lt;/p&gt;
+        <description>&lt;p&gt;I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies.&lt;/p&gt;
 
 &lt;p&gt;This is an exercise in improving my backups. I have a habit of not downloading an entire archive because the size of an archive is typically large. To solve this problem, I want to mimick my entire library by preserving the file structure on a server. However, I wanted to have all of my files encrypted prior to having them uploaded.&lt;/p&gt;
 
@@ -168,7 +220,7 @@ wget --limit-rate=50k --no-clobber --convert-links --wait=5 --random-wait
 &lt;p&gt;Now, why did I use the settings that I used?&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;used &lt;code&gt;--limit-rate=50k&lt;/code&gt; to limit the download speed of each file to 50KB/s &lt;/li&gt;
+  &lt;li&gt;used &lt;code&gt;--limit-rate=50k&lt;/code&gt; to limit the download speed of each file to 50KB/s&lt;/li&gt;
   &lt;li&gt;used &lt;code&gt;-- no-clobber&lt;/code&gt; so that I do not overwrite existing files. (multiple savings of the same file is prevented)&lt;/li&gt;
   &lt;li&gt;used &lt;code&gt;--convert-links&lt;/code&gt; to ensure that all of the downloaded links point locally and do not point to any external places&lt;/li&gt;
   &lt;li&gt;used &lt;code&gt;--wait=5&lt;/code&gt; to wait 5 seconds between each new request for a new file&lt;/li&gt;
