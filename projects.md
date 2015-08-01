@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: /Projects/
+permalink: /projects/
 ---
 Below is a list of projects that are currently available online. I will continue to add new projects and maintain their source code for archival purposes.
 

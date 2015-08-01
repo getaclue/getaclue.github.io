@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,70 +26,45 @@
 
     <!-- Material Design Lite -->
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
 <!-- Always shows a header, even in smaller screens. -->
-<body>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Alex Kluew - getaclue.me</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <h3>Alex Kluew - getaclue.me</h3>
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout__tab-bar mdl-color--primary-dark">
+      
         
-          
-          <a class="mdl-navigation__link" href="/about/">About</a>
-          
+        <a class="mdl-layout__tab_fixed" href="/about/">About</a>
         
-          
+      
         
-          
+      
         
-          
-          <a class="mdl-navigation__link" href="/links/">Links</a>
-          
+      
         
-          
+        <a class="mdl-layout__tab_fixed" href="/links/">Links</a>
         
-          
-          <a class="mdl-navigation__link" href="/Projects/">Projects</a>
-          
+      
         
-      </nav>
+        <a class="mdl-layout__tab_fixed" href="/projects/">Projects</a>
+        
+      
     </div>
   </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      
-        
-        <a class="mdl-navigation__link" href="/about/">About</a>
-        
-      
-        
-      
-        
-      
-        
-        <a class="mdl-navigation__link" href="/links/">Links</a>
-        
-      
-        
-      
-        
-        <a class="mdl-navigation__link" href="/Projects/">Projects</a>
-        
-      
-    </nav>
-  </div>
 
     <main class="mdl-layout__content">
-      <div class="page-content">
+      <div class="mdl-layout__tab-panel is-active" id="overview">
         <div class="post">
 
   <header class="post-header">
@@ -113,9 +104,60 @@ https://gist.github.com/quintes/5153247
 
 </div>
 
-      </div>
-    </main>
-    <!-- <footer class="mdl-mini-footer">
+        <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer--middle-section">
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">Features</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">Details</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="#">Spec</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">Technology</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">FAQ</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mdl-mega-footer--bottom-section">
+    <div class="mdl-logo">
+      More Information
+    </div>
+    <ul class="mdl-mega-footer--link-list">
+      <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy and Terms</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
     <div class="mdl-logo">Alex Kluew - getaclue.me</div>
     <ul class="mdl-mini-footer__link-list">
@@ -135,8 +177,10 @@ https://gist.github.com/quintes/5153247
 </span></li>
     </ul>
   </div>
-</footer>
- -->
+</footer> -->
+
+      </div>
+    </main>
   </div>
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
 </body>
