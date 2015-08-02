@@ -1,0 +1,50 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<div class="demo-ribbon"></div>
+  <post class="demo-post mdl-layout__content">
+    <div class="demo-container mdl-grid">
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+      <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+        <div class="demo-crumbs mdl-color-text--grey-500">
+          <i class="material-icons md-16">home</i>{{ page.url | prepend: site.baseurl | replace: '/', '&gt;' }}
+        </div>
+        <h3>Hi There!</h3>
+          <p class="post-meta">
+            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+          </p>
+          <p>
+            My name is Alex. I am currently studying at the <a href="http://www.uottawa.ca/academic/info/regist/1314/calendars/programs/1209.html">University of Ottawa</a> as a Software Engineering student.
+          </p>
+          <p>
+            I have a B. Sc.
+            in Psychology. My honours thesis was "An fMRI investigation of working memory in chemotherapy-treated breast cancer patients".
+            I have also taken numerous 2nd and 3rd year Chemistry classes while I was debating
+            my transfer into a software engineering field.
+          </p>
+          <p>
+            However, once I transfered into software engineering, I have not looked back.
+          </p>
+          <p>
+            My current interests are in the area of web development.
+            I like the idea of using a tool regardless of the device and operating
+            system. I believe that the user experience for your tool should be
+            identical on all platforms and devices.
+          </p>
+          <p>
+            I like knowledge. I try to explore the various branches of knowledge in order to understand our ever-changing world. Also, I find information security and cyber security extremely important. I try follow these topics (and many other) on the daily basis via
+            twitter and <a href="https://news.ycombinator.com">hacker news</a>.
+          </p>
+          <p>
+            Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
+          </p>
+          <p>
+            <iframe width="560" height="315" src="//www.youtube.com/embed/UkWgyN8AKXo" frameborder="0" allowfullscreen></iframe>
+          </p>
+      </div>
+    </div>
+  </post>
+</div>
