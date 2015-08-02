@@ -7,6 +7,10 @@
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>
     <div class="mdl-layout__tab-bar mdl-color--primary-dark">
+      <a class="mdl-layout__tab_fixed" href="{{ site.baseurl }}">
+        <i class="material-icons">home</i>
+        Home
+      </a>
       {% for page in site.pages %}
         {% if page.title %}
         <a class="mdl-layout__tab_fixed" href="{{ page.url | downcase | prepend: site.baseurl }}">{{ page.title }}</a>
