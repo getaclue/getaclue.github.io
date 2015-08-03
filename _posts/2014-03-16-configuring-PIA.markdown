@@ -1,4 +1,5 @@
 ---
+author: Alex Kluew
 layout: post
 title: Configuring PrivateInternetAccess VPN
 meta_keywords: PIA, PrivateInternetAccess, CentOS 6.5, beginners, vpn
@@ -43,7 +44,7 @@ Test to see if everything is working properly. Be prepared to enter your self-ge
 
 ```
 openvpn Canada.ovpn
-	OR 
+	OR
 openvpn *.ovpn (* - any other location from the list)
 ```
 
@@ -98,8 +99,8 @@ And yes, I did run all of this as root. If you are not root, place `` sudo `` in
 (Side note, system information: `uname-a`)
 
 ```
-Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64 
-#1 SMP Tue Mar 25 19:59:55 UTC 2014 
-x86_64 
+Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
+#1 SMP Tue Mar 25 19:59:55 UTC 2014
+x86_64
 GNU/Linux
 ```

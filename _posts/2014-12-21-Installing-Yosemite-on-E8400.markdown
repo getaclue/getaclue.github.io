@@ -1,4 +1,5 @@
 ---
+author: Alex Kluew
 layout: post
 title: Installing Yosemite on E8400
 author: Alex Kluew

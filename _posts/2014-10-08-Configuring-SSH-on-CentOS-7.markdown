@@ -1,4 +1,5 @@
 ---
+author: Alex Kluew
 layout: post
 title: Configuring SSH Server on CentOS 7
 meta_keywords: ssh, sshd, configure, setup, centOS 7, centOS, beginner, how-to

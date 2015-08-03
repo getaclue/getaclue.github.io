@@ -1,4 +1,5 @@
 ---
+author: Alex Kluew
 layout: post
 title: Installing Mono on CentOS 7
 meta_keywords: mono, centOS 7, beginner
@@ -36,4 +37,4 @@ meta_description: mono, centOS 7, beginner
 # Reference
 	http://www.mono-project.com/docs/getting-started/install/linux/
 	http://www.mono-project.com/docs/getting-started/mono-basics/
-	https://fedoraproject.org/wiki/EPEL/FAQ	
+	https://fedoraproject.org/wiki/EPEL/FAQ

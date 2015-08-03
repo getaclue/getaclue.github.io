@@ -1,11 +1,12 @@
 ---
+author: Alex Kluew
 layout: post
 title: A different archival strategy for pictures on CentOS 7
 meta_keywords: openssl, CentOS7, bash, shell, loops, learning, resources, ideas, guide, noob
 meta_description: openssl, CentOS7, bash, shell, loops, learning, resources, guide, noob
 ---
 
-I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies. 
+I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies.
 
 This is an exercise in improving my backups. I have a habit of not downloading an entire archive because the size of an archive is typically large. To solve this problem, I want to mimick my entire library by preserving the file structure on a server. However, I wanted to have all of my files encrypted prior to having them uploaded.
 
@@ -38,4 +39,4 @@ Resources used:
 	https://www.madboa.com/geek/openssl/
 	http://www.cyberciti.biz/faq/bash-loop-over-file/
 	http://tldp.org/LDP/abs/html/loops1.html
-	
+
