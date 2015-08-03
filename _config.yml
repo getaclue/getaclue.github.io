@@ -2,10 +2,13 @@
 title: Alex Kluew
 email: info@getaclue.me
 
-description: > # this means to ignore newlines until "baseurl:"
+quote: > # this means to ignore newlines until "baseurl:"
   A dream is just a dream. A goal is a dream with a plan and a deadline.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://getaclue.github.io/" # the base hostname & protocol for your site
+
+about_author_snippet: >
+  I am a software engineering student at the University of Ottawa. At the time of writing, my interests are in the area of web development. I like the idea of having the user use your tool regardless of the device and operating system. I believe that the user experience for your tool should be identical (or as close as it can be) on all platforms and devices.
 
 twitter_username: _getaclue
 github_username:  getaclue

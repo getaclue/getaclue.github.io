@@ -77,7 +77,38 @@ html, body {
   font-weight:500;
   font-size:14px;
   text-transform:uppercase;
-  color:rgba(255,255,255,.6);
+  color:rgba(255,255,255, .6);
+  overflow:hidden
+}
+
+.mdl-demo .mdl-layout__tab-bar .mdl-layout__tab_fixed:hover {
+  height: 64px;
+  line-height: 64px;
+  float:none;
+  -webkit-box-flex:1;
+  -webkit-flex-grow:1;
+  -ms-flex-positive:1;
+  flex-grow:1;
+  padding:0;
+  margin:0;
+  border:none;
+  padding:0 24px;
+  float:left;
+  position:relative;
+  display:block;
+  -webkit-box-flex:0;
+  -webkit-flex-grow:0;
+  -ms-flex-positive:0;
+  flex-grow:0;
+  -webkit-flex-shrink:0;
+  -ms-flex-negative:0;
+  flex-shrink:0;
+  text-decoration:none;
+  text-align:center;
+  font-weight:500;
+  font-size:14px;
+  text-transform:uppercase;
+  color:rgb(241, 196, 15);
   overflow:hidden
 }
 
@@ -299,4 +330,30 @@ html, body {
 
 code {
   word-wrap: break-word;
+  background-color: rgb(63,81,181);
+  color: rgb(255,255,255);
+}
+
+.mdl-layout_social svg {
+  fill: rgb(255,255,255);
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.mdl-layout_social svg:hover {
+  fill: rgb(241, 196, 15);
+}
+
+.mdl-layout_social a{
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+.mdl-layout_social a:hover{
+  color: rgb(241, 196, 15);
+  text-decoration: none;
+}
+
+.mdl-post_date{
+  float: right;
 }
