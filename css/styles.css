@@ -344,6 +344,10 @@ code {
   fill: rgb(241, 196, 15);
 }
 
+.mdl-layout_social svg path#linked_in_bg:hover {
+  fill: rgb(241, 196, 15);
+}
+
 .mdl-layout_social a{
   color: rgb(255,255,255);
   text-decoration: none;

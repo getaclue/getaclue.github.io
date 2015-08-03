@@ -8,10 +8,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://getaclue.github.io/" # the base hostname & protocol for your site
 
 about_author_snippet: >
-  I am a software engineering student at the University of Ottawa. At the time of writing, my interests are in the area of web development. I like the idea of having the user use your tool regardless of the device and operating system. I believe that the user experience for your tool should be identical (or as close as it can be) on all platforms and devices.
+  I am a software engineering student at the University of Ottawa. At the time of writing, my interests are in the areas of web development. I like the idea of having the user use your tool regardless of the device and operating system. I believe that the user experience for your tool should be identical (or as close as it can be) on all platforms and devices.
+
+about_author_snippet_for_posts: >
+  Alex Kluew is a a software engineering student at the University of Ottawa. At the time of writing, his intrests are in the areas of web development.
 
 twitter_username: _getaclue
 github_username:  getaclue
+linkedin_username: getaclue # https://www.iconfinder.com/search/?q=linkedin&price=free
 
 # Build settings
 markdown: kramdown
