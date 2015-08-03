@@ -1,52 +1,74 @@
 ---
-layout: page
+layout: default
 title: Links
 permalink: /links/
 ---
-Below is a collection of links that I found useful at the time that I added it.
-I update as I go. Therefore, links may disappear. I use it as a reference instead of having bookmarks.
-
-<h1>Current Links:</h1>
-<ul>
-{% for current_link in site.data.current_links %}
-	<li>
-		<a href="{{ current_link.URL }}" rel="nofollow" target="_blank">{{ current_link.URL_Title }}</a>
-	</li>
-{% endfor %}
-</ul><br />
-
-<h1>Winter 2015 Links:</h1>
-<ul>
-{% for link in site.data.winter_2015_links %}
-	<li>
-		<a href="{{ link.URL }}" rel="nofollow" target="_blank">{{ link.URL_Title }}</a>
-	</li>
-{% endfor %}
-</ul><br />
-
-<h1>Ongoing Link List:</h1>
-<ul>
-{% for useful_gen_link in site.data.useful_gen_links %}
-	<li>
-		<a href="{{ useful_gen_link.URL }}" rel="nofollow" target="_blank">{{ useful_gen_link.URL_Title }}</a>
-	</li>
-{% endfor %}
-</ul><br />
-
-<h1>Misc Java Links:</h1>
-<ul>
-{% for java_link in site.data.java_links  %}
-	<li>
-	<a href="{{ java_link.URL }}" rel="nofollow" target="_blank">{{ java_link.URL_Title }}</a>
-	</li>
-{% endfor %}
-</ul><br />
-
-<h1>Ruby Links:</h1>
-<ul>
-{% for ruby_link in site.data.ruby_links %}
-	<li>
-		<a href="{{ ruby_link.URL }}" rel="nofollow" target="_blank">{{ ruby_link.URL_Title }}</a>
-	</li>
-{% endfor %}
-</ul><br />
+<div class="mdl-jekyll-ribbon"></div>
+  <post class="mdl-jekyll-post mdl-layout__content">
+    <div class="mdl-jekyll-container mdl-grid">
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+      <div class="mdl-jekyll-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+        <div class="mdl-jekyll-crumbs mdl-color-text--grey-500">
+          <a href="{{site.url}}" title="Go Home">Home</a>{{ page.url | prepend: site.baseurl }}
+        </div>
+        <h3>{{ page.title }}</h3>
+          <p class="post-meta">
+            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+          </p>
+          <p>
+            Below is a collection of links that I found useful at the time that I added it. I update as I go. Therefore, links may disappear. I use it as a reference instead of having bookmarks.
+          </p>
+          <p>
+          	<h3>Current Links:</h3>
+						<ul>
+							{% for current_link in site.data.current_links %}
+								<li>
+									<a href="{{ current_link.URL }}" rel="nofollow" target="_blank">{{ current_link.URL_Title }}</a>
+								</li>
+							{% endfor %}
+						</ul>
+          </p>
+          <p>
+          	<h3>Winter 2015 Links:</h3>
+						<ul>
+							{% for link in site.data.winter_2015_links %}
+								<li>
+									<a href="{{ link.URL }}" rel="nofollow" target="_blank">{{ link.URL_Title }}</a>
+								</li>
+							{% endfor %}
+						</ul>
+          </p>
+          <p>
+          	<h3>Ongoing Link List:</h3>
+						<ul>
+							{% for useful_gen_link in site.data.useful_gen_links %}
+								<li>
+									<a href="{{ useful_gen_link.URL }}" rel="nofollow" target="_blank">{{ useful_gen_link.URL_Title }}</a>
+								</li>
+							{% endfor %}
+						</ul>
+          </p>
+          <p>
+          	<h3>Misc Java Links:</h3>
+						<ul>
+							{% for java_link in site.data.java_links  %}
+								<li>
+								<a href="{{ java_link.URL }}" rel="nofollow" target="_blank">{{ java_link.URL_Title }}</a>
+								</li>
+							{% endfor %}
+						</ul>
+          </p>
+          <p>
+          	<h3>Ruby Links:</h3>
+						<ul>
+							{% for ruby_link in site.data.ruby_links %}
+								<li>
+									<a href="{{ ruby_link.URL }}" rel="nofollow" target="_blank">{{ ruby_link.URL_Title }}</a>
+								</li>
+							{% endfor %}
+						</ul><br />
+          </p>
+      </div>
+    </div>
+  </post>
+</div>

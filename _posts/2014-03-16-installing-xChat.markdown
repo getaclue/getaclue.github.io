@@ -1,4 +1,5 @@
 ---
+author: Alex Kluew
 layout: post
 title: Installing XChat CentOS 6.5 for Beginners
 meta_keywords: XChat installation, XChat, CentOS 6.5, beginners
@@ -78,8 +79,8 @@ And yes, I did run all of this as root. If you are not root, place `` sudo `` in
 (Side note, system information: `uname-a`)
 
 ```
-Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64 
-#1 SMP Tue Mar 25 19:59:55 UTC 2014 
-x86_64 
+Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
+#1 SMP Tue Mar 25 19:59:55 UTC 2014
+x86_64
 GNU/Linux
 ```
