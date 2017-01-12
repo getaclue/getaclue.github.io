@@ -1,12 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- Based on HTML5 Bones | http://html5bones.com -->
-
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Alex Kluew's Personal Website</title>
+	<title>Alex Kluew - getaclue.me</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<meta name="author" content="Alex Kluew">
 	<meta name="description" content="The personal website of Alex Kluew">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="The personal website of Alex Kluew">
+	<meta property="og:image" content="https://www.getaclue.me/images/alex-kluew-profile-image.jpg">
+	<meta name="twitter:image:src" content="https://www.getaclue.me/images/alex-kluew-profile-image.jpg">
+	<meta name="twitter:creator" content="@getaclue_1">
+	<meta name="twitter:url" content="https://www.getaclue.me/">
+	<meta name="twitter:title" content="Alex Kluew">
+	<link rel="canonical" href="https://www.getaclue.me/">
 </head>
 <style>
   body {
@@ -19,6 +27,14 @@
     line-height: 1.75;
     background: #ffffff;
   }
+
+	@media (min-width:1024px) {
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 
   @media (min-width:320px) {
     body {
@@ -57,44 +73,6 @@
       align-self: center;
     }
   }
-
-  /*@media (min-width: 320px) {
-    body {
-      font-size: 120%;
-    }
-    main {
-      max-width: 45em;
-    }
-    header {
-      padding-top: 0;
-      margin-left: 1em;
-      margin-right: 1em;
-      margin-top: 0;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 1em;
-      border-bottom: .17em solid;
-    }
-    h1 {
-      text-align: center;
-      font-size: 35px;
-      text-transform: uppercase;
-      line-height: .8;
-      margin-bottom: 0;
-    }
-    .avatar {
-      height: 150px;
-      width: 150px;
-      margin: 2em;
-      align-self: center;
-    }
-    section {
-      margin-left: 1em;
-      margin-right: 1em;
-      border-bottom: .17em solid;
-    }
-  }*/
-
 </style>
 <body>
 	<main role="main">
@@ -103,7 +81,7 @@
       <img src="./images/alex-kluew-profile-image.jpg" alt="Alex Kluew holding his chihuahua pet Thunder" class="avatar">
       <article>
         <p>
-          Hello, I am currently looking for an opportunity in <a href="https://www.iloveny.com/">NYC</a> (after my May 2017 graduation from <a href="http://www.uottawa.ca/academic/info/regist/calendars/genie/SEG.html">University of Ottawa</a>).
+          Hello, I am currently looking for an opportunity in <a href="https://www.iloveny.com/">NYC</a> (after my May 2017 graduation from <a href="http://www.uottawa.ca/academic/info/regist/calendars/genie/SEG.html">University of Ottawa</a>). New York City is my favourite place on this rock.
         </p>
         <p>
           I believe in the web. I believe that the line between web and native is being blurred. I want to be a part of making the web awesome and accessible for everyone, everywhere.
@@ -111,11 +89,11 @@
         <p>
           <strong>More of me</strong>:
           <ul>
-            <li><a href="https://twitter.com/getaclue_1">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/getaclue">LinkedIn</a></li>
-            <li><a href="https://github.com/getaclue">Github</a></li>
-            <li><a href="https://www.instagram.com/getaclue_1/">Instagram</a></li>
-            <li>Resume (pdf)</li>
+            <li><a rel="me" href="https://www.linkedin.com/in/getaclue">LinkedIn</a></li>
+            <li><a rel="me" href="https://www.instagram.com/getaclue_1/">Instagram</a></li>
+            <li><a rel="me" href="https://twitter.com/getaclue_1">Twitter</a></li>
+            <li><a rel="me" href="https://github.com/getaclue">Github</a></li>
+            <li><a href="./files/Alex_Kluew_Resume_2017.pdf">Resume</a> (pdf)</li>
           </ul>
         </p>
       </article>
