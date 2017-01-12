@@ -8,40 +8,124 @@
 	<meta name="description" content="The personal website of Alex Kluew">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>
+  body {
+    max-width: 100%;
+    margin: 0;
+    color: #212121;
+    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.75;
+    background: #ffffff;
+  }
+
+  @media (min-width:320px) {
+    body {
+      font-size: 120%;
+    }
+    main {
+      max-width: 45em;
+      padding: 0 1em 0 1em;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      border-bottom: .17em solid;
+    }
+    header article {
+      padding-bottom: 1em;
+      border-bottom: 0;
+    }
+    header h1 {
+      font-size: 32px;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: .8;
+      margin-bottom: 0;
+    }
+    article h1 {
+      margin-bottom: 0;
+    }
+    article {
+      border-bottom: .17em solid;
+    }
+    .avatar {
+      height: 150px;
+      width: 150px;
+      margin: 2em;
+      align-self: center;
+    }
+  }
+
+  /*@media (min-width: 320px) {
+    body {
+      font-size: 120%;
+    }
+    main {
+      max-width: 45em;
+    }
+    header {
+      padding-top: 0;
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1em;
+      border-bottom: .17em solid;
+    }
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      text-transform: uppercase;
+      line-height: .8;
+      margin-bottom: 0;
+    }
+    .avatar {
+      height: 150px;
+      width: 150px;
+      margin: 2em;
+      align-self: center;
+    }
+    section {
+      margin-left: 1em;
+      margin-right: 1em;
+      border-bottom: .17em solid;
+    }
+  }*/
+
+</style>
 <body>
-
-	<!-- <header role="banner">
-
-		<a class="brand">Site Title or Logo</a>
-
-		<nav role="navigation">
-			<ul class="navbar">
-				<li><a href="#">Page 1</a></li>
-				<li><a href="#">Page 2</a></li>
-				<li><a href="#">Page 3</a></li>
-				<li><a href="#">Page 4</a></li>
-			</ul>
-		</nav>
-
-	</header> -->
 	<main role="main">
-
-		<section>
-      <h1>Hello</h1>
-
-      <p>My name is Alex Kluew.</p>
-
-      <p>I am currently looking for opportunities in NYC after my May 2017 graduation from University of Ottawa.</p>
-		</section>
-
-		<section>
-      <h2>Ongoing Project</h2>
-
-  		<p><a href="https://www.youtube.com/channel/UCJkHRtROA1RHjaQn_wBMocQ">Youtube</a> - in 2015, my fiance and I decided to start a youtube channel. In 2016, we decided to film every single day of our life and share it with you. It is 2017, and we are still filming every day.</p>
-		</section>
-
-    <section>
-      <h2>Projects</h2>
+		<header>
+      <h1>Alex Kluew</h1>
+      <img src="./images/alex-kluew-profile-image.jpg" alt="Alex Kluew holding his chihuahua pet Thunder" class="avatar">
+      <article>
+        <p>
+          Hello, I am currently looking for an opportunity in <a href="https://www.iloveny.com/">NYC</a> (after my May 2017 graduation from <a href="http://www.uottawa.ca/academic/info/regist/calendars/genie/SEG.html">University of Ottawa</a>).
+        </p>
+        <p>
+          I believe in the web. I believe that the line between web and native is being blurred. I want to be a part of making the web awesome and accessible for everyone, everywhere.
+        </p>
+        <p>
+          <strong>More of me</strong>:
+          <ul>
+            <li><a href="https://twitter.com/getaclue_1">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/getaclue">LinkedIn</a></li>
+            <li><a href="https://github.com/getaclue">Github</a></li>
+            <li><a href="https://www.instagram.com/getaclue_1/">Instagram</a></li>
+            <li>Resume (pdf)</li>
+          </ul>
+        </p>
+      </article>
+		</header>
+    <article>
+      <h1>Best Project</h1>
+      <p><a href="https://www.youtube.com/channel/UCJkHRtROA1RHjaQn_wBMocQ">Youtube</a> - in 2015, my fiance and I decided to start a youtube channel. In 2016, we decided to film every single day of our life and share it with you. It is 2017, and we are still filming every day.</p>
+    </article>
+    <article>
+      <h1>Projects</h1>
       <p>Below is a list of public projects.</p>
       <ul>
         <li>
@@ -65,12 +149,11 @@
           <a href="/2014-2017">Previous version of this project</a>
         </li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Community Involvement</h2>
+    </article>
+    <article>
+      <h1>Community Involvement</h1>
       <p>
-        I am very much interested in community involvement. From 2014, until my graduation, I am/was involved with promoting software engineering aspects at the University of Ottawa. I did this via social media, in person advertisment, and various events mentioned below.
+        In 2014, I got involved with <a href="https://uottawa-sesa.ca/">software engineering student association</a> at the University of Ottawa. I did various tasks: business relations, marketing, photography, social media, mentoring, and other activities. Below you can view some of the recent events.
       </p>
       <h3>2016 Highlights</h3>
       <ul>
@@ -87,19 +170,7 @@
           <a href="https://uottawa-sesa.ca/events">More here</a>
         </li>
       </ul>
-    </section>
-
-	</main><!-- End primary page content -->
-	<!-- <aside role="complementary">
-
-		<h3>Secondary page content</h3>
-
-    <p>Use the <code>aside</code> element if you need to include content that is not central to the focus of the page or is clearly of secondary importance.</p>
-
-	</aside> -->
-	<!-- <footer role="contentinfo">
-		<div>Page footer content</div>
-		<small>Copyright &copy; <time datetime="2017">2017</time></small>
-	</footer> -->
+    </article>
+	</main>
 </body>
 </html>
