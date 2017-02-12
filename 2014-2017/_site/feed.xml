@@ -3,11 +3,11 @@
   <channel>
     <title>Alex Kluew</title>
     <description></description>
-    <link>http://getaclue.github.io//</link>
-    <atom:link href="http://getaclue.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Aug 2015 18:01:02 -0400</pubDate>
-    <lastBuildDate>Mon, 03 Aug 2015 18:01:02 -0400</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>https://getaclue.me/2014-2017/_site/</link>
+    <atom:link href="https://getaclue.me/2014-2017/_site/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Feb 2017 13:30:46 -0500</pubDate>
+    <lastBuildDate>Sun, 12 Feb 2017 13:30:46 -0500</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
     
       <item>
         <title>Installing Yosemite on E8400</title>
@@ -30,8 +30,9 @@
 
 &lt;p&gt;I decided to jump to &lt;a href=&quot;http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html&quot;&gt;Yosemite 10.10&lt;/a&gt; after reading the tonymacx86 forums. A number of users reported successful bootings with Fermi graphic cards. I used my macbook to download the upgrade and make a &lt;a href=&quot;http://www.tonymacx86.com/downloads.php?do=file&amp;amp;id=249&quot;&gt;bootable USB&lt;/a&gt;. The system did not boot until I added the following flags:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;GraphicsEnabler=Yes, PCIRootUID=1, npci=0x2000
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GraphicsEnabler=Yes, PCIRootUID=1, npci=0x2000
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;You can find out what each of these flags does &lt;a href=&quot;http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html&quot;&gt;here&lt;/a&gt;. After the inital install everything booted smoothly. I then ran &lt;a href=&quot;http://www.tonymacx86.com/downloads.php?do=file&amp;amp;id=252&quot;&gt;MultiBeast&lt;/a&gt;. I followed the specifications for my motherboard and installed the appropriate drives. Everything worked after a restart. However, I noticed that my system experienced random freezes.&lt;/p&gt;
 
@@ -47,16 +48,17 @@
 
 &lt;p&gt;Resource used:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html
 http://www.tonymacx86.com/basics/116220-do-i-need-graphicsenabler-injection-not.html
 http://www.tonymacx86.com/graphics/131937-chimera-hd-graphics-bootflags-igpenabler-igplatformid-igpdeviceid.html
 http://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html
 http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 21 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://getaclue.github.io//2014/12/21/Installing-Yosemite-on-E8400/</link>
-        <guid isPermaLink="true">http://getaclue.github.io//2014/12/21/Installing-Yosemite-on-E8400/</guid>
+        <link>https://getaclue.me/2014-2017/_site/2014/12/21/Installing-Yosemite-on-E8400/</link>
+        <guid isPermaLink="true">https://getaclue.me/2014-2017/_site/2014/12/21/Installing-Yosemite-on-E8400/</guid>
         
         
       </item>
@@ -92,7 +94,7 @@ http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel
 
 &lt;p&gt;Resources used:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;https://www.linux.com/learn/tutorials/284789-writing-a-simple-bash-script-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.linux.com/learn/tutorials/284789-writing-a-simple-bash-script-
 http://www.linux-magazine.com/Online/Features/OpenSSL-with-Bash
 http://www.openssl.org/docs/apps/ciphers.html
 http://www.openssl.org/docs/apps/openssl.html
@@ -101,11 +103,12 @@ https://www.madboa.com/geek/openssl/
 http://www.cyberciti.biz/faq/bash-loop-over-file/
 http://tldp.org/LDP/abs/html/loops1.html
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
         <pubDate>Wed, 15 Oct 2014 00:00:00 -0400</pubDate>
-        <link>http://getaclue.github.io//2014/10/15/A-different-archival-strategy-for-pictures/</link>
-        <guid isPermaLink="true">http://getaclue.github.io//2014/10/15/A-different-archival-strategy-for-pictures/</guid>
+        <link>https://getaclue.me/2014-2017/_site/2014/10/15/A-different-archival-strategy-for-pictures/</link>
+        <guid isPermaLink="true">https://getaclue.me/2014-2017/_site/2014/10/15/A-different-archival-strategy-for-pictures/</guid>
         
         
       </item>
@@ -113,50 +116,59 @@ http://tldp.org/LDP/abs/html/loops1.html
       <item>
         <title>Installing Mono on CentOS 7</title>
         <description>&lt;h1 id=&quot;obtain-necessary-gpg-keys&quot;&gt;Obtain necessary gpg keys&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;mkdir Mono
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir Mono
 cd Mono
 wget http://download.mono-project.com/repo/xamarin.gpg
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;import-gpg-key&quot;&gt;Import gpg key&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;sudo rpm --import xamarin.gpg
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rpm --import xamarin.gpg
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;add-mono-package-repository&quot;&gt;Add Mono package repository&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;sudo yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;add-epel&quot;&gt;Add EPEL&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;update-everything&quot;&gt;Update everything&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;sudo yum update
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum update
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;start-installing-mono&quot;&gt;Start installing Mono&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;sudo yum install mono-devel
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install mono-devel
 sudo yum install mono-complete
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;optional-test-your-mono-installation&quot;&gt;Optional: Test your Mono installation&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;http://www.mono-project.com/docs/getting-started/mono-basics/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.mono-project.com/docs/getting-started/mono-basics/
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;running-mono&quot;&gt;Running Mono&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;cd ~/foo/bar/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/foo/bar/
 mono foo.exe
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;http://www.mono-project.com/docs/getting-started/install/linux/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.mono-project.com/docs/getting-started/install/linux/
 http://www.mono-project.com/docs/getting-started/mono-basics/
 https://fedoraproject.org/wiki/EPEL/FAQ
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sat, 11 Oct 2014 00:00:00 -0400</pubDate>
-        <link>http://getaclue.github.io//2014/10/11/Installing-Mono-on-CentOS-7/</link>
-        <guid isPermaLink="true">http://getaclue.github.io//2014/10/11/Installing-Mono-on-CentOS-7/</guid>
+        <link>https://getaclue.me/2014-2017/_site/2014/10/11/Installing-Mono-on-CentOS-7/</link>
+        <guid isPermaLink="true">https://getaclue.me/2014-2017/_site/2014/10/11/Installing-Mono-on-CentOS-7/</guid>
         
         
       </item>
@@ -164,22 +176,25 @@ https://fedoraproject.org/wiki/EPEL/FAQ
       <item>
         <title>Configuring SSH Server on CentOS 7</title>
         <description>&lt;h1 id=&quot;display-all-install-packages-in-centos&quot;&gt;Display all install packages in CentOS&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;rpm -qa
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm -qa
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;h1 id=&quot;changes-to-etcsshsshdconfig&quot;&gt;Changes to /etc/ssh/sshd_config&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;Protocol 2
+&lt;h1 id=&quot;changes-to-etcsshsshd_config&quot;&gt;Changes to /etc/ssh/sshd_config&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Protocol 2
 AllowUsers alice bob
 PermitRootLogin no
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;changes-to-iptables&quot;&gt;Changes to iptables&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --set --name ssh --rsource
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --set --name ssh --rsource
 iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent ! --rcheck --seconds 60 --hitcount 4 --name ssh --rsource -j ACCEPT
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;resources-used&quot;&gt;Resources Used&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;http://vim.wikia.com/wiki/Insert_current_date_or_time
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://vim.wikia.com/wiki/Insert_current_date_or_time
 http://daringfireball.net/projects/markdown/syntax
 http://www.linfo.org/sbin.html
 http://www.lifelinux.com/how-to-install-openssh-on-centos-redhat/
@@ -189,10 +204,11 @@ http://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-ssh-configfiles.html
 http://thesimplesynthesis.com/article/compress-pdf#compress-pdf
 https://gist.github.com/quintes/5153247
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Wed, 08 Oct 2014 13:09:09 -0400</pubDate>
-        <link>http://getaclue.github.io//2014/10/08/Configuring-SSH-on-CentOS-7/</link>
-        <guid isPermaLink="true">http://getaclue.github.io//2014/10/08/Configuring-SSH-on-CentOS-7/</guid>
+        <link>https://getaclue.me/2014-2017/_site/2014/10/08/Configuring-SSH-on-CentOS-7/</link>
+        <guid isPermaLink="true">https://getaclue.me/2014-2017/_site/2014/10/08/Configuring-SSH-on-CentOS-7/</guid>
         
         
       </item>
@@ -203,56 +219,56 @@ https://gist.github.com/quintes/5153247
 
 &lt;p&gt;First of all, everything that you need is here:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-https://www.gnu.org/software/wget/
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.gnu.org/software/wget/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Now, we need to have somewhere to save the &lt;em&gt;stuff&lt;/em&gt; that you would like to download. To do that, simply make a new place &lt;code&gt;mkdir /some/path&lt;/code&gt; and then go there by using &lt;code&gt;cd /some/path&lt;/code&gt;. Good. Now, you have somewhere to store your stuff.&lt;/p&gt;
+&lt;p&gt;Now, we need to have somewhere to save the &lt;em&gt;stuff&lt;/em&gt; that you would like to download. To do that, simply make a new place &lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir /some/path&lt;/code&gt; and then go there by using &lt;code class=&quot;highlighter-rouge&quot;&gt;cd /some/path&lt;/code&gt;. Good. Now, you have somewhere to store your stuff.&lt;/p&gt;
 
 &lt;p&gt;My goal is to download an entire website. That is, I want some website to be available for my offline usage. Everything.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-wget --limit-rate=50k --no-clobber --convert-links --wait=5 --random-wait
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget --limit-rate=50k --no-clobber --convert-links --wait=5 --random-wait
 -r -p -E -e robots=off -U Mozilla http://www.foo.bar
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Now, why did I use the settings that I used?&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;used &lt;code&gt;--limit-rate=50k&lt;/code&gt; to limit the download speed of each file to 50KB/s&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;-- no-clobber&lt;/code&gt; so that I do not overwrite existing files. (multiple savings of the same file is prevented)&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;--convert-links&lt;/code&gt; to ensure that all of the downloaded links point locally and do not point to any external places&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;--wait=5&lt;/code&gt; to wait 5 seconds between each new request for a new file&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;--random-wait&lt;/code&gt; to try and reduce the load on the server. It &lt;strong&gt;needs&lt;/strong&gt; –wait attribute&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;-r&lt;/code&gt; for recursive downloading of the entire website&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;-p&lt;/code&gt; to download all of the necessary files to display the html page properly&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;-E&lt;/code&gt; for appending &lt;code&gt;.html&lt;/code&gt; to files that have otherwise other extensions such as &lt;code&gt;something.else?suchas25&lt;/code&gt; to &lt;code&gt;something.else?suchas25.html&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;-e robots=off&lt;/code&gt; to by pass possible robot exclusion&lt;/li&gt;
-  &lt;li&gt;used &lt;code&gt;-U Mozilla&lt;/code&gt; to identify as a Mozilla client and not &lt;code&gt;Wget/VERSION&lt;/code&gt; client&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;--limit-rate=50k&lt;/code&gt; to limit the download speed of each file to 50KB/s&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;-- no-clobber&lt;/code&gt; so that I do not overwrite existing files. (multiple savings of the same file is prevented)&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;--convert-links&lt;/code&gt; to ensure that all of the downloaded links point locally and do not point to any external places&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;--wait=5&lt;/code&gt; to wait 5 seconds between each new request for a new file&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;--random-wait&lt;/code&gt; to try and reduce the load on the server. It &lt;strong&gt;needs&lt;/strong&gt; –wait attribute&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;-r&lt;/code&gt; for recursive downloading of the entire website&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt; to download all of the necessary files to display the html page properly&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;-E&lt;/code&gt; for appending &lt;code class=&quot;highlighter-rouge&quot;&gt;.html&lt;/code&gt; to files that have otherwise other extensions such as &lt;code class=&quot;highlighter-rouge&quot;&gt;something.else?suchas25&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;something.else?suchas25.html&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;-e robots=off&lt;/code&gt; to by pass possible robot exclusion&lt;/li&gt;
+  &lt;li&gt;used &lt;code class=&quot;highlighter-rouge&quot;&gt;-U Mozilla&lt;/code&gt; to identify as a Mozilla client and not &lt;code class=&quot;highlighter-rouge&quot;&gt;Wget/VERSION&lt;/code&gt; client&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;# Ideas developed by using #&lt;/p&gt;
+&lt;h1 id=&quot;ideas-developed-by-using&quot;&gt;Ideas developed by using&lt;/h1&gt;
 
-&lt;p&gt;&lt;code&gt;
-http://www.thegeekstuff.com/2009/09/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.thegeekstuff.com/2009/09/
           the-ultimate-wget-download-guide-with-15-awesome-examples/
 http://www.kossboss.com/linux---wget-full-website
 http://www.rationallyparanoid.com/articles/wget.html
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;(Side note, system information: &lt;code&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;(Side note, system information: &lt;code class=&quot;highlighter-rouge&quot;&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
 #1 SMP Tue Mar 25 19:59:55 UTC 2014
 x86_64
 GNU/Linux
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Wed, 30 Apr 2014 00:00:00 -0400</pubDate>
-        <link>http://getaclue.github.io//2014/04/30/Using-wget/</link>
-        <guid isPermaLink="true">http://getaclue.github.io//2014/04/30/Using-wget/</guid>
+        <link>https://getaclue.me/2014-2017/_site/2014/04/30/Using-wget/</link>
+        <guid isPermaLink="true">https://getaclue.me/2014-2017/_site/2014/04/30/Using-wget/</guid>
         
         
       </item>
@@ -263,46 +279,46 @@ GNU/Linux
 
 &lt;p&gt;Make a dir to install it in and go there&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-mkdir /some/path/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir /some/path/
 cd /some/path/
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Download the sourcecode (link used in March 2014) and place it in the newely created directory in the step above.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2
 http://xchat.org/files/source/2.8/xchat-2.8.8.tar.xz
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Unpack the archive:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-tar -xzvf xchat-x.x.x.tar.xz
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar -xzvf xchat-x.x.x.tar.xz
 tar -xjvf xchat-x.x.x.tar.bz2
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Go to the newely unpacked directory:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-cd xchat-2.8.8
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd xchat-2.8.8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Run the configuration script:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-./configure
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Compile the program:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-make
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Finally, install the program:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 make install
 &lt;/code&gt;
 ***&lt;/p&gt;
@@ -311,86 +327,86 @@ make install
 
 &lt;p&gt;While trying to compile the source code, I’ve gotten the following error:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-configure: error: no acceptable C compiler found in $PATH
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;configure: error: no acceptable C compiler found in $PATH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The solution? We are missing the gcc, which can be installed via the development tools kit. In my case, I didn’t solely look for the gcc but I installed the entire pack because I knew I would be using the tools eventually.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-yum groupinstall &quot;Development tools&quot;
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum groupinstall &quot;Development tools&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Alternatively, this same command can be ran on Debian Base OS:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-apt-get install build-essential
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install build-essential
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;And yes, I did run all of this as root. If you are not root, place &lt;code&gt;sudo&lt;/code&gt; in front of the commands that you have no direct access to and enter your password.&lt;/p&gt;
+&lt;p&gt;And yes, I did run all of this as root. If you are not root, place &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; in front of the commands that you have no direct access to and enter your password.&lt;/p&gt;
 
-&lt;p&gt;(Side note, system information: &lt;code&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;(Side note, system information: &lt;code class=&quot;highlighter-rouge&quot;&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
 #1 SMP Tue Mar 25 19:59:55 UTC 2014
 x86_64
 GNU/Linux
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 16 Mar 2014 00:00:00 -0400</pubDate>
-        <link>http://getaclue.github.io//2014/03/16/installing-xChat/</link>
-        <guid isPermaLink="true">http://getaclue.github.io//2014/03/16/installing-xChat/</guid>
+        <link>https://getaclue.me/2014-2017/_site/2014/03/16/installing-xChat/</link>
+        <guid isPermaLink="true">https://getaclue.me/2014-2017/_site/2014/03/16/installing-xChat/</guid>
         
         
       </item>
     
       <item>
         <title>Configuring PrivateInternetAccess VPN</title>
-        <description>&lt;h1 id=&quot;installing-openvpn-and-configuring-for-privateinternetaccess&quot;&gt;Installing OpenVPN and Configuring for PrivateInternetAccess&lt;/h1&gt;
-&lt;p&gt;Go to /etc/&lt;/p&gt;
+        <description>&lt;p&gt;#Installing OpenVPN and Configuring for PrivateInternetAccess#
+Go to /etc/&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-cd /etc/
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /etc/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Add the correct repo, which you are probably missing:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-wget
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget
  http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
 rpm -Uvh rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
 (U - Update, v - verbose, h - has)
-&lt;/code&gt;
-Install OpenVPN from the new repo&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Install OpenVPN from the new repo&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-yum install openvpn
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install openvpn
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Download correct preconfigured files from www.privateinternetaccess.com&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Make a new directory, move the downloaded file into the directory, unzip the contents, and go into the directory&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-mv openvpn.zip ./openvpn
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv openvpn.zip ./openvpn
 unzip openvpn.zip
 cd openvpn
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Test to see if everything is working properly. Be prepared to enter your self-generated password and username (and not the one provided for you).&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-openvpn Canada.ovpn
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openvpn Canada.ovpn
 	OR
 openvpn *.ovpn (* - any other location from the list)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;ctrl+c&lt;/code&gt; to terminate the connection if everything is successful.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+c&lt;/code&gt; to terminate the connection if everything is successful.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -398,58 +414,58 @@ openvpn *.ovpn (* - any other location from the list)
 
 &lt;p&gt;In order to run openvpn in the background, a useful utility is available.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-yum install screen
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install screen
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Then, when you would want to initialize an instance, simple do&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-screen openvpn *.ovpn
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen openvpn *.ovpn
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;and, now, the instance of openvpn can be run within the screen. Thus, we can safeuly press &lt;code&gt;ctrl + a + d&lt;/code&gt; and the screen will disappear but the session will continue to be open. &lt;strong&gt;Super Useful&lt;/strong&gt;. Once you are ready to terminate the session, you can simply close your machine, or&lt;/p&gt;
+&lt;p&gt;and, now, the instance of openvpn can be run within the screen. Thus, we can safeuly press &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + a + d&lt;/code&gt; and the screen will disappear but the session will continue to be open. &lt;strong&gt;Super Useful&lt;/strong&gt;. Once you are ready to terminate the session, you can simply close your machine, or&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-screen -ls
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen -ls
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This command will open all of the screen’s running instances. Simply find the one that is dedicated to the openvpn and then open the session.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-screen -x &amp;lt;name&amp;gt;
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen -x &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Once inside, simple close it and exit the screen instance.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-ctrl + c
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl + c
 exit
 	OR
 ctrl + c
 ctrl + d
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Aside: If you want, you can start the screen with a custom name. When you do this, it is much easier to find your specific open session if you have multiple screen sessions open. Simply do:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-screen -S &amp;lt;name&amp;gt;
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen -S &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;And yes, I did run all of this as root. If you are not root, place &lt;code&gt;sudo&lt;/code&gt; in front of the commands that you have no direct access to and enter your password.&lt;/p&gt;
+&lt;p&gt;And yes, I did run all of this as root. If you are not root, place &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; in front of the commands that you have no direct access to and enter your password.&lt;/p&gt;
 
-&lt;p&gt;(Side note, system information: &lt;code&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;(Side note, system information: &lt;code class=&quot;highlighter-rouge&quot;&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
 #1 SMP Tue Mar 25 19:59:55 UTC 2014
 x86_64
 GNU/Linux
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 16 Mar 2014 00:00:00 -0400</pubDate>
-        <link>http://getaclue.github.io//2014/03/16/configuring-PIA/</link>
-        <guid isPermaLink="true">http://getaclue.github.io//2014/03/16/configuring-PIA/</guid>
+        <link>https://getaclue.me/2014-2017/_site/2014/03/16/configuring-PIA/</link>
+        <guid isPermaLink="true">https://getaclue.me/2014-2017/_site/2014/03/16/configuring-PIA/</guid>
         
         
       </item>
