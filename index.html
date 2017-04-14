@@ -2,47 +2,82 @@
 <!-- Based on HTML5 Bones | http://html5bones.com -->
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Alex Kluew - getaclue.me</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-	<meta name="author" content="Alex Kluew">
-	<meta name="description" content="The personal website of Alex Kluew">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:description" content="The personal website of Alex Kluew">
-	<meta property="og:image" content="https://www.getaclue.me/images/alex-kluew-profile-image.jpg">
-	<meta name="twitter:image:src" content="https://www.getaclue.me/images/alex-kluew-profile-image.jpg">
-	<meta name="twitter:creator" content="@getaclue_1">
-	<meta name="twitter:url" content="https://www.getaclue.me/">
-	<meta name="twitter:title" content="Alex Kluew">
-	<link rel="canonical" href="https://www.getaclue.me/">
+  <meta charset="utf-8">
+  <title>Alex Kluew - getaclue.me</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="author" content="Alex Kluew">
+  <meta name="description" content="The personal website of Alex Kluew">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="The personal website of Alex Kluew">
+  <meta property="og:image" content="https://www.getaclue.me/images/alex-kluew-profile-image.jpg">
+  <meta name="twitter:image:src" content="https://www.getaclue.me/images/alex-kluew-profile-image.jpg">
+  <meta name="twitter:creator" content="@getaclue_1">
+  <meta name="twitter:url" content="https://www.getaclue.me/">
+  <meta name="twitter:title" content="Alex Kluew">
+  <link rel="canonical" href="https://www.getaclue.me/">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <style>
   body {
     max-width: 100%;
     margin: 0;
     color: #212121;
-    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.75;
     background: #ffffff;
   }
 
-	@media (min-width:1024px) {
-		body {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
+  @media (min-width:1024px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
   @media (min-width:320px) {
+    ::selection {
+      background: #21d279;
+      text-shadow: none;
+    }
+    ::-moz-selection {
+      background: #21d279;
+      text-shadow: none;
+    }
     body {
       font-size: 120%;
+      border-left: 10px solid #21d279;
+      border-right: 10px solid #21d279;
+      border-bottom: 10px solid #21d279;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      background-color: transparent;
+      background-image: linear-gradient(transparent 95%, #21d279 0%);
+      padding-bottom: 1px;
+      text-shadow: 0.03em 0 #FFFFFF, -0.03em 0 #FFFFFF, 0 0.03em #FFFFFF, 0 -0.03em #FFFFFF, 0.06em 0 #FFFFFF, -0.06em 0 #FFFFFF, 0.09em 0 #FFFFFF, -0.09em 0 #FFFFFF, 0.12em 0 #FFFFFF, -0.12em 0 #FFFFFF, 0.15em 0 #FFFFFF, -0.15em 0 #FFFFFF;
+      transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    a:hover {
+      color: #000036;
+      background: #21d279;
+      text-shadow: none;
+      background-image: none;
+    }
+    .decorative-border {
+      border-bottom: 10px solid #21d279;
+      position: fixed;
+      z-index: 999;
+      width:100%;
     }
     main {
       max-width: 45em;
       padding: 0 1em 0 1em;
+      position: relative;
     }
     header {
       display: flex;
@@ -52,6 +87,11 @@
     header article {
       padding-bottom: 1em;
       border-bottom: 0;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #000036;
+      background: #21d279;
     }
     header h1 {
       font-size: 32px;
@@ -75,8 +115,9 @@
   }
 </style>
 <body>
-	<main role="main">
-		<header>
+  <div class="decorative-border"></div>
+  <main role="main">
+  <header>
       <h1>Alex Kluew</h1>
       <img src="./images/alex-kluew-profile-image.jpg" alt="Alex Kluew holding his chihuahua pet Thunder" class="avatar">
       <article>
@@ -97,7 +138,7 @@
           </ul>
         </p>
       </article>
-		</header>
+  </header>
     <article>
       <h1>Best Project</h1>
       <p><a href="https://www.youtube.com/channel/UCJkHRtROA1RHjaQn_wBMocQ">Youtube</a> - in 2015, my fiance and I decided to start a youtube channel. In 2016, we decided to film every single day of our life and share it with you. It is 2017, and we are still filming every day.</p>
@@ -162,14 +203,14 @@
         <li>
           <a href="https://www.facebook.com/events/528667590639068/">February - April Ruby on Rails</a>
         </li>
-				<li>
-					<a href="https://www.facebook.com/UOttawaSESA/videos/vb.1445299265714382/1812925482285090/?type=3&theater">Livestream from Hack the North Hackathon</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/UOttawaSESA/posts/1835912509986387">Qlik Hackathon</a>
-				</li>
+  <li>
+  <a href="https://www.facebook.com/UOttawaSESA/videos/vb.1445299265714382/1812925482285090/?type=3&theater">Livestream from Hack the North Hackathon</a>
+  </li>
+  <li>
+  <a href="https://www.facebook.com/UOttawaSESA/posts/1835912509986387">Qlik Hackathon</a>
+  </li>
       </ul>
     </article>
-	</main>
+  </main>
 </body>
 </html>
