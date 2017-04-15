@@ -15,34 +15,61 @@
 	<meta name="twitter:url" content="https://www.getaclue.me/">
 	<meta name="twitter:title" content="Alex Kluew">
 	<link rel="canonical" href="https://www.getaclue.me/">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <style>
   body {
     max-width: 100%;
     margin: 0;
     color: #212121;
-    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.75;
     background: #ffffff;
   }
 
-	@media (min-width:1024px) {
-		body {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-
   @media (min-width:320px) {
+    ::selection {
+      background: #21d279;
+      text-shadow: none;
+    }
+    ::-moz-selection {
+      background: #21d279;
+      text-shadow: none;
+    }
     body {
       font-size: 120%;
+      border-left: 10px solid #21d279;
+      border-right: 10px solid #21d279;
+      border-bottom: 10px solid #21d279;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      background-color: transparent;
+      background-image: linear-gradient(transparent 95%, #21d279 0%);
+      padding-bottom: 1px;
+      text-shadow: 0.03em 0 #FFFFFF, -0.03em 0 #FFFFFF, 0 0.03em #FFFFFF, 0 -0.03em #FFFFFF, 0.06em 0 #FFFFFF, -0.06em 0 #FFFFFF, 0.09em 0 #FFFFFF, -0.09em 0 #FFFFFF, 0.12em 0 #FFFFFF, -0.12em 0 #FFFFFF, 0.15em 0 #FFFFFF, -0.15em 0 #FFFFFF;
+      transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    a:hover {
+      color: #000036;
+      background: #21d279;
+      text-shadow: none;
+      background-image: none;
+    }
+    .decorative-border {
+      border-bottom: 10px solid #21d279;
+      position: fixed;
+      z-index: 999;
+      width:100%;
     }
     main {
       max-width: 45em;
       padding: 0 1em 0 1em;
+      position: relative;
     }
     header {
       display: flex;
@@ -53,15 +80,44 @@
       padding-bottom: 1em;
       border-bottom: 0;
     }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #000036;
+      background: #21d279;
+      text-shadow: none;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #000036;
+      background: #21d279;
+      text-shadow: none;
+    }
+    h3 {
+      font-family: 'Playfair Display', serif;
+      color: #000036;
+      background: #21d279;
+      text-shadow: none;
+    }
     header h1 {
       font-size: 32px;
       text-align: center;
       text-transform: uppercase;
       line-height: .8;
       margin-bottom: 0;
+      text-shadow: none;
+      margin-bottom: 0.17em;
     }
     article h1 {
       margin-bottom: 0;
+    }
+    header h1 a {
+      text-shadow: none;
+    }
+    article h1 {
+      margin-bottom: 0;
+    }
+    article h1 a {
+      text-shadow: none;
     }
     article {
       border-bottom: .17em solid;
@@ -73,17 +129,46 @@
       align-self: center;
     }
     article img {
-      /*width: 100%;*/
-      width: 356px;
-      height: 632px;
+      width: 260px;
+    }
+  }
+  @media (min-width:375px) {
+    article img {
+      width: 315px;
+    }
+  }
+  @media (min-width:414px) {
+    article img {
+      width: 355px;
+    }
+  }
+  @media (min-width:768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    article img {
+      width: 710px;
+    }
+  }
+  @media (min-width:1024px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    article img {
+      width: 860px;
     }
   }
 </style>
 <body>
+  <div class="decorative-border"></div>
 	<main role="main">
 		<header>
-      <h1>Project: Scheduling App (WIP)</h1>
-      <small>A scheduling application for local businesses. Work in progress.</small>
+      <h1>Project: Scheduling App</h1>
+      <small>A scheduling application for local businesses. Capstone project.</small>
     </header>
     <article>
       <h1>Primary Technology Used:</h1>
@@ -92,6 +177,8 @@
         <li>Ruby on Rails</li>
         <li>PostgreSQL</li>
         <li>Heroku</li>
+        <li>Redis</li>
+        <li>Sidekiq</li>
         <li>Surge.sh</li>
         <li>Travis CI</li>
         <li>Mobile First</li>
