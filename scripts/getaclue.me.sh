@@ -22,7 +22,7 @@ rm -rf *
 cp -R /tmp/getaclue.me/* .
 
 # We need a CNAME file for GitHub
-# echo "getaclue.me" > "CNAME"
+echo "getaclue.me" > "CNAME"
 
 # Commit all the changes and push it to the remote
 git add -A
