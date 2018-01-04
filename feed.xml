@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-01-04T11:12:50-05:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Installing Yosemite on E8400</title><link href="https://getaclue.github.io/blog/Installing-Yosemite-on-E8400" rel="alternate" type="text/html" title="Installing Yosemite on E8400" /><published>2014-12-21T00:00:00-05:00</published><updated>2014-12-21T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/Installing-Yosemite-on-E8400</id><content type="html" xml:base="https://getaclue.github.io/blog/Installing-Yosemite-on-E8400">&lt;p&gt;First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-01-04T12:08:21-05:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">2018 Goals: More Regular Writings</title><link href="https://getaclue.github.io/blog/regular-writings" rel="alternate" type="text/html" title="2018 Goals: More Regular Writings" /><published>2018-01-03T00:00:00-05:00</published><updated>2018-01-03T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/regular-writings</id><content type="html" xml:base="https://getaclue.github.io/blog/regular-writings">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/5Nw3As&quot; alt=&quot;Target goals image from https://pixabay.com/en/arrow-target-range-bullseye-sport-2889040/&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a few goals for 2017. Rather than having a year in a review post, I decided to narrow down my focus to software. At least two of  my goals related to software. I succeeded in achieving both of those goals.&lt;/p&gt;
+
+&lt;h1 id=&quot;be-proactive&quot;&gt;Be Proactive&lt;/h1&gt;
+&lt;p&gt;My first goal, was to be more proactive in my ideas. In other words, I wanted to stop dreaming about solutions and to take action on those ideas.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-did-i-approach-this&quot;&gt;How did I approach this?&lt;/h2&gt;
+&lt;p&gt;Well, for starters, that meant that I had to get into the habit of writing down every new idea. Regardless of the idea and its feasibility. It did not matter what state I was in, where was I, or what I was doing. I wrote everything down and I dated it. Writing things down removes extra load from your beautiful brain and puts the ideas into a specific place. And guess what? You know exactly where that place is and you can reference it at any time.&lt;/p&gt;
+
+&lt;p&gt;Dating my ideas came as an after thought. Once my list began to grow and get out of hand, I realized that I needed some structure and cohesion. By now, dating new ideas is second nature by now and I quite enjoy it.&lt;/p&gt;
+
+&lt;h1 id=&quot;document-all-the-things&quot;&gt;Document All The Things&lt;/h1&gt;
+&lt;p&gt;The other goal for 2017 was to be more deliberate in my software development process. I wanted to be more deliberate in the ways that I approach software engineering. At the end of the day, I want to practice what I preach. I began to document how I plan, brainstorm, document, and iterate on my ideas. There is much more than that, but this was a good start.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-did-this-entail&quot;&gt;What did this entail?&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/HlAf3W&quot; alt=&quot;indiehacker.com image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since I am very much inspired by fellow indie developers, I began searching for strategies. I wanted to discover where everyone hangs out. I wanted to go there and hang out with them. I wanted to give back and participate. I wanted to learn from them. With them.&lt;/p&gt;
+
+&lt;p&gt;Not the successful and loud ones. Everyone. And I came to the conclusion that what they do is exactly what I want to do. They want to better their process and their product. How do they do that? By being “transparent” about what they do and how they do it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/5433fS&quot; alt=&quot;wip.chat image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Don’t dwell on the transparency word. What I mean by that is that there is a certain amount of magic in proclaiming a public goal and then working towards achieving that goal.&lt;/p&gt;
+
+&lt;p&gt;Documentation plays a big part of this. How? Well, if I make a public goal and everyone sees that I am working towards achieving that goal then an interesting thing happens. First, you get motivated to keep working on that goal. Second, you get immediate feedback from the world. Which bring me to the third point. You need to respond to that feedback and have a conversation. Behind those cat avatars and pseudonyms, on the Internet, are real people with real opinions and thoughts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/4IBKv2&quot; alt=&quot;Avatars Image from https://pixabay.com/en/networks-personal-users-3017398/&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This process of using social media requires you to actually USE it.&lt;/p&gt;
+
+&lt;p&gt;So, where is this rambling of mine taking me? Towards my goal for 2018 of course. I want to document things more in the open. I mean, I already do this work for myself so I might as well share it with you.&lt;/p&gt;
+
+&lt;p&gt;In the process, I hope to share whatever I find useful with fellow developers and to better my communication skills through it. If you cannot tell from this article, I tend to ramble a lot. Two academic degrees will do that to you. I mean, that research article or lab report isn’t going to write itself 🙉&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/njPGUq&quot; alt=&quot;Or maybe I should just start an ICO? Image from https://pixabay.com/en/bitcoin-currency-blockchain-2018-3047129/&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, this is why I resurfaced my blog and re-added my previous entries. This is my commitment to documenting all of the things. I hope these will be more frequent. At least for 2018. I hope that you will enjoy this adventure because I will.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="goals" /><category term="productivity" /><category term="growth" /><summary type="html"></summary></entry><entry><title type="html">Installing Yosemite on E8400</title><link href="https://getaclue.github.io/blog/Installing-Yosemite-on-E8400" rel="alternate" type="text/html" title="Installing Yosemite on E8400" /><published>2014-12-21T00:00:00-05:00</published><updated>2014-12-21T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/Installing-Yosemite-on-E8400</id><content type="html" xml:base="https://getaclue.github.io/blog/Installing-Yosemite-on-E8400">&lt;p&gt;First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.&lt;/p&gt;
 
 &lt;p&gt;Computer Hardware:&lt;/p&gt;
 
