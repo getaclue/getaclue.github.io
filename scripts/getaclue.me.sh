@@ -17,7 +17,7 @@ cp -R "_site/" "/tmp/getaclue.me"
 
 # Assuming we are on branch gh-pages
 # Check out master and clear all files
-git checkout -b master
+git checkout master
 rm -rf *
 cp -R /tmp/getaclue.me/* .
 
