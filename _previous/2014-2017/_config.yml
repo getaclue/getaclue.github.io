@@ -1,0 +1,26 @@
+# Site settings
+title: Alex Kluew
+email: info@getaclue.me
+permalink: pretty
+
+quote: > # this means to ignore newlines until "baseurl:"
+  A dream is just a dream. A goal is a dream with a plan and a deadline.
+baseurl: "/_site" # the subpath of your site, e.g. /blog/
+url: "https://getaclue.me/2014-2017" # the base hostname & protocol for your site
+
+about_author_snippet: >
+  I am a software engineering student at the University of Ottawa. At the time of writing, my interests are in the areas of web development. I like the idea of having the user use your tool regardless of the device and operating system. I believe that the user experience for your tool should be identical (or as close as it can be) on all platforms and devices.
+
+about_author_snippet_for_posts: >
+  Alex Kluew is a a software engineering student at the University of Ottawa. At the time of writing, his intrests are in the areas of web development
+
+# Social
+twitter_username: getaclue_1
+github_username:  getaclue
+linkedin_username: getaclue
+
+# Build settings
+markdown: kramdown
+
+# Windows Problem
+highlighter: false
