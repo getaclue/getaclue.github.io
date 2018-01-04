@@ -29,6 +29,12 @@ git add -A
 git commit -m "Deployed with $(jekyll -v)"
 git push origin master --force # overwrite anything
 
+echo "Cleaning up from tmp"
+rm -rf "/tmp/getaclue.me"
+
+echo "Switching back to gh-pages branch"
+git checkout gh-pages
+
 # Post a Slack message
 # git checkout master
 
