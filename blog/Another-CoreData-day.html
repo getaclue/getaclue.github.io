@@ -13,17 +13,17 @@
 
   <link rel="canonical" href="https://getaclue.github.io">
   <meta name="description" content="Alex Kluew - https://getaclue.github.io" />
-  <meta property="og:title" content="Alex Kluew - https://getaclue.github.io/blog/page3/"/>
-  <meta property="og:url" content="https://getaclue.github.io/blog/page3/"/>
+  <meta property="og:title" content="Alex Kluew - https://getaclue.github.io/blog/Another-CoreData-day"/>
+  <meta property="og:url" content="https://getaclue.github.io/blog/Another-CoreData-day"/>
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="https://getaclue.github.io/blog/page3/" />
-  <meta property="og:description" content="Alex Kluew - https://getaclue.github.io/blog/page3/"/>
+  <meta property="og:site_name" content="https://getaclue.github.io/blog/Another-CoreData-day" />
+  <meta property="og:description" content="Alex Kluew - https://getaclue.github.io/blog/Another-CoreData-day"/>
   <meta name="og:image" content="https://getaclue.github.io/assets/social-image-banner.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="getaclue_1">
   <meta name="twitter:creator" content="getaclue_1">
   <meta name="twitter:title" content="Alex Kluew">
-  <meta name="twitter:description" content="Alex Kluew - https://getaclue.github.io/blog/page3/">
+  <meta name="twitter:description" content="Alex Kluew - https://getaclue.github.io/blog/Another-CoreData-day">
   <meta name="twitter:image" content="https://getaclue.github.io/assets/social-image-banner.png">
 
   <link rel="icon" type="image/png" href="/assets/favicon.png">
@@ -133,235 +133,74 @@
 </div>
 
 
-        <div class="home">
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/installing-xChat">Installing XChat CentOS 6.5 for Beginners</a></h1>
-        <p class="post-meta">
-          <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">
-            
-            Mar 16, 2014
-          </time>
-          </p>
-      </header>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"><a href="/blog/Another-CoreData-day">Another CoreData Day</a></h1>
+    <p class="post-meta">
+      <time datetime="2018-01-07T00:00:00-05:00" itemprop="datePublished">
+        
+        Jan 7, 2018
+      </time> &nbsp; | &nbsp;
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/Another-CoreData-day" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
 
-      <div class="post-content" itemprop="articleBody">
-        <h1 id="installing-xchat-for-total-beginners">Installing XChat for Total Beginners</h1>
+  </header>
 
-<p>Make a dir to install it in and go there</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>So, today, I decided to implement the Sharing extension. Oh boy, did I not expect to lose all of the data but it was necessary. It turns out that if you want to, at a time in the future, to add things to your app, well then you may be in for some effort.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /some/path/
-cd /some/path/
-</code></pre></div></div>
+<p>The best resource, hands down was this = <a href="https://medium.com/@ales.musto/making-a-share-extension-that-accepts-text-and-urls-in-combination-with-coredata-swift-3-a0139c0f9800">Making a Share Extension that accepts text and URLs in combination with CoreData Swift 3</a>. If you don’t want to or don’t have time to learn about Core Data then you can just jump to that website. Follow it. And it will just work.</p>
 
-<p>Download the sourcecode (link used in March 2014) and place it in the newely created directory in the step above.</p>
+<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/f6uxtZ" alt="Screenshot of the resource I talked about" /></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2
-http://xchat.org/files/source/2.8/xchat-2.8.8.tar.xz
-</code></pre></div></div>
+<p>This way, you can add those things in the future. So just plan for it.</p>
 
-<p>Unpack the archive:</p>
+<p>Also, noticed that some tutorials are suggesting to ship the app with things like subscription services and such to be turned on. Just turned on and not active. This way you can add it whenever you want it but you went through review already. Or maybe you just don’t have the time and want to follow good practices. That’s fine too =)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -xzvf xchat-x.x.x.tar.xz
-tar -xjvf xchat-x.x.x.tar.bz2
-</code></pre></div></div>
+<p>So, I also used the following resources before I found the one above. Here they are:</p>
+<ul>
+  <li><a href="https://developer.apple.com/library/content/documentation/General/Conceptual/ExtensibilityPG/Share.html">Share</a></li>
+  <li><a href="https://github.com/QuickBlox/quickblox-ios-sdk/tree/master/sample-videochat-webrtc/sample-videochat-webrtc/ViewControllers/SharingViewController">quickblox-ios-sdk</a></li>
+  <li><a href="http://awesomeios.com">http://awesomeios.com</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW2">App Extension Keys</a></li>
+  <li><a href="https://developer.apple.com/documentation/foundation/nsextensioncontext/1411301-completerequest">completeRequest(returningItems:completionHandler:)</a></li>
+  <li><a href="https://developer.apple.com/documentation/foundation/nsextensioncontext">NSExtensionContext</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW19">Enabling App Sandbox</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html">Adding Capabilities</a></li>
+  <li><a href="https://stackoverflow.com/a/25408472">this ANSWER was helpful for - How to access CoreData model in today extension (iOS)</a></li>
+  <li><a href="https://github.com/atomicbird/iOS-Extension-Demo/blob/master/Share%20to%20Note/ShareViewController.m">ShareViewController.m</a></li>
+  <li><a href="https://www.google.ca/search?q=share+coredata+between+share+and+app&amp;client=safari&amp;rls=en&amp;dcr=0&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwjuuv3cvMbYAhWo44MKHTrMAKQQpwUIIQ&amp;biw=1240&amp;bih=716">share coredata between share and app</a></li>
+  <li><a href="http://www.oodlestechnologies.com/blogs/Share-CoreData-between-App-and-Share-Extension-using-Framework">Share CoreData between App and Share Extension using Framework</a></li>
+  <li><a href="https://github.com/maximbilan/iOS-Shared-CoreData-Storage-for-App-Groups/blob/master/TutorialAppGroup/Shared/CoreDataStorage.swift">CoreDataStorage.swift</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/InitializingtheCoreDataStack.html">Initializing the Core Data Stack</a></li>
+  <li><a href="https://github.com/almusto/CustomNotes/blob/95887d7440365a0f7990f0a36fb001c725c74118/CustomNotes/InitialVC.swift">InitialVC.swift</a></li>
+  <li><a href="https://developer.apple.com/documentation/coreservices/kuttypeurl">kUTTypeURL</a></li>
+</ul>
 
-<p>Go to the newely unpacked directory:</p>
+<p>Anyways, I am going to spend some time looking at this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd xchat-2.8.8
-</code></pre></div></div>
+<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/w1h7OB" alt="Screenshot of homepage for Apple's App Extension Keys Dictionary Thing" /></p>
 
-<p>Run the configuration script:</p>
+<p>Hopefully someone can find it useful when they are doing this process as well. Maybe I will record it because it is a bit tricky. We’ll see.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure
-</code></pre></div></div>
-
-<p>Compile the program:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
-</code></pre></div></div>
-
-<p>Finally, install the program:</p>
-
-<p><code class="highlighter-rouge">
-make install
-</code>
-***</p>
-
-<h2 id="problems-ive-encountered-while-setting-up">Problems I’ve encountered while setting up</h2>
-
-<p>While trying to compile the source code, I’ve gotten the following error:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>configure: error: no acceptable C compiler found in $PATH
-</code></pre></div></div>
-
-<p>The solution? We are missing the gcc, which can be installed via the development tools kit. In my case, I didn’t solely look for the gcc but I installed the entire pack because I knew I would be using the tools eventually.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum groupinstall "Development tools"
-</code></pre></div></div>
-
-<p>Alternatively, this same command can be ran on Debian Base OS:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install build-essential
-</code></pre></div></div>
-
-<p>And yes, I did run all of this as root. If you are not root, place <code class="highlighter-rouge">sudo</code> in front of the commands that you have no direct access to and enter your password.</p>
-
-<p>(Side note, system information: <code class="highlighter-rouge">uname-a</code>)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
-#1 SMP Tue Mar 25 19:59:55 UTC 2014
-x86_64
-GNU/Linux
-</code></pre></div></div>
+<p>Alex</p>
 
 
-        <p style="margin-top: 30px" class="side-projects-note">
+    <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
-
-      <p class="extra-info">
-        
-          Tags: CentOS 6.5, how-to, beginner, guide, XChat &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/installing-xChat" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-      </p>
-    </article>
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/configuring-PIA">Configuring PrivateInternetAccess VPN</a></h1>
-        <p class="post-meta">
-          <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">
-            
-            Mar 16, 2014
-          </time>
-          </p>
-      </header>
-
-      <div class="post-content" itemprop="articleBody">
-        <p>#Installing OpenVPN and Configuring for PrivateInternetAccess#
-Go to /etc/</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /etc/
-</code></pre></div></div>
-
-<p>Add the correct repo, which you are probably missing:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget
- http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-rpm -Uvh rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-(U - Update, v - verbose, h - has)
-</code></pre></div></div>
-<p>Install OpenVPN from the new repo</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install openvpn
-</code></pre></div></div>
-
-<p>Download correct preconfigured files from www.privateinternetaccess.com</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
-</code></pre></div></div>
-
-<p>Make a new directory, move the downloaded file into the directory, unzip the contents, and go into the directory</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv openvpn.zip ./openvpn
-unzip openvpn.zip
-cd openvpn
-</code></pre></div></div>
-
-<p>Test to see if everything is working properly. Be prepared to enter your self-generated password and username (and not the one provided for you).</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openvpn Canada.ovpn
-	OR
-openvpn *.ovpn (* - any other location from the list)
-</code></pre></div></div>
-
-<p><code class="highlighter-rouge">ctrl+c</code> to terminate the connection if everything is successful.</p>
-
-<hr />
-
-<h3 id="optional">Optional:</h3>
-
-<p>In order to run openvpn in the background, a useful utility is available.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install screen
-</code></pre></div></div>
-
-<p>Then, when you would want to initialize an instance, simple do</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen openvpn *.ovpn
-</code></pre></div></div>
-
-<p>and, now, the instance of openvpn can be run within the screen. Thus, we can safeuly press <code class="highlighter-rouge">ctrl + a + d</code> and the screen will disappear but the session will continue to be open. <strong>Super Useful</strong>. Once you are ready to terminate the session, you can simply close your machine, or</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -ls
-</code></pre></div></div>
-
-<p>This command will open all of the screen’s running instances. Simply find the one that is dedicated to the openvpn and then open the session.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -x &lt;name&gt;
-</code></pre></div></div>
-
-<p>Once inside, simple close it and exit the screen instance.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl + c
-exit
-	OR
-ctrl + c
-ctrl + d
-</code></pre></div></div>
-
-<p>Aside: If you want, you can start the screen with a custom name. When you do this, it is much easier to find your specific open session if you have multiple screen sessions open. Simply do:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -S &lt;name&gt;
-</code></pre></div></div>
-
-<p>And yes, I did run all of this as root. If you are not root, place <code class="highlighter-rouge">sudo</code> in front of the commands that you have no direct access to and enter your password.</p>
-
-<p>(Side note, system information: <code class="highlighter-rouge">uname-a</code>)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
-#1 SMP Tue Mar 25 19:59:55 UTC 2014
-x86_64
-GNU/Linux
-</code></pre></div></div>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
-  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
-</p>
-
-      </div>
-
-      <p class="extra-info">
-        
-          Tags: CentOS 6.5, how-to, beginner, guide, PIA, PrivateInternetAccess, VPN &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/configuring-PIA" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-      </p>
-    </article>
-  
-
-  <!-- Pagination links -->
-  <div class="pagination">
-    
-      <a href="/blog/page2/" class="previous">Newer</a>
-    
-    /
-    
-      <span class="next ">Older</span>
-    
   </div>
 
-</div>
+  <p class="extra-info">
+    
+      Tags: software development, software engineering, productivity, growth, resources &nbsp; | &nbsp;
+    
+    <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/Another-CoreData-day" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+  </p>
+</article>
 
       </div>
     </main>
