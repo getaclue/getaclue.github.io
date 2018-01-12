@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-01-07T20:37:16-05:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Another CoreData Day</title><link href="https://getaclue.github.io/blog/Another-CoreData-day" rel="alternate" type="text/html" title="Another CoreData Day" /><published>2018-01-07T00:00:00-05:00</published><updated>2018-01-07T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/Another-CoreData-day</id><content type="html" xml:base="https://getaclue.github.io/blog/Another-CoreData-day">&lt;p&gt;So, today, I decided to implement the Sharing extension. Oh boy, did I not expect to lose all of the data but it was necessary. It turns out that if you want to, at a time in the future, to add things to your app, well then you may be in for some effort.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-01-12T11:53:27-05:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Ready to Submit</title><link href="https://getaclue.github.io/blog/ready-to-submit" rel="alternate" type="text/html" title="Ready to Submit" /><published>2018-01-12T00:00:00-05:00</published><updated>2018-01-12T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/ready-to-submit</id><content type="html" xml:base="https://getaclue.github.io/blog/ready-to-submit">&lt;p&gt;Happy Friday 👋&lt;/p&gt;
+
+&lt;p&gt;It is so easy to let this writing to get out of hand even though I promised to write more regularly. I’ve been chugging along with a lot of things since last update.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I am still have trouble understanding how to use TestFlight&lt;/em&gt;. I have done quite a bit of work over the past few days and I wanted to release it to the beta testers. However, I am currently stuck in this state:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/7jVbKS/Vve27WMfts+&quot; alt=&quot;Stuck on these TestFlights&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/Ade4Dd/XZMSnuzKCa+&quot; alt=&quot;TestFlight Stuck on Ready to Submit Screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Basically I am stuck just like this person that wrote &lt;a href=&quot;https://stackoverflow.com/q/44716499&quot;&gt;TestFlight build on iTunes Connect stuck at ‘Ready to Submit’&lt;/a&gt;. I’ve contacted some fellow iOS developers and am now doing what they suggested.&lt;/p&gt;
+
+&lt;p&gt;What did I learn from them?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;every new application version gets a review that you need to go through (which is exactly what is happening now from what I understand). I like &lt;a href=&quot;https://semver.org&quot;&gt;semver&lt;/a&gt;, so technically this would be a &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.2&lt;/code&gt; version. It has been primarily bug fixes and UI changes.&lt;/li&gt;
+  &lt;li&gt;every new build, under a reviewed version, does not have to go through this process (apparently). So, this is what I am currently trying:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/8G17N9/9OFVGZcfuV+&quot; alt=&quot;Trying to make the app live&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While, I am waiting for that to go through, I want to debug and figure out what is wrong with &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: After writing the original text, the solution did not work. Not sure what I am missing but here is what I’ve done:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/oztmDY/7rYtV1OYGc+&quot; alt=&quot;TestFlight process&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, it also seems that information from bullet point #2 is funky. I changed the app back to &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.1&lt;/code&gt; and changed build to &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt; and, as you can see, the app is still in the “Ready for Submit” state.&lt;/p&gt;
+
+&lt;p&gt;I’m going to continue with this and, in mean time, I think I am just going to contact Apple Support.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;PS. Yes, I did consult &lt;a href=&quot;https://help.apple.com/itunes-connect/developer/#/dev78d0a8f87&quot;&gt;View build status and metrics page&lt;/a&gt; and &lt;a href=&quot;https://help.apple.com/itunes-connect/developer/#/dev3d6869aff&quot;&gt;app build statuses page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wish Apple would provide more information on this “Ready to Submit” state because this does not really help me at this point in the process 🤕 Why? Because by clicking on this link:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/Dy4n8t/zHHV2KGmdt+&quot; alt=&quot;Click on this link&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Will bring me to:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/i0YRH9/sAGc3S3smm+&quot; alt=&quot;Ready to Submit definition from Apple&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Which doesn’t really answer how to submit 🤕&lt;/p&gt;
+
+&lt;p&gt;So, Daily Vibes is stuck somewhere here:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/W9e1HV/LS8BkWOfsq+&quot; alt=&quot;Daily Vibes is stuck in one of these phases&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cheers,
+Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="TestFlight" /><category term="resources" /><summary type="html">Happy Friday 👋</summary></entry><entry><title type="html">Getting familiar with iOS testing</title><link href="https://getaclue.github.io/blog/getting-familiar-w-testing" rel="alternate" type="text/html" title="Getting familiar with iOS testing" /><published>2018-01-11T00:00:00-05:00</published><updated>2018-01-11T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/getting-familiar-w-testing</id><content type="html" xml:base="https://getaclue.github.io/blog/getting-familiar-w-testing">&lt;p&gt;&lt;img src=&quot;https://d.pr/i/YgH6dm/ayxzukbu17+&quot; alt=&quot;Testing image from https://pixabay.com/en/software-testing-service-762486/&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will be a quick post, mainly a reference to some resource I’ve been using to get familiar with iOS testing and refactoring.&lt;/p&gt;
+
+&lt;p&gt;Refactoring is fun because I get to exercise my software engineering muscles. This is one of the reasons that I like Swift so much. I get to apply my software engineering knowledge on my own projects 👏&lt;/p&gt;
+
+&lt;p&gt;Testing on the whole is not difficult in iOS. However, when you add things like CoreData then it becomes a bit more chaotic to filter through.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@Dougly/unit-tests-and-test-driven-development-xcode-8-and-swift-3-f6d43ecd4bd4&quot;&gt;Unit Tests and Test Driven Development (Xcode 8 and Swift 3)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://academy.realm.io/posts/andy-matuschak-refactor-mega-controller/&quot;&gt;Let’s Play: Refactor the Mega Controller!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://computingstories.com/swift%20stories/core-data-wrap-class-mocking.html&quot;&gt;Core Data Wrapper Class, Mocking and Unit Testing in Swift 3!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.natashatherobot.com/updated-protocol-oriented-mvvm-in-swift-2-0/&quot;&gt;Updated: Protocol-Oriented MVVM in Swift 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b&quot;&gt;How not to get desperate with MVVM implementation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.natashatherobot.com/unit-testing-swift-dependency-injection/&quot;&gt;Unit Testing in Swift: Dependency Injection
+&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/flawless-app-stories/applying-unit-tests-to-mvvm-with-swift-ba5a79df8a18&quot;&gt;Applying Unit Tests to MVVM with Swift&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/cocoaacademymag/unit-testing-uitableview-2387f3a42b4f&quot;&gt;Unit Testing — UITableView&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.swiftbysundell.com/posts/different-flavors-of-dependency-injection-in-swift&quot;&gt;Different flavors of dependency injection in Swift&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/flawless-app-stories/cracking-the-tests-for-core-data-15ef893a3fee&quot;&gt;Cracking the Tests for Core Data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nshipster.com/xctestcase/&quot;&gt;XCTest​Case /
+XCTest​Expectation /
+measure​Block()&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/iOSthemes/comments/4zbhnk/question_anyone_know_the_hex_for_the_new_twitter/&quot;&gt;iOS Theme Colours&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cheers,
+Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="software quality assurance" /><category term="productivity" /><category term="growth" /><category term="testing" /><category term="resources" /><summary type="html"></summary></entry><entry><title type="html">Another CoreData Day</title><link href="https://getaclue.github.io/blog/Another-CoreData-day" rel="alternate" type="text/html" title="Another CoreData Day" /><published>2018-01-07T00:00:00-05:00</published><updated>2018-01-07T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/Another-CoreData-day</id><content type="html" xml:base="https://getaclue.github.io/blog/Another-CoreData-day">&lt;p&gt;So, today, I decided to implement the Sharing extension. Oh boy, did I not expect to lose all of the data but it was necessary. It turns out that if you want to, at a time in the future, to add things to your app, well then you may be in for some effort.&lt;/p&gt;
 
 &lt;p&gt;The best resource, hands down was this = &lt;a href=&quot;https://medium.com/@ales.musto/making-a-share-extension-that-accepts-text-and-urls-in-combination-with-coredata-swift-3-a0139c0f9800&quot;&gt;Making a Share Extension that accepts text and URLs in combination with CoreData Swift 3&lt;/a&gt;. If you don’t want to or don’t have time to learn about Core Data then you can just jump to that website. Follow it. And it will just work.&lt;/p&gt;
 
@@ -304,156 +380,4 @@ http://www.rationallyparanoid.com/articles/wget.html
 #1 SMP Tue Mar 25 19:59:55 UTC 2014
 x86_64
 GNU/Linux
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 6.5" /><category term="how-to" /><category term="beginner" /><category term="guide" /><category term="wget" /><summary type="html">Using wget in CentOS 6.5</summary></entry><entry><title type="html">Installing XChat CentOS 6.5 for Beginners</title><link href="https://getaclue.github.io/blog/installing-xChat" rel="alternate" type="text/html" title="Installing XChat CentOS 6.5 for Beginners" /><published>2014-03-16T00:00:00-04:00</published><updated>2014-03-16T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/installing-xChat</id><content type="html" xml:base="https://getaclue.github.io/blog/installing-xChat">&lt;h1 id=&quot;installing-xchat-for-total-beginners&quot;&gt;Installing XChat for Total Beginners&lt;/h1&gt;
-
-&lt;p&gt;Make a dir to install it in and go there&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir /some/path/
-cd /some/path/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Download the sourcecode (link used in March 2014) and place it in the newely created directory in the step above.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2
-http://xchat.org/files/source/2.8/xchat-2.8.8.tar.xz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Unpack the archive:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar -xzvf xchat-x.x.x.tar.xz
-tar -xjvf xchat-x.x.x.tar.bz2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Go to the newely unpacked directory:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd xchat-2.8.8
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Run the configuration script:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Compile the program:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Finally, install the program:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-make install
-&lt;/code&gt;
-***&lt;/p&gt;
-
-&lt;h2 id=&quot;problems-ive-encountered-while-setting-up&quot;&gt;Problems I’ve encountered while setting up&lt;/h2&gt;
-
-&lt;p&gt;While trying to compile the source code, I’ve gotten the following error:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;configure: error: no acceptable C compiler found in $PATH
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The solution? We are missing the gcc, which can be installed via the development tools kit. In my case, I didn’t solely look for the gcc but I installed the entire pack because I knew I would be using the tools eventually.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum groupinstall &quot;Development tools&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Alternatively, this same command can be ran on Debian Base OS:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install build-essential
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And yes, I did run all of this as root. If you are not root, place &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; in front of the commands that you have no direct access to and enter your password.&lt;/p&gt;
-
-&lt;p&gt;(Side note, system information: &lt;code class=&quot;highlighter-rouge&quot;&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
-#1 SMP Tue Mar 25 19:59:55 UTC 2014
-x86_64
-GNU/Linux
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 6.5" /><category term="how-to" /><category term="beginner" /><category term="guide" /><category term="XChat" /><summary type="html">Installing XChat for Total Beginners</summary></entry><entry><title type="html">Configuring PrivateInternetAccess VPN</title><link href="https://getaclue.github.io/blog/configuring-PIA" rel="alternate" type="text/html" title="Configuring PrivateInternetAccess VPN" /><published>2014-03-16T00:00:00-04:00</published><updated>2014-03-16T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/configuring-PIA</id><content type="html" xml:base="https://getaclue.github.io/blog/configuring-PIA">&lt;p&gt;#Installing OpenVPN and Configuring for PrivateInternetAccess#
-Go to /etc/&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /etc/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Add the correct repo, which you are probably missing:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget
- http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-rpm -Uvh rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-(U - Update, v - verbose, h - has)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Install OpenVPN from the new repo&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install openvpn
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Download correct preconfigured files from www.privateinternetaccess.com&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Make a new directory, move the downloaded file into the directory, unzip the contents, and go into the directory&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv openvpn.zip ./openvpn
-unzip openvpn.zip
-cd openvpn
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Test to see if everything is working properly. Be prepared to enter your self-generated password and username (and not the one provided for you).&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openvpn Canada.ovpn
-	OR
-openvpn *.ovpn (* - any other location from the list)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+c&lt;/code&gt; to terminate the connection if everything is successful.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;optional&quot;&gt;Optional:&lt;/h3&gt;
-
-&lt;p&gt;In order to run openvpn in the background, a useful utility is available.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install screen
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then, when you would want to initialize an instance, simple do&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen openvpn *.ovpn
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;and, now, the instance of openvpn can be run within the screen. Thus, we can safeuly press &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + a + d&lt;/code&gt; and the screen will disappear but the session will continue to be open. &lt;strong&gt;Super Useful&lt;/strong&gt;. Once you are ready to terminate the session, you can simply close your machine, or&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen -ls
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This command will open all of the screen’s running instances. Simply find the one that is dedicated to the openvpn and then open the session.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen -x &amp;lt;name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Once inside, simple close it and exit the screen instance.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl + c
-exit
-	OR
-ctrl + c
-ctrl + d
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Aside: If you want, you can start the screen with a custom name. When you do this, it is much easier to find your specific open session if you have multiple screen sessions open. Simply do:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen -S &amp;lt;name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And yes, I did run all of this as root. If you are not root, place &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; in front of the commands that you have no direct access to and enter your password.&lt;/p&gt;
-
-&lt;p&gt;(Side note, system information: &lt;code class=&quot;highlighter-rouge&quot;&gt;uname-a&lt;/code&gt;)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
-#1 SMP Tue Mar 25 19:59:55 UTC 2014
-x86_64
-GNU/Linux
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 6.5" /><category term="how-to" /><category term="beginner" /><category term="guide" /><category term="PIA" /><category term="PrivateInternetAccess" /><category term="VPN" /><summary type="html">#Installing OpenVPN and Configuring for PrivateInternetAccess# Go to /etc/</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 6.5" /><category term="how-to" /><category term="beginner" /><category term="guide" /><category term="wget" /><summary type="html">Using wget in CentOS 6.5</summary></entry></feed>
