@@ -15,6 +15,7 @@ status: publish
 type: post
 published: true
 meta: {}
+image: "https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E"
 ---
 ![How to call JS debugger from Xcode?](https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E)
 
