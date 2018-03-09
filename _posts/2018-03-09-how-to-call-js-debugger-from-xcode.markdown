@@ -18,7 +18,7 @@ meta: {}
 image: "https://cdn-pro.dprcdn.net/files/acc_603419/2PWtsR"
 excerpt: "In a previous release of ⭐️ Daily Vibes for iOS, 1.3.0, I added a natural language date parser."
 datePublished: 2018-03-09 15:00:00
-dateModified: 2018-03-09 15:16:07
+dateModified: 2018-03-09 15:35:18
 ---
 ![How to call JS debugger from Xcode?](https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E)
 
@@ -48,7 +48,7 @@ One of the issues was narrowed down to be in [this area of the code](https://git
 
 If you notice, it is just javascript that is being executed. I know javascript so it should be no problem to debug, right?
 
-Well, for starters, how do you debug javascript that is executed from Xcode? How does Xcode run javascript? This leads you down the rabbit hole to find that Apple has nicely introduced [JavaScript Core](https://developer.apple.com/documentation/javascriptcore) internally ([more info](nshipster.com/javascriptcore/)).
+Well, for starters, how do you debug javascript that is executed from Xcode? How does Xcode run javascript? This leads you down the rabbit hole to find that Apple has nicely introduced [JavaScript Core](https://developer.apple.com/documentation/javascriptcore) internally ([more info](http://nshipster.com/javascriptcore/)).
 
 ## So...the tl;dr
 

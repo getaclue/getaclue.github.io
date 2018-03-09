@@ -7,9 +7,8 @@ layout: default
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time> &nbsp; | &nbsp;
-      {% include fork.html %}
+        ⏰ {{ page.date | date: date_format }}
+      </time> &nbsp; | 📝by <a href="/" rel="author">Alex Kluew</a> | &nbsp; {% include fork.html %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
