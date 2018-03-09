@@ -12,12 +12,16 @@ status: publish
 type: post
 published: true
 meta: {}
+image: https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb
+excerpt: "I wanted to look back on the amount of work that done in the past two months (January 2018 and February 2018) in iOS indie mobile app development"
+datePublished: 2018-02-28 15:00:00
+dateModified: 2018-03-09 15:38:14
 ---
 ## Hi friends,
 
 Can't believe how quickly January and February came and went. I hope you've had a productive start to the year.
 
-![Calendar image from https://pixabay.com/en/timeline-planner-success-achieve-3168323/](https://d.pr/i/S7arGb+)
+![Calendar image from https://pixabay.com/en/timeline-planner-success-achieve-3168323/](https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb)
 
 I wanted to look back on the amount of work that done in the past two months
 
