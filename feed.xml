@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-24T17:28:06-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-24T19:03:06-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)&lt;/p&gt;
 
@@ -28,18 +28,19 @@
 
 &lt;p&gt;&lt;img src=&quot;https://d.pr/i/c280xV+&quot; alt=&quot;Xcode Instruments&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You can open up Instruments like this:&lt;/p&gt;
+&lt;p&gt;You can launch Instruments like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://d.pr/i/QiJqRR+&quot; alt=&quot;Opening Xcode instruments open&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Or like this:
-&lt;img src=&quot;https://d.pr/i/PtBZgx+&quot; alt=&quot;Opening Xcode Instruments&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Or like this:&lt;/p&gt;
 
-&lt;p&gt;(I didn’t want to leave you waiting while my slow computer takes the time to open up… but you get the idea…)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/PtBZgx+&quot; alt=&quot;Opening Xcode Instruments&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(I didn’t want to leave you waiting while my slow computer takes its time to compile and open up… but you get the idea)&lt;/p&gt;
 
 &lt;p&gt;What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say &lt;em&gt;on&lt;/em&gt; your application.&lt;/p&gt;
 
-&lt;p&gt;Out of all of the options available, I’ve only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.&lt;/p&gt;
+&lt;p&gt;Out of all of the available options, I’ve only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.&lt;/p&gt;
 
 &lt;p&gt;Activity Monitor and Time Profiler are in blue. These blue thingys are used to monitor CPU stuffs.&lt;/p&gt;
 
@@ -47,7 +48,7 @@
 
 &lt;p&gt;You might be wondering to yourself… all of these thingsys are cool sounding, so what? What do I do with them? Well the cool thing about these thingys is that you can just JUMP in and you will figure things out as you go. It is that easy.&lt;/p&gt;
 
-&lt;p&gt;I suggest you play with the other tools available but I am going to focus on the Time Profiler for the rest of the article. At this point in the app, I found it to be the most useful for me.&lt;/p&gt;
+&lt;p&gt;I suggest that you play with the other tools available. I am going to focus on the Time Profiler for the rest of this article. At this point in the learning, I found it to be the most useful for me.&lt;/p&gt;
 
 &lt;p&gt;Time Profiler - I’ve been using this for…profiling… time? 🤷‍ Basically, I open it up and it looks like this:&lt;/p&gt;
 
@@ -61,21 +62,21 @@
 
 &lt;p&gt;Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment… Time Profiler &lt;em&gt;records&lt;/em&gt; what it sees your app is doing during a specific time interval. Makes sense?&lt;/p&gt;
 
-&lt;p&gt;And if you have ever used any time of software that has a timeline, then you are already familiar with the concept.&lt;/p&gt;
+&lt;p&gt;And if you have ever used software that has some kind of manipulation of a timeline, then you will be just fine.&lt;/p&gt;
 
 &lt;p&gt;So this is a &lt;em&gt;snapshot&lt;/em&gt; of how your app behaves, or its environment:
 &lt;img src=&quot;https://d.pr/i/GPnnjB+&quot; alt=&quot;Time Profiler Sample in Xcode&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;and it gets recorded over time:
+&lt;p&gt;time profiler records many such samples at a regular interval over time:
 &lt;img src=&quot;https://d.pr/i/cEMzNa+&quot; alt=&quot;Time Profiler time line in Xcode&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;until you press the stop button:
+&lt;p&gt;until you press the stop button ofcourse:
 &lt;img src=&quot;https://d.pr/i/A5InKH+&quot; alt=&quot;Time Profiler from start to stop in Xcode&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;now-what--1&quot;&gt;Now what? 🤔&lt;/h2&gt;
-&lt;p&gt;Now you get to play a detective 🕵️‍ … for real… how cool is that?&lt;/p&gt;
+&lt;p&gt;Now you get to take off your developer hat 🎩 and play a detective 🕵️‍ … for real… how cool is that?&lt;/p&gt;
 
-&lt;p&gt;Since we are working with a Timing Profiler, we are interesting in timing. You can open up the tree that the tool made for you and go exploring. See which areas or which methods take a long time. Simply click and dive in:
+&lt;p&gt;Since we are exploring the Timing Profiler, we are interesting in timing. You can open up (expand) the tree, that Xcode conveniently made for you, and go exploring 🗺. See which areas or which methods in your code take a long time. It very simple. Just click expand ⏬ and dive 🏊‍ in:
 &lt;img src=&quot;https://d.pr/i/KohUC7+&quot; alt=&quot;Start exploring Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;dont-know-where-to-start-try-this&quot;&gt;Don’t know where to start? Try this:&lt;/h2&gt;
@@ -97,26 +98,27 @@ You can really isolate the various time intervals, like so:&lt;/p&gt;
 &lt;p&gt;Oh, and… and… and you can SAVE this sampling and come back to it later:
 &lt;img src=&quot;https://d.pr/i/QP4X3Z+&quot; alt=&quot;Saving Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Here is an actual example of me diving deep into the tree. When you find something juicy, like this:
+&lt;p&gt;Here is an actual example of me diving deep into the tree 🌲. When you find something juicy, like this:
 &lt;img src=&quot;https://d.pr/i/G4H042+&quot; alt=&quot;Example of Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You can… double click on the method, and it will show you EXACTLY which lines of code are troubling:
+&lt;p&gt;You can… double click on the method, and it will show you EXACTLY which lines 👀 of code that may be troubling:
 &lt;img src=&quot;https://d.pr/i/IOa6qa+&quot; alt=&quot;Double clicking on a method in Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;There you have it friends. I’d like you to take away three things from this:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Xcode is pretty awesome&lt;/li&gt;
-  &lt;li&gt;Be a 🕵️‍ and give Instruments a try&lt;/li&gt;
-  &lt;li&gt;Be careful of premature optimization&lt;/li&gt;
+  &lt;li&gt;Xcode is pretty awesome 🔥&lt;/li&gt;
+  &lt;li&gt;Be a digital detective 🕵️‍ and give Instruments a try&lt;/li&gt;
+  &lt;li&gt;Be careful ❌ of premature optimization&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;If you liked this, please let me know. I like hearing feedback so I can improve.
 You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twitters&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Until next time,
-Alex&lt;/p&gt;
+&lt;p&gt;Until next time,&lt;/p&gt;
+
+&lt;p&gt;Alex&lt;/p&gt;
 
 &lt;p&gt;PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Don't know where to start? Try this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd" /></entry><entry><title type="html">How to call Javascript debugger from Xcode? Can you?</title><link href="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode" rel="alternate" type="text/html" title="How to call Javascript debugger from Xcode? Can you?" /><published>2018-03-09T00:00:00-05:00</published><updated>2018-03-09T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
 
