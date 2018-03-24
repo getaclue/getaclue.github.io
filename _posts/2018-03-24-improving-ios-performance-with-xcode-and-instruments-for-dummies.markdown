@@ -18,7 +18,7 @@ meta: {}
 image: "https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd"
 excerpt: "Don't know where to start? Try this"
 datePublished: 2018-03-24 16:54:31
-dateModified: 2018-03-24 17:27:41
+dateModified: 2018-03-24 19:02:20
 ---
 ![Image for the post](https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd)
 
@@ -48,18 +48,19 @@ When you open Instruments, it looks like this:
 
 ![Xcode Instruments](https://d.pr/i/c280xV+)
 
-You can open up Instruments like this:
+You can launch Instruments like this:
 
 ![Opening Xcode instruments open](https://d.pr/i/QiJqRR+)
 
 Or like this:
+
 ![Opening Xcode Instruments](https://d.pr/i/PtBZgx+)
 
-(I didn't want to leave you waiting while my slow computer takes the time to open up... but you get the idea...)
+(I didn't want to leave you waiting while my slow computer takes its time to compile and open up... but you get the idea)
 
 What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say *on* your application.
 
-Out of all of the options available, I've only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.
+Out of all of the available options, I've only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.
 
 Activity Monitor and Time Profiler are in blue. These blue thingys are used to monitor CPU stuffs.
 
@@ -67,7 +68,7 @@ Allocations and Leaks are in orange. These orange thingys are used to monitor me
 
 You might be wondering to yourself... all of these thingsys are cool sounding, so what? What do I do with them? Well the cool thing about these thingys is that you can just JUMP in and you will figure things out as you go. It is that easy.
 
-I suggest you play with the other tools available but I am going to focus on the Time Profiler for the rest of the article. At this point in the app, I found it to be the most useful for me.
+I suggest that you play with the other tools available. I am going to focus on the Time Profiler for the rest of this article. At this point in the learning, I found it to be the most useful for me.
 
 Time Profiler - I've been using this for...profiling... time? 🤷‍ Basically, I open it up and it looks like this:
 
@@ -81,21 +82,21 @@ You might be asking, now what? How about we hit that big Red Record button ⏺ ?
 
 Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment... Time Profiler *records* what it sees your app is doing during a specific time interval. Makes sense?
 
-And if you have ever used any time of software that has a timeline, then you are already familiar with the concept.
+And if you have ever used software that has some kind of manipulation of a timeline, then you will be just fine.
 
 So this is a *snapshot* of how your app behaves, or its environment:
 ![Time Profiler Sample in Xcode](https://d.pr/i/GPnnjB+)
 
-and it gets recorded over time:
+time profiler records many such samples at a regular interval over time:
 ![Time Profiler time line in Xcode](https://d.pr/i/cEMzNa+)
 
-until you press the stop button:
+until you press the stop button ofcourse:
 ![Time Profiler from start to stop in Xcode](https://d.pr/i/A5InKH+)
 
 ## Now what? 🤔
-Now you get to play a detective 🕵️‍ ... for real... how cool is that?
+Now you get to take off your developer hat 🎩 and play a detective 🕵️‍ ... for real... how cool is that?
 
-Since we are working with a Timing Profiler, we are interesting in timing. You can open up the tree that the tool made for you and go exploring. See which areas or which methods take a long time. Simply click and dive in:
+Since we are exploring the Timing Profiler, we are interesting in timing. You can open up (expand) the tree, that Xcode conveniently made for you, and go exploring 🗺. See which areas or which methods in your code take a long time. It very simple. Just click expand ⏬ and dive 🏊‍ in:
 ![Start exploring Time Profiler in Xcode](https://d.pr/i/KohUC7+)
 
 ## Don't know where to start? Try this:
@@ -115,23 +116,24 @@ As you can see, to filter you simple Click and Drag on the timeline... just like
 Oh, and... and... and you can SAVE this sampling and come back to it later:
 ![Saving Time Profiler in Xcode](https://d.pr/i/QP4X3Z+)
 
-Here is an actual example of me diving deep into the tree. When you find something juicy, like this:
+Here is an actual example of me diving deep into the tree 🌲. When you find something juicy, like this:
 ![Example of Time Profiler in Xcode](https://d.pr/i/G4H042+)
 
-You can... double click on the method, and it will show you EXACTLY which lines of code are troubling:
+You can... double click on the method, and it will show you EXACTLY which lines 👀 of code that may be troubling:
 ![Double clicking on a method in Time Profiler in Xcode](https://d.pr/i/IOa6qa+)
 
 ## Conclusion
 There you have it friends. I'd like you to take away three things from this:
 
-- Xcode is pretty awesome
-- Be a 🕵️‍ and give Instruments a try
-- Be careful of premature optimization
+- Xcode is pretty awesome 🔥
+- Be a digital detective 🕵️‍ and give Instruments a try
+- Be careful ❌ of premature optimization
 
 If you liked this, please let me know. I like hearing feedback so I can improve.
 You can find me on [twitters](https://twitter.com/getaclue_1).
 
 Until next time,
+
 Alex
 
 PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.
