@@ -6,6 +6,7 @@ categories:
 - swift
 - Software Development
 - iOS App Development
+- Mobile App Development
 tags:
 - software development
 - software engineering
@@ -17,7 +18,7 @@ meta: {}
 image: "https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd"
 excerpt: "Don't know where to start? Try this"
 datePublished: 2018-03-24 16:54:31
-dateModified: 2018-03-24 17:04:29
+dateModified: 2018-03-24 17:27:41
 ---
 ![Image for the post](https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd)
 
