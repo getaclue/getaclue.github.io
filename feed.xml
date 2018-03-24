@@ -1,10 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-24T17:00:02-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍♂️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-24T17:05:53-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)&lt;/p&gt;
 
 &lt;p&gt;Well, stress not my friend because Xcode got you covered ✅ and it will help you find your issues (or put you on the right track at least).&lt;/p&gt;
 
 &lt;p&gt;This is a second article that I am writing about an Integrated Development Environment (IDE). The more that I use Xcode, the more I like it 😎 Xcode is really, really awesome. Just give it a try and use it.&lt;/p&gt;
 
-&lt;h2 id=&quot;side-note-it-only-took-me-182-hours-to-get-to-the-instruments-panel&quot;&gt;Side note: it &lt;em&gt;only&lt;/em&gt; took me 182 hours to get to the Instruments panel.&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Side note: it &lt;em&gt;only&lt;/em&gt; took me 182 hours to get to the Instruments panel.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;I’m actually really surprised at the amount of tooling that is given to you in this wonderful IDE. My software engineering training gave me my introduction to IDEs via &lt;a href=&quot;https://www.eclipse.org/ide/&quot;&gt;Eclipse&lt;/a&gt; and &lt;a href=&quot;https://netbeans.org/&quot;&gt;NetBeans&lt;/a&gt;. I’ve spent years using those tools (and don’t get me wrong, they are powerful). But to be completely honest, to this day I will pick anything else but these two. They are ugly, clunky, and not intuitive 🌶&lt;/p&gt;
 
@@ -45,7 +49,7 @@
 
 &lt;p&gt;I suggest you play with the other tools available but I am going to focus on the Time Profiler for the rest of the article. At this point in the app, I found it to be the most useful for me.&lt;/p&gt;
 
-&lt;p&gt;Time Profiler - I’ve been using this for…profiling… time? 🤷‍♂️ Basically, I open it up and it looks like this:&lt;/p&gt;
+&lt;p&gt;Time Profiler - I’ve been using this for…profiling… time? 🤷‍ Basically, I open it up and it looks like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://d.pr/i/yRulLi+&quot; alt=&quot;Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
 
@@ -53,7 +57,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://d.pr/i/zElUrI+&quot; alt=&quot;Time Profiler after hitting record button in Xcode&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;now-what-&quot;&gt;Now what? �&lt;/h2&gt;
+&lt;h2 id=&quot;now-what-&quot;&gt;Now what? 🤔&lt;/h2&gt;
 
 &lt;p&gt;Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment… Time Profiler &lt;em&gt;records&lt;/em&gt; what it sees your app is doing during a specific time interval. Makes sense?&lt;/p&gt;
 
@@ -68,7 +72,7 @@
 &lt;p&gt;until you press the stop button:
 &lt;img src=&quot;https://d.pr/i/A5InKH+&quot; alt=&quot;Time Profiler from start to stop in Xcode&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;now-what--1&quot;&gt;Now what? �&lt;/h2&gt;
+&lt;h2 id=&quot;now-what--1&quot;&gt;Now what? 🤔&lt;/h2&gt;
 &lt;p&gt;Now you get to play a detective 🕵️‍♂️ … for real… how cool is that?&lt;/p&gt;
 
 &lt;p&gt;Since we are working with a Timing Profiler, we are interesting in timing. You can open up the tree that the tool made for you and go exploring. See which areas or which methods take a long time. Simply click and dive in:
@@ -102,9 +106,11 @@ You can really isolate the various time intervals, like so:&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;There you have it friends. I’d like you to take away three things from this:&lt;/p&gt;
 
-&lt;p&gt;1) Xcode is pretty awesome
-2) Be a 🕵️‍♂️ and give Instruments a try
-3) Be careful of premature optimization&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Xcode is pretty awesome&lt;/li&gt;
+  &lt;li&gt;Be a 🕵️‍ and give Instruments a try&lt;/li&gt;
+  &lt;li&gt;Be careful of premature optimization&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;If you liked this, please let me know. I like hearing feedback so I can improve.
 You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twitters&lt;/a&gt;.&lt;/p&gt;
