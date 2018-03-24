@@ -144,6 +144,151 @@
   
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline"><a href="/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">Improving iOS performance with Xcode and Instruments for dummies</a></h1>
+        <p class="post-meta">
+          <time datetime="2018-03-24T00:00:00-04:00" itemprop="datePublished">
+            
+            Mar 24, 2018
+          </time>
+          </p>
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        <p>Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍♂️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)</p>
+
+<p>Well, stress not my friend because Xcode got you covered ✅ and it will help you find your issues (or put you on the right track at least).</p>
+
+<p>This is a second article that I am writing about an Integrated Development Environment (IDE). The more that I use Xcode, the more I like it 😎 Xcode is really, really awesome. Just give it a try and use it.</p>
+
+<h2 id="side-note-it-only-took-me-182-hours-to-get-to-the-instruments-panel">Side note: it <em>only</em> took me 182 hours to get to the Instruments panel.</h2>
+
+<p>I’m actually really surprised at the amount of tooling that is given to you in this wonderful IDE. My software engineering training gave me my introduction to IDEs via <a href="https://www.eclipse.org/ide/">Eclipse</a> and <a href="https://netbeans.org/">NetBeans</a>. I’ve spent years using those tools (and don’t get me wrong, they are powerful). But to be completely honest, to this day I will pick anything else but these two. They are ugly, clunky, and not intuitive 🌶</p>
+
+<h2 id="why-did-i-type-that-paragraph-above">Why did I type that paragraph above?</h2>
+
+<p>Because if you have an aversion to IDEs and think that Xcode looks just like the other IDEs, then I am here to tell you that it really is not. Xcode <em>IS</em> a pleasure to use and I use it every day. (<em>PS</em>: If you are getting angry while reading this and saying <strong>!?Xcode sucks!?</strong> Don’t get so upset. I will admit, it is not perfect.)</p>
+
+<h2 id="instruments">Instruments</h2>
+
+<p>It is this powerful thingy, built on top of <a href="https://en.wikipedia.org/wiki/DTrace">DTrace</a>, that comes with Xcode. No need to install extra software. Just download Xcode once and you have everything you need. Don’t have internet connection or you don’t want to be connected? No worries, you can still DO your work.</p>
+
+<p>Oh yeah… I used <a href="https://www.youtube.com/watch?v=s_SOYcYBnGU">this wonderful youtube video</a> to get an introduction to Instruments. Apple ofcourse has their own documentation which you can get <a href="https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/index.html">here</a>.</p>
+
+<p>The following text is basically my brief overview of Instruments.</p>
+
+<p>When you open Instruments, it looks like this:</p>
+
+<p><img src="https://d.pr/i/c280xV+" alt="Xcode Instruments" /></p>
+
+<p>You can open up Instruments like this:</p>
+
+<p><img src="https://d.pr/i/QiJqRR+" alt="Opening Xcode instruments open" /></p>
+
+<p>Or like this:
+<img src="https://d.pr/i/PtBZgx+" alt="Opening Xcode Instruments" /></p>
+
+<p>(I didn’t want to leave you waiting while my slow computer takes the time to open up… but you get the idea…)</p>
+
+<p>What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say <em>on</em> your application.</p>
+
+<p>Out of all of the options available, I’ve only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.</p>
+
+<p>Activity Monitor and Time Profiler are in blue. These blue thingys are used to monitor CPU stuffs.</p>
+
+<p>Allocations and Leaks are in orange. These orange thingys are used to monitor memory stuff. (Guess what this other orange Zombies thingy looks at? Did you guess RAM stuffs? Cool right!!!)</p>
+
+<p>You might be wondering to yourself… all of these thingsys are cool sounding, so what? What do I do with them? Well the cool thing about these thingys is that you can just JUMP in and you will figure things out as you go. It is that easy.</p>
+
+<p>I suggest you play with the other tools available but I am going to focus on the Time Profiler for the rest of the article. At this point in the app, I found it to be the most useful for me.</p>
+
+<p>Time Profiler - I’ve been using this for…profiling… time? 🤷‍♂️ Basically, I open it up and it looks like this:</p>
+
+<p><img src="https://d.pr/i/yRulLi+" alt="Time Profiler in Xcode" /></p>
+
+<p>You might be asking, now what? How about we hit that big Red Record button ⏺ ? Yup, and it will look like this:</p>
+
+<p><img src="https://d.pr/i/zElUrI+" alt="Time Profiler after hitting record button in Xcode" /></p>
+
+<h2 id="now-what-">Now what? �</h2>
+
+<p>Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment… Time Profiler <em>records</em> what it sees your app is doing during a specific time interval. Makes sense?</p>
+
+<p>And if you have ever used any time of software that has a timeline, then you are already familiar with the concept.</p>
+
+<p>So this is a <em>snapshot</em> of how your app behaves, or its environment:
+<img src="https://d.pr/i/GPnnjB+" alt="Time Profiler Sample in Xcode" /></p>
+
+<p>and it gets recorded over time:
+<img src="https://d.pr/i/cEMzNa+" alt="Time Profiler time line in Xcode" /></p>
+
+<p>until you press the stop button:
+<img src="https://d.pr/i/A5InKH+" alt="Time Profiler from start to stop in Xcode" /></p>
+
+<h2 id="now-what--1">Now what? �</h2>
+<p>Now you get to play a detective 🕵️‍♂️ … for real… how cool is that?</p>
+
+<p>Since we are working with a Timing Profiler, we are interesting in timing. You can open up the tree that the tool made for you and go exploring. See which areas or which methods take a long time. Simply click and dive in:
+<img src="https://d.pr/i/KohUC7+" alt="Start exploring Time Profiler in Xcode" /></p>
+
+<h2 id="dont-know-where-to-start-try-this">Don’t know where to start? Try this:</h2>
+
+<ol>
+  <li>Click record</li>
+  <li>Play with you app as regular user (try various uses case)</li>
+  <li>Stop the recording</li>
+  <li>And then… you can filter specific time intervals!! How cool is that?!?!?!</li>
+</ol>
+
+<p>Here is an example of me recording as I create a new to-do in <a href="https://dailyvibes.ca/">dailyvibes</a> and then filtering various time intervals.
+You can really isolate the various time intervals, like so:</p>
+
+<p><img src="https://d.pr/i/MDyrNo+" alt="Example of using Time Profiler in Xcode" /></p>
+
+<p>As you can see, to filter you simple Click and Drag on the timeline… just like any other application with a timeline. It is just that simple. And, when you filter, if you notice, the tree changes. Thus you can really get into the nitty gritty details and find out your problems 🚧.</p>
+
+<p>Oh, and… and… and you can SAVE this sampling and come back to it later:
+<img src="https://d.pr/i/QP4X3Z+" alt="Saving Time Profiler in Xcode" /></p>
+
+<p>Here is an actual example of me diving deep into the tree. When you find something juicy, like this:
+<img src="https://d.pr/i/G4H042+" alt="Example of Time Profiler in Xcode" /></p>
+
+<p>You can… double click on the method, and it will show you EXACTLY which lines of code are troubling:
+<img src="https://d.pr/i/IOa6qa+" alt="Double clicking on a method in Time Profiler in Xcode" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>There you have it friends. I’d like you to take away three things from this:</p>
+
+<p>1) Xcode is pretty awesome
+2) Be a 🕵️‍♂️ and give Instruments a try
+3) Be careful of premature optimization</p>
+
+<p>If you liked this, please let me know. I like hearing feedback so I can improve.
+You can find me on <a href="https://twitter.com/getaclue_1">twitters</a>.</p>
+
+<p>Until next time,
+Alex</p>
+
+<p>PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.</p>
+
+
+        <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+      </div>
+
+      <p class="extra-info">
+        
+          Tags: software development, software engineering, tutorial &nbsp; | &nbsp;
+        
+        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+      </p>
+    </article>
+  
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
         <h1 class="post-title" itemprop="name headline"><a href="/blog/how-to-call-js-debugger-from-xcode">How to call Javascript debugger from Xcode? Can you?</a></h1>
         <p class="post-meta">
           <time datetime="2018-03-09T00:00:00-05:00" itemprop="datePublished">
@@ -522,64 +667,6 @@ Alex</p>
           Tags: software development, software engineering, productivity, growth, TestFlight, resources &nbsp; | &nbsp;
         
         <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/ready-to-submit" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-      </p>
-    </article>
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/getting-familiar-w-testing">Getting familiar with iOS testing</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-01-11T00:00:00-05:00" itemprop="datePublished">
-            
-            Jan 11, 2018
-          </time>
-          </p>
-      </header>
-
-      <div class="post-content" itemprop="articleBody">
-        <p><img src="https://d.pr/i/YgH6dm/ayxzukbu17+" alt="Testing image from https://pixabay.com/en/software-testing-service-762486/" /></p>
-
-<p>This will be a quick post, mainly a reference to some resource I’ve been using to get familiar with iOS testing and refactoring.</p>
-
-<p>Refactoring is fun because I get to exercise my software engineering muscles. This is one of the reasons that I like Swift so much. I get to apply my software engineering knowledge on my own projects 👏</p>
-
-<p>Testing on the whole is not difficult in iOS. However, when you add things like CoreData then it becomes a bit more chaotic to filter through.</p>
-
-<ul>
-  <li><a href="https://medium.com/@Dougly/unit-tests-and-test-driven-development-xcode-8-and-swift-3-f6d43ecd4bd4">Unit Tests and Test Driven Development (Xcode 8 and Swift 3)</a></li>
-  <li><a href="https://academy.realm.io/posts/andy-matuschak-refactor-mega-controller/">Let’s Play: Refactor the Mega Controller!</a></li>
-  <li><a href="http://computingstories.com/swift%20stories/core-data-wrap-class-mocking.html">Core Data Wrapper Class, Mocking and Unit Testing in Swift 3!</a></li>
-  <li><a href="https://www.natashatherobot.com/updated-protocol-oriented-mvvm-in-swift-2-0/">Updated: Protocol-Oriented MVVM in Swift 2.0</a></li>
-  <li><a href="https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b">How not to get desperate with MVVM implementation</a></li>
-  <li><a href="https://www.natashatherobot.com/unit-testing-swift-dependency-injection/">Unit Testing in Swift: Dependency Injection
-</a></li>
-  <li><a href="https://medium.com/flawless-app-stories/applying-unit-tests-to-mvvm-with-swift-ba5a79df8a18">Applying Unit Tests to MVVM with Swift</a></li>
-  <li><a href="https://medium.com/cocoaacademymag/unit-testing-uitableview-2387f3a42b4f">Unit Testing — UITableView</a></li>
-  <li><a href="https://www.swiftbysundell.com/posts/different-flavors-of-dependency-injection-in-swift">Different flavors of dependency injection in Swift</a></li>
-  <li><a href="https://medium.com/flawless-app-stories/cracking-the-tests-for-core-data-15ef893a3fee">Cracking the Tests for Core Data</a></li>
-  <li><a href="http://nshipster.com/xctestcase/">XCTest​Case /
-XCTest​Expectation /
-measure​Block()</a></li>
-  <li><a href="https://www.reddit.com/r/iOSthemes/comments/4zbhnk/question_anyone_know_the_hex_for_the_new_twitter/">iOS Theme Colours</a></li>
-</ul>
-
-<p>Cheers,
-Alex</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
-  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
-</p>
-
-      </div>
-
-      <p class="extra-info">
-        
-          Tags: software development, software engineering, software quality assurance, productivity, growth, testing, resources &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/getting-familiar-w-testing" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
       </p>

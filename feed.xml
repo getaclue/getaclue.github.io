@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-09T16:18:44-05:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">How to call Javascript debugger from Xcode? Can you?</title><link href="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode" rel="alternate" type="text/html" title="How to call Javascript debugger from Xcode? Can you?" /><published>2018-03-09T00:00:00-05:00</published><updated>2018-03-09T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-24T17:00:02-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍♂️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)&lt;/p&gt;
+
+&lt;p&gt;Well, stress not my friend because Xcode got you covered ✅ and it will help you find your issues (or put you on the right track at least).&lt;/p&gt;
+
+&lt;p&gt;This is a second article that I am writing about an Integrated Development Environment (IDE). The more that I use Xcode, the more I like it 😎 Xcode is really, really awesome. Just give it a try and use it.&lt;/p&gt;
+
+&lt;h2 id=&quot;side-note-it-only-took-me-182-hours-to-get-to-the-instruments-panel&quot;&gt;Side note: it &lt;em&gt;only&lt;/em&gt; took me 182 hours to get to the Instruments panel.&lt;/h2&gt;
+
+&lt;p&gt;I’m actually really surprised at the amount of tooling that is given to you in this wonderful IDE. My software engineering training gave me my introduction to IDEs via &lt;a href=&quot;https://www.eclipse.org/ide/&quot;&gt;Eclipse&lt;/a&gt; and &lt;a href=&quot;https://netbeans.org/&quot;&gt;NetBeans&lt;/a&gt;. I’ve spent years using those tools (and don’t get me wrong, they are powerful). But to be completely honest, to this day I will pick anything else but these two. They are ugly, clunky, and not intuitive 🌶&lt;/p&gt;
+
+&lt;h2 id=&quot;why-did-i-type-that-paragraph-above&quot;&gt;Why did I type that paragraph above?&lt;/h2&gt;
+
+&lt;p&gt;Because if you have an aversion to IDEs and think that Xcode looks just like the other IDEs, then I am here to tell you that it really is not. Xcode &lt;em&gt;IS&lt;/em&gt; a pleasure to use and I use it every day. (&lt;em&gt;PS&lt;/em&gt;: If you are getting angry while reading this and saying &lt;strong&gt;!?Xcode sucks!?&lt;/strong&gt; Don’t get so upset. I will admit, it is not perfect.)&lt;/p&gt;
+
+&lt;h2 id=&quot;instruments&quot;&gt;Instruments&lt;/h2&gt;
+
+&lt;p&gt;It is this powerful thingy, built on top of &lt;a href=&quot;https://en.wikipedia.org/wiki/DTrace&quot;&gt;DTrace&lt;/a&gt;, that comes with Xcode. No need to install extra software. Just download Xcode once and you have everything you need. Don’t have internet connection or you don’t want to be connected? No worries, you can still DO your work.&lt;/p&gt;
+
+&lt;p&gt;Oh yeah… I used &lt;a href=&quot;https://www.youtube.com/watch?v=s_SOYcYBnGU&quot;&gt;this wonderful youtube video&lt;/a&gt; to get an introduction to Instruments. Apple ofcourse has their own documentation which you can get &lt;a href=&quot;https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/index.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following text is basically my brief overview of Instruments.&lt;/p&gt;
+
+&lt;p&gt;When you open Instruments, it looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/c280xV+&quot; alt=&quot;Xcode Instruments&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can open up Instruments like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/QiJqRR+&quot; alt=&quot;Opening Xcode instruments open&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Or like this:
+&lt;img src=&quot;https://d.pr/i/PtBZgx+&quot; alt=&quot;Opening Xcode Instruments&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(I didn’t want to leave you waiting while my slow computer takes the time to open up… but you get the idea…)&lt;/p&gt;
+
+&lt;p&gt;What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say &lt;em&gt;on&lt;/em&gt; your application.&lt;/p&gt;
+
+&lt;p&gt;Out of all of the options available, I’ve only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.&lt;/p&gt;
+
+&lt;p&gt;Activity Monitor and Time Profiler are in blue. These blue thingys are used to monitor CPU stuffs.&lt;/p&gt;
+
+&lt;p&gt;Allocations and Leaks are in orange. These orange thingys are used to monitor memory stuff. (Guess what this other orange Zombies thingy looks at? Did you guess RAM stuffs? Cool right!!!)&lt;/p&gt;
+
+&lt;p&gt;You might be wondering to yourself… all of these thingsys are cool sounding, so what? What do I do with them? Well the cool thing about these thingys is that you can just JUMP in and you will figure things out as you go. It is that easy.&lt;/p&gt;
+
+&lt;p&gt;I suggest you play with the other tools available but I am going to focus on the Time Profiler for the rest of the article. At this point in the app, I found it to be the most useful for me.&lt;/p&gt;
+
+&lt;p&gt;Time Profiler - I’ve been using this for…profiling… time? 🤷‍♂️ Basically, I open it up and it looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/yRulLi+&quot; alt=&quot;Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You might be asking, now what? How about we hit that big Red Record button ⏺ ? Yup, and it will look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/zElUrI+&quot; alt=&quot;Time Profiler after hitting record button in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;now-what-&quot;&gt;Now what? �&lt;/h2&gt;
+
+&lt;p&gt;Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment… Time Profiler &lt;em&gt;records&lt;/em&gt; what it sees your app is doing during a specific time interval. Makes sense?&lt;/p&gt;
+
+&lt;p&gt;And if you have ever used any time of software that has a timeline, then you are already familiar with the concept.&lt;/p&gt;
+
+&lt;p&gt;So this is a &lt;em&gt;snapshot&lt;/em&gt; of how your app behaves, or its environment:
+&lt;img src=&quot;https://d.pr/i/GPnnjB+&quot; alt=&quot;Time Profiler Sample in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and it gets recorded over time:
+&lt;img src=&quot;https://d.pr/i/cEMzNa+&quot; alt=&quot;Time Profiler time line in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;until you press the stop button:
+&lt;img src=&quot;https://d.pr/i/A5InKH+&quot; alt=&quot;Time Profiler from start to stop in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;now-what--1&quot;&gt;Now what? �&lt;/h2&gt;
+&lt;p&gt;Now you get to play a detective 🕵️‍♂️ … for real… how cool is that?&lt;/p&gt;
+
+&lt;p&gt;Since we are working with a Timing Profiler, we are interesting in timing. You can open up the tree that the tool made for you and go exploring. See which areas or which methods take a long time. Simply click and dive in:
+&lt;img src=&quot;https://d.pr/i/KohUC7+&quot; alt=&quot;Start exploring Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-know-where-to-start-try-this&quot;&gt;Don’t know where to start? Try this:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click record&lt;/li&gt;
+  &lt;li&gt;Play with you app as regular user (try various uses case)&lt;/li&gt;
+  &lt;li&gt;Stop the recording&lt;/li&gt;
+  &lt;li&gt;And then… you can filter specific time intervals!! How cool is that?!?!?!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here is an example of me recording as I create a new to-do in &lt;a href=&quot;https://dailyvibes.ca/&quot;&gt;dailyvibes&lt;/a&gt; and then filtering various time intervals.
+You can really isolate the various time intervals, like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/MDyrNo+&quot; alt=&quot;Example of using Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, to filter you simple Click and Drag on the timeline… just like any other application with a timeline. It is just that simple. And, when you filter, if you notice, the tree changes. Thus you can really get into the nitty gritty details and find out your problems 🚧.&lt;/p&gt;
+
+&lt;p&gt;Oh, and… and… and you can SAVE this sampling and come back to it later:
+&lt;img src=&quot;https://d.pr/i/QP4X3Z+&quot; alt=&quot;Saving Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is an actual example of me diving deep into the tree. When you find something juicy, like this:
+&lt;img src=&quot;https://d.pr/i/G4H042+&quot; alt=&quot;Example of Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can… double click on the method, and it will show you EXACTLY which lines of code are troubling:
+&lt;img src=&quot;https://d.pr/i/IOa6qa+&quot; alt=&quot;Double clicking on a method in Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;There you have it friends. I’d like you to take away three things from this:&lt;/p&gt;
+
+&lt;p&gt;1) Xcode is pretty awesome
+2) Be a 🕵️‍♂️ and give Instruments a try
+3) Be careful of premature optimization&lt;/p&gt;
+
+&lt;p&gt;If you liked this, please let me know. I like hearing feedback so I can improve.
+You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twitters&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Until next time,
+Alex&lt;/p&gt;
+
+&lt;p&gt;PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Don't know where to start? Try this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd" /></entry><entry><title type="html">How to call Javascript debugger from Xcode? Can you?</title><link href="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode" rel="alternate" type="text/html" title="How to call Javascript debugger from Xcode? Can you?" /><published>2018-03-09T00:00:00-05:00</published><updated>2018-03-09T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;hi-friends&quot;&gt;Hi friends,&lt;/h2&gt;
 
@@ -513,44 +627,4 @@ http://nixtricks.wordpress.com/tag/aes-256-cbc/
 https://www.madboa.com/geek/openssl/
 http://www.cyberciti.biz/faq/bash-loop-over-file/
 http://tldp.org/LDP/abs/html/loops1.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 7" /><category term="openssl" /><category term="guide" /><summary type="html">I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies.</summary></entry><entry><title type="html">Installing Mono on CentOS 7</title><link href="https://getaclue.github.io/blog/Installing-Mono-on-CentOS-7" rel="alternate" type="text/html" title="Installing Mono on CentOS 7" /><published>2014-10-11T00:00:00-04:00</published><updated>2014-10-11T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/Installing-Mono-on-CentOS-7</id><content type="html" xml:base="https://getaclue.github.io/blog/Installing-Mono-on-CentOS-7">&lt;h1 id=&quot;obtain-necessary-gpg-keys&quot;&gt;Obtain necessary gpg keys&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir Mono
-cd Mono
-wget http://download.mono-project.com/repo/xamarin.gpg
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;import-gpg-key&quot;&gt;Import gpg key&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rpm --import xamarin.gpg
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;add-mono-package-repository&quot;&gt;Add Mono package repository&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;add-epel&quot;&gt;Add EPEL&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;update-everything&quot;&gt;Update everything&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;start-installing-mono&quot;&gt;Start installing Mono&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install mono-devel
-sudo yum install mono-complete
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;optional-test-your-mono-installation&quot;&gt;Optional: Test your Mono installation&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.mono-project.com/docs/getting-started/mono-basics/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;running-mono&quot;&gt;Running Mono&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/foo/bar/
-mono foo.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.mono-project.com/docs/getting-started/install/linux/
-http://www.mono-project.com/docs/getting-started/mono-basics/
-https://fedoraproject.org/wiki/EPEL/FAQ
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 7" /><category term="beginner" /><category term="guide" /><category term="mono" /><summary type="html">Obtain necessary gpg keys mkdir Mono cd Mono wget http://download.mono-project.com/repo/xamarin.gpg</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 7" /><category term="openssl" /><category term="guide" /><summary type="html">I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies.</summary></entry></feed>
