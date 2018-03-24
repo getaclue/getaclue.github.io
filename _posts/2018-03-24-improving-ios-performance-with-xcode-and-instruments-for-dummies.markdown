@@ -92,7 +92,7 @@ until you press the stop button:
 ![Time Profiler from start to stop in Xcode](https://d.pr/i/A5InKH+)
 
 ## Now what? 🤔
-Now you get to play a detective 🕵️‍♂️ ... for real... how cool is that?
+Now you get to play a detective 🕵️‍ ... for real... how cool is that?
 
 Since we are working with a Timing Profiler, we are interesting in timing. You can open up the tree that the tool made for you and go exploring. See which areas or which methods take a long time. Simply click and dive in:
 ![Start exploring Time Profiler in Xcode](https://d.pr/i/KohUC7+)
