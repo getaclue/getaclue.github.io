@@ -17,16 +17,17 @@ meta: {}
 image: "https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd"
 excerpt: "Don't know where to start? Try this"
 datePublished: 2018-03-24 16:54:31
-dateModified: 2018-03-24 16:54:36
+dateModified: 2018-03-24 17:04:29
 ---
+![Image for the post](https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd)
 
-Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍♂️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)
+Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)
 
 Well, stress not my friend because Xcode got you covered ✅ and it will help you find your issues (or put you on the right track at least).
 
 This is a second article that I am writing about an Integrated Development Environment (IDE). The more that I use Xcode, the more I like it 😎 Xcode is really, really awesome. Just give it a try and use it.
 
-## Side note: it _only_ took me 182 hours to get to the Instruments panel.
+> Side note: it _only_ took me 182 hours to get to the Instruments panel.
 
 I'm actually really surprised at the amount of tooling that is given to you in this wonderful IDE. My software engineering training gave me my introduction to IDEs via [Eclipse](https://www.eclipse.org/ide/) and [NetBeans](https://netbeans.org/). I've spent years using those tools (and don't get me wrong, they are powerful). But to be completely honest, to this day I will pick anything else but these two. They are ugly, clunky, and not intuitive 🌶
 
@@ -67,7 +68,7 @@ You might be wondering to yourself... all of these thingsys are cool sounding, s
 
 I suggest you play with the other tools available but I am going to focus on the Time Profiler for the rest of the article. At this point in the app, I found it to be the most useful for me.
 
-Time Profiler - I've been using this for...profiling... time? 🤷‍♂️ Basically, I open it up and it looks like this:
+Time Profiler - I've been using this for...profiling... time? 🤷‍ Basically, I open it up and it looks like this:
 
 ![Time Profiler in Xcode](https://d.pr/i/yRulLi+)
 
@@ -75,7 +76,7 @@ You might be asking, now what? How about we hit that big Red Record button ⏺ ?
 
 ![Time Profiler after hitting record button in Xcode](https://d.pr/i/zElUrI+)
 
-## Now what? �
+## Now what? 🤔
 
 Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment... Time Profiler *records* what it sees your app is doing during a specific time interval. Makes sense?
 
@@ -90,7 +91,7 @@ and it gets recorded over time:
 until you press the stop button:
 ![Time Profiler from start to stop in Xcode](https://d.pr/i/A5InKH+)
 
-## Now what? �
+## Now what? 🤔
 Now you get to play a detective 🕵️‍♂️ ... for real... how cool is that?
 
 Since we are working with a Timing Profiler, we are interesting in timing. You can open up the tree that the tool made for you and go exploring. See which areas or which methods take a long time. Simply click and dive in:
@@ -122,9 +123,9 @@ You can... double click on the method, and it will show you EXACTLY which lines 
 ## Conclusion
 There you have it friends. I'd like you to take away three things from this:
 
-1) Xcode is pretty awesome
-2) Be a 🕵️‍♂️ and give Instruments a try
-3) Be careful of premature optimization
+- Xcode is pretty awesome
+- Be a 🕵️‍ and give Instruments a try
+- Be careful of premature optimization
 
 If you liked this, please let me know. I like hearing feedback so I can improve.
 You can find me on [twitters](https://twitter.com/getaclue_1).
