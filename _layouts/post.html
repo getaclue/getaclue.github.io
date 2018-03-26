@@ -9,6 +9,10 @@ layout: default
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         ⏰ {{ page.date | date: date_format }}
       </time> &nbsp; | 📝by <a href="/" rel="author">Alex Kluew</a> | &nbsp; {% include fork.html %}
+    </p>
+    <p class="post-meta">
+      {% include read_time.html %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
