@@ -18,7 +18,7 @@ meta: {}
 image: "https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd"
 excerpt: "Don't know where to start? Try this"
 datePublished: 2018-03-24 16:54:31
-dateModified: 2018-03-24 19:02:20
+dateModified: 2018-03-30 09:16:24
 ---
 ![Image for the post](https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd)
 
@@ -137,3 +137,5 @@ Until next time,
 Alex
 
 PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.
+
+Update: This article was also posted on [medium](https://medium.com/@getaclue_1/improving-ios-performance-with-xcode-and-instruments-for-dummies-b42a731b5240)
