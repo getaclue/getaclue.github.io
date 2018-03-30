@@ -219,7 +219,7 @@
 
 <ol>
   <li><code class="highlighter-rouge">import SimulatorStatusMagic</code></li>
-  <li>leverage snapshot’s <a href="https://docs.fastlane.tools/getting-started/ios/screenshots/#advanced-snapshot">launch arguments</a> that set <code class="highlighter-rouge">FASTLANE_SNAPSHOT</code> to true</li>
+  <li>leverage snapshot’s <a href="https://docs.fastlane.tools/getting-started/ios/screenshots/#advanced-snapshot">launch arguments</a> - <code class="highlighter-rouge">FASTLANE_SNAPSHOT</code> is set to true</li>
   <li>call in code as you wanted
     <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="no">NSUserDefaults</span><span class="p">.</span><span class="nf">standardUserDefaults</span><span class="p">().</span><span class="nf">boolForKey</span><span class="p">(</span><span class="s2">"FASTLANE_SNAPSHOT"</span><span class="p">)</span> <span class="p">{</span>
 <span class="o">...</span>
@@ -259,6 +259,8 @@
 <p>Thanks for reading,</p>
 
 <p>Alex</p>
+
+<p>Note: This article was also published on <a href="https://www.linkedin.com/pulse/how-make-perfect-ios-screenshots-clean-status-bar-2018-alex-kluew/">LinkedIn</a></p>
 
 
         <p style="margin-top: 30px" class="side-projects-note">
