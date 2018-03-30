@@ -20,7 +20,7 @@ meta: {}
 image: "https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy"
 excerpt: "Using fastlane.tools and SimulatorStatusMagic"
 datePublished: 2018-03-30 09:15:27
-dateModified: 2018-03-30 09:15:32
+dateModified: 2018-03-30 09:45:29
 ---
 ![Image for the post](https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy)
 
@@ -83,7 +83,7 @@ I really wanted to get this to work. However, as a result of [these](https://git
 ## So what is my curent solution?
 
 1. `import SimulatorStatusMagic`
-2. leverage snapshot's [launch arguments](https://docs.fastlane.tools/getting-started/ios/screenshots/#advanced-snapshot) that set `FASTLANE_SNAPSHOT` to true
+2. leverage snapshot's [launch arguments](https://docs.fastlane.tools/getting-started/ios/screenshots/#advanced-snapshot) - `FASTLANE_SNAPSHOT` is set to true
 3. call in code as you wanted
 ```rb
 if NSUserDefaults.standardUserDefaults().boolForKey("FASTLANE_SNAPSHOT") {
@@ -120,3 +120,5 @@ Otherwise, I hope that you enjoy this working solution. I was puzzled during my 
 Thanks for reading,
 
 Alex
+
+Note: This article was also published on [LinkedIn](https://www.linkedin.com/pulse/how-make-perfect-ios-screenshots-clean-status-bar-2018-alex-kluew/)
