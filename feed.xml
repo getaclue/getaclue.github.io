@@ -1,4 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-26T16:09:56-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-03-30T09:17:13-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">How to make perfect iOS screenshots with a clean status bar in 2018</title><link href="https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic" rel="alternate" type="text/html" title="How to make perfect iOS screenshots with a clean status bar in 2018" /><published>2018-03-29T00:00:00-04:00</published><updated>2018-03-29T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi friends,&lt;/p&gt;
+
+&lt;h2 id=&quot;before-we-begin&quot;&gt;Before we begin&lt;/h2&gt;
+&lt;p&gt;Before I begin, I am assuming you are already running your UITests using &lt;a href=&quot;https://fastlane.tools/&quot;&gt;fastlane.tools&lt;/a&gt;. If not, I would suggest that you get yourself familiarized &lt;a href=&quot;https://docs.fastlane.tools/getting-started/ios/screenshots/&quot;&gt;here&lt;/a&gt;. It saves you lots of time and it is especially indispensable for solo developers like myself.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-this-article-about&quot;&gt;What is this article about?&lt;/h2&gt;
+
+&lt;p&gt;This article is about improving your iOS marketing material: the screenshots.&lt;/p&gt;
+
+&lt;p&gt;So, we will go from this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/FuVdCb+&quot; alt=&quot;Starting point&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;to this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/7vkqhx+&quot; alt=&quot;Goal of this article&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We will be using &lt;a href=&quot;https://fastlane.tools/&quot;&gt;fastlane.tools&lt;/a&gt; in combination with &lt;a href=&quot;https://github.com/shinydevelopment/SimulatorStatusMagic&quot;&gt;SimulatorStatusMagic&lt;/a&gt; library. SimulatorStatusMagic is used to create the perfect status bar:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;9:41 AM is displayed for the time&lt;/li&gt;
+  &lt;li&gt;The battery is full and shows 100%&lt;/li&gt;
+  &lt;li&gt;On iPhone: The carrier text is removed, 5 bars of cellular signal and full WiFi bars are displayed.&lt;/li&gt;
+  &lt;li&gt;On iPad: The carrier text is set to “iPad” and full WiFi bars are displayed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The text above is taken verbatim from the library’s &lt;a href=&quot;https://github.com/shinydevelopment/SimulatorStatusMagic&quot;&gt;description&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-would-you-want-to-do-that&quot;&gt;Why would you want to do that?&lt;/h2&gt;
+&lt;p&gt;Well, such attention to detail adds extra value to your product by making your marketing material that much better than your competition. If you take a second to scan the Apple App store, the top apps provide some level of consistency in their marketing material. It follows, you should work towards achieving a similar level of consistency because it is not really not that hard. And if you set this up once, it will work.&lt;/p&gt;
+
+&lt;p&gt;So, I wanted to the improve the screenshots that I use to market &lt;a href=&quot;https://dailyvibes.ca/&quot;&gt;Daily Vibes&lt;/a&gt; in my next update.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-did-i-try&quot;&gt;What did I try?&lt;/h2&gt;
+&lt;p&gt;Installed SimulatorStatusMagic using cocoapods by adding the following line to my Podfile, like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pod&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'SimulatorStatusMagic'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:configurations&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Debug'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, I found the following &lt;a href=&quot;https://funkenstrahlen.de/blog/2016/04/21/perfekte-ios-screenshots/&quot;&gt;two&lt;/a&gt; &lt;a href=&quot;http://blog.scottlogic.com/2015/02/25/Using-Snapshot-with-Simulator-Status-Magic-to-generate-perfect-iOS-screenshots.html&quot;&gt;articles&lt;/a&gt; and they gave me good starting points. They were perfect for me because I wanted to use flags in my code like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/CVcNIW+&quot; alt=&quot;How I wanted to import the library&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This would allow me to only import SimulatorStatusMagic during fastlane.tools run.&lt;/p&gt;
+
+&lt;p&gt;And, I also envisioned using this one flag throughout other areas of the code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/M0QqzC+&quot; alt=&quot;What I envisioned&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So… putting it all together, I wanted something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/B53hS7+&quot; alt=&quot;How I wanted fastlane.tools and SimulatorStatusMagic to work&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;But, I could not get it to run exactly like that 😭&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I really wanted to get this to work. However, as a result of &lt;a href=&quot;https://github.com/fastlane/fastlane/search?q=custom_args&amp;amp;type=Issues&amp;amp;utf8=%E2%9C%93&quot;&gt;these&lt;/a&gt; &lt;a href=&quot;https://github.com/fastlane/fastlane/issues/4717&quot;&gt;issues&lt;/a&gt; you need some tweaking in 2018.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what-is-my-curent-solution&quot;&gt;So what is my curent solution?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;import SimulatorStatusMagic&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;leverage snapshot’s &lt;a href=&quot;https://docs.fastlane.tools/getting-started/ios/screenshots/#advanced-snapshot&quot;&gt;launch arguments&lt;/a&gt; that set &lt;code class=&quot;highlighter-rouge&quot;&gt;FASTLANE_SNAPSHOT&lt;/code&gt; to true&lt;/li&gt;
+  &lt;li&gt;call in code as you wanted
+    &lt;div class=&quot;language-rb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;NSUserDefaults&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;standardUserDefaults&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;boolForKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;FASTLANE_SNAPSHOT&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;SDStatusBarManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sharedInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;enableOverrides&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;setupScreenshotData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And the code above works … but I will be first to admit that it is not the perfect solution.&lt;/p&gt;
+
+&lt;p&gt;As it is currently written, you will need to play the commenting game:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;comment out import SimulatorStatusMagic and&lt;/li&gt;
+  &lt;li&gt;comment out SDStatusBarManager.sharedInstance().enableOverrides()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;during regular development and do the reverse during fastlane.tools run.&lt;/p&gt;
+
+&lt;p&gt;So… during regular development:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/ptOZ9a+&quot; alt=&quot;What you have to do during regular development&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and … during fastlane.tools run:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/DCDj9W+&quot; alt=&quot;What you have to do during fastlane.tools run&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As I am familiar with Ruby and Swift, and can get by with Objective-C, I tried to make it work how I wanted and find the source of confusion. I did look at the &lt;a href=&quot;https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html&quot;&gt;xcodebuild arguments&lt;/a&gt; and scanned fastlane.tools source &lt;a href=&quot;https://github.com/fastlane/fastlane/blob/master/snapshot/lib/snapshot/test_command_generator_base.rb#L34&quot;&gt;code up to here&lt;/a&gt;. But, since there is only so much time in the day and I work on this during my free time - I did not narrow down the problem.&lt;/p&gt;
+
+&lt;p&gt;So if you have a different solution that allows me to run the code how I wanted, please reach out to me via &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twitter&lt;/a&gt;. I will gladly adjust this article to incorporate those changes.&lt;/p&gt;
+
+&lt;p&gt;Otherwise, I hope that you enjoy this working solution. I was puzzled during my research in 2018 and I did not see a solution so hopefully this helps someone in upping their screenshot game.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading,&lt;/p&gt;
+
+&lt;p&gt;Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Using fastlane.tools and SimulatorStatusMagic</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy" /></entry><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)&lt;/p&gt;
 
@@ -120,7 +224,9 @@ You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twit
 
 &lt;p&gt;Alex&lt;/p&gt;
 
-&lt;p&gt;PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Don't know where to start? Try this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd" /></entry><entry><title type="html">How to call Javascript debugger from Xcode? Can you?</title><link href="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode" rel="alternate" type="text/html" title="How to call Javascript debugger from Xcode? Can you?" /><published>2018-03-09T00:00:00-05:00</published><updated>2018-03-09T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.&lt;/p&gt;
+
+&lt;p&gt;Update: This article was also posted on &lt;a href=&quot;https://medium.com/@getaclue_1/improving-ios-performance-with-xcode-and-instruments-for-dummies-b42a731b5240&quot;&gt;medium&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Don't know where to start? Try this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd" /></entry><entry><title type="html">How to call Javascript debugger from Xcode? Can you?</title><link href="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode" rel="alternate" type="text/html" title="How to call Javascript debugger from Xcode? Can you?" /><published>2018-03-09T00:00:00-05:00</published><updated>2018-03-09T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;hi-friends&quot;&gt;Hi friends,&lt;/h2&gt;
 
@@ -598,41 +704,4 @@ http://www.tonymacx86.com/basics/116220-do-i-need-graphicsenabler-injection-not.
 http://www.tonymacx86.com/graphics/131937-chimera-hd-graphics-bootflags-igpenabler-igplatformid-igpdeviceid.html
 http://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html
 http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.</summary></entry><entry><title type="html">A different archival strategy for pictures on CentOS 7</title><link href="https://getaclue.github.io/blog/A-different-archival-strategy-for-pictures" rel="alternate" type="text/html" title="A different archival strategy for pictures on CentOS 7" /><published>2014-10-15T00:00:00-04:00</published><updated>2014-10-15T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/A-different-archival-strategy-for-pictures</id><content type="html" xml:base="https://getaclue.github.io/blog/A-different-archival-strategy-for-pictures">&lt;p&gt;I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies.&lt;/p&gt;
-
-&lt;p&gt;This is an exercise in improving my backups. I have a habit of not downloading an entire archive because the size of an archive is typically large. To solve this problem, I want to mimick my entire library by preserving the file structure on a server. However, I wanted to have all of my files encrypted prior to having them uploaded.&lt;/p&gt;
-
-&lt;p&gt;I think that by sampling a few files out of an uploaded directory will allow me to speed up my recovery as compared to downloading the entire archive. Therefore, I needed a way to encrypt and decrypt my files.&lt;/p&gt;
-
-&lt;p&gt;Goals that I wanted to achieve for encryption:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;automated&lt;/li&gt;
-  &lt;li&gt;password had to be entered as an argument&lt;/li&gt;
-  &lt;li&gt;cipher had to be chosen as an argument&lt;/li&gt;
-  &lt;li&gt;after encryption all of the file names had to remain original&lt;/li&gt;
-  &lt;li&gt;all JPG files had to be encrypted individually&lt;/li&gt;
-  &lt;li&gt;every encrypted file had to be saved into /enc/ folder with the original file name&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Goals that I wanted to achieve for decryption:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;automated&lt;/li&gt;
-  &lt;li&gt;password and cipher entered as arguments&lt;/li&gt;
-  &lt;li&gt;all decrypted files had to maintain its original file name&lt;/li&gt;
-  &lt;li&gt;all JPG files decrypted individually&lt;/li&gt;
-  &lt;li&gt;every decrypted file had to be saved into /dec/ folder with the original file name&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Resources used:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://www.linux.com/learn/tutorials/284789-writing-a-simple-bash-script-
-http://www.linux-magazine.com/Online/Features/OpenSSL-with-Bash
-http://www.openssl.org/docs/apps/ciphers.html
-http://www.openssl.org/docs/apps/openssl.html
-http://nixtricks.wordpress.com/tag/aes-256-cbc/
-https://www.madboa.com/geek/openssl/
-http://www.cyberciti.biz/faq/bash-loop-over-file/
-http://tldp.org/LDP/abs/html/loops1.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="CentOS 7" /><category term="openssl" /><category term="guide" /><summary type="html">I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.</summary></entry></feed>
