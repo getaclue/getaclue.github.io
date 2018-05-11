@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-05-11T13:31:47-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">How to make perfect iOS screenshots with a clean status bar in 2018</title><link href="https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic" rel="alternate" type="text/html" title="How to make perfect iOS screenshots with a clean status bar in 2018" /><published>2018-03-29T00:00:00-04:00</published><updated>2018-03-29T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-05-11T14:08:25-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Would you let your mother use your software?</title><link href="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software" rel="alternate" type="text/html" title="Would you let your mother use your software?" /><published>2018-05-11T00:00:00-04:00</published><updated>2018-05-11T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software</id><content type="html" xml:base="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software">&lt;p&gt;Would you let your mother use your software?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/V8kt2K&quot; alt=&quot;Oh and I am not trying to single anyone out in this photo btw&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How about your father? sister? brother? wife? husband? fiancé? grandparents? neighbour?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And I can immediate hear some of you say:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;But Alex … you would say …&lt;/li&gt;
+  &lt;li&gt;… they would never &lt;em&gt;use&lt;/em&gt; my software… they are not my &lt;em&gt;target audience&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Or… I would teach them how to use my software properly.&lt;/li&gt;
+  &lt;li&gt;Or… I would never let them use it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To &lt;em&gt;you&lt;/em&gt;, my dear friend, I would ask that you play along with me in this exercise.&lt;/p&gt;
+
+&lt;p&gt;Suppose that the use of your software became mandatory. Suppose your friend or family member had no help or training from you. Suppose they were that user number #1110101 that you did not want to deal with. Take your pick.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Are you following along?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you are following, at what I am trying to say here, then I hope you can answer yes to my original question with some degree of confidence.&lt;/p&gt;
+
+&lt;p&gt;And no… you cannot use the typical engineering answer of “it depends”. Sorry, I want a binary response here: yes or no.&lt;/p&gt;
+
+&lt;p&gt;So, if your answer is a no then I hope that you might start thinking about these important issues. For example, you could start thinking about why are you leaning towards no? Perhaps, what can you do today to increase your level of confidence? Because you can.&lt;/p&gt;
+
+&lt;p&gt;Do you call yourself a scientist or an engineer? Do you have some variation of this title? Are you proud to call yourself that? Does it define who you are on a day-to-day basis? If so then you must think about ethics. It is your duty.&lt;/p&gt;
+
+&lt;p&gt;But maybe this belief is naive? Maybe this is not how it works in the real world? Maybe being associated with those things is not enough for such heavy consideration? Maybe we should leave ethics to someone else? We make software to solve some problem and that’s that.&lt;/p&gt;
+
+&lt;p&gt;Too often I see the answer that it is not applicable to me or my work. Too often I see ambivalence and lack of professional care. To me, this cannot be the winning formula moving forward.&lt;/p&gt;
+
+&lt;p&gt;If you’ve been following software development for the past few years, then you’ve noticed a certain trend by now. A trend of malpractice if you will. Followed by a trend of acceptance or standardization towards such malpractice. And if you dig a little deeper into these trends — they are often, but not always, connected to some lapse in ethics.&lt;/p&gt;
+
+&lt;p&gt;And if you’re of the mind that ethics and business [and software] cannot mix — I call for you to reconsider and have a conversation. I hope the pressure of shareholders and funding money does not blind your mission or your vision. Try to figure it out.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Just because you can do something, should you?&lt;/li&gt;
+  &lt;li&gt;If you should, then how can you do so while being ethical?&lt;/li&gt;
+  &lt;li&gt;If you cannot remain ethical, then the least you can do is own it. Don’t deny it. You are a professional, aren’t you?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Perhaps our approach to ethics needs a pivot?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Maybe ethics, as a field, is too broad of a topic? Too abstract and not applicable?&lt;/li&gt;
+  &lt;li&gt;Maybe, it is time to reframe our delivery on ethics?&lt;/li&gt;
+  &lt;li&gt;Time to step back and reduce the scope so that we can understand better?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So here is me — trying to do that for you. Next time you are working on software just give it a shot and ask yourself this relatable question:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;would you let your &lt;strong&gt;_&lt;/strong&gt; use your software?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ll let you fill in the blank. Don’t be lazy and do make it relatable.&lt;/p&gt;
+
+&lt;p&gt;Think about it because your answer should be yes with some level of confidence. It is 2018 and I am trying to take a gradual approach to this topic.&lt;/p&gt;
+
+&lt;p&gt;We are use a lot of software every single day.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;And guess what?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is only the beginning.&lt;/p&gt;
+
+&lt;p&gt;Just wait until the entire planet, and everyone on it, gets a reliable high speed connection. It is not if but when.&lt;/p&gt;
+
+&lt;p&gt;Thank you for reading.&lt;/p&gt;
+
+&lt;p&gt;Sincerely,&lt;/p&gt;
+
+&lt;p&gt;Alex&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;PS: I know that I am throwing generalities and I hope you can forgive me for the point that I am trying to illustrate.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;PPS: Sorry for the clickbait title — but how else am I going to get you to read about software ethics? Not trying to single out mothers or family members or friends. I am trying to make a point that you should make your work relatable. Think about your end user. There is an actual person sitting on the other side of your code. And guess what? This person is trusting you and your code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;This article was originally published at https://medium.com/@getaclue_1/would-you-let-your-mother-use-your-software-639fb6f0e3d3&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><summary type="html">Sorry for the clickbait title — but how else am I going to get you to read about software ethics?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/V8kt2K" /></entry><entry><title type="html">How to make perfect iOS screenshots with a clean status bar in 2018</title><link href="https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic" rel="alternate" type="text/html" title="How to make perfect iOS screenshots with a clean status bar in 2018" /><published>2018-03-29T00:00:00-04:00</published><updated>2018-03-29T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hi friends,&lt;/p&gt;
 
@@ -665,45 +754,4 @@ Alex&lt;/p&gt;</content><author><name></name></author><category term="software d
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/njPGUq&quot; alt=&quot;Or maybe I should just start an ICO? Image from https://pixabay.com/en/bitcoin-currency-blockchain-2018-3047129/&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;So, this is why I resurfaced my blog and re-added my previous entries. This is my commitment to documenting all of the things. I hope these will be more frequent. At least for 2018. I hope that you will enjoy this adventure because I will.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="goals" /><category term="productivity" /><category term="growth" /><summary type="html"></summary></entry><entry><title type="html">Installing Yosemite on E8400</title><link href="https://getaclue.github.io/blog/Installing-Yosemite-on-E8400" rel="alternate" type="text/html" title="Installing Yosemite on E8400" /><published>2014-12-21T00:00:00-05:00</published><updated>2014-12-21T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/Installing-Yosemite-on-E8400</id><content type="html" xml:base="https://getaclue.github.io/blog/Installing-Yosemite-on-E8400">&lt;p&gt;First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.&lt;/p&gt;
-
-&lt;p&gt;Computer Hardware:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ark.intel.com/products/33910/Intel-Core2-Duo-Processor-E8400-6M-Cache-3_00-GHz-1333-MHz-FSB&quot;&gt;Intel Core 2 Duo E8400&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;www.gigabyte.com/products/product-page.aspx?pid=2615&amp;amp;kw=GA-P31-DS3L&quot;&gt;Gigabyte GA-P31-DS3L Motherboard&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.newegg.ca/Product/Product.aspx?Item=N82E16814500187&quot;&gt;Nvidia GTS450 Graphics card&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;4 gb DDR2 Ram (667 MHz)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As you can see, my hardware is ‘old’ by today’s standards. However, I try to get the best bang for my buck without upgrading. I only upgrade my hardware when something fails. It has been working well so far. My computer is on 24/7/365 except for random reboots and power outages. I’ve had this PC on 24/7 since 2008. I’ve had it on 24/7/365 since 2010. I am on my second motherboard (lan failed on first one), second CPU cooler (by choice), and a 3rd GPU. This CPU is amazing.&lt;/p&gt;
-
-&lt;p&gt;I have not installed OS X after purchasing a new graphic card &lt;a href=&quot;http://www.newegg.ca/Product/Product.aspx?Item=N82E16814500187&quot;&gt;Nvidia GTS450&lt;/a&gt; earlier this year. I had an old 8600GTS before this graphic card. The prior graphic card had no problem with running OS X 10.6.&lt;/p&gt;
-
-&lt;p&gt;I decided to give the &lt;a href=&quot;http://tonymacx86.com/&quot;&gt;hackintosh project&lt;/a&gt; a shot. I installed &lt;a href=&quot;http://tonymacx86.blogspot.ca/2010/04/iboot-multibeast-install-mac-os-x-on.html&quot;&gt;OS X 10.6&lt;/a&gt; at first. However, I noticed that my GTS450 was not being recognized. I did perform several troubleshooting steps. After searching for a bit, I found out that GTS450 support improved as of 10.7. At this point, I was debating on whether or not to install 10.7 or to jump to 10.10.&lt;/p&gt;
-
-&lt;p&gt;I decided to jump to &lt;a href=&quot;http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html&quot;&gt;Yosemite 10.10&lt;/a&gt; after reading the tonymacx86 forums. A number of users reported successful bootings with Fermi graphic cards. I used my macbook to download the upgrade and make a &lt;a href=&quot;http://www.tonymacx86.com/downloads.php?do=file&amp;amp;id=249&quot;&gt;bootable USB&lt;/a&gt;. The system did not boot until I added the following flags:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GraphicsEnabler=Yes, PCIRootUID=1, npci=0x2000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can find out what each of these flags does &lt;a href=&quot;http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html&quot;&gt;here&lt;/a&gt;. After the inital install everything booted smoothly. I then ran &lt;a href=&quot;http://www.tonymacx86.com/downloads.php?do=file&amp;amp;id=252&quot;&gt;MultiBeast&lt;/a&gt;. I followed the specifications for my motherboard and installed the appropriate drives. Everything worked after a restart. However, I noticed that my system experienced random freezes.&lt;/p&gt;
-
-&lt;p&gt;There did not appear to be any pattern to the cause of the freeze. The freezing began by not responding to any key presses or mouse clicks. However, I was able to move the mouse across my dual screen setup. After some time, the mouse cursor finally disappeared from the display(s). The system then gives a black screen and instantaneously brings the Yosemite login screen. Upon entering my password and loading Yosemite, the bug report displayed a problem with my graphic card. I spent a few hours looking for a solution.&lt;/p&gt;
-
-&lt;p&gt;Rather than troubleshooting a graphic card that is not natively supported by Apple (yet? will it be?), I am leaning towards upgrading my graphic card. I had previous problems with the graphic card. It is not able to support my two monitors at the maximum resolutions. I am really pushing its performance when I am editing images. Therefore, I am leaning towards upgrading my graphic card.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, I am going to purchase a graphic card that brings my hardware closer to the Mac specifications outlined by Apple AND drives my two monitors easily (at max. resolution).&lt;/p&gt;
-
-&lt;p&gt;In conclusion, &lt;a href=&quot;http://tonymacx86.com/&quot;&gt;this group of people&lt;/a&gt; has done a fantastic job in easing the installation of OS X on any Intel-based hardware. Their guides are phenomenal. The difference between installing OS X 10.6 and 10.10 is night and day. It used to take me hours (or days) to research, prepare, compile, and install - took me a few hours for 10.10.&lt;/p&gt;
-
-&lt;p&gt;Not only do I have a working OS, but I also have a fully bootable USB that can be natively plugged into any Intel-based machine. Amazing.&lt;/p&gt;
-
-&lt;p&gt;Resource used:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html
-http://www.tonymacx86.com/basics/116220-do-i-need-graphicsenabler-injection-not.html
-http://www.tonymacx86.com/graphics/131937-chimera-hd-graphics-bootflags-igpenabler-igplatformid-igpdeviceid.html
-http://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html
-http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.</summary></entry></feed>
+&lt;p&gt;So, this is why I resurfaced my blog and re-added my previous entries. This is my commitment to documenting all of the things. I hope these will be more frequent. At least for 2018. I hope that you will enjoy this adventure because I will.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="goals" /><category term="productivity" /><category term="growth" /><summary type="html"></summary></entry></feed>
