@@ -32,7 +32,7 @@ Here are some projects that I have been involved in. This page is a work in prog
 * Team Project
 * [Homepage](https://pttrns.com/)
 
-  ![Pttrns mainpage]({{"/assets/projects/betalist/betalist-may-2018.png" | relative_url}})
+  ![Pttrns mainpage]({{"/assets/projects/pttrns/pttrns-may-2018.png" | relative_url}})
 
 ## Daily Vibes (November 2017 - present)
 
