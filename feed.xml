@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-06-10T16:46:58-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">I have to come clean about my project</title><link href="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project" rel="alternate" type="text/html" title="I have to come clean about my project" /><published>2018-06-10T00:00:00-04:00</published><updated>2018-06-10T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project</id><content type="html" xml:base="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project">&lt;p&gt;I have something to tell you and come clean about. I haven’t touched my beloved dailyvibes code base since April. And if I am being completely honest, I kind of lost steam in March. (To give you some context, I started thinking about the project in October and working on it last November. Since November I tried to ship something every 2 weeks.)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-06-10T16:56:35-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">I have to come clean about my project</title><link href="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project" rel="alternate" type="text/html" title="I have to come clean about my project" /><published>2018-06-10T00:00:00-04:00</published><updated>2018-06-10T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project</id><content type="html" xml:base="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project">&lt;p&gt;I have something to tell you and come clean about. I haven’t touched my beloved dailyvibes code base since April. And if I am being completely honest, I kind of lost steam in March. (To give you some context, I started thinking about the project in October and working on it last November. Since November I tried to ship something every 2 weeks.)&lt;/p&gt;
 
-&lt;p&gt;Everything was fine until about March. In March, I felt that I did not like where I was going, I was having a bad time, and I was losing project’s direction. I felt like abandoning the project. I even had thoughts of abandoning it.&lt;/p&gt;
+&lt;p&gt;Everything was fine until about March. In March, I felt that I did not like where I was going, I was having a bad time, and I was losing project’s direction. I even had thoughts of abandoning it.&lt;/p&gt;
 
 &lt;p&gt;I also knew that my app was stable enough for people to use. Thus, if I was about to abandon my work then at least people would not lose their data. These thoughts allowed me to slow down and to reflect. Afterall, I still care about the project.&lt;/p&gt;
 
@@ -22,7 +22,7 @@
 
 &lt;p&gt;At the beginning of the project, I needed to do some market research. I needed to check if this project was worth my interest and time. How did I do my market research? Well, it was very simple. I downloaded all the productivity / todo apps from the Apple App Store and I played with each one of them. I noted down ideas that I liked and things that I did not like. But, by doing that, my phone looks like this now:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://d.pr/v/CtydOz+&quot;&gt;&lt;img src=&quot;https://d.pr/i/b8PU7m+&quot; alt=&quot;my ios screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://d.pr/v/CtydOz&quot;&gt;&lt;img src=&quot;https://d.pr/i/b8PU7m+&quot; alt=&quot;my ios screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;After playing with each app, I’ve come to realize that most of the apps do the same thing.&lt;/p&gt;
 
@@ -47,16 +47,18 @@
 &lt;ol&gt;
   &lt;li&gt;I know how,&lt;/li&gt;
   &lt;li&gt;I want to practice for my personal project, and&lt;/li&gt;
-  &lt;li&gt;I want to have control over my data. I hope that these decisions will also benefit my users.&lt;/li&gt;
+  &lt;li&gt;I want to have control over my data.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I also could not decide if I wanted to spend time on a native Mac desktop app or on a web app. I am familiar with web but I am very new to the Mac. Combined with the rumour of Marzipan and how close WWDC. I investigated both options. I am deciding for now to focus on the web app component because I am more familiar with that. Plus, Apple admitted that there will be changes to Mac OS next year. I’ll revisit native Mac app next year.&lt;/p&gt;
+&lt;p&gt;I hope that these decisions will also benefit the users.&lt;/p&gt;
+
+&lt;p&gt;I also could not decide if I wanted to spend time on a native Mac desktop app or on a web app. I am familiar with web but I am very new to the Mac. I investigated both options. I am deciding, at least for now, to focus on the web app component because I am more familiar with that. Plus, Apple admitted that there will be changes to Mac OS next year. I’ll revisit native Mac app next year.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;It is nice to step back and reflect on how far you’ve come. Albeit, I will be first to admit that it is challenging to talk about your project when it is not going as you expect. I am, once again excited, to keep working on the project and I have a clearer vision.&lt;/p&gt;
+&lt;p&gt;It is nice to step back and reflect on how far you’ve come with a project. It is good to be mindful. Albeit, I will be first to admit that it is challenging to talk about your project when it is not going as you expect. I am, once again excited, to keep working on the project and I have a better vision moving forward.&lt;/p&gt;
 
-&lt;p&gt;This is a nice feeling when you are happy with your decisions. Combine that with my decent product discovery that has been organic so far and is doing not too bad on its own:&lt;/p&gt;
+&lt;p&gt;This is a nice feeling when you are happy with your decisions. Also, the organic discovery isn’t that bad either:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://d.pr/i/MLstRV+&quot; alt=&quot;Q1 results&quot; /&gt;
 &lt;img src=&quot;https://d.pr/i/dHUliO+&quot; alt=&quot;Q2 results&quot; /&gt;&lt;/p&gt;
@@ -67,7 +69,7 @@
 
 &lt;p&gt;Alex&lt;/p&gt;
 
-&lt;p&gt;PS: You can download Daily Vibes by searching using your favourite iOS device on &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033&quot;&gt;Apple App Store&lt;/a&gt; or from &lt;a href=&quot;https://dailyvibes.ca&quot;&gt;https://dailyvibes.ca&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="doubt" /><category term="mindful" /><summary type="html">I have something to tell you...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/AoFNPd" /></entry><entry><title type="html">Would you let your mother use your software?</title><link href="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software" rel="alternate" type="text/html" title="Would you let your mother use your software?" /><published>2018-05-11T00:00:00-04:00</published><updated>2018-05-11T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software</id><content type="html" xml:base="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software">&lt;p&gt;Would you let your mother use your software?&lt;/p&gt;
+&lt;p&gt;PS: You can download Daily Vibes by searching using your favorite iOS device on &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033&quot;&gt;Apple App Store&lt;/a&gt; or from &lt;a href=&quot;https://dailyvibes.ca&quot;&gt;https://dailyvibes.ca&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="doubt" /><category term="mindful" /><summary type="html">I have something to tell you...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/AoFNPd" /></entry><entry><title type="html">Would you let your mother use your software?</title><link href="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software" rel="alternate" type="text/html" title="Would you let your mother use your software?" /><published>2018-05-11T00:00:00-04:00</published><updated>2018-05-11T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software</id><content type="html" xml:base="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software">&lt;p&gt;Would you let your mother use your software?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/V8kt2K&quot; alt=&quot;Oh and I am not trying to single anyone out in this photo btw&quot; /&gt;&lt;/p&gt;
 
