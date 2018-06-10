@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-05-14T11:30:05-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Would you let your mother use your software?</title><link href="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software" rel="alternate" type="text/html" title="Would you let your mother use your software?" /><published>2018-05-11T00:00:00-04:00</published><updated>2018-05-11T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software</id><content type="html" xml:base="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software">&lt;p&gt;Would you let your mother use your software?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-06-10T16:46:58-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">I have to come clean about my project</title><link href="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project" rel="alternate" type="text/html" title="I have to come clean about my project" /><published>2018-06-10T00:00:00-04:00</published><updated>2018-06-10T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project</id><content type="html" xml:base="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project">&lt;p&gt;I have something to tell you and come clean about. I haven’t touched my beloved dailyvibes code base since April. And if I am being completely honest, I kind of lost steam in March. (To give you some context, I started thinking about the project in October and working on it last November. Since November I tried to ship something every 2 weeks.)&lt;/p&gt;
+
+&lt;p&gt;Everything was fine until about March. In March, I felt that I did not like where I was going, I was having a bad time, and I was losing project’s direction. I felt like abandoning the project. I even had thoughts of abandoning it.&lt;/p&gt;
+
+&lt;p&gt;I also knew that my app was stable enough for people to use. Thus, if I was about to abandon my work then at least people would not lose their data. These thoughts allowed me to slow down and to reflect. Afterall, I still care about the project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/klf5jH+&quot; alt=&quot;you're going to have a bad time image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Whenever I start thinking this way about a project, I become aware that it is a good time to step back and reflect. In other words, it is a good time to see if my time is worth investing into a project.&lt;/p&gt;
+
+&lt;p&gt;To start, I wanted to figure out what was causing me to feel this way. I narrowed it down to the following three issues:&lt;/p&gt;
+
+&lt;h2 id=&quot;1-i-was-facing-technical-issues&quot;&gt;1. I was facing technical issues.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/ai0zYr+&quot; alt=&quot;subject to technical issues - free image from https://pixabay.com/en/problem-technical-issues-technology-1951987/&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As I work solo, I did not want to spend my limited time on things that do not move the project forward (in the users eyes). But, it got to a point where I needed to &lt;a href=&quot;https://www.briantracy.com/blog/time-management/the-truth-about-frogs/&quot;&gt;eat that frog&lt;/a&gt;. It is one of the challenges that comes with indie work. You wear many hats. You are playing the role of a product manager and have to decide on what to work on. Sometimes you have to do the work that you do not want to.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-i-was-not-happy-with-the-direction-of-the-project&quot;&gt;2. I was not happy with the direction of the project.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/DMndPx+&quot; alt=&quot;lost found searching - image from https://pixabay.com/en/lost-found-lost-and-found-searching-1605501/&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the beginning of the project, I needed to do some market research. I needed to check if this project was worth my interest and time. How did I do my market research? Well, it was very simple. I downloaded all the productivity / todo apps from the Apple App Store and I played with each one of them. I noted down ideas that I liked and things that I did not like. But, by doing that, my phone looks like this now:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://d.pr/v/CtydOz+&quot;&gt;&lt;img src=&quot;https://d.pr/i/b8PU7m+&quot; alt=&quot;my ios screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After playing with each app, I’ve come to realize that most of the apps do the same thing.&lt;/p&gt;
+
+&lt;p&gt;What this means to the users is that they have a lot of choice in this saturated category of productivity. In otherwords, they can switch from my product much easier.&lt;/p&gt;
+
+&lt;p&gt;What this means to me is that I don’t need to stress on competing. I was aligning dailyvibes with other similar apps. This process made me bored and stopped using the app. Dailyvibes started because I was not happy of the solutions. Instead I will focus on building features that will be useful to the end user and to me. I will focus on the product and its quality.&lt;/p&gt;
+
+&lt;p&gt;So I took a step back and recorded the actions that I do every day. I interact with the following data structures: tasks to complete today, notes/text snippets, links/bookmarks, gifs / images and photos. One thing that kind of doesn’t fit is positive thoughts / quotes. I need to think some on this.&lt;/p&gt;
+
+&lt;p&gt;So I will work on integrating these things into dailyvibes and thus forcing me to dogfood my own app. What will make all these things work together is some kind of linking mechanism. I will definitely polish this as time moves on.&lt;/p&gt;
+
+&lt;p&gt;After all, users have so much choice.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-i-did-not-know-what-direction-apple-will-take-mac-os-apps-in&quot;&gt;3. I did not know what direction Apple will take Mac OS apps in.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/LE7TsI+&quot; alt=&quot;marzipan rumours&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next biggest feature for dailyvibes is to create a server component. Which will be then followed by a syncing mechanism of some sort between the server and iOS app. Both of these components, would position me well to create either a a desktop companion app or a web app. I chose to wait until June to make this decision because of WWDC.&lt;/p&gt;
+
+&lt;p&gt;I could not decide if I wanted to leverage the iCloud ecosystem and have apple do all the legwork or me. I’ve investigated both options. I decided to roll out my own for three reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I know how,&lt;/li&gt;
+  &lt;li&gt;I want to practice for my personal project, and&lt;/li&gt;
+  &lt;li&gt;I want to have control over my data. I hope that these decisions will also benefit my users.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I also could not decide if I wanted to spend time on a native Mac desktop app or on a web app. I am familiar with web but I am very new to the Mac. Combined with the rumour of Marzipan and how close WWDC. I investigated both options. I am deciding for now to focus on the web app component because I am more familiar with that. Plus, Apple admitted that there will be changes to Mac OS next year. I’ll revisit native Mac app next year.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;It is nice to step back and reflect on how far you’ve come. Albeit, I will be first to admit that it is challenging to talk about your project when it is not going as you expect. I am, once again excited, to keep working on the project and I have a clearer vision.&lt;/p&gt;
+
+&lt;p&gt;This is a nice feeling when you are happy with your decisions. Combine that with my decent product discovery that has been organic so far and is doing not too bad on its own:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://d.pr/i/MLstRV+&quot; alt=&quot;Q1 results&quot; /&gt;
+&lt;img src=&quot;https://d.pr/i/dHUliO+&quot; alt=&quot;Q2 results&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re making something, you have to be the first to believe in success of your thing. Do one thing every day that moves the project forward. Everything else will [hopefully] work itself out.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading and until next time,&lt;/p&gt;
+
+&lt;p&gt;Alex&lt;/p&gt;
+
+&lt;p&gt;PS: You can download Daily Vibes by searching using your favourite iOS device on &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033&quot;&gt;Apple App Store&lt;/a&gt; or from &lt;a href=&quot;https://dailyvibes.ca&quot;&gt;https://dailyvibes.ca&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="doubt" /><category term="mindful" /><summary type="html">I have something to tell you...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/AoFNPd" /></entry><entry><title type="html">Would you let your mother use your software?</title><link href="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software" rel="alternate" type="text/html" title="Would you let your mother use your software?" /><published>2018-05-11T00:00:00-04:00</published><updated>2018-05-11T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software</id><content type="html" xml:base="https://getaclue.github.io/blog/would-you-let-your-mother-use-your-software">&lt;p&gt;Would you let your mother use your software?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/V8kt2K&quot; alt=&quot;Oh and I am not trying to single anyone out in this photo btw&quot; /&gt;&lt;/p&gt;
 
@@ -716,42 +785,4 @@ Alex&lt;/p&gt;</content><author><name></name></author><category term="software d
 &lt;p&gt;Keep up for this episode somewhere on my social media channels. For the next episode (that I will be doing soon): How to publish an app into the store? Or something along these lines. I’m super excited.&lt;/p&gt;
 
 &lt;p&gt;Cheers,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="resources" /><summary type="html"></summary></entry><entry><title type="html">2018 Goals: More Regular Writings</title><link href="https://getaclue.github.io/blog/regular-writings" rel="alternate" type="text/html" title="2018 Goals: More Regular Writings" /><published>2018-01-03T00:00:00-05:00</published><updated>2018-01-03T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/regular-writings</id><content type="html" xml:base="https://getaclue.github.io/blog/regular-writings">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/5Nw3As&quot; alt=&quot;Target goals image from https://pixabay.com/en/arrow-target-range-bullseye-sport-2889040/&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I had a few goals for 2017. Rather than having a year in a review post, I decided to narrow down my focus to software. At least two of  my goals related to software. I succeeded in achieving both of those goals.&lt;/p&gt;
-
-&lt;h1 id=&quot;be-proactive&quot;&gt;Be Proactive&lt;/h1&gt;
-&lt;p&gt;My first goal, was to be more proactive in my ideas. In other words, I wanted to stop dreaming about solutions and to take action on those ideas.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-did-i-approach-this&quot;&gt;How did I approach this?&lt;/h2&gt;
-&lt;p&gt;Well, for starters, that meant that I had to get into the habit of writing down every new idea. Regardless of the idea and its feasibility. It did not matter what state I was in, where was I, or what I was doing. I wrote everything down and I dated it. Writing things down removes extra load from your beautiful brain and puts the ideas into a specific place. And guess what? You know exactly where that place is and you can reference it at any time.&lt;/p&gt;
-
-&lt;p&gt;Dating my ideas came as an after thought. Once my list began to grow and get out of hand, I realized that I needed some structure and cohesion. By now, dating new ideas is second nature by now and I quite enjoy it.&lt;/p&gt;
-
-&lt;h1 id=&quot;document-all-the-things&quot;&gt;Document All The Things&lt;/h1&gt;
-&lt;p&gt;The other goal for 2017 was to be more deliberate in my software development process. I wanted to be more deliberate in the ways that I approach software engineering. At the end of the day, I want to practice what I preach. I began to document how I plan, brainstorm, document, and iterate on my ideas. There is much more than that, but this was a good start.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-did-this-entail&quot;&gt;What did this entail?&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/HlAf3W&quot; alt=&quot;indiehacker.com image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Since I am very much inspired by fellow indie developers, I began searching for strategies. I wanted to discover where everyone hangs out. I wanted to go there and hang out with them. I wanted to give back and participate. I wanted to learn from them. With them.&lt;/p&gt;
-
-&lt;p&gt;Not the successful and loud ones. Everyone. And I came to the conclusion that what they do is exactly what I want to do. They want to better their process and their product. How do they do that? By being “transparent” about what they do and how they do it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/5433fS&quot; alt=&quot;wip.chat image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Don’t dwell on the transparency word. What I mean by that is that there is a certain amount of magic in proclaiming a public goal and then working towards achieving that goal.&lt;/p&gt;
-
-&lt;p&gt;Documentation plays a big part of this. How? Well, if I make a public goal and everyone sees that I am working towards achieving that goal then an interesting thing happens. First, you get motivated to keep working on that goal. Second, you get immediate feedback from the world. Which bring me to the third point. You need to respond to that feedback and have a conversation. Behind those cat avatars and pseudonyms, on the Internet, are real people with real opinions and thoughts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/4IBKv2&quot; alt=&quot;Avatars Image from https://pixabay.com/en/networks-personal-users-3017398/&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This process of using social media requires you to actually USE it.&lt;/p&gt;
-
-&lt;p&gt;So, where is this rambling of mine taking me? Towards my goal for 2018 of course. I want to document things more in the open. I mean, I already do this work for myself so I might as well share it with you.&lt;/p&gt;
-
-&lt;p&gt;In the process, I hope to share whatever I find useful with fellow developers and to better my communication skills through it. If you cannot tell from this article, I tend to ramble a lot. Two academic degrees will do that to you. I mean, that research article or lab report isn’t going to write itself 🙉&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/njPGUq&quot; alt=&quot;Or maybe I should just start an ICO? Image from https://pixabay.com/en/bitcoin-currency-blockchain-2018-3047129/&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So, this is why I resurfaced my blog and re-added my previous entries. This is my commitment to documenting all of the things. I hope these will be more frequent. At least for 2018. I hope that you will enjoy this adventure because I will.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="goals" /><category term="productivity" /><category term="growth" /><summary type="html"></summary></entry></feed>
+Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="resources" /><summary type="html"></summary></entry></feed>
