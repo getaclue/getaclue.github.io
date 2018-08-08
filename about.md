@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About Alex Kluew
 categories: []
 tags: []
@@ -7,43 +7,49 @@ status: publish
 type: page
 published: true
 meta: {}
+dateModified: 2018-08-08 13:41:25
 ---
 
-# Hi Stranger!
+# Hello friend!
 
-## My name is Alex. 
+Welcome to my little corner of the Internet. This place is my collection of things that I wanted to share. It is my own long-term social experiment. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
 
-- 🏡 and ⚒ in Toronto
-- 💖 [Laura](https://www.instagram.com/lauraandalex_vlog/)
-- working on contract for 🇨🇦
+## Quick about me:
 
-I have two undergraduate degrees and they are complementary. I live in Toronto, Canada. 
-I recently (June 2017) moved here from Ottawa with my fiance. I graduated from University of Ottawa with a Software Engineering Degree. I like Toronto very much.
+- Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
+- live and work in beautiful [Toronto, Canada](https://www.toronto.ca/)
+- work for 🇨🇦 on contract
+- hold two complementary undergraduate degrees awarded from [University of Ottawa](https://www.uottawa.ca/en):
+  - [BASc in Software Engineering](https://www.uottawa.ca/academic/info/regist/1516/calendars/programs/1459.html)
+  - [Honours BSc in Psychology](https://socialsciences.uottawa.ca/programs/undergraduate-course-sequences/honours-bsc-psychology)
+- _open to new opportunities in Toronto or remote_ <a href="mailto:info@getaclue.me?subject=Available%20Opportunity%20in%20Toronto%20or%20remote" title="hire me">hire me</a>
+- life-long interest in software engineering discipline
+- [resume](https://getaclue.github.io/files/Alex_Kluew_Resume_2017.pdf)
 
-I am interested in software engineering as a discipline. To prove my dedication, I am in the process of applying and obtaining my [P.Eng](https://en.wikipedia.org/wiki/Regulation_and_licensure_in_engineering#Canada_2). I am currently in the [EIT](http://peo.on.ca/index.php?ci_id=2064&la_id=1) stage and I cannot wait to be licensed.
+## Long about me:
 
-I have a B.A.Sc. in Software Engineering.
+Hello, friend. Alex here. I am a software engineering graduate living in Toronto, Canada. I graduated magna cum laude from [University of Ottawa](https://www.uottawa.ca/en). I mention this because it means a lot to me. I was afraid of the challenges that come with completing an engineering degree curriculum. It took a lot of effort and hard work.
 
-I have a B.Sc. in Psychology. My honours thesis was "An fMRI investigation of working memory in chemotherapy-treated breast cancer patients".
-I have also taken numerous 2nd and 3rd year Chemistry classes while I was debating
-my transfer into a software engineering field.
+I am interested in all aspects of the software engineering discipline. To prove my dedication beyond obtaining an accredited software engineering degree, I am in the process of obtaining my [professional engineering (P.Eng) license](https://en.wikipedia.org/wiki/Regulation_and_licensure_in_engineering#Canada_2). I am currently in the <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a> stage. As it is illegal in Canada to call yourself a Software Engineer without an engineering license, hopefully this shines some light on any confusion around my _Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>_ title.
 
-However, once I transfered into software engineering, I have not looked back.
+My career path has not been so straightforward. You can check out my [resume](https://getaclue.github.io/files/Alex_Kluew_Resume_2017.pdf) to see my adventures. The common denominator along all my various career paths has been people. I enjoy helping people and businesses solve their problems. I strive to leave whatever I work on in a better state than I found it. My life's goal is to be helpful to people by being great at creating and maintaining usable software.
 
-~~My current interests are in the area of web development.~~ Update (01/2018): My interest may be changing. I am really enjoying Swift but this does not mean that I do not like web stuff.
+## Other interests
 
-I believe in the idea of using a tool regardless of the device and operating system. I believe that the user experience for your tool should be identical on all platforms and devices. (I used to have hope and was excited for [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) but not any longer.)
+As you know, I also have a degree in Psychology. I went into the degree without any interest and with the single goal of applying to medical schools. I stayed to learn about people. My honours thesis was _"An fMRI investigation of working memory in chemotherapy-treated breast cancer patients"_. I was interested in Neuroscience and was given an opportunity to work with [fMRI](https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging).
 
-I like knowledge. I try to explore the various branches of knowledge in order to understand our ever-changing world. Also, I find information security and cyber security extremely important. I try follow these topics (and many other) on the daily basis via twitter, <a href="https://news.ycombinator.com">hacker news</a>, and other sources.
+I enjoy knowledge for its own sake. I explore other disciplines to understand our ever-changing world. Also, I use such opportunity in attempts to connect different disciplines to software. The future of software lies in cross-disciplinary solutions.
 
-I am interested in entrepreneurship. Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
+I am also interested in business and entrepreneurship. Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
 
-[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8)](https://www.youtube.com/watch?v=UkWgyN8AKXo "Ontario Summer Company 2014 Entrepreneurial Grant")
+[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8)](https://www.youtube.com/watch?v=UkWgyN8AKXo 'Ontario Summer Company 2014 Entrepreneurial Grant')
 
 ### Recruiter?
+
 Thank you for stumbling upon me and reading this far. If I am looking for a job, then the following information may be useful for you. If I am not, then this is purely here for documentation.
 
 #### What should you know about me?
+
 - I like to work
 - I don't like to waste time (yours or mine)
 - I prefer to ask why not instead of why
@@ -51,21 +57,25 @@ Thank you for stumbling upon me and reading this far. If I am looking for a job,
 - I like to think about software from the initial idea all the way to maintenance stage (or "end" if you like) [psych training surely complements engineering here]
 
 #### Why should you hire me?
+
 - I am reliable and honest
 - I listen to feedback and improve based on comments
 - I learn quickly
 - I care
 
 #### What am I good at?
+
 - I will find a solution for whatever problem that is at hand or die trying
 - I want everyone to succeed, thus I will provide honest advice
 - I like performing under stress
 
 #### What am I bad at?
+
 - sometimes my solutions are complex
 - sometimes I struggle communicating complex ideas in easy to understand and digest words (one of the reasons behind this website 🤪)
 
 #### What can I do for you?
+
 - Give me 3 months and some tasks and see where this leads us
 - I promise to give my best shot
 - If it does not work out, no hard feelings
@@ -82,6 +92,7 @@ Thank you for stumbling upon me and reading this far. If I am looking for a job,
     <input type="hidden" name="_subject" value="New message from getaclue.me" />
     <br />
     <input type="submit" value="Submit">
+
   </form>
 </div>
 
@@ -128,14 +139,14 @@ Thank you for stumbling upon me and reading this far. If I am looking for a job,
   }
   @media screen and (min-width: 800px) {
     #leftCol {
-        width: 40%; 
+        width: 40%;
         float: left;
       }
     }
   }
   @media screen and (min-width: 800px) {
     #rightCol {
-      width: 55%; 
+      width: 55%;
       float: right;
     }
   }
