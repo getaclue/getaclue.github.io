@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: About Alex Kluew
 categories: []
 tags: []
@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2018-08-08 13:41:25
+dateModified: 2018-08-21 15:58:31
 ---
 
 # Hello friend!
@@ -26,6 +26,28 @@ Welcome to my little corner of the Internet. This place is my collection of thin
 - life-long interest in software engineering discipline
 - [resume](https://getaclue.github.io/files/Alex_Kluew_Resume_2017.pdf)
 
+## Technology I am familiar with:
+
+I am always learning and experimenting on my own time. My computer science foundation, coupled with software engineering training, allows me to jump into any code base and any language.
+
+- computer science foundation using Java and C
+- familiar with Ruby (Ruby on Rails, Sinatra)
+- familiar with Javascript (React, React Native, Ember, ES2016, ES2017, and ES2018)
+  - familiar with jQuery [but I prefer to use Javascript](http://youmightnotneedjquery.com/) nowadays
+- familiar with HTML
+- familiar with CSS/SASS/Less
+- familiar with multi-language and accessibility compliance
+- familiar with cross-platform development
+- familiar with cross-browser development
+- familiar with continuous deployment (codeship, travis, jenkins)
+- familiar in \*nix environments
+- competent in Swift
+  - able to work with Objective-C
+- new in iOS development (since November 2017)
+- new in OS X development (since April 2018)
+
+I am open to learning new technology.
+
 ## Long about me:
 
 Hello, friend. Alex here. I am a software engineering graduate living in Toronto, Canada. I graduated magna cum laude from [University of Ottawa](https://www.uottawa.ca/en). I mention this because it means a lot to me. I was afraid of the challenges that come with completing an engineering degree curriculum. It took a lot of effort and hard work.
@@ -42,7 +64,7 @@ I enjoy knowledge for its own sake. I explore other disciplines to understand ou
 
 I am also interested in business and entrepreneurship. Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
 
-[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8)](https://www.youtube.com/watch?v=UkWgyN8AKXo 'Ontario Summer Company 2014 Entrepreneurial Grant')
+[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:width="60%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo 'Ontario Summer Company 2014 Entrepreneurial Grant')
 
 ### Recruiter?
 
