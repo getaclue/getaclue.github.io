@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-09-29T12:33:05-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">More frequent updates</title><link href="https://getaclue.github.io/blog/more-frequent-updates" rel="alternate" type="text/html" title="More frequent updates" /><published>2018-09-29T00:00:00-04:00</published><updated>2018-09-29T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/more-frequent-updates</id><content type="html" xml:base="https://getaclue.github.io/blog/more-frequent-updates">&lt;p&gt;Those of you that know me personally, know that I do a lot of little experiments and I like to reflect. I believe in engineering and science principles. They are at my core and drive me forward.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-09-29T13:43:24-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">More frequent updates</title><link href="https://getaclue.github.io/blog/more-frequent-updates" rel="alternate" type="text/html" title="More frequent updates" /><published>2018-09-29T00:00:00-04:00</published><updated>2018-09-29T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/more-frequent-updates</id><content type="html" xml:base="https://getaclue.github.io/blog/more-frequent-updates">&lt;p&gt;Those of you that know me personally, know that I do a lot of little experiments and I like to reflect. I believe in engineering and science principles. They are at my core and drive me forward.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, I feel like I am not doing a good job in reflecting and sharing that with you. What happens usually is that I open up a blank canvas, such as this one, and just start writing. Usually I have a topic or a direction that motivates me to write. However, I do not consider if I will publish or delete the content at the time of writing it.&lt;/p&gt;
 
 &lt;p&gt;This is what I mean by a blank canvas in September 2018:
 &lt;img src=&quot;/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-12.12.33.png&quot; alt=&quot;Blank canvas&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;So I have a lot of written content spread out around various computers, domains, and publications. A lot of this content is not published and, if taken out of context, may seem like a waste of my time. Personally, it is very difficult to hit that publish button for many reasons.&lt;/p&gt;
+&lt;p&gt;As a result, I have a lot of written content spread out across various computers, domains, and publications. A lot of this content is not published and, if taken out of context, may seem like a waste of my time. Personally, I find it very difficult to hit that publish button for many reasons.&lt;/p&gt;
 
-&lt;p&gt;To me, writing is cathartic in a sense — the single purpose is to remove the content from my head. When it is out of my head then I can play with it. In my head there is chaos, so I like to consolidate my ideas and to make sense of them. To tease out my views and opinions (and to correct them).&lt;/p&gt;
+&lt;p&gt;To me, writing is cathartic in a sense — the single purpose is to remove the content from my head. When the ideas are out of my head and on a canvas then I can play with them. In my head there is chaos, so I like to consolidate my ideas and to make sense of them. To tease out my views and opinions (and to correct them).&lt;/p&gt;
 
 &lt;p&gt;If you take this into consideration, then perhaps you can see why some of my pieces don’t get my approval and thus never see the light. However, the longer I live on this earth, the more I wish I didn’t hold back and just publish (whether or not it is finished). So, I decided to actively work on this.&lt;/p&gt;
 
@@ -21,7 +21,96 @@
 
 &lt;p&gt;So, I think I am doing OK even if it doesn’t feel like that. I give myself the permission to make mistakes, publish more frequent and unfinished work; and continue this journey that I started.&lt;/p&gt;
 
-&lt;p&gt;And for those of you that finished reading this, here is some context. Here is an example of a written piece that I ended up &lt;a href=&quot;/blog/would-you-let-your-mother-use-your-software&quot;&gt;publishing&lt;/a&gt;: (start in &lt;a href=&quot;http://www.hemingwayapp.com/&quot;&gt;Hemingway app&lt;/a&gt; and then I perform my transformations if approved)&lt;/p&gt;
+&lt;h2 id=&quot;what-happened-since-the-last-post&quot;&gt;What happened since the last &lt;a href=&quot;/blog/i-have-to-come-clean-about-my-project&quot;&gt;post&lt;/a&gt;?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;in June/July/August, I finished the backend &amp;amp; frontend MVP for dailyvibes
+    &lt;ul&gt;
+      &lt;li&gt;the said backend and frontend are not live yet to anyone but you may see some things &lt;a href=&quot;https://github.com/dailyvibes&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;PS, as an aside — I am considering migrating away from github to self-hosted for all of my work&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;in July, worked on &lt;a href=&quot;https://screenhole.net/&quot;&gt;screenhole&lt;/a&gt; and created an MVP for a Mac OS screen recorder functionality. That was a fun experiment that you can view at &lt;a href=&quot;https://screenhole.net/getaclue/~g8U2vv&quot;&gt;https://screenhole.net/getaclue/~g8U2vv&lt;/a&gt; Unfortunately that is not a public feature and is stuck in alpha/beta stage until further notice.&lt;/li&gt;
+  &lt;li&gt;in July/August, worked on &lt;a href=&quot;https://keyframes.net/&quot;&gt;keyframes&lt;/a&gt; native Mac app. Was a bit of work but looks nice in my opinion. This work is in &lt;a href=&quot;https://keyframes.net/snapper/beta&quot;&gt;beta&lt;/a&gt; and is available for download.&lt;/li&gt;
+  &lt;li&gt;in August, launched our &lt;a href=&quot;https://cspray.ca/&quot;&gt;physical product&lt;/a&gt; at the &lt;a href=&quot;https://theex.com/&quot;&gt;Canadian National Exhibition&lt;/a&gt;. That was intense. Will talk about this more at a later time ;-) but lets just say we are continuing working on this project. This was a FIRST for us and also a BIG deal!!!
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Attendance: 1.54 million (2016)&lt;/code&gt; — may hint to you at why. And we made sure to talk to almost everyone that passed by us. I say almost because it was just the two of us.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;in September, started to work on news article parser for &lt;a href=&quot;https://elderoost.com/&quot;&gt;elderoost&lt;/a&gt;. One of the current challenges is keeping up to news. I physically read all of the articles manually and filter them manually. This honestly takes a lot of time. If you check the website the latest article was added &lt;code class=&quot;highlighter-rouge&quot;&gt;5 months ago&lt;/code&gt;. I have all of the articles since then I just haven’t processed them yet.
+    &lt;ul&gt;
+      &lt;li&gt;current working approach:
+        &lt;ul&gt;
+          &lt;li&gt;get news article link&lt;/li&gt;
+          &lt;li&gt;go to the link&lt;/li&gt;
+          &lt;li&gt;grab the URL, title, headline, author, date of publication, and the content
+            &lt;ul&gt;
+              &lt;li&gt;I found a script that helps with grabbing all of this (similar to how some browsers allow you to have a read an html page in plain text if you click a button)&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;put this stuff into postgres db&lt;/li&gt;
+          &lt;li&gt;index title and content using elasticsearch&lt;/li&gt;
+          &lt;li&gt;for each residence search against this text&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;unfortunately it is not done as I cannot narrow down some edge cases.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;and-what-am-i-up-to-now&quot;&gt;and what am I up to now?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;job search
+    &lt;ul&gt;
+      &lt;li&gt;After 2 years and some, I think it is time as there aren’t any new opportunities for growth as a software engineer where I am&lt;/li&gt;
+      &lt;li&gt;The work moved to a new physical location that is more challenging to commute to&lt;/li&gt;
+      &lt;li&gt;My school debt is causing me a lot of stress and anxiety… so I’d like to pay this off faster.&lt;/li&gt;
+      &lt;li&gt;I am not being paid what I know I could be for someone with my needed skills
+        &lt;ul&gt;
+          &lt;li&gt;I stayed because of the team but that recently got dissolved&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;cspray&lt;/li&gt;
+  &lt;li&gt;dailyvibes
+    &lt;ul&gt;
+      &lt;li&gt;add user auth functionality on ios
+        &lt;ul&gt;
+          &lt;li&gt;make user auth functionality work between ios and server&lt;/li&gt;
+          &lt;li&gt;make a sync mechanism between ios and server (probably manual for now and then automate)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;modify the way you share links within iOS (add a new area so it is easier to share)
+        &lt;ul&gt;
+          &lt;li&gt;share these links from iOS to server (after the user stuff is linked up)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;provision a server on DO or Linode
+        &lt;ul&gt;
+          &lt;li&gt;glue the backend &amp;amp; frontend on this server&lt;/li&gt;
+          &lt;li&gt;glue the server to dailyvibes domain&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;elderoost
+    &lt;ul&gt;
+      &lt;li&gt;finish news article parser&lt;/li&gt;
+      &lt;li&gt;add a notifyer after this is done to manually review&lt;/li&gt;
+      &lt;li&gt;figure out monetization&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;… in that order I think.&lt;/p&gt;
+
+&lt;p&gt;Now, I’m going to spend the next little while grinding cracking the coding interview bible and all of the typical hackerrank websites. It is a bit unfortunate that I need to put a pause on the side projects to do this. But it is what it is. (Especially if you want to work for the typical Fortune N company.)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;And for those of you that finished reading this, here is some behind the scenes context to this article. It is an example of a written piece that I ended up &lt;a href=&quot;/blog/would-you-let-your-mother-use-your-software&quot;&gt;publishing&lt;/a&gt;. It started off as a &lt;a href=&quot;http://www.hemingwayapp.com/&quot;&gt;Hemingway app&lt;/a&gt; draft and then, eventually, I approved and transformed it into an article.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-11.35.50.png&quot; alt=&quot;Sample written piece that I ended up sharing&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="doubt" /><summary type="html">So, I think I am doing OK even if it doesn't feel like that.</summary></entry><entry><title type="html">I have to come clean about my project</title><link href="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project" rel="alternate" type="text/html" title="I have to come clean about my project" /><published>2018-06-10T00:00:00-04:00</published><updated>2018-06-10T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project</id><content type="html" xml:base="https://getaclue.github.io/blog/i-have-to-come-clean-about-my-project">&lt;p&gt;I have something to tell you and come clean about. I haven’t touched my beloved dailyvibes code base since April. And if I am being completely honest, I kind of lost steam in March. (To give you some context, I started thinking about the project in October and working on it last November. Since November I tried to ship something every 2 weeks.)&lt;/p&gt;
 
