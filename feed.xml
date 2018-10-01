@@ -1,4 +1,153 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-09-29T13:43:24-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">More frequent updates</title><link href="https://getaclue.github.io/blog/more-frequent-updates" rel="alternate" type="text/html" title="More frequent updates" /><published>2018-09-29T00:00:00-04:00</published><updated>2018-09-29T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/more-frequent-updates</id><content type="html" xml:base="https://getaclue.github.io/blog/more-frequent-updates">&lt;p&gt;Those of you that know me personally, know that I do a lot of little experiments and I like to reflect. I believe in engineering and science principles. They are at my core and drive me forward.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-01T16:40:36-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">On Discrete Mathematics For Computer Science</title><link href="https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science" rel="alternate" type="text/html" title="On Discrete Mathematics For Computer Science" /><published>2018-10-01T00:00:00-04:00</published><updated>2018-10-01T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science</id><content type="html" xml:base="https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science">&lt;p&gt;I just ran into &lt;a href=&quot;http://condor.depaul.edu/sepp/ICME-13.Epp.pdf&quot;&gt;“Discrete Mathematics For Computer Science”&lt;/a&gt; by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I added my own emphasis to the quotes below.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“The material in discrete structures is pervasive in the areas of data structures and algorithms but &lt;strong&gt;appears elsewhere&lt;/strong&gt; in computer science as well.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This statement resonates very well with me. During my education, there was a big emphasis on data structures and importance of maths in &lt;em&gt;that&lt;/em&gt; field. However, there was almost no time spent on the &lt;em&gt;appears elsewhere&lt;/em&gt; part of my studies. This left me frustrated lots of times primarily because I went into software engineering to learn about the application of theory.&lt;/p&gt;
+
+&lt;p&gt;It is also how I know about Susanna S. Epp and her book &lt;em&gt;Discrete Mathematics with Applications by Susanna S. Epp&lt;/em&gt;. When I found my education exposure was lacking, I started to search for different strategies to learn difficult material. It turns out, if you add a little bit of effort, then you can find an author in your field of interest that can help you learn this challenging material. An author that writes in a way that you can understand.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, it is one thing that nobody talks about when you are having a difficult time understanding. The fact that if you are having a hard time studying, then a different solution or approach is needed for you&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;if you know that other approaches exist&lt;/li&gt;
+  &lt;li&gt;if you look hard for it&lt;/li&gt;
+  &lt;li&gt;if you take an initiative to self-study&lt;/li&gt;
+  &lt;li&gt;and self-research.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[…] an ability to create and understand a proof — either a formal symbolic proof or a less formal but still mathematically rigorous argument—is important in virtually every area of computer science, including (to name just a few) formal specification, verification, databases, and cryptography.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[g]raph theory concepts are used in networks, operating systems, and compilers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Set theory concepts are used in software engineering and in databases.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Probability theory is used in intelligent systems, networking, and a number of computing applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And while I do understand the reference points and examples — I only do so because I went through the system. Looking backwards, when I was learning at the beginning, I recall a big emphasis on data structures and graphs. However, there was no justification besides rote memorization and &lt;strong&gt;needing it for this degree&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This paper explores three reasons for the problem. One is that there has been a reduced emphasis on mathematical proof in the secondary mathematics curriculum.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Anecdotally that was true in my experience. This subject matter was never fully conveyed to me - how proofs form the building blocks.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A study of teacher attitudes by Knuth (2002) indicated that the teachers “viewed proof as appropriate for the mathematics education of a minority of students” and that they saw proof “as a &lt;strong&gt;topic of study&lt;/strong&gt; rather than as a &lt;strong&gt;tool for communicating and studying mathematics&lt;/strong&gt;.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yeap… ding ding ding. That’s how it was conveyed to me in Canadian school system as well.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A second is that the &lt;strong&gt;ways certain words and phrases&lt;/strong&gt; are interpreted &lt;strong&gt;in ordinary speech&lt;/strong&gt; often differ from the ways they must be interpreted in formal, deductive reasoning.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I cannot tell you how much I struggled with this. The cognitive collusion between ordinary speech and formal reasoning. It is tough to get your head around the complicated subject matter. It really is.&lt;/p&gt;
+
+&lt;p&gt;And these things follow you if you do not grasp them when first learning. As someone who had no English vocabulary, I was studying the new language in parallel as I was getting my education foundation and going through the education system. Not only does it make studying these concepts confusing, it also makes the entire field of Maths as some type of mountain that you cannot climb.&lt;/p&gt;
+
+&lt;p&gt;I spent a lot of my time memorizing content without understanding. While this approach works to some degree, it almost always fails as you get higher up the knowledge ladder.&lt;/p&gt;
+
+&lt;p&gt;What I did not realize, at the time that I was struggling, was that the road blocks should have signaled to me that I had foundational issues. Instead, I plowed forward without having the full picture.&lt;/p&gt;
+
+&lt;p&gt;I understand this now and it is part of the reason why I read up on things like this in my free time.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;One of their tasks as students is to learn how to extract the standard interpretation from what is said and written. One of the tasks of instructors is to teach them how to do that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;100% did not experience this. In all of my experience so far the instructors believed in rote replication via writing. While this may work for some learning styles, it really did not work for me.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;One example is that in everyday speech if-then is frequently interpreted as if-and-only-if.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Did I find this confusing? Check.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Only-if is also routinely interpreted as if-and-only-if.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Did I find this confusing? Check.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In propositional logic the negation of “if A then B” is the conjunction “A and not B,” …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Did I find this confusing? Check.&lt;/p&gt;
+
+&lt;p&gt;It is a bit hard to reflect on this now because I am much more familiar with this subject. But I will try to step back and play around with my thoughts. The author mentions that students seem to reply &lt;code class=&quot;highlighter-rouge&quot;&gt;if A then not B&lt;/code&gt; as the common solution to the negation.&lt;/p&gt;
+
+&lt;p&gt;While I can justify that response in my head, my brain wants to say &lt;code class=&quot;highlighter-rouge&quot;&gt;if not A then not B&lt;/code&gt; but it definitely doesn’t think &lt;code class=&quot;highlighter-rouge&quot;&gt;not A or B&lt;/code&gt; nor &lt;code class=&quot;highlighter-rouge&quot;&gt;not A and B&lt;/code&gt;. Sure, I know the theory and I know about truth tables. And, if I force myself then I can definitely come up to the solution.&lt;/p&gt;
+
+&lt;p&gt;However, what I am saying is that it is still challenging to think about these things when you have mental clashes with your everyday speech.&lt;/p&gt;
+
+&lt;p&gt;See:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For instance, a natural response to “If John comes, then the party will be a disaster” is “Don’t worry. If John comes, then the party will not be a disaster. It will be fine.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This takes the language issue a bit further:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;According to the rules of predicate logic, when a statement contains &lt;strong&gt;two different quantifiers&lt;/strong&gt;, they should be interpreted in &lt;strong&gt;left-right order&lt;/strong&gt;. However in ordinary language a statement with both for-all and there-is is typically interpreted in &lt;strong&gt;whatever way makes the most common sense&lt;/strong&gt;. Linguists call this “scope ambiguity.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;See:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For example, the most natural way to interpret the sentence, “There is a lid for every pot” is as “For every pot there is a lid” not as “There is one single lid that will be fit every pot.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Think about this.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A third is the difficulties students experience in understanding and using statements involving variables, both in connection with predicate logic and in interpreting certain kinds of mathematical phrases.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Very true but to me, this stems from issue created in #2 regarding language.&lt;/p&gt;
+
+&lt;p&gt;I liked the following examples provided in the piece:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What we say — What we mean
+    &lt;ul&gt;
+      &lt;li&gt;the value of x — the quantity that is put in place of
+x&lt;/li&gt;
+      &lt;li&gt;as the value of x increases — as larger and larger numbers are put in place of x&lt;/li&gt;
+      &lt;li&gt;As the value of x increases, the value of y increases. — If larger and larger numbers are put in place of x, the corresponding numbers that are put in place of y become larger and larger
+.&lt;/li&gt;
+      &lt;li&gt;where x is any real number — for all possible substitutions of real numbers in place of x&lt;/li&gt;
+      &lt;li&gt;Let n be any even number — Imagine substituting an integer in place of n but &lt;strong&gt;do not assume anything about its value&lt;/strong&gt; except that it is an even integer
+.&lt;/li&gt;
+      &lt;li&gt;By definition of even, &lt;code class=&quot;highlighter-rouge&quot;&gt;n = 2k&lt;/code&gt; for some integer &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt; — By definition of even, there is an integer we can substitude in place of &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt; so that the equation &lt;code class=&quot;highlighter-rouge&quot;&gt;n = 2k&lt;/code&gt; will be true. (In fact, there is only one such integer; its value is &lt;code class=&quot;highlighter-rouge&quot;&gt;n/2&lt;/code&gt;)&lt;/li&gt;
+      &lt;li&gt;the function &lt;code class=&quot;highlighter-rouge&quot;&gt;x^2&lt;/code&gt; — the function that relates each real number to the square of that number. In other words, for each possible substitution of a real number in place of &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;, the function corresponds to the square of that number.&lt;/li&gt;
+      &lt;li&gt;where &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; is some real number that satisfies the given property — There is a real number that will make the given property true if we substitude it in place of x.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;While I respect the author and the work she does, it appears that math education is a loosing battle. I skimmed through author’s article from 1987 (The Logic of Teaching Calculus. In Toward a Lean and Lively Calculus: Report of the Conference Workshop to Develop Curriculum and Teaching Methods for Calculus at the College Level. Ronald G. Douglas, Ed. Washington, D.C.: Mathematical Association of America, 1987, 41-59.) where she outlined similar concerns around logic (only that time it was in the context of calculus).&lt;/p&gt;
+
+&lt;p&gt;It has been more than 30 years and it appears that new students are continuing to struggle with maths. Anecdotally, I hear concerned systems and parents pushing for programming skills while pushing away core maths. If you found math challenging or confusing I encourage you not to give up. You can study it on your own.&lt;/p&gt;
+
+&lt;p&gt;Start your studies wherever you got confused. There are tests available that can help you narrow it down. Start from grade 1 if you want to. Who is going to judge? Open up khan academy and go to town. Discover the beauty and study on your own time… I did (and I still am).&lt;/p&gt;
+
+&lt;p&gt;If it wasn’t for Khan Academy, self-studying, youtube, and the people of the internet in general — I am not sure if I would be where I am.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="maths" /><summary type="html">If you found math challenging or confusing I encourage you not to give up. You can study it on your own.</summary></entry><entry><title type="html">More frequent updates</title><link href="https://getaclue.github.io/blog/more-frequent-updates" rel="alternate" type="text/html" title="More frequent updates" /><published>2018-09-29T00:00:00-04:00</published><updated>2018-09-29T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/more-frequent-updates</id><content type="html" xml:base="https://getaclue.github.io/blog/more-frequent-updates">&lt;p&gt;Those of you that know me personally, know that I do a lot of little experiments and I like to reflect. I believe in engineering and science principles. They are at my core and drive me forward.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, I feel like I am not doing a good job in reflecting and sharing that with you. What happens usually is that I open up a blank canvas, such as this one, and just start writing. Usually I have a topic or a direction that motivates me to write. However, I do not consider if I will publish or delete the content at the time of writing it.&lt;/p&gt;
 
@@ -821,40 +970,4 @@ measure​Block()&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Cheers,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="software quality assurance" /><category term="productivity" /><category term="growth" /><category term="testing" /><category term="resources" /><summary type="html"></summary></entry><entry><title type="html">Another CoreData Day</title><link href="https://getaclue.github.io/blog/Another-CoreData-day" rel="alternate" type="text/html" title="Another CoreData Day" /><published>2018-01-07T00:00:00-05:00</published><updated>2018-01-07T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/Another-CoreData-day</id><content type="html" xml:base="https://getaclue.github.io/blog/Another-CoreData-day">&lt;p&gt;So, today, I decided to implement the Sharing extension. Oh boy, did I not expect to lose all of the data but it was necessary. It turns out that if you want to, at a time in the future, to add things to your app, well then you may be in for some effort.&lt;/p&gt;
-
-&lt;p&gt;The best resource, hands down was this = &lt;a href=&quot;https://medium.com/@ales.musto/making-a-share-extension-that-accepts-text-and-urls-in-combination-with-coredata-swift-3-a0139c0f9800&quot;&gt;Making a Share Extension that accepts text and URLs in combination with CoreData Swift 3&lt;/a&gt;. If you don’t want to or don’t have time to learn about Core Data then you can just jump to that website. Follow it. And it will just work.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/f6uxtZ&quot; alt=&quot;Screenshot of the resource I talked about&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This way, you can add those things in the future. So just plan for it.&lt;/p&gt;
-
-&lt;p&gt;Also, noticed that some tutorials are suggesting to ship the app with things like subscription services and such to be turned on. Just turned on and not active. This way you can add it whenever you want it but you went through review already. Or maybe you just don’t have the time and want to follow good practices. That’s fine too =)&lt;/p&gt;
-
-&lt;p&gt;So, I also used the following resources before I found the one above. Here they are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/library/content/documentation/General/Conceptual/ExtensibilityPG/Share.html&quot;&gt;Share&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/QuickBlox/quickblox-ios-sdk/tree/master/sample-videochat-webrtc/sample-videochat-webrtc/ViewControllers/SharingViewController&quot;&gt;quickblox-ios-sdk&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://awesomeios.com&quot;&gt;http://awesomeios.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212-SW2&quot;&gt;App Extension Keys&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/foundation/nsextensioncontext/1411301-completerequest&quot;&gt;completeRequest(returningItems:completionHandler:)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/foundation/nsextensioncontext&quot;&gt;NSExtensionContext&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW19&quot;&gt;Enabling App Sandbox&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html&quot;&gt;Adding Capabilities&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/25408472&quot;&gt;this ANSWER was helpful for - How to access CoreData model in today extension (iOS)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/atomicbird/iOS-Extension-Demo/blob/master/Share%20to%20Note/ShareViewController.m&quot;&gt;ShareViewController.m&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.google.ca/search?q=share+coredata+between+share+and+app&amp;amp;client=safari&amp;amp;rls=en&amp;amp;dcr=0&amp;amp;source=lnt&amp;amp;tbs=qdr:y&amp;amp;sa=X&amp;amp;ved=0ahUKEwjuuv3cvMbYAhWo44MKHTrMAKQQpwUIIQ&amp;amp;biw=1240&amp;amp;bih=716&quot;&gt;share coredata between share and app&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.oodlestechnologies.com/blogs/Share-CoreData-between-App-and-Share-Extension-using-Framework&quot;&gt;Share CoreData between App and Share Extension using Framework&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/maximbilan/iOS-Shared-CoreData-Storage-for-App-Groups/blob/master/TutorialAppGroup/Shared/CoreDataStorage.swift&quot;&gt;CoreDataStorage.swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/InitializingtheCoreDataStack.html&quot;&gt;Initializing the Core Data Stack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/almusto/CustomNotes/blob/95887d7440365a0f7990f0a36fb001c725c74118/CustomNotes/InitialVC.swift&quot;&gt;InitialVC.swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/coreservices/kuttypeurl&quot;&gt;kUTTypeURL&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anyways, I am going to spend some time looking at this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/w1h7OB&quot; alt=&quot;Screenshot of homepage for Apple's App Extension Keys Dictionary Thing&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hopefully someone can find it useful when they are doing this process as well. Maybe I will record it because it is a bit tricky. We’ll see.&lt;/p&gt;
-
-&lt;p&gt;Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="resources" /><summary type="html">So, today, I decided to implement the Sharing extension. Oh boy, did I not expect to lose all of the data but it was necessary. It turns out that if you want to, at a time in the future, to add things to your app, well then you may be in for some effort.</summary></entry></feed>
+Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="software quality assurance" /><category term="productivity" /><category term="growth" /><category term="testing" /><category term="resources" /><summary type="html"></summary></entry></feed>
