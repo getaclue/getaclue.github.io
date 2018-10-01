@@ -2,7 +2,7 @@
 layout: post
 title: 'On Discrete Mathematics For Computer Science'
 categories:
-  - Software Engineering
+  - software engineering
   - maths
 tags:
   - software engineering
@@ -12,8 +12,8 @@ type: post
 published: true
 meta: {}
 excerpt: 'If you found math challenging or confusing I encourage you not to give up. You can study it on your own.'
-datePublished: 2018-09-29 12:27:31
-dateModified: 2018-09-29 13:42:20
+datePublished: 2018-10-01 16:40:53
+dateModified: 2018-10-01 16:40:53
 ---
 
 I just ran into ["Discrete Mathematics For Computer Science"](http://condor.depaul.edu/sepp/ICME-13.Epp.pdf) by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.
