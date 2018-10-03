@@ -1,30 +1,44 @@
----
-layout: default
----
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline"><a href="{{ page.url }}">{{ page.title | escape }}</a></h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        ⏰ {{ page.date | date: date_format }}
-      </time> &nbsp; | 📝by <a href="/" rel="author">Alex Kluew</a> | &nbsp; {% include fork.html %}
-    </p>
-    <p class="post-meta">
-      {% include read_time.html %}
-    </p>
-  </header>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" prefix="og: http://ogp.me/ns#">
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+{% include head.html %}
 
-    {% include side-projects.html %}
-  </div>
+<body>
+  {% include header.html %}
+  <main class="page-content" aria-label="Content">
+    <div style="display:flex;align-items: center;justify-content: center;">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline"><a href="{{ page.url }}">{{ page.title | escape }}</a></h1>
+          <p class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ page.date | date: date_format }}
+            </time> | {% include fork.html %}
+          </p>
+          <p class="post-meta">
+            {% include read_time.html %}
+          </p>
+        </header>
 
-  <p class="extra-info">
-    {% if page.tags.size > 0 %}
-      Tags: {{ page.tags | join: ', ' }} &nbsp; | &nbsp;
-    {% endif %}
-    {% include fork.html %}
-  </p>
-</article>
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+
+          {% include side-projects.html %}
+        </div>
+
+        <p class="extra-info">
+          {% if page.tags.size > 0 %}
+          Tags: {{ page.tags | join: ', ' }} &nbsp; | &nbsp;
+          {% endif %}
+          {% include fork.html %}
+        </p>
+      </article>
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+</body>
+
+</html>
