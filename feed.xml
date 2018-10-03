@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-02T21:18:56-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">October 2018 Challenge</title><link href="https://getaclue.github.io/blog/october-2018-challenge" rel="alternate" type="text/html" title="October 2018 Challenge" /><published>2018-10-02T00:00:00-04:00</published><updated>2018-10-02T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/october-2018-challenge</id><content type="html" xml:base="https://getaclue.github.io/blog/october-2018-challenge">&lt;p&gt;So, I’ve decided to do a few challenges for the month of October:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-03T17:37:24-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Will end-user applications ever be truly programmable?</title><link href="https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable" rel="alternate" type="text/html" title="Will end-user applications ever be truly programmable?" /><published>2018-10-03T00:00:00-04:00</published><updated>2018-10-03T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable</id><content type="html" xml:base="https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable">&lt;p&gt;Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks.&lt;/p&gt;
+
+&lt;p&gt;Why am I going back to doing this? I jumped in just like everyone else on the social media train that started moving in the early 2000s.&lt;/p&gt;
+
+&lt;p&gt;As this train moved further away from the station, I noticed that I changed the way I interacted with information. Instead of saving things locally on my computer, I would off-load it to the cloud. At first, it made it very convenient for myself: I wouldn’t need to worry about hard-drive crashes or lost information. Even then — a failing hard-drive almost never crossed my mind during my day-to-day uses even if I was mindful of its risk. I finally knew where I could find anything. No more plugging in different hard drives and searching for my things. (and storage capacities at prices that I could not afford previously).&lt;/p&gt;
+
+&lt;p&gt;Eventually, the technology improved and added things I did not know I was missing. Specifically — the sharing and collaborating features. The cloud ecosystems enabled the possibility of sharing interesting information with others. Most importantly, it allowed for asynchronous (and real-time) working experience with others and paved the remote work movement. In other words, saving things locally was a thing of the past. Archaic. Everything. Always. Stayed somewhere else.&lt;/p&gt;
+
+&lt;p&gt;Problems? What problems? All of our problems went away we were told by marketers. Previously, if I shared information with someone there were many variables involved in the process: from compressing, to transfer, to uptime, and so on. Now, there were no more problems. If you cannot get my shared documents then something is wrong on your end; with the way you are doing things. Run into a problem? One could simply point people to most common problems list, or a faqs, or a helpful video and thus reduce the amount of time spent on such stressors.&lt;/p&gt;
+
+&lt;p&gt;So what happened? Too much comfort and reliance in the spoon feeding. The non-stop flow from the infinite social media feed algorithms got into my daily routines. Why should I be looking for information? I’ll let that be fed to me based on the way I interact with things. I stopped being actively involved in this search. I relied too much on the feed algorithms. I got lazy and falsely expected good quality news to flow to me.&lt;/p&gt;
+
+&lt;p&gt;… and it worked. But boy did this approach ever backfire on me.&lt;/p&gt;
+
+&lt;p&gt;What I did not consider is the historical perspective. During my regular day-to-day usage, the social feed works well once you jump into that water. However, if you are like me and like to reference things at random times, then this approach starts to break. The infinite feed is not really productive especially if there is no predictable order to it. Moreover, you could run into an issue of not finding things in the future. This is especially prevelent if you are an early adopter.&lt;/p&gt;
+
+&lt;p&gt;All of the unicorns, if the business is still around, experienced their fair share of messing with user’s data unintentionally. Be it permission to the data access, persistence of the data or lack of it, recovery of the data, pricing structures, and so on.&lt;/p&gt;
+
+&lt;p&gt;How can a random user be confident in a random service? Will the data be available to the user in the future? Will you be able to access the data? How much access will you have? For how long? How do you export the data? Can you? Should you? How do you share the knowledge with a friend? Someone who is outside of your wall? Will there be a good relationship between the business and the user? Does the relationship change if you pay?&lt;/p&gt;
+
+&lt;p&gt;I am questioning if it is fair of us as consumers to be asking things that we want to be asking of technology giants. I am also questioning if we have any good examples of great businesses left in software? Examples that a random person on the street may be familiar with and not the outliers.&lt;/p&gt;
+
+&lt;p&gt;Ok… now that you have some background I will move on to the why I even started typing this piece.&lt;/p&gt;
+
+&lt;p&gt;Imagine me a few days ago when I stumbled upon a random website. I started reading the content and saw that it was written by &lt;a href=&quot;https://patrickcollison.com/&quot;&gt;Patrick Collison&lt;/a&gt; — the one from &lt;a href=&quot;Stripe.com&quot;&gt;Stripe.com&lt;/a&gt;. He brought up a &lt;a href=&quot;https://patrickcollison.com/questions&quot;&gt;few interesting points&lt;/a&gt; that I did not consider regarding our (user’s) interaction with software. He said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Will end-user applications ever be truly programmable? If so, how?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Emacs, Smalltalk, Genera, and VBA embody a vision of malleable end-user computing: if the application doesn’t do what you want, it’s easy to tweak or augment it to suit your purposes. &lt;strong&gt;Today, however, end-user software increasingly operates behind bulletproof glass&lt;/strong&gt;. This is especially true in the growth areas: mobile and web apps. Furthermore, not only is it getting &lt;strong&gt;harder to manipulate&lt;/strong&gt; the application logic itself, but it’s also becoming &lt;strong&gt;harder to directly manipulate&lt;/strong&gt; your data. With Visual Basic, you can readily write a quick script to calculate some calendar analytics with Outlook. &lt;strong&gt;To do the same with Google Calendar is a very laborious chore&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;End-user computing is becoming less a bicycle and &lt;strong&gt;more a monorail&lt;/strong&gt; for the mind.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As a consequence, &lt;strong&gt;we need ever more domain-specific software&lt;/strong&gt;. Rather than use universal tools for handling charts and for manipulating data, we tend to use separate analytics packages for every conceivable application. This is not all bad. Domain-specific tools can maximize ease-of-use and help amortize the cost of complex, specialized functionality. Sublime’s built-in ⌘-T works better than every third-party Emacs package. Still, despite these benefits, the popularity of macros and browser plugins strongly suggest that &lt;strong&gt;users are smart and want more control&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Should we just give up on our earlier visions of empowered users or is a better equilibrium possible?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The quote above (with my own highlights) was retrieved on October 3, 2018.&lt;/p&gt;
+
+&lt;p&gt;Very interesting perspective Patrick. A view that I am glad you shared and definitely will make me think in the future. More specifically, I did not see what kind of doors something like &lt;a href=&quot;https://en.wikipedia.org/wiki/Visual_Basic_for_Applications&quot;&gt;VBA&lt;/a&gt; opened for everyone. With VBA, a user has the ability to play while avoiding 3rd party reliance. This was probably huge when it came about to the customers.&lt;/p&gt;
+
+&lt;p&gt;I’m afraid to admit that I used to think: why on earth would you use VBA in 2016? 2017? 2018? Well, if you are stuck and have nothing else at your disposal, it surely looks like a really good tool to use.&lt;/p&gt;
+
+&lt;p&gt;You have to remember and put yourself in that context. A context of a typical worker that is constrained by an administrator. In such a situation, usually, everything is turned off by default (because risk mitigation strategy). This way, if you need something to be turned on or installed then then need to submit a service request. You basically need to cry for help. Moreover, things like cost, licensing, needs, and wants come into play during such a request. These things require justification. Because, business after-all.&lt;/p&gt;
+
+&lt;p&gt;If you are in such a unique position and you are constrained, then you may need to get creative. How do you solve such a problem? Create your own shortcuts. See a repetitive tasks? Automate it. Boring task? Automate it.&lt;/p&gt;
+
+&lt;p&gt;So, how can you do this automation? Lots of creative approaches, say&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;buy an automaton thing or get creative with something like &lt;a href=&quot;https://zapier.com/&quot;&gt;Zapier&lt;/a&gt; or &lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; products&lt;/li&gt;
+  &lt;li&gt;ask coworker to see what they would do&lt;/li&gt;
+  &lt;li&gt;ask your boss and see what they say&lt;/li&gt;
+  &lt;li&gt;research and see what tools are available to you (at your level) or your boss&lt;/li&gt;
+  &lt;li&gt;open up a browser and the developer’s console -&amp;gt; JavaScript to the rescue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;OR you could simply&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;learn &amp;amp; use VBA (that is already installed on your environment)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Problem solved!&lt;/p&gt;
+
+&lt;p&gt;If you take a step back, suppose you go back four years ago to 2014, then I am not sure if I would have even written this article. You have to remember that technology moves fast. But I can definitely assure you that &lt;code class=&quot;highlighter-rouge&quot;&gt;open up a browser and the developer's console -&amp;gt; JavaScript to the rescue&lt;/code&gt; definitely would not have been up there as a solution.&lt;/p&gt;
+
+&lt;p&gt;JavaScript wasn’t where it is now. If your only option was Internet Explorer then you definitely did not enjoy JavaScript. There was a lot of lapses (language features and browser support). I definitely never imagined seeing something like &lt;code class=&quot;highlighter-rouge&quot;&gt;async&lt;/code&gt; in my browser’s console. Heck, your development tools that are packed in your web browser weren’t where they are now in October of 2018. I am not even talking about other significant improvements done over the years.&lt;/p&gt;
+
+&lt;p&gt;So, my take away was an interesting one. I can understand and appreciate the importance of being creative within software constraints a little bit more. I can open up my Excel 2013 and create a macro to do pretty much what I want it to do. It just works and I can be a little bit more productive. If I wanted to do something similar with Google Sheets hypothetically, I would probably have to sign up for a new service and transfer some of my data along the way. Thus, perpetuating the moving of your data throughout the Internet while leaving little crumbs along the way. Is it bad? Is it good? Are these the right questions? Depends on model and the simulation I suppose ;-)&lt;/p&gt;
+
+&lt;p&gt;But I am also glad to see impactful people asking important questions.&lt;/p&gt;
+
+&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><summary type="html">Why am I going back to doing this? I boarded this social media train, in the early 2000s, just like everyone else.</summary></entry><entry><title type="html">October 2018 Challenge</title><link href="https://getaclue.github.io/blog/october-2018-challenge" rel="alternate" type="text/html" title="October 2018 Challenge" /><published>2018-10-02T00:00:00-04:00</published><updated>2018-10-02T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/october-2018-challenge</id><content type="html" xml:base="https://getaclue.github.io/blog/october-2018-challenge">&lt;p&gt;So, I’ve decided to do a few challenges for the month of October:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;do at least 1 problem on leetcode per day&lt;/li&gt;
@@ -912,53 +994,4 @@ daily lists, daily organizer, lists maker,&lt;/p&gt;
 &lt;p&gt;Thank you for reading and until next time my friend.&lt;/p&gt;
 
 &lt;p&gt;Sincerely,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><summary type="html">I wanted to look back on the amount of work that done in the past two months (January 2018 and February 2018) in iOS indie mobile app development</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb" /></entry><entry><title type="html">Ready to Submit</title><link href="https://getaclue.github.io/blog/ready-to-submit" rel="alternate" type="text/html" title="Ready to Submit" /><published>2018-01-12T00:00:00-05:00</published><updated>2018-01-12T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/ready-to-submit</id><content type="html" xml:base="https://getaclue.github.io/blog/ready-to-submit">&lt;p&gt;Happy Friday 👋&lt;/p&gt;
-
-&lt;p&gt;It is so easy to let this writing to get out of hand even though I promised to write more regularly. I’ve been chugging along with a lot of things since last update.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I am still have trouble understanding how to use TestFlight&lt;/em&gt;. I have done quite a bit of work over the past few days and I wanted to release it to the beta testers. However, I am currently stuck in this state:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/7jVbKS/Vve27WMfts+&quot; alt=&quot;Stuck on these TestFlights&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/Ade4Dd/XZMSnuzKCa+&quot; alt=&quot;TestFlight Stuck on Ready to Submit Screen&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Basically I am stuck just like this person that wrote &lt;a href=&quot;https://stackoverflow.com/q/44716499&quot;&gt;TestFlight build on iTunes Connect stuck at ‘Ready to Submit’&lt;/a&gt;. I’ve contacted some fellow iOS developers and am now doing what they suggested.&lt;/p&gt;
-
-&lt;p&gt;What did I learn from them?&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;every new application version gets a review that you need to go through (which is exactly what is happening now from what I understand). I like &lt;a href=&quot;https://semver.org&quot;&gt;semver&lt;/a&gt;, so technically this would be a &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.2&lt;/code&gt; version. It has been primarily bug fixes and UI changes.&lt;/li&gt;
-  &lt;li&gt;every new build, under a reviewed version, does not have to go through this process (apparently). So, this is what I am currently trying:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/8G17N9/9OFVGZcfuV+&quot; alt=&quot;Trying to make the app live&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;While, I am waiting for that to go through, I want to debug and figure out what is wrong with &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.2&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: After writing the original text, the solution did not work. Not sure what I am missing but here is what I’ve done:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/oztmDY/7rYtV1OYGc+&quot; alt=&quot;TestFlight process&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Also, it also seems that information from bullet point #2 is funky. I changed the app back to &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.1&lt;/code&gt; and changed build to &lt;code class=&quot;highlighter-rouge&quot;&gt;2&lt;/code&gt; and, as you can see, the app is still in the “Ready for Submit” state.&lt;/p&gt;
-
-&lt;p&gt;I’m going to continue with this and, in mean time, I think I am just going to contact Apple Support.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;PS. Yes, I did consult &lt;a href=&quot;https://help.apple.com/itunes-connect/developer/#/dev78d0a8f87&quot;&gt;View build status and metrics page&lt;/a&gt; and &lt;a href=&quot;https://help.apple.com/itunes-connect/developer/#/dev3d6869aff&quot;&gt;app build statuses page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I wish Apple would provide more information on this “Ready to Submit” state because this does not really help me at this point in the process 🤕 Why? Because by clicking on this link:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/Dy4n8t/zHHV2KGmdt+&quot; alt=&quot;Click on this link&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Will bring me to:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/i0YRH9/sAGc3S3smm+&quot; alt=&quot;Ready to Submit definition from Apple&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Which doesn’t really answer how to submit 🤕&lt;/p&gt;
-
-&lt;p&gt;So, Daily Vibes is stuck somewhere here:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/W9e1HV/LS8BkWOfsq+&quot; alt=&quot;Daily Vibes is stuck in one of these phases&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Cheers,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="TestFlight" /><category term="resources" /><summary type="html">Happy Friday 👋</summary></entry></feed>
+Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><summary type="html">I wanted to look back on the amount of work that done in the past two months (January 2018 and February 2018) in iOS indie mobile app development</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb" /></entry></feed>
