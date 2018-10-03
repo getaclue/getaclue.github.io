@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-01T16:41:34-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">On Discrete Mathematics For Computer Science</title><link href="https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science" rel="alternate" type="text/html" title="On Discrete Mathematics For Computer Science" /><published>2018-10-01T00:00:00-04:00</published><updated>2018-10-01T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science</id><content type="html" xml:base="https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science">&lt;p&gt;I just ran into &lt;a href=&quot;http://condor.depaul.edu/sepp/ICME-13.Epp.pdf&quot;&gt;“Discrete Mathematics For Computer Science”&lt;/a&gt; by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-02T21:18:56-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">October 2018 Challenge</title><link href="https://getaclue.github.io/blog/october-2018-challenge" rel="alternate" type="text/html" title="October 2018 Challenge" /><published>2018-10-02T00:00:00-04:00</published><updated>2018-10-02T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/october-2018-challenge</id><content type="html" xml:base="https://getaclue.github.io/blog/october-2018-challenge">&lt;p&gt;So, I’ve decided to do a few challenges for the month of October:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;do at least 1 problem on leetcode per day&lt;/li&gt;
+  &lt;li&gt;write and publish 1 thing per day&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A few minutes ago, I was having a blast while fighting with the following maintenance that I am undergoing for &lt;a href=&quot;https://dailyvibes.ca&quot;&gt;daily vibes&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2018-10-02/xcode-battles.png&quot; alt=&quot;Xcode decided to not play along&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While customers do not care about such background things, I am beginning to see what people mean about upgrade headaches. And, thus, I stopped for today. No more wasting time on lower priority things. I then proceeded to write instead. I wanted to say two things:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I am trying really hard to stay committed to the problem solving challenge. Not going to lie right now — not looking forward to it right now but I am looking forward to looking back at this time and laughing about it.&lt;/li&gt;
+  &lt;li&gt;Writing something every day and then publishing it is, also, not going to be easy. It is an experiment for me that I hope you enjoy whenever you read this. Perhaps, you will see what improvements can occur through deliberate practice in just a few days.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="challenge" /><summary type="html">See you tomorrow.</summary></entry><entry><title type="html">On Discrete Mathematics For Computer Science</title><link href="https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science" rel="alternate" type="text/html" title="On Discrete Mathematics For Computer Science" /><published>2018-10-01T00:00:00-04:00</published><updated>2018-10-01T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science</id><content type="html" xml:base="https://getaclue.github.io/blog/on-discrete-mathematics-for-computer-science">&lt;p&gt;I just ran into &lt;a href=&quot;http://condor.depaul.edu/sepp/ICME-13.Epp.pdf&quot;&gt;“Discrete Mathematics For Computer Science”&lt;/a&gt; by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;I added my own emphasis to the quotes below.&lt;/strong&gt;&lt;/p&gt;
 
@@ -943,31 +961,4 @@ Alex&lt;/p&gt;</content><author><name></name></author><category term="software d
 &lt;p&gt;&lt;img src=&quot;https://d.pr/i/W9e1HV/LS8BkWOfsq+&quot; alt=&quot;Daily Vibes is stuck in one of these phases&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Cheers,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="TestFlight" /><category term="resources" /><summary type="html">Happy Friday 👋</summary></entry><entry><title type="html">Getting familiar with iOS testing</title><link href="https://getaclue.github.io/blog/getting-familiar-w-testing" rel="alternate" type="text/html" title="Getting familiar with iOS testing" /><published>2018-01-11T00:00:00-05:00</published><updated>2018-01-11T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/getting-familiar-w-testing</id><content type="html" xml:base="https://getaclue.github.io/blog/getting-familiar-w-testing">&lt;p&gt;&lt;img src=&quot;https://d.pr/i/YgH6dm/ayxzukbu17+&quot; alt=&quot;Testing image from https://pixabay.com/en/software-testing-service-762486/&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This will be a quick post, mainly a reference to some resource I’ve been using to get familiar with iOS testing and refactoring.&lt;/p&gt;
-
-&lt;p&gt;Refactoring is fun because I get to exercise my software engineering muscles. This is one of the reasons that I like Swift so much. I get to apply my software engineering knowledge on my own projects 👏&lt;/p&gt;
-
-&lt;p&gt;Testing on the whole is not difficult in iOS. However, when you add things like CoreData then it becomes a bit more chaotic to filter through.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/@Dougly/unit-tests-and-test-driven-development-xcode-8-and-swift-3-f6d43ecd4bd4&quot;&gt;Unit Tests and Test Driven Development (Xcode 8 and Swift 3)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://academy.realm.io/posts/andy-matuschak-refactor-mega-controller/&quot;&gt;Let’s Play: Refactor the Mega Controller!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://computingstories.com/swift%20stories/core-data-wrap-class-mocking.html&quot;&gt;Core Data Wrapper Class, Mocking and Unit Testing in Swift 3!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.natashatherobot.com/updated-protocol-oriented-mvvm-in-swift-2-0/&quot;&gt;Updated: Protocol-Oriented MVVM in Swift 2.0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b&quot;&gt;How not to get desperate with MVVM implementation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.natashatherobot.com/unit-testing-swift-dependency-injection/&quot;&gt;Unit Testing in Swift: Dependency Injection
-&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/flawless-app-stories/applying-unit-tests-to-mvvm-with-swift-ba5a79df8a18&quot;&gt;Applying Unit Tests to MVVM with Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/cocoaacademymag/unit-testing-uitableview-2387f3a42b4f&quot;&gt;Unit Testing — UITableView&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.swiftbysundell.com/posts/different-flavors-of-dependency-injection-in-swift&quot;&gt;Different flavors of dependency injection in Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/flawless-app-stories/cracking-the-tests-for-core-data-15ef893a3fee&quot;&gt;Cracking the Tests for Core Data&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://nshipster.com/xctestcase/&quot;&gt;XCTest​Case /
-XCTest​Expectation /
-measure​Block()&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/iOSthemes/comments/4zbhnk/question_anyone_know_the_hex_for_the_new_twitter/&quot;&gt;iOS Theme Colours&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Cheers,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="software quality assurance" /><category term="productivity" /><category term="growth" /><category term="testing" /><category term="resources" /><summary type="html"></summary></entry></feed>
+Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="TestFlight" /><category term="resources" /><summary type="html">Happy Friday 👋</summary></entry></feed>
