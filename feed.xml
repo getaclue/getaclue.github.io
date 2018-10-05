@@ -1,4 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-03T17:37:24-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Will end-user applications ever be truly programmable?</title><link href="https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable" rel="alternate" type="text/html" title="Will end-user applications ever be truly programmable?" /><published>2018-10-03T00:00:00-04:00</published><updated>2018-10-03T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable</id><content type="html" xml:base="https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable">&lt;p&gt;Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-04T23:58:35-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Swift package manager and links</title><link href="https://getaclue.github.io/blog/swift-package-manager-october-2018" rel="alternate" type="text/html" title="Swift package manager and links" /><published>2018-10-04T00:00:00-04:00</published><updated>2018-10-04T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/swift-package-manager-october-2018</id><content type="html" xml:base="https://getaclue.github.io/blog/swift-package-manager-october-2018">&lt;p&gt;Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.&lt;/p&gt;
+
+&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
+
+&lt;p&gt;Every time I write this piece of content, I have to name this file. I have a specific way I name these files: It goes &lt;code class=&quot;highlighter-rouge&quot;&gt;date-title.markdown&lt;/code&gt; so it is easier for me to reference in the future. When the parser does its magic, it also creates a nice, seo friendly URL that I can share. It gives some context to readers that are reading it right now in October 2018. If you look at the link, you know that it is a fresh article without even reading it ;-) People like me like to read things like this. While it is fine to do it manually once in a while, it became too repetative to me. SPM to the rescue!&lt;/p&gt;
+
+&lt;h2 id=&quot;idea&quot;&gt;Idea&lt;/h2&gt;
+
+&lt;p&gt;Make a cli tool using SPM that can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;take input from cli&lt;/li&gt;
+  &lt;li&gt;input like : &lt;code class=&quot;highlighter-rouge&quot;&gt;$ tool &quot;Swift package manager october 2018&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;and provide output to me so I can copy/paste while I am creating a new file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;… oh and I get to write something today ;-)&lt;/p&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+
+&lt;p&gt;Here is my code:&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// main.swift&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Foundation&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;CommandLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isEmpty&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Need some kind of arguments fam&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;EXIT_FAILURE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//let input = &quot;Will end-user applications ever be truly programmable?&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;inputLowerCased&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;lowercased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//print(input)&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dashifyText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;inputTxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputTxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isEmpty&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;currDateTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dateFormatter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;DateFormatter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// For example, short would have the basics: &quot;10/8/16, 10:52 PM&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dateFormatter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timeStyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;short&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dateFormatter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dateStyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;short&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;currDateTimeText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dateFormatter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currDateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dashifyDateTimeString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;forString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dateTimeString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forString&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dateTimeString&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultant&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dashifiedText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dashifyText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inputLowerCased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;dateTimeText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dashifyDateTimeString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currDateTimeText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;finalString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dateTimeText&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dashifiedText&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.markdown&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;finalString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;LENGTH: &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;finalString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and in the process, I’ve tried different attempts that I’ve attempted. The struggles were real.&lt;/p&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NSError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;my error description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ui1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;ui2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;val2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringSet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;SubSequence&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;_moddedSubString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subString&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subString&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;filteredStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dateTimeString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filteredStr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\r&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;esult&quot;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;splitStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dateTimeString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;separator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;filteredStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;splitStr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;filteredStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;splitStr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Oh and if you actually ran this script then you may notice that it doesn’t exactly create the same URL that you currently see. I had to remove the time from the file name. My actual naming convention is to use days for the files and within the files I have a &lt;code class=&quot;highlighter-rouge&quot;&gt;datePublished&lt;/code&gt; and a &lt;code class=&quot;highlighter-rouge&quot;&gt;dateModified&lt;/code&gt; timestamps.&lt;/p&gt;
+
+&lt;p&gt;If you ran this script it would make something like this as output:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// current output
+2018-10-04-23-39-swift-package-manager-october-2018.markdown
+// what we need
+2018-10-04-swift-package-manager-october-2018.markdown
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is almost there. I will modify it for me and I will leave this up to you if you care as an exercise.&lt;/p&gt;
+
+&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="swift" /><category term="swift package manager" /><category term="spm" /><category term="links" /><summary type="html">Instead of spending time on programming challenging grinding for the interviews, I wanted to study swift package manager (SPM)</summary></entry><entry><title type="html">Will end-user applications ever be truly programmable?</title><link href="https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable" rel="alternate" type="text/html" title="Will end-user applications ever be truly programmable?" /><published>2018-10-03T00:00:00-04:00</published><updated>2018-10-03T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable</id><content type="html" xml:base="https://getaclue.github.io/blog/will-end-user-applications-ever-be-truly-programmable">&lt;p&gt;Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks.&lt;/p&gt;
 
 &lt;p&gt;Why am I going back to doing this? I jumped in just like everyone else on the social media train that started moving in the early 2000s.&lt;/p&gt;
 
@@ -844,154 +1004,4 @@ You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twit
 &lt;p&gt;⭐️ &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;amp;at=1010lK7Y&quot;&gt;Download Daily Vibes&lt;/a&gt; 🚀&lt;/p&gt;
 
 &lt;p&gt;Sincerely,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="tutorial" /><summary type="html">In a previous release of ⭐️ Daily Vibes for iOS, 1.3.0, I added a natural language date parser.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/2PWtsR" /></entry><entry><title type="html">January and February Reflections</title><link href="https://getaclue.github.io/blog/january-and-february-reflections" rel="alternate" type="text/html" title="January and February Reflections" /><published>2018-02-28T00:00:00-05:00</published><updated>2018-02-28T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/january-and-february-reflections</id><content type="html" xml:base="https://getaclue.github.io/blog/january-and-february-reflections">&lt;h2 id=&quot;hi-friends&quot;&gt;Hi friends,&lt;/h2&gt;
-
-&lt;p&gt;Can’t believe how quickly January and February came and went. I hope you’ve had a productive start to the year.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb&quot; alt=&quot;Calendar image from https://pixabay.com/en/timeline-planner-success-achieve-3168323/&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I wanted to look back on the amount of work that done in the past two months&lt;/p&gt;
-
-&lt;h2 id=&quot;january&quot;&gt;January&lt;/h2&gt;
-
-&lt;p&gt;A lot of things happened in January.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;amp;at=1010lK7Y&quot;&gt;Daily Vibes&lt;/a&gt; is available on the Apple App Store. If you haven’t downloaded it yet, just give it a shot (&lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;amp;at=1010lK7Y&quot;&gt;download&lt;/a&gt;).&lt;/li&gt;
-  &lt;li&gt;Added a sign up sheet for beta testers:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;You can now sign up to beta test &lt;a href=&quot;https://twitter.com/dailyvibesapp?ref_src=twsrc%5Etfw&quot;&gt;@dailyvibesapp&lt;/a&gt; if you like. Now public. For all. Yup... Coming to Store. Soon. Like really soon. &lt;a href=&quot;https://t.co/tszKEOVgeS&quot;&gt;https://t.co/tszKEOVgeS&lt;/a&gt; PS. Plz tell your friends too ❤️ &lt;a href=&quot;https://t.co/qyPJUrEWS4&quot;&gt;https://t.co/qyPJUrEWS4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alex Kluew 🇨🇦 (@getaclue_1) &lt;a href=&quot;https://twitter.com/getaclue_1/status/951587276949278720?ref_src=twsrc%5Etfw&quot;&gt;January 11, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;As a result of shipping, started fixing bugs 🐞 here and here&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;finally 😅 fixed this 🐞 bug that has been 😡 annoying me for a while &lt;a href=&quot;https://twitter.com/hashtag/dailyvibes?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#dailyvibes&lt;/a&gt; yay small 🏆 wins &lt;a href=&quot;https://twitter.com/hashtag/dailyprogress?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#dailyprogress&lt;/a&gt; &lt;a href=&quot;https://twitter.com/dailyvibesapp?ref_src=twsrc%5Etfw&quot;&gt;@dailyvibesapp&lt;/a&gt; January 19 2018 &lt;a href=&quot;https://t.co/tPwhbet4Rj&quot;&gt;pic.twitter.com/tPwhbet4Rj&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alex Kluew 🇨🇦 (@getaclue_1) &lt;a href=&quot;https://twitter.com/getaclue_1/status/954375575447236608?ref_src=twsrc%5Etfw&quot;&gt;January 19, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;and yes this took some 👩‍💻 work 🙈 b/c of theming ... should be smooth ⛵️ sailing moving ⏩ forward&lt;/p&gt;&amp;mdash; Alex Kluew 🇨🇦 (@getaclue_1) &lt;a href=&quot;https://twitter.com/getaclue_1/status/954376036778639360?ref_src=twsrc%5Etfw&quot;&gt;January 19, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;was frustrated with App Delivery … a bunch of times …comes as a benefti of exposure to the Apple Ecosystem I suppose 🤔&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;february&quot;&gt;February&lt;/h2&gt;
-
-&lt;p&gt;Continued incremental improvement of Daily Vibes&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Updated Kickstarter page&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;also 🛠 fixed this icon issue &lt;a href=&quot;https://t.co/VCT80m3HpY&quot;&gt;pic.twitter.com/VCT80m3HpY&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alex Kluew 🇨🇦 (@getaclue_1) &lt;a href=&quot;https://twitter.com/getaclue_1/status/954381779720269824?ref_src=twsrc%5Etfw&quot;&gt;January 19, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Adding small UI accents that I was longing for&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Can’t wait to 🚢 these 💸 awesome updates to you. ⚒ Today shows items due today or are on Today list. 📫 This week shows... you get it 🎉 oh and added quick to view accents 🚀 &lt;a href=&quot;https://twitter.com/hashtag/dailyprogress?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#dailyprogress&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/dailyvibes?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#dailyvibes&lt;/a&gt; Feb 13 2018 &lt;a href=&quot;https://t.co/UasSlId95m&quot;&gt;pic.twitter.com/UasSlId95m&lt;/a&gt;&lt;/p&gt;&amp;mdash; Daily Vibes (@dailyvibesapp) &lt;a href=&quot;https://twitter.com/dailyvibesapp/status/963579252586221568?ref_src=twsrc%5Etfw&quot;&gt;February 14, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;While using DV, I noticed myself wanting to add multiple entries at the same time. So, I wanted to build something in.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Starting 🔨 work on adding 🗂 multiple items. This is where we are now 🤓! &lt;a href=&quot;https://twitter.com/hashtag/dailyvibes?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#dailyvibes&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/productivity?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#productivity&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/dailyprogress?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#dailyprogress&lt;/a&gt; Feb 17 2018 &lt;a href=&quot;https://t.co/rlTA3dpMGk&quot;&gt;pic.twitter.com/rlTA3dpMGk&lt;/a&gt;&lt;/p&gt;&amp;mdash; Daily Vibes (@dailyvibesapp) &lt;a href=&quot;https://twitter.com/dailyvibesapp/status/964938263759937536?ref_src=twsrc%5Etfw&quot;&gt;February 17, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This error took a few days to fix …&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Getting this error when uploading to iTC. Our app has arm64 in UIRequiredDeviceCapabilities. Who broke iTC again…&lt;br /&gt;&lt;br /&gt;ERROR ITMS-90502: &amp;quot;Invalid Bundle. Apps that only contain the arm64 slice must also have &amp;#39;arm64&amp;#39; in the list of UIRequiredDeviceCapabilities in Info.plist.&amp;quot;&lt;/p&gt;&amp;mdash; Andrew Mayers (@jamayers) &lt;a href=&quot;https://twitter.com/jamayers/status/966457450948911104?ref_src=twsrc%5Etfw&quot;&gt;February 21, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This error also took a few days to correct&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;There are a lot of responses to &amp;quot;No accounts with iTunes Connect Access&amp;quot; error and yet none have worked so far =(&lt;/p&gt;&amp;mdash; Alex Kluew 🇨🇦 (@getaclue_1) &lt;a href=&quot;https://twitter.com/getaclue_1/status/960690718531571713?ref_src=twsrc%5Etfw&quot;&gt;February 6, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;apple-store&quot;&gt;Apple Store&lt;/h2&gt;
-
-&lt;p&gt;I uploaded &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;amp;at=1010lK7Y&quot;&gt;Daily Vibes&lt;/a&gt; to the Apple App Store simply because I wanted to have it out there rather than keep it under wraps. I figured I would add value to the software as I go. In retrospect, it was a good decision because it allowed me to find value quicker (as opposed to when I was working on the app under wraps).&lt;/p&gt;
-
-&lt;p&gt;After listening to some &lt;a href=&quot;https://www.indiehackers.com/forum/show-ih-daily-vibes-ios-80a69b4368&quot;&gt;feedback on IndieHackers&lt;/a&gt; I decided to start working on ASO (Apple Store Optimization). Signed up for Apple’s Ads. Signed up for their Affiliate program. Started researching.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-i-have-learned-so-far&quot;&gt;What I have learned so far:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Title matters&lt;/li&gt;
-  &lt;li&gt;Description matters&lt;/li&gt;
-  &lt;li&gt;Keywords matter&lt;/li&gt;
-  &lt;li&gt;Having screenshots ??? apparently matters&lt;/li&gt;
-  &lt;li&gt;Having a video ?? apparently matters&lt;/li&gt;
-  &lt;li&gt;Description and other stuff that you have to fill in… doesn’t matter&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;what-else-i-have-learned&quot;&gt;What else I have learned?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What you actually put in any of those fields doesn’t really matter. Don’t get attached to your App name, App Description, Keywords or anything else to do with it. This is important for indie developers with no ad budget. Why? Because we want to be found so people use our software.&lt;/li&gt;
-  &lt;li&gt;If you have a budget then you can pick your Branding carefully and you can ignore what I said above&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;So, while working on improving Daily Vibes I am also looking at improving my overall marketing. I am going to do it iteratively and learn along the way.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;what-is-my-plan-of-attack&quot;&gt;What is my plan of attack?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;improve title (Daily Vibes ➡️ Daily Vibes: Life Task Manager)&lt;/li&gt;
-  &lt;li&gt;improve subtitle (Todo List &amp;amp; Life Day Organizer ➡️ To do list, life day organizer)&lt;/li&gt;
-  &lt;li&gt;improve keywords; currently haven’t decided:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;to-do, list app, list maker, task list, todo list, list, task, todo, to do, life organizer, daily&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;todo,list,organizer,tracker,task,project,things,productivity,to do,to-do,keep,reminder,day planner&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;life organizer, good vibes, daily tasks, daily office, daily calender,
-daily lists, daily organizer, lists maker,&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;make screenshots localized with pretty text (via &lt;a href=&quot;fastlane.tools&quot;&gt;fastlane.tools&lt;/a&gt;) … something like:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/LcaVFa+&quot; alt=&quot;LocalizedScreenshot sample&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;make AND edit AND upload a video&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/cmP5EE+&quot; alt=&quot;Video WIP Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;improve aforementioned screenshots&lt;/li&gt;
-  &lt;li&gt;improve aforementioned video&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;All of these ideas are up in the air while I am writing this post. I am hoping to ship them with next release, hopefully sometime next week. Then, I will have to wait and look at the analytics.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;A lot of work goes behind the scenes for a single app. I am beginning to appreciate indie developers and their successful products. You really need to be comfortable with wearing ALL of the hats that make a successful business.&lt;/p&gt;
-
-&lt;p&gt;For me, marketing is an uncharted area and I was hesitant to start learning it. But look at me now, I can make icons, promo videos, and start being strategic about growth. It is a journey that I am enjoying but it is challenging.&lt;/p&gt;
-
-&lt;p&gt;I also paved the road and did all of the necessary paper work to add in app subscriptions. Now I just gotta figure out my strategy in this area ;)&lt;/p&gt;
-
-&lt;p&gt;Oh and in closing news, I wanted to keep to a somewhat relaxed 2 week shipping cycle… and so far I have been sticking to the schedule of regular updates =) I hope I can keep this up!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;amp;at=1010lK7Y&quot;&gt;Download Daily Vibes&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Thank you for reading and until next time my friend.&lt;/p&gt;
-
-&lt;p&gt;Sincerely,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><summary type="html">I wanted to look back on the amount of work that done in the past two months (January 2018 and February 2018) in iOS indie mobile app development</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb" /></entry></feed>
+Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="tutorial" /><summary type="html">In a previous release of ⭐️ Daily Vibes for iOS, 1.3.0, I added a natural language date parser.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/2PWtsR" /></entry></feed>

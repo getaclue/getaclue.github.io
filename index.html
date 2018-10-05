@@ -144,6 +144,197 @@
   
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline"><a href="/blog/swift-package-manager-october-2018">Swift package manager and links</a></h1>
+        <p class="post-meta">
+          <time datetime="2018-10-04T00:00:00-04:00" itemprop="datePublished">
+            
+            Oct 4, 2018
+          </time>
+          </p>
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        <p>Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.</p>
+
+<h2 id="problem-statement">Problem Statement</h2>
+
+<p>Every time I write this piece of content, I have to name this file. I have a specific way I name these files: It goes <code class="highlighter-rouge">date-title.markdown</code> so it is easier for me to reference in the future. When the parser does its magic, it also creates a nice, seo friendly URL that I can share. It gives some context to readers that are reading it right now in October 2018. If you look at the link, you know that it is a fresh article without even reading it ;-) People like me like to read things like this. While it is fine to do it manually once in a while, it became too repetative to me. SPM to the rescue!</p>
+
+<h2 id="idea">Idea</h2>
+
+<p>Make a cli tool using SPM that can:</p>
+
+<ul>
+  <li>take input from cli</li>
+  <li>input like : <code class="highlighter-rouge">$ tool "Swift package manager october 2018"</code></li>
+  <li>and provide output to me so I can copy/paste while I am creating a new file</li>
+</ul>
+
+<p>… oh and I get to write something today ;-)</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>Here is my code:</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// main.swift</span>
+<span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">private</span> <span class="k">let</span> <span class="nv">arguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="kt">CommandLine</span><span class="o">.</span><span class="n">arguments</span>
+<span class="c1">//</span>
+<span class="k">guard</span> <span class="n">arguments</span><span class="o">.</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="o">!</span><span class="n">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isEmpty</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Need some kind of arguments fam"</span><span class="p">)</span>
+    <span class="nf">exit</span><span class="p">(</span><span class="kt">EXIT_FAILURE</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">//let input = "Will end-user applications ever be truly programmable?"</span>
+<span class="k">let</span> <span class="nv">input</span> <span class="o">=</span> <span class="n">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">let</span> <span class="nv">inputLowerCased</span> <span class="o">=</span> <span class="n">input</span><span class="o">.</span><span class="nf">lowercased</span><span class="p">()</span>
+
+<span class="c1">//print(input)</span>
+
+<span class="kd">func</span> <span class="nf">dashifyText</span><span class="p">(</span><span class="n">_</span> <span class="nv">inputTxt</span><span class="p">:</span><span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">input</span> <span class="o">=</span> <span class="n">inputTxt</span><span class="p">,</span> <span class="o">!</span><span class="n">input</span><span class="o">.</span><span class="n">isEmpty</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">""</span>
+    <span class="p">}</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
+
+    <span class="k">for</span> <span class="n">character</span> <span class="k">in</span> <span class="n">input</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">character</span> <span class="o">==</span> <span class="s">" "</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="s">"-"</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">character</span> <span class="o">==</span> <span class="s">"?"</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="s">""</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="kt">String</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">currDateTime</span> <span class="o">=</span> <span class="kt">Date</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">dateFormatter</span> <span class="o">=</span> <span class="kt">DateFormatter</span><span class="p">()</span>
+
+<span class="c1">// For example, short would have the basics: "10/8/16, 10:52 PM"</span>
+<span class="n">dateFormatter</span><span class="o">.</span><span class="n">timeStyle</span> <span class="o">=</span> <span class="o">.</span><span class="n">short</span>
+<span class="n">dateFormatter</span><span class="o">.</span><span class="n">dateStyle</span> <span class="o">=</span> <span class="o">.</span><span class="n">short</span>
+
+<span class="k">let</span> <span class="nv">currDateTimeText</span> <span class="o">=</span> <span class="n">dateFormatter</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">currDateTime</span><span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">dashifyDateTimeString</span><span class="p">(</span><span class="n">_</span> <span class="nv">forString</span><span class="p">:</span><span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">dateTimeString</span> <span class="o">=</span> <span class="n">forString</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">""</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">resultant</span> <span class="o">=</span> <span class="s">""</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="k">in</span> <span class="n">dateTimeString</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="n">char</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="s">"/"</span><span class="p">:</span>
+            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">"-"</span>
+        <span class="k">case</span> <span class="s">","</span><span class="p">:</span>
+            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">""</span>
+        <span class="k">case</span> <span class="s">":"</span><span class="p">:</span>
+            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">"-"</span>
+        <span class="k">case</span> <span class="s">" "</span><span class="p">:</span>
+            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">"-"</span>
+        <span class="k">default</span><span class="p">:</span>
+            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="kt">String</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">resultant</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">dashifiedText</span> <span class="o">=</span> <span class="nf">dashifyText</span><span class="p">(</span><span class="n">inputLowerCased</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">dateTimeText</span> <span class="o">=</span> <span class="nf">dashifyDateTimeString</span><span class="p">(</span><span class="n">currDateTimeText</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">finalString</span> <span class="o">=</span> <span class="s">"</span><span class="se">\(</span><span class="n">dateTimeText</span><span class="se">)</span><span class="s">-</span><span class="se">\(</span><span class="n">dashifiedText</span><span class="se">)</span><span class="s">.markdown"</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">finalString</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"LENGTH: </span><span class="se">\(</span><span class="n">finalString</span><span class="o">.</span><span class="n">count</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>and in the process, I’ve tried different attempts that I’ve attempted. The struggles were real.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">throw</span> <span class="kt">NSError</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"my error description"</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="s">"ui1"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span> <span class="s">"ui2"</span><span class="p">:</span><span class="s">"val2"</span><span class="p">]</span> <span class="p">)</span>
+        <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">stringSet</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">subString</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">.</span><span class="kt">SubSequence</span> <span class="k">in</span>
+            <span class="k">let</span> <span class="nv">_moddedSubString</span> <span class="o">=</span> <span class="n">subString</span>
+            <span class="k">return</span> <span class="n">subString</span>
+        <span class="p">}</span>
+        <span class="k">let</span> <span class="nv">filteredStr</span> <span class="o">=</span> <span class="n">dateTimeString</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
+            <span class="k">switch</span> <span class="n">element</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s">"/"</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kt">Character</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span>
+            <span class="k">case</span> <span class="s">","</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kt">Character</span><span class="p">(</span><span class="s">""</span><span class="p">)</span>
+            <span class="k">case</span> <span class="s">":"</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kt">Character</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span>
+            <span class="k">default</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">element</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
+
+        <span class="k">for</span> <span class="n">character</span> <span class="k">in</span> <span class="n">filteredStr</span> <span class="p">{</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="s">"</span><span class="se">\r</span><span class="s">esult"</span>
+        <span class="p">}</span>
+
+        <span class="k">let</span> <span class="nv">splitStr</span> <span class="o">=</span> <span class="n">dateTimeString</span><span class="o">.</span><span class="nf">split</span><span class="p">(</span><span class="nv">separator</span><span class="p">:</span> <span class="s">" "</span><span class="p">)</span>
+
+        <span class="k">let</span> <span class="nv">filteredStr</span> <span class="o">=</span> <span class="n">splitStr</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
+            <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+        <span class="p">}</span>
+
+        <span class="k">let</span> <span class="nv">filteredStr</span> <span class="o">=</span> <span class="n">splitStr</span><span class="o">.</span><span class="n">filter</span> <span class="p">{</span> <span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">in</span>
+            <span class="k">switch</span> <span class="n">element</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s">"/"</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">false</span>
+            <span class="k">case</span> <span class="s">","</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">false</span>
+            <span class="k">case</span> <span class="s">":"</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">false</span>
+            <span class="k">default</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
+</code></pre></div></div>
+
+<p>Oh and if you actually ran this script then you may notice that it doesn’t exactly create the same URL that you currently see. I had to remove the time from the file name. My actual naming convention is to use days for the files and within the files I have a <code class="highlighter-rouge">datePublished</code> and a <code class="highlighter-rouge">dateModified</code> timestamps.</p>
+
+<p>If you ran this script it would make something like this as output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// current output
+2018-10-04-23-39-swift-package-manager-october-2018.markdown
+// what we need
+2018-10-04-swift-package-manager-october-2018.markdown
+</code></pre></div></div>
+
+<p>It is almost there. I will modify it for me and I will leave this up to you if you care as an exercise.</p>
+
+<p>See you tomorrow.</p>
+
+
+        <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+      </div>
+
+      <p class="extra-info">
+        
+          Tags: software engineering, swift, swift package manager, spm, links &nbsp; | &nbsp;
+        
+        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/swift-package-manager-october-2018" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+      </p>
+    </article>
+  
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
         <h1 class="post-title" itemprop="name headline"><a href="/blog/will-end-user-applications-ever-be-truly-programmable">Will end-user applications ever be truly programmable?</a></h1>
         <p class="post-meta">
           <time datetime="2018-10-03T00:00:00-04:00" itemprop="datePublished">
@@ -479,151 +670,6 @@ x</li>
           Tags: software engineering, maths &nbsp; | &nbsp;
         
         <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/on-discrete-mathematics-for-computer-science" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-      </p>
-    </article>
-  
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/more-frequent-updates">More frequent updates</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-09-29T00:00:00-04:00" itemprop="datePublished">
-            
-            Sep 29, 2018
-          </time>
-          </p>
-      </header>
-
-      <div class="post-content" itemprop="articleBody">
-        <p>Those of you that know me personally, know that I do a lot of little experiments and I like to reflect. I believe in engineering and science principles. They are at my core and drive me forward.</p>
-
-<p>Unfortunately, I feel like I am not doing a good job in reflecting and sharing that with you. What happens usually is that I open up a blank canvas, such as this one, and just start writing. Usually I have a topic or a direction that motivates me to write. However, I do not consider if I will publish or delete the content at the time of writing it.</p>
-
-<p>This is what I mean by a blank canvas in September 2018:
-<img src="/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-12.12.33.png" alt="Blank canvas" /></p>
-
-<p>As a result, I have a lot of written content spread out across various computers, domains, and publications. A lot of this content is not published and, if taken out of context, may seem like a waste of my time. Personally, I find it very difficult to hit that publish button for many reasons.</p>
-
-<p>To me, writing is cathartic in a sense — the single purpose is to remove the content from my head. When the ideas are out of my head and on a canvas then I can play with them. In my head there is chaos, so I like to consolidate my ideas and to make sense of them. To tease out my views and opinions (and to correct them).</p>
-
-<p>If you take this into consideration, then perhaps you can see why some of my pieces don’t get my approval and thus never see the light. However, the longer I live on this earth, the more I wish I didn’t hold back and just publish (whether or not it is finished). So, I decided to actively work on this.</p>
-
-<p>One of my goals for 2018 was to publish more frequent written updates. The intention was not only to improve the quality of my written content but also to documenting a process.</p>
-
-<p><em>It is the end of September. Month #9 is almost done. So how have I been doing?</em></p>
-
-<p>On the whole, I have been doing way better than any of my previous years. If you take a look at this year alone, I have published 11 pieces of work so far. Some of them even required a lot of additional work. Gasp!!! One thing for sure — I have been staying consistent. Whatever that means to me.</p>
-
-<p>If I take a look at it this way, then my progress is happening. I am growing and developing. However, during my day-to-day thinking it feels more negative. I feel like I could be doing better in this area. I still find myself falling into the trap of not publishing. Reflecting on this progress definitely helps to stay on track.</p>
-
-<p>So, I think I am doing OK even if it doesn’t feel like that. I give myself the permission to make mistakes, publish more frequent and unfinished work; and continue this journey that I started.</p>
-
-<h2 id="what-happened-since-the-last-post">What happened since the last <a href="/blog/i-have-to-come-clean-about-my-project">post</a>?</h2>
-
-<ul>
-  <li>in June/July/August, I finished the backend &amp; frontend MVP for dailyvibes
-    <ul>
-      <li>the said backend and frontend are not live yet to anyone but you may see some things <a href="https://github.com/dailyvibes">here</a></li>
-      <li>PS, as an aside — I am considering migrating away from github to self-hosted for all of my work</li>
-    </ul>
-  </li>
-  <li>in July, worked on <a href="https://screenhole.net/">screenhole</a> and created an MVP for a Mac OS screen recorder functionality. That was a fun experiment that you can view at <a href="https://screenhole.net/getaclue/~g8U2vv">https://screenhole.net/getaclue/~g8U2vv</a> Unfortunately that is not a public feature and is stuck in alpha/beta stage until further notice.</li>
-  <li>in July/August, worked on <a href="https://keyframes.net/">keyframes</a> native Mac app. Was a bit of work but looks nice in my opinion. This work is in <a href="https://keyframes.net/snapper/beta">beta</a> and is available for download.</li>
-  <li>in August, launched our <a href="https://cspray.ca/">physical product</a> at the <a href="https://theex.com/">Canadian National Exhibition</a>. That was intense. Will talk about this more at a later time ;-) but lets just say we are continuing working on this project. This was a FIRST for us and also a BIG deal!!!
-    <ul>
-      <li><code class="highlighter-rouge">Attendance: 1.54 million (2016)</code> — may hint to you at why. And we made sure to talk to almost everyone that passed by us. I say almost because it was just the two of us.</li>
-    </ul>
-  </li>
-  <li>in September, started to work on news article parser for <a href="https://elderoost.com/">elderoost</a>. One of the current challenges is keeping up to news. I physically read all of the articles manually and filter them manually. This honestly takes a lot of time. If you check the website the latest article was added <code class="highlighter-rouge">5 months ago</code>. I have all of the articles since then I just haven’t processed them yet.
-    <ul>
-      <li>current working approach:
-        <ul>
-          <li>get news article link</li>
-          <li>go to the link</li>
-          <li>grab the URL, title, headline, author, date of publication, and the content
-            <ul>
-              <li>I found a script that helps with grabbing all of this (similar to how some browsers allow you to have a read an html page in plain text if you click a button)</li>
-            </ul>
-          </li>
-          <li>put this stuff into postgres db</li>
-          <li>index title and content using elasticsearch</li>
-          <li>for each residence search against this text</li>
-        </ul>
-      </li>
-      <li>unfortunately it is not done as I cannot narrow down some edge cases.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="and-what-am-i-up-to-now">and what am I up to now?</h2>
-
-<ul>
-  <li>job search
-    <ul>
-      <li>After 2 years and some, I think it is time as there aren’t any new opportunities for growth as a software engineer where I am</li>
-      <li>The work moved to a new physical location that is more challenging to commute to</li>
-      <li>My school debt is causing me a lot of stress and anxiety… so I’d like to pay this off faster.</li>
-      <li>I am not being paid what I know I could be for someone with my needed skills
-        <ul>
-          <li>I stayed because of the team but that recently got dissolved</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>cspray</li>
-  <li>dailyvibes
-    <ul>
-      <li>add user auth functionality on ios
-        <ul>
-          <li>make user auth functionality work between ios and server</li>
-          <li>make a sync mechanism between ios and server (probably manual for now and then automate)</li>
-        </ul>
-      </li>
-      <li>modify the way you share links within iOS (add a new area so it is easier to share)
-        <ul>
-          <li>share these links from iOS to server (after the user stuff is linked up)</li>
-        </ul>
-      </li>
-      <li>provision a server on DO or Linode
-        <ul>
-          <li>glue the backend &amp; frontend on this server</li>
-          <li>glue the server to dailyvibes domain</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>elderoost
-    <ul>
-      <li>finish news article parser</li>
-      <li>add a notifyer after this is done to manually review</li>
-      <li>figure out monetization</li>
-    </ul>
-  </li>
-</ul>
-
-<p>… in that order I think.</p>
-
-<p>Now, I’m going to spend the next little while grinding cracking the coding interview bible and all of the typical hackerrank websites. It is a bit unfortunate that I need to put a pause on the side projects to do this. But it is what it is. (Especially if you want to work for the typical Fortune N company.)</p>
-
-<hr />
-
-<p>And for those of you that finished reading this, here is some behind the scenes context to this article. It is an example of a written piece that I ended up <a href="/blog/would-you-let-your-mother-use-your-software">publishing</a>. It started off as a <a href="http://www.hemingwayapp.com/">Hemingway app</a> draft and then, eventually, I approved and transformed it into an article.</p>
-
-<p><img src="/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-11.35.50.png" alt="Sample written piece that I ended up sharing" /></p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
-  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
-</p>
-
-      </div>
-
-      <p class="extra-info">
-        
-          Tags: software engineering, doubt &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/more-frequent-updates" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
       </p>
