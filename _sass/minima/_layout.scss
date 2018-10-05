@@ -171,6 +171,10 @@
 /**
  * Page content
  */
+.not-apple {
+  background: rgba(242, 242, 242, 1);
+}
+
 blockquote strong {
   font-weight: bold;
   background: #fbf1a9;
@@ -182,13 +186,62 @@ blockquote strong {
   text-shadow: none;
 }
 
+.not-post {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(233, 233, 233, 1);
+  border-top-color: rgb(233, 233, 233);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top: 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.07);
+  display: block;
+  // margin-left: 246px;
+  min-height: calc(100% - 173px);
+  min-height: -moz-calc(100% - 173px);
+  min-height: -webkit-calc(100% - 173px);
+  min-height: -o-calc(100% - 173px);
+  // position: absolute;
+  overflow: auto;
+  overflow-x: auto;
+  // padding-bottom: 100px;
+  // top: 70px;
+  margin: 1em;
+  padding: 1em;
+  -webkit-overflow-scrolling: touch;
+  width: 734px;
+  max-width: 95vw;
+}
+
 .post {
   max-width: 95vw;
+}
+
+$magic-height: 48px;
+
+.not-header {
+  background-color: rgba(65, 65, 65, 1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+  color: rgba(255, 255, 255, 1);
+  height: $magic-height;
+  letter-spacing: 0.05em;
+  position: fixed;
+  /* top: 0; */
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
 }
 
 @media screen and (min-width: 800px) {
   .post {
     max-width: 60vw;
+  }
+
+  .not-header {
+    top: 0;
+  }
+
+  .not-post {
+    margin-top: $magic-height;
   }
 }
 
