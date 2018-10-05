@@ -142,305 +142,111 @@
 
         <div class="home">
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/Using-wget">Using wget in CentOS 6.5</a></h1>
-        <p class="post-meta">
-          <time datetime="2014-04-30T00:00:00-04:00" itemprop="datePublished">
-            
-            Apr 30, 2014
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/Using-wget">Using wget in CentOS 6.5</a></h1>
+      <p class="post-meta">
+        <time datetime="2014-04-30T00:00:00-04:00" itemprop="datePublished">
+          
+          Apr 30, 2014
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <h1 id="using-wget-in-centos-65">Using wget in CentOS 6.5</h1>
-
-<p>First of all, everything that you need is here:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://www.gnu.org/software/wget/
-</code></pre></div></div>
-
-<p>Now, we need to have somewhere to save the <em>stuff</em> that you would like to download. To do that, simply make a new place <code class="highlighter-rouge">mkdir /some/path</code> and then go there by using <code class="highlighter-rouge">cd /some/path</code>. Good. Now, you have somewhere to store your stuff.</p>
-
-<p>My goal is to download an entire website. That is, I want some website to be available for my offline usage. Everything.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget --limit-rate=50k --no-clobber --convert-links --wait=5 --random-wait
--r -p -E -e robots=off -U Mozilla http://www.foo.bar
-</code></pre></div></div>
-
-<p>Now, why did I use the settings that I used?</p>
-
-<ul>
-  <li>used <code class="highlighter-rouge">--limit-rate=50k</code> to limit the download speed of each file to 50KB/s</li>
-  <li>used <code class="highlighter-rouge">-- no-clobber</code> so that I do not overwrite existing files. (multiple savings of the same file is prevented)</li>
-  <li>used <code class="highlighter-rouge">--convert-links</code> to ensure that all of the downloaded links point locally and do not point to any external places</li>
-  <li>used <code class="highlighter-rouge">--wait=5</code> to wait 5 seconds between each new request for a new file</li>
-  <li>used <code class="highlighter-rouge">--random-wait</code> to try and reduce the load on the server. It <strong>needs</strong> –wait attribute</li>
-  <li>used <code class="highlighter-rouge">-r</code> for recursive downloading of the entire website</li>
-  <li>used <code class="highlighter-rouge">-p</code> to download all of the necessary files to display the html page properly</li>
-  <li>used <code class="highlighter-rouge">-E</code> for appending <code class="highlighter-rouge">.html</code> to files that have otherwise other extensions such as <code class="highlighter-rouge">something.else?suchas25</code> to <code class="highlighter-rouge">something.else?suchas25.html</code></li>
-  <li>used <code class="highlighter-rouge">-e robots=off</code> to by pass possible robot exclusion</li>
-  <li>used <code class="highlighter-rouge">-U Mozilla</code> to identify as a Mozilla client and not <code class="highlighter-rouge">Wget/VERSION</code> client</li>
-</ul>
-
-<hr />
-<h1 id="ideas-developed-by-using">Ideas developed by using</h1>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://www.thegeekstuff.com/2009/09/
-          the-ultimate-wget-download-guide-with-15-awesome-examples/
-http://www.kossboss.com/linux---wget-full-website
-http://www.rationallyparanoid.com/articles/wget.html
-</code></pre></div></div>
-
-<p>(Side note, system information: <code class="highlighter-rouge">uname-a</code>)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
-#1 SMP Tue Mar 25 19:59:55 UTC 2014
-x86_64
-GNU/Linux
-</code></pre></div></div>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <h1 id="using-wget-in-centos-65">Using wget in CentOS 6.5</h1> <p>First of all, everything that you need is here:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://www.gnu.org/software/wget/ </code></pre></div></div> <p>Now, we need to have somewhere to save the <em>stuff</em> that you would like to download. To do that, simply make a new place <code class="highlighter-rouge">mkdir /some/path</code> and then go there by using <code class="highlighter-rouge">cd /some/path</code>. Good. Now, you have somewhere to store your stuff.</p> <p>My goal is to download an entire website. That is, I want some website to be available for my offline usage. Everything.</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget --limit-rate=50k --no-clobber --convert-links --wait=5 --random-wait -r -p -E -e robots=off -U Mozilla http://www.foo.bar </code></pre></div></div> <p>Now, why did I use the settings that I used?</p> <ul> <li>used <code class="highlighter-rouge">--limit-rate=50k</code> to limit the download speed of each file to 50KB/s</li> <li>used <code class="highlighter-rouge">-- no-clobber</code> so that I do not overwrite existing files. (multiple savings of...
+      <p>
+        <a href="/blog/Using-wget" title="Continue Reading Using wget in CentOS 6.5">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: CentOS 6.5, how-to, beginner, guide, wget &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/Using-wget" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: CentOS 6.5, how-to, beginner, guide, wget &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/page6/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/installing-xChat">Installing XChat CentOS 6.5 for Beginners</a></h1>
-        <p class="post-meta">
-          <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">
-            
-            Mar 16, 2014
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/installing-xChat">Installing XChat CentOS 6.5 for Beginners</a></h1>
+      <p class="post-meta">
+        <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">
+          
+          Mar 16, 2014
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <h1 id="installing-xchat-for-total-beginners">Installing XChat for Total Beginners</h1>
-
-<p>Make a dir to install it in and go there</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /some/path/
-cd /some/path/
-</code></pre></div></div>
-
-<p>Download the sourcecode (link used in March 2014) and place it in the newely created directory in the step above.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2
-http://xchat.org/files/source/2.8/xchat-2.8.8.tar.xz
-</code></pre></div></div>
-
-<p>Unpack the archive:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -xzvf xchat-x.x.x.tar.xz
-tar -xjvf xchat-x.x.x.tar.bz2
-</code></pre></div></div>
-
-<p>Go to the newely unpacked directory:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd xchat-2.8.8
-</code></pre></div></div>
-
-<p>Run the configuration script:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure
-</code></pre></div></div>
-
-<p>Compile the program:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
-</code></pre></div></div>
-
-<p>Finally, install the program:</p>
-
-<p><code class="highlighter-rouge">
-make install
-</code>
-***</p>
-
-<h2 id="problems-ive-encountered-while-setting-up">Problems I’ve encountered while setting up</h2>
-
-<p>While trying to compile the source code, I’ve gotten the following error:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>configure: error: no acceptable C compiler found in $PATH
-</code></pre></div></div>
-
-<p>The solution? We are missing the gcc, which can be installed via the development tools kit. In my case, I didn’t solely look for the gcc but I installed the entire pack because I knew I would be using the tools eventually.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum groupinstall "Development tools"
-</code></pre></div></div>
-
-<p>Alternatively, this same command can be ran on Debian Base OS:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install build-essential
-</code></pre></div></div>
-
-<p>And yes, I did run all of this as root. If you are not root, place <code class="highlighter-rouge">sudo</code> in front of the commands that you have no direct access to and enter your password.</p>
-
-<p>(Side note, system information: <code class="highlighter-rouge">uname-a</code>)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
-#1 SMP Tue Mar 25 19:59:55 UTC 2014
-x86_64
-GNU/Linux
-</code></pre></div></div>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <h1 id="installing-xchat-for-total-beginners">Installing XChat for Total Beginners</h1> <p>Make a dir to install it in and go there</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /some/path/ cd /some/path/ </code></pre></div></div> <p>Download the sourcecode (link used in March 2014) and place it in the newely created directory in the step above.</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2 http://xchat.org/files/source/2.8/xchat-2.8.8.tar.xz </code></pre></div></div> <p>Unpack the archive:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -xzvf xchat-x.x.x.tar.xz tar -xjvf xchat-x.x.x.tar.bz2 </code></pre></div></div> <p>Go to the newely unpacked directory:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd xchat-2.8.8 </code></pre></div></div> <p>Run the configuration script:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure </code></pre></div></div> <p>Compile the program:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make </code></pre></div></div> <p>Finally, install the program:</p> <p><code class="highlighter-rouge"> make install </code> ***</p> <h2 id="problems-ive-encountered-while-setting-up">Problems I’ve encountered while setting up</h2> <p>While trying to compile the source code, I’ve gotten the following error:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>configure: error: no acceptable C compiler found in $PATH </code></pre></div></div> <p>The solution? We are missing the gcc, which can be...
+      <p>
+        <a href="/blog/installing-xChat" title="Continue Reading Installing XChat CentOS 6.5 for Beginners">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: CentOS 6.5, how-to, beginner, guide, XChat &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/installing-xChat" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: CentOS 6.5, how-to, beginner, guide, XChat &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/page6/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/configuring-PIA">Configuring PrivateInternetAccess VPN</a></h1>
-        <p class="post-meta">
-          <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">
-            
-            Mar 16, 2014
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/configuring-PIA">Configuring PrivateInternetAccess VPN</a></h1>
+      <p class="post-meta">
+        <time datetime="2014-03-16T00:00:00-04:00" itemprop="datePublished">
+          
+          Mar 16, 2014
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p>#Installing OpenVPN and Configuring for PrivateInternetAccess#
-Go to /etc/</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /etc/
-</code></pre></div></div>
-
-<p>Add the correct repo, which you are probably missing:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget
- http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-rpm -Uvh rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-(U - Update, v - verbose, h - has)
-</code></pre></div></div>
-<p>Install OpenVPN from the new repo</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install openvpn
-</code></pre></div></div>
-
-<p>Download correct preconfigured files from www.privateinternetaccess.com</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
-</code></pre></div></div>
-
-<p>Make a new directory, move the downloaded file into the directory, unzip the contents, and go into the directory</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv openvpn.zip ./openvpn
-unzip openvpn.zip
-cd openvpn
-</code></pre></div></div>
-
-<p>Test to see if everything is working properly. Be prepared to enter your self-generated password and username (and not the one provided for you).</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openvpn Canada.ovpn
-	OR
-openvpn *.ovpn (* - any other location from the list)
-</code></pre></div></div>
-
-<p><code class="highlighter-rouge">ctrl+c</code> to terminate the connection if everything is successful.</p>
-
-<hr />
-
-<h3 id="optional">Optional:</h3>
-
-<p>In order to run openvpn in the background, a useful utility is available.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install screen
-</code></pre></div></div>
-
-<p>Then, when you would want to initialize an instance, simple do</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen openvpn *.ovpn
-</code></pre></div></div>
-
-<p>and, now, the instance of openvpn can be run within the screen. Thus, we can safeuly press <code class="highlighter-rouge">ctrl + a + d</code> and the screen will disappear but the session will continue to be open. <strong>Super Useful</strong>. Once you are ready to terminate the session, you can simply close your machine, or</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -ls
-</code></pre></div></div>
-
-<p>This command will open all of the screen’s running instances. Simply find the one that is dedicated to the openvpn and then open the session.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -x &lt;name&gt;
-</code></pre></div></div>
-
-<p>Once inside, simple close it and exit the screen instance.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl + c
-exit
-	OR
-ctrl + c
-ctrl + d
-</code></pre></div></div>
-
-<p>Aside: If you want, you can start the screen with a custom name. When you do this, it is much easier to find your specific open session if you have multiple screen sessions open. Simply do:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -S &lt;name&gt;
-</code></pre></div></div>
-
-<p>And yes, I did run all of this as root. If you are not root, place <code class="highlighter-rouge">sudo</code> in front of the commands that you have no direct access to and enter your password.</p>
-
-<p>(Side note, system information: <code class="highlighter-rouge">uname-a</code>)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
-#1 SMP Tue Mar 25 19:59:55 UTC 2014
-x86_64
-GNU/Linux
-</code></pre></div></div>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p>#Installing OpenVPN and Configuring for PrivateInternetAccess# Go to /etc/</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /etc/ </code></pre></div></div> <p>Add the correct repo, which you are probably missing:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm rpm -Uvh rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm (U - Update, v - verbose, h - has) </code></pre></div></div> <p>Install OpenVPN from the new repo</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install openvpn </code></pre></div></div> <p>Download correct preconfigured files from www.privateinternetaccess.com</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://www.privateinternetaccess.com/openvpn/openvpn.zip </code></pre></div></div> <p>Make a new directory, move the downloaded file into the directory, unzip the contents, and go into the directory</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv openvpn.zip ./openvpn unzip openvpn.zip cd openvpn </code></pre></div></div> <p>Test to see if everything is working properly. Be prepared to enter your self-generated password and username (and not the one provided for you).</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openvpn Canada.ovpn OR openvpn *.ovpn (* - any other location from the list) </code></pre></div></div> <p><code class="highlighter-rouge">ctrl+c</code> to terminate the connection...
+      <p>
+        <a href="/blog/configuring-PIA" title="Continue Reading Configuring PrivateInternetAccess VPN">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: CentOS 6.5, how-to, beginner, guide, PIA, PrivateInternetAccess, VPN &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/configuring-PIA" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: CentOS 6.5, how-to, beginner, guide, PIA, PrivateInternetAccess, VPN &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/page6/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
 
   <!-- Pagination links -->
   <div class="pagination">
     
-      <a href="/blog/page5/" class="previous">Newer</a>
+    <a href="/blog/page5/" class="previous">Newer</a>
     
     /
     
-      <span class="next ">Older</span>
+    <span class="next ">Older</span>
     
   </div>
 

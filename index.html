@@ -142,615 +142,143 @@
 
         <div class="home">
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/swift-package-manager-october-2018">Swift package manager and links</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-10-04T00:00:00-04:00" itemprop="datePublished">
-            
-            Oct 4, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/swift-package-manager-october-2018">Swift package manager and links</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-10-04T00:00:00-04:00" itemprop="datePublished">
+          
+          Oct 4, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p>Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.</p>
-
-<h2 id="problem-statement">Problem Statement</h2>
-
-<p>Every time I write this piece of content, I have to name this file. I have a specific way I name these files: It goes <code class="highlighter-rouge">date-title.markdown</code> so it is easier for me to reference in the future. When the parser does its magic, it also creates a nice, seo friendly URL that I can share. It gives some context to readers that are reading it right now in October 2018. If you look at the link, you know that it is a fresh article without even reading it ;-) People like me like to read things like this. While it is fine to do it manually once in a while, it became too repetative to me. SPM to the rescue!</p>
-
-<h2 id="idea">Idea</h2>
-
-<p>Make a cli tool using SPM that can:</p>
-
-<ul>
-  <li>take input from cli</li>
-  <li>input like : <code class="highlighter-rouge">$ tool "Swift package manager october 2018"</code></li>
-  <li>and provide output to me so I can copy/paste while I am creating a new file</li>
-</ul>
-
-<p>… oh and I get to write something today ;-)</p>
-
-<h2 id="solution">Solution</h2>
-
-<p>Here is my code:</p>
-
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// main.swift</span>
-<span class="kd">import</span> <span class="kt">Foundation</span>
-
-<span class="kd">private</span> <span class="k">let</span> <span class="nv">arguments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="kt">CommandLine</span><span class="o">.</span><span class="n">arguments</span>
-<span class="c1">//</span>
-<span class="k">guard</span> <span class="n">arguments</span><span class="o">.</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="o">!</span><span class="n">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isEmpty</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="s">"Need some kind of arguments fam"</span><span class="p">)</span>
-    <span class="nf">exit</span><span class="p">(</span><span class="kt">EXIT_FAILURE</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="c1">//let input = "Will end-user applications ever be truly programmable?"</span>
-<span class="k">let</span> <span class="nv">input</span> <span class="o">=</span> <span class="n">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="k">let</span> <span class="nv">inputLowerCased</span> <span class="o">=</span> <span class="n">input</span><span class="o">.</span><span class="nf">lowercased</span><span class="p">()</span>
-
-<span class="c1">//print(input)</span>
-
-<span class="kd">func</span> <span class="nf">dashifyText</span><span class="p">(</span><span class="n">_</span> <span class="nv">inputTxt</span><span class="p">:</span><span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
-    <span class="k">guard</span> <span class="k">let</span> <span class="nv">input</span> <span class="o">=</span> <span class="n">inputTxt</span><span class="p">,</span> <span class="o">!</span><span class="n">input</span><span class="o">.</span><span class="n">isEmpty</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="s">""</span>
-    <span class="p">}</span>
-    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
-
-    <span class="k">for</span> <span class="n">character</span> <span class="k">in</span> <span class="n">input</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">character</span> <span class="o">==</span> <span class="s">" "</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="s">"-"</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">character</span> <span class="o">==</span> <span class="s">"?"</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="s">""</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="kt">String</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="n">result</span>
-<span class="p">}</span>
-
-<span class="k">let</span> <span class="nv">currDateTime</span> <span class="o">=</span> <span class="kt">Date</span><span class="p">()</span>
-<span class="k">let</span> <span class="nv">dateFormatter</span> <span class="o">=</span> <span class="kt">DateFormatter</span><span class="p">()</span>
-
-<span class="c1">// For example, short would have the basics: "10/8/16, 10:52 PM"</span>
-<span class="n">dateFormatter</span><span class="o">.</span><span class="n">timeStyle</span> <span class="o">=</span> <span class="o">.</span><span class="n">short</span>
-<span class="n">dateFormatter</span><span class="o">.</span><span class="n">dateStyle</span> <span class="o">=</span> <span class="o">.</span><span class="n">short</span>
-
-<span class="k">let</span> <span class="nv">currDateTimeText</span> <span class="o">=</span> <span class="n">dateFormatter</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">currDateTime</span><span class="p">)</span>
-
-<span class="kd">func</span> <span class="nf">dashifyDateTimeString</span><span class="p">(</span><span class="n">_</span> <span class="nv">forString</span><span class="p">:</span><span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
-    <span class="k">guard</span> <span class="k">let</span> <span class="nv">dateTimeString</span> <span class="o">=</span> <span class="n">forString</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="s">""</span>
-    <span class="p">}</span>
-
-    <span class="k">var</span> <span class="nv">resultant</span> <span class="o">=</span> <span class="s">""</span>
-
-    <span class="k">for</span> <span class="n">char</span> <span class="k">in</span> <span class="n">dateTimeString</span> <span class="p">{</span>
-        <span class="k">switch</span> <span class="n">char</span> <span class="p">{</span>
-        <span class="k">case</span> <span class="s">"/"</span><span class="p">:</span>
-            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">"-"</span>
-        <span class="k">case</span> <span class="s">","</span><span class="p">:</span>
-            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">""</span>
-        <span class="k">case</span> <span class="s">":"</span><span class="p">:</span>
-            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">"-"</span>
-        <span class="k">case</span> <span class="s">" "</span><span class="p">:</span>
-            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="s">"-"</span>
-        <span class="k">default</span><span class="p">:</span>
-            <span class="n">resultant</span> <span class="o">=</span> <span class="n">resultant</span> <span class="o">+</span> <span class="kt">String</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="n">resultant</span>
-<span class="p">}</span>
-
-<span class="k">let</span> <span class="nv">dashifiedText</span> <span class="o">=</span> <span class="nf">dashifyText</span><span class="p">(</span><span class="n">inputLowerCased</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">dateTimeText</span> <span class="o">=</span> <span class="nf">dashifyDateTimeString</span><span class="p">(</span><span class="n">currDateTimeText</span><span class="p">)</span>
-
-<span class="k">let</span> <span class="nv">finalString</span> <span class="o">=</span> <span class="s">"</span><span class="se">\(</span><span class="n">dateTimeText</span><span class="se">)</span><span class="s">-</span><span class="se">\(</span><span class="n">dashifiedText</span><span class="se">)</span><span class="s">.markdown"</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="n">finalString</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="s">"LENGTH: </span><span class="se">\(</span><span class="n">finalString</span><span class="o">.</span><span class="n">count</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>and in the process, I’ve tried different things. The struggles were real.</p>
-
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">throw</span> <span class="kt">NSError</span><span class="p">(</span><span class="nv">domain</span><span class="p">:</span> <span class="s">"my error description"</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="s">"ui1"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span> <span class="s">"ui2"</span><span class="p">:</span><span class="s">"val2"</span><span class="p">]</span> <span class="p">)</span>
-        <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">stringSet</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">subString</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">.</span><span class="kt">SubSequence</span> <span class="k">in</span>
-            <span class="k">let</span> <span class="nv">_moddedSubString</span> <span class="o">=</span> <span class="n">subString</span>
-            <span class="k">return</span> <span class="n">subString</span>
-        <span class="p">}</span>
-        <span class="k">let</span> <span class="nv">filteredStr</span> <span class="o">=</span> <span class="n">dateTimeString</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
-            <span class="k">switch</span> <span class="n">element</span> <span class="p">{</span>
-            <span class="k">case</span> <span class="s">"/"</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kt">Character</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span>
-            <span class="k">case</span> <span class="s">","</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kt">Character</span><span class="p">(</span><span class="s">""</span><span class="p">)</span>
-            <span class="k">case</span> <span class="s">":"</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kt">Character</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span>
-            <span class="k">default</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">element</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-
-        <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
-
-        <span class="k">for</span> <span class="n">character</span> <span class="k">in</span> <span class="n">filteredStr</span> <span class="p">{</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="s">"</span><span class="se">\r</span><span class="s">esult"</span>
-        <span class="p">}</span>
-
-        <span class="k">let</span> <span class="nv">splitStr</span> <span class="o">=</span> <span class="n">dateTimeString</span><span class="o">.</span><span class="nf">split</span><span class="p">(</span><span class="nv">separator</span><span class="p">:</span> <span class="s">" "</span><span class="p">)</span>
-
-        <span class="k">let</span> <span class="nv">filteredStr</span> <span class="o">=</span> <span class="n">splitStr</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
-            <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-        <span class="p">}</span>
-
-        <span class="k">let</span> <span class="nv">filteredStr</span> <span class="o">=</span> <span class="n">splitStr</span><span class="o">.</span><span class="n">filter</span> <span class="p">{</span> <span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">in</span>
-            <span class="k">switch</span> <span class="n">element</span> <span class="p">{</span>
-            <span class="k">case</span> <span class="s">"/"</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">false</span>
-            <span class="k">case</span> <span class="s">","</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">false</span>
-            <span class="k">case</span> <span class="s">":"</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">false</span>
-            <span class="k">default</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-
-        <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
-</code></pre></div></div>
-
-<p>Oh and if you actually ran this script then you may notice that it doesn’t exactly create the same URL that you currently see. I had to remove the time from the file name. My actual naming convention is to use days for the files and within the files I have a <code class="highlighter-rouge">datePublished</code> and a <code class="highlighter-rouge">dateModified</code> timestamps.</p>
-
-<p>If you ran this script it would make something like this as output:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// current output
-2018-10-04-23-39-swift-package-manager-october-2018.markdown
-// what we need
-2018-10-04-swift-package-manager-october-2018.markdown
-</code></pre></div></div>
-
-<p>It is almost there. I will modify it for me and I will leave this up to you if you care as an exercise.</p>
-
-<p>I’m trying something different here today with you. I am a bit more raw and transparent. I usually wouldn’t have posted the code above. I definitely would have edited it before publishing it. But that is not the point of this exercise.</p>
-
-<p>What I am attempting to do here is two things at once:</p>
-
-<ol>
-  <li>going off on a random idea and implementing it just because — a challenge;</li>
-  <li>playing with Swift and seeing where that takes me;</li>
-</ol>
-
-<p>And to finish off, I will list the links that I have open for today in no particular order:</p>
-
-<ul>
-  <li><a href="https://en.wikipedia.org/wiki/Automated_readability_index">https://en.wikipedia.org/wiki/Automated_readability_index</a> -&gt; <code class="highlighter-rouge">4.71 * (Characters/String) + 0.5 * (String/[String]) - 21.43</code></li>
-  <li><a href="https://www.ralfebert.de/ios-examples/uikit/uicatalog-playground/UIButton/">https://www.ralfebert.de/ios-examples/uikit/uicatalog-playground/UIButton/</a> -&gt; learning to prototype in Playgrounds</li>
-  <li><a href="https://github.com/squimer/DatePickerDialog-iOS-Swift/pull/86/files">https://github.com/squimer/DatePickerDialog-iOS-Swift/pull/86/files</a> -&gt; have issues in recent update to 12.1 of <a href="https://dailyvibes.ca">dailyvibes</a></li>
-  <li><a href="https://github.com/squimer/DatePickerDialog-iOS-Swift/blob/f7b0e569f5f29d82837905dfb174b0e04c7b681d/Sources/DatePickerDialog.swift">https://github.com/squimer/DatePickerDialog-iOS-Swift/blob/f7b0e569f5f29d82837905dfb174b0e04c7b681d/Sources/DatePickerDialog.swift</a></li>
-  <li><a href="https://iosdevcenters.blogspot.com/2017/05/uipickerview-example-with-uitoolbar-in.html">https://iosdevcenters.blogspot.com/2017/05/uipickerview-example-with-uitoolbar-in.html</a></li>
-  <li><a href="https://developer.apple.com/documentation/uikit/uidatepicker">https://developer.apple.com/documentation/uikit/uidatepicker</a></li>
-  <li><a href="https://stackoverflow.com/questions/41361177/sizing-a-uipickerview-inside-a-uialertview">https://stackoverflow.com/questions/41361177/sizing-a-uipickerview-inside-a-uialertview</a></li>
-  <li><a href="[http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/RTMP-in-the-Age-of-HTTP-Video-Streaming-Dont-Count-it-Out-100">http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/RTMP-in-the-Age-of-HTTP-Video-Streaming-Dont-Count-it-Out-100</a></li>
-  <li><a href="http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/RTMP-in-the-Age-of-HTTP-Video-Streaming-Dont-Count-it-Out-100909.aspx">http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/RTMP-in-the-Age-of-HTTP-Video-Streaming-Dont-Count-it-Out-100909.aspx</a></li>
-  <li><a href="http://www.streamingmedia.com/">http://www.streamingmedia.com/</a></li>
-  <li><a href="https://www.quora.com/Which-is-better-for-live-streaming-RTMP-vs-HLS-vs-WebRTC">https://www.quora.com/Which-is-better-for-live-streaming-RTMP-vs-HLS-vs-WebRTC</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/WebRTC">https://en.wikipedia.org/wiki/WebRTC</a></li>
-  <li><a href="https://github.com/webrtc/samples">https://github.com/webrtc/samples</a></li>
-  <li><a href="https://github.com/vapor-community">https://github.com/vapor-community</a></li>
-  <li><a href="https://stackoverflow.com/questions/1991380/what-does-the-operator-do-in-java">https://stackoverflow.com/questions/1991380/what-does-the-operator-do-in-java</a></li>
-  <li><a href="https://support.apple.com/en-ca/HT208309 -&gt; TIL: Apple uses React.js">https://support.apple.com/en-ca/HT208309 -&gt; TIL: Apple uses React.js</a></li>
-  <li><a href="https://news.ycombinator.com/item?id=18137740">https://news.ycombinator.com/item?id=18137740</a></li>
-  <li><a href="https://www.kalzumeus.com/2015/05/01/talking-about-money/#consulting-rates">https://www.kalzumeus.com/2015/05/01/talking-about-money/#consulting-rates</a></li>
-  <li><a href="https://stackoverflow.com/questions/2884068/what-is-the-difference-between-a-map-and-a-dictionary">https://stackoverflow.com/questions/2884068/what-is-the-difference-between-a-map-and-a-dictionary</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Map_%28higher-order_function%29">https://en.wikipedia.org/wiki/Map_%28higher-order_function%29</a></li>
-  <li><a href="https://www.canada.ca/en/public-service-commission/jobs/services/gc-jobs.html">https://www.canada.ca/en/public-service-commission/jobs/services/gc-jobs.html</a></li>
-  <li><a href="https://www.enekoalonso.com/articles/creating-command-line-tools-with-swift-package-manager">https://www.enekoalonso.com/articles/creating-command-line-tools-with-swift-package-manager</a></li>
-  <li><a href="https://www.enekoalonso.com/articles/parsing-command-line-arguments-with-swift-package-manager-argument-parser">https://www.enekoalonso.com/articles/parsing-command-line-arguments-with-swift-package-manager-argument-parser</a></li>
-  <li><a href="https://www.enekoalonso.com/articles/handling-commands-with-swift-package-manager">https://www.enekoalonso.com/articles/handling-commands-with-swift-package-manager</a></li>
-  <li><a href="https://www.swiftbysundell.com/posts/building-a-command-line-tool-using-the-swift-package-manager">https://www.swiftbysundell.com/posts/building-a-command-line-tool-using-the-swift-package-manager</a></li>
-  <li><a href="https://stackoverflow.com/questions/31443645/simplest-way-to-throw-an-error-exception-with-a-custom-message-in-swift-2">https://stackoverflow.com/questions/31443645/simplest-way-to-throw-an-error-exception-with-a-custom-message-in-swift-2</a></li>
-  <li><a href="https://stackoverflow.com/questions/24070450/how-to-get-the-current-time-as-datetime">https://stackoverflow.com/questions/24070450/how-to-get-the-current-time-as-datetime</a></li>
-  <li><a href="http://goshdarnclosuresyntax.com/">http://goshdarnclosuresyntax.com/</a></li>
-  <li><a href="https://docs.swift.org/swift-book/LanguageGuide/Closures.html">https://docs.swift.org/swift-book/LanguageGuide/Closures.html</a></li>
-  <li><a href="https://learnappmaking.com/closures-swift-how-to/">https://learnappmaking.com/closures-swift-how-to/</a></li>
-  <li><a href="https://developer.apple.com/documentation/swift/swift_standard_library">https://developer.apple.com/documentation/swift/swift_standard_library</a></li>
-  <li><a href="https://stackoverflow.com/questions/43261580/how-can-i-convert-a-single-character-type-to-uppercase">https://stackoverflow.com/questions/43261580/how-can-i-convert-a-single-character-type-to-uppercase</a></li>
-  <li><a href="https://stackoverflow.com/questions/28503449/swift-replace-substring-regex">https://stackoverflow.com/questions/28503449/swift-replace-substring-regex</a></li>
-  <li><a href="https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html#">https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html#</a></li>
-  <li><a href="https://medium.com/@johnsundell/building-a-command-line-tool-using-the-swift-package-manager-3dd96ce360b1">https://medium.com/@johnsundell/building-a-command-line-tool-using-the-swift-package-manager-3dd96ce360b1</a></li>
-  <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></li>
-  <li><a href="https://timingapp.com/changes#2018_3">https://timingapp.com/changes#2018_3</a></li>
-  <li><a href="https://www.mediaatelier.com/GrandTotal5/?ref=timing">https://www.mediaatelier.com/GrandTotal5/?ref=timing</a></li>
-  <li><a href="https://github.com/ltebean/Live">https://github.com/ltebean/Live</a></li>
-  <li><a href="https://github.com/kishikawakatsumi/KeychainAccess">https://github.com/kishikawakatsumi/KeychainAccess</a></li>
-  <li><a href="https://github.com/neoneye/SwiftyFORM">https://github.com/neoneye/SwiftyFORM</a></li>
-  <li><a href="https://github.com/ortuman/SwiftForms">https://github.com/ortuman/SwiftForms</a></li>
-  <li><a href="https://github.com/ra1028/Former">https://github.com/ra1028/Former</a></li>
-  <li><a href="https://github.com/xmartlabs/Eureka">https://github.com/xmartlabs/Eureka</a></li>
-  <li><a href="https://github.com/matteocrippa/awesome-swift#form">https://github.com/matteocrippa/awesome-swift#form</a></li>
-  <li><a href="https://www.appcoda.com/vision-framework-introduction">https://www.appcoda.com/vision-framework-introduction</a></li>
-  <li><a href="https://www.toronto.ca/business-economy/business-start-ups/success-stories-newsletter/small-business-month/">https://www.toronto.ca/business-economy/business-start-ups/success-stories-newsletter/small-business-month/</a></li>
-  <li><a href="https://developer.apple.com/documentation/foundation/url_loading_system/downloading_files_in_the_background">https://developer.apple.com/documentation/foundation/url_loading_system/downloading_files_in_the_background</a></li>
-  <li><a href="https://developer.apple.com/documentation/foundation/urlsessiondatatask">https://developer.apple.com/documentation/foundation/urlsessiondatatask</a></li>
-</ul>
-
-<p>I <strong>had</strong> all of these in tabs because each one weighted individually is just as important as the previous one ;-)</p>
-
-<p>See you tomorrow.</p>
-
-<p>PS: Just so we are totally transparent, it took me until <code class="highlighter-rouge">2018-10-05 01:45:36</code> … I’d explain why but</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p>Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.</p> <h2 id="problem-statement">Problem Statement</h2> <p>Every time I write this piece of content, I have to name this file. I have a specific way I name these files: It goes <code class="highlighter-rouge">date-title.markdown</code> so it is easier for me to reference in the future. When the parser does its magic, it also creates a nice, seo friendly URL that I can share. It gives some context to readers that...
+      <p>
+        <a href="/blog/swift-package-manager-october-2018" title="Continue Reading Swift package manager and links">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software engineering, swift, swift package manager, spm, links, challenge &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/swift-package-manager-october-2018" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software engineering, swift, swift package manager, spm, links, challenge &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/will-end-user-applications-ever-be-truly-programmable">Will end-user applications ever be truly programmable?</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-10-03T00:00:00-04:00" itemprop="datePublished">
-            
-            Oct 3, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/will-end-user-applications-ever-be-truly-programmable">Will end-user applications ever be truly programmable?</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-10-03T00:00:00-04:00" itemprop="datePublished">
+          
+          Oct 3, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p>Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks.</p>
-
-<p>Why am I going back to doing this? I jumped in just like everyone else on the social media train that started moving in the early 2000s.</p>
-
-<p>As this train moved further away from the station, I noticed that I changed the way I interacted with information. Instead of saving things locally on my computer, I would off-load it to the cloud. At first, it made it very convenient for myself: I wouldn’t need to worry about hard-drive crashes or lost information. Even then — a failing hard-drive almost never crossed my mind during my day-to-day uses even if I was mindful of its risk. I finally knew where I could find anything. No more plugging in different hard drives and searching for my things. (and storage capacities at prices that I could not afford previously).</p>
-
-<p>Eventually, the technology improved and added things I did not know I was missing. Specifically — the sharing and collaborating features. The cloud ecosystems enabled the possibility of sharing interesting information with others. Most importantly, it allowed for asynchronous (and real-time) working experience with others and paved the remote work movement. In other words, saving things locally was a thing of the past. Archaic. Everything. Always. Stayed somewhere else.</p>
-
-<p>Problems? What problems? All of our problems went away we were told by marketers. Previously, if I shared information with someone there were many variables involved in the process: from compressing, to transfer, to uptime, and so on. Now, there were no more problems. If you cannot get my shared documents then something is wrong on your end; with the way you are doing things. Run into a problem? One could simply point people to most common problems list, or a faqs, or a helpful video and thus reduce the amount of time spent on such stressors.</p>
-
-<p>So what happened? Too much comfort and reliance in the spoon feeding. The non-stop flow from the infinite social media feed algorithms got into my daily routines. Why should I be looking for information? I’ll let that be fed to me based on the way I interact with things. I stopped being actively involved in this search. I relied too much on the feed algorithms. I got lazy and falsely expected good quality news to flow to me.</p>
-
-<p>… and it worked. But boy did this approach ever backfire on me.</p>
-
-<p>What I did not consider is the historical perspective. During my regular day-to-day usage, the social feed works well once you jump into that water. However, if you are like me and like to reference things at random times, then this approach starts to break. The infinite feed is not really productive especially if there is no predictable order to it. Moreover, you could run into an issue of not finding things in the future. This is especially prevelent if you are an early adopter.</p>
-
-<p>All of the unicorns, if the business is still around, experienced their fair share of messing with user’s data unintentionally. Be it permission to the data access, persistence of the data or lack of it, recovery of the data, pricing structures, and so on.</p>
-
-<p>How can a random user be confident in a random service? Will the data be available to the user in the future? Will you be able to access the data? How much access will you have? For how long? How do you export the data? Can you? Should you? How do you share the knowledge with a friend? Someone who is outside of your wall? Will there be a good relationship between the business and the user? Does the relationship change if you pay?</p>
-
-<p>I am questioning if it is fair of us as consumers to be asking things that we want to be asking of technology giants. I am also questioning if we have any good examples of great businesses left in software? Examples that a random person on the street may be familiar with and not the outliers.</p>
-
-<p>Ok… now that you have some background I will move on to the why I even started typing this piece.</p>
-
-<p>Imagine me a few days ago when I stumbled upon a random website. I started reading the content and saw that it was written by <a href="https://patrickcollison.com/">Patrick Collison</a> — the one from <a href="Stripe.com">Stripe.com</a>. He brought up a <a href="https://patrickcollison.com/questions">few interesting points</a> that I did not consider regarding our (user’s) interaction with software. He said:</p>
-
-<blockquote>
-  <p>Will end-user applications ever be truly programmable? If so, how?</p>
-</blockquote>
-
-<blockquote>
-  <p>Emacs, Smalltalk, Genera, and VBA embody a vision of malleable end-user computing: if the application doesn’t do what you want, it’s easy to tweak or augment it to suit your purposes. <strong>Today, however, end-user software increasingly operates behind bulletproof glass</strong>. This is especially true in the growth areas: mobile and web apps. Furthermore, not only is it getting <strong>harder to manipulate</strong> the application logic itself, but it’s also becoming <strong>harder to directly manipulate</strong> your data. With Visual Basic, you can readily write a quick script to calculate some calendar analytics with Outlook. <strong>To do the same with Google Calendar is a very laborious chore</strong>.</p>
-</blockquote>
-
-<blockquote>
-  <p>End-user computing is becoming less a bicycle and <strong>more a monorail</strong> for the mind.</p>
-</blockquote>
-
-<blockquote>
-  <p>As a consequence, <strong>we need ever more domain-specific software</strong>. Rather than use universal tools for handling charts and for manipulating data, we tend to use separate analytics packages for every conceivable application. This is not all bad. Domain-specific tools can maximize ease-of-use and help amortize the cost of complex, specialized functionality. Sublime’s built-in ⌘-T works better than every third-party Emacs package. Still, despite these benefits, the popularity of macros and browser plugins strongly suggest that <strong>users are smart and want more control</strong>.</p>
-</blockquote>
-
-<blockquote>
-  <p>Should we just give up on our earlier visions of empowered users or is a better equilibrium possible?</p>
-</blockquote>
-
-<p>The quote above (with my own highlights) was retrieved on October 3, 2018.</p>
-
-<p>Very interesting perspective Patrick. A view that I am glad you shared and definitely will make me think in the future. More specifically, I did not see what kind of doors something like <a href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a> opened for everyone. With VBA, a user has the ability to play while avoiding 3rd party reliance. This was probably huge when it came about to the customers.</p>
-
-<p>I’m afraid to admit that I used to think: why on earth would you use VBA in 2016? 2017? 2018? Well, if you are stuck and have nothing else at your disposal, it surely looks like a really good tool to use.</p>
-
-<p>You have to remember and put yourself in that context. A context of a typical worker that is constrained by an administrator. In such a situation, usually, everything is turned off by default (because risk mitigation strategy). This way, if you need something to be turned on or installed then then need to submit a service request. You basically need to cry for help. Moreover, things like cost, licensing, needs, and wants come into play during such a request. These things require justification. Because, business after-all.</p>
-
-<p>If you are in such a unique position and you are constrained, then you may need to get creative. How do you solve such a problem? Create your own shortcuts. See a repetitive tasks? Automate it. Boring task? Automate it.</p>
-
-<p>So, how can you do this automation? Lots of creative approaches, say</p>
-
-<ul>
-  <li>buy an automaton thing or get creative with something like <a href="https://zapier.com/">Zapier</a> or <a href="https://ifttt.com/">IFTTT</a> products</li>
-  <li>ask coworker to see what they would do</li>
-  <li>ask your boss and see what they say</li>
-  <li>research and see what tools are available to you (at your level) or your boss</li>
-  <li>open up a browser and the developer’s console -&gt; JavaScript to the rescue</li>
-</ul>
-
-<p>OR you could simply</p>
-
-<ul>
-  <li>learn &amp; use VBA (that is already installed on your environment)</li>
-</ul>
-
-<p>Problem solved!</p>
-
-<p>If you take a step back, suppose you go back four years ago to 2014, then I am not sure if I would have even written this article. You have to remember that technology moves fast. But I can definitely assure you that <code class="highlighter-rouge">open up a browser and the developer's console -&gt; JavaScript to the rescue</code> definitely would not have been up there as a solution.</p>
-
-<p>JavaScript wasn’t where it is now. If your only option was Internet Explorer then you definitely did not enjoy JavaScript. There was a lot of lapses (language features and browser support). I definitely never imagined seeing something like <code class="highlighter-rouge">async</code> in my browser’s console. Heck, your development tools that are packed in your web browser weren’t where they are now in October of 2018. I am not even talking about other significant improvements done over the years.</p>
-
-<p>So, my take away was an interesting one. I can understand and appreciate the importance of being creative within software constraints a little bit more. I can open up my Excel 2013 and create a macro to do pretty much what I want it to do. It just works and I can be a little bit more productive. If I wanted to do something similar with Google Sheets hypothetically, I would probably have to sign up for a new service and transfer some of my data along the way. Thus, perpetuating the moving of your data throughout the Internet while leaving little crumbs along the way. Is it bad? Is it good? Are these the right questions? Depends on model and the simulation I suppose ;-)</p>
-
-<p>But I am also glad to see impactful people asking important questions.</p>
-
-<p>See you tomorrow.</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p>Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks.</p> <p>Why am I going back to doing this? I jumped in just like everyone else on the social media train that started moving in the early 2000s.</p> <p>As this train moved further away from the station, I noticed that I changed the way I interacted with information. Instead of saving things locally on my computer, I would off-load it to the cloud. At first, it made it very convenient for myself: I wouldn’t need to worry about hard-drive crashes or lost information. Even then — a failing hard-drive almost never crossed my mind during...
+      <p>
+        <a href="/blog/will-end-user-applications-ever-be-truly-programmable" title="Continue Reading Will end-user applications ever be truly programmable?">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software engineering &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/will-end-user-applications-ever-be-truly-programmable" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software engineering &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/october-2018-challenge">October 2018 Challenge</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-10-02T00:00:00-04:00" itemprop="datePublished">
-            
-            Oct 2, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/october-2018-challenge">October 2018 Challenge</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-10-02T00:00:00-04:00" itemprop="datePublished">
+          
+          Oct 2, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p>So, I’ve decided to do a few challenges for the month of October:</p>
-
-<ul>
-  <li>do at least 1 problem on leetcode per day</li>
-  <li>write and publish 1 thing per day</li>
-</ul>
-
-<p>A few minutes ago, I was having a blast while fighting with the following maintenance that I am undergoing for <a href="https://dailyvibes.ca">daily vibes</a>:</p>
-
-<p><img src="/assets/images/2018-10-02/xcode-battles.png" alt="Xcode decided to not play along" /></p>
-
-<p>While customers do not care about such background things, I am beginning to see what people mean about upgrade headaches. And, thus, I stopped for today. No more wasting time on lower priority things. I then proceeded to write instead. I wanted to say two things:</p>
-
-<ol>
-  <li>I am trying really hard to stay committed to the problem solving challenge. Not going to lie right now — not looking forward to it right now but I am looking forward to looking back at this time and laughing about it.</li>
-  <li>Writing something every day and then publishing it is, also, not going to be easy. It is an experiment for me that I hope you enjoy whenever you read this. Perhaps, you will see what improvements can occur through deliberate practice in just a few days.</li>
-</ol>
-
-<p>See you tomorrow.</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p>So, I’ve decided to do a few challenges for the month of October:</p> <ul> <li>do at least 1 problem on leetcode per day</li> <li>write and publish 1 thing per day</li> </ul> <p>A few minutes ago, I was having a blast while fighting with the following maintenance that I am undergoing for <a href="https://dailyvibes.ca">daily vibes</a>:</p> <p><img src="/assets/images/2018-10-02/xcode-battles.png" alt="Xcode decided to not play along" /></p> <p>While customers do not care about such background things, I am beginning to see what people mean about upgrade headaches. And, thus, I stopped for today. No more wasting time on lower priority things. I then proceeded to write instead. I wanted to say two things:</p> <ol> <li>I am trying really hard to stay committed to the problem solving challenge. Not going to lie right now — not looking forward to it right now but I am looking forward to looking...
+      <p>
+        <a href="/blog/october-2018-challenge" title="Continue Reading October 2018 Challenge">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software engineering, challenge &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/october-2018-challenge" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software engineering, challenge &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/on-discrete-mathematics-for-computer-science">On Discrete Mathematics For Computer Science</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-10-01T00:00:00-04:00" itemprop="datePublished">
-            
-            Oct 1, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/on-discrete-mathematics-for-computer-science">On Discrete Mathematics For Computer Science</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-10-01T00:00:00-04:00" itemprop="datePublished">
+          
+          Oct 1, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p>I just ran into <a href="http://condor.depaul.edu/sepp/ICME-13.Epp.pdf">“Discrete Mathematics For Computer Science”</a> by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.</p>
-
-<p><strong>I added my own emphasis to the quotes below.</strong></p>
-
-<blockquote>
-  <p>“The material in discrete structures is pervasive in the areas of data structures and algorithms but <strong>appears elsewhere</strong> in computer science as well.</p>
-</blockquote>
-
-<p>This statement resonates very well with me. During my education, there was a big emphasis on data structures and importance of maths in <em>that</em> field. However, there was almost no time spent on the <em>appears elsewhere</em> part of my studies. This left me frustrated lots of times primarily because I went into software engineering to learn about the application of theory.</p>
-
-<p>It is also how I know about Susanna S. Epp and her book <em>Discrete Mathematics with Applications by Susanna S. Epp</em>. When I found my education exposure was lacking, I started to search for different strategies to learn difficult material. It turns out, if you add a little bit of effort, then you can find an author in your field of interest that can help you learn this challenging material. An author that writes in a way that you can understand.</p>
-
-<p>Unfortunately, it is one thing that nobody talks about when you are having a difficult time understanding. The fact that if you are having a hard time studying, then a different solution or approach is needed for you</p>
-
-<ul>
-  <li>if you know that other approaches exist</li>
-  <li>if you look hard for it</li>
-  <li>if you take an initiative to self-study</li>
-  <li>and self-research.</li>
-</ul>
-
-<blockquote>
-  <p>[…] an ability to create and understand a proof — either a formal symbolic proof or a less formal but still mathematically rigorous argument—is important in virtually every area of computer science, including (to name just a few) formal specification, verification, databases, and cryptography.</p>
-</blockquote>
-
-<blockquote>
-  <p>[g]raph theory concepts are used in networks, operating systems, and compilers.</p>
-</blockquote>
-
-<blockquote>
-  <p>Set theory concepts are used in software engineering and in databases.</p>
-</blockquote>
-
-<blockquote>
-  <p>Probability theory is used in intelligent systems, networking, and a number of computing applications.</p>
-</blockquote>
-
-<p>And while I do understand the reference points and examples — I only do so because I went through the system. Looking backwards, when I was learning at the beginning, I recall a big emphasis on data structures and graphs. However, there was no justification besides rote memorization and <strong>needing it for this degree</strong>.</p>
-
-<blockquote>
-  <p>This paper explores three reasons for the problem. One is that there has been a reduced emphasis on mathematical proof in the secondary mathematics curriculum.</p>
-</blockquote>
-
-<p>Anecdotally that was true in my experience. This subject matter was never fully conveyed to me - how proofs form the building blocks.</p>
-
-<blockquote>
-  <p>A study of teacher attitudes by Knuth (2002) indicated that the teachers “viewed proof as appropriate for the mathematics education of a minority of students” and that they saw proof “as a <strong>topic of study</strong> rather than as a <strong>tool for communicating and studying mathematics</strong>.”</p>
-</blockquote>
-
-<p>Yeap… ding ding ding. That’s how it was conveyed to me in Canadian school system as well.</p>
-
-<blockquote>
-  <p>A second is that the <strong>ways certain words and phrases</strong> are interpreted <strong>in ordinary speech</strong> often differ from the ways they must be interpreted in formal, deductive reasoning.</p>
-</blockquote>
-
-<p>I cannot tell you how much I struggled with this. The cognitive collusion between ordinary speech and formal reasoning. It is tough to get your head around the complicated subject matter. It really is.</p>
-
-<p>And these things follow you if you do not grasp them when first learning. As someone who had no English vocabulary, I was studying the new language in parallel as I was getting my education foundation and going through the education system. Not only does it make studying these concepts confusing, it also makes the entire field of Maths as some type of mountain that you cannot climb.</p>
-
-<p>I spent a lot of my time memorizing content without understanding. While this approach works to some degree, it almost always fails as you get higher up the knowledge ladder.</p>
-
-<p>What I did not realize, at the time that I was struggling, was that the road blocks should have signaled to me that I had foundational issues. Instead, I plowed forward without having the full picture.</p>
-
-<p>I understand this now and it is part of the reason why I read up on things like this in my free time.</p>
-
-<blockquote>
-  <p>One of their tasks as students is to learn how to extract the standard interpretation from what is said and written. One of the tasks of instructors is to teach them how to do that.</p>
-</blockquote>
-
-<p>100% did not experience this. In all of my experience so far the instructors believed in rote replication via writing. While this may work for some learning styles, it really did not work for me.</p>
-
-<blockquote>
-  <p>One example is that in everyday speech if-then is frequently interpreted as if-and-only-if.</p>
-</blockquote>
-
-<p>Did I find this confusing? Check.</p>
-
-<blockquote>
-  <p>Only-if is also routinely interpreted as if-and-only-if.</p>
-</blockquote>
-
-<p>Did I find this confusing? Check.</p>
-
-<blockquote>
-  <p>In propositional logic the negation of “if A then B” is the conjunction “A and not B,” …</p>
-</blockquote>
-
-<p>Did I find this confusing? Check.</p>
-
-<p>It is a bit hard to reflect on this now because I am much more familiar with this subject. But I will try to step back and play around with my thoughts. The author mentions that students seem to reply <code class="highlighter-rouge">if A then not B</code> as the common solution to the negation.</p>
-
-<p>While I can justify that response in my head, my brain wants to say <code class="highlighter-rouge">if not A then not B</code> but it definitely doesn’t think <code class="highlighter-rouge">not A or B</code> nor <code class="highlighter-rouge">not A and B</code>. Sure, I know the theory and I know about truth tables. And, if I force myself then I can definitely come up to the solution.</p>
-
-<p>However, what I am saying is that it is still challenging to think about these things when you have mental clashes with your everyday speech.</p>
-
-<p>See:</p>
-
-<blockquote>
-  <p>For instance, a natural response to “If John comes, then the party will be a disaster” is “Don’t worry. If John comes, then the party will not be a disaster. It will be fine.”</p>
-</blockquote>
-
-<p>This takes the language issue a bit further:</p>
-
-<blockquote>
-  <p>According to the rules of predicate logic, when a statement contains <strong>two different quantifiers</strong>, they should be interpreted in <strong>left-right order</strong>. However in ordinary language a statement with both for-all and there-is is typically interpreted in <strong>whatever way makes the most common sense</strong>. Linguists call this “scope ambiguity.”</p>
-</blockquote>
-
-<p>See:</p>
-
-<blockquote>
-  <p>For example, the most natural way to interpret the sentence, “There is a lid for every pot” is as “For every pot there is a lid” not as “There is one single lid that will be fit every pot.”</p>
-</blockquote>
-
-<p>Think about this.</p>
-
-<blockquote>
-  <p>A third is the difficulties students experience in understanding and using statements involving variables, both in connection with predicate logic and in interpreting certain kinds of mathematical phrases.</p>
-</blockquote>
-
-<p>Very true but to me, this stems from issue created in #2 regarding language.</p>
-
-<p>I liked the following examples provided in the piece:</p>
-
-<ul>
-  <li>What we say — What we mean
-    <ul>
-      <li>the value of x — the quantity that is put in place of
-x</li>
-      <li>as the value of x increases — as larger and larger numbers are put in place of x</li>
-      <li>As the value of x increases, the value of y increases. — If larger and larger numbers are put in place of x, the corresponding numbers that are put in place of y become larger and larger
-.</li>
-      <li>where x is any real number — for all possible substitutions of real numbers in place of x</li>
-      <li>Let n be any even number — Imagine substituting an integer in place of n but <strong>do not assume anything about its value</strong> except that it is an even integer
-.</li>
-      <li>By definition of even, <code class="highlighter-rouge">n = 2k</code> for some integer <code class="highlighter-rouge">k</code> — By definition of even, there is an integer we can substitude in place of <code class="highlighter-rouge">k</code> so that the equation <code class="highlighter-rouge">n = 2k</code> will be true. (In fact, there is only one such integer; its value is <code class="highlighter-rouge">n/2</code>)</li>
-      <li>the function <code class="highlighter-rouge">x^2</code> — the function that relates each real number to the square of that number. In other words, for each possible substitution of a real number in place of <code class="highlighter-rouge">x</code>, the function corresponds to the square of that number.</li>
-      <li>where <code class="highlighter-rouge">x</code> is some real number that satisfies the given property — There is a real number that will make the given property true if we substitude it in place of x.</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<p>While I respect the author and the work she does, it appears that math education is a loosing battle. I skimmed through author’s article from 1987 (The Logic of Teaching Calculus. In Toward a Lean and Lively Calculus: Report of the Conference Workshop to Develop Curriculum and Teaching Methods for Calculus at the College Level. Ronald G. Douglas, Ed. Washington, D.C.: Mathematical Association of America, 1987, 41-59.) where she outlined similar concerns around logic (only that time it was in the context of calculus).</p>
-
-<p>It has been more than 30 years and it appears that new students are continuing to struggle with maths. Anecdotally, I hear concerned systems and parents pushing for programming skills while pushing away core maths. If you found math challenging or confusing I encourage you not to give up. You can study it on your own.</p>
-
-<p>Start your studies wherever you got confused. There are tests available that can help you narrow it down. Start from grade 1 if you want to. Who is going to judge? Open up khan academy and go to town. Discover the beauty and study on your own time… I did (and I still am).</p>
-
-<p>If it wasn’t for Khan Academy, self-studying, youtube, and the people of the internet in general — I am not sure if I would be where I am.</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p>I just ran into <a href="http://condor.depaul.edu/sepp/ICME-13.Epp.pdf">“Discrete Mathematics For Computer Science”</a> by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.</p> <p><strong>I added my own emphasis to the quotes below.</strong></p> <blockquote> <p>“The material in discrete structures is pervasive in the areas of data structures and algorithms but <strong>appears elsewhere</strong> in computer science as well.</p> </blockquote> <p>This statement resonates very well with me. During my education, there was a big emphasis on data structures and importance of maths in <em>that</em> field. However, there was almost no time spent on the <em>appears elsewhere</em> part of my studies. This left me frustrated lots of times primarily because I went into software engineering to learn about the application of theory.</p> <p>It is also how I know about Susanna...
+      <p>
+        <a href="/blog/on-discrete-mathematics-for-computer-science" title="Continue Reading On Discrete Mathematics For Computer Science">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software engineering, maths &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/on-discrete-mathematics-for-computer-science" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software engineering, maths &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
 
   <!-- Pagination links -->
   <div class="pagination">
     
-      <span class="previous">Newer</span>
+    <span class="previous">Newer</span>
     
     /
     
-      <a href="/blog/page2/" class="next">Older</a>
+    <a href="/blog/page2/" class="next">Older</a>
     
   </div>
 

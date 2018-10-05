@@ -142,555 +142,143 @@
 
         <div class="home">
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">Improving iOS performance with Xcode and Instruments for dummies</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-03-24T00:00:00-04:00" itemprop="datePublished">
-            
-            Mar 24, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">Improving iOS performance with Xcode and Instruments for dummies</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-03-24T00:00:00-04:00" itemprop="datePublished">
+          
+          Mar 24, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd" alt="Image for the post" /></p>
-
-<p>Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)</p>
-
-<p>Well, stress not my friend because Xcode got you covered ✅ and it will help you find your issues (or put you on the right track at least).</p>
-
-<p>This is a second article that I am writing about an Integrated Development Environment (IDE). The more that I use Xcode, the more I like it 😎 Xcode is really, really awesome. Just give it a try and use it.</p>
-
-<blockquote>
-  <p>Side note: it <em>only</em> took me 182 hours to get to the Instruments panel.</p>
-</blockquote>
-
-<p>I’m actually really surprised at the amount of tooling that is given to you in this wonderful IDE. My software engineering training gave me my introduction to IDEs via <a href="https://www.eclipse.org/ide/">Eclipse</a> and <a href="https://netbeans.org/">NetBeans</a>. I’ve spent years using those tools (and don’t get me wrong, they are powerful). But to be completely honest, to this day I will pick anything else but these two. They are ugly, clunky, and not intuitive 🌶</p>
-
-<h2 id="why-did-i-type-that-paragraph-above">Why did I type that paragraph above?</h2>
-
-<p>Because if you have an aversion to IDEs and think that Xcode looks just like the other IDEs, then I am here to tell you that it really is not. Xcode <em>IS</em> a pleasure to use and I use it every day. (<em>PS</em>: If you are getting angry while reading this and saying <strong>!?Xcode sucks!?</strong> Don’t get so upset. I will admit, it is not perfect.)</p>
-
-<h2 id="instruments">Instruments</h2>
-
-<p>It is this powerful thingy, built on top of <a href="https://en.wikipedia.org/wiki/DTrace">DTrace</a>, that comes with Xcode. No need to install extra software. Just download Xcode once and you have everything you need. Don’t have internet connection or you don’t want to be connected? No worries, you can still DO your work.</p>
-
-<p>Oh yeah… I used <a href="https://www.youtube.com/watch?v=s_SOYcYBnGU">this wonderful youtube video</a> to get an introduction to Instruments. Apple ofcourse has their own documentation which you can get <a href="https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/index.html">here</a>.</p>
-
-<p>The following text is basically my brief overview of Instruments.</p>
-
-<p>When you open Instruments, it looks like this:</p>
-
-<p><img src="https://d.pr/i/c280xV+" alt="Xcode Instruments" /></p>
-
-<p>You can launch Instruments like this:</p>
-
-<p><img src="https://d.pr/i/QiJqRR+" alt="Opening Xcode instruments open" /></p>
-
-<p>Or like this:</p>
-
-<p><img src="https://d.pr/i/PtBZgx+" alt="Opening Xcode Instruments" /></p>
-
-<p>(I didn’t want to leave you waiting while my slow computer takes its time to compile and open up… but you get the idea)</p>
-
-<p>What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say <em>on</em> your application.</p>
-
-<p>Out of all of the available options, I’ve only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.</p>
-
-<p>Activity Monitor and Time Profiler are in blue. These blue thingys are used to monitor CPU stuffs.</p>
-
-<p>Allocations and Leaks are in orange. These orange thingys are used to monitor memory stuff. (Guess what this other orange Zombies thingy looks at? Did you guess RAM stuffs? Cool right!!!)</p>
-
-<p>You might be wondering to yourself… all of these thingsys are cool sounding, so what? What do I do with them? Well the cool thing about these thingys is that you can just JUMP in and you will figure things out as you go. It is that easy.</p>
-
-<p>I suggest that you play with the other tools available. I am going to focus on the Time Profiler for the rest of this article. At this point in the learning, I found it to be the most useful for me.</p>
-
-<p>Time Profiler - I’ve been using this for…profiling… time? 🤷‍ Basically, I open it up and it looks like this:</p>
-
-<p><img src="https://d.pr/i/yRulLi+" alt="Time Profiler in Xcode" /></p>
-
-<p>You might be asking, now what? How about we hit that big Red Record button ⏺ ? Yup, and it will look like this:</p>
-
-<p><img src="https://d.pr/i/zElUrI+" alt="Time Profiler after hitting record button in Xcode" /></p>
-
-<h2 id="now-what-">Now what? 🤔</h2>
-
-<p>Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment… Time Profiler <em>records</em> what it sees your app is doing during a specific time interval. Makes sense?</p>
-
-<p>And if you have ever used software that has some kind of manipulation of a timeline, then you will be just fine.</p>
-
-<p>So this is a <em>snapshot</em> of how your app behaves, or its environment:
-<img src="https://d.pr/i/GPnnjB+" alt="Time Profiler Sample in Xcode" /></p>
-
-<p>time profiler records many such samples at a regular interval over time:
-<img src="https://d.pr/i/cEMzNa+" alt="Time Profiler time line in Xcode" /></p>
-
-<p>until you press the stop button ofcourse:
-<img src="https://d.pr/i/A5InKH+" alt="Time Profiler from start to stop in Xcode" /></p>
-
-<h2 id="now-what--1">Now what? 🤔</h2>
-<p>Now you get to take off your developer hat 🎩 and play a detective 🕵️‍ … for real… how cool is that?</p>
-
-<p>Since we are exploring the Timing Profiler, we are interesting in timing. You can open up (expand) the tree, that Xcode conveniently made for you, and go exploring 🗺. See which areas or which methods in your code take a long time. It very simple. Just click expand ⏬ and dive 🏊‍ in:
-<img src="https://d.pr/i/KohUC7+" alt="Start exploring Time Profiler in Xcode" /></p>
-
-<h2 id="dont-know-where-to-start-try-this">Don’t know where to start? Try this:</h2>
-
-<ol>
-  <li>Click record</li>
-  <li>Play with you app as regular user (try various uses case)</li>
-  <li>Stop the recording</li>
-  <li>And then… you can filter specific time intervals!! How cool is that?!?!?!</li>
-</ol>
-
-<p>Here is an example of me recording as I create a new to-do in <a href="https://dailyvibes.ca/">dailyvibes</a> and then filtering various time intervals.
-You can really isolate the various time intervals, like so:</p>
-
-<p><img src="https://d.pr/i/MDyrNo+" alt="Example of using Time Profiler in Xcode" /></p>
-
-<p>As you can see, to filter you simple Click and Drag on the timeline… just like any other application with a timeline. It is just that simple. And, when you filter, if you notice, the tree changes. Thus you can really get into the nitty gritty details and find out your problems 🚧.</p>
-
-<p>Oh, and… and… and you can SAVE this sampling and come back to it later:
-<img src="https://d.pr/i/QP4X3Z+" alt="Saving Time Profiler in Xcode" /></p>
-
-<p>Here is an actual example of me diving deep into the tree 🌲. When you find something juicy, like this:
-<img src="https://d.pr/i/G4H042+" alt="Example of Time Profiler in Xcode" /></p>
-
-<p>You can… double click on the method, and it will show you EXACTLY which lines 👀 of code that may be troubling:
-<img src="https://d.pr/i/IOa6qa+" alt="Double clicking on a method in Time Profiler in Xcode" /></p>
-
-<h2 id="conclusion">Conclusion</h2>
-<p>There you have it friends. I’d like you to take away three things from this:</p>
-
-<ul>
-  <li>Xcode is pretty awesome 🔥</li>
-  <li>Be a digital detective 🕵️‍ and give Instruments a try</li>
-  <li>Be careful ❌ of premature optimization</li>
-</ul>
-
-<p>If you liked this, please let me know. I like hearing feedback so I can improve.
-You can find me on <a href="https://twitter.com/getaclue_1">twitters</a>.</p>
-
-<p>Until next time,</p>
-
-<p>Alex</p>
-
-<p>PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.</p>
-
-<p>Update: This article was also posted on <a href="https://medium.com/@getaclue_1/improving-ios-performance-with-xcode-and-instruments-for-dummies-b42a731b5240">medium</a></p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd" alt="Image for the post" /></p> <p>Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)</p> <p>Well, stress not my friend because Xcode got you covered ✅ and it will help you find your issues (or put you on the right track at least).</p> <p>This is a second article that I am writing about an Integrated Development Environment (IDE). The more that I use Xcode, the more I like it 😎 Xcode is really, really awesome. Just give it a try and use it.</p> <blockquote> <p>Side note: it <em>only</em> took me 182 hours to get to the Instruments panel.</p> </blockquote> <p>I’m actually really...
+      <p>
+        <a href="/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" title="Continue Reading Improving iOS performance with Xcode and Instruments for dummies">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software development, software engineering, tutorial &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software development, software engineering, tutorial &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/page3/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/how-to-call-js-debugger-from-xcode">How to call Javascript debugger from Xcode? Can you?</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-03-09T00:00:00-05:00" itemprop="datePublished">
-            
-            Mar 9, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/how-to-call-js-debugger-from-xcode">How to call Javascript debugger from Xcode? Can you?</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-03-09T00:00:00-05:00" itemprop="datePublished">
+          
+          Mar 9, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E" alt="How to call JS debugger from Xcode?" /></p>
-
-<h2 id="hi-friends">Hi friends,</h2>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/7zk3ZR" alt="Daily Vibes Apple Store Screenshots" /></p>
-
-<p>In a previous release of ⭐️ <a href="https://geo.itunes.apple.com/app/id1332324033">Daily Vibes</a> 📲, version 1.3.0, I added a natural language date parser. What this basically means that if you enter</p>
-
-<blockquote>
-  <p>appointment with my accountant tomorrow at 3 pm</p>
-</blockquote>
-
-<p>⭐️ <a href="https://geo.itunes.apple.com/app/id1332324033">Daily Vibes</a> 📲 will understand what you mean. This is all possible because of the wonderful work done on <a href="https://github.com/quire-io/SwiftyChrono">SwiftyChrono</a>. However, I shipped 🚢 it with some pending things that are needed to be taken care of with the library. Figured I would fix it later down the road since it seems to work as expected 😅</p>
-
-<p>This week, I’ve decided to tackle the issues and help updating <a href="https://github.com/quire-io/SwiftyChrono">SwiftyChrono</a>.</p>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/WQSc8k" alt="Github SwiftyChrono PR" /></p>
-
-<p>Internally, SwiftyChrono uses <a href="https://github.com/quire-io/SwiftyChrono/tree/master/Tests/SwiftyChronoTests/JS/en">javascript</a> for testing. After the upgrades, I wanted to make sure that the tests work.</p>
-
-<h2 id="javascript-core">JavaScript [Core]</h2>
-
-<p>So, I began 👀 looking for issues ⛈</p>
-
-<p>One of the issues was narrowed down to be in <a href="https://github.com/quire-io/SwiftyChrono/blob/55f7a642916c24637c8c22d656884c0681b3aa48/Tests/SwiftyChronoTests/JS/en/test_en.js#L1">this area of the code</a>:</p>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/9mAyJg" alt="Problem code image" /></p>
-
-<p>If you notice, it is just javascript that is being executed. I know javascript so it should be no problem to debug, right?</p>
-
-<p>Well, for starters, how do you debug javascript that is executed from Xcode? How does Xcode run javascript? This leads you down the rabbit hole to find that Apple has nicely introduced <a href="https://developer.apple.com/documentation/javascriptcore">JavaScript Core</a> internally (<a href="http://nshipster.com/javascriptcore/">more info</a>).</p>
-
-<h2 id="sothe-tldr">So…the tl;dr</h2>
-
-<p>It is very easy. Apple has built a nice interaction between Xcode and Safari.</p>
-
-<p>The credit for the following steps to this answer goes to <a href="https://stackoverflow.com/a/43916256">Rakesh Yembaram</a> on stackoverflow.com</p>
-
-<h3 id="1-open-safari-and-enable-developer-menu">1. Open Safari and Enable Developer Menu</h3>
-
-<ul>
-  <li>Open Safari</li>
-  <li>Enable the Develop menu by going to:
-    <ul>
-      <li>“Preferences”</li>
-      <li>“Advanced”</li>
-      <li>“Show Develop menu in menu bar”</li>
-    </ul>
-  </li>
-</ul>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/mnewCo" alt="Show Develop Menu in Menu Bar of Safari" /></p>
-
-<h3 id="2-enable-jscontext">2. Enable JSContext</h3>
-
-<ul>
-  <li>
-    <p>Go to Develop menu
-<img src="https://cdn-pro.dprcdn.net/files/acc_603419/fGg3fS" alt="Develop menu in Safari" /></p>
-  </li>
-  <li>
-    <p>Find your simulator or computer agent and enable</p>
-    <ul>
-      <li>Automatically show web inspector for JSContexts</li>
-      <li>Automatically pause connecting to JSContexts</li>
-    </ul>
-  </li>
-</ul>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/EPq8qe" alt="Enable JSContext in Safari" /></p>
-
-<p><a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">Download Daily Vibes</a></p>
-
-<h3 id="3-re-run-project-in-xcode">3. Re-run project in Xcode</h3>
-
-<p>For my example, I’m just going to simply add <code class="highlighter-rouge">debugger</code> keyword to the Javascript file</p>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/d5zfNe" alt="added debugger to source code" /></p>
-
-<p>and then I press run on the tests
-<img src="https://cdn-pro.dprcdn.net/files/acc_603419/lpBPFQ" alt="press run on Xcode test images" /></p>
-
-<p>and I wait until Safari does its the magic:</p>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/tLQhEf" alt="safari doing magic" /></p>
-
-<p>There you go, hopefully now you can see that it is not that difficult to debug any javascript that your app might contain.</p>
-
-<p>Thank you for reading and until next time my friend.</p>
-
-<p>⭐️ <a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">Download Daily Vibes</a> 🚀</p>
-
-<p>Sincerely,
-Alex</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E" alt="How to call JS debugger from Xcode?" /></p> <h2 id="hi-friends">Hi friends,</h2> <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/7zk3ZR" alt="Daily Vibes Apple Store Screenshots" /></p> <p>In a previous release of ⭐️ <a href="https://geo.itunes.apple.com/app/id1332324033">Daily Vibes</a> 📲, version 1.3.0, I added a natural language date parser. What this basically means that if you enter</p> <blockquote> <p>appointment with my accountant tomorrow at 3 pm</p> </blockquote> <p>⭐️ <a href="https://geo.itunes.apple.com/app/id1332324033">Daily Vibes</a> 📲 will understand what you mean. This is all possible because of the wonderful work done on <a href="https://github.com/quire-io/SwiftyChrono">SwiftyChrono</a>. However, I shipped 🚢 it with some pending things that are needed to be taken care of with the library. Figured I would fix it later down the road since it seems to work as expected 😅</p> <p>This week, I’ve decided to tackle the issues and help updating <a href="https://github.com/quire-io/SwiftyChrono">SwiftyChrono</a>.</p> <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/WQSc8k" alt="Github SwiftyChrono PR" /></p> <p>Internally, SwiftyChrono uses <a href="https://github.com/quire-io/SwiftyChrono/tree/master/Tests/SwiftyChronoTests/JS/en">javascript</a> for testing....
+      <p>
+        <a href="/blog/how-to-call-js-debugger-from-xcode" title="Continue Reading How to call Javascript debugger from Xcode? Can you?">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software development, software engineering, productivity, growth, tutorial &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/how-to-call-js-debugger-from-xcode" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software development, software engineering, productivity, growth, tutorial &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/page3/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/january-and-february-reflections">January and February Reflections</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-02-28T00:00:00-05:00" itemprop="datePublished">
-            
-            Feb 28, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/january-and-february-reflections">January and February Reflections</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-02-28T00:00:00-05:00" itemprop="datePublished">
+          
+          Feb 28, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <h2 id="hi-friends">Hi friends,</h2>
-
-<p>Can’t believe how quickly January and February came and went. I hope you’ve had a productive start to the year.</p>
-
-<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb" alt="Calendar image from https://pixabay.com/en/timeline-planner-success-achieve-3168323/" /></p>
-
-<p>I wanted to look back on the amount of work that done in the past two months</p>
-
-<h2 id="january">January</h2>
-
-<p>A lot of things happened in January.</p>
-
-<ul>
-  <li><a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">Daily Vibes</a> is available on the Apple App Store. If you haven’t downloaded it yet, just give it a shot (<a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">download</a>).</li>
-  <li>Added a sign up sheet for beta testers:</li>
-</ul>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can now sign up to beta test <a href="https://twitter.com/dailyvibesapp?ref_src=twsrc%5Etfw">@dailyvibesapp</a> if you like. Now public. For all. Yup... Coming to Store. Soon. Like really soon. <a href="https://t.co/tszKEOVgeS">https://t.co/tszKEOVgeS</a> PS. Plz tell your friends too ❤️ <a href="https://t.co/qyPJUrEWS4">https://t.co/qyPJUrEWS4</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/951587276949278720?ref_src=twsrc%5Etfw">January 11, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<ul>
-  <li>As a result of shipping, started fixing bugs 🐞 here and here</li>
-</ul>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">finally 😅 fixed this 🐞 bug that has been 😡 annoying me for a while <a href="https://twitter.com/hashtag/dailyvibes?src=hash&amp;ref_src=twsrc%5Etfw">#dailyvibes</a> yay small 🏆 wins <a href="https://twitter.com/hashtag/dailyprogress?src=hash&amp;ref_src=twsrc%5Etfw">#dailyprogress</a> <a href="https://twitter.com/dailyvibesapp?ref_src=twsrc%5Etfw">@dailyvibesapp</a> January 19 2018 <a href="https://t.co/tPwhbet4Rj">pic.twitter.com/tPwhbet4Rj</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/954375575447236608?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">and yes this took some 👩‍💻 work 🙈 b/c of theming ... should be smooth ⛵️ sailing moving ⏩ forward</p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/954376036778639360?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<ul>
-  <li>was frustrated with App Delivery … a bunch of times …comes as a benefti of exposure to the Apple Ecosystem I suppose 🤔</li>
-</ul>
-
-<h2 id="february">February</h2>
-
-<p>Continued incremental improvement of Daily Vibes</p>
-
-<ul>
-  <li>Updated Kickstarter page</li>
-</ul>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">also 🛠 fixed this icon issue <a href="https://t.co/VCT80m3HpY">pic.twitter.com/VCT80m3HpY</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/954381779720269824?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<ul>
-  <li>Adding small UI accents that I was longing for</li>
-</ul>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Can’t wait to 🚢 these 💸 awesome updates to you. ⚒ Today shows items due today or are on Today list. 📫 This week shows... you get it 🎉 oh and added quick to view accents 🚀 <a href="https://twitter.com/hashtag/dailyprogress?src=hash&amp;ref_src=twsrc%5Etfw">#dailyprogress</a> <a href="https://twitter.com/hashtag/dailyvibes?src=hash&amp;ref_src=twsrc%5Etfw">#dailyvibes</a> Feb 13 2018 <a href="https://t.co/UasSlId95m">pic.twitter.com/UasSlId95m</a></p>&mdash; Daily Vibes (@dailyvibesapp) <a href="https://twitter.com/dailyvibesapp/status/963579252586221568?ref_src=twsrc%5Etfw">February 14, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<ul>
-  <li>While using DV, I noticed myself wanting to add multiple entries at the same time. So, I wanted to build something in.</li>
-</ul>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Starting 🔨 work on adding 🗂 multiple items. This is where we are now 🤓! <a href="https://twitter.com/hashtag/dailyvibes?src=hash&amp;ref_src=twsrc%5Etfw">#dailyvibes</a> <a href="https://twitter.com/hashtag/productivity?src=hash&amp;ref_src=twsrc%5Etfw">#productivity</a> <a href="https://twitter.com/hashtag/dailyprogress?src=hash&amp;ref_src=twsrc%5Etfw">#dailyprogress</a> Feb 17 2018 <a href="https://t.co/rlTA3dpMGk">pic.twitter.com/rlTA3dpMGk</a></p>&mdash; Daily Vibes (@dailyvibesapp) <a href="https://twitter.com/dailyvibesapp/status/964938263759937536?ref_src=twsrc%5Etfw">February 17, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<ul>
-  <li>This error took a few days to fix …</li>
-</ul>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Getting this error when uploading to iTC. Our app has arm64 in UIRequiredDeviceCapabilities. Who broke iTC again…<br /><br />ERROR ITMS-90502: &quot;Invalid Bundle. Apps that only contain the arm64 slice must also have &#39;arm64&#39; in the list of UIRequiredDeviceCapabilities in Info.plist.&quot;</p>&mdash; Andrew Mayers (@jamayers) <a href="https://twitter.com/jamayers/status/966457450948911104?ref_src=twsrc%5Etfw">February 21, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<ul>
-  <li>This error also took a few days to correct</li>
-</ul>
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There are a lot of responses to &quot;No accounts with iTunes Connect Access&quot; error and yet none have worked so far =(</p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/960690718531571713?ref_src=twsrc%5Etfw">February 6, 2018</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<h2 id="apple-store">Apple Store</h2>
-
-<p>I uploaded <a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">Daily Vibes</a> to the Apple App Store simply because I wanted to have it out there rather than keep it under wraps. I figured I would add value to the software as I go. In retrospect, it was a good decision because it allowed me to find value quicker (as opposed to when I was working on the app under wraps).</p>
-
-<p>After listening to some <a href="https://www.indiehackers.com/forum/show-ih-daily-vibes-ios-80a69b4368">feedback on IndieHackers</a> I decided to start working on ASO (Apple Store Optimization). Signed up for Apple’s Ads. Signed up for their Affiliate program. Started researching.</p>
-
-<h3 id="what-i-have-learned-so-far">What I have learned so far:</h3>
-
-<ul>
-  <li>Title matters</li>
-  <li>Description matters</li>
-  <li>Keywords matter</li>
-  <li>Having screenshots ??? apparently matters</li>
-  <li>Having a video ?? apparently matters</li>
-  <li>Description and other stuff that you have to fill in… doesn’t matter</li>
-</ul>
-
-<h3 id="what-else-i-have-learned">What else I have learned?</h3>
-
-<ul>
-  <li>What you actually put in any of those fields doesn’t really matter. Don’t get attached to your App name, App Description, Keywords or anything else to do with it. This is important for indie developers with no ad budget. Why? Because we want to be found so people use our software.</li>
-  <li>If you have a budget then you can pick your Branding carefully and you can ignore what I said above</li>
-</ul>
-
-<blockquote>
-  <p>So, while working on improving Daily Vibes I am also looking at improving my overall marketing. I am going to do it iteratively and learn along the way.</p>
-</blockquote>
-
-<h3 id="what-is-my-plan-of-attack">What is my plan of attack?</h3>
-
-<ul>
-  <li>improve title (Daily Vibes ➡️ Daily Vibes: Life Task Manager)</li>
-  <li>improve subtitle (Todo List &amp; Life Day Organizer ➡️ To do list, life day organizer)</li>
-  <li>improve keywords; currently haven’t decided:</li>
-</ul>
-
-<blockquote>
-  <p>to-do, list app, list maker, task list, todo list, list, task, todo, to do, life organizer, daily</p>
-</blockquote>
-
-<blockquote>
-  <p>todo,list,organizer,tracker,task,project,things,productivity,to do,to-do,keep,reminder,day planner</p>
-</blockquote>
-
-<blockquote>
-  <p>life organizer, good vibes, daily tasks, daily office, daily calender,
-daily lists, daily organizer, lists maker,</p>
-</blockquote>
-
-<ul>
-  <li>make screenshots localized with pretty text (via <a href="fastlane.tools">fastlane.tools</a>) … something like:</li>
-</ul>
-
-<p><img src="https://d.pr/i/LcaVFa+" alt="LocalizedScreenshot sample" /></p>
-
-<ul>
-  <li>make AND edit AND upload a video</li>
-</ul>
-
-<p><img src="https://d.pr/i/cmP5EE+" alt="Video WIP Screenshot" /></p>
-
-<ul>
-  <li>improve aforementioned screenshots</li>
-  <li>improve aforementioned video</li>
-</ul>
-
-<p>All of these ideas are up in the air while I am writing this post. I am hoping to ship them with next release, hopefully sometime next week. Then, I will have to wait and look at the analytics.</p>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<p>A lot of work goes behind the scenes for a single app. I am beginning to appreciate indie developers and their successful products. You really need to be comfortable with wearing ALL of the hats that make a successful business.</p>
-
-<p>For me, marketing is an uncharted area and I was hesitant to start learning it. But look at me now, I can make icons, promo videos, and start being strategic about growth. It is a journey that I am enjoying but it is challenging.</p>
-
-<p>I also paved the road and did all of the necessary paper work to add in app subscriptions. Now I just gotta figure out my strategy in this area ;)</p>
-
-<p>Oh and in closing news, I wanted to keep to a somewhat relaxed 2 week shipping cycle… and so far I have been sticking to the schedule of regular updates =) I hope I can keep this up!</p>
-
-<p><a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">Download Daily Vibes</a></p>
-
-<p>Thank you for reading and until next time my friend.</p>
-
-<p>Sincerely,
-Alex</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <h2 id="hi-friends">Hi friends,</h2> <p>Can’t believe how quickly January and February came and went. I hope you’ve had a productive start to the year.</p> <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb" alt="Calendar image from https://pixabay.com/en/timeline-planner-success-achieve-3168323/" /></p> <p>I wanted to look back on the amount of work that done in the past two months</p> <h2 id="january">January</h2> <p>A lot of things happened in January.</p> <ul> <li><a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">Daily Vibes</a> is available on the Apple App Store. If you haven’t downloaded it yet, just give it a shot (<a href="https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;at=1010lK7Y">download</a>).</li> <li>Added a sign up sheet for beta testers:</li> </ul> <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can now sign up to beta test <a href="https://twitter.com/dailyvibesapp?ref_src=twsrc%5Etfw">@dailyvibesapp</a> if you like. Now public. For all. Yup... Coming to Store. Soon. Like really soon. <a href="https://t.co/tszKEOVgeS">https://t.co/tszKEOVgeS</a> PS. Plz tell your friends too ❤️ <a href="https://t.co/qyPJUrEWS4">https://t.co/qyPJUrEWS4</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/951587276949278720?ref_src=twsrc%5Etfw">January 11, 2018</a></blockquote> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <ul> <li>As a...
+      <p>
+        <a href="/blog/january-and-february-reflections" title="Continue Reading January and February Reflections">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software development, software engineering, productivity, growth &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/january-and-february-reflections" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software development, software engineering, productivity, growth &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/page3/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/blog/ready-to-submit">Ready to Submit</a></h1>
-        <p class="post-meta">
-          <time datetime="2018-01-12T00:00:00-05:00" itemprop="datePublished">
-            
-            Jan 12, 2018
-          </time>
-          </p>
-      </header>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/ready-to-submit">Ready to Submit</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-01-12T00:00:00-05:00" itemprop="datePublished">
+          
+          Jan 12, 2018
+        </time>
+        </p>
+    </header>
 
-      <div class="post-content" itemprop="articleBody">
-        <p>Happy Friday 👋</p>
-
-<p>It is so easy to let this writing to get out of hand even though I promised to write more regularly. I’ve been chugging along with a lot of things since last update.</p>
-
-<p><em>I am still have trouble understanding how to use TestFlight</em>. I have done quite a bit of work over the past few days and I wanted to release it to the beta testers. However, I am currently stuck in this state:</p>
-
-<p><img src="https://d.pr/i/7jVbKS/Vve27WMfts+" alt="Stuck on these TestFlights" /></p>
-
-<p><img src="https://d.pr/i/Ade4Dd/XZMSnuzKCa+" alt="TestFlight Stuck on Ready to Submit Screen" /></p>
-
-<p>Basically I am stuck just like this person that wrote <a href="https://stackoverflow.com/q/44716499">TestFlight build on iTunes Connect stuck at ‘Ready to Submit’</a>. I’ve contacted some fellow iOS developers and am now doing what they suggested.</p>
-
-<p>What did I learn from them?</p>
-<ul>
-  <li>every new application version gets a review that you need to go through (which is exactly what is happening now from what I understand). I like <a href="https://semver.org">semver</a>, so technically this would be a <code class="highlighter-rouge">1.0.2</code> version. It has been primarily bug fixes and UI changes.</li>
-  <li>every new build, under a reviewed version, does not have to go through this process (apparently). So, this is what I am currently trying:</li>
-</ul>
-
-<p><img src="https://d.pr/i/8G17N9/9OFVGZcfuV+" alt="Trying to make the app live" /></p>
-
-<p>While, I am waiting for that to go through, I want to debug and figure out what is wrong with <code class="highlighter-rouge">1.0.2</code>.</p>
-
-<p><strong>UPDATE</strong>: After writing the original text, the solution did not work. Not sure what I am missing but here is what I’ve done:</p>
-
-<p><img src="https://d.pr/i/oztmDY/7rYtV1OYGc+" alt="TestFlight process" /></p>
-
-<p>Also, it also seems that information from bullet point #2 is funky. I changed the app back to <code class="highlighter-rouge">1.0.1</code> and changed build to <code class="highlighter-rouge">2</code> and, as you can see, the app is still in the “Ready for Submit” state.</p>
-
-<p>I’m going to continue with this and, in mean time, I think I am just going to contact Apple Support.</p>
-
-<hr />
-
-<p>PS. Yes, I did consult <a href="https://help.apple.com/itunes-connect/developer/#/dev78d0a8f87">View build status and metrics page</a> and <a href="https://help.apple.com/itunes-connect/developer/#/dev3d6869aff">app build statuses page</a>.</p>
-
-<p>I wish Apple would provide more information on this “Ready to Submit” state because this does not really help me at this point in the process 🤕 Why? Because by clicking on this link:</p>
-
-<p><img src="https://d.pr/i/Dy4n8t/zHHV2KGmdt+" alt="Click on this link" /></p>
-
-<p>Will bring me to:</p>
-
-<p><img src="https://d.pr/i/i0YRH9/sAGc3S3smm+" alt="Ready to Submit definition from Apple" /></p>
-
-<p>Which doesn’t really answer how to submit 🤕</p>
-
-<p>So, Daily Vibes is stuck somewhere here:</p>
-
-<p><img src="https://d.pr/i/W9e1HV/LS8BkWOfsq+" alt="Daily Vibes is stuck in one of these phases" /></p>
-
-<p>Cheers,
-Alex</p>
-
-
-        <p style="margin-top: 30px" class="side-projects-note">
+    <div class="post-content" itemprop="articleBody">
+      <p>Happy Friday 👋</p> <p>It is so easy to let this writing to get out of hand even though I promised to write more regularly. I’ve been chugging along with a lot of things since last update.</p> <p><em>I am still have trouble understanding how to use TestFlight</em>. I have done quite a bit of work over the past few days and I wanted to release it to the beta testers. However, I am currently stuck in this state:</p> <p><img src="https://d.pr/i/7jVbKS/Vve27WMfts+" alt="Stuck on these TestFlights" /></p> <p><img src="https://d.pr/i/Ade4Dd/XZMSnuzKCa+" alt="TestFlight Stuck on Ready to Submit Screen" /></p> <p>Basically I am stuck just like this person that wrote <a href="https://stackoverflow.com/q/44716499">TestFlight build on iTunes Connect stuck at ‘Ready to Submit’</a>. I’ve contacted some fellow iOS developers and am now doing what they suggested.</p> <p>What did I learn from them?</p> <ul> <li>every new application version gets a review that you...
+      <p>
+        <a href="/blog/ready-to-submit" title="Continue Reading Ready to Submit">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
 </p>
 
-      </div>
+    </div>
 
-      <p class="extra-info">
-        
-          Tags: software development, software engineering, productivity, growth, TestFlight, resources &nbsp; | &nbsp;
-        
-        <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/ready-to-submit" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+    <p class="extra-info">
+      
+      Tags: software development, software engineering, productivity, growth, TestFlight, resources &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/page3/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
-      </p>
-    </article>
+    </p>
+  </article>
   
 
   <!-- Pagination links -->
   <div class="pagination">
     
-      <a href="/blog/page2/" class="previous">Newer</a>
+    <a href="/blog/page2/" class="previous">Newer</a>
     
     /
     
-      <a href="/blog/page4/" class="next">Older</a>
+    <a href="/blog/page4/" class="next">Older</a>
     
   </div>
 
