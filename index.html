@@ -87,7 +87,7 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div id="sidebar">
-  <h1>Alex Kluew</h1>
+  <h2>Alex Kluew</h2>
   <img src="/assets/alex-kluew-profile-image.jpg" />
   <ul>
     <li>Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1">EIT</a></li>
@@ -115,9 +115,9 @@
     </li>
   </ul>
 
-  <hr />
+  <!-- <hr /> -->
 
-  <p class="subscribe-newsletter">
+  <!-- <p class="subscribe-newsletter">
   Want to be the first to hear about things from me?
 </p>
 
@@ -129,7 +129,7 @@
     Subscribe
   </button>
 </form>
-
+ -->
 
   <hr />
 
@@ -144,18 +144,94 @@
   
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/blog/swift-package-manager-october-2018">Swift package manager and links</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/if-you-dont-share-your-project-did-you-actually-make-it">If you don&#39;t share your project, did you actually make it?</a></h1>
       <p class="post-meta">
-        <time datetime="2018-10-04T00:00:00-04:00" itemprop="datePublished">
+        Published on: <time datetime="2018-10-08T12:02:04-04:00" itemprop="datePublished">
           
-          Oct 4, 2018
+          Oct 8, 2018
         </time>
-        </p>
+        Last updated on: <time datetime="2018-10-08T12:02:04-04:00" itemprop="dateModified">
+          
+          Oct 8, 2018
+        </time>
+      </p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      <p>Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.</p> <h2 id="problem-statement">Problem Statement</h2> <p>Every time I write this piece of content, I have to name this file. I have a specific way I name these files: It goes <code class="highlighter-rouge">date-title.markdown</code> so it is easier for me to reference in the future. When the parser does its magic, it also creates a nice, seo friendly URL that I can share. It gives some context to readers that...
-      <p>
+      Today, I did a few quick fixes to the current layout of this website. I added « Previous Essay and Next Essay » links to each piece of writing at the end for easier navigation This required a slight modification to the templates. Found the following article Jekyll – how to link to next/previous post on your blog very useful in this venture. In fact, it is very simple. Like so: &lt;style&gt; .not-post-page-navigation { display: flex; justify-content: space-around; margin: 1em; } &lt;/style&gt; &lt;div class="not-post-page-navigation"&gt; {% if page.previous.url %} &lt;a href="{{page.previous.url}}" title="{{page.previous.title}}"&gt;&amp;laquo; Previous Essay&lt;/a&gt; {% endif %} {% if page.next.url %} &lt;a href="{{page.next.url}}" title="{{page.next.title}}"&gt;Next Essay &amp;raquo;&lt;/a&gt; {% endif %} &lt;/div&gt; I also had to look up how I could show you the code above because it had some inline liquid syntactic sugar. So the parser simply interpreted the code about as...
+      <p style="display:flex; justify-content: flex-end;">
+        <a href="/blog/if-you-dont-share-your-project-did-you-actually-make-it" title="Continue Reading If you don&#39;t share your project, did you actually make it?">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+    </div>
+
+    <p class="extra-info">
+      
+      Tags: software engineering &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+    </p>
+  </article>
+  
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/easy-to-get-into-a-pattern-of-asking-questions">Easy to get into a pattern of asking questions</a></h1>
+      <p class="post-meta">
+        Published on: <time datetime="2018-10-06T09:35:36-04:00" itemprop="datePublished">
+          
+          Oct 6, 2018
+        </time>
+        Last updated on: <time datetime="2018-10-06T09:35:36-04:00" itemprop="dateModified">
+          
+          Oct 6, 2018
+        </time>
+      </p>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      I like to open up The 6th edition of Cracking the Coding Interview from time to time. Mainly to keep an up-to-date cheat sheet of things to narrow down during job search. All of the recruiters use some variation of things that is in this book. So, I opened it up today and got some quotes from that book in no particular order. There’s another reason why data structure and algorithm knowledge comes up: because it’s hard to ask problem-solving questions that don’t involve them. It turns out that the vast majority of problem-solving questions involve some of these basics. When enough candidates know these basics, easy to get into a pattern of asking questions with them. This quote talks about justifications of asking data structure and algorithm questions. It finishes off with some practical reasoning for this interview structure....
+      <p style="display:flex; justify-content: flex-end;">
+        <a href="/blog/easy-to-get-into-a-pattern-of-asking-questions" title="Continue Reading Easy to get into a pattern of asking questions">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+    </div>
+
+    <p class="extra-info">
+      
+      Tags: software engineering, hiring &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+    </p>
+  </article>
+  
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/blog/swift-package-manager-october-2018">Swift package manager and links</a></h1>
+      <p class="post-meta">
+        Published on: <time datetime="2018-10-04T19:58:09-04:00" itemprop="datePublished">
+          
+          Oct 4, 2018
+        </time>
+        Last updated on: <time datetime="2018-10-04T19:58:09-04:00" itemprop="dateModified">
+          
+          Oct 5, 2018
+        </time>
+      </p>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement. Problem Statement Every time I write this piece of content, I have to name this file. I have a specific way I name these files: It goes date-title.markdown so it is easier for me to reference in the future. When the parser does its magic, it also creates a nice, seo friendly URL that I can share. It gives some context to...
+      <p style="display:flex; justify-content: flex-end;">
         <a href="/blog/swift-package-manager-october-2018" title="Continue Reading Swift package manager and links">Continue Reading →</a>
       </p>
       <p style="margin-top: 30px" class="side-projects-note">
@@ -178,16 +254,20 @@
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline"><a href="/blog/will-end-user-applications-ever-be-truly-programmable">Will end-user applications ever be truly programmable?</a></h1>
       <p class="post-meta">
-        <time datetime="2018-10-03T00:00:00-04:00" itemprop="datePublished">
+        Published on: <time datetime="2018-10-03T13:36:29-04:00" itemprop="datePublished">
           
           Oct 3, 2018
         </time>
-        </p>
+        Last updated on: <time datetime="2018-10-03T13:36:29-04:00" itemprop="dateModified">
+          
+          Oct 3, 2018
+        </time>
+      </p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      <p>Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks.</p> <p>Why am I going back to doing this? I jumped in just like everyone else on the social media train that started moving in the early 2000s.</p> <p>As this train moved further away from the station, I noticed that I changed the way I interacted with information. Instead of saving things locally on my computer, I would off-load it to the cloud. At first, it made it very convenient for myself: I wouldn’t need to worry about hard-drive crashes or lost information. Even then — a failing hard-drive almost never crossed my mind during...
-      <p>
+      Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks. Why am I going back to doing this? I jumped in just like everyone else on the social media train that started moving in the early 2000s. As this train moved further away from the station, I noticed that I changed the way I interacted with information. Instead of saving things locally on my computer, I would off-load it to the cloud. At first, it made it very convenient for myself: I wouldn’t need to worry about hard-drive crashes or lost information. Even then — a failing hard-drive almost never...
+      <p style="display:flex; justify-content: flex-end;">
         <a href="/blog/will-end-user-applications-ever-be-truly-programmable" title="Continue Reading Will end-user applications ever be truly programmable?">Continue Reading →</a>
       </p>
       <p style="margin-top: 30px" class="side-projects-note">
@@ -199,70 +279,6 @@
     <p class="extra-info">
       
       Tags: software engineering &nbsp; | &nbsp;
-      
-      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-    </p>
-  </article>
-  
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/blog/october-2018-challenge">October 2018 Challenge</a></h1>
-      <p class="post-meta">
-        <time datetime="2018-10-02T00:00:00-04:00" itemprop="datePublished">
-          
-          Oct 2, 2018
-        </time>
-        </p>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
-      <p>So, I’ve decided to do a few challenges for the month of October:</p> <ul> <li>do at least 1 problem on leetcode per day</li> <li>write and publish 1 thing per day</li> </ul> <p>A few minutes ago, I was having a blast while fighting with the following maintenance that I am undergoing for <a href="https://dailyvibes.ca">daily vibes</a>:</p> <p><img src="/assets/images/2018-10-02/xcode-battles.png" alt="Xcode decided to not play along" /></p> <p>While customers do not care about such background things, I am beginning to see what people mean about upgrade headaches. And, thus, I stopped for today. No more wasting time on lower priority things. I then proceeded to write instead. I wanted to say two things:</p> <ol> <li>I am trying really hard to stay committed to the problem solving challenge. Not going to lie right now — not looking forward to it right now but I am looking forward to looking...
-      <p>
-        <a href="/blog/october-2018-challenge" title="Continue Reading October 2018 Challenge">Continue Reading →</a>
-      </p>
-      <p style="margin-top: 30px" class="side-projects-note">
-  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
-</p>
-
-    </div>
-
-    <p class="extra-info">
-      
-      Tags: software engineering, challenge &nbsp; | &nbsp;
-      
-      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-    </p>
-  </article>
-  
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/blog/on-discrete-mathematics-for-computer-science">On Discrete Mathematics For Computer Science</a></h1>
-      <p class="post-meta">
-        <time datetime="2018-10-01T00:00:00-04:00" itemprop="datePublished">
-          
-          Oct 1, 2018
-        </time>
-        </p>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
-      <p>I just ran into <a href="http://condor.depaul.edu/sepp/ICME-13.Epp.pdf">“Discrete Mathematics For Computer Science”</a> by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.</p> <p><strong>I added my own emphasis to the quotes below.</strong></p> <blockquote> <p>“The material in discrete structures is pervasive in the areas of data structures and algorithms but <strong>appears elsewhere</strong> in computer science as well.</p> </blockquote> <p>This statement resonates very well with me. During my education, there was a big emphasis on data structures and importance of maths in <em>that</em> field. However, there was almost no time spent on the <em>appears elsewhere</em> part of my studies. This left me frustrated lots of times primarily because I went into software engineering to learn about the application of theory.</p> <p>It is also how I know about Susanna...
-      <p>
-        <a href="/blog/on-discrete-mathematics-for-computer-science" title="Continue Reading On Discrete Mathematics For Computer Science">Continue Reading →</a>
-      </p>
-      <p style="margin-top: 30px" class="side-projects-note">
-  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
-</p>
-
-    </div>
-
-    <p class="extra-info">
-      
-      Tags: software engineering, maths &nbsp; | &nbsp;
       
       <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>

@@ -1,4 +1,151 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-05T02:35:55-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Swift package manager and links</title><link href="https://getaclue.github.io/blog/swift-package-manager-october-2018" rel="alternate" type="text/html" title="Swift package manager and links" /><published>2018-10-04T00:00:00-04:00</published><updated>2018-10-04T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/swift-package-manager-october-2018</id><content type="html" xml:base="https://getaclue.github.io/blog/swift-package-manager-october-2018">&lt;p&gt;Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.github.io/" rel="alternate" type="text/html" /><updated>2018-10-08T18:42:47-04:00</updated><id>https://getaclue.github.io/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">If you don’t share your project, did you actually make it?</title><link href="https://getaclue.github.io/blog/if-you-dont-share-your-project-did-you-actually-make-it" rel="alternate" type="text/html" title="If you don't share your project, did you actually make it?" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/if-you-dont-share-your-project-did-you-actually-make-it</id><content type="html" xml:base="https://getaclue.github.io/blog/if-you-dont-share-your-project-did-you-actually-make-it">&lt;p&gt;Today, I did a few quick fixes to the current layout of this website.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I added &lt;code class=&quot;highlighter-rouge&quot;&gt;« Previous Essay&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Next Essay »&lt;/code&gt; links to each piece of writing at the end for easier navigation&lt;/p&gt;
+
+    &lt;p&gt;This required a slight modification to the templates. Found the following article &lt;a href=&quot;https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html&quot;&gt;Jekyll – how to link to next/previous post on your blog&lt;/a&gt; very useful in this venture. In fact, it is very simple. Like so:&lt;/p&gt;
+
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.not-post-page-navigation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;space-around&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;not-post-page-navigation&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  {% if page.previous.url %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{page.previous.url}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{page.previous.title}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;laquo;&lt;/span&gt;
+    Previous Essay&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  {% endif %}
+  {% if page.next.url %}
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{page.next.url}}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{page.next.title}}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next Essay &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  {% endif %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;I also had to look up how I could show you the code above because it had some inline liquid syntactic sugar. So the parser simply interpreted the code about as any regular code. You need to add &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;endraw&lt;/code&gt; tags before the code and proceed as before! See &lt;a href=&quot;https://github.com/github/linguist/issues/3690&quot;&gt;Liquid syntax highlighting in Markdown&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I also re-wrote the little script that I wrote in Swift a few days ago in Java. I’m basically jumping between languages because why not. Had some hiccups with looking up regular expressions syntax in Java. Here is the current working copy:&lt;/p&gt;
+
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Please do like this: LazyTitleMaker &amp;lt;title&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;DateFormat&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dateStyleFormat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SimpleDateFormat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yyyy-MM-dd&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currDate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currDateText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dateStyleFormat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputWSReplaced&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;replaceAll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;\\s+&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sanitizedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputWSReplaced&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;replaceAll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[\\',?]&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultantURI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;currDateText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sanitizedString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resultantURI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;.markdown&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Length: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultantURI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Need to fix the following code that you see above at some later time&lt;/p&gt;
+
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sanitizedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputWSReplaced&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;replaceAll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[\\',?]&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;I wanted to find all characters in the string that are not words and not spaces. I expected &lt;code class=&quot;highlighter-rouge&quot;&gt;[^w]&lt;/code&gt; to match to all characters that are not words and &lt;code class=&quot;highlighter-rouge&quot;&gt;[^s]&lt;/code&gt; to match all characters that are not spaces.&lt;/p&gt;
+
+    &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sanitizedString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputWSReplaced&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;replaceAll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[^\\w\\s]&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Similar to how I would do it in JavaScript&lt;/p&gt;
+
+    &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Some Str,in'g?&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[^\w\s]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/ /g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'-'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I also changed the about page and the projects page&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I added a new template for the about and projects pages&lt;/p&gt;
+
+    &lt;p&gt;Modified the way images are displayed in the liquid templates. Replaced &lt;code class=&quot;highlighter-rouge&quot;&gt;{:width=&quot;60%&quot;}&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;{:style=&quot;max-width:100%&quot;}&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I removed the newsletter link at the footer&lt;/li&gt;
+  &lt;li&gt;I adjusted my project involvement for Screenhole and Keyframes. Until further notice my involvement is on pause while &lt;a href=&quot;https://thinko.com&quot;&gt;Thinko&lt;/a&gt; focuses on other things. I enjoyed working with the team and hope to do so again the future. Jacob and Pasquale are wonderful.&lt;/li&gt;
+  &lt;li&gt;Played with modulo and reminder theories decoding a birthday message &lt;a href=&quot;https://stackoverflow.com/a/37240042&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;https://stackoverflow.com/a/3354251&quot;&gt;2&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is fun to make things for no reason other than just because. So, what do I think about: &lt;em&gt;If you don’t share your project, did you actually make it?&lt;/em&gt; While I think it depends on the project and the goals, I think that decision is ultimately up to you. It is very easy to fall in the trap of sharing for the sake of sharing. For me — I first look at the project and then I look at the goals. Most likely than not the things that I share I hope others to find useful and educational.&lt;/p&gt;
+
+&lt;p&gt;Links for today:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf&quot;&gt;http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://regexr.com/&quot;&gt;https://regexr.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/10253516/ruby-regex-replace-non-word-chars-that-are-not-space-chars&quot;&gt;https://stackoverflow.com/questions/10253516/ruby-regex-replace-non-word-chars-that-are-not-space-chars&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tutorials.jenkov.com/java-internationalization/simpledateformat.html&quot;&gt;http://tutorials.jenkov.com/java-internationalization/simpledateformat.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.vogella.com/tutorials/JavaRegularExpressions/article.html&quot;&gt;http://www.vogella.com/tutorials/JavaRegularExpressions/article.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.java2s.com/Tutorials/Java/java.time/LocalDateTime/2720__LocalDateTime.now_.htm&quot;&gt;http://www.java2s.com/Tutorials/Java/java.time/LocalDateTime/2720_&lt;em&gt;LocalDateTime.now&lt;/em&gt;.htm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html&quot;&gt;https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.shopify.com/en/themes/liquid/filters/string-filters&quot;&gt;https://help.shopify.com/en/themes/liquid/filters/string-filters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devhints.io/jekyll&quot;&gt;https://devhints.io/jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/mikeygee/2626538&quot;&gt;https://gist.github.com/mikeygee/2626538&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/JJediny/a466eed62cee30ad45e2&quot;&gt;https://gist.github.com/JJediny/a466eed62cee30ad45e2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="software engineering" /><summary type="html">When enough candidates know these basics, easy to get into a pattern of asking questions with them.</summary></entry><entry><title type="html">Easy to get into a pattern of asking questions</title><link href="https://getaclue.github.io/blog/easy-to-get-into-a-pattern-of-asking-questions" rel="alternate" type="text/html" title="Easy to get into a pattern of asking questions" /><published>2018-10-06T00:00:00-04:00</published><updated>2018-10-06T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/easy-to-get-into-a-pattern-of-asking-questions</id><content type="html" xml:base="https://getaclue.github.io/blog/easy-to-get-into-a-pattern-of-asking-questions">&lt;p&gt;I like to open up &lt;a href=&quot;http://www.crackingthecodinginterview.com/&quot;&gt;The 6th edition of Cracking the Coding Interview&lt;/a&gt; from time to time. Mainly to keep an up-to-date cheat sheet of things to narrow down during job search. All of the recruiters use some variation of things that is in this book.&lt;/p&gt;
+
+&lt;p&gt;So, I opened it up today and got some quotes from that book in no particular order.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There’s another reason why data structure and algorithm knowledge comes up: because it’s hard to ask problem-solving questions that don’t involve them. It turns out that the vast majority of problem-solving questions involve some of these basics. &lt;strong&gt;When enough candidates know these basics, easy to get into a pattern of asking questions with them&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This quote talks about justifications of asking data structure and algorithm questions. It finishes off with some practical reasoning for this interview structure. You, as an applicant have to remember this. These scenarios are easy to create, modify, and repeat. Additionally, it could save immediate and future employee costs.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Not only might you be &lt;strong&gt;judged harshly&lt;/strong&gt; for not really understanding big 0, but you will also struggle to judge when your algorithm is getting faster or slower.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This quote was in the context of Big O. I’ve personally experienced this in a group setting. It wasn’t during an interview per se but I’ve definitely been caught off guard by this. Some people say maybe you shouldn’t meet your heroes. Maybe that is true. I’ll let you be your own judge of that. In this case, the harsh judgement came from a well known and important person. If I was a fan of this person or their work, I would have found their approach not professional and would not have wanted to work with them. Approach was used on a group of 18-21 year olds.&lt;/p&gt;
+
+&lt;p&gt;I think that this person used this approach as a strategy. A coping mechanism of some sort or a scare tactic. Or perhaps it allowed them to maintain order in their position. It made people less likely to approach them. Made the situation a bit more interesting since employees &lt;em&gt;had&lt;/em&gt; to approach them.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Big O time is the language and metric we use to describe the efficiency of algorithms. Not understanding it thoroughly can really hurt you in developing an algorithm. Not only might you be &lt;strong&gt;judged harshly&lt;/strong&gt; for not really understanding big 0, but you will also struggle to &lt;strong&gt;judge&lt;/strong&gt; when your algorithm is getting faster or slower.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One of the things that I find interesting about Big O in our industry is the lack of consensus among various parts of this industry. If you know about Big O, then there is very little ambiguity. Most people who are familiar give similar responses.&lt;/p&gt;
+
+&lt;p&gt;There seems to be some kind of this weird distinction of: us (industry) vs. them (academia). This has been so when I was in academia and it is continuing to exist as such. I think this issue comes from the word &lt;em&gt;approximation&lt;/em&gt;. You need some context to what you mean about an approximation. How good do you want it? Should it be a formal approximation? A rough estimate?&lt;/p&gt;
+
+&lt;p&gt;As you continue reading, a few lines down from the quote above we find&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you’ve never covered big O in an &lt;strong&gt;academic setting&lt;/strong&gt;, you &lt;strong&gt;can probably&lt;/strong&gt; skip this subsection.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Academics use big 0, big 0 (theta), and big O (omega) to describe runtimes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In &lt;strong&gt;industry&lt;/strong&gt; (and &lt;strong&gt;therefore in interviews&lt;/strong&gt;), people seem to have merged 0 and O together. Industry’s meaning of big O is closer to what academics mean by 0, in that it would be seen as incorrect to describe printing an array as O(N&lt;sup&gt;2&lt;/sup&gt;). Industry would just say this is O(N).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and then&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For this book, we will use big O in the way that &lt;strong&gt;industry tends&lt;/strong&gt; to use it: By always trying to offer the tightest description of the runtime.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I agree to some of these statements but I also think that it depends.&lt;/p&gt;
+
+&lt;p&gt;Industry may use O(N) as an approximation but they will definitely check if it is not O(N&lt;sup&gt;2&lt;/sup&gt;) by accident. They will definitely do so if money is involved. In other words, while the industry may use O(N) as an approximation, they definitely know how to get to the O(N&lt;sup&gt;2&lt;/sup&gt;) boundary.&lt;/p&gt;
+
+&lt;p&gt;So, dear reader, spend the time and learn. This way you can adjust your answer based on your audience and you can understand. Plus, it is actually helpful when you are making things.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="hiring" /><summary type="html">When enough candidates know these basics, easy to get into a pattern of asking questions with them.</summary></entry><entry><title type="html">Swift package manager and links</title><link href="https://getaclue.github.io/blog/swift-package-manager-october-2018" rel="alternate" type="text/html" title="Swift package manager and links" /><published>2018-10-04T00:00:00-04:00</published><updated>2018-10-04T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/swift-package-manager-october-2018</id><content type="html" xml:base="https://getaclue.github.io/blog/swift-package-manager-october-2018">&lt;p&gt;Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.&lt;/p&gt;
 
 &lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 
@@ -854,221 +1001,4 @@ x&lt;/li&gt;
 
 &lt;p&gt;Alex&lt;/p&gt;
 
-&lt;p&gt;Note: This article was also published on &lt;a href=&quot;https://www.linkedin.com/pulse/how-make-perfect-ios-screenshots-clean-status-bar-2018-alex-kluew/&quot;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Using fastlane.tools and SimulatorStatusMagic</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy" /></entry><entry><title type="html">Improving iOS performance with Xcode and Instruments for dummies</title><link href="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies" rel="alternate" type="text/html" title="Improving iOS performance with Xcode and Instruments for dummies" /><published>2018-03-24T00:00:00-04:00</published><updated>2018-03-24T00:00:00-04:00</updated><id>https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies</id><content type="html" xml:base="https://getaclue.github.io/blog/improving-ios-performance-with-xcode-and-instruments-for-dummies">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)&lt;/p&gt;
-
-&lt;p&gt;Well, stress not my friend because Xcode got you covered ✅ and it will help you find your issues (or put you on the right track at least).&lt;/p&gt;
-
-&lt;p&gt;This is a second article that I am writing about an Integrated Development Environment (IDE). The more that I use Xcode, the more I like it 😎 Xcode is really, really awesome. Just give it a try and use it.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Side note: it &lt;em&gt;only&lt;/em&gt; took me 182 hours to get to the Instruments panel.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’m actually really surprised at the amount of tooling that is given to you in this wonderful IDE. My software engineering training gave me my introduction to IDEs via &lt;a href=&quot;https://www.eclipse.org/ide/&quot;&gt;Eclipse&lt;/a&gt; and &lt;a href=&quot;https://netbeans.org/&quot;&gt;NetBeans&lt;/a&gt;. I’ve spent years using those tools (and don’t get me wrong, they are powerful). But to be completely honest, to this day I will pick anything else but these two. They are ugly, clunky, and not intuitive 🌶&lt;/p&gt;
-
-&lt;h2 id=&quot;why-did-i-type-that-paragraph-above&quot;&gt;Why did I type that paragraph above?&lt;/h2&gt;
-
-&lt;p&gt;Because if you have an aversion to IDEs and think that Xcode looks just like the other IDEs, then I am here to tell you that it really is not. Xcode &lt;em&gt;IS&lt;/em&gt; a pleasure to use and I use it every day. (&lt;em&gt;PS&lt;/em&gt;: If you are getting angry while reading this and saying &lt;strong&gt;!?Xcode sucks!?&lt;/strong&gt; Don’t get so upset. I will admit, it is not perfect.)&lt;/p&gt;
-
-&lt;h2 id=&quot;instruments&quot;&gt;Instruments&lt;/h2&gt;
-
-&lt;p&gt;It is this powerful thingy, built on top of &lt;a href=&quot;https://en.wikipedia.org/wiki/DTrace&quot;&gt;DTrace&lt;/a&gt;, that comes with Xcode. No need to install extra software. Just download Xcode once and you have everything you need. Don’t have internet connection or you don’t want to be connected? No worries, you can still DO your work.&lt;/p&gt;
-
-&lt;p&gt;Oh yeah… I used &lt;a href=&quot;https://www.youtube.com/watch?v=s_SOYcYBnGU&quot;&gt;this wonderful youtube video&lt;/a&gt; to get an introduction to Instruments. Apple ofcourse has their own documentation which you can get &lt;a href=&quot;https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/index.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The following text is basically my brief overview of Instruments.&lt;/p&gt;
-
-&lt;p&gt;When you open Instruments, it looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/c280xV+&quot; alt=&quot;Xcode Instruments&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can launch Instruments like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/QiJqRR+&quot; alt=&quot;Opening Xcode instruments open&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Or like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/PtBZgx+&quot; alt=&quot;Opening Xcode Instruments&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;(I didn’t want to leave you waiting while my slow computer takes its time to compile and open up… but you get the idea)&lt;/p&gt;
-
-&lt;p&gt;What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say &lt;em&gt;on&lt;/em&gt; your application.&lt;/p&gt;
-
-&lt;p&gt;Out of all of the available options, I’ve only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.&lt;/p&gt;
-
-&lt;p&gt;Activity Monitor and Time Profiler are in blue. These blue thingys are used to monitor CPU stuffs.&lt;/p&gt;
-
-&lt;p&gt;Allocations and Leaks are in orange. These orange thingys are used to monitor memory stuff. (Guess what this other orange Zombies thingy looks at? Did you guess RAM stuffs? Cool right!!!)&lt;/p&gt;
-
-&lt;p&gt;You might be wondering to yourself… all of these thingsys are cool sounding, so what? What do I do with them? Well the cool thing about these thingys is that you can just JUMP in and you will figure things out as you go. It is that easy.&lt;/p&gt;
-
-&lt;p&gt;I suggest that you play with the other tools available. I am going to focus on the Time Profiler for the rest of this article. At this point in the learning, I found it to be the most useful for me.&lt;/p&gt;
-
-&lt;p&gt;Time Profiler - I’ve been using this for…profiling… time? 🤷‍ Basically, I open it up and it looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/yRulLi+&quot; alt=&quot;Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You might be asking, now what? How about we hit that big Red Record button ⏺ ? Yup, and it will look like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/zElUrI+&quot; alt=&quot;Time Profiler after hitting record button in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;now-what-&quot;&gt;Now what? 🤔&lt;/h2&gt;
-
-&lt;p&gt;Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment… Time Profiler &lt;em&gt;records&lt;/em&gt; what it sees your app is doing during a specific time interval. Makes sense?&lt;/p&gt;
-
-&lt;p&gt;And if you have ever used software that has some kind of manipulation of a timeline, then you will be just fine.&lt;/p&gt;
-
-&lt;p&gt;So this is a &lt;em&gt;snapshot&lt;/em&gt; of how your app behaves, or its environment:
-&lt;img src=&quot;https://d.pr/i/GPnnjB+&quot; alt=&quot;Time Profiler Sample in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;time profiler records many such samples at a regular interval over time:
-&lt;img src=&quot;https://d.pr/i/cEMzNa+&quot; alt=&quot;Time Profiler time line in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;until you press the stop button ofcourse:
-&lt;img src=&quot;https://d.pr/i/A5InKH+&quot; alt=&quot;Time Profiler from start to stop in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;now-what--1&quot;&gt;Now what? 🤔&lt;/h2&gt;
-&lt;p&gt;Now you get to take off your developer hat 🎩 and play a detective 🕵️‍ … for real… how cool is that?&lt;/p&gt;
-
-&lt;p&gt;Since we are exploring the Timing Profiler, we are interesting in timing. You can open up (expand) the tree, that Xcode conveniently made for you, and go exploring 🗺. See which areas or which methods in your code take a long time. It very simple. Just click expand ⏬ and dive 🏊‍ in:
-&lt;img src=&quot;https://d.pr/i/KohUC7+&quot; alt=&quot;Start exploring Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;dont-know-where-to-start-try-this&quot;&gt;Don’t know where to start? Try this:&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Click record&lt;/li&gt;
-  &lt;li&gt;Play with you app as regular user (try various uses case)&lt;/li&gt;
-  &lt;li&gt;Stop the recording&lt;/li&gt;
-  &lt;li&gt;And then… you can filter specific time intervals!! How cool is that?!?!?!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Here is an example of me recording as I create a new to-do in &lt;a href=&quot;https://dailyvibes.ca/&quot;&gt;dailyvibes&lt;/a&gt; and then filtering various time intervals.
-You can really isolate the various time intervals, like so:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/MDyrNo+&quot; alt=&quot;Example of using Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As you can see, to filter you simple Click and Drag on the timeline… just like any other application with a timeline. It is just that simple. And, when you filter, if you notice, the tree changes. Thus you can really get into the nitty gritty details and find out your problems 🚧.&lt;/p&gt;
-
-&lt;p&gt;Oh, and… and… and you can SAVE this sampling and come back to it later:
-&lt;img src=&quot;https://d.pr/i/QP4X3Z+&quot; alt=&quot;Saving Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is an actual example of me diving deep into the tree 🌲. When you find something juicy, like this:
-&lt;img src=&quot;https://d.pr/i/G4H042+&quot; alt=&quot;Example of Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can… double click on the method, and it will show you EXACTLY which lines 👀 of code that may be troubling:
-&lt;img src=&quot;https://d.pr/i/IOa6qa+&quot; alt=&quot;Double clicking on a method in Time Profiler in Xcode&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;There you have it friends. I’d like you to take away three things from this:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Xcode is pretty awesome 🔥&lt;/li&gt;
-  &lt;li&gt;Be a digital detective 🕵️‍ and give Instruments a try&lt;/li&gt;
-  &lt;li&gt;Be careful ❌ of premature optimization&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you liked this, please let me know. I like hearing feedback so I can improve.
-You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twitters&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Until next time,&lt;/p&gt;
-
-&lt;p&gt;Alex&lt;/p&gt;
-
-&lt;p&gt;PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.&lt;/p&gt;
-
-&lt;p&gt;Update: This article was also posted on &lt;a href=&quot;https://medium.com/@getaclue_1/improving-ios-performance-with-xcode-and-instruments-for-dummies-b42a731b5240&quot;&gt;medium&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Don't know where to start? Try this</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd" /></entry><entry><title type="html">How to call Javascript debugger from Xcode? Can you?</title><link href="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode" rel="alternate" type="text/html" title="How to call Javascript debugger from Xcode? Can you?" /><published>2018-03-09T00:00:00-05:00</published><updated>2018-03-09T00:00:00-05:00</updated><id>https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode</id><content type="html" xml:base="https://getaclue.github.io/blog/how-to-call-js-debugger-from-xcode">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;hi-friends&quot;&gt;Hi friends,&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/7zk3ZR&quot; alt=&quot;Daily Vibes Apple Store Screenshots&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In a previous release of ⭐️ &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033&quot;&gt;Daily Vibes&lt;/a&gt; 📲, version 1.3.0, I added a natural language date parser. What this basically means that if you enter&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;appointment with my accountant tomorrow at 3 pm&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;⭐️ &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033&quot;&gt;Daily Vibes&lt;/a&gt; 📲 will understand what you mean. This is all possible because of the wonderful work done on &lt;a href=&quot;https://github.com/quire-io/SwiftyChrono&quot;&gt;SwiftyChrono&lt;/a&gt;. However, I shipped 🚢 it with some pending things that are needed to be taken care of with the library. Figured I would fix it later down the road since it seems to work as expected 😅&lt;/p&gt;
-
-&lt;p&gt;This week, I’ve decided to tackle the issues and help updating &lt;a href=&quot;https://github.com/quire-io/SwiftyChrono&quot;&gt;SwiftyChrono&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/WQSc8k&quot; alt=&quot;Github SwiftyChrono PR&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Internally, SwiftyChrono uses &lt;a href=&quot;https://github.com/quire-io/SwiftyChrono/tree/master/Tests/SwiftyChronoTests/JS/en&quot;&gt;javascript&lt;/a&gt; for testing. After the upgrades, I wanted to make sure that the tests work.&lt;/p&gt;
-
-&lt;h2 id=&quot;javascript-core&quot;&gt;JavaScript [Core]&lt;/h2&gt;
-
-&lt;p&gt;So, I began 👀 looking for issues ⛈&lt;/p&gt;
-
-&lt;p&gt;One of the issues was narrowed down to be in &lt;a href=&quot;https://github.com/quire-io/SwiftyChrono/blob/55f7a642916c24637c8c22d656884c0681b3aa48/Tests/SwiftyChronoTests/JS/en/test_en.js#L1&quot;&gt;this area of the code&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/9mAyJg&quot; alt=&quot;Problem code image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you notice, it is just javascript that is being executed. I know javascript so it should be no problem to debug, right?&lt;/p&gt;
-
-&lt;p&gt;Well, for starters, how do you debug javascript that is executed from Xcode? How does Xcode run javascript? This leads you down the rabbit hole to find that Apple has nicely introduced &lt;a href=&quot;https://developer.apple.com/documentation/javascriptcore&quot;&gt;JavaScript Core&lt;/a&gt; internally (&lt;a href=&quot;http://nshipster.com/javascriptcore/&quot;&gt;more info&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h2 id=&quot;sothe-tldr&quot;&gt;So…the tl;dr&lt;/h2&gt;
-
-&lt;p&gt;It is very easy. Apple has built a nice interaction between Xcode and Safari.&lt;/p&gt;
-
-&lt;p&gt;The credit for the following steps to this answer goes to &lt;a href=&quot;https://stackoverflow.com/a/43916256&quot;&gt;Rakesh Yembaram&lt;/a&gt; on stackoverflow.com&lt;/p&gt;
-
-&lt;h3 id=&quot;1-open-safari-and-enable-developer-menu&quot;&gt;1. Open Safari and Enable Developer Menu&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Open Safari&lt;/li&gt;
-  &lt;li&gt;Enable the Develop menu by going to:
-    &lt;ul&gt;
-      &lt;li&gt;“Preferences”&lt;/li&gt;
-      &lt;li&gt;“Advanced”&lt;/li&gt;
-      &lt;li&gt;“Show Develop menu in menu bar”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/mnewCo&quot; alt=&quot;Show Develop Menu in Menu Bar of Safari&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;2-enable-jscontext&quot;&gt;2. Enable JSContext&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Go to Develop menu
-&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/fGg3fS&quot; alt=&quot;Develop menu in Safari&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Find your simulator or computer agent and enable&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Automatically show web inspector for JSContexts&lt;/li&gt;
-      &lt;li&gt;Automatically pause connecting to JSContexts&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/EPq8qe&quot; alt=&quot;Enable JSContext in Safari&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;amp;at=1010lK7Y&quot;&gt;Download Daily Vibes&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-re-run-project-in-xcode&quot;&gt;3. Re-run project in Xcode&lt;/h3&gt;
-
-&lt;p&gt;For my example, I’m just going to simply add &lt;code class=&quot;highlighter-rouge&quot;&gt;debugger&lt;/code&gt; keyword to the Javascript file&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/d5zfNe&quot; alt=&quot;added debugger to source code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and then I press run on the tests
-&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/lpBPFQ&quot; alt=&quot;press run on Xcode test images&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and I wait until Safari does its the magic:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/tLQhEf&quot; alt=&quot;safari doing magic&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There you go, hopefully now you can see that it is not that difficult to debug any javascript that your app might contain.&lt;/p&gt;
-
-&lt;p&gt;Thank you for reading and until next time my friend.&lt;/p&gt;
-
-&lt;p&gt;⭐️ &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033?mt=8&amp;amp;at=1010lK7Y&quot;&gt;Download Daily Vibes&lt;/a&gt; 🚀&lt;/p&gt;
-
-&lt;p&gt;Sincerely,
-Alex&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="productivity" /><category term="growth" /><category term="tutorial" /><summary type="html">In a previous release of ⭐️ Daily Vibes for iOS, 1.3.0, I added a natural language date parser.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/2PWtsR" /></entry></feed>
+&lt;p&gt;Note: This article was also published on &lt;a href=&quot;https://www.linkedin.com/pulse/how-make-perfect-ios-screenshots-clean-status-bar-2018-alex-kluew/&quot;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="tutorial" /><summary type="html">Using fastlane.tools and SimulatorStatusMagic</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy" /></entry></feed>
