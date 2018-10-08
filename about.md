@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: simple-page
 title: About Alex Kluew
 categories: []
 tags: []
@@ -7,7 +7,8 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2018-08-21 15:58:31
+dateModified: 2018-10-08 14:14:19
+datePublished: 2018-08-21 15:58:31
 ---
 
 # Hello friend!
@@ -64,7 +65,7 @@ I enjoy knowledge for its own sake. I explore other disciplines to understand ou
 
 I am also interested in business and entrepreneurship. Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
 
-[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:width="60%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo 'Ontario Summer Company 2014 Entrepreneurial Grant')
+[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:style="max-width:100%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo 'Ontario Summer Company 2014 Entrepreneurial Grant')
 
 ### Recruiter?
 

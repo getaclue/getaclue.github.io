@@ -5,10 +5,10 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline"><a href="{{ page.url }}">{{ page.title | escape }}</a></h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time datetime="{{ page.datePublished | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        ⏰ {{ page.date | date: date_format }}
-      </time> &nbsp; | 📝by <a href="/" rel="author">Alex Kluew</a> | &nbsp; {% include fork.html %}
+        {{ page.datePublished | date: date_format }}
+      </time> by <a href="/" rel="author">Alex Kluew</a>
     </p>
     <p class="post-meta">
       {% include read_time.html %}
@@ -17,13 +17,11 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-
-    {% include side-projects.html %}
   </div>
 
   <p class="extra-info">
     {% if page.tags.size > 0 %}
-      Tags: {{ page.tags | join: ', ' }} &nbsp; | &nbsp;
+    Tags: {{ page.tags | join: ', ' }} &nbsp; | &nbsp;
     {% endif %}
     {% include fork.html %}
   </p>

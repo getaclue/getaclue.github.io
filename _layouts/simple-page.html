@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" prefix="og: http://ogp.me/ns#">
+
+{% include head.html %}
+
+<body class="not-apple">
+  <style>
+    .not-content-wrapper {
+      /* background-color: rgba(242, 242, 242, 1); */
+      /* margin: 0 auto; */
+      /* width: 980px; */
+      height: 100%;
+    }
+
+    .not-header-text {
+      /* font-size: 1.1em;
+      margin: 0 auto;
+      padding-top: 6px;
+      vertical-align: middle;
+      float: left; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+    }
+
+    .not-header-text a {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+  </style>
+  <header class="not-header" role="banner">
+    <div class="not-content-wrapper">
+      <div class="not-header-text">
+        <a href="{{ "/" | relative_url }}">Home</a>
+        <a href="/about" class="page-link {% if page.url == "/about" %}active{% endif %}">About</a>
+        <a href="/projects" class="page-link {% if page.url == "/projects" %}active{% endif %}">Projects</a>
+      </div>
+    </div>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div style="display:flex;align-items: center;justify-content: center;">
+      <article class="not-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline"><a href="{{ page.url }}">{{ page.title | escape }}</a></h1>
+          <p class="post-meta">
+            Published on: <time datetime="{{ page.datePublished | date_to_xmlschema }}" itemprop="datePublished">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ page.datePublished | date: date_format }}
+            </time>
+            Last updated on: <time datetime="{{ page.datePublished | date_to_xmlschema }}" itemprop="dateModified">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ page.dateModified | date: date_format }}
+            </time>
+          </p>
+          <p class="post-meta">
+            {% include read_time.html %}
+          </p>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+
+          {% include side-projects.html %}
+        </div>
+
+        <p class="extra-info">
+          {% if page.tags.size > 0 %}
+          Tags: {{ page.tags | join: ', ' }} &nbsp; | &nbsp;
+          {% endif %}
+          {% include fork.html %}
+        </p>
+      </article>
+    </div>
+  </main>
+
+  {% include footer-redesign.html %}
+
+</body>
+
+</html>

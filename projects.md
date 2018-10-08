@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: simple-page
 title: Projects
 categories: []
 tags: []
@@ -7,19 +7,23 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2018-08-21 15:58:31
+dateModified: 2018-10-08 14:23:57
+datePublished: 2018-08-21 15:58:31
 ---
 
 # Internet Offerings
 
-Here are some projects that I have been involved in. This page is a work in progress.
+As I continue to work on projects, I will try to maintain an ongoing record of my work. I'm always happy to chat about my work. It is listed in no particular order at this moment. Thus, this page itself is a work in progress.
 
-## Keyframes (July 2018 - present)
+So, here are some projects that I have been involved in.
+
+## Keyframes (July 2018 - August 2018)
 
 - a Remote Team Contributor
 - [Homepage](https://keyframes.net)
+- involvement is on pause until needed
 
-  ![Keyframes mainpage]({{"/assets/projects/keyframes/keyframes-aug-2018.png" | relative_url}})
+  ![Keyframes mainpage]({{"/assets/projects/keyframes/keyframes-aug-2018.png" | relative_url}}){:style="max-width:100%"}
 
 - Work done:
   - on OS X companion app using _Swift_ ([Snapper](https://keyframes.net/snapper))
@@ -34,12 +38,13 @@ Here are some projects that I have been involved in. This page is a work in prog
     - Added rspec and wrote basic initial tests
     - Stripe MVP spike & research
 
-## Screenhole (April 2018 - present)
+## Screenhole (April 2018 - August 2018)
 
 - a Remote Team Contributor
 - [Homepage](https://screenhole.net/)
+- involvement is on pause until needed
 
-  ![Screenhole mainpage]({{"/assets/projects/screenhole/screenhole-may-2018.png" | relative_url}})
+  ![Screenhole mainpage]({{"/assets/projects/screenhole/screenhole-may-2018.png" | relative_url}}){:style="max-width:100%"}
 
 - Work done:
   - on OS X companion app using _Swift_ ([Screenhole](https://screenhole.net/apps))
@@ -70,7 +75,7 @@ Here are some projects that I have been involved in. This page is a work in prog
 - currenly on hiatus until September
 - [Homepage](https://betalist.com/)
 
-  ![Betalist mainpage]({{"/assets/projects/betalist/betalist-may-2018.png" | relative_url}})
+  ![Betalist mainpage]({{"/assets/projects/betalist/betalist-may-2018.png" | relative_url}}){:style="max-width:100%"}
 
 - Work done:
   - on backend using _Ruby_ (Ruby on Rails)
@@ -84,7 +89,7 @@ Here are some projects that I have been involved in. This page is a work in prog
 - a Remote Team Project
 - [Homepage](https://pttrns.com/)
 
-  ![Pttrns mainpage]({{"/assets/projects/pttrns/pttrns-may-2018.png" | relative_url}})
+  ![Pttrns mainpage]({{"/assets/projects/pttrns/pttrns-may-2018.png" | relative_url}}){:style="max-width:100%"}
 
 - Work done:
   - helped during the transition of owners
@@ -105,30 +110,31 @@ Here are some projects that I have been involved in. This page is a work in prog
 - [ProductHunt upcoming](https://www.producthunt.com/upcoming/daily-vibes/)
 - [Backstory](https://gist.github.com/getaclue/f1a3b6be4bf5a25d931a0b0bc6099885)
 
-![Daily Vibes Kickstarter Campaign]({{"/assets/projects/daily-vibes/dailyvibes-kickstarter-jan-2018.png" | relative_url}})
-![Daily Vibes Product Hunt Upcoming]({{"/assets/projects/daily-vibes/dailyvibes-ph-jan-2018.png" | relative_url}})
+![Daily Vibes Kickstarter Campaign]({{"/assets/projects/daily-vibes/dailyvibes-kickstarter-jan-2018.png" | relative_url}}){:style="max-width:100%"}
+![Daily Vibes Product Hunt Upcoming]({{"/assets/projects/daily-vibes/dailyvibes-ph-jan-2018.png" | relative_url}}){:style="max-width:100%"}
 
 ## Elderoost (July 2017 - present)
 
 - Solo Developer
 - [Homepage](https://elderoost.com)
 
-![Elderoost.com]({{"/assets/projects/elderoost/elderoost-jan-2018.png" | relative_url}})
-![Elderoost.com sample page](https://cdn-pro.dprcdn.net/files/acc_603419/HF7VLE)
+![Elderoost.com]({{"/assets/projects/elderoost/elderoost-jan-2018.png" | relative_url}}){:style="max-width:100%"}
+![Elderoost.com sample page](https://cdn-pro.dprcdn.net/files/acc_603419/HF7VLE){:style="max-width:100%"}
 
 ## iwillreviewyourcode.com (October 2017 - December 2017) (currently on pause)
 
 - [Homepage](https://iwillreviewyourcode.com)
 
 - Solo Developer
-  ![iwillreviewyourcode.com]({{"/assets/projects/iwillreviewyourcode/iwillreviewyourcode-jan-2018.png" | relative_url}})
-  ![iwillreviewyourcode.com overview](https://cdn-pro.dprcdn.net/files/acc_603419/Xitn2i)
+
+  ![iwillreviewyourcode.com]({{"/assets/projects/iwillreviewyourcode/iwillreviewyourcode-jan-2018.png" | relative_url}}){:style="max-width:100%"}
+  ![iwillreviewyourcode.com overview](https://cdn-pro.dprcdn.net/files/acc_603419/Xitn2i){:style="max-width:100%"}
 
 ## Youtube Videos (August 2015 - present)
 
 - [Youtube channel](https://www.youtube.com/channel/UCJkHRtROA1RHjaQn_wBMocQ)
 
-![lauraandalex vlogs youtube channel]({{"/assets/projects/youtube/youtube-main-jan-2018.png" | relative_url}})
+![lauraandalex vlogs youtube channel]({{"/assets/projects/youtube/youtube-main-jan-2018.png" | relative_url}}){:style="max-width:100%"}
 
 ## Scheduling App (Fall 2016 - May 2017)
 
@@ -178,7 +184,7 @@ A website for a [local startup weekend event](https://www.facebook.com/events/13
 - [Homepage](https://uottawa-sesa.ca/)
 - [Code](https://github.com/sesa-uottawa/uottawasesa)
 
-![uOttawa SESA]({{"/assets/projects/uottawa-sesa/uottawa-sesa-jan-2018.png" | relative_url}})
+![uOttawa SESA]({{"/assets/projects/uottawa-sesa/uottawa-sesa-jan-2018.png" | relative_url}}){:style="max-width:100%"}
 
 ## Jekyll Theme (Summer 2015)
 
