@@ -13,7 +13,7 @@ published: true
 meta: {}
 excerpt: 'This solution brought me closer to what I wanted to do and how I wanted to do it.'
 datePublished: 2018-10-09 22:52:01
-dateModified: 2018-10-09 22:52:01
+dateModified: 2018-10-09 23:09:57
 ---
 
 Today I found [Aho–Corasick algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm). I was instantly hooked on wanting to try it out. Since I am spending more time with Java, most of the day was spent playing with an implementation of this algorithm _and maven_.
@@ -90,3 +90,7 @@ Today's random link of the day: [Dictionary of Algorithms and Data Structures](h
 - [https://stackoverflow.com/questions/1099985/algorithm-for-multiple-word-matching-in-text/1100010#1100010](https://stackoverflow.com/questions/1099985/algorithm-for-multiple-word-matching-in-text/1100010#1100010)
 - [https://stackoverflow.com/questions/5868369/how-to-read-a-large-text-file-line-by-line-using-java/5868528#5868528](https://stackoverflow.com/questions/5868369/how-to-read-a-large-text-file-line-by-line-using-java/5868528#5868528)
 - [https://stackoverflow.com/questions/4716503/reading-a-plain-text-file-in-java/41576248#41576248](https://stackoverflow.com/questions/4716503/reading-a-plain-text-file-in-java/41576248#41576248)
+
+I also changed the content of structured data for this page. Went from `github.io` to `.me` domain. If I recall correctly, I left it at `github.io` because I had difficulties with sharing my content. I tried it today and it seems to work just fine. If it ever breaks again, I will just go back =)
+
+See you tomorrow.
