@@ -10,29 +10,29 @@
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
   {% endif %}
 
-  <link rel="canonical" href="{{site.url}}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }} - {{ site.url | absolute_url }}{% endif %}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }} - {{ page.url | absolute_url }}{% endif %}">
 
-  <meta property="og:url" content="{{ page.url | absolute_url }}"/>
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:site_name" content="{{ page.url | absolute_url }}" />
 
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }} - {{ site.url | absolute_url }}{% endif %}"/>
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }} - {{ site.url | absolute_url }}{% endif %}" />
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }} - {{ site.url | absolute_url }}{% endif %}">
 
-{% if page.title %}
+  {% if page.title %}
   <meta property="og:type" content="article" />
   {% if page.image %}
   <meta property="og:image" content="{{page.image}}" />
   <meta name="twitter:image" content="{{page.image}}" />
   {% else %}
-    <meta name="og:image" content="{{ "/assets/social-image-banner.png" | absolute_url }}">
-    <meta name="twitter:image" content="{{ "/assets/social-image-banner.png" | absolute_url }}">
+  <meta name="og:image" content="{{ "/assets/social-image-banner.png" | absolute_url }}">
+  <meta name="twitter:image" content="{{ "/assets/social-image-banner.png" | absolute_url }}">
   {% endif %}
   {% for tag in page.categories %}
-    <meta property="article:tag" content="{{tag}}" />
+  <meta property="article:tag" content="{{tag}}" />
   {% endfor %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ site.twitter_username }}">
@@ -66,11 +66,11 @@
       {% endif %}
     }
     </script>
-    <meta property="article:published_time" content="{{page.datePublished}}" />
-    {% if page.dateModified %}
-    <meta property="article:modified_time" content="{{page.dateModified}}" />
-    {% endif %}
-{% else %}
+  <meta property="article:published_time" content="{{page.datePublished}}" />
+  {% if page.dateModified %}
+  <meta property="article:modified_time" content="{{page.dateModified}}" />
+  {% endif %}
+  {% else %}
   <meta property="og:type" content="website" />
   <meta name="twitter:title" content="{{ site.title }}">
   <meta name="twitter:card" content="summary">
@@ -78,12 +78,12 @@
   <meta name="twitter:creator" content="@{{ site.twitter_username }}">
 
   <script type="application/ld+json">{"@context": "http://schema.org/","@type": "Person","name": "{{site.title}}","url": "{{ site.url | absolute_url }}","image": "{{ "/assets/alex-kluew-profile-image.jpg" | absolute_url }}","sameAs": ["https://twitter.com/{{site.twitter_username}}","https://www.instagram.com/{{site.instagram_username}}","https://www.linkedin.com/in/{{site.linkedin_username}}","https://github.com/{{site.github_username}}"]}</script>
-{% endif %}
+  {% endif %}
 
   <link rel="icon" type="image/png" href="{{ "/assets/favicon.png" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include analytics.html %}
+  {% include analytics.html %}
   {% endif %}
 </head>
