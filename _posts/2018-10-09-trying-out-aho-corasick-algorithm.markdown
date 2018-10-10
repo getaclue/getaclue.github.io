@@ -12,8 +12,8 @@ type: post
 published: true
 meta: {}
 excerpt: 'This solution brought me closer to what I wanted to do and how I wanted to do it.'
-datePublished: 2018-10-09 22:16:02
-dateModified: 2018-10-09 22:16:02
+datePublished: 2018-10-09 22:52:01
+dateModified: 2018-10-09 22:52:01
 ---
 
 Today I found [Aho–Corasick algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm). I was instantly hooked on wanting to try it out. Since I am spending more time with Java, most of the day was spent playing with an implementation of this algorithm _and maven_.
