@@ -1,4 +1,169 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2018-10-09T23:14:42-04:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Trying out Aho–Corasick algorithm</title><link href="https://getaclue.me/blog/trying-out-aho-corasick-algorithm" rel="alternate" type="text/html" title="Trying out Aho–Corasick algorithm" /><published>2018-10-09T00:00:00-04:00</published><updated>2018-10-09T00:00:00-04:00</updated><id>https://getaclue.me/blog/trying-out-aho-corasick-algorithm</id><content type="html" xml:base="https://getaclue.me/blog/trying-out-aho-corasick-algorithm">&lt;p&gt;Today I found &lt;a href=&quot;https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm&quot;&gt;Aho–Corasick algorithm&lt;/a&gt;. I was instantly hooked on wanting to try it out. Since I am spending more time with Java, most of the day was spent playing with an implementation of this algorithm &lt;em&gt;and maven&lt;/em&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2018-10-12T15:04:23-04:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Insertion Sort</title><link href="https://getaclue.me/blog/insertion-sort" rel="alternate" type="text/html" title="Insertion Sort" /><published>2018-10-11T00:00:00-04:00</published><updated>2018-10-11T00:00:00-04:00</updated><id>https://getaclue.me/blog/insertion-sort</id><content type="html" xml:base="https://getaclue.me/blog/insertion-sort">&lt;p&gt;Question: Suppose you have an algorithm that you are running that has multiple steps. When you are approximating, when do you add the runtimes and when do you multiply them?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;if &lt;code class=&quot;highlighter-rouge&quot;&gt;do this, then when you are done with this, do that&lt;/code&gt;, then you add runtimes&lt;/li&gt;
+  &lt;li&gt;if &lt;code class=&quot;highlighter-rouge&quot;&gt;do this for each time you do that&lt;/code&gt;, then you multiply runtimes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-insertion-sort-algorithm&quot;&gt;The Insertion-Sort Algorithm&lt;/h2&gt;
+
+&lt;p&gt;The goal of this algorithm is simple: take an array of elements and sort it in an increasing order. It does so by inserting one element at a time and by comparing elements during insertion.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Algorithm InsertionSort(A):&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Input: An array A of n comparable elements&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Output: The array A with elements rearranged in &lt;strong&gt;nondecreasing order&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We basically walk one element at a time, from 0 to n:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;for k from 1 to n do&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Insert element A[k] at its proper location in the array at position A[0], A[1], A[2], …, A[k]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;or as you would like to call it — increasing order.&lt;/p&gt;
+
+&lt;p&gt;Question: When will this algorithm behave the best?&lt;/p&gt;
+
+&lt;p&gt;Answer: When the elements in the array are sorted in order.&lt;/p&gt;
+
+&lt;p&gt;Question: When will this algorithm have the worst of times?&lt;/p&gt;
+
+&lt;p&gt;Answer: When the elements in the array are placed in the reversed order (from high to low - a decreasing order). Our little guy will have to swap every element and move it to the other side.&lt;/p&gt;
+
+&lt;p&gt;Guided with the following from &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;using an &lt;strong&gt;outer loop&lt;/strong&gt; to consider each element in turn,
+and an &lt;strong&gt;inner loop&lt;/strong&gt; that moves a newly considered element to its proper location relative to the (sorted) subarray of elements that are to its left&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I went on to do my own implementation — because why not and I could use some review.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;insertionSort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;cm&quot;&gt;/*
+        Assumption: position 0 is sorted by definition
+
+        Start with position 1
+            Grab the value at the position
+                Question: is the value at previous position 0 (n-1) bigger than current value
+                    if yes
+                        do a loop
+                            place previous value that is bigger in the current place
+                    if no
+                        do no loop
+
+               Place the current value in the position based on the answer to the question
+         */&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;cm&quot;&gt;/*
+                We are walking from the current position to the front of the array at position 0
+             */&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--;&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="computer science" /><category term="algorithms" /></entry><entry><title type="html">Relationships between sets, series, progressions, and sequences</title><link href="https://getaclue.me/blog/relationships-between-sets-series-progressions-and-sequences" rel="alternate" type="text/html" title="Relationships between sets, series, progressions, and sequences" /><published>2018-10-10T00:00:00-04:00</published><updated>2018-10-10T00:00:00-04:00</updated><id>https://getaclue.me/blog/relationships-between-sets-series-progressions-and-sequences</id><content type="html" xml:base="https://getaclue.me/blog/relationships-between-sets-series-progressions-and-sequences">&lt;p&gt;Today I ended up exploring a topic that I didn’t expect: what is the difference between a sequence and a series.&lt;/p&gt;
+
+&lt;p&gt;While I memorized these contepts in my calculus days, I always felt something was missing in my core understanding. I think I figured out what was missing. It seems that I was confused, once again, around the ambiguity of the English language.&lt;/p&gt;
+
+&lt;p&gt;I stumbled upon the following in one of my favourite &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt;s:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A numeric progression is a sequence of numbers, where each number depends on one or more of the previous numbers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;followed by&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;arithmetic progression determines the next number &lt;strong&gt;by adding&lt;/strong&gt; a fixed constant to the previous value&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;geometric progression determines the next number &lt;strong&gt;by multiplying&lt;/strong&gt; the previous value by a fixed constant&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;which made me go &lt;em&gt;Aha&lt;/em&gt;. All I had to do was check if the thing was made by adding or by multiplying? Seems easy enough to get.&lt;/p&gt;
+
+&lt;p&gt;I’m sure I had the same thoughts back in school. So, I decided to play around and see what I find confusing so I could fix my gaps in knowledge. I thought: hmm, they are using both terms, a &lt;code class=&quot;highlighter-rouge&quot;&gt;progression&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;sequence&lt;/code&gt;, in one sentence. Confused — because if you don’t really pay attention then you could interpret these two terms as having a similar meaning.&lt;/p&gt;
+
+&lt;p&gt;What I should have considered was the specific word choice in math. Similar confusions were found in other areas. For example, different terminology in the graph space. One positive thing that I did notice is that specialty books are beginning to mention discrepancies surrounding word choice.&lt;/p&gt;
+
+&lt;p&gt;Getting back to progression and sequence confusion. The more I thought about it, the more I realized that I had confusion back in the day. Confusion around terminology and not the concepts. If you read one of the previous entries, then you recall me saying that pattern matching works to a certain degree. So, I used pattern matching during my former student days. It got me far enough but I was never satisfied.&lt;/p&gt;
+
+&lt;p&gt;Unlike my former student self, I have the leisure and time to explore this further.&lt;/p&gt;
+
+&lt;p&gt;I found the following excerpt on quora from &lt;a href=&quot;https://www.quora.com/How-does-sequence-and-progression-differ&quot;&gt;how does sequence and progression differ?&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… all progressions are sequences, all sequences are not progression …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;OK, so that brought my understanding a bit closer. So a sequence is a collection of things. Hmm, but that sounds very close to what a set is. So, what is the difference between a sequence and a set? Is there one? Decided to consult wonderful &lt;a href=&quot;https://en.wikipedia.org/wiki/Sequence&quot;&gt;wikipedia definition&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;p&gt;So a sequence is &lt;strong&gt;like a set&lt;/strong&gt; because they are a collection that contains things: members or elements. Like a set, this collection can be finite or infinite. Ok… so still not too clear so far. However, as we read further — what we find, is that in a sequence, &lt;em&gt;unlike in a set&lt;/em&gt;, repeated occurences of members are allowed. &lt;em&gt;Additionally&lt;/em&gt;, &lt;strong&gt;unlike in a set&lt;/strong&gt;, the &lt;strong&gt;order&lt;/strong&gt; of individual members in the collection &lt;strong&gt;matters&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, a sequence does not have to be only denoted by [an explicit] formula. A sequence can also be denoted by &lt;a href=&quot;https://blogformathematics.blogspot.com/2011/08/sequences.html&quot;&gt;a logical statement&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A sequence may be denoted by an explicit formula, like Tn = 2 + n, or it may be denoted by a logical statement like Tn = nth prime number. It is &lt;strong&gt;not necessary that a set of numbers be arranged according to an explicit formula&lt;/strong&gt; in order for it to be called a ‘sequence’; it &lt;strong&gt;can also be arranged according to some logical statement&lt;/strong&gt; that does not have an explicit mathematical formula but is nonetheless mathematically logical in order for it to be called a sequence.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, the definition of a sequence and how it differs from a set is starting to make sense. How does a progression relate to all of this? Well, a &lt;em&gt;numeric&lt;/em&gt; progression is a &lt;strong&gt;sequence&lt;/strong&gt; of &lt;em&gt;numbers&lt;/em&gt; where each element depends on &lt;em&gt;one or more&lt;/em&gt; of the &lt;strong&gt;previous&lt;/strong&gt; members.&lt;/p&gt;
+
+&lt;p&gt;Just like in the quote above from the &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt;, it follows that there are at least two such relationships:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;a relationship between two members such that the difference between these two members is a constant — this is called an &lt;em&gt;arithmetic progression&lt;/em&gt; or &lt;em&gt;arithmetic sequence&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;a relationship between two members such that the &lt;a href=&quot;https://www.math10.com/en/algebra/geometric-progression.html&quot;&gt;quotient of any two successive members of the sequence is a constant&lt;/a&gt; — this is called a &lt;em&gt;geometric progression&lt;/em&gt; or a &lt;em&gt;geometric sequence&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Or said it another way (from the same &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt; as mentioned):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;geometric progression, in which each value is produced by multiplying the preceding value by a fixed constant, known as the &lt;strong&gt;base of the geometric progression&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We have looked at a set, sequence, and a progression so far. How do these things relate to a &lt;em&gt;series&lt;/em&gt;? Very simple — a series is just the summation of all of the elements in the sequence. So, it then follows, what is the sum of the elements in a given sequence represented by? A series. Just like that. It finally makes sense how a series and a sequence are related. Nothing complicated. No new formulas. Just the proper definitions presented in a familiar way.&lt;/p&gt;
+
+&lt;p&gt;Moreover, the total sum of the sequence can be broken up into &lt;strong&gt;partial sum(s)&lt;/strong&gt; — a sum from element &lt;code class=&quot;highlighter-rouge&quot;&gt;ai&lt;/code&gt; to element &lt;code class=&quot;highlighter-rouge&quot;&gt;an&lt;/code&gt;. What is interesting about this? Well the fact that &lt;a href=&quot;https://en.wikipedia.org/wiki/Sequence&quot;&gt;(p)artial sums, themselves, form a sequence&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Well, there you have it.&lt;/p&gt;
+
+&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="algorithms" /><category term="math" /><category term="calculus" /><category term="sequence" /><category term="series" /><category term="progression" /><summary type="html">We have looked at a set, a sequence, and a progression so far. How do these things relate to a series?</summary></entry><entry><title type="html">Trying out Aho–Corasick algorithm</title><link href="https://getaclue.me/blog/trying-out-aho-corasick-algorithm" rel="alternate" type="text/html" title="Trying out Aho–Corasick algorithm" /><published>2018-10-09T00:00:00-04:00</published><updated>2018-10-09T00:00:00-04:00</updated><id>https://getaclue.me/blog/trying-out-aho-corasick-algorithm</id><content type="html" xml:base="https://getaclue.me/blog/trying-out-aho-corasick-algorithm">&lt;p&gt;Today I found &lt;a href=&quot;https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm&quot;&gt;Aho–Corasick algorithm&lt;/a&gt;. I was instantly hooked on wanting to try it out. Since I am spending more time with Java, most of the day was spent playing with an implementation of this algorithm &lt;em&gt;and maven&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;I will tell you what, I was pleasantly surprised so far. I need to spend some more time on this but it looks like a promising solution. I wanted to use something like this on the &lt;a href=&quot;https://elderoost.com/&quot;&gt;elderoost&lt;/a&gt; project. So, here is what my MVP looks like so far.&lt;/p&gt;
 
@@ -824,164 +989,4 @@ x&lt;/li&gt;
 
 &lt;p&gt;And for those of you that finished reading this, here is some behind the scenes context to this article. It is an example of a written piece that I ended up &lt;a href=&quot;/blog/would-you-let-your-mother-use-your-software&quot;&gt;publishing&lt;/a&gt;. It started off as a &lt;a href=&quot;http://www.hemingwayapp.com/&quot;&gt;Hemingway app&lt;/a&gt; draft and then, eventually, I approved and transformed it into an article.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-11.35.50.png&quot; alt=&quot;Sample written piece that I ended up sharing&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="doubt" /><summary type="html">So, I think I am doing OK even if it doesn't feel like that.</summary></entry><entry><title type="html">I have to come clean about my project</title><link href="https://getaclue.me/blog/i-have-to-come-clean-about-my-project" rel="alternate" type="text/html" title="I have to come clean about my project" /><published>2018-06-10T00:00:00-04:00</published><updated>2018-06-10T00:00:00-04:00</updated><id>https://getaclue.me/blog/i-have-to-come-clean-about-my-project</id><content type="html" xml:base="https://getaclue.me/blog/i-have-to-come-clean-about-my-project">&lt;p&gt;I have something to tell you and come clean about. I haven’t touched my beloved dailyvibes code base since April. And if I am being completely honest, I kind of lost steam in March. (To give you some context, I started thinking about the project in October and working on it last November. Since November I tried to ship something every 2 weeks.)&lt;/p&gt;
-
-&lt;p&gt;Everything was fine until about March. In March, I felt that I did not like where I was going, I was having a bad time, and I was losing project’s direction. I even had thoughts of abandoning it.&lt;/p&gt;
-
-&lt;p&gt;I also knew that my app was stable enough for people to use. Thus, if I was about to abandon my work then at least people would not lose their data. These thoughts allowed me to slow down and to reflect. Afterall, I still care about the project.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/klf5jH+&quot; alt=&quot;you're going to have a bad time image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Whenever I start thinking this way about a project, I become aware that it is a good time to step back and reflect. In other words, it is a good time to see if my time is worth investing into a project.&lt;/p&gt;
-
-&lt;p&gt;To start, I wanted to figure out what was causing me to feel this way. I narrowed it down to the following three issues:&lt;/p&gt;
-
-&lt;h2 id=&quot;1-i-was-facing-technical-issues&quot;&gt;1. I was facing technical issues.&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/ai0zYr+&quot; alt=&quot;subject to technical issues - free image from https://pixabay.com/en/problem-technical-issues-technology-1951987/&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As I work solo, I did not want to spend my limited time on things that do not move the project forward (in the users eyes). But, it got to a point where I needed to &lt;a href=&quot;https://www.briantracy.com/blog/time-management/the-truth-about-frogs/&quot;&gt;eat that frog&lt;/a&gt;. It is one of the challenges that comes with indie work. You wear many hats. You are playing the role of a product manager and have to decide on what to work on. Sometimes you have to do the work that you do not want to.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-i-was-not-happy-with-the-direction-of-the-project&quot;&gt;2. I was not happy with the direction of the project.&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/DMndPx+&quot; alt=&quot;lost found searching - image from https://pixabay.com/en/lost-found-lost-and-found-searching-1605501/&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;At the beginning of the project, I needed to do some market research. I needed to check if this project was worth my interest and time. How did I do my market research? Well, it was very simple. I downloaded all the productivity / todo apps from the Apple App Store and I played with each one of them. I noted down ideas that I liked and things that I did not like. But, by doing that, my phone looks like this now:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://d.pr/v/CtydOz&quot;&gt;&lt;img src=&quot;https://d.pr/i/b8PU7m+&quot; alt=&quot;my ios screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After playing with each app, I’ve come to realize that most of the apps do the same thing.&lt;/p&gt;
-
-&lt;p&gt;What this means to the users is that they have a lot of choice in this saturated category of productivity. In otherwords, they can switch from my product much easier.&lt;/p&gt;
-
-&lt;p&gt;What this means to me is that I don’t need to stress on competing. I was aligning dailyvibes with other similar apps. This process made me bored and stopped using the app. Dailyvibes started because I was not happy of the solutions. Instead I will focus on building features that will be useful to the end user and to me. I will focus on the product and its quality.&lt;/p&gt;
-
-&lt;p&gt;So I took a step back and recorded the actions that I do every day. I interact with the following data structures: tasks to complete today, notes/text snippets, links/bookmarks, gifs / images and photos. One thing that kind of doesn’t fit is positive thoughts / quotes. I need to think some on this.&lt;/p&gt;
-
-&lt;p&gt;So I will work on integrating these things into dailyvibes and thus forcing me to dogfood my own app. What will make all these things work together is some kind of linking mechanism. I will definitely polish this as time moves on.&lt;/p&gt;
-
-&lt;p&gt;After all, users have so much choice.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-i-did-not-know-what-direction-apple-will-take-mac-os-apps-in&quot;&gt;3. I did not know what direction Apple will take Mac OS apps in.&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/LE7TsI+&quot; alt=&quot;marzipan rumours&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The next biggest feature for dailyvibes is to create a server component. Which will be then followed by a syncing mechanism of some sort between the server and iOS app. Both of these components, would position me well to create either a a desktop companion app or a web app. I chose to wait until June to make this decision because of WWDC.&lt;/p&gt;
-
-&lt;p&gt;I could not decide if I wanted to leverage the iCloud ecosystem and have apple do all the legwork or me. I’ve investigated both options. I decided to roll out my own for three reasons:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;I know how,&lt;/li&gt;
-  &lt;li&gt;I want to practice for my personal project, and&lt;/li&gt;
-  &lt;li&gt;I want to have control over my data.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I hope that these decisions will also benefit the users.&lt;/p&gt;
-
-&lt;p&gt;I also could not decide if I wanted to spend time on a native Mac desktop app or on a web app. I am familiar with web but I am very new to the Mac. I investigated both options. I am deciding, at least for now, to focus on the web app component because I am more familiar with that. Plus, Apple admitted that there will be changes to Mac OS next year. I’ll revisit native Mac app next year.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;It is nice to step back and reflect on how far you’ve come with a project. It is good to be mindful. Albeit, I will be first to admit that it is challenging to talk about your project when it is not going as you expect. I am, once again excited, to keep working on the project and I have a better vision moving forward.&lt;/p&gt;
-
-&lt;p&gt;This is a nice feeling when you are happy with your decisions. Also, the organic discovery isn’t that bad either:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://d.pr/i/MLstRV+&quot; alt=&quot;Q1 results&quot; /&gt;
-&lt;img src=&quot;https://d.pr/i/dHUliO+&quot; alt=&quot;Q2 results&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’re making something, you have to be the first to believe in success of your thing. Do one thing every day that moves the project forward. Everything else will [hopefully] work itself out.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading and until next time,&lt;/p&gt;
-
-&lt;p&gt;Alex&lt;/p&gt;
-
-&lt;p&gt;PS: You can download Daily Vibes by searching using your favorite iOS device on &lt;a href=&quot;https://geo.itunes.apple.com/app/id1332324033&quot;&gt;Apple App Store&lt;/a&gt; or from &lt;a href=&quot;https://dailyvibes.ca&quot;&gt;https://dailyvibes.ca&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><category term="doubt" /><category term="mindful" /><summary type="html">I have something to tell you...</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/AoFNPd" /></entry><entry><title type="html">Would you let your mother use your software?</title><link href="https://getaclue.me/blog/would-you-let-your-mother-use-your-software" rel="alternate" type="text/html" title="Would you let your mother use your software?" /><published>2018-05-11T00:00:00-04:00</published><updated>2018-05-11T00:00:00-04:00</updated><id>https://getaclue.me/blog/would-you-let-your-mother-use-your-software</id><content type="html" xml:base="https://getaclue.me/blog/would-you-let-your-mother-use-your-software">&lt;p&gt;Would you let your mother use your software?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/V8kt2K&quot; alt=&quot;Oh and I am not trying to single anyone out in this photo btw&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;How about your father? sister? brother? wife? husband? fiancé? grandparents? neighbour?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And I can immediate hear some of you say:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;But Alex … you would say …&lt;/li&gt;
-  &lt;li&gt;… they would never &lt;em&gt;use&lt;/em&gt; my software… they are not my &lt;em&gt;target audience&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Or… I would teach them how to use my software properly.&lt;/li&gt;
-  &lt;li&gt;Or… I would never let them use it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To &lt;em&gt;you&lt;/em&gt;, my dear friend, I would ask that you play along with me in this exercise.&lt;/p&gt;
-
-&lt;p&gt;Suppose that the use of your software became mandatory. Suppose your friend or family member had no help or training from you. Suppose they were that user number #1110101 that you did not want to deal with. Take your pick.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Are you following along?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;If you are following, at what I am trying to say here, then I hope you can answer yes to my original question with some degree of confidence.&lt;/p&gt;
-
-&lt;p&gt;And no… you cannot use the typical engineering answer of “it depends”. Sorry, I want a binary response here: yes or no.&lt;/p&gt;
-
-&lt;p&gt;So, if your answer is a no then I hope that you might start thinking about these important issues. For example, you could start thinking about why are you leaning towards no? Perhaps, what can you do today to increase your level of confidence? Because you can.&lt;/p&gt;
-
-&lt;p&gt;Do you call yourself a scientist or an engineer? Do you have some variation of this title? Are you proud to call yourself that? Does it define who you are on a day-to-day basis? If so then you must think about ethics. It is your duty.&lt;/p&gt;
-
-&lt;p&gt;But maybe this belief is naive? Maybe this is not how it works in the real world? Maybe being associated with those things is not enough for such heavy consideration? Maybe we should leave ethics to someone else? We make software to solve some problem and that’s that.&lt;/p&gt;
-
-&lt;p&gt;Too often I see the answer that it is not applicable to me or my work. Too often I see ambivalence and lack of professional care. To me, this cannot be the winning formula moving forward.&lt;/p&gt;
-
-&lt;p&gt;If you’ve been following software development for the past few years, then you’ve noticed a certain trend by now. A trend of malpractice if you will. Followed by a trend of acceptance or standardization towards such malpractice. And if you dig a little deeper into these trends — they are often, but not always, connected to some lapse in ethics.&lt;/p&gt;
-
-&lt;p&gt;And if you’re of the mind that ethics and business [and software] cannot mix — I call for you to reconsider and have a conversation. I hope the pressure of shareholders and funding money does not blind your mission or your vision. Try to figure it out.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Just because you can do something, should you?&lt;/li&gt;
-  &lt;li&gt;If you should, then how can you do so while being ethical?&lt;/li&gt;
-  &lt;li&gt;If you cannot remain ethical, then the least you can do is own it. Don’t deny it. You are a professional, aren’t you?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Perhaps our approach to ethics needs a pivot?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Maybe ethics, as a field, is too broad of a topic? Too abstract and not applicable?&lt;/li&gt;
-  &lt;li&gt;Maybe, it is time to reframe our delivery on ethics?&lt;/li&gt;
-  &lt;li&gt;Time to step back and reduce the scope so that we can understand better?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So here is me — trying to do that for you. Next time you are working on software just give it a shot and ask yourself this relatable question:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;would you let your &lt;strong&gt;_&lt;/strong&gt; use your software?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I’ll let you fill in the blank. Don’t be lazy and do make it relatable.&lt;/p&gt;
-
-&lt;p&gt;Think about it because your answer should be yes with some level of confidence. It is 2018 and I am trying to take a gradual approach to this topic.&lt;/p&gt;
-
-&lt;p&gt;We are use a lot of software every single day.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;And guess what?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It is only the beginning.&lt;/p&gt;
-
-&lt;p&gt;Just wait until the entire planet, and everyone on it, gets a reliable high speed connection. It is not if but when.&lt;/p&gt;
-
-&lt;p&gt;Thank you for reading.&lt;/p&gt;
-
-&lt;p&gt;Sincerely,&lt;/p&gt;
-
-&lt;p&gt;Alex&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;PS: I know that I am throwing generalities and I hope you can forgive me for the point that I am trying to illustrate.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;PPS: Sorry for the clickbait title — but how else am I going to get you to read about software ethics? Not trying to single out mothers or family members or friends. I am trying to make a point that you should make your work relatable. Think about your end user. There is an actual person sitting on the other side of your code. And guess what? This person is trusting you and your code.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;This article was originally published &lt;a href=&quot;https://medium.com/@getaclue_1/would-you-let-your-mother-use-your-software-639fb6f0e3d3&quot;&gt;here&lt;/a&gt; in April 2018&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="software development" /><category term="software engineering" /><summary type="html">Sorry for the clickbait title — but how else am I going to get you to read about software ethics?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn-pro.dprcdn.net/files/acc_603419/V8kt2K" /></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-11.35.50.png&quot; alt=&quot;Sample written piece that I ended up sharing&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="doubt" /><summary type="html">So, I think I am doing OK even if it doesn't feel like that.</summary></entry></feed>
