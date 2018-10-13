@@ -60,9 +60,12 @@
         "@type": "Person",
         "name": "Alex Kluew"
       },
-      "datePublished": "{{page.datePublished}}",
+      "datePublished": "{{page.datePublished}}"
       {% if page.dateModified %}
-      "dateModified": "{{ page.dateModified }}"
+      , "dateModified": "{{ page.dateModified }}"
+      {% endif %}
+      {% if page.dateCreated %}
+      , "dateCreated": "{{ page.dateCreated }}"
       {% endif %}
     }
     </script>
