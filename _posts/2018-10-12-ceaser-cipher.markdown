@@ -15,8 +15,8 @@ published: true
 meta: {}
 excerpt: 'Today, I was browing again in the textbook and for some reason I wanted to implement a simple Ceaser cipher.'
 dateCreated: 2018-10-12 20:52:01
-datePublished: 2018-10-12 20:52:01
-dateModified: 2018-10-12 20:52:01
+datePublished: 2018-10-12 21:48:01
+dateModified: 2018-10-12 21:48:01
 ---
 
 Today, I was browing again in the [textbook] and for some reason I wanted to implement a simple Ceaser cipher. In the process, I also re-found-out that Strings are immutable in java. I suppose it makes sense then when StringBuilder and the such are used. I also found the following two statements interesting:
