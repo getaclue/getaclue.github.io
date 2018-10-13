@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2018-10-12T15:04:23-04:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Insertion Sort</title><link href="https://getaclue.me/blog/insertion-sort" rel="alternate" type="text/html" title="Insertion Sort" /><published>2018-10-11T00:00:00-04:00</published><updated>2018-10-11T00:00:00-04:00</updated><id>https://getaclue.me/blog/insertion-sort</id><content type="html" xml:base="https://getaclue.me/blog/insertion-sort">&lt;p&gt;Question: Suppose you have an algorithm that you are running that has multiple steps. When you are approximating, when do you add the runtimes and when do you multiply them?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2018-10-12T21:45:35-04:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Ceaser cipher and other things</title><link href="https://getaclue.me/blog/ceaser-cipher" rel="alternate" type="text/html" title="Ceaser cipher and other things" /><published>2018-10-12T00:00:00-04:00</published><updated>2018-10-12T00:00:00-04:00</updated><id>https://getaclue.me/blog/ceaser-cipher</id><content type="html" xml:base="https://getaclue.me/blog/ceaser-cipher">&lt;p&gt;Today, I was browing again in the &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt; and for some reason I wanted to implement a simple Ceaser cipher. In the process, I also re-found-out that Strings are immutable in java. I suppose it makes sense then when StringBuilder and the such are used. I also found the following two statements interesting:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… that characters are represented in Unicode by integer code points …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;… upper letters of the Latin alphabet are consecutive (for simplicity …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and you know what? No one has ever connected these two ideas together like that or pointed it out. I’ve used these exact ideas before and never considered how fortunate that everything just works (= Why — &lt;em&gt;duh&lt;/em&gt; — &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; is obviously &lt;code class=&quot;highlighter-rouge&quot;&gt;65&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;66&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anywho, I wanted to implement this shifting algorithm and this is how far we got:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CeaserCypher&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryption&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;DEFGHIJKLMNOPQRSTUVWXYZABC&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//        String decryption = &quot;XYZABCDEFGHIJKLMNOPQRSTUVW&quot;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toCharArray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//        char[] decryptionCode = decryption.toCharArray();&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;THE EAGLE IS IN PLAY; MEET AT JOE’S.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expected&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;WKH HDJOH LV LQ SODB; PHHW DW MRH’V.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptionCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+
+        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toCharArray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expectedChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expected&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toCharArray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resultChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expectedChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_resultChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_expectedChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expectedChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_resultChar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;^&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_expectedChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;resultChar[index] : &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;\t should be : &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expectedChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;All good!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;messadge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;messadge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toCharArray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Character&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isUpperCase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;replaceWith&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'A'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replaceWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;… and I wish I could take credit for this but alas. Followed along with the book and after much back and forth I ended up with pretty much exactly the same version as in the book. This is why, if you notice, there is a decoding key but I never even explored that. Was fun for a minute =)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Side note&lt;/em&gt;: I am not sure why, but I have a special place for character encoding. I think language construction (tables, lex, state machines, and so on…) and reading &lt;a href=&quot;https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/&quot;&gt;The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)&lt;/a&gt; made me appreciate the idea that 65 is A. I like to revisit and re-read Joel from time to time.&lt;/p&gt;
+
+&lt;p&gt;… oh and probably the fact that I deal with such things day-to-day in my job also keeps the interest. You know… Canada… English and French ;-)&lt;/p&gt;
+
+&lt;p&gt;Oh and I finally configured and properly installed jenv, java11, and maven (&amp;amp; got it working with the other java installations). Should be much smoother now and I want to give heroku and java a try if I have a second this weekend.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A lot of these stemmed from this : &lt;code class=&quot;highlighter-rouge&quot;&gt;Warning: Cask 'java' is already installed.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Homebrew/homebrew-cask/issues/49716&quot;&gt;brew undefined method `undent’ #49716&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Homebrew/brew/issues/4494&quot;&gt; brew uninstall -&amp;gt; Error: mpfr@2: undefined method `undent’ #4494 &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Homebrew/homebrew-cask/issues/49716#issuecomment-410842187&quot;&gt;Error: undefined method undent for String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devcenter.heroku.com/articles/getting-started-with-java#prepare-the-app&quot;&gt;Getting Started on Heroku with Java&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/lancejpollard/1978404#basic-html-meta-tags&quot;&gt;Basic HTML Meta Tags&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/microdata/&quot;&gt;HTML Microdata&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I had to look this up… &lt;em&gt;Again&lt;/em&gt; … &lt;a href=&quot;https://stackoverflow.com/a/52524114&quot;&gt;How do I install OpenJDK Java 11 on Mac OSX allowing version switching?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;that is it for now &amp;amp; I still have the pages for series and sequences open.&lt;/p&gt;
+
+&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="computer science" /><category term="algorithms" /><summary type="html">Today, I was browing again in the textbook and for some reason I wanted to implement a simple Ceaser cipher.</summary></entry><entry><title type="html">Insertion Sort</title><link href="https://getaclue.me/blog/insertion-sort" rel="alternate" type="text/html" title="Insertion Sort" /><published>2018-10-11T00:00:00-04:00</published><updated>2018-10-11T00:00:00-04:00</updated><id>https://getaclue.me/blog/insertion-sort</id><content type="html" xml:base="https://getaclue.me/blog/insertion-sort">&lt;p&gt;Question: Suppose you have an algorithm that you are running that has multiple steps. When you are approximating, when do you add the runtimes and when do you multiply them?&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;if &lt;code class=&quot;highlighter-rouge&quot;&gt;do this, then when you are done with this, do that&lt;/code&gt;, then you add runtimes&lt;/li&gt;
@@ -875,118 +962,4 @@ x&lt;/li&gt;
 
 &lt;p&gt;Start your studies wherever you got confused. There are tests available that can help you narrow it down. Start from grade 1 if you want to. Who is going to judge? Open up khan academy and go to town. Discover the beauty and study on your own time… I did (and I still am).&lt;/p&gt;
 
-&lt;p&gt;If it wasn’t for Khan Academy, self-studying, youtube, and the people of the internet in general — I am not sure if I would be where I am.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="maths" /><summary type="html">If you found math challenging or confusing I encourage you not to give up. You can study it on your own.</summary></entry><entry><title type="html">More frequent updates</title><link href="https://getaclue.me/blog/more-frequent-updates" rel="alternate" type="text/html" title="More frequent updates" /><published>2018-09-29T00:00:00-04:00</published><updated>2018-09-29T00:00:00-04:00</updated><id>https://getaclue.me/blog/more-frequent-updates</id><content type="html" xml:base="https://getaclue.me/blog/more-frequent-updates">&lt;p&gt;Those of you that know me personally, know that I do a lot of little experiments and I like to reflect. I believe in engineering and science principles. They are at my core and drive me forward.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, I feel like I am not doing a good job in reflecting and sharing that with you. What happens usually is that I open up a blank canvas, such as this one, and just start writing. Usually I have a topic or a direction that motivates me to write. However, I do not consider if I will publish or delete the content at the time of writing it.&lt;/p&gt;
-
-&lt;p&gt;This is what I mean by a blank canvas in September 2018:
-&lt;img src=&quot;/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-12.12.33.png&quot; alt=&quot;Blank canvas&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As a result, I have a lot of written content spread out across various computers, domains, and publications. A lot of this content is not published and, if taken out of context, may seem like a waste of my time. Personally, I find it very difficult to hit that publish button for many reasons.&lt;/p&gt;
-
-&lt;p&gt;To me, writing is cathartic in a sense — the single purpose is to remove the content from my head. When the ideas are out of my head and on a canvas then I can play with them. In my head there is chaos, so I like to consolidate my ideas and to make sense of them. To tease out my views and opinions (and to correct them).&lt;/p&gt;
-
-&lt;p&gt;If you take this into consideration, then perhaps you can see why some of my pieces don’t get my approval and thus never see the light. However, the longer I live on this earth, the more I wish I didn’t hold back and just publish (whether or not it is finished). So, I decided to actively work on this.&lt;/p&gt;
-
-&lt;p&gt;One of my goals for 2018 was to publish more frequent written updates. The intention was not only to improve the quality of my written content but also to documenting a process.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;It is the end of September. Month #9 is almost done. So how have I been doing?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;On the whole, I have been doing way better than any of my previous years. If you take a look at this year alone, I have published 11 pieces of work so far. Some of them even required a lot of additional work. Gasp!!! One thing for sure — I have been staying consistent. Whatever that means to me.&lt;/p&gt;
-
-&lt;p&gt;If I take a look at it this way, then my progress is happening. I am growing and developing. However, during my day-to-day thinking it feels more negative. I feel like I could be doing better in this area. I still find myself falling into the trap of not publishing. Reflecting on this progress definitely helps to stay on track.&lt;/p&gt;
-
-&lt;p&gt;So, I think I am doing OK even if it doesn’t feel like that. I give myself the permission to make mistakes, publish more frequent and unfinished work; and continue this journey that I started.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-happened-since-the-last-post&quot;&gt;What happened since the last &lt;a href=&quot;/blog/i-have-to-come-clean-about-my-project&quot;&gt;post&lt;/a&gt;?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;in June/July/August, I finished the backend &amp;amp; frontend MVP for dailyvibes
-    &lt;ul&gt;
-      &lt;li&gt;the said backend and frontend are not live yet to anyone but you may see some things &lt;a href=&quot;https://github.com/dailyvibes&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;PS, as an aside — I am considering migrating away from github to self-hosted for all of my work&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;in July, worked on &lt;a href=&quot;https://screenhole.net/&quot;&gt;screenhole&lt;/a&gt; and created an MVP for a Mac OS screen recorder functionality. That was a fun experiment that you can view at &lt;a href=&quot;https://screenhole.net/getaclue/~g8U2vv&quot;&gt;https://screenhole.net/getaclue/~g8U2vv&lt;/a&gt; Unfortunately that is not a public feature and is stuck in alpha/beta stage until further notice.&lt;/li&gt;
-  &lt;li&gt;in July/August, worked on &lt;a href=&quot;https://keyframes.net/&quot;&gt;keyframes&lt;/a&gt; native Mac app. Was a bit of work but looks nice in my opinion. This work is in &lt;a href=&quot;https://keyframes.net/snapper/beta&quot;&gt;beta&lt;/a&gt; and is available for download.&lt;/li&gt;
-  &lt;li&gt;in August, launched our &lt;a href=&quot;https://cspray.ca/&quot;&gt;physical product&lt;/a&gt; at the &lt;a href=&quot;https://theex.com/&quot;&gt;Canadian National Exhibition&lt;/a&gt;. That was intense. Will talk about this more at a later time ;-) but lets just say we are continuing working on this project. This was a FIRST for us and also a BIG deal!!!
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Attendance: 1.54 million (2016)&lt;/code&gt; — may hint to you at why. And we made sure to talk to almost everyone that passed by us. I say almost because it was just the two of us.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;in September, started to work on news article parser for &lt;a href=&quot;https://elderoost.com/&quot;&gt;elderoost&lt;/a&gt;. One of the current challenges is keeping up to news. I physically read all of the articles manually and filter them manually. This honestly takes a lot of time. If you check the website the latest article was added &lt;code class=&quot;highlighter-rouge&quot;&gt;5 months ago&lt;/code&gt;. I have all of the articles since then I just haven’t processed them yet.
-    &lt;ul&gt;
-      &lt;li&gt;current working approach:
-        &lt;ul&gt;
-          &lt;li&gt;get news article link&lt;/li&gt;
-          &lt;li&gt;go to the link&lt;/li&gt;
-          &lt;li&gt;grab the URL, title, headline, author, date of publication, and the content
-            &lt;ul&gt;
-              &lt;li&gt;I found a script that helps with grabbing all of this (similar to how some browsers allow you to have a read an html page in plain text if you click a button)&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;put this stuff into postgres db&lt;/li&gt;
-          &lt;li&gt;index title and content using elasticsearch&lt;/li&gt;
-          &lt;li&gt;for each residence search against this text&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;unfortunately it is not done as I cannot narrow down some edge cases.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;and-what-am-i-up-to-now&quot;&gt;and what am I up to now?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;job search
-    &lt;ul&gt;
-      &lt;li&gt;After 2 years and some, I think it is time as there aren’t any new opportunities for growth as a software engineer where I am&lt;/li&gt;
-      &lt;li&gt;The work moved to a new physical location that is more challenging to commute to&lt;/li&gt;
-      &lt;li&gt;My school debt is causing me a lot of stress and anxiety… so I’d like to pay this off faster.&lt;/li&gt;
-      &lt;li&gt;I am not being paid what I know I could be for someone with my needed skills
-        &lt;ul&gt;
-          &lt;li&gt;I stayed because of the team but that recently got dissolved&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;cspray&lt;/li&gt;
-  &lt;li&gt;dailyvibes
-    &lt;ul&gt;
-      &lt;li&gt;add user auth functionality on ios
-        &lt;ul&gt;
-          &lt;li&gt;make user auth functionality work between ios and server&lt;/li&gt;
-          &lt;li&gt;make a sync mechanism between ios and server (probably manual for now and then automate)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;modify the way you share links within iOS (add a new area so it is easier to share)
-        &lt;ul&gt;
-          &lt;li&gt;share these links from iOS to server (after the user stuff is linked up)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;provision a server on DO or Linode
-        &lt;ul&gt;
-          &lt;li&gt;glue the backend &amp;amp; frontend on this server&lt;/li&gt;
-          &lt;li&gt;glue the server to dailyvibes domain&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;elderoost
-    &lt;ul&gt;
-      &lt;li&gt;finish news article parser&lt;/li&gt;
-      &lt;li&gt;add a notifyer after this is done to manually review&lt;/li&gt;
-      &lt;li&gt;figure out monetization&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;… in that order I think.&lt;/p&gt;
-
-&lt;p&gt;Now, I’m going to spend the next little while grinding cracking the coding interview bible and all of the typical hackerrank websites. It is a bit unfortunate that I need to put a pause on the side projects to do this. But it is what it is. (Especially if you want to work for the typical Fortune N company.)&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And for those of you that finished reading this, here is some behind the scenes context to this article. It is an example of a written piece that I ended up &lt;a href=&quot;/blog/would-you-let-your-mother-use-your-software&quot;&gt;publishing&lt;/a&gt;. It started off as a &lt;a href=&quot;http://www.hemingwayapp.com/&quot;&gt;Hemingway app&lt;/a&gt; draft and then, eventually, I approved and transformed it into an article.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2018-09-28/Screen-Shot-2018-09-29-at-11.35.50.png&quot; alt=&quot;Sample written piece that I ended up sharing&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="doubt" /><summary type="html">So, I think I am doing OK even if it doesn't feel like that.</summary></entry></feed>
+&lt;p&gt;If it wasn’t for Khan Academy, self-studying, youtube, and the people of the internet in general — I am not sure if I would be where I am.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="maths" /><summary type="html">If you found math challenging or confusing I encourage you not to give up. You can study it on your own.</summary></entry></feed>
