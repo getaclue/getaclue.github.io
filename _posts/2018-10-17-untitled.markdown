@@ -1,0 +1,49 @@
+---
+layout: post
+title: 'Untitled'
+categories:
+  - computer science
+  - personal development
+tags:
+  - software engineering
+  - personal development
+status: publish
+type: post
+published: true
+meta: {}
+excerpt: ''
+dateCreated: 2018-10-17 23:39:01
+datePublished: 2018-10-17 23:39:01
+dateModified: 2018-10-17 23:39:01
+---
+
+> "If big tech companies are going to turn their back on the DoD, this country is going to be in trouble," said Bezos on stage at the Wired25 conference in San Francisco on Monday.
+
+I can view this comment through my Canadian glasses =) Having worked in academia, private, and, now, government environments at various levels &mdash; I can definitely appreciate the intricacies that go behind the scenes.
+
+While we **are** different countries, we follow similar implementations of organizational structures. We most likely use similar enterprise hardware and software. I also assume that applications of these things are similar in US and Canada. I further assume that such organizations have similar goals (perhaps different strategies).
+
+So when I see something like the following
+
+> It has already worked with the DoD and multiple law enforcement agencies have used its facial recognition system -- Rekognition. Amazon employees and civil liberties organizations **claimed that the software could be used [to] violate human rights**.
+
+it makes me stop and think about the various things that could be going on during these discussions. Things that are not even about the technology *per se*.
+
+Organizations, like a government or some equivalent, usually [need](https://en.wikipedia.org/wiki/Request_for_proposal) something. These needs are then distributed down their vines using the appropriate channels. So if a need **was** distributed then that means a bunch of things happened and it was approved. Where am I going with this? While I am using very big generalities, I am just trying to say that maybe other angles could be explored.
+
+---
+
+I found the following article on [AOMedia Video 1](https://en.wikipedia.org/wiki/AV1) &mdash; very confusing at first.
+
+AV1 is:
+
+> ... meant to succeed its predecessor VP9 and compete with HEVC/H.265 from the Moving Picture Experts Group.
+
+The confusing part was that Apple is involved in the HEVC/H.265 format AND in this format (because they are part of Alliance for Open Media). But as I read on I realized why:
+
+  - HEVC/H.265 is royalty _bearing_
+  - AV1 is royalty _free_
+
+So that makes sence =)
+
+Also noticing that I am spending way too much on these and that was never the intention. I keep editing or deleting. My focus is on interview prep. Anywho, see you next time =)
