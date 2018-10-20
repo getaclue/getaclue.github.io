@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2018-10-08 14:23:57
+dateModified: 2018-10-20 14:23:57
 datePublished: 2018-08-21 15:58:31
 ---
 
@@ -69,10 +69,10 @@ So, here are some projects that I have been involved in.
     - to account for a still image with a description
     - to account for videos
 
-## Betalist (January 2018 - present)
+## Betalist (January 2018 - August 2018)
 
 - a Remote Team Contributor
-- currenly on hiatus until September
+- currenly paused involvement
 - [Homepage](https://betalist.com/)
 
   ![Betalist mainpage]({{"/assets/projects/betalist/betalist-may-2018.png" | relative_url}}){:style="max-width:100%"}
