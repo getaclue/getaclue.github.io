@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stacks October 25 2018 - getaclue.me</title>
+  <title>Position vs index - getaclue.me</title>
 
   <!-- some help for the jekyll magic from https://aramzs.github.io/jekyll/social-media/2015/11/11/be-social-with-jekyll.html -->
 
@@ -13,17 +13,17 @@
   <meta name="google-site-verification" content="j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0" />
   
 
-  <link rel="canonical" href="https://getaclue.me/blog/stacks-october-25-2018">
-  <meta name="description" content="See how natural the transition from a stack to a queue is when you connect things?" />
-  <meta property="og:title" content="Stacks October 25 2018">
+  <link rel="canonical" href="https://getaclue.me/blog/position-vs-index">
+  <meta name="description" content="Have you ever wondered why you sometimes see index and sometimes position? I did." />
+  <meta property="og:title" content="Position vs index">
 
-  <meta property="og:url" content="https://getaclue.me/blog/stacks-october-25-2018" />
-  <meta property="og:site_name" content="https://getaclue.me/blog/stacks-october-25-2018" />
+  <meta property="og:url" content="https://getaclue.me/blog/position-vs-index" />
+  <meta property="og:site_name" content="https://getaclue.me/blog/position-vs-index" />
 
-  <meta property="og:description" content="See how natural the transition from a stack to a queue is when you connect things?" />
+  <meta property="og:description" content="Have you ever wondered why you sometimes see index and sometimes position? I did." />
   <meta property="og:locale" content="en_US" />
 
-  <meta name="twitter:description" content="See how natural the transition from a stack to a queue is when you connect things?">
+  <meta name="twitter:description" content="Have you ever wondered why you sometimes see index and sometimes position? I did.">
 
   
   <meta property="og:type" content="article" />
@@ -34,12 +34,10 @@
   
   <meta property="article:tag" content="software engineering" />
   
-  <meta property="article:tag" content="javascript" />
-  
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@getaclue_1">
   <meta name="twitter:creator" content="@getaclue_1">
-  <meta name="twitter:title" content="Stacks October 25 2018 - getaclue.me">
+  <meta name="twitter:title" content="Position vs index - getaclue.me">
 
   <meta name="author" content="Alex Kluew">
   <meta property="article:author" content="https://getaclue.me" />
@@ -53,7 +51,7 @@
         "@type": "WebPage",
         "@id": "https://google.com/article"
       },
-      "headline": "See how natural the transition from a stack to a queue is when you connect things?",
+      "headline": "Have you ever wondered why you sometimes see index and sometimes position? I did.",
       "image": {
         "@type": "ImageObject",
         "url": "https://getaclue.me/assets/social-image-banner.png"
@@ -62,18 +60,18 @@
         "@type": "Person",
         "name": "Alex Kluew"
       },
-      "datePublished": "2018-10-25 23:26:00 +0000"
+      "datePublished": "2018-10-26 23:19:00 +0000"
       
-      , "dateModified": "2018-10-25 23:26:00 +0000"
+      , "dateModified": "2018-10-26 23:19:00 +0000"
       
       
-      , "dateCreated": "2018-10-25 20:16:00 +0000"
+      , "dateCreated": "2018-10-26 17:40:00 +0000"
       
     }
     </script>
-  <meta property="article:published_time" content="2018-10-25 23:26:00 +0000" />
+  <meta property="article:published_time" content="2018-10-26 23:19:00 +0000" />
   
-  <meta property="article:modified_time" content="2018-10-25 23:26:00 +0000" />
+  <meta property="article:modified_time" content="2018-10-26 23:19:00 +0000" />
   
   
 
@@ -139,12 +137,12 @@
     <div style="display:flex;align-items: center;justify-content: center;">
       <article class="not-post" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-          <h1 class="post-title" itemprop="name headline"><a href="/blog/stacks-october-25-2018">Stacks October 25 2018</a></h1>
+          <h1 class="post-title" itemprop="name headline"><a href="/blog/position-vs-index">Position vs index</a></h1>
           <p class="post-meta">
-            <time datetime="2018-10-25T00:00:00-04:00" itemprop="datePublished">
+            <time datetime="2018-10-26T00:00:00-04:00" itemprop="datePublished">
               
-              Oct 25, 2018
-            </time> | <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/stacks-october-25-2018" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+              Oct 26, 2018
+            </time> | <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/position-vs-index" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
           </p>
@@ -153,7 +151,7 @@
 <span class="reading-time" title="Estimated read time">
   
   
-    <em>estimated 2 mins to read</em>
+    <em>estimated 1 min to read</em>
   
 </span>
 
@@ -161,72 +159,79 @@
         </header>
 
         <div class="post-content" itemprop="articleBody">
-          <p>On “Implementing a Stack with a Singly Linked List”</p>
+          <p>Have you ever wondered why you sometimes see <code class="highlighter-rouge">index</code> and sometimes <code class="highlighter-rouge">position</code> keywords in code fragments?</p>
 
 <blockquote>
-  <p>In designing such an implementation, we need to decide if the top of the stack is at the front or back of the list. There is clearly a best choice here, however, since we can insert and delete elements in constant time only at the front. With the top of the stack stored at the front of the list, all methods execute in constant time.</p>
-</blockquote>
-
-<p>The Adapter Pattern</p>
-
-<blockquote>
-  <p>One general way to apply the adapter pattern is to define a new class in such a way that it contains an instance of the existing class as a hidden field, and then to implement each method of the new class using methods of this hidden instance variable. <strong>By applying the adapter pattern</strong> in this way, we have created a new class that performs some of the same functions as an existing class, but repackaged in a more convenient way.</p>
-</blockquote>
-
-<p>a stack can be used as:</p>
-
-<ul>
-  <li>a general tool to reverse a data sequence (due to how last in first out works and all)</li>
-  <li>mathing delimiters in an expressions</li>
-  <li>matching tags in a markup language</li>
-  <li>navigation (browsers, ui, back/forward)</li>
-</ul>
-
-<blockquote>
-  <p>important task when processing arithmetic expressions is to make sure their delimiting symbols match up correctly. We can use a stack to perform this task with a single left-to-right scan of the original string.</p>
+  <p>… numeric indices are not a good choice for describing positions within a linked list because, knowing only an element’s index, the only way to reach it is to traverse the list incrementally from its beginning or end, counting elements along the way.</p>
 </blockquote>
 
 <blockquote>
-  <p>If the length of the original expression is n, the algorithm will make at most n calls to push and n calls to pop.</p>
-</blockquote>
-
-<p>Eh, why not queues too then</p>
-
-<blockquote>
-  <p>Another fundamental data structure is the queue. It is a close “cousin” of the stack, but a queue is a collection of objects that are inserted and removed according to the first-in, first-out (FIFO) principle. That is, elements can be inserted at any time, but only the element that has been in the queue the longest can be next removed.</p>
+  <p>… position, which formalizes the intuitive notion of the “location” of an element relative to others in the list.</p>
 </blockquote>
 
 <blockquote>
-  <p>There are many other applications of queues</p>
+  <p>To provide a general abstraction for the location of an element within a structure, we define a simple position abstract data type.</p>
 </blockquote>
+
+<p>Be mindful that this is described within the context of Java.</p>
+
+<p>This all stemmed from my reading of <code class="highlighter-rouge">The Positional List Abstract Data Type</code>. At the same time, this text was fun to read because it got linked to graphs and their traversals</p>
 
 <blockquote>
-  <p>Stores, theaters, reservation centers, and other similar services typically process customer requests according to the FIFO principle. A queue would therefore be a logical choice for a data structure to handle calls to a customer service center, or a wait-list at a restaurant.</p>
+  <p>The advantage of receiving a position as a return value is that we can subsequently use that position to traverse the list.</p>
 </blockquote>
 
-<p>a queue can be used</p>
+<p>and right away they give you a traversal example (the connection to graphs is obvious if you’ve worked with them before)</p>
 
-<ul>
-  <li>by like your reservation systems
-    <ul>
-      <li>like on limited resources (resource allocation… a… reservation system)</li>
-      <li>web servers serving requests</li>
-      <li>a network printer with a printer queue</li>
-    </ul>
-  </li>
-</ul>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Position</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="n">cursor</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="na">first</span><span class="o">();</span>
+<span class="k">while</span> <span class="o">(</span><span class="n">cursor</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">cursor</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="na">after</span><span class="o">(</span><span class="n">cursor</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-<blockquote>
-  <p>queue abstract data type defines a collection that keeps objects <strong>in a sequence</strong>, where element <strong>access</strong> and <strong>deletion</strong> are <strong>restricted</strong> to the first element in the queue, and <strong>element insertion is restricted to the back</strong> of the sequence</p>
-</blockquote>
+<p>This position list has a bunch of update methods that work like this</p>
 
-<p>Never noticed the <em>sequence</em> word in the definition of a queue before — even if intuitively used it. See how important definitions and terminology is?</p>
-
-<blockquote>
-  <p>The queue ADT also includes the following accessor methods (with first being analogous to the stack’s top method)</p>
-</blockquote>
-
-<p>See how natural the transition from a stack to a queue is when you connect things?</p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Method</th>
+      <th style="text-align: center">Return value</th>
+      <th style="text-align: center">Contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">addLast(5)</td>
+      <td style="text-align: center">p</td>
+      <td style="text-align: center">(5p)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">addAfter(p, 7)</td>
+      <td style="text-align: center">q</td>
+      <td style="text-align: center">(5p, 7q)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">addFirst(4)</td>
+      <td style="text-align: center">r</td>
+      <td style="text-align: center">(4r, 5p, 7q)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">addBefore(r, 1)</td>
+      <td style="text-align: center">s</td>
+      <td style="text-align: center">(1s, 4r, 5p, 7q)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">set(p, 0)</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">(1s, 4r, 0p, 7q)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">remove(p)</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">(1s, 4r, 7q)</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>See you next time</p>
 
@@ -245,19 +250,17 @@
         </style>
         <div class="not-post-page-navigation">
           
-          <a href="/blog/october-20-2018" title="October 20 2018">&laquo;
+          <a href="/blog/stacks-october-25-2018" title="Stacks October 25 2018">&laquo;
             Previous Essay</a>
           
-          
-          <a href="/blog/position-vs-index" title="Position vs index">Next Essay &raquo;</a>
           
         </div>
 
         <p class="extra-info">
           
-          Tags: software engineering, javascript &nbsp; | &nbsp;
+          Tags: software engineering &nbsp; | &nbsp;
           
-          <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/stacks-october-25-2018" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+          <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/blog/position-vs-index" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
         </p>
