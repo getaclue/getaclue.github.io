@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2018-10-26T23:20:18-04:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Position vs index</title><link href="https://getaclue.me/blog/position-vs-index" rel="alternate" type="text/html" title="Position vs index" /><published>2018-10-26T00:00:00-04:00</published><updated>2018-10-26T00:00:00-04:00</updated><id>https://getaclue.me/blog/position-vs-index</id><content type="html" xml:base="https://getaclue.me/blog/position-vs-index">&lt;p&gt;Have you ever wondered why you sometimes see &lt;code class=&quot;highlighter-rouge&quot;&gt;index&lt;/code&gt; and sometimes &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; keywords in code fragments?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2018-11-01T20:30:44-04:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Binary trees</title><link href="https://getaclue.me/b/2018/10/binary-trees" rel="alternate" type="text/html" title="Binary trees" /><published>2018-10-30T00:00:00-04:00</published><updated>2018-10-30T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/binary-trees</id><content type="html" xml:base="https://getaclue.me/b/2018/10/binary-trees">&lt;!-- &lt;script src=&quot;https://d3js.org/d3.v5.min.js&quot;&gt;&lt;/script&gt; --&gt;
+
+&lt;h2 id=&quot;assume&quot;&gt;Assume:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;let T = nonempty binary tree&lt;/li&gt;
+  &lt;li&gt;let n = number of nodes&lt;/li&gt;
+  &lt;li&gt;let n_e = number of external nodes&lt;/li&gt;
+  &lt;li&gt;let n_i = number of internal nodes&lt;/li&gt;
+  &lt;li&gt;let h = height of T&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;then-t-has-following-properties&quot;&gt;Then, T has following properties:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;height of the nonempty binary tree + 1 &lt;strong&gt;is less than or equal to&lt;/strong&gt; the number of nodes in the binary tree &lt;strong&gt;is less than or equal to&lt;/strong&gt; 2^(height of the nonempty binary tree + 1) — 1&lt;/li&gt;
+  &lt;li&gt;1 &lt;strong&gt;is less than or equal to&lt;/strong&gt; number of external nodes in the nonempty binary tree &lt;strong&gt;is less than or equal to&lt;/strong&gt; 2^(height of the nonempty binary tree)&lt;/li&gt;
+  &lt;li&gt;height of the nonempty binary tree &lt;strong&gt;is less than or equal to&lt;/strong&gt; number of internal nodes of the nonempty binary tree &lt;strong&gt;is less than or equal to&lt;/strong&gt; 2^(height of nonempty binary tree) — 1&lt;/li&gt;
+  &lt;li&gt;log of (number of nodes in nonempty binary tree) — 1 &lt;strong&gt;is less than or equal to&lt;/strong&gt; height of the nonempty binary tree &lt;strong&gt;is less than or equal to&lt;/strong&gt; number of nodes in nonempty binary tree — 1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;… sorry this was one was also not finished :’-(&lt;/p&gt;
+
+&lt;p&gt;for context plan was to illustrate this using 3djs&lt;/p&gt;
+
+&lt;p&gt;See you next time&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /></entry><entry><title type="html">Position vs index</title><link href="https://getaclue.me/b/2018/10/position-vs-index" rel="alternate" type="text/html" title="Position vs index" /><published>2018-10-26T00:00:00-04:00</published><updated>2018-10-26T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/position-vs-index</id><content type="html" xml:base="https://getaclue.me/b/2018/10/position-vs-index">&lt;p&gt;Have you ever wondered why you sometimes see &lt;code class=&quot;highlighter-rouge&quot;&gt;index&lt;/code&gt; and sometimes &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; keywords in code fragments?&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;… numeric indices are not a good choice for describing positions within a linked list because, knowing only an element’s index, the only way to reach it is to traverse the list incrementally from its beginning or end, counting elements along the way.&lt;/p&gt;
@@ -72,7 +97,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;See you next time&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><summary type="html">Have you ever wondered why you sometimes see index and sometimes position? I did.</summary></entry><entry><title type="html">Stacks October 25 2018</title><link href="https://getaclue.me/blog/stacks-october-25-2018" rel="alternate" type="text/html" title="Stacks October 25 2018" /><published>2018-10-25T00:00:00-04:00</published><updated>2018-10-25T00:00:00-04:00</updated><id>https://getaclue.me/blog/stacks-october-25-2018</id><content type="html" xml:base="https://getaclue.me/blog/stacks-october-25-2018">&lt;p&gt;On “Implementing a Stack with a Singly Linked List”&lt;/p&gt;
+&lt;p&gt;See you next time&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><summary type="html">Have you ever wondered why you sometimes see index and sometimes position? I did.</summary></entry><entry><title type="html">Stacks October 25 2018</title><link href="https://getaclue.me/b/2018/10/stacks-october-25-2018" rel="alternate" type="text/html" title="Stacks October 25 2018" /><published>2018-10-25T00:00:00-04:00</published><updated>2018-10-25T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/stacks-october-25-2018</id><content type="html" xml:base="https://getaclue.me/b/2018/10/stacks-october-25-2018">&lt;p&gt;On “Implementing a Stack with a Singly Linked List”&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;In designing such an implementation, we need to decide if the top of the stack is at the front or back of the list. There is clearly a best choice here, however, since we can insert and delete elements in constant time only at the front. With the top of the stack stored at the front of the list, all methods execute in constant time.&lt;/p&gt;
@@ -139,7 +164,7 @@
 
 &lt;p&gt;See how natural the transition from a stack to a queue is when you connect things?&lt;/p&gt;
 
-&lt;p&gt;See you next time&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="javascript" /><summary type="html">See how natural the transition from a stack to a queue is when you connect things?</summary></entry><entry><title type="html">October 20 2018</title><link href="https://getaclue.me/blog/october-20-2018" rel="alternate" type="text/html" title="October 20 2018" /><published>2018-10-20T00:00:00-04:00</published><updated>2018-10-20T00:00:00-04:00</updated><id>https://getaclue.me/blog/october-20-2018</id><content type="html" xml:base="https://getaclue.me/blog/october-20-2018">&lt;p&gt;From &lt;a href=&quot;https://jordankasper.com/object-oriented-javascript-part-the-first/&quot;&gt;Object Oriented JavaScript (Part the First)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See you next time&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="javascript" /><summary type="html">See how natural the transition from a stack to a queue is when you connect things?</summary></entry><entry><title type="html">October 20 2018</title><link href="https://getaclue.me/b/2018/10/october-20-2018" rel="alternate" type="text/html" title="October 20 2018" /><published>2018-10-20T00:00:00-04:00</published><updated>2018-10-20T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/october-20-2018</id><content type="html" xml:base="https://getaclue.me/b/2018/10/october-20-2018">&lt;p&gt;From &lt;a href=&quot;https://jordankasper.com/object-oriented-javascript-part-the-first/&quot;&gt;Object Oriented JavaScript (Part the First)&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;literalDog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;// declaration AND instantiation&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Vincent&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;// object property&lt;/span&gt;
@@ -414,7 +439,7 @@
 
 &lt;p&gt;Can’t say the same for Ruby on Rails or any other language or framework.&lt;/p&gt;
 
-&lt;p&gt;See you next time&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="javascript" /><category term="personal development" /></entry><entry><title type="html">October 19 2018</title><link href="https://getaclue.me/blog/october-19-2018" rel="alternate" type="text/html" title="October 19 2018" /><published>2018-10-19T00:00:00-04:00</published><updated>2018-10-19T00:00:00-04:00</updated><id>https://getaclue.me/blog/october-19-2018</id><content type="html" xml:base="https://getaclue.me/blog/october-19-2018">&lt;ul&gt;
+&lt;p&gt;See you next time&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="javascript" /><category term="personal development" /></entry><entry><title type="html">October 19 2018</title><link href="https://getaclue.me/b/2018/10/october-19-2018" rel="alternate" type="text/html" title="October 19 2018" /><published>2018-10-19T00:00:00-04:00</published><updated>2018-10-19T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/october-19-2018</id><content type="html" xml:base="https://getaclue.me/b/2018/10/october-19-2018">&lt;ul&gt;
   &lt;li&gt;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors&lt;/li&gt;
   &lt;li&gt;https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS&lt;/li&gt;
   &lt;li&gt;https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes&lt;/li&gt;
@@ -547,7 +572,7 @@
 
 &lt;p&gt;JavaScript is kind of funny.&lt;/p&gt;
 
-&lt;p&gt;See you next time!&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">October 18 2018</title><link href="https://getaclue.me/blog/october-18-2018" rel="alternate" type="text/html" title="October 18 2018" /><published>2018-10-18T00:00:00-04:00</published><updated>2018-10-18T00:00:00-04:00</updated><id>https://getaclue.me/blog/october-18-2018</id><content type="html" xml:base="https://getaclue.me/blog/october-18-2018">&lt;p&gt;&lt;a href=&quot;https://crockford.com/javascript/private.html&quot;&gt;Private Members in JavaScript&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See you next time!&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">October 18 2018</title><link href="https://getaclue.me/b/2018/10/october-18-2018" rel="alternate" type="text/html" title="October 18 2018" /><published>2018-10-18T00:00:00-04:00</published><updated>2018-10-18T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/october-18-2018</id><content type="html" xml:base="https://getaclue.me/b/2018/10/october-18-2018">&lt;p&gt;&lt;a href=&quot;https://crockford.com/javascript/private.html&quot;&gt;Private Members in JavaScript&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Private members are made by the constructor. Ordinary vars and parameters of the constructor become the private members.&lt;/p&gt;
@@ -617,7 +642,7 @@
     &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">Untitled</title><link href="https://getaclue.me/blog/untitled" rel="alternate" type="text/html" title="Untitled" /><published>2018-10-17T00:00:00-04:00</published><updated>2018-10-17T00:00:00-04:00</updated><id>https://getaclue.me/blog/untitled</id><content type="html" xml:base="https://getaclue.me/blog/untitled">&lt;blockquote&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">Untitled</title><link href="https://getaclue.me/b/2018/10/untitled" rel="alternate" type="text/html" title="Untitled" /><published>2018-10-17T00:00:00-04:00</published><updated>2018-10-17T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/untitled</id><content type="html" xml:base="https://getaclue.me/b/2018/10/untitled">&lt;blockquote&gt;
   &lt;p&gt;“If big tech companies are going to turn their back on the DoD, this country is going to be in trouble,” said Bezos on stage at the Wired25 conference in San Francisco on Monday.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -654,7 +679,7 @@
 
 &lt;p&gt;So that makes sence =)&lt;/p&gt;
 
-&lt;p&gt;Also noticing that I am spending way too much on these and that was never the intention. I keep editing or deleting. My focus is on interview prep. Anywho, see you next time =)&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">Fixing your weakness</title><link href="https://getaclue.me/blog/fixing-your-weaknesses" rel="alternate" type="text/html" title="Fixing your weakness" /><published>2018-10-16T00:00:00-04:00</published><updated>2018-10-16T00:00:00-04:00</updated><id>https://getaclue.me/blog/fixing-your-weaknesses</id><content type="html" xml:base="https://getaclue.me/blog/fixing-your-weaknesses">&lt;p&gt;After writing this &lt;a href=&quot;/blog/relationships-between-sets-series-progressions-and-sequences&quot;&gt;essay&lt;/a&gt; a few days ago, I could not stop thinking of figuring out where exactly my error is. Like I mentioned before, I understand the subject matter but not as deep as I would like to.&lt;/p&gt;
+&lt;p&gt;Also noticing that I am spending way too much on these and that was never the intention. I keep editing or deleting. My focus is on interview prep. Anywho, see you next time =)&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">Fixing your weakness</title><link href="https://getaclue.me/b/2018/10/fixing-your-weaknesses" rel="alternate" type="text/html" title="Fixing your weakness" /><published>2018-10-16T00:00:00-04:00</published><updated>2018-10-16T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/fixing-your-weaknesses</id><content type="html" xml:base="https://getaclue.me/b/2018/10/fixing-your-weaknesses">&lt;p&gt;After writing this &lt;a href=&quot;/blog/relationships-between-sets-series-progressions-and-sequences&quot;&gt;essay&lt;/a&gt; a few days ago, I could not stop thinking of figuring out where exactly my error is. Like I mentioned before, I understand the subject matter but not as deep as I would like to.&lt;/p&gt;
 
 &lt;p&gt;So, I began by looking backwards: I wanted to figure out during which course I was introduced to them first. I knew that it was around first or second year; and I knew that it was in Calculus. I did not remember if it was Calculus I or Calculus II. I could not remember but why struggle when you can look this up? Since my degree is from an accredited institution that provides accredited degrees — I can simply request this information or look it up. All of the courses and their description is fully published at uOttawa so this took me a few minutes.&lt;/p&gt;
 
@@ -741,7 +766,7 @@
 
 &lt;p&gt;There you have it my friend. Figure out things that you do not understand and address them. Don’t be afraid to do so at any time — perhaps, even years later ;-)&lt;/p&gt;
 
-&lt;p&gt;See you tomorrow&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /><summary type="html">And then everything clicked in for me — I figured out how I got confused around series and sequences.</summary></entry><entry><title type="html">Past few days</title><link href="https://getaclue.me/blog/past-few-days" rel="alternate" type="text/html" title="Past few days" /><published>2018-10-15T00:00:00-04:00</published><updated>2018-10-15T00:00:00-04:00</updated><id>https://getaclue.me/blog/past-few-days</id><content type="html" xml:base="https://getaclue.me/blog/past-few-days">&lt;p&gt;Mostly been doing a buncha practice and reviewing. You can probably skip reading this entry =) It is me sharing code I wrote and nothing crazy.&lt;/p&gt;
+&lt;p&gt;See you tomorrow&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /><summary type="html">And then everything clicked in for me — I figured out how I got confused around series and sequences.</summary></entry><entry><title type="html">Past few days</title><link href="https://getaclue.me/b/2018/10/past-few-days" rel="alternate" type="text/html" title="Past few days" /><published>2018-10-15T00:00:00-04:00</published><updated>2018-10-15T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/past-few-days</id><content type="html" xml:base="https://getaclue.me/b/2018/10/past-few-days">&lt;p&gt;Mostly been doing a buncha practice and reviewing. You can probably skip reading this entry =) It is me sharing code I wrote and nothing crazy.&lt;/p&gt;
 
 &lt;p&gt;Followed along and made these things&lt;/p&gt;
 
@@ -1078,7 +1103,7 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;See you tomorrow ;-)&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="computer science" /><category term="algorithms" /><summary type="html">You can probably skip reading this entry =)</summary></entry><entry><title type="html">Ceaser cipher and other things</title><link href="https://getaclue.me/blog/ceaser-cipher" rel="alternate" type="text/html" title="Ceaser cipher and other things" /><published>2018-10-12T00:00:00-04:00</published><updated>2018-10-12T00:00:00-04:00</updated><id>https://getaclue.me/blog/ceaser-cipher</id><content type="html" xml:base="https://getaclue.me/blog/ceaser-cipher">&lt;p&gt;Today, I was browing again in the &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt; and for some reason I wanted to implement a simple Ceaser cipher. In the process, I also re-found-out that Strings are immutable in java. I suppose it makes sense then when StringBuilder and the such are used. I also found the following two statements interesting:&lt;/p&gt;
+&lt;p&gt;See you tomorrow ;-)&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="computer science" /><category term="algorithms" /><summary type="html">You can probably skip reading this entry =)</summary></entry><entry><title type="html">Ceaser cipher and other things</title><link href="https://getaclue.me/b/2018/10/ceaser-cipher" rel="alternate" type="text/html" title="Ceaser cipher and other things" /><published>2018-10-12T00:00:00-04:00</published><updated>2018-10-12T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/ceaser-cipher</id><content type="html" xml:base="https://getaclue.me/b/2018/10/ceaser-cipher">&lt;p&gt;Today, I was browing again in the &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt; and for some reason I wanted to implement a simple Ceaser cipher. In the process, I also re-found-out that Strings are immutable in java. I suppose it makes sense then when StringBuilder and the such are used. I also found the following two statements interesting:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;… that characters are represented in Unicode by integer code points …&lt;/p&gt;
@@ -1165,100 +1190,4 @@
 
 &lt;p&gt;that is it for now &amp;amp; I still have the pages for series and sequences open.&lt;/p&gt;
 
-&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="computer science" /><category term="algorithms" /><summary type="html">Today, I was browing again in the textbook and for some reason I wanted to implement a simple Ceaser cipher.</summary></entry><entry><title type="html">Insertion Sort</title><link href="https://getaclue.me/blog/insertion-sort" rel="alternate" type="text/html" title="Insertion Sort" /><published>2018-10-11T00:00:00-04:00</published><updated>2018-10-11T00:00:00-04:00</updated><id>https://getaclue.me/blog/insertion-sort</id><content type="html" xml:base="https://getaclue.me/blog/insertion-sort">&lt;p&gt;Question: Suppose you have an algorithm that you are running that has multiple steps. When you are approximating, when do you add the runtimes and when do you multiply them?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;if &lt;code class=&quot;highlighter-rouge&quot;&gt;do this, then when you are done with this, do that&lt;/code&gt;, then you add runtimes&lt;/li&gt;
-  &lt;li&gt;if &lt;code class=&quot;highlighter-rouge&quot;&gt;do this for each time you do that&lt;/code&gt;, then you multiply runtimes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-insertion-sort-algorithm&quot;&gt;The Insertion-Sort Algorithm&lt;/h2&gt;
-
-&lt;p&gt;The goal of this algorithm is simple: take an array of elements and sort it in an increasing order. It does so by inserting one element at a time and by comparing elements during insertion.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Algorithm InsertionSort(A):&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Input: An array A of n comparable elements&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Output: The array A with elements rearranged in &lt;strong&gt;nondecreasing order&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We basically walk one element at a time, from 0 to n:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;for k from 1 to n do&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Insert element A[k] at its proper location in the array at position A[0], A[1], A[2], …, A[k]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;or as you would like to call it — increasing order.&lt;/p&gt;
-
-&lt;p&gt;Question: When will this algorithm behave the best?&lt;/p&gt;
-
-&lt;p&gt;Answer: When the elements in the array are sorted in order.&lt;/p&gt;
-
-&lt;p&gt;Question: When will this algorithm have the worst of times?&lt;/p&gt;
-
-&lt;p&gt;Answer: When the elements in the array are placed in the reversed order (from high to low - a decreasing order). Our little guy will have to swap every element and move it to the other side.&lt;/p&gt;
-
-&lt;p&gt;Guided with the following from &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;using an &lt;strong&gt;outer loop&lt;/strong&gt; to consider each element in turn,
-and an &lt;strong&gt;inner loop&lt;/strong&gt; that moves a newly considered element to its proper location relative to the (sorted) subarray of elements that are to its left&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I went on to do my own implementation — because why not and I could use some review.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;insertionSort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;cm&quot;&gt;/*
-        Assumption: position 0 is sorted by definition
-
-        Start with position 1
-            Grab the value at the position
-                Question: is the value at previous position 0 (n-1) bigger than current value
-                    if yes
-                        do a loop
-                            place previous value that is bigger in the current place
-                    if no
-                        do no loop
-
-               Place the current value in the position based on the answer to the question
-         */&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-            &lt;span class=&quot;cm&quot;&gt;/*
-                We are walking from the current position to the front of the array at position 0
-             */&lt;/span&gt;
-
-            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--;&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insertPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="computer science" /><category term="algorithms" /></entry></feed>
+&lt;p&gt;See you tomorrow.&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="computer science" /><category term="algorithms" /><summary type="html">Today, I was browing again in the textbook and for some reason I wanted to implement a simple Ceaser cipher.</summary></entry></feed>

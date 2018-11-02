@@ -13,12 +13,12 @@
   <meta name="google-site-verification" content="j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0" />
   
 
-  <link rel="canonical" href="https://getaclue.me/">
+  <link rel="canonical" href="https://getaclue.me/b/:year/:month/page4/">
   <meta name="description" content="Alex Kluew - https://getaclue.me" />
-  <meta property="og:title" content="Alex Kluew - https://getaclue.me/">
+  <meta property="og:title" content="Alex Kluew - https://getaclue.me/b/:year/:month/page4/">
 
-  <meta property="og:url" content="https://getaclue.me/" />
-  <meta property="og:site_name" content="https://getaclue.me/" />
+  <meta property="og:url" content="https://getaclue.me/b/:year/:month/page4/" />
+  <meta property="og:site_name" content="https://getaclue.me/b/:year/:month/page4/" />
 
   <meta property="og:description" content="Alex Kluew - https://getaclue.me" />
   <meta property="og:locale" content="en_US" />
@@ -144,23 +144,59 @@
   
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/binary-trees">Binary trees</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/trying-out-aho-corasick-algorithm">Trying out Aho–Corasick algorithm</a></h1>
       <p class="post-meta">
-        Published on: <time datetime="2018-10-29T20:36:04-04:00" itemprop="datePublished">
+        Published on: <time datetime="2018-10-09T18:52:01-04:00" itemprop="datePublished">
           
-          Oct 30, 2018
+          Oct 9, 2018
         </time>
-        Last updated on: <time datetime="2018-10-29T20:36:04-04:00" itemprop="dateModified">
+        Last updated on: <time datetime="2018-10-09T18:52:01-04:00" itemprop="dateModified">
           
-          Oct 30, 2018
+          Oct 9, 2018
         </time>
       </p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      Assume: let T = nonempty binary tree let n = number of nodes let n_e = number of external nodes let n_i = number of internal nodes let h = height of T Then, T has following properties: height of the nonempty binary tree + 1 is less than or equal to the number of nodes in the binary tree is less than or equal to 2^(height of the nonempty binary tree + 1) — 1 1 is less than or equal to number of external nodes in the nonempty binary tree is less than or equal to 2^(height of the nonempty binary tree) height of the nonempty binary tree is less than or equal to number of internal nodes of the nonempty binary tree is less than or equal to 2^(height of nonempty binary tree) — 1 log of...
+      Today I found Aho–Corasick algorithm. I was instantly hooked on wanting to try it out. Since I am spending more time with Java, most of the day was spent playing with an implementation of this algorithm and maven. I will tell you what, I was pleasantly surprised so far. I need to spend some more time on this but it looks like a promising solution. I wanted to use something like this on the elderoost project. So, here is what my MVP looks like so far. For this problem I wanted to use a large piece of text as input. For example, I was reading the news earlier and I found a good candidate. I used the following news article as my input: Ontario has promised to add 15,000 new long-term care beds across of the province in the next...
       <p style="display:flex; justify-content: flex-end;">
-        <a href="/b/2018/10/binary-trees" title="Continue Reading Binary trees">Continue Reading →</a>
+        <a href="/b/2018/10/trying-out-aho-corasick-algorithm" title="Continue Reading Trying out Aho–Corasick algorithm">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+    </div>
+
+    <p class="extra-info">
+      
+      Tags: software engineering, algorithms &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/:year/:month/page4/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+    </p>
+  </article>
+  
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/if-you-dont-share-your-project-did-you-actually-make-it">If you don&#39;t share your project, did you actually make it?</a></h1>
+      <p class="post-meta">
+        Published on: <time datetime="2018-10-08T12:02:04-04:00" itemprop="datePublished">
+          
+          Oct 8, 2018
+        </time>
+        Last updated on: <time datetime="2018-10-08T12:02:04-04:00" itemprop="dateModified">
+          
+          Oct 8, 2018
+        </time>
+      </p>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      Today, I did a few quick fixes to the current layout of this website. I added « Previous Essay and Next Essay » links to each piece of writing at the end for easier navigation This required a slight modification to the templates. Found the following article Jekyll – how to link to next/previous post on your blog very useful in this venture. In fact, it is very simple. Like so: &lt;style&gt; .not-post-page-navigation { display: flex; justify-content: space-around; margin: 1em; } &lt;/style&gt; &lt;div class="not-post-page-navigation"&gt; {% if page.previous.url %} &lt;a href="{{page.previous.url}}" title="{{page.previous.title}}"&gt;&amp;laquo; Previous Essay&lt;/a&gt; {% endif %} {% if page.next.url %} &lt;a href="{{page.next.url}}" title="{{page.next.title}}"&gt;Next Essay &amp;raquo;&lt;/a&gt; {% endif %} &lt;/div&gt; I also had to look up how I could show you the code above because it had some inline liquid syntactic sugar. So the parser simply interpreted the code about as...
+      <p style="display:flex; justify-content: flex-end;">
+        <a href="/b/2018/10/if-you-dont-share-your-project-did-you-actually-make-it" title="Continue Reading If you don&#39;t share your project, did you actually make it?">Continue Reading →</a>
       </p>
       <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
@@ -172,7 +208,7 @@
       
       Tags: software engineering &nbsp; | &nbsp;
       
-      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/:year/:month/page4/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
     </p>
@@ -180,23 +216,23 @@
   
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/position-vs-index">Position vs index</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/easy-to-get-into-a-pattern-of-asking-questions">Easy to get into a pattern of asking questions</a></h1>
       <p class="post-meta">
-        Published on: <time datetime="2018-10-26T19:19:00-04:00" itemprop="datePublished">
+        Published on: <time datetime="2018-10-06T09:35:36-04:00" itemprop="datePublished">
           
-          Oct 26, 2018
+          Oct 6, 2018
         </time>
-        Last updated on: <time datetime="2018-10-26T19:19:00-04:00" itemprop="dateModified">
+        Last updated on: <time datetime="2018-10-06T09:35:36-04:00" itemprop="dateModified">
           
-          Oct 26, 2018
+          Oct 6, 2018
         </time>
       </p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      Have you ever wondered why you sometimes see index and sometimes position keywords in code fragments? … numeric indices are not a good choice for describing positions within a linked list because, knowing only an element’s index, the only way to reach it is to traverse the list incrementally from its beginning or end, counting elements along the way. … position, which formalizes the intuitive notion of the “location” of an element relative to others in the list. To provide a general abstraction for the location of an element within a structure, we define a simple position abstract data type. Be mindful that this is described within the context of Java. This all stemmed from my reading of The Positional List Abstract Data Type. At the same time, this text was fun to read because it got linked to graphs...
+      I like to open up The 6th edition of Cracking the Coding Interview from time to time. Mainly to keep an up-to-date cheat sheet of things to narrow down during job search. All of the recruiters use some variation of things that is in this book. So, I opened it up today and got some quotes from that book in no particular order. There’s another reason why data structure and algorithm knowledge comes up: because it’s hard to ask problem-solving questions that don’t involve them. It turns out that the vast majority of problem-solving questions involve some of these basics. When enough candidates know these basics, easy to get into a pattern of asking questions with them. This quote talks about justifications of asking data structure and algorithm questions. It finishes off with some practical reasoning for this interview structure....
       <p style="display:flex; justify-content: flex-end;">
-        <a href="/b/2018/10/position-vs-index" title="Continue Reading Position vs index">Continue Reading →</a>
+        <a href="/b/2018/10/easy-to-get-into-a-pattern-of-asking-questions" title="Continue Reading Easy to get into a pattern of asking questions">Continue Reading →</a>
       </p>
       <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
@@ -206,9 +242,9 @@
 
     <p class="extra-info">
       
-      Tags: software engineering &nbsp; | &nbsp;
+      Tags: software engineering, hiring &nbsp; | &nbsp;
       
-      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/:year/:month/page4/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
     </p>
@@ -216,23 +252,23 @@
   
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/stacks-october-25-2018">Stacks October 25 2018</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/swift-package-manager-october-2018">Swift package manager and links</a></h1>
       <p class="post-meta">
-        Published on: <time datetime="2018-10-25T19:26:00-04:00" itemprop="datePublished">
+        Published on: <time datetime="2018-10-04T19:58:09-04:00" itemprop="datePublished">
           
-          Oct 25, 2018
+          Oct 4, 2018
         </time>
-        Last updated on: <time datetime="2018-10-25T19:26:00-04:00" itemprop="dateModified">
+        Last updated on: <time datetime="2018-10-04T19:58:09-04:00" itemprop="dateModified">
           
-          Oct 25, 2018
+          Oct 5, 2018
         </time>
       </p>
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      On “Implementing a Stack with a Singly Linked List” In designing such an implementation, we need to decide if the top of the stack is at the front or back of the list. There is clearly a best choice here, however, since we can insert and delete elements in constant time only at the front. With the top of the stack stored at the front of the list, all methods execute in constant time. The Adapter Pattern One general way to apply the adapter pattern is to define a new class in such a way that it contains an instance of the existing class as a hidden field, and then to implement each method of the new class using methods of this hidden instance variable. By applying the adapter pattern in this way, we have created a new class that...
+      Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement. Problem Statement Every time I write this piece of content, I have to name this file. I have a specific way I name these files: It goes date-title.markdown so it is easier for me to reference in the future. When the parser does its magic, it also creates a nice, seo friendly URL that I can share. It gives some context to...
       <p style="display:flex; justify-content: flex-end;">
-        <a href="/b/2018/10/stacks-october-25-2018" title="Continue Reading Stacks October 25 2018">Continue Reading →</a>
+        <a href="/b/2018/10/swift-package-manager-october-2018" title="Continue Reading Swift package manager and links">Continue Reading →</a>
       </p>
       <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
@@ -242,45 +278,9 @@
 
     <p class="extra-info">
       
-      Tags: software engineering, javascript &nbsp; | &nbsp;
+      Tags: software engineering, swift, swift package manager, spm, links, challenge &nbsp; | &nbsp;
       
-      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-    </p>
-  </article>
-  
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/october-20-2018">October 20 2018</a></h1>
-      <p class="post-meta">
-        Published on: <time datetime="2018-10-20T09:50:01-04:00" itemprop="datePublished">
-          
-          Oct 20, 2018
-        </time>
-        Last updated on: <time datetime="2018-10-20T09:50:01-04:00" itemprop="dateModified">
-          
-          Oct 20, 2018
-        </time>
-      </p>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
-      From Object Oriented JavaScript (Part the First) var literalDog = { // declaration AND instantiation name: "Vincent", // object property speak: function() { // object method return this.name + " says woof"; } }; literalDog.speak(); // "Vincent says woof" Inside of the speak method the this variable will refer to the current context of the function execution. This is an important distinction with classically object oriented languages: the value of this can (and often does) change! In most cases, this inside of a method like the one above will refer to the current object or instance. Without some other influence, if a method is called with “dot” syntax as in the last line above, then you can generally expect this inside the function to be whatever is on the left side of the dot. Inside of literalDog.speak() the this variable...
-      <p style="display:flex; justify-content: flex-end;">
-        <a href="/b/2018/10/october-20-2018" title="Continue Reading October 20 2018">Continue Reading →</a>
-      </p>
-      <p style="margin-top: 30px" class="side-projects-note">
-  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
-</p>
-
-    </div>
-
-    <p class="extra-info">
-      
-      Tags: software engineering, javascript, personal development &nbsp; | &nbsp;
-      
-      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+      <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/:year/:month/page4/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
     </p>
@@ -290,11 +290,11 @@
   <!-- Pagination links -->
   <div class="pagination">
     
-    <span class="previous">Newer</span>
+    <a href="/b/:year/:month/page3/" class="previous">Newer</a>
     
     /
     
-    <a href="/b/:year/:month/page2/" class="next">Older</a>
+    <a href="/b/:year/:month/page5/" class="next">Older</a>
     
   </div>
 

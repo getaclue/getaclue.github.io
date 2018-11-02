@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relationships between sets, series, progressions, and sequences - getaclue.me</title>
+
+  <!-- some help for the jekyll magic from https://aramzs.github.io/jekyll/social-media/2015/11/11/be-social-with-jekyll.html -->
+
+  
+  <meta name="google-site-verification" content="j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0" />
+  
+
+  <link rel="canonical" href="https://getaclue.me/b/2018/10/relationships-between-sets-series-progressions-and-sequences">
+  <meta name="description" content="We have looked at a set, a sequence, and a progression so far. How do these things relate to a series?" />
+  <meta property="og:title" content="Relationships between sets, series, progressions, and sequences">
+
+  <meta property="og:url" content="https://getaclue.me/b/2018/10/relationships-between-sets-series-progressions-and-sequences" />
+  <meta property="og:site_name" content="https://getaclue.me/b/2018/10/relationships-between-sets-series-progressions-and-sequences" />
+
+  <meta property="og:description" content="We have looked at a set, a sequence, and a progression so far. How do these things relate to a series?" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:description" content="We have looked at a set, a sequence, and a progression so far. How do these things relate to a series?">
+
+  
+  <meta property="og:type" content="article" />
+  
+  <meta name="og:image" content="https://getaclue.me/assets/social-image-banner.png">
+  <meta name="twitter:image" content="https://getaclue.me/assets/social-image-banner.png">
+  
+  
+  <meta property="article:tag" content="software engineering" />
+  
+  <meta property="article:tag" content="math" />
+  
+  <meta property="article:tag" content="calculus" />
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@getaclue_1">
+  <meta name="twitter:creator" content="@getaclue_1">
+  <meta name="twitter:title" content="Relationships between sets, series, progressions, and sequences - getaclue.me">
+
+  <meta name="author" content="Alex Kluew">
+  <meta property="article:author" content="https://getaclue.me" />
+  <meta property="article:publisher" content="https://getaclue.me" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
+      },
+      "headline": "We have looked at a set, a sequence, and a progression so far. How do these things relate to a series?",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://getaclue.me/assets/social-image-banner.png"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Alex Kluew"
+      },
+      "datePublished": "2018-10-10 18:52:01 +0000"
+      
+      , "dateModified": "2018-10-10 18:52:01 +0000"
+      
+      
+    }
+    </script>
+  <meta property="article:published_time" content="2018-10-10 18:52:01 +0000" />
+  
+  <meta property="article:modified_time" content="2018-10-10 18:52:01 +0000" />
+  
+  
+
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" title="Alex Kluew" href="/feed.xml">
+  
+  <script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106794469-1', 'auto');
+  ga('set', 'anonymizeIp', true)
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+
+<body class="not-apple">
+  <style>
+    .not-content-wrapper {
+      /* background-color: rgba(242, 242, 242, 1); */
+      /* margin: 0 auto; */
+      /* width: 980px; */
+      height: 100%;
+    }
+
+    .not-header-text {
+      /* font-size: 1.1em;
+      margin: 0 auto;
+      padding-top: 6px;
+      vertical-align: middle;
+      float: left; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+    }
+
+    .not-header-text a {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+  </style>
+  <header class="not-header" role="banner">
+    <div class="not-content-wrapper">
+      <div class="not-header-text">
+        <a href="/">Home</a>
+        <a href="/about" class="page-link ">About</a>
+        <a href="/projects" class="page-link ">Projects</a>
+      </div>
+    </div>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div style="display:flex;align-items: center;justify-content: center;">
+      <article class="not-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/relationships-between-sets-series-progressions-and-sequences">Relationships between sets, series, progressions, and sequences</a></h1>
+          <p class="post-meta">
+            <time datetime="2018-10-10T00:00:00-04:00" itemprop="datePublished">
+              
+              Oct 10, 2018
+            </time> | <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/2018/10/relationships-between-sets-series-progressions-and-sequences" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+          </p>
+          <p class="post-meta">
+            <!-- https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<span class="reading-time" title="Estimated read time">
+  
+  
+    <em>estimated 5 mins to read</em>
+  
+</span>
+
+          </p>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          <p>Today I ended up exploring a topic that I didn’t expect: what is the difference between a sequence and a series.</p>
+
+<p>While I memorized these contepts in my calculus days, I always felt something was missing in my core understanding. I think I figured out what was missing. It seems that I was confused, once again, around the ambiguity of the English language.</p>
+
+<p>I stumbled upon the following in one of my favourite <a href="https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">textbook</a>s:</p>
+
+<blockquote>
+  <p>A numeric progression is a sequence of numbers, where each number depends on one or more of the previous numbers.</p>
+</blockquote>
+
+<p>followed by</p>
+
+<blockquote>
+  <p>arithmetic progression determines the next number <strong>by adding</strong> a fixed constant to the previous value</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>geometric progression determines the next number <strong>by multiplying</strong> the previous value by a fixed constant</p>
+</blockquote>
+
+<p>which made me go <em>Aha</em>. All I had to do was check if the thing was made by adding or by multiplying? Seems easy enough to get.</p>
+
+<p>I’m sure I had the same thoughts back in school. So, I decided to play around and see what I find confusing so I could fix my gaps in knowledge. I thought: hmm, they are using both terms, a <code class="highlighter-rouge">progression</code> and <code class="highlighter-rouge">sequence</code>, in one sentence. Confused — because if you don’t really pay attention then you could interpret these two terms as having a similar meaning.</p>
+
+<p>What I should have considered was the specific word choice in math. Similar confusions were found in other areas. For example, different terminology in the graph space. One positive thing that I did notice is that specialty books are beginning to mention discrepancies surrounding word choice.</p>
+
+<p>Getting back to progression and sequence confusion. The more I thought about it, the more I realized that I had confusion back in the day. Confusion around terminology and not the concepts. If you read one of the previous entries, then you recall me saying that pattern matching works to a certain degree. So, I used pattern matching during my former student days. It got me far enough but I was never satisfied.</p>
+
+<p>Unlike my former student self, I have the leisure and time to explore this further.</p>
+
+<p>I found the following excerpt on quora from <a href="https://www.quora.com/How-does-sequence-and-progression-differ">how does sequence and progression differ?</a></p>
+
+<blockquote>
+  <p>… all progressions are sequences, all sequences are not progression …</p>
+</blockquote>
+
+<p>OK, so that brought my understanding a bit closer. So a sequence is a collection of things. Hmm, but that sounds very close to what a set is. So, what is the difference between a sequence and a set? Is there one? Decided to consult wonderful <a href="https://en.wikipedia.org/wiki/Sequence">wikipedia definition</a> for more information.</p>
+
+<p>So a sequence is <strong>like a set</strong> because they are a collection that contains things: members or elements. Like a set, this collection can be finite or infinite. Ok… so still not too clear so far. However, as we read further — what we find, is that in a sequence, <em>unlike in a set</em>, repeated occurences of members are allowed. <em>Additionally</em>, <strong>unlike in a set</strong>, the <strong>order</strong> of individual members in the collection <strong>matters</strong>.</p>
+
+<p>Furthermore, a sequence does not have to be only denoted by [an explicit] formula. A sequence can also be denoted by <a href="https://blogformathematics.blogspot.com/2011/08/sequences.html">a logical statement</a>:</p>
+
+<blockquote>
+  <p>A sequence may be denoted by an explicit formula, like Tn = 2 + n, or it may be denoted by a logical statement like Tn = nth prime number. It is <strong>not necessary that a set of numbers be arranged according to an explicit formula</strong> in order for it to be called a ‘sequence’; it <strong>can also be arranged according to some logical statement</strong> that does not have an explicit mathematical formula but is nonetheless mathematically logical in order for it to be called a sequence.</p>
+</blockquote>
+
+<p>So, the definition of a sequence and how it differs from a set is starting to make sense. How does a progression relate to all of this? Well, a <em>numeric</em> progression is a <strong>sequence</strong> of <em>numbers</em> where each element depends on <em>one or more</em> of the <strong>previous</strong> members.</p>
+
+<p>Just like in the quote above from the <a href="https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">textbook</a>, it follows that there are at least two such relationships:</p>
+
+<ol>
+  <li>a relationship between two members such that the difference between these two members is a constant — this is called an <em>arithmetic progression</em> or <em>arithmetic sequence</em>.</li>
+  <li>a relationship between two members such that the <a href="https://www.math10.com/en/algebra/geometric-progression.html">quotient of any two successive members of the sequence is a constant</a> — this is called a <em>geometric progression</em> or a <em>geometric sequence</em>.</li>
+</ol>
+
+<p>Or said it another way (from the same <a href="https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">textbook</a> as mentioned):</p>
+
+<blockquote>
+  <p>geometric progression, in which each value is produced by multiplying the preceding value by a fixed constant, known as the <strong>base of the geometric progression</strong>.</p>
+</blockquote>
+
+<p>We have looked at a set, sequence, and a progression so far. How do these things relate to a <em>series</em>? Very simple — a series is just the summation of all of the elements in the sequence. So, it then follows, what is the sum of the elements in a given sequence represented by? A series. Just like that. It finally makes sense how a series and a sequence are related. Nothing complicated. No new formulas. Just the proper definitions presented in a familiar way.</p>
+
+<p>Moreover, the total sum of the sequence can be broken up into <strong>partial sum(s)</strong> — a sum from element <code class="highlighter-rouge">ai</code> to element <code class="highlighter-rouge">an</code>. What is interesting about this? Well the fact that <a href="https://en.wikipedia.org/wiki/Sequence">(p)artial sums, themselves, form a sequence</a>.</p>
+
+<p>Well, there you have it.</p>
+
+<p>See you tomorrow.</p>
+
+
+
+          <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+        </div>
+        <style>
+          .not-post-page-navigation {
+            display: flex;
+            justify-content: space-around;
+            margin: 1em;
+          }
+        </style>
+        <div class="not-post-page-navigation">
+          
+          <a href="/b/2018/10/trying-out-aho-corasick-algorithm" title="Trying out Aho–Corasick algorithm">&laquo;
+            Previous Essay</a>
+          
+          
+          <a href="/b/2018/10/insertion-sort" title="Insertion Sort">Next Essay &raquo;</a>
+          
+        </div>
+
+        <p class="extra-info">
+          
+          Tags: software engineering, algorithms, math, calculus, sequence, series, progression &nbsp; | &nbsp;
+          
+          <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/2018/10/relationships-between-sets-series-progressions-and-sequences" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/getaclue" target="_blank"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">getaclue</span></a>
+
+          </li>
+          <li>
+            <a href="https://twitter.com/getaclue_1" target="_blank"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">getaclue_1</span></a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <small>Another <a href="https://sugarplumoriginals.com" title="Go to Sugarplum Originals"><strong>Sugarplum
+          Originals</strong></a> Productions © 2018</small>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  var links = document.links;
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    if (links[i].hostname != window.location.hostname) {
+      links[i].target = '_blank';
+    }
+  }
+</script>
+
+
+</body>
+
+</html>

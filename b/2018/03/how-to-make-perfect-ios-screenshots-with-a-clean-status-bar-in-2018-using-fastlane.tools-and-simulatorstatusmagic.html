@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to make perfect iOS screenshots with a clean status bar in 2018 - getaclue.me</title>
+
+  <!-- some help for the jekyll magic from https://aramzs.github.io/jekyll/social-media/2015/11/11/be-social-with-jekyll.html -->
+
+  
+  <meta name="google-site-verification" content="j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0" />
+  
+
+  <link rel="canonical" href="https://getaclue.me/b/2018/03/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic">
+  <meta name="description" content="Using fastlane.tools and SimulatorStatusMagic" />
+  <meta property="og:title" content="How to make perfect iOS screenshots with a clean status bar in 2018">
+
+  <meta property="og:url" content="https://getaclue.me/b/2018/03/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic" />
+  <meta property="og:site_name" content="https://getaclue.me/b/2018/03/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic" />
+
+  <meta property="og:description" content="Using fastlane.tools and SimulatorStatusMagic" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:description" content="Using fastlane.tools and SimulatorStatusMagic">
+
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:image" content="https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy" />
+  <meta name="twitter:image" content="https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy" />
+  
+  
+  <meta property="article:tag" content="iOS" />
+  
+  <meta property="article:tag" content="swift" />
+  
+  <meta property="article:tag" content="Software Development" />
+  
+  <meta property="article:tag" content="iOS App Development" />
+  
+  <meta property="article:tag" content="Mobile App Development" />
+  
+  <meta property="article:tag" content="fastlane.tools" />
+  
+  <meta property="article:tag" content="SimulatorStatusMagic" />
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@getaclue_1">
+  <meta name="twitter:creator" content="@getaclue_1">
+  <meta name="twitter:title" content="How to make perfect iOS screenshots with a clean status bar in 2018 - getaclue.me">
+
+  <meta name="author" content="Alex Kluew">
+  <meta property="article:author" content="https://getaclue.me" />
+  <meta property="article:publisher" content="https://getaclue.me" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
+      },
+      "headline": "Using fastlane.tools and SimulatorStatusMagic",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Alex Kluew"
+      },
+      "datePublished": "2018-03-30 09:15:27 +0000"
+      
+      , "dateModified": "2018-03-30 09:45:29 +0000"
+      
+      
+    }
+    </script>
+  <meta property="article:published_time" content="2018-03-30 09:15:27 +0000" />
+  
+  <meta property="article:modified_time" content="2018-03-30 09:45:29 +0000" />
+  
+  
+
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" title="Alex Kluew" href="/feed.xml">
+  
+  <script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106794469-1', 'auto');
+  ga('set', 'anonymizeIp', true)
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+
+<body class="not-apple">
+  <style>
+    .not-content-wrapper {
+      /* background-color: rgba(242, 242, 242, 1); */
+      /* margin: 0 auto; */
+      /* width: 980px; */
+      height: 100%;
+    }
+
+    .not-header-text {
+      /* font-size: 1.1em;
+      margin: 0 auto;
+      padding-top: 6px;
+      vertical-align: middle;
+      float: left; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+    }
+
+    .not-header-text a {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+  </style>
+  <header class="not-header" role="banner">
+    <div class="not-content-wrapper">
+      <div class="not-header-text">
+        <a href="/">Home</a>
+        <a href="/about" class="page-link ">About</a>
+        <a href="/projects" class="page-link ">Projects</a>
+      </div>
+    </div>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div style="display:flex;align-items: center;justify-content: center;">
+      <article class="not-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline"><a href="/b/2018/03/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic">How to make perfect iOS screenshots with a clean status bar in 2018</a></h1>
+          <p class="post-meta">
+            <time datetime="2018-03-29T00:00:00-04:00" itemprop="datePublished">
+              
+              Mar 29, 2018
+            </time> | <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/2018/03/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+          </p>
+          <p class="post-meta">
+            <!-- https://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<span class="reading-time" title="Estimated read time">
+  
+  
+    <em>estimated 4 mins to read</em>
+  
+</span>
+
+          </p>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          <p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy" alt="Image for the post" /></p>
+
+<p>Hi friends,</p>
+
+<h2 id="before-we-begin">Before we begin</h2>
+
+<p>Before I begin, I am assuming you are already running your UITests using <a href="https://fastlane.tools/">fastlane.tools</a>. If not, I would suggest that you get yourself familiarized <a href="https://docs.fastlane.tools/getting-started/ios/screenshots/">here</a>. It saves you lots of time and it is especially indispensable for solo developers like myself.</p>
+
+<h2 id="what-is-this-article-about">What is this article about?</h2>
+
+<p>This article is about improving your iOS marketing material: the screenshots.</p>
+
+<p>So, we will go from this:</p>
+
+<p><img src="https://d.pr/i/FuVdCb+" alt="Starting point" /></p>
+
+<p>to this:</p>
+
+<p><img src="https://d.pr/i/7vkqhx+" alt="Goal of this article" /></p>
+
+<p>We will be using <a href="https://fastlane.tools/">fastlane.tools</a> in combination with <a href="https://github.com/shinydevelopment/SimulatorStatusMagic">SimulatorStatusMagic</a> library. SimulatorStatusMagic is used to create the perfect status bar:</p>
+
+<ul>
+  <li>9:41 AM is displayed for the time</li>
+  <li>The battery is full and shows 100%</li>
+  <li>On iPhone: The carrier text is removed, 5 bars of cellular signal and full WiFi bars are displayed.</li>
+  <li>On iPad: The carrier text is set to “iPad” and full WiFi bars are displayed.</li>
+</ul>
+
+<p>The text above is taken verbatim from the library’s <a href="https://github.com/shinydevelopment/SimulatorStatusMagic">description</a>.</p>
+
+<h2 id="why-would-you-want-to-do-that">Why would you want to do that?</h2>
+
+<p>Well, such attention to detail adds extra value to your product by making your marketing material that much better than your competition. If you take a second to scan the Apple App store, the top apps provide some level of consistency in their marketing material. It follows, you should work towards achieving a similar level of consistency because it is not really not that hard. And if you set this up once, it will work.</p>
+
+<p>So, I wanted to the improve the screenshots that I use to market <a href="https://dailyvibes.ca/">Daily Vibes</a> in my next update.</p>
+
+<h2 id="what-did-i-try">What did I try?</h2>
+
+<p>Installed SimulatorStatusMagic using cocoapods by adding the following line to my Podfile, like this:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pod</span> <span class="s1">'SimulatorStatusMagic'</span><span class="p">,</span> <span class="ss">:configurations</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'Debug'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Next, I found the following <a href="https://funkenstrahlen.de/blog/2016/04/21/perfekte-ios-screenshots/">two</a> <a href="http://blog.scottlogic.com/2015/02/25/Using-Snapshot-with-Simulator-Status-Magic-to-generate-perfect-iOS-screenshots.html">articles</a> and they gave me good starting points. They were perfect for me because I wanted to use flags in my code like this:</p>
+
+<p><img src="https://d.pr/i/CVcNIW+" alt="How I wanted to import the library" /></p>
+
+<p>This would allow me to only import SimulatorStatusMagic during fastlane.tools run.</p>
+
+<p>And, I also envisioned using this one flag throughout other areas of the code.</p>
+
+<p><img src="https://d.pr/i/M0QqzC+" alt="What I envisioned" /></p>
+
+<p>So… putting it all together, I wanted something like this:</p>
+
+<p><img src="https://d.pr/i/B53hS7+" alt="How I wanted fastlane.tools and SimulatorStatusMagic to work" /></p>
+
+<blockquote>
+  <p>But, I could not get it to run exactly like that 😭</p>
+</blockquote>
+
+<p>I really wanted to get this to work. However, as a result of <a href="https://github.com/fastlane/fastlane/search?q=custom_args&amp;type=Issues&amp;utf8=%E2%9C%93">these</a> <a href="https://github.com/fastlane/fastlane/issues/4717">issues</a> you need some tweaking in 2018.</p>
+
+<h2 id="so-what-is-my-curent-solution">So what is my curent solution?</h2>
+
+<ol>
+  <li><code class="highlighter-rouge">import SimulatorStatusMagic</code></li>
+  <li>leverage snapshot’s <a href="https://docs.fastlane.tools/getting-started/ios/screenshots/#advanced-snapshot">launch arguments</a> - <code class="highlighter-rouge">FASTLANE_SNAPSHOT</code> is set to true</li>
+  <li>call in code as you wanted</li>
+</ol>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="no">NSUserDefaults</span><span class="p">.</span><span class="nf">standardUserDefaults</span><span class="p">().</span><span class="nf">boolForKey</span><span class="p">(</span><span class="s2">"FASTLANE_SNAPSHOT"</span><span class="p">)</span> <span class="p">{</span>
+<span class="o">...</span>
+  <span class="no">SDStatusBarManager</span><span class="p">.</span><span class="nf">sharedInstance</span><span class="p">().</span><span class="nf">enableOverrides</span><span class="p">()</span>
+  <span class="n">setupScreenshotData</span><span class="p">()</span>
+<span class="o">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>And the code above works … but I will be first to admit that it is not the perfect solution.</p>
+
+<p>As it is currently written, you will need to play the commenting game:</p>
+
+<ul>
+  <li>comment out import SimulatorStatusMagic and</li>
+  <li>comment out SDStatusBarManager.sharedInstance().enableOverrides()</li>
+</ul>
+
+<p>during regular development and do the reverse during fastlane.tools run.</p>
+
+<p>So… during regular development:</p>
+
+<p><img src="https://d.pr/i/ptOZ9a+" alt="What you have to do during regular development" /></p>
+
+<p>and … during fastlane.tools run:</p>
+
+<p><img src="https://d.pr/i/DCDj9W+" alt="What you have to do during fastlane.tools run" /></p>
+
+<p>As I am familiar with Ruby and Swift, and can get by with Objective-C, I tried to make it work how I wanted and find the source of confusion. I did look at the <a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html">xcodebuild arguments</a> and scanned fastlane.tools source <a href="https://github.com/fastlane/fastlane/blob/master/snapshot/lib/snapshot/test_command_generator_base.rb#L34">code up to here</a>. But, since there is only so much time in the day and I work on this during my free time - I did not narrow down the problem.</p>
+
+<p>So if you have a different solution that allows me to run the code how I wanted, please reach out to me via <a href="https://twitter.com/getaclue_1">twitter</a>. I will gladly adjust this article to incorporate those changes.</p>
+
+<p>Otherwise, I hope that you enjoy this working solution. I was puzzled during my research in 2018 and I did not see a solution so hopefully this helps someone in upping their screenshot game.</p>
+
+<p>Thanks for reading,</p>
+
+<p>Alex</p>
+
+<p>Note: This article was also published on <a href="https://www.linkedin.com/pulse/how-make-perfect-ios-screenshots-clean-status-bar-2018-alex-kluew/">LinkedIn</a></p>
+
+
+          <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+        </div>
+        <style>
+          .not-post-page-navigation {
+            display: flex;
+            justify-content: space-around;
+            margin: 1em;
+          }
+        </style>
+        <div class="not-post-page-navigation">
+          
+          <a href="/b/2018/03/improving-ios-performance-with-xcode-and-instruments-for-dummies" title="Improving iOS performance with Xcode and Instruments for dummies">&laquo;
+            Previous Essay</a>
+          
+          
+          <a href="/b/2018/05/would-you-let-your-mother-use-your-software" title="Would you let your mother use your software?">Next Essay &raquo;</a>
+          
+        </div>
+
+        <p class="extra-info">
+          
+          Tags: software development, software engineering, tutorial &nbsp; | &nbsp;
+          
+          <a href="https://twitter.com/home?status=Hey%20%40getaclue_1%20your%20site%20is%20broken%20/b/2018/03/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/getaclue" target="_blank"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">getaclue</span></a>
+
+          </li>
+          <li>
+            <a href="https://twitter.com/getaclue_1" target="_blank"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">getaclue_1</span></a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <small>Another <a href="https://sugarplumoriginals.com" title="Go to Sugarplum Originals"><strong>Sugarplum
+          Originals</strong></a> Productions © 2018</small>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  var links = document.links;
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    if (links[i].hostname != window.location.hostname) {
+      links[i].target = '_blank';
+    }
+  }
+</script>
+
+
+</body>
+
+</html>
