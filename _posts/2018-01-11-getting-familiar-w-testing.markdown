@@ -15,6 +15,8 @@ status: publish
 type: post
 published: true
 meta: {}
+redirect_from:
+- /blog/getting-familiar-w-testing
 ---
 ![Testing image from https://pixabay.com/en/software-testing-service-762486/](https://d.pr/i/YgH6dm/ayxzukbu17+)
 

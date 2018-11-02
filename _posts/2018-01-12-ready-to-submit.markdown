@@ -1,25 +1,28 @@
 ---
 layout: post
-title: "Ready to Submit"
+title: 'Ready to Submit'
 categories:
-- iOS
+  - iOS
 tags:
-- software development
-- software engineering
-- productivity
-- growth
-- TestFlight
-- resources
+  - software development
+  - software engineering
+  - productivity
+  - growth
+  - TestFlight
+  - resources
 status: publish
 type: post
 published: true
 meta: {}
+redirect_from:
+  - /blog/ready-to-submit
 ---
+
 Happy Friday 👋
 
 It is so easy to let this writing to get out of hand even though I promised to write more regularly. I've been chugging along with a lot of things since last update.
 
-*I am still have trouble understanding how to use TestFlight*. I have done quite a bit of work over the past few days and I wanted to release it to the beta testers. However, I am currently stuck in this state:
+_I am still have trouble understanding how to use TestFlight_. I have done quite a bit of work over the past few days and I wanted to release it to the beta testers. However, I am currently stuck in this state:
 
 ![Stuck on these TestFlights](https://d.pr/i/7jVbKS/Vve27WMfts+)
 
@@ -28,6 +31,7 @@ It is so easy to let this writing to get out of hand even though I promised to w
 Basically I am stuck just like this person that wrote [TestFlight build on iTunes Connect stuck at 'Ready to Submit'](https://stackoverflow.com/q/44716499). I've contacted some fellow iOS developers and am now doing what they suggested.
 
 What did I learn from them?
+
 - every new application version gets a review that you need to go through (which is exactly what is happening now from what I understand). I like [semver](https://semver.org), so technically this would be a `1.0.2` version. It has been primarily bug fixes and UI changes.
 - every new build, under a reviewed version, does not have to go through this process (apparently). So, this is what I am currently trying:
 
@@ -43,7 +47,7 @@ Also, it also seems that information from bullet point #2 is funky. I changed th
 
 I'm going to continue with this and, in mean time, I think I am just going to contact Apple Support.
 
-------
+---
 
 PS. Yes, I did consult [View build status and metrics page](https://help.apple.com/itunes-connect/developer/#/dev78d0a8f87) and [app build statuses page](https://help.apple.com/itunes-connect/developer/#/dev3d6869aff).
 

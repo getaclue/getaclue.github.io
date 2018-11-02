@@ -1,22 +1,25 @@
 ---
 layout: post
-title: "January and February Reflections"
+title: 'January and February Reflections'
 categories:
-- iOS
+  - iOS
 tags:
-- software development
-- software engineering
-- productivity
-- growth
+  - software development
+  - software engineering
+  - productivity
+  - growth
 status: publish
 type: post
 published: true
 meta: {}
 image: https://cdn-pro.dprcdn.net/files/acc_603419/S7arGb
-excerpt: "I wanted to look back on the amount of work that done in the past two months (January 2018 and February 2018) in iOS indie mobile app development"
+excerpt: 'I wanted to look back on the amount of work that done in the past two months (January 2018 and February 2018) in iOS indie mobile app development'
 datePublished: 2018-02-28 15:00:00
 dateModified: 2018-03-09 15:38:14
+redirect_from:
+  - /blog/january-and-february-reflections
 ---
+
 ## Hi friends,
 
 Can't believe how quickly January and February came and went. I hope you've had a productive start to the year.
@@ -31,8 +34,9 @@ A lot of things happened in January.
 
 - [Daily Vibes](https://geo.itunes.apple.com/app/id1332324033?mt=8&at=1010lK7Y) is available on the Apple App Store. If you haven't downloaded it yet, just give it a shot ([download](https://geo.itunes.apple.com/app/id1332324033?mt=8&at=1010lK7Y)).
 - Added a sign up sheet for beta testers:
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can now sign up to beta test <a href="https://twitter.com/dailyvibesapp?ref_src=twsrc%5Etfw">@dailyvibesapp</a> if you like. Now public. For all. Yup... Coming to Store. Soon. Like really soon. <a href="https://t.co/tszKEOVgeS">https://t.co/tszKEOVgeS</a> PS. Plz tell your friends too ❤️ <a href="https://t.co/qyPJUrEWS4">https://t.co/qyPJUrEWS4</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/951587276949278720?ref_src=twsrc%5Etfw">January 11, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">You can now sign up to beta test <a href="https://twitter.com/dailyvibesapp?ref_src=twsrc%5Etfw">@dailyvibesapp</a> if you like. Now public. For all. Yup... Coming to Store. Soon. Like really soon. <a href="https://t.co/tszKEOVgeS">https://t.co/tszKEOVgeS</a> PS. Plz tell your friends too ❤️ <a href="https://t.co/qyPJUrEWS4">https://t.co/qyPJUrEWS4</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/951587276949278720?ref_src=twsrc%5Etfw">January 11, 2018</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - As a result of shipping, started fixing bugs 🐞 here and here
 
@@ -48,24 +52,28 @@ A lot of things happened in January.
 Continued incremental improvement of Daily Vibes
 
 - Updated Kickstarter page
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">also 🛠 fixed this icon issue <a href="https://t.co/VCT80m3HpY">pic.twitter.com/VCT80m3HpY</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/954381779720269824?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">also 🛠 fixed this icon issue <a href="https://t.co/VCT80m3HpY">pic.twitter.com/VCT80m3HpY</a></p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/954381779720269824?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - Adding small UI accents that I was longing for
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Can’t wait to 🚢 these 💸 awesome updates to you. ⚒ Today shows items due today or are on Today list. 📫 This week shows... you get it 🎉 oh and added quick to view accents 🚀 <a href="https://twitter.com/hashtag/dailyprogress?src=hash&amp;ref_src=twsrc%5Etfw">#dailyprogress</a> <a href="https://twitter.com/hashtag/dailyvibes?src=hash&amp;ref_src=twsrc%5Etfw">#dailyvibes</a> Feb 13 2018 <a href="https://t.co/UasSlId95m">pic.twitter.com/UasSlId95m</a></p>&mdash; Daily Vibes (@dailyvibesapp) <a href="https://twitter.com/dailyvibesapp/status/963579252586221568?ref_src=twsrc%5Etfw">February 14, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Can’t wait to 🚢 these 💸 awesome updates to you. ⚒ Today shows items due today or are on Today list. 📫 This week shows... you get it 🎉 oh and added quick to view accents 🚀 <a href="https://twitter.com/hashtag/dailyprogress?src=hash&amp;ref_src=twsrc%5Etfw">#dailyprogress</a> <a href="https://twitter.com/hashtag/dailyvibes?src=hash&amp;ref_src=twsrc%5Etfw">#dailyvibes</a> Feb 13 2018 <a href="https://t.co/UasSlId95m">pic.twitter.com/UasSlId95m</a></p>&mdash; Daily Vibes (@dailyvibesapp) <a href="https://twitter.com/dailyvibesapp/status/963579252586221568?ref_src=twsrc%5Etfw">February 14, 2018</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - While using DV, I noticed myself wanting to add multiple entries at the same time. So, I wanted to build something in.
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Starting 🔨 work on adding 🗂 multiple items. This is where we are now 🤓! <a href="https://twitter.com/hashtag/dailyvibes?src=hash&amp;ref_src=twsrc%5Etfw">#dailyvibes</a> <a href="https://twitter.com/hashtag/productivity?src=hash&amp;ref_src=twsrc%5Etfw">#productivity</a> <a href="https://twitter.com/hashtag/dailyprogress?src=hash&amp;ref_src=twsrc%5Etfw">#dailyprogress</a> Feb 17 2018 <a href="https://t.co/rlTA3dpMGk">pic.twitter.com/rlTA3dpMGk</a></p>&mdash; Daily Vibes (@dailyvibesapp) <a href="https://twitter.com/dailyvibesapp/status/964938263759937536?ref_src=twsrc%5Etfw">February 17, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Starting 🔨 work on adding 🗂 multiple items. This is where we are now 🤓! <a href="https://twitter.com/hashtag/dailyvibes?src=hash&amp;ref_src=twsrc%5Etfw">#dailyvibes</a> <a href="https://twitter.com/hashtag/productivity?src=hash&amp;ref_src=twsrc%5Etfw">#productivity</a> <a href="https://twitter.com/hashtag/dailyprogress?src=hash&amp;ref_src=twsrc%5Etfw">#dailyprogress</a> Feb 17 2018 <a href="https://t.co/rlTA3dpMGk">pic.twitter.com/rlTA3dpMGk</a></p>&mdash; Daily Vibes (@dailyvibesapp) <a href="https://twitter.com/dailyvibesapp/status/964938263759937536?ref_src=twsrc%5Etfw">February 17, 2018</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - This error took a few days to fix ...
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Getting this error when uploading to iTC. Our app has arm64 in UIRequiredDeviceCapabilities. Who broke iTC again…<br><br>ERROR ITMS-90502: &quot;Invalid Bundle. Apps that only contain the arm64 slice must also have &#39;arm64&#39; in the list of UIRequiredDeviceCapabilities in Info.plist.&quot;</p>&mdash; Andrew Mayers (@jamayers) <a href="https://twitter.com/jamayers/status/966457450948911104?ref_src=twsrc%5Etfw">February 21, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Getting this error when uploading to iTC. Our app has arm64 in UIRequiredDeviceCapabilities. Who broke iTC again…<br><br>ERROR ITMS-90502: &quot;Invalid Bundle. Apps that only contain the arm64 slice must also have &#39;arm64&#39; in the list of UIRequiredDeviceCapabilities in Info.plist.&quot;</p>&mdash; Andrew Mayers (@jamayers) <a href="https://twitter.com/jamayers/status/966457450948911104?ref_src=twsrc%5Etfw">February 21, 2018</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 - This error also took a few days to correct
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There are a lot of responses to &quot;No accounts with iTunes Connect Access&quot; error and yet none have worked so far =(</p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/960690718531571713?ref_src=twsrc%5Etfw">February 6, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There are a lot of responses to &quot;No accounts with iTunes Connect Access&quot; error and yet none have worked so far =(</p>&mdash; Alex Kluew 🇨🇦 (@getaclue_1) <a href="https://twitter.com/getaclue_1/status/960690718531571713?ref_src=twsrc%5Etfw">February 6, 2018</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Apple Store
 
@@ -100,7 +108,7 @@ After listening to some [feedback on IndieHackers](https://www.indiehackers.com/
 > todo,list,organizer,tracker,task,project,things,productivity,to do,to-do,keep,reminder,day planner
 
 > life organizer, good vibes, daily tasks, daily office, daily calender,
-daily lists, daily organizer, lists maker, 
+> daily lists, daily organizer, lists maker,
 
 - make screenshots localized with pretty text (via [fastlane.tools](fastlane.tools)) ... something like:
 

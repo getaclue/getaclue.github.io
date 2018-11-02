@@ -20,6 +20,8 @@ meta: {}
 excerpt: 'We have looked at a set, a sequence, and a progression so far. How do these things relate to a series?'
 datePublished: 2018-10-10 18:52:01
 dateModified: 2018-10-10 18:52:01
+redirect_from:
+  - /blog/relationships-between-sets-series-progressions-and-sequences
 ---
 
 Today I ended up exploring a topic that I didn't expect: what is the difference between a sequence and a series.
@@ -38,7 +40,7 @@ and
 
 > geometric progression determines the next number **by multiplying** the previous value by a fixed constant
 
-which made me go *Aha*. All I had to do was check if the thing was made by adding or by multiplying? Seems easy enough to get.
+which made me go _Aha_. All I had to do was check if the thing was made by adding or by multiplying? Seems easy enough to get.
 
 I'm sure I had the same thoughts back in school. So, I decided to play around and see what I find confusing so I could fix my gaps in knowledge. I thought: hmm, they are using both terms, a `progression` and `sequence`, in one sentence. Confused &mdash; because if you don't really pay attention then you could interpret these two terms as having a similar meaning.
 
@@ -50,7 +52,7 @@ Unlike my former student self, I have the leisure and time to explore this furth
 
 I found the following excerpt on quora from [how does sequence and progression differ?](https://www.quora.com/How-does-sequence-and-progression-differ)
 
->... all progressions are sequences, all sequences are not progression ...
+> ... all progressions are sequences, all sequences are not progression ...
 
 OK, so that brought my understanding a bit closer. So a sequence is a collection of things. Hmm, but that sounds very close to what a set is. So, what is the difference between a sequence and a set? Is there one? Decided to consult wonderful [wikipedia definition](https://en.wikipedia.org/wiki/Sequence) for more information.
 
@@ -64,12 +66,12 @@ So, the definition of a sequence and how it differs from a set is starting to ma
 
 Just like in the quote above from the [textbook], it follows that there are at least two such relationships:
 
-  1. a relationship between two members such that the difference between these two members is a constant &mdash; this is called an _arithmetic progression_ or _arithmetic sequence_.
-  2. a relationship between two members such that the [quotient of any two successive members of the sequence is a constant](https://www.math10.com/en/algebra/geometric-progression.html) &mdash; this is called a _geometric progression_ or a _geometric sequence_.
+1. a relationship between two members such that the difference between these two members is a constant &mdash; this is called an _arithmetic progression_ or _arithmetic sequence_.
+2. a relationship between two members such that the [quotient of any two successive members of the sequence is a constant](https://www.math10.com/en/algebra/geometric-progression.html) &mdash; this is called a _geometric progression_ or a _geometric sequence_.
 
-  Or said it another way (from the same [textbook] as mentioned):
+Or said it another way (from the same [textbook] as mentioned):
 
-  > geometric progression, in which each value is produced by multiplying the preceding value by a fixed constant, known as the **base of the geometric progression**.
+> geometric progression, in which each value is produced by multiplying the preceding value by a fixed constant, known as the **base of the geometric progression**.
 
 We have looked at a set, sequence, and a progression so far. How do these things relate to a _series_? Very simple &mdash; a series is just the summation of all of the elements in the sequence. So, it then follows, what is the sum of the elements in a given sequence represented by? A series. Just like that. It finally makes sense how a series and a sequence are related. Nothing complicated. No new formulas. Just the proper definitions presented in a familiar way.
 

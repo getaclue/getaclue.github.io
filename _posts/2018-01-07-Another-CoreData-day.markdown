@@ -13,6 +13,8 @@ status: publish
 type: post
 published: true
 meta: {}
+redirect_from:
+  - /blog/Another-CoreData-day
 ---
 So, today, I decided to implement the Sharing extension. Oh boy, did I not expect to lose all of the data but it was necessary. It turns out that if you want to, at a time in the future, to add things to your app, well then you may be in for some effort.
 

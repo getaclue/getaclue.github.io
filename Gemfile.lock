@@ -234,6 +234,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-redirect-from
   jekyll-twitter-plugin (~> 2.0)
 
 BUNDLED WITH

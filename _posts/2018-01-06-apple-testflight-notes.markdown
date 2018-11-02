@@ -1,20 +1,23 @@
 ---
 layout: post
-title: "Apple TestFlight Registration Notes"
+title: 'Apple TestFlight Registration Notes'
 categories:
-- iOS
-- podcast
+  - iOS
+  - podcast
 tags:
-- software development
-- software engineering
-- productivity
-- growth
-- resources
+  - software development
+  - software engineering
+  - productivity
+  - growth
+  - resources
 status: publish
 type: post
 published: true
 meta: {}
+redirect_from:
+  - /blog/apple-testflight-notes
 ---
+
 ![TestFlight image](https://cdn-pro.dprcdn.net/files/acc_603419/nauNKe)
 
 Today, I crossed off one of the things that I wanted to do since December. I recorded my experience and thought process of registering for [TestFlight](https://developer.apple.com/testflight/). This means that I went from nothing to having an App on the Apple App Store's TestFlight section.

@@ -1,25 +1,28 @@
 ---
 layout: post
-title: "Improving iOS performance with Xcode and Instruments for dummies"
+title: 'Improving iOS performance with Xcode and Instruments for dummies'
 categories:
-- iOS
-- swift
-- Software Development
-- iOS App Development
-- Mobile App Development
+  - iOS
+  - swift
+  - Software Development
+  - iOS App Development
+  - Mobile App Development
 tags:
-- software development
-- software engineering
-- tutorial
+  - software development
+  - software engineering
+  - tutorial
 status: publish
 type: post
 published: true
 meta: {}
-image: "https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd"
+image: 'https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd'
 excerpt: "Don't know where to start? Try this"
 datePublished: 2018-03-24 16:54:31
 dateModified: 2018-03-30 09:16:24
+redirect_from:
+  - /blog/improving-ios-performance-with-xcode-and-instruments-for-dummies
 ---
+
 ![Image for the post](https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd)
 
 Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)
@@ -34,7 +37,7 @@ I'm actually really surprised at the amount of tooling that is given to you in t
 
 ## Why did I type that paragraph above?
 
-Because if you have an aversion to IDEs and think that Xcode looks just like the other IDEs, then I am here to tell you that it really is not. Xcode *IS* a pleasure to use and I use it every day. (_PS_: If you are getting angry while reading this and saying **!?Xcode sucks!?** Don't get so upset. I will admit, it is not perfect.)
+Because if you have an aversion to IDEs and think that Xcode looks just like the other IDEs, then I am here to tell you that it really is not. Xcode _IS_ a pleasure to use and I use it every day. (_PS_: If you are getting angry while reading this and saying **!?Xcode sucks!?** Don't get so upset. I will admit, it is not perfect.)
 
 ## Instruments
 
@@ -58,7 +61,7 @@ Or like this:
 
 (I didn't want to leave you waiting while my slow computer takes its time to compile and open up... but you get the idea)
 
-What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say *on* your application.
+What you do next is kind of interesting. All of the icons that you see above represent the different kinds of tool that you can run on your application. (I think of this screen as a collection of apps for your app). Hopefully you will understand why I say _on_ your application.
 
 Out of all of the available options, I've only gotten familiar with Activity Monitor, Allocations, Leaks, and Time Profiler. Oh yes, not only are these tools wonderful but the naming conventions are intuitive and grouped by colour. Amazing.
 
@@ -80,11 +83,11 @@ You might be asking, now what? How about we hit that big Red Record button ⏺ ?
 
 ## Now what? 🤔
 
-Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment... Time Profiler *records* what it sees your app is doing during a specific time interval. Makes sense?
+Now you use your app! What Instruments, or should I say Time Profiler, does in the background is it samples your environment... Time Profiler _records_ what it sees your app is doing during a specific time interval. Makes sense?
 
 And if you have ever used software that has some kind of manipulation of a timeline, then you will be just fine.
 
-So this is a *snapshot* of how your app behaves, or its environment:
+So this is a _snapshot_ of how your app behaves, or its environment:
 ![Time Profiler Sample in Xcode](https://d.pr/i/GPnnjB+)
 
 time profiler records many such samples at a regular interval over time:
@@ -94,6 +97,7 @@ until you press the stop button ofcourse:
 ![Time Profiler from start to stop in Xcode](https://d.pr/i/A5InKH+)
 
 ## Now what? 🤔
+
 Now you get to take off your developer hat 🎩 and play a detective 🕵️‍ ... for real... how cool is that?
 
 Since we are exploring the Timing Profiler, we are interesting in timing. You can open up (expand) the tree, that Xcode conveniently made for you, and go exploring 🗺. See which areas or which methods in your code take a long time. It very simple. Just click expand ⏬ and dive 🏊‍ in:
@@ -123,6 +127,7 @@ You can... double click on the method, and it will show you EXACTLY which lines 
 ![Double clicking on a method in Time Profiler in Xcode](https://d.pr/i/IOa6qa+)
 
 ## Conclusion
+
 There you have it friends. I'd like you to take away three things from this:
 
 - Xcode is pretty awesome 🔥
@@ -136,6 +141,6 @@ Until next time,
 
 Alex
 
-PS: I hope I did not offend you with the *for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.
+PS: I hope I did not offend you with the \*for dummies tagline. I love technical documents but I feel like they need a bit of flavour sometimes. I simply want this technical mumbo-jumbo to feel relatable and friendly.
 
 Update: This article was also posted on [medium](https://medium.com/@getaclue_1/improving-ios-performance-with-xcode-and-instruments-for-dummies-b42a731b5240)

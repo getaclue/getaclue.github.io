@@ -1,32 +1,36 @@
 ---
 layout: post
-title: "How to make perfect iOS screenshots with a clean status bar in 2018"
+title: 'How to make perfect iOS screenshots with a clean status bar in 2018'
 categories:
-- iOS
-- swift
-- Software Development
-- iOS App Development
-- Mobile App Development
-- fastlane.tools
-- SimulatorStatusMagic
+  - iOS
+  - swift
+  - Software Development
+  - iOS App Development
+  - Mobile App Development
+  - fastlane.tools
+  - SimulatorStatusMagic
 tags:
-- software development
-- software engineering
-- tutorial
+  - software development
+  - software engineering
+  - tutorial
 status: publish
 type: post
 published: true
 meta: {}
-image: "https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy"
-excerpt: "Using fastlane.tools and SimulatorStatusMagic"
+image: 'https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy'
+excerpt: 'Using fastlane.tools and SimulatorStatusMagic'
 datePublished: 2018-03-30 09:15:27
 dateModified: 2018-03-30 09:45:29
+redirect_from:
+  - /blog/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlanetools-and-simulatorstatusmagic
 ---
+
 ![Image for the post](https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy)
 
 Hi friends,
 
 ## Before we begin
+
 Before I begin, I am assuming you are already running your UITests using [fastlane.tools](https://fastlane.tools/). If not, I would suggest that you get yourself familiarized [here](https://docs.fastlane.tools/getting-started/ios/screenshots/). It saves you lots of time and it is especially indispensable for solo developers like myself.
 
 ## What is this article about?
@@ -51,11 +55,13 @@ We will be using [fastlane.tools](https://fastlane.tools/) in combination with [
 The text above is taken verbatim from the library's [description](https://github.com/shinydevelopment/SimulatorStatusMagic).
 
 ## Why would you want to do that?
+
 Well, such attention to detail adds extra value to your product by making your marketing material that much better than your competition. If you take a second to scan the Apple App store, the top apps provide some level of consistency in their marketing material. It follows, you should work towards achieving a similar level of consistency because it is not really not that hard. And if you set this up once, it will work.
 
 So, I wanted to the improve the screenshots that I use to market [Daily Vibes](https://dailyvibes.ca/) in my next update.
 
 ## What did I try?
+
 Installed SimulatorStatusMagic using cocoapods by adding the following line to my Podfile, like this:
 
 ```ruby
@@ -85,6 +91,7 @@ I really wanted to get this to work. However, as a result of [these](https://git
 1. `import SimulatorStatusMagic`
 2. leverage snapshot's [launch arguments](https://docs.fastlane.tools/getting-started/ios/screenshots/#advanced-snapshot) - `FASTLANE_SNAPSHOT` is set to true
 3. call in code as you wanted
+
 ```rb
 if NSUserDefaults.standardUserDefaults().boolForKey("FASTLANE_SNAPSHOT") {
 ...
