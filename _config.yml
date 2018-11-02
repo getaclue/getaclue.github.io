@@ -36,7 +36,7 @@ plugins:
   - jekyll-redirect-from
 permalink: /b/:year/:month/:title
 paginate: 4
-paginate_path: '/b/:year/:month/page:num/'
+paginate_path: '/blog/page:num/'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
