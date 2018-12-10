@@ -7,8 +7,9 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2018-10-08 14:14:19
-datePublished: 2018-08-21 15:58:31
+dateModified: 2018-12-10 15:59:45
+datePublished: 2018-10-08 14:14:19
+dateCreated: 2018-08-21 15:58:31
 ---
 
 # Hello friend!
@@ -25,7 +26,7 @@ Welcome to my little corner of the Internet. This place is my collection of thin
   - [Honours BSc in Psychology](https://socialsciences.uottawa.ca/programs/undergraduate-course-sequences/honours-bsc-psychology)
 - _open to new opportunities in Toronto or remote_ <a href="mailto:info@getaclue.me?subject=Available%20Opportunity%20in%20Toronto%20or%20remote" title="hire me">hire me</a>
 - life-long interest in software engineering discipline
-- [resume](https://getaclue.github.io/files/Alex_Kluew_Resume_2017.pdf)
+- [resume](https://getaclue.github.io/files/Alex_Kluew_Resume_December_10_2018.pdf)
 
 ## Technology I am familiar with:
 
