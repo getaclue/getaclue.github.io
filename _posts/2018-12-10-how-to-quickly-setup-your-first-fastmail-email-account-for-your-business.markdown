@@ -19,7 +19,7 @@ image: 'https://cdn-std.dprcdn.net/files/acc_603419/0hcE7y'
 excerpt: 'How to quickly setup professional email for your business domain using fastmail.'
 dateCreated: 2018-12-10 16:47:57
 datePublished: 2018-12-10 19:16:00
-dateModified: 2018-12-10 19:16:00
+dateModified: 2018-12-10 19:24:02
 ---
 
 ![Title of the article](https://cdn-std.dprcdn.net/files/acc_603419/0hcE7y)
@@ -81,7 +81,7 @@ go check on your [fastmail] account setting dashboard under domains. Everything 
 ### Note: Mac native Mail.app installation
 
 - follow the automatic installation link that you get during the process of creating a brand new application password
-- it works as of `2018-12-10 19:13:12` on Mojave `10.14.4`
+- it works as of `2018-12-10 19:13:12` on Mojave `10.14.2`
 
 ### Note: iOS 12 installation
 
@@ -103,6 +103,8 @@ The work around is simple: just enter it manually. Check out this [example].
 
 - you will need to create [app password]s a bunch... so read about it...
 - setup [2-fa] security for your business account. ps: don't use the cellphone/text option... use something like [FreeOTP]
+
+See you next time
 
 [fastmail]: https://www.fastmail.com
 [cspray.ca]: https://cspray.ca
