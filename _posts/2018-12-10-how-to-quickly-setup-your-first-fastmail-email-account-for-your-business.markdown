@@ -19,7 +19,7 @@ image: 'https://cdn-std.dprcdn.net/files/acc_603419/0hcE7y'
 excerpt: 'How to quickly setup professional email for your business domain using fastmail.'
 dateCreated: 2018-12-10 16:47:57
 datePublished: 2018-12-10 19:16:00
-dateModified: 2018-12-10 19:24:02
+dateModified: 2018-12-20 06:13:51
 ---
 
 ![Title of the article](https://cdn-std.dprcdn.net/files/acc_603419/0hcE7y)
@@ -105,6 +105,8 @@ The work around is simple: just enter it manually. Check out this [example].
 - setup [2-fa] security for your business account. ps: don't use the cellphone/text option... use something like [FreeOTP]
 
 See you next time
+
+UPDATE 2018-12-20 06:16:09 : A version of this article was also posted on [here](https://www.linkedin.com/pulse/how-quickly-setup-custom-fastmail-email-account-your-business-kluew).
 
 [fastmail]: https://www.fastmail.com
 [cspray.ca]: https://cspray.ca
