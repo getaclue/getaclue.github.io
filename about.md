@@ -32,6 +32,7 @@ Welcome to my little corner of the Internet. This place is my collection of thin
 
 I am always learning and experimenting on my own time. My computer science foundation, coupled with software engineering training, allows me to jump into any code base and any language.
 
+- been enjoying Swift lately
 - computer science foundation using Java and C
 - familiar with Ruby (Ruby on Rails, Sinatra)
 - familiar with Javascript (React, React Native, Ember, ES2016, ES2017, and ES2018)
@@ -43,7 +44,7 @@ I am always learning and experimenting on my own time. My computer science found
 - familiar with cross-browser development
 - familiar with continuous deployment (codeship, travis, jenkins)
 - familiar in \*nix environments
-- competent in Swift
+- ~~competent in Swift~~
   - able to work with Objective-C
 - new in iOS development (since November 2017)
 - new in OS X development (since April 2018)
@@ -77,30 +78,30 @@ Thank you for stumbling upon me and reading this far. If I am looking for a job,
 - I like to work
 - I don't like to waste time (yours or mine)
 - I prefer to ask why not instead of why
-- I chose the software engineering profession for a reason
-- I like to think about software from the initial idea all the way to maintenance stage (or "end" if you like) [psych training surely complements engineering here]
 
 #### Why should you hire me?
 
 - I am reliable and honest
 - I listen to feedback and improve based on comments
-- I learn quickly
-- I care
+- I learn quickly and care about quality output
 
 #### What am I good at?
 
-- I will find a solution for whatever problem that is at hand or die trying
+- I will find a solution for the problem that I have at hand
 - I want everyone to succeed, thus I will provide honest advice
-- I like performing under stress
+- Connecting things together
 
 #### What am I bad at?
 
 - sometimes my solutions are complex
-- sometimes I struggle communicating complex ideas in easy to understand and digest words (one of the reasons behind this website 🤪)
+- sometimes I struggle communicating ideas
+- algorithms
 
 #### What can I do for you?
 
-- Give me 3 months and some tasks and see where this leads us
+- Open to 6 months opportunities for others please send email
+  - first 3 months &mdash; for project knowledge (can be quicker and will thus spill into below)
+  - remaining 3 months &mdash; for output
 - I promise to give my best shot
 - If it does not work out, no hard feelings
 
