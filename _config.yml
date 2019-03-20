@@ -19,9 +19,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal website and blog of Alex Kluew
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://getaclue.me' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: getaclue_1
+twitter_username: alexkluew
 github_username: getaclue
-instagram_username: getaclue_1
+instagram_username: alexkluew
 linkedin_username: getaclue
 google_analytics: UA-106794469-1
 google_site_verification: j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0
