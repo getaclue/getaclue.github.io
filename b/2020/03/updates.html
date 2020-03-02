@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Installing Mono on CentOS 7 - getaclue.me</title>
+  <title>Updates - getaclue.me</title>
 
   <!-- some help for the jekyll magic from https://aramzs.github.io/jekyll/social-media/2015/11/11/be-social-with-jekyll.html -->
 
@@ -13,31 +13,29 @@
   <meta name="google-site-verification" content="j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0" />
   
 
-  <link rel="canonical" href="https://getaclue.me/b/2014/10/Installing-Mono-on-CentOS-7">
-  <meta name="description" content="Obtain necessary gpg keysmkdir Monocd Monowget http://download.mono-project.com/repo/xamarin.gpg" />
-  <meta property="og:title" content="Installing Mono on CentOS 7">
+  <link rel="canonical" href="https://getaclue.me/b/2020/03/updates">
+  <meta name="description" content="Some updates since last post on December 2018" />
+  <meta property="og:title" content="Updates">
 
-  <meta property="og:url" content="https://getaclue.me/b/2014/10/Installing-Mono-on-CentOS-7" />
-  <meta property="og:site_name" content="https://getaclue.me/b/2014/10/Installing-Mono-on-CentOS-7" />
+  <meta property="og:url" content="https://getaclue.me/b/2020/03/updates" />
+  <meta property="og:site_name" content="https://getaclue.me/b/2020/03/updates" />
 
-  <meta property="og:description" content="Obtain necessary gpg keysmkdir Monocd Monowget http://download.mono-project.com/repo/xamarin.gpg" />
+  <meta property="og:description" content="Some updates since last post on December 2018" />
   <meta property="og:locale" content="en_US" />
 
-  <meta name="twitter:description" content="Obtain necessary gpg keysmkdir Monocd Monowget http://download.mono-project.com/repo/xamarin.gpg">
+  <meta name="twitter:description" content="Some updates since last post on December 2018">
 
   
   <meta property="og:type" content="article" />
   
-  <meta name="og:image" content="https://getaclue.me/assets/social-image-banner.png">
-  <meta name="twitter:image" content="https://getaclue.me/assets/social-image-banner.png">
+  <meta property="og:image" content="" />
+  <meta name="twitter:image" content="" />
   
-  
-  <meta property="article:tag" content="Projects" />
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@alexkluew">
   <meta name="twitter:creator" content="@alexkluew">
-  <meta name="twitter:title" content="Installing Mono on CentOS 7 - getaclue.me">
+  <meta name="twitter:title" content="Updates - getaclue.me">
 
   <meta name="author" content="Alex Kluew">
   <meta property="article:author" content="https://getaclue.me" />
@@ -51,21 +49,27 @@
         "@type": "WebPage",
         "@id": "https://google.com/article"
       },
-      "headline": "Obtain necessary gpg keysmkdir Monocd Monowget http://download.mono-project.com/repo/xamarin.gpg",
+      "headline": "Some updates since last post on December 2018",
       "image": {
         "@type": "ImageObject",
-        "url": "https://getaclue.me/assets/social-image-banner.png"
+        "url": ""
       },
       "author": {
         "@type": "Person",
         "name": "Alex Kluew"
       },
-      "datePublished": ""
+      "datePublished": "2020-03-02 06:35:36 +0000"
       
+      , "dateModified": "2020-03-02 06:35:36 +0000"
+      
+      
+      , "dateCreated": "2020-03-02 06:35:36 +0000"
       
     }
     </script>
-  <meta property="article:published_time" content="" />
+  <meta property="article:published_time" content="2020-03-02 06:35:36 +0000" />
+  
+  <meta property="article:modified_time" content="2020-03-02 06:35:36 +0000" />
   
   
 
@@ -136,12 +140,12 @@
     <div style="display:flex;align-items: center;justify-content: center;">
       <article class="not-post" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-          <h1 class="post-title" itemprop="name headline"><a href="/b/2014/10/Installing-Mono-on-CentOS-7">Installing Mono on CentOS 7</a></h1>
+          <h1 class="post-title" itemprop="name headline"><a href="/b/2020/03/updates">Updates</a></h1>
           <p class="post-meta">
-            <time datetime="2014-10-11T00:00:00-04:00" itemprop="datePublished">
+            <time datetime="2020-03-02T00:00:00-05:00" itemprop="datePublished">
               
-              Oct 11, 2014
-            </time> | <a href="https://twitter.com/home?status=Hey%20%40alexkluew%20your%20site%20is%20broken%20/b/2014/10/Installing-Mono-on-CentOS-7" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+              Mar 2, 2020
+            </time> | <a href="https://twitter.com/home?status=Hey%20%40alexkluew%20your%20site%20is%20broken%20/b/2020/03/updates" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
           </p>
@@ -150,7 +154,7 @@
 <span class="reading-time" title="Estimated read time">
   
   
-    <em>estimated 1 min to read</em>
+    <em>estimated 3 mins to read</em>
   
 </span>
 
@@ -158,47 +162,52 @@
         </header>
 
         <div class="post-content" itemprop="articleBody">
-          <h1 id="obtain-necessary-gpg-keys">Obtain necessary gpg keys</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir Mono
-cd Mono
-wget http://download.mono-project.com/repo/xamarin.gpg
-</code></pre></div></div>
+          <h3 id="some-updates-since-last-post-on-december-2018">Some updates since last post on December 2018</h3>
 
-<h1 id="import-gpg-key">Import gpg key</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo rpm --import xamarin.gpg
-</code></pre></div></div>
+<ul>
+  <li>not using <a href="https://www.fastmail.com">fastmail</a> – I currently paused on using fastmail for a more affordable <a href="https://privateemail.com">namecheap email</a> alternative. It works just fine for now.</li>
+  <li>Took a pause – last year was intense and required me to take a pause. I had a lot of personal issues last year that took time away from all of my previously enjoyed side projects. Thus, I had to put most of them on pause. Taking a pause really threw a wrench in my motivation and my previous velocity.</li>
+  <li>Elderoost - also happens that someone purchased elderoost.com as I paused on the project. Very weird; oh well. All of the data and the actual project is offline. The project currently is currently on pause as I learn django. Goal is to re-write the project using Python.</li>
+  <li>Daily Vibes - I did not repay my Apple’s developer fee so my project is not available from the Apple store any longer. I can show you the project in person if you like. Project is on pause for now. I still have ideas on returning to the project however. I am considering a re-write for version 2 – I will probably pay for the developer fees only as I get closer to production. Been thinking of rewriting in React Native or something cross-platform.</li>
+  <li>daily 15 minutes of reading</li>
+  <li>daily 30 minutes of software</li>
+  <li>being deliberate about daily practice</li>
+  <li>building better habbits</li>
+</ul>
 
-<h1 id="add-mono-package-repository">Add Mono package repository</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
-</code></pre></div></div>
+<h3 id="attacking-weaknesses">Attacking weaknesses</h3>
 
-<h1 id="add-epel">Add EPEL</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
-</code></pre></div></div>
+<p>For me, the best way to attack my weaknesses is to, first, identify them. Sometimes this takes a lot of effort because you need to be systematic about your days. Best way to record and identify this is to use a diary or a journal. I am currently attacking my two weaknesses that I want to be more productive in :</p>
 
-<h1 id="update-everything">Update everything</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum update
-</code></pre></div></div>
+<ol>
+  <li>regular software / programming and</li>
+  <li>regular reading.</li>
+</ol>
 
-<h1 id="start-installing-mono">Start installing Mono</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum install mono-devel
-sudo yum install mono-complete
-</code></pre></div></div>
+<p>I am reading for at least 15 minutes per day. I am doing a 30 minutes a day programming activity. At this moment, I am learning python language and django framework. I hope to move on to 30 minutes a day of regular programming. I will then move on to the competitive programming to get ready for interviews. However, I am hoping to acquire new skills such that I would be ready for future interviews on a shorter schedule. Current timeline, goal is to be ready for summer.</p>
 
-<h1 id="optional-test-your-mono-installation">Optional: Test your Mono installation</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://www.mono-project.com/docs/getting-started/mono-basics/
-</code></pre></div></div>
+<p>Some recent excerpts from the Flow Book :</p>
 
-<h1 id="running-mono">Running Mono</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/foo/bar/
-mono foo.exe
-</code></pre></div></div>
+<blockquote>
+  <p>Without the goal and the challenges usually provided by a job, only a rare self-discipline can keep the mind focused intensely enough to insure a meaningful life.</p>
+</blockquote>
 
-<h1 id="reference">Reference</h1>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://www.mono-project.com/docs/getting-started/install/linux/
-http://www.mono-project.com/docs/getting-started/mono-basics/
-https://fedoraproject.org/wiki/EPEL/FAQ
-</code></pre></div></div>
+<blockquote>
+  <p>When spending time at home with the fam­ily or alone, people often lack a clear purpose, do not know how well they are doing, are distracted, feel that their skills are underutilized, and as a result feel bored or-more rarely anxious.</p>
+</blockquote>
+
+<blockquote>
+  <p>In our ESM studies we find that even physical health is better when a person focuses on a goal. On weekends, when alone, and with nothing to do, people report more symptoms of illness.</p>
+</blockquote>
+
+<blockquote>
+  <p>In other words, each of the flow-producing activities requires an initial investment of attention before it begins to be enjoyable.</p>
+</blockquote>
+
+<blockquote>
+  <p>When productive activities become too routine and meaningless, leisure will pick up the slack. It will take up progressively more time, and rely on in­creasingly more elaborate artificial stimulation.</p>
+</blockquote>
+
 
 
           <p style="margin-top: 30px" class="side-projects-note">
@@ -215,19 +224,15 @@ https://fedoraproject.org/wiki/EPEL/FAQ
         </style>
         <div class="not-post-page-navigation">
           
-          <a href="/b/2014/10/Configuring-SSH-on-CentOS-7" title="Configuring SSH Server on CentOS 7">&laquo;
+          <a href="/b/2018/12/how-to-quickly-setup-your-first-fastmail-email-account-for-your-business" title="How to quickly setup custom fastmail email account for your business domain">&laquo;
             Previous Essay</a>
           
-          
-          <a href="/b/2014/10/A-different-archival-strategy-for-pictures" title="A different archival strategy for pictures on CentOS 7">Next Essay &raquo;</a>
           
         </div>
 
         <p class="extra-info">
           
-          Tags: CentOS 7, beginner, guide, mono &nbsp; | &nbsp;
-          
-          <a href="https://twitter.com/home?status=Hey%20%40alexkluew%20your%20site%20is%20broken%20/b/2014/10/Installing-Mono-on-CentOS-7" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+          <a href="https://twitter.com/home?status=Hey%20%40alexkluew%20your%20site%20is%20broken%20/b/2020/03/updates" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
  Report a bug via Twitter</a>
 
         </p>

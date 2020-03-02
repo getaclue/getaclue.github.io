@@ -37,6 +37,11 @@
 
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="stylesheet" href="/assets/main.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
   <link rel="alternate" type="application/rss+xml" title="Alex Kluew" href="/feed.xml">
   
   <script>
@@ -145,6 +150,42 @@
   
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/stacks-october-25-2018">Stacks October 25 2018</a></h1>
+      <p class="post-meta">
+        Published on: <time datetime="2018-10-25T19:26:00-04:00" itemprop="datePublished">
+          
+          Oct 25, 2018
+        </time>
+        Last updated on: <time datetime="2018-10-25T19:26:00-04:00" itemprop="dateModified">
+          
+          Oct 25, 2018
+        </time>
+      </p>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      On “Implementing a Stack with a Singly Linked List” In designing such an implementation, we need to decide if the top of the stack is at the front or back of the list. There is clearly a best choice here, however, since we can insert and delete elements in constant time only at the front. With the top of the stack stored at the front of the list, all methods execute in constant time. The Adapter Pattern One general way to apply the adapter pattern is to define a new class in such a way that it contains an instance of the existing class as a hidden field, and then to implement each method of the new class using methods of this hidden instance variable. By applying the adapter pattern in this way, we have created a new class that...
+      <p style="display:flex; justify-content: flex-end;">
+        <a href="/b/2018/10/stacks-october-25-2018" title="Continue Reading Stacks October 25 2018">Continue Reading →</a>
+      </p>
+      <p style="margin-top: 30px" class="side-projects-note">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+    </div>
+
+    <p class="extra-info">
+      
+      Tags: software engineering, javascript &nbsp; | &nbsp;
+      
+      <a href="https://twitter.com/home?status=Hey%20%40alexkluew%20your%20site%20is%20broken%20/blog/page2/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+ Report a bug via Twitter</a>
+
+    </p>
+  </article>
+  
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
       <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/october-20-2018">October 20 2018</a></h1>
       <p class="post-meta">
         Published on: <time datetime="2018-10-20T09:50:01-04:00" itemprop="datePublished">
@@ -234,42 +275,6 @@
       Private Members in JavaScript Private members are made by the constructor. Ordinary vars and parameters of the constructor become the private members. They are attached to the object, but they are not accessible to the outside, nor are they accessible to the object’s own public methods. By convention, we make a private that variable. This is used to make the object available to the private methods. function someFunction(someParam) { var that = this; } Private methods cannot be called by public methods. To make private methods useful, we need to introduce a privileged method. A privileged method is able to access the private variables and methods, and is itself accessible to the public methods and the outside. It is possible to delete or replace a privileged method, but it is not possible to alter it, or to force it to...
       <p style="display:flex; justify-content: flex-end;">
         <a href="/b/2018/10/october-18-2018" title="Continue Reading October 18 2018">Continue Reading →</a>
-      </p>
-      <p style="margin-top: 30px" class="side-projects-note">
-  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
-</p>
-
-    </div>
-
-    <p class="extra-info">
-      
-      Tags: software engineering, personal development &nbsp; | &nbsp;
-      
-      <a href="https://twitter.com/home?status=Hey%20%40alexkluew%20your%20site%20is%20broken%20/blog/page2/" target="_blank" class="forkButton"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
- Report a bug via Twitter</a>
-
-    </p>
-  </article>
-  
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/b/2018/10/untitled">Untitled</a></h1>
-      <p class="post-meta">
-        Published on: <time datetime="2018-10-17T19:39:01-04:00" itemprop="datePublished">
-          
-          Oct 17, 2018
-        </time>
-        Last updated on: <time datetime="2018-10-17T19:39:01-04:00" itemprop="dateModified">
-          
-          Oct 17, 2018
-        </time>
-      </p>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
-      “If big tech companies are going to turn their back on the DoD, this country is going to be in trouble,” said Bezos on stage at the Wired25 conference in San Francisco on Monday. I can view this comment through my Canadian glasses =) Having worked in academia, private, and, now, government environments at various levels — I can definitely appreciate the intricacies that go behind the scenes. While we are different countries, we follow similar implementations of organizational structures. We most likely use similar enterprise hardware and software. I also assume that applications of these things are similar in US and Canada. I further assume that such organizations have similar goals (perhaps different strategies). So when I see something like the following It has already worked with the DoD and multiple law enforcement agencies have used its facial recognition...
-      <p style="display:flex; justify-content: flex-end;">
-        <a href="/b/2018/10/untitled" title="Continue Reading Untitled">Continue Reading →</a>
       </p>
       <p style="margin-top: 30px" class="side-projects-note">
   <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
