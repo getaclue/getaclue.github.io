@@ -24,13 +24,15 @@ So, here are some projects that I have been involved in.
 
 ## Lastminutelaura (2019 - Present)
 
-Wordpress platform modified to be an e-commerce store. Stripe checkout for recurring memberships for supporters. Discource forums platform. See [here](https://lastminutelaura.ca).
+Wordpress platform modified to be an e-commerce store. [Stripe](https://stripe.com/en-ca) checkout for recurring memberships for supporters. [Discource](https://www.discourse.org/) forums platform. See [lastminutelaura.ca](https://lastminutelaura.ca).
 
 ## Daily Vibes (November 2017 - December 2019)
 
-iOS app that was in the Apple store. Currently offline due to lack of funds. <mark>Technologies used to build</mark> : Swift, Xcode, Git, worked on the app during iOS 10 to iOS 13.
+Solo developer project. iOS app that was in the Apple store for two years. Currently offline due to lack of funds. <mark>Technologies used to build</mark> : Swift, Xcode, Git, worked on the app during iOS 10 to iOS 13.
 
-- Solo Developer
+- 🆕 [Swift Code Sample](https://github.com/dailyvibes/dailyvibes.ios.swift)
+- 🆕 [Reactjs + Javascript Code Sample](https://github.com/dailyvibes/dailyvibes.front.end)
+- 🆕 [dailyvibes.ca website Code Sample](https://github.com/getaclue/dailyvibes.ca)
 - [Kickstarter campaign](https://www.kickstarter.com/projects/471588901/daily-vibes)
 - [ProductHunt upcoming](https://www.producthunt.com/upcoming/daily-vibes/)
 - [Backstory](https://gist.github.com/getaclue/f1a3b6be4bf5a25d931a0b0bc6099885)
