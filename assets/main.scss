@@ -101,6 +101,9 @@ blockquote {
   }
 }
 article {
+  border: 2px solid #111111;
+  padding: 1em;
+  background-color: #ffffff;
   max-width: calc(100%);
 }
 
@@ -161,6 +164,9 @@ article {
     margin-bottom: 16px;
   }
 }
+body {
+  background-color: #eeeeee;
+}
 body,
 html {
   overflow-x: hidden;
@@ -168,6 +174,7 @@ html {
 .home {
   article {
     margin-bottom: 70px;
+    max-width: 55vw;
   }
 }
 .wrapper {
@@ -182,6 +189,7 @@ html {
   a {
     color: $title-color !important;
     text-decoration: none;
+    background: #fbf1a9;
     &:hover {
       color: #0037f5 !important;
     }
@@ -205,6 +213,7 @@ html {
     line-height: 1.2em;
     font-size: 32px;
     margin-top: 30px;
+    background: #fbf1a9;
   }
   .trigger {
     margin-top: 20px;
