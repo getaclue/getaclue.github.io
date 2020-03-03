@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2020-03-03T15:23:28-05:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Updates</title><link href="https://getaclue.me/b/2020/03/updates" rel="alternate" type="text/html" title="Updates" /><published>2020-03-02T00:00:00-05:00</published><updated>2020-03-02T00:00:00-05:00</updated><id>https://getaclue.me/b/2020/03/updates</id><content type="html" xml:base="https://getaclue.me/b/2020/03/updates">&lt;h3 id=&quot;some-updates-since-last-post-on-december-2018&quot;&gt;Some updates since last post on December 2018&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2020-03-03T15:55:02-05:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Keeping up with keeping up</title><link href="https://getaclue.me/b/2020/03/keeping-up-in-software" rel="alternate" type="text/html" title="Keeping up with keeping up" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>https://getaclue.me/b/2020/03/keeping-up-in-software</id><content type="html" xml:base="https://getaclue.me/b/2020/03/keeping-up-in-software">&lt;p&gt;If you are not producing projects, writing, or contributing socially and you are a software person, are you growing? I have been experiencing a bit of FOMO. You see, last year I kind of went on a social diet of sorts and reduced my presence on social platforms. One of the negative outcomes of this, is my lack of output during this time.&lt;/p&gt;
+
+&lt;p&gt;Now you see, I have had output at work but that does not satisfy me. I don’t have a thing that I can show or talk about that is interesting on average.&lt;/p&gt;
+
+&lt;p&gt;It seems that in this software craftperson field, you need to be methodical about your work plus document it. Plus… plus… you need to showcase it somehow. A portfolio is kind of a must in our software field. At least for now, since I don’t know what the future holds. I mean, architects and artists have a portfolio that they carry and showcase. I suppose, why not software craftpersons as well?&lt;/p&gt;
+
+&lt;p&gt;The projects don’t have to be finished or in a perfect state, any state will do well as a showcase of your work. The older I grow, the more happy I am that I keep some of my chaotic work on this domain.&lt;/p&gt;
+
+&lt;p&gt;I need to work a bit more to describe the various projects and work that I did throughout the years. I hope that by writing more frequently in this blog I will be more attune with my thought process.&lt;/p&gt;
+
+&lt;p&gt;I think I prefer to think of my work as a constant flow of never ending ideas. A stream of consciousness that seems to be the right thing to do at the right time. This space is where I record it.&lt;/p&gt;
+
+&lt;p&gt;I will try &lt;em&gt;yet again&lt;/em&gt; to be less critical and be more permissive at recording and producing output.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;They&lt;/em&gt; say that you should not worry and just make for the sake of making. While, that is true … it helps to document that work in THIS field.&lt;/p&gt;
+
+&lt;p&gt;links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://www.sideprojectors.com/&lt;/li&gt;
+  &lt;li&gt;https://news.ycombinator.com/item?id=22465475&lt;/li&gt;
+  &lt;li&gt;https://www.uplift.ltd/careers/&lt;/li&gt;
+  &lt;li&gt;https://selenium-python.readthedocs.io/getting-started.html&lt;/li&gt;
+  &lt;li&gt;https://github.com/puppeteer/puppeteer&lt;/li&gt;
+  &lt;li&gt;https://macopenweb.com/&lt;/li&gt;
+  &lt;li&gt;https://github.com/manash-biswal/Python-Books&lt;/li&gt;
+  &lt;li&gt;https://thoughtbot.com/upcase/videos/tmux-introduction&lt;/li&gt;
+  &lt;li&gt;https://docs.djangoproject.com/en/3.0/intro/tutorial02/#introducing-the-django-admin&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="misc" /><category term="random" /><summary type="html">Keeping up with keeping up</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://getaclue.me/" /></entry><entry><title type="html">Updates</title><link href="https://getaclue.me/b/2020/03/updates" rel="alternate" type="text/html" title="Updates" /><published>2020-03-02T00:00:00-05:00</published><updated>2020-03-02T00:00:00-05:00</updated><id>https://getaclue.me/b/2020/03/updates</id><content type="html" xml:base="https://getaclue.me/b/2020/03/updates">&lt;h3 id=&quot;some-updates-since-last-post-on-december-2018&quot;&gt;Some updates since last post on December 2018&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;not using &lt;a href=&quot;https://www.fastmail.com&quot;&gt;fastmail&lt;/a&gt; – I currently paused on using fastmail for a more affordable &lt;a href=&quot;https://privateemail.com&quot;&gt;namecheap email&lt;/a&gt; alternative. It works just fine for now.&lt;/li&gt;
@@ -887,91 +915,4 @@
 
 &lt;p&gt;So that makes sence =)&lt;/p&gt;
 
-&lt;p&gt;Also noticing that I am spending way too much on these and that was never the intention. I keep editing or deleting. My focus is on interview prep. Anywho, see you next time =)&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">Fixing your weakness</title><link href="https://getaclue.me/b/2018/10/fixing-your-weaknesses" rel="alternate" type="text/html" title="Fixing your weakness" /><published>2018-10-16T00:00:00-04:00</published><updated>2018-10-16T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/fixing-your-weaknesses</id><content type="html" xml:base="https://getaclue.me/b/2018/10/fixing-your-weaknesses">&lt;p&gt;After writing this &lt;a href=&quot;/blog/relationships-between-sets-series-progressions-and-sequences&quot;&gt;essay&lt;/a&gt; a few days ago, I could not stop thinking of figuring out where exactly my error is. Like I mentioned before, I understand the subject matter but not as deep as I would like to.&lt;/p&gt;
-
-&lt;p&gt;So, I began by looking backwards: I wanted to figure out during which course I was introduced to them first. I knew that it was around first or second year; and I knew that it was in Calculus. I did not remember if it was Calculus I or Calculus II. I could not remember but why struggle when you can look this up? Since my degree is from an accredited institution that provides accredited degrees — I can simply request this information or look it up. All of the courses and their description is fully published at uOttawa so this took me a few minutes.&lt;/p&gt;
-
-&lt;p&gt;Turns out it was first introduced to me during Calculus II. While I didn’t have my notes, I did recall which textbook I used to study and I recall exactly where we studied this. I did have the textbook so I just went ahead and looked it up. And then everything clicked in for me — I figured out how I got confused around series and sequences.&lt;/p&gt;
-
-&lt;p&gt;It was precisely in Chapter 8 of this (not) so wonderful &lt;a href=&quot;https://www.amazon.com/Single-Variable-Calculus-published-Hardcover/dp/B00E27YJ0E&quot;&gt;textbook&lt;/a&gt; by James Stewart. Why do I say not so wonderful? Because, looking on the order of topics presented in retrospect, sequences, series, and limits of these things were introduced at the same time. What I did not realize when I was younger — professors usually follow a textbook for their instructions. So, if the textbook does not match your studying techniques then the way the knowledge is delivered via professor will not aid.&lt;/p&gt;
-
-&lt;p&gt;Sequence is introduced as:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A sequence can be thought of as a list of numbers written in a definite order …&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ok good I can follow that. One thing that should have been bolded, in my opinion, was the &lt;em&gt;definite order&lt;/em&gt; part of the definition but it was not. Right after the definition, we were shown three ways of describing a sequence:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… one by using the preceding notation, another by using the defining formula, and a third by writing out the terms of the sequence …&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ok, even though I’ve never seen this before presented like this I can follow along. Then they moved to describing how you could find such a description on your own via an example:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… [n]otice that the numerators of these fractions start with 3 and increase by 1 whenever we go to the next term. The second term has numerator 4, the third term has numerator 5; in general, the nth term will have numerator n + 2. The denominators are the powers of 5,&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… so an has denominator 5n. The signs of the terms are alternately positive and negative, so we need to multiply by a power of 1. In Example 1(b) the factor …  meant we started with a negative term. Here we want to start with a positive term and so we use …&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Looking at it now — there is a lot going on above and definitely went above my head when I was introduced OR I did not understand it. But that was not the culprit — you can get by just fine with not understanding this.&lt;/p&gt;
-
-&lt;p&gt;On the same page we get some new examples of sequences that is introduced as&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… sequences that don’t have simple defining equations&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Boom. Problem 1 — sequences don’t have simple defining equations. That is such a subtle and non-bolded way of describing an important property of sequences. But don’t worry, as you keep reading this example, one sub-example at a time, you come to the famous Fibonacci sequence that everyone loves to introduce.&lt;/p&gt;
-
-&lt;p&gt;And how do they introduce this example? Using limits ofcourse. This is calculus afterall. This was Problem 2 for my understanding. These two problems are the reasons where everything went downhill. The text went on to the properties such as convergence and divergence and others. Nowhere, was there a connection of some sort to series.&lt;/p&gt;
-
-&lt;p&gt;This is what I mean&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2018-10-16/fibonacci-sequence-introduction.png&quot; alt=&quot;Fibonacci sequence&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And how was a series introduced?&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What do we mean when we express a number as an infinite decimal? For instance, what does it mean to write…&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… The convention behind our decimal notation is that any number can be written as an infinite sum. Here it means that…&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… where the three dots … indicate that the sum continues forever, and the more terms we add, the closer we get to the actual value of pi.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Does it make sense to you if you were seeing this for the first time? It did not for me. If you keeping reading there &lt;em&gt;is&lt;/em&gt; a mention of a connection between a sequence and a serience&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… Thus the sum of a series is the limit of the sequence of partial sums. …&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;so I cannot say that the author did not connect the ideas. But I can say that it was not clear for me then. When you combine the idea that the textbook was not helpful, the speed at which education moves, and a teacher that follows the book without helping you — you move on and keep going. Obviously I adapted and learned, otherwise I would not have graduated magna cum laude.&lt;/p&gt;
-
-&lt;p&gt;This whole thing was pretty surreal for me and super exciting. Not only did I narrow down my confusion surrounding sequences and series but I also uncovered the exact point where I got confused. Anywho, I’m going to continue studying my weak areas so that I can improve my analysis of algorithms. I think that I am pretty good but I want to be better.&lt;/p&gt;
-
-&lt;p&gt;Originally I was going to write about something else but this experience was more exciting for today. Here are some links that I was going to talk about (I still want to talk about them in the future at some point)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=18227768&quot;&gt;To become a software consultant, avoid letting clients pay you for code (2017) (daedtech.com)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/&quot;&gt;Don’t Call Yourself A Programmer, And Other Career Advice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=14942561&quot;&gt;Ask HN: Web developer and looking for a career change, what are my options?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cbc.ca/news/technology/stephen-hawking-book-launch-1.4863459&quot;&gt;Science, education ‘in danger now more than ever,’ Hawking says posthumously&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;and from the Hawkings article I highlighted&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Try to make sense of what you see, and wonder about what makes the universe exist,” he said. “It matters that you don’t give up. Unleash your imagination. Shape the future.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;There you have it my friend. Figure out things that you do not understand and address them. Don’t be afraid to do so at any time — perhaps, even years later ;-)&lt;/p&gt;
-
-&lt;p&gt;See you tomorrow&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /><summary type="html">And then everything clicked in for me — I figured out how I got confused around series and sequences.</summary></entry></feed>
+&lt;p&gt;Also noticing that I am spending way too much on these and that was never the intention. I keep editing or deleting. My focus is on interview prep. Anywho, see you next time =)&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry></feed>
