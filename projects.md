@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-03-02 13:48:11
+dateModified: 2020-03-04 18:00:36
 datePublished: 2018-08-21 15:58:31
 ---
 
@@ -16,11 +16,19 @@ datePublished: 2018-08-21 15:58:31
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-# Internet Offerings
+# Projects
 
-As I continue to work on projects, I will try to maintain an ongoing record of my work. I'm always happy to chat about my work. It is listed in no particular order at this moment. Thus, this page itself is a work in progress.
+As I continue my path as a software craftsman, I will try to maintain an ongoing record of my work. I'm always happy to chat about my current or previous work. It is listed in no particular order at this moment. Thus, this page itself is a work in progress.
 
-So, here are some projects that I have been involved in.
+## Statistics Canada
+
+### 2016 - Present
+
+Work on a custom enterprise e-learning platform. This work includes new feature work, maintenance, and regression testing. In addition to platform maintenance, I create e-learning content using HTML5, CSS3, and JavaScript for clients. Ensure that the work is WCAG accessible and language compliant.
+
+Regular communications to keep client relations via emails, telephone, or in person. Moreover, I was given the opportunity to apply my software engineering chops in the research and development of platform modernization. This included requirements gathering, company outreach, and off-the-shelf enterprise software evaluation.
+
+<mark> Technologies used to build : </mark> JavaScript, HTML5, CSS5, VB.NET, ASP.NET
 
 ## [lastminutelaura.ca](https://lastminutelaura.ca)
 
@@ -195,6 +203,30 @@ Solo developer project. Responsible for product and design development. Software
   </a>
 </div>
 
+## [Screenhole.net](https://screenhole.net)
+
+### April 2018 - August 2018
+
+Freelance project. I helped with API development, bug fixes, quick project prototyping, and media Mac app. Mac app was able to record the screen and create a mp4 video; or to take simple screenshots. In either case, the media was then uploaded to AWS S3.
+
+<mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Swift, Reactjs, Nodejs, Heroku, Javascript, HTML5, CSS3, Slack
+
+## [Pttrns](https://pttrns.com)
+
+### November 2017 - August 2018
+
+Freelance project. Aided new owner and previous owner during company transition. Worked on fixing bugs, adding new features, and overall day-to-day maintenance.
+
+<mark> Technologies used to build : </mark> Ruby, oAuth, Stripe, Git, Javascript, HTML5, CSS3, Github, Heroku, AWS, Docker, Slack
+
+## [betalist.com](https://betalist.com)
+
+### January 2018 - August 2018
+
+Freelance project. Aided in features, bug fixes, and implementing a CI for a test suite.
+
+<mark> Technologies used to build : </mark> Ruby, Ruby on Rails, oAuth, Git, Javascript, HTML5, CSS3, Github
+
 ## iwillreviewyourcode.com
 
 ### October 2017 - December 2017
@@ -242,27 +274,32 @@ Created daily movies about our life and published online. In other words... vlog
 
 ### Fall 2016 - May 2017
 
-A scheduling application for local autodetailing business. Booking appointments, employment schedule management, sales and inventory, permissions and roles. Capstone project.
+A scheduling application for local autodetailing business that was meant to use all of the software engineering skills. Fourth year students are recruited to create real-world software for local businesses. This included bi-weekly meeting with the clients, requirements engineering, technology assessment, design and development, and agile development methodology.
 
-<mark> Technologies used to build : </mark> Ember.js, Ruby, Ruby on Rails, PostgreSQL, Heroku, Redis, Sidekiq, Surge.sh, Travis CI, Mobile First Design, Agile Development, Github Project
+The features of the application included real-time scheduling of business hours, booking appointments, employment schedule management, sales and inventory, permissions and roles.
 
 - Team Project of 3
-- 9 month from idea to production
+- 9 month from idea to product
+
+<mark> Technologies used to build : </mark> Ember.js, Ruby, Ruby on Rails, PostgreSQL, Heroku, Redis, Sidekiq, Surge.sh, Travis CI, Mobile First Design, Agile Development, Github Project
 
 ## Startup Weekend
 
 ### Winter 2017
 
-A website for a [local startup weekend event](https://www.facebook.com/events/1270558846372280/). Winter 2017 edition.
+Team project. A website for a [local startup weekend event](https://www.facebook.com/events/1270558846372280/), Winter 2017 edition. The website was promoted along the University of Ottawa campus as marketing material about the event.
 
-- Team Project
-- [Code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/W2017)
+- [View code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/W2017)
 
 ## Hive
 
 ### Fall 2016
 
-A linkedin like application for local businesses. Independent research project.
+Independent research project. Mobile first design was implemented. Linkedin is saturated for local work and independent contractors. This was meant to be a solution and save time.
+
+A linkedin like application for local businesses and independent contractors. Two environments : one for employees and one for employers. Allowed employees to create a profile that listed their skills and outlined their rates. Allowed employers to recruit and maintain employers using the platform. This would include job assignment and much more.
+
+The codebase was ported from Angularjs to Emberjs. Held weekly meetings with the client in-person to showcase progress.
 
 <mark> Technologies used to build : </mark> Emberjs, Ruby, Ruby on Rails, PostgreSQL, Travis CI, Heroku, HTML5, CSS3, Agile Development, Github, Git
 
@@ -270,49 +307,66 @@ A linkedin like application for local businesses. Independent research project.
 
 ### Fall 2016
 
-A website for a [local startup weekend event](https://www.facebook.com/events/1358385600849660/). Fall 2016 edition.
+Team project. A website for a [local startup weekend event](https://www.facebook.com/events/1358385600849660/), Fall 2016 edition. The website was promoted along the University of Ottawa campus as marketing material about the event.
 
 <mark> Technologies used to build : </mark> Javascript, Nodejs, CSS3, HTML5, Git, Github
 
-- Team Project
-- [Code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/F2016)
+- [View Code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/F2016)
 
-## uOttawa SESA
+## IBM
 
-### Winter 2016 - Spring 2017
+### 2016
+
+At IBM I was tasked with working on the Cognos Analytics product. During my stay at IBM, the product had no keyboard navigation. Thus, my biggest project included adding keyboard navigation for accessibility work across different browsers and environments. This included collaborating with the design team to ensure IBM's design look and feel. In addition, I did work on accessibility compliance and cross-browser responsiveness. Finally, typical work on bug fixes, unit testing, and regression testing.
+
+I've also helped IBM @ Ottawa host hacking health initiative.
+
+<mark> Technologies used to build : </mark> JavaScript, HTML5, CSS3, Java, Nodejs, Reviewboard, Slack, IBM Rational Suite
+
+## [uOttawa SESA](https://uottawa-sesa.ca/)
+
+### Winter 2015 - Spring 2017
+
+Team project. Web-app that was dedicated to the activities of a student software engineering club. This included information about the club, new member recruitment, alumni communications, and events organization. We also used the app as an environment to promote Ruby on Rails learning for new students at our university.
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Bootstrap, HTML5, CSS3, Heroku
 
-- Team Project
-- [Homepage](https://uottawa-sesa.ca/)
-- [Code](https://github.com/sesa-uottawa/uottawasesa)
+- [View code](https://github.com/sesa-uottawa/uottawasesa)
 
 ![uOttawa SESA]({{"/assets/projects/uottawa-sesa/uottawa-sesa-jan-2018.png" | relative_url}}){:style="max-width:100%"}
 
-## Jekyll Theme
+## Teldio
+
+### 2015
+
+At Teldio, I joined as a co-op student and then I was employed as a part-time employee. I was tasked with working on their D3M product -- a real-time network builder tool. I've created a custom tokenizer and parser for PDF documents; worked on AWS S3 uploading and downloading for clients; various feature work; typical bug work and testing.
+
+<mark> Technologies used to build : </mark> Ruby, Ruby on Rails, JavaScript, HTML5, CSS3, AWS, Heroku, Marionettejs
+
+## [Jekyll Theme](https://getaclue.github.io/mdl-jekyll/)
 
 ### Summer 2015
 
-I was extremely excited to see the Google's Material Design Lite library that I decided to play with it. I ended up making a theme for the Jekyll blog platform.
+Solo project. I was extremely excited to see the Google's Material Design Lite library that I decided to create a theme for Jekyll platform with it.
 
-- Solo Developer
-- [Homepage](https://getaclue.github.io/mdl-jekyll/)
-- [Code](https://github.com/getaclue/mdl-jekyll)
+<mark> Technologies used to build : </mark> Ruby, Material Design, HTML5, CSS3, Git, Github
 
-## First web app
+- [View code](https://github.com/getaclue/mdl-jekyll)
+
+## [First web app](https://getaclue-evtbckwl.herokuapp.com/)
 
 ### Fall 2014
 
-This was my first project built using Ruby on Rails and hosted on Heroku.
+Solo project. This was my first web-app project built using Ruby on Rails and hosted on Heroku.
 
-- Solo Developer
-- [Homepage](https://getaclue-evtbckwl.herokuapp.com/)
-- [Code](https://github.com/getaclue/survey_app)
+<mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Bootstrap, HTML5, CSS3, Heroku, Git, Github
+
+- [View Code](https://github.com/getaclue/survey_app)
 
 ## E-commerce
 
 ### Fall 2012 - Fall 2013
 
-Wordpress platform that was modified using e-commerce extensions to serve as a e-commerce store.
+Created a store using a wordpress for a local business. Wordpress platform was modified using e-commerce extensions to serve as a e-commerce store. Taught the customer how to use the platform.
 
 <mark> Technologies used to build : </mark> Wordpress, mootools, mysql, php
