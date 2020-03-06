@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>getaclue.me/about</loc>
-<lastmod>2020-03-06T11:01:41-05:00</lastmod>
+<lastmod>2020-03-06T11:31:49-05:00</lastmod>
 </url>
 <url>
 <loc>getaclue.me/now</loc>
-<lastmod>2020-03-06T11:01:41-05:00</lastmod>
+<lastmod>2020-03-06T11:31:49-05:00</lastmod>
 </url>
 <url>
 <loc>getaclue.me/projects</loc>
-<lastmod>2020-03-06T11:01:41-05:00</lastmod>
+<lastmod>2020-03-06T11:31:49-05:00</lastmod>
 </url>
 <url>
 <loc>getaclue.me/search</loc>
-<lastmod>2020-03-06T11:01:41-05:00</lastmod>
+<lastmod>2020-03-06T11:31:49-05:00</lastmod>
 </url>
 <url>
 <loc>getaclue.me/2014/03/16/configuring-pia</loc>
@@ -173,10 +173,6 @@
 <lastmod>2018-12-10T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>getaclue.me/2019/08/31/difference-between-font-formats</loc>
-<lastmod>2019-08-31T00:00:00-04:00</lastmod>
-</url>
-<url>
 <loc>getaclue.me/2020/03/02/updates</loc>
 <lastmod>2020-03-02T00:00:00-05:00</lastmod>
 </url>
@@ -321,9 +317,6 @@
 <loc>getaclue.me/tag/business/</loc>
 </url>
 <url>
-<loc>getaclue.me/tag/typography/</loc>
-</url>
-<url>
 <loc>getaclue.me/tag/misc/</loc>
 </url>
 <url>
@@ -334,6 +327,6 @@
 </url>
 <url>
 <loc>getaclue.me/files/Mar-17-2019-Resume_Public.pdf</loc>
-<lastmod>2020-03-06T10:55:25-05:00</lastmod>
+<lastmod>2020-03-06T11:01:44-05:00</lastmod>
 </url>
 </urlset>
