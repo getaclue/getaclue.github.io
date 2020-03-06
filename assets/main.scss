@@ -60,14 +60,19 @@ $no-sidebar: "800px";
   }
   .home {
     article {
-      max-width: 50vw;
-    }
-  }
-  #sidebar {
-    img {
+      max-width: 45vw;
     }
   }
 }
+
+@media screen and (min-width: 1280) {
+  .home {
+    article {
+      max-width: 35vw;
+    }
+  }
+}
+
 .pagination {
   text-align: center;
   margin-right: 40px;
@@ -118,11 +123,6 @@ article {
   max-width: calc(100%);
 }
 
-@media screen and (min-width: $no-sidebar) {
-  article {
-    max-width: calc(100% - 360px);
-  }
-}
 .post-content {
   img {
     max-width: calc(100% - 10px);
@@ -229,9 +229,9 @@ html {
     margin-top: 30px;
     background: #fbf1a9;
   }
-  .page-link {
-    background: #fbf1a9;
-  }
+  // .page-link {
+  //   background: #fbf1a9;
+  // }
   .trigger {
     margin-top: 20px;
     a.active {
