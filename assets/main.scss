@@ -53,11 +53,8 @@ $no-sidebar: "800px";
   font-size: 13px;
 
   line-height: 20px;
-} /* Hide sidebar on mobile devices */
-@media screen and (min-width: $no-sidebar) {
-  #sidebar {
-    display: inline;
-  }
+}
+@media screen and (min-width: 1280) {
   .home {
     article {
       max-width: 45vw;
@@ -65,10 +62,22 @@ $no-sidebar: "800px";
   }
 }
 
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1680) {
   .home {
     article {
-      max-width: 35vw;
+      max-width: 45vw;
+    }
+  }
+}
+
+/* Hide sidebar on mobile devices */
+@media screen and (min-width: $no-sidebar) {
+  #sidebar {
+    display: inline;
+  }
+  .home {
+    article {
+      max-width: 45vw;
     }
   }
 }

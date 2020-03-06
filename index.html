@@ -2,53 +2,11 @@
 layout: default
 ---
 
-<div class="home">
-  {% for post in paginator.posts %}
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="{{ post.url }}">{{ post.title | escape }}</a></h1>
-      <p class="post-meta">
-        Published on: <time datetime="{{ post.datePublished | date_to_xmlschema }}" itemprop="datePublished">
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          {{ post.datePublished | date: date_format }}
-        </time>
-        Last updated on: <time datetime="{{ post.datePublished | date_to_xmlschema }}" itemprop="dateModified">
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          {{ post.dateModified | date: date_format }}
-        </time>
-      </p>
-    </header>
+<section class="posts">
+<ul>
+{% for post in site.posts %}
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
+{% endfor %}
+</ul>
+</section>
 
-    <div class="post-content" itemprop="articleBody">
-      {{ post.content | strip_html | truncatewords: 140 }}
-      <p style="display:flex; justify-content: flex-end;">
-        <a href="{{ post.url }}" title="Continue Reading {{ post.title | escape }}">Continue Reading →</a>
-      </p>
-      {% include side-projects.html %}
-    </div>
-
-    <p class="extra-info">
-      {% if post.tags.size > 0 %}
-      Tags: {{ post.tags | join: ', ' }} &nbsp; | &nbsp;
-      {% endif %}
-      {% include fork.html %}
-    </p>
-  </article>
-  {% endfor %}
-
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Newer</a>
-    {% else %}
-    <span class="previous">Newer</span>
-    {% endif %}
-    /
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Older</a>
-    {% else %}
-    <span class="next ">Older</span>
-    {% endif %}
-  </div>
-
-</div>

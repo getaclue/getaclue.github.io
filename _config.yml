@@ -1,53 +1,62 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+site: Software with Alex Kluew
+url: getaclue.me
 title: Alex Kluew
-email: info@getaclue.me
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal website and blog of Alex Kluew
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://getaclue.me' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: alexkluew
-github_username: getaclue
-instagram_username: alexkluew
-linkedin_username: getaclue
+description: Software with Alex Kluew
+twitter:
+  username: alexkluew
+  card: summary
+  creator: alexkluew
+author:
+  twitter: alexkluew
+  name: Alex Kluew
+  avatar:
+  email: info@getaclue.me
+  url: https://getaclue.me
+permalink: pretty
+
 google_analytics: UA-106794469-1
 google_site_verification: j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-twitter-plugin
-  - jekyll-redirect-from
-permalink: /b/:year/:month/:title
-paginate: 4
-paginate_path: '/blog/page:num/'
+baseurl: ''
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+highlighter: none
+
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - _previous
-  - scripts
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - .jekyll-cache
+
+compress_html:
+  clippings: all
+  comments: ['<!-- ', ' -->']
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: 'default'
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'

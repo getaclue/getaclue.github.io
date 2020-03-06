@@ -1,22 +1,18 @@
 ---
 layout: post
-title: "Ruby on rails used to be fun"
+title: 'Ruby on rails used to be fun'
 categories:
   - ruby on rails
   - software engineering
   - misc
   - thoughts
-tags:
-  - ruby on rails
-  - software engineering
-  - misc
-  - random
+tags: [ruby on rails, software engineering, misc, random]
 status: publish
 type: post
 published: true
 meta: {}
-image: ""
-excerpt: "Ruby is not really fun anymore"
+image: ''
+excerpt: 'Ruby is not really fun anymore'
 dateCreated: 2020-03-05 11:46:44
 datePublished: 2020-03-05 20:48:18
 dateModified: 2020-03-05 20:48:18
