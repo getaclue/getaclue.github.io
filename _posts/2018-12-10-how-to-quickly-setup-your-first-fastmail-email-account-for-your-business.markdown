@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to quickly setup custom fastmail email account for your business domain'
+title: "How to quickly setup custom fastmail email account for your business domain"
 categories:
   - software engineering
   - email
@@ -15,8 +15,8 @@ status: publish
 type: post
 published: true
 meta: {}
-image: 'https://cdn-std.dprcdn.net/files/acc_603419/0hcE7y'
-excerpt: 'How to quickly setup professional email for your business domain using fastmail.'
+image: "https://cdn-std.dprcdn.net/files/acc_603419/0hcE7y"
+excerpt: "How to quickly setup professional email for your business domain using fastmail."
 dateCreated: 2018-12-10 16:47:57
 datePublished: 2018-12-10 19:16:00
 dateModified: 2018-12-20 06:13:51
@@ -41,7 +41,7 @@ I am using:
 - [digitalocean] \* control panel for domains setup
 - [fastmail] for the email service
 
-> - NOTE: I am planning to move away from [digitalocean]. Testing [linode] at the moment. Looks promising. Open to suggestions =)
+> NOTE: I am planning to move away from [digitalocean]. Testing [linode] at the moment. Looks promising. Open to suggestions =)
 
 At the present, I manage my domain from my VPS panel located on [digitalocean]. All of my information is contained in one place.
 

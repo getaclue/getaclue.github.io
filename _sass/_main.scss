@@ -8,21 +8,32 @@
   padding: 0;
 }
 
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 body {
-  font-family: system-ui, sans-serif;
+  // font-family: system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  line-height: 1.5;
+  line-height: 1.75;
   font-size: 1rem;
   color: rgb(22, 23, 26);
 }
 
 nav ul {
-  border-right: 1px solid #edf2f7;
+  border-right: 10px solid #0074d9;
 }
 
 a {
-  color: #000;
+  color: #111111;
   text-decoration-skip-ink: auto;
   text-decoration: underline;
 }
@@ -47,6 +58,9 @@ pre {
 .project h2:first-child,
 .photo h2:first-child {
   margin-top: 0;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 .meta {
@@ -55,11 +69,19 @@ pre {
 
 code,
 pre {
-  background: rgb(236, 237, 238);
+  background: #efefef;
+  color: #111111;
+  border-radius: 1em;
 }
 
 code {
   padding: 0.1rem;
+  font-style: italic;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #efefef;
+  color: #111111;
+  border-radius: 1em;
 }
 
 pre code {
@@ -76,7 +98,7 @@ img {
 }
 
 hr {
-  background: #000;
+  background: #0074d9;
   height: 1px;
   border: 0;
 }
@@ -110,8 +132,11 @@ article {
 
 blockquote {
   font-style: italic;
-  border-left: 5px solid #ececec;
+  border-left: 5px solid #0074d9;
   padding-left: 1rem;
+  background: #efefef;
+  color: #111111;
+  border-radius: 1em;
 }
 
 h1,
@@ -197,7 +222,7 @@ main {
     padding-bottom: 1rem;
   }
   header ul {
-    border-bottom: 1px solid #edf2f7;
+    border-bottom: 10px solid #0074d9;
     padding-bottom: 2rem;
   }
   nav ul {
