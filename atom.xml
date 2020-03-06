@@ -4,7 +4,7 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-03-06T12:01:16-05:00</updated>
+ <updated>2020-03-06T12:27:22-05:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
@@ -161,9 +161,7 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;NOTE: I am planning to move away from &lt;a href=&quot;https://m.do.co/c/580b8ad4e397&quot;&gt;digitalocean&lt;/a&gt;. Testing &lt;a href=&quot;https://www.linode.com/?r=eb8fbe18fcae4bb7ac3cf4b65d578ea40d1da5f2&quot;&gt;linode&lt;/a&gt; at the moment. Looks promising. Open to suggestions =)&lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;p&gt;NOTE: I am planning to move away from &lt;a href=&quot;https://m.do.co/c/580b8ad4e397&quot;&gt;digitalocean&lt;/a&gt;. Testing &lt;a href=&quot;https://www.linode.com/?r=eb8fbe18fcae4bb7ac3cf4b65d578ea40d1da5f2&quot;&gt;linode&lt;/a&gt; at the moment. Looks promising. Open to suggestions =)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;At the present, I manage my domain from my VPS panel located on &lt;a href=&quot;https://m.do.co/c/580b8ad4e397&quot;&gt;digitalocean&lt;/a&gt;. All of my information is contained in one place.&lt;/p&gt;
