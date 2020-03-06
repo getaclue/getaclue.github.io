@@ -1,0 +1,46 @@
+I"S<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/nauNKe" alt="TestFlight image" /></p>
+
+<p>Today, I crossed off one of the things that I wanted to do since December. I recorded my experience and thought process of registering for <a href="https://developer.apple.com/testflight/">TestFlight</a>. This means that I went from nothing to having an App on the Apple App Store’s TestFlight section.</p>
+
+<p>Why?</p>
+
+<p>Well, I wanted to start a podcast and I could not narrow down on the topic. So, I figured that I might as well record this. The reason being that if, after the process, the process is traight forward then I would not publish anything. It turns out that the process is not as straightforward as one would have wanted.</p>
+
+<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/jU2lUI" alt="Audio recording screenshot" /></p>
+
+<p>So, I have a screen recording and a podcast that are going to be out whenever I process them. Hopefully it can be used as a resource for future.</p>
+
+<p><img src="https://cdn-pro.dprcdn.net/files/acc_603419/jEftff" alt="Screenrecording screenshot" /></p>
+
+<p>In the meantime, to keep things moving, here is the list of resources that I used today as part of this process:</p>
+
+<ul>
+  <li><a href="https://medium.com/@dmathewwws/steps-to-put-your-app-on-testflight-and-then-the-ios-app-store-10a7996411b1">Steps to put your app on TestFlight</a></li>
+  <li><a href="https://help.apple.com/itunes-connect/developer/#/dev82a6a9d79">Uploading builds overview</a></li>
+  <li><a href="https://help.apple.com/itunes-connect/developer/#/devdc42b26b8">TestFlight beta testing overview (iOS, tvOS, watchOS)</a></li>
+  <li><a href="https://help.apple.com/itunes-connect/developer/#/dev3bfa33892">Beta App Review</a></li>
+  <li><a href="https://www.bis.doc.gov/informationsecurity2016-updates">Information Security Updates</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/Properties.html">iTunes Connect Properties</a></li>
+  <li><a href="https://developer.apple.com/app-store/review/guidelines/">App Store Review Guidelines</a></li>
+  <li><a href="https://developer.apple.com/support/code-signing/">Code Signing</a></li>
+  <li><a href="https://customersupport.doubledutch.me/hc/en-us/articles/229158627-How-to-Fill-in-an-iTunes-Connect-App-Listing-iOS">How to Fill in an iTunes Connect App Listing – iOS</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html">Exporting Your App for Testing (iOS, tvOS, watchOS)</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingYourAppUsingTestFlight/DistributingYourAppUsingTestFlight.html">Distributing Your App Using TestFlight (iOS, tvOS, watchOS)</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/UploadingYourApptoiTunesConnect/UploadingYourApptoiTunesConnect.html#//apple_ref/doc/uid/TP40012582-CH36-SW2">Uploading Your App to iTunes Connect</a></li>
+  <li><a href="https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/BetaTestingTheApp.html#//apple_ref/doc/uid/TP40011225-CH35">TestFlight Beta Testing (iOS, tvOS, watchOS)</a></li>
+  <li><a href="https://help.apple.com/itunes-connect/developer/#/devdc42b26b8">TestFlight beta testing overview (iOS, tvOS, watchOS)</a></li>
+  <li><a href="https://help.apple.com/itunes-connect/developer/#/dev78d0a8f87">View build status and metrics</a></li>
+  <li><a href="https://help.apple.com/itunes-connect/developer/#/dev34e9bbb5a">Overview of publishing an app</a></li>
+  <li><a href="https://itunespartner.apple.com">iTunes Partner</a></li>
+  <li><a href="http://dailyvibes.ca">dailyvibes.ca</a></li>
+</ul>
+
+<p>That’s it I think. So, by using the links above and 1.5 hours of my time, I know how to deliver iOS apps for a TestFlight.</p>
+
+<p>If you are wondering if Apple’s documents are up to date, then let me save you the uncertainty with a big no.</p>
+
+<p>Keep up for this episode somewhere on my social media channels. For the next episode (that I will be doing soon): How to publish an app into the store? Or something along these lines. I’m super excited.</p>
+
+<p>Cheers,
+Alex</p>
+:ET

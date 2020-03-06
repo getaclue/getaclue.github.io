@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: getaclue.me/sitemap.xml

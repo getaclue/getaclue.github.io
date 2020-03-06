@@ -1,0 +1,100 @@
+I"�<p>Today, I did a few quick fixes to the current layout of this website.</p>
+
+<ul>
+  <li>
+    <p>I added <code>« Previous Essay</code> and <code>Next Essay »</code> links to each piece of writing at the end for easier navigation</p>
+
+    <p>This required a slight modification to the templates. Found the following article <a href="https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html">Jekyll – how to link to next/previous post on your blog</a> very useful in this venture. In fact, it is very simple. Like so:</p>
+
+    <pre><code class="language-html">&lt;style&gt;
+  .not-post-page-navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+  }
+&lt;/style&gt;
+&lt;div class="not-post-page-navigation"&gt;
+  {% if page.previous.url %}
+  &lt;a href="{{page.previous.url}}" title="{{page.previous.title}}"&gt;&amp;laquo;
+    Previous Essay&lt;/a&gt;
+  {% endif %}
+  {% if page.next.url %}
+  &lt;a href="{{page.next.url}}" title="{{page.next.title}}"&gt;Next Essay &amp;raquo;&lt;/a&gt;
+  {% endif %}
+&lt;/div&gt;
+</code></pre>
+
+    <p>I also had to look up how I could show you the code above because it had some inline liquid syntactic sugar. So the parser simply interpreted the code about as any regular code. You need to add <code>raw</code> and <code>endraw</code> tags before the code and proceed as before! See <a href="https://github.com/github/linguist/issues/3690">Liquid syntax highlighting in Markdown</a></p>
+  </li>
+  <li>
+    <p>I also re-wrote the little script that I wrote in Swift a few days ago in Java. I’m basically jumping between languages because why not. Had some hiccups with looking up regular expressions syntax in Java. Here is the current working copy:</p>
+
+    <pre><code class="language-java">public static void main(String[] args) {
+      if (args.length &lt; 1) {
+          System.out.println("Please do like this: LazyTitleMaker &lt;title&gt;");
+          java.lang.System.exit(0);
+      }
+
+      DateFormat dateStyleFormat = new SimpleDateFormat("yyyy-MM-dd");
+      Date currDate = new Date();
+      String currDateText = dateStyleFormat.format(currDate);
+
+      String input = args[0].toLowerCase();
+      String inputWSReplaced = input.replaceAll("\\s+", "-");
+      String sanitizedString = inputWSReplaced.replaceAll("[\\',?]", "");
+
+      String resultantURI = currDateText + "-" + sanitizedString;
+
+      System.out.println(resultantURI + ".markdown");
+      System.out.println("Length: " + resultantURI.length());
+  }
+</code></pre>
+
+    <p>Need to fix the following code that you see above at some later time</p>
+
+    <pre><code class="language-java">      String sanitizedString = inputWSReplaced.replaceAll("[\\',?]", "");
+</code></pre>
+
+    <p>I wanted to find all characters in the string that are not words and not spaces. I expected <code>[^w]</code> to match to all characters that are not words and <code>[^s]</code> to match all characters that are not spaces.</p>
+
+    <pre><code class="language-java">      String sanitizedString = inputWSReplaced.replaceAll("[^\\w\\s]", "");
+</code></pre>
+
+    <p>Similar to how I would do it in JavaScript</p>
+
+    <pre><code class="language-javascript">"Some Str,in'g?"
+  .toLowerCase()
+  .replace(/[^\w\s]/g, '')
+  .replace(/ /g, '-');
+</code></pre>
+  </li>
+  <li>I also changed the about page and the projects page</li>
+  <li>
+    <p>I added a new template for the about and projects pages</p>
+
+    <p>Modified the way images are displayed in the liquid templates. Replaced <code>{:width="60%"}</code> with <code>{:style="max-width:100%"}</code>.</p>
+  </li>
+  <li>I removed the newsletter link at the footer</li>
+  <li>I adjusted my project involvement for Screenhole and Keyframes. Until further notice my involvement is on pause while <a href="https://thinko.com">Thinko</a> focuses on other things. I enjoyed working with the team and hope to do so again the future. Jacob and Pasquale are wonderful.</li>
+  <li>Played with modulo and reminder theories decoding a birthday message <a href="https://stackoverflow.com/a/37240042">1</a>, <a href="https://stackoverflow.com/a/3354251">2</a>.</li>
+</ul>
+
+<p>It is fun to make things for no reason other than just because. So, what do I think about: <em>If you don’t share your project, did you actually make it?</em> While I think it depends on the project and the goals, I think that decision is ultimately up to you. It is very easy to fall in the trap of sharing for the sake of sharing. For me — I first look at the project and then I look at the goals. Most likely than not the things that I share I hope others to find useful and educational.</p>
+
+<p>Links for today:</p>
+
+<ul>
+  <li><a href="http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf">http://files.zeroturnaround.com/pdf/zt_regular-expressions-cheat-sheet.pdf</a></li>
+  <li><a href="https://regexr.com/">https://regexr.com/</a></li>
+  <li><a href="https://stackoverflow.com/questions/10253516/ruby-regex-replace-non-word-chars-that-are-not-space-chars">https://stackoverflow.com/questions/10253516/ruby-regex-replace-non-word-chars-that-are-not-space-chars</a></li>
+  <li><a href="http://tutorials.jenkov.com/java-internationalization/simpledateformat.html">http://tutorials.jenkov.com/java-internationalization/simpledateformat.html</a></li>
+  <li><a href="http://www.vogella.com/tutorials/JavaRegularExpressions/article.html">http://www.vogella.com/tutorials/JavaRegularExpressions/article.html</a></li>
+  <li><a href="http://www.java2s.com/Tutorials/Java/java.time/LocalDateTime/2720__LocalDateTime.now_.htm">http://www.java2s.com/Tutorials/Java/java.time/LocalDateTime/2720_<em>LocalDateTime.now</em>.htm</a></li>
+  <li><a href="https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html">https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html</a></li>
+  <li><a href="https://help.shopify.com/en/themes/liquid/filters/string-filters">https://help.shopify.com/en/themes/liquid/filters/string-filters</a></li>
+  <li><a href="https://devhints.io/jekyll">https://devhints.io/jekyll</a></li>
+  <li><a href="https://gist.github.com/mikeygee/2626538">https://gist.github.com/mikeygee/2626538</a></li>
+  <li><a href="https://gist.github.com/JJediny/a466eed62cee30ad45e2">https://gist.github.com/JJediny/a466eed62cee30ad45e2</a></li>
+</ul>
+
+:ET

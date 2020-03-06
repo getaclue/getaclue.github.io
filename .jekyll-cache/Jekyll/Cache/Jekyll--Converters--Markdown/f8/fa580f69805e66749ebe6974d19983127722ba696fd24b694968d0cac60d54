@@ -1,0 +1,42 @@
+I"/<h1 id="obtain-necessary-gpg-keys">Obtain necessary gpg keys</h1>
+<pre><code>mkdir Mono
+cd Mono
+wget http://download.mono-project.com/repo/xamarin.gpg
+</code></pre>
+
+<h1 id="import-gpg-key">Import gpg key</h1>
+<pre><code>sudo rpm --import xamarin.gpg
+</code></pre>
+
+<h1 id="add-mono-package-repository">Add Mono package repository</h1>
+<pre><code>sudo yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
+</code></pre>
+
+<h1 id="add-epel">Add EPEL</h1>
+<pre><code>sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
+</code></pre>
+
+<h1 id="update-everything">Update everything</h1>
+<pre><code>sudo yum update
+</code></pre>
+
+<h1 id="start-installing-mono">Start installing Mono</h1>
+<pre><code>sudo yum install mono-devel
+sudo yum install mono-complete
+</code></pre>
+
+<h1 id="optional-test-your-mono-installation">Optional: Test your Mono installation</h1>
+<pre><code>http://www.mono-project.com/docs/getting-started/mono-basics/
+</code></pre>
+
+<h1 id="running-mono">Running Mono</h1>
+<pre><code>cd ~/foo/bar/
+mono foo.exe
+</code></pre>
+
+<h1 id="reference">Reference</h1>
+<pre><code>http://www.mono-project.com/docs/getting-started/install/linux/
+http://www.mono-project.com/docs/getting-started/mono-basics/
+https://fedoraproject.org/wiki/EPEL/FAQ
+</code></pre>
+:ET

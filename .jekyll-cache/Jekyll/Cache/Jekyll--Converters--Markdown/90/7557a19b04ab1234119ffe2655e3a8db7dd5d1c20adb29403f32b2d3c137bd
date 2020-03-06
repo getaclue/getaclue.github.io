@@ -1,0 +1,72 @@
+I"�<p>Today I ended up exploring a topic that I didn’t expect: what is the difference between a sequence and a series.</p>
+
+<p>While I memorized these contepts in my calculus days, I always felt something was missing in my core understanding. I think I figured out what was missing. It seems that I was confused, once again, around the ambiguity of the English language.</p>
+
+<p>I stumbled upon the following in one of my favourite <a href="https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">textbook</a>s:</p>
+
+<blockquote>
+  <p>A numeric progression is a sequence of numbers, where each number depends on one or more of the previous numbers.</p>
+</blockquote>
+
+<p>followed by</p>
+
+<blockquote>
+  <p>arithmetic progression determines the next number <strong>by adding</strong> a fixed constant to the previous value</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>geometric progression determines the next number <strong>by multiplying</strong> the previous value by a fixed constant</p>
+</blockquote>
+
+<p>which made me go <em>Aha</em>. All I had to do was check if the thing was made by adding or by multiplying? Seems easy enough to get.</p>
+
+<p>I’m sure I had the same thoughts back in school. So, I decided to play around and see what I find confusing so I could fix my gaps in knowledge. I thought: hmm, they are using both terms, a <code>progression</code> and <code>sequence</code>, in one sentence. Confused — because if you don’t really pay attention then you could interpret these two terms as having a similar meaning.</p>
+
+<p>What I should have considered was the specific word choice in math. Similar confusions were found in other areas. For example, different terminology in the graph space. One positive thing that I did notice is that specialty books are beginning to mention discrepancies surrounding word choice.</p>
+
+<p>Getting back to progression and sequence confusion. The more I thought about it, the more I realized that I had confusion back in the day. Confusion around terminology and not the concepts. If you read one of the previous entries, then you recall me saying that pattern matching works to a certain degree. So, I used pattern matching during my former student days. It got me far enough but I was never satisfied.</p>
+
+<p>Unlike my former student self, I have the leisure and time to explore this further.</p>
+
+<p>I found the following excerpt on quora from <a href="https://www.quora.com/How-does-sequence-and-progression-differ">how does sequence and progression differ?</a></p>
+
+<blockquote>
+  <p>… all progressions are sequences, all sequences are not progression …</p>
+</blockquote>
+
+<p>OK, so that brought my understanding a bit closer. So a sequence is a collection of things. Hmm, but that sounds very close to what a set is. So, what is the difference between a sequence and a set? Is there one? Decided to consult wonderful <a href="https://en.wikipedia.org/wiki/Sequence">wikipedia definition</a> for more information.</p>
+
+<p>So a sequence is <strong>like a set</strong> because they are a collection that contains things: members or elements. Like a set, this collection can be finite or infinite. Ok… so still not too clear so far. However, as we read further — what we find, is that in a sequence, <em>unlike in a set</em>, repeated occurences of members are allowed. <em>Additionally</em>, <strong>unlike in a set</strong>, the <strong>order</strong> of individual members in the collection <strong>matters</strong>.</p>
+
+<p>Furthermore, a sequence does not have to be only denoted by [an explicit] formula. A sequence can also be denoted by <a href="https://blogformathematics.blogspot.com/2011/08/sequences.html">a logical statement</a>:</p>
+
+<blockquote>
+  <p>A sequence may be denoted by an explicit formula, like Tn = 2 + n, or it may be denoted by a logical statement like Tn = nth prime number. It is <strong>not necessary that a set of numbers be arranged according to an explicit formula</strong> in order for it to be called a ‘sequence’; it <strong>can also be arranged according to some logical statement</strong> that does not have an explicit mathematical formula but is nonetheless mathematically logical in order for it to be called a sequence.</p>
+</blockquote>
+
+<p>So, the definition of a sequence and how it differs from a set is starting to make sense. How does a progression relate to all of this? Well, a <em>numeric</em> progression is a <strong>sequence</strong> of <em>numbers</em> where each element depends on <em>one or more</em> of the <strong>previous</strong> members.</p>
+
+<p>Just like in the quote above from the <a href="https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">textbook</a>, it follows that there are at least two such relationships:</p>
+
+<ol>
+  <li>a relationship between two members such that the difference between these two members is a constant — this is called an <em>arithmetic progression</em> or <em>arithmetic sequence</em>.</li>
+  <li>a relationship between two members such that the <a href="https://www.math10.com/en/algebra/geometric-progression.html">quotient of any two successive members of the sequence is a constant</a> — this is called a <em>geometric progression</em> or a <em>geometric sequence</em>.</li>
+</ol>
+
+<p>Or said it another way (from the same <a href="https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">textbook</a> as mentioned):</p>
+
+<blockquote>
+  <p>geometric progression, in which each value is produced by multiplying the preceding value by a fixed constant, known as the <strong>base of the geometric progression</strong>.</p>
+</blockquote>
+
+<p>We have looked at a set, sequence, and a progression so far. How do these things relate to a <em>series</em>? Very simple — a series is just the summation of all of the elements in the sequence. So, it then follows, what is the sum of the elements in a given sequence represented by? A series. Just like that. It finally makes sense how a series and a sequence are related. Nothing complicated. No new formulas. Just the proper definitions presented in a familiar way.</p>
+
+<p>Moreover, the total sum of the sequence can be broken up into <strong>partial sum(s)</strong> — a sum from element <code>ai</code> to element <code>an</code>. What is interesting about this? Well the fact that <a href="https://en.wikipedia.org/wiki/Sequence">(p)artial sums, themselves, form a sequence</a>.</p>
+
+<p>Well, there you have it.</p>
+
+<p>See you tomorrow.</p>
+
+:ET

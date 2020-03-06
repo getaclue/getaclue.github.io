@@ -1,0 +1,73 @@
+I"D<p>I have something to tell you and come clean about. I haven’t touched my beloved dailyvibes code base since April. And if I am being completely honest, I kind of lost steam in March. (To give you some context, I started thinking about the project in October and working on it last November. Since November I tried to ship something every 2 weeks.)</p>
+
+<p>Everything was fine until about March. In March, I felt that I did not like where I was going, I was having a bad time, and I was losing project’s direction. I even had thoughts of abandoning it.</p>
+
+<p>I also knew that my app was stable enough for people to use. Thus, if I was about to abandon my work then at least people would not lose their data. These thoughts allowed me to slow down and to reflect. Afterall, I still care about the project.</p>
+
+<p><img src="https://d.pr/i/klf5jH+" alt="you're going to have a bad time image" /></p>
+
+<p>Whenever I start thinking this way about a project, I become aware that it is a good time to step back and reflect. In other words, it is a good time to see if my time is worth investing into a project.</p>
+
+<p>To start, I wanted to figure out what was causing me to feel this way. I narrowed it down to the following three issues:</p>
+
+<h2 id="1-i-was-facing-technical-issues">1. I was facing technical issues.</h2>
+
+<p><img src="https://d.pr/i/ai0zYr+" alt="subject to technical issues - free image from https://pixabay.com/en/problem-technical-issues-technology-1951987/" /></p>
+
+<p>As I work solo, I did not want to spend my limited time on things that do not move the project forward (in the users eyes). But, it got to a point where I needed to <a href="https://www.briantracy.com/blog/time-management/the-truth-about-frogs/">eat that frog</a>. It is one of the challenges that comes with indie work. You wear many hats. You are playing the role of a product manager and have to decide on what to work on. Sometimes you have to do the work that you do not want to.</p>
+
+<h2 id="2-i-was-not-happy-with-the-direction-of-the-project">2. I was not happy with the direction of the project.</h2>
+
+<p><img src="https://d.pr/i/DMndPx+" alt="lost found searching - image from https://pixabay.com/en/lost-found-lost-and-found-searching-1605501/" /></p>
+
+<p>At the beginning of the project, I needed to do some market research. I needed to check if this project was worth my interest and time. How did I do my market research? Well, it was very simple. I downloaded all the productivity / todo apps from the Apple App Store and I played with each one of them. I noted down ideas that I liked and things that I did not like. But, by doing that, my phone looks like this now:</p>
+
+<p><a href="https://d.pr/v/CtydOz"><img src="https://d.pr/i/b8PU7m+" alt="my ios screen" /></a></p>
+
+<p>After playing with each app, I’ve come to realize that most of the apps do the same thing.</p>
+
+<p>What this means to the users is that they have a lot of choice in this saturated category of productivity. In otherwords, they can switch from my product much easier.</p>
+
+<p>What this means to me is that I don’t need to stress on competing. I was aligning dailyvibes with other similar apps. This process made me bored and stopped using the app. Dailyvibes started because I was not happy of the solutions. Instead I will focus on building features that will be useful to the end user and to me. I will focus on the product and its quality.</p>
+
+<p>So I took a step back and recorded the actions that I do every day. I interact with the following data structures: tasks to complete today, notes/text snippets, links/bookmarks, gifs / images and photos. One thing that kind of doesn’t fit is positive thoughts / quotes. I need to think some on this.</p>
+
+<p>So I will work on integrating these things into dailyvibes and thus forcing me to dogfood my own app. What will make all these things work together is some kind of linking mechanism. I will definitely polish this as time moves on.</p>
+
+<p>After all, users have so much choice.</p>
+
+<h2 id="3-i-did-not-know-what-direction-apple-will-take-mac-os-apps-in">3. I did not know what direction Apple will take Mac OS apps in.</h2>
+
+<p><img src="https://d.pr/i/LE7TsI+" alt="marzipan rumours" /></p>
+
+<p>The next biggest feature for dailyvibes is to create a server component. Which will be then followed by a syncing mechanism of some sort between the server and iOS app. Both of these components, would position me well to create either a a desktop companion app or a web app. I chose to wait until June to make this decision because of WWDC.</p>
+
+<p>I could not decide if I wanted to leverage the iCloud ecosystem and have apple do all the legwork or me. I’ve investigated both options. I decided to roll out my own for three reasons:</p>
+
+<ol>
+  <li>I know how,</li>
+  <li>I want to practice for my personal project, and</li>
+  <li>I want to have control over my data.</li>
+</ol>
+
+<p>I hope that these decisions will also benefit the users.</p>
+
+<p>I also could not decide if I wanted to spend time on a native Mac desktop app or on a web app. I am familiar with web but I am very new to the Mac. I investigated both options. I am deciding, at least for now, to focus on the web app component because I am more familiar with that. Plus, Apple admitted that there will be changes to Mac OS next year. I’ll revisit native Mac app next year.</p>
+
+<hr />
+
+<p>It is nice to step back and reflect on how far you’ve come with a project. It is good to be mindful. Albeit, I will be first to admit that it is challenging to talk about your project when it is not going as you expect. I am, once again excited, to keep working on the project and I have a better vision moving forward.</p>
+
+<p>This is a nice feeling when you are happy with your decisions. Also, the organic discovery isn’t that bad either:</p>
+
+<p><img src="https://d.pr/i/MLstRV+" alt="Q1 results" />
+<img src="https://d.pr/i/dHUliO+" alt="Q2 results" /></p>
+
+<p>If you’re making something, you have to be the first to believe in success of your thing. Do one thing every day that moves the project forward. Everything else will [hopefully] work itself out.</p>
+
+<p>Thanks for reading and until next time,</p>
+
+<p>Alex</p>
+
+<p>PS: You can download Daily Vibes by searching using your favorite iOS device on <a href="https://geo.itunes.apple.com/app/id1332324033">Apple App Store</a> or from <a href="https://dailyvibes.ca">https://dailyvibes.ca</a>.</p>
+:ET

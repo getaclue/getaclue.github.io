@@ -1,0 +1,476 @@
+[
+  
+    {
+
+      "title"    : "Ruby on rails used to be fun",
+      "url"      : "/2020/03/05/ruby-on-rails",
+      "category" : "ruby on rails, software engineering, misc, thoughts",
+      "tags"     : "ruby on rails, software engineering, misc, random",
+      "date"     : "2020-03-05 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Keeping up with keeping up",
+      "url"      : "/2020/03/03/keeping-up-in-software",
+      "category" : "misc, thoughts",
+      "tags"     : "misc, random",
+      "date"     : "2020-03-03 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Updates",
+      "url"      : "/2020/03/02/updates",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2020-03-02 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Difference between font formats",
+      "url"      : "/2019/08/31/difference-between-font-formats",
+      "category" : "",
+      "tags"     : "typography",
+      "date"     : "2019-08-31 00:00:00 -0400",
+      "discription" : "What is the difference between various font formats?"
+
+    } ,
+  
+    {
+
+      "title"    : "How to quickly setup custom fastmail email account for your business domain",
+      "url"      : "/2018/12/10/how-to-quickly-setup-your-first-fastmail-email-account-for-your-business",
+      "category" : "software engineering, email, fastmail, business",
+      "tags"     : "software engineering, email, fastmail, business",
+      "date"     : "2018-12-10 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Binary trees",
+      "url"      : "/2018/10/30/binary-trees",
+      "category" : "software engineering",
+      "tags"     : "software engineering",
+      "date"     : "2018-10-30 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Position vs index",
+      "url"      : "/2018/10/26/position-vs-index",
+      "category" : "software engineering",
+      "tags"     : "software engineering",
+      "date"     : "2018-10-26 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Stacks October 25 2018",
+      "url"      : "/2018/10/25/stacks-october-25-2018",
+      "category" : "software engineering, javascript",
+      "tags"     : "software engineering, javascript",
+      "date"     : "2018-10-25 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "October 20 2018",
+      "url"      : "/2018/10/20/october-20-2018",
+      "category" : "software engineering, javascript, personal development",
+      "tags"     : "software engineering, javascript, personal development",
+      "date"     : "2018-10-20 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "October 19 2018",
+      "url"      : "/2018/10/19/october-19-2018",
+      "category" : "computer science, personal development",
+      "tags"     : "software engineering, personal development",
+      "date"     : "2018-10-19 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "October 18 2018",
+      "url"      : "/2018/10/18/october-18-2018",
+      "category" : "computer science, personal development",
+      "tags"     : "software engineering, personal development",
+      "date"     : "2018-10-18 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Untitled",
+      "url"      : "/2018/10/17/untitled",
+      "category" : "computer science, personal development",
+      "tags"     : "software engineering, personal development",
+      "date"     : "2018-10-17 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Fixing your weakness",
+      "url"      : "/2018/10/16/fixing-your-weaknesses",
+      "category" : "computer science, personal development",
+      "tags"     : "software engineering, personal development",
+      "date"     : "2018-10-16 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Past few days",
+      "url"      : "/2018/10/15/past-few-days",
+      "category" : "software engineering, computer science, algorithms",
+      "tags"     : "software engineering, computer science, algorithms",
+      "date"     : "2018-10-15 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Ceaser cipher and other things",
+      "url"      : "/2018/10/12/ceaser-cipher",
+      "category" : "software engineering, computer science, algorithms",
+      "tags"     : "software engineering, computer science, algorithms",
+      "date"     : "2018-10-12 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Insertion Sort",
+      "url"      : "/2018/10/11/insertion-sort",
+      "category" : "software engineering, computer science, algorithms",
+      "tags"     : "software engineering, computer science, algorithms",
+      "date"     : "2018-10-11 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Relationships between sets, series, progressions, and sequences",
+      "url"      : "/2018/10/10/relationships-between-sets-series-progressions-and-sequences",
+      "category" : "software engineering, math, calculus",
+      "tags"     : "software engineering, algorithms, math, calculus, sequence, series, progression",
+      "date"     : "2018-10-10 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Trying out Aho–Corasick algorithm",
+      "url"      : "/2018/10/09/trying-out-aho-corasick-algorithm",
+      "category" : "software engineering, algorithms",
+      "tags"     : "software engineering, algorithms",
+      "date"     : "2018-10-09 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "If you don&#39;t share your project, did you actually make it?",
+      "url"      : "/2018/10/08/if-you-dont-share-your-project-did-you-actually-make-it",
+      "category" : "software engineering",
+      "tags"     : "software engineering",
+      "date"     : "2018-10-08 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Easy to get into a pattern of asking questions",
+      "url"      : "/2018/10/06/easy-to-get-into-a-pattern-of-asking-questions",
+      "category" : "software engineering, hiring",
+      "tags"     : "software engineering, hiring",
+      "date"     : "2018-10-06 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Swift package manager and links",
+      "url"      : "/2018/10/04/swift-package-manager-october-2018",
+      "category" : "software engineering, swift, swift package manager, spm, links, challenge",
+      "tags"     : "software engineering, swift, swift package manager, spm, links, challenge",
+      "date"     : "2018-10-04 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Will end-user applications ever be truly programmable?",
+      "url"      : "/2018/10/03/will-end-user-applications-ever-be-truly-programmable",
+      "category" : "software engineering",
+      "tags"     : "software engineering",
+      "date"     : "2018-10-03 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "October 2018 Challenge",
+      "url"      : "/2018/10/02/october-2018-challenge",
+      "category" : "software engineering, challenge",
+      "tags"     : "software engineering, challenge",
+      "date"     : "2018-10-02 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "On Discrete Mathematics For Computer Science",
+      "url"      : "/2018/10/01/on-discrete-mathematics-for-computer-science",
+      "category" : "software engineering, maths",
+      "tags"     : "software engineering, maths",
+      "date"     : "2018-10-01 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "More frequent updates",
+      "url"      : "/2018/09/29/more-frequent-updates",
+      "category" : "Software Engineering",
+      "tags"     : "software engineering, doubt",
+      "date"     : "2018-09-29 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "I have to come clean about my project",
+      "url"      : "/2018/06/10/i-have-to-come-clean-about-my-project",
+      "category" : "Software Development, Software Engineering",
+      "tags"     : "software development, software engineering, doubt, mindful",
+      "date"     : "2018-06-10 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Would you let your mother use your software?",
+      "url"      : "/2018/05/11/would-you-let-your-mother-use-your-software",
+      "category" : "Software Development, Software Engineering",
+      "tags"     : "software development, software engineering",
+      "date"     : "2018-05-11 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "How to make perfect iOS screenshots with a clean status bar in 2018",
+      "url"      : "/2018/03/29/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane-tools-and-simulatorstatusmagic",
+      "category" : "iOS, swift, Software Development, iOS App Development, Mobile App Development, fastlane.tools, SimulatorStatusMagic",
+      "tags"     : "software development, software engineering, tutorial",
+      "date"     : "2018-03-29 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Improving iOS performance with Xcode and Instruments for dummies",
+      "url"      : "/2018/03/24/improving-ios-performance-with-xcode-and-instruments-for-dummies",
+      "category" : "iOS, swift, Software Development, iOS App Development, Mobile App Development",
+      "tags"     : "software development, software engineering, tutorial",
+      "date"     : "2018-03-24 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "How to call Javascript debugger from Xcode? Can you?",
+      "url"      : "/2018/03/09/how-to-call-js-debugger-from-xcode",
+      "category" : "iOS, swift, javascript",
+      "tags"     : "software development, software engineering, productivity, growth, tutorial",
+      "date"     : "2018-03-09 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "January and February Reflections",
+      "url"      : "/2018/02/28/january-and-february-reflections",
+      "category" : "iOS",
+      "tags"     : "software development, software engineering, productivity, growth",
+      "date"     : "2018-02-28 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Ready to Submit",
+      "url"      : "/2018/01/12/ready-to-submit",
+      "category" : "iOS",
+      "tags"     : "software development, software engineering, productivity, growth, TestFlight, resources",
+      "date"     : "2018-01-12 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Getting familiar with iOS testing",
+      "url"      : "/2018/01/11/getting-familiar-w-testing",
+      "category" : "iOS",
+      "tags"     : "software development, software engineering, software quality assurance, productivity, growth, testing, resources",
+      "date"     : "2018-01-11 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Another CoreData Day",
+      "url"      : "/2018/01/07/another-coredata-day",
+      "category" : "iOS",
+      "tags"     : "software development, software engineering, productivity, growth, resources",
+      "date"     : "2018-01-07 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Apple TestFlight Registration Notes",
+      "url"      : "/2018/01/06/apple-testflight-notes",
+      "category" : "iOS, podcast",
+      "tags"     : "software development, software engineering, productivity, growth, resources",
+      "date"     : "2018-01-06 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "2018 Goals: More Regular Writings",
+      "url"      : "/2018/01/03/regular-writings",
+      "category" : "",
+      "tags"     : "software development, software engineering, goals, productivity, growth",
+      "date"     : "2018-01-03 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Installing Yosemite on E8400",
+      "url"      : "/2014/12/21/installing-yosemite-on-e8400",
+      "category" : "Projects",
+      "tags"     : "",
+      "date"     : "2014-12-21 00:00:00 -0500",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "A different archival strategy for pictures on CentOS 7",
+      "url"      : "/2014/10/15/a-different-archival-strategy-for-pictures",
+      "category" : "Projects",
+      "tags"     : "CentOS 7, openssl, guide",
+      "date"     : "2014-10-15 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Installing Mono on CentOS 7",
+      "url"      : "/2014/10/11/installing-mono-on-centos-7",
+      "category" : "Projects",
+      "tags"     : "CentOS 7, beginner, guide, mono",
+      "date"     : "2014-10-11 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Configuring SSH Server on CentOS 7",
+      "url"      : "/2014/10/08/configuring-ssh-on-centos-7",
+      "category" : "Projects",
+      "tags"     : "CentOS 7, how-to, beginner, guide, mono",
+      "date"     : "2014-10-08 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Using wget in CentOS 6.5",
+      "url"      : "/2014/04/30/using-wget",
+      "category" : "Projects",
+      "tags"     : "CentOS 6.5, how-to, beginner, guide, wget",
+      "date"     : "2014-04-30 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Installing XChat CentOS 6.5 for Beginners",
+      "url"      : "/2014/03/16/installing-xchat",
+      "category" : "Projects",
+      "tags"     : "CentOS 6.5, how-to, beginner, guide, XChat",
+      "date"     : "2014-03-16 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Configuring PrivateInternetAccess VPN",
+      "url"      : "/2014/03/16/configuring-pia",
+      "category" : "Projects",
+      "tags"     : "CentOS 6.5, how-to, beginner, guide, PIA, PrivateInternetAccess, VPN",
+      "date"     : "2014-03-16 00:00:00 -0400",
+      "discription" : ""
+
+    } 
+  
+]

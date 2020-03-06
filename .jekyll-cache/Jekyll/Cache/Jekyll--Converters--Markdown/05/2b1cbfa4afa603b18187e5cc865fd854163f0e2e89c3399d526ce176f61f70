@@ -1,0 +1,277 @@
+I"�3<p>From <a href="https://jordankasper.com/object-oriented-javascript-part-the-first/">Object Oriented JavaScript (Part the First)</a></p>
+
+<pre><code class="language-javascript">var literalDog = {        // declaration AND instantiation
+    name: "Vincent",      // object property
+    speak: function() {   // object method
+        return this.name + " says woof";
+    }
+};
+
+literalDog.speak();  // "Vincent says woof"
+</code></pre>
+
+<blockquote>
+  <p>Inside of the speak method the this variable will refer to the current context of the function execution. This is an <strong>important distinction with classically object oriented languages</strong>: the <strong>value of this can (and often does) change</strong>! In most cases, this inside of a method like the one above will refer to the current object or instance. Without some other influence, if a method is called with “dot” syntax as in the last line above, then you can generally expect this inside the function to be whatever is on the left side of the dot. Inside of literalDog.speak() the this variable will refer to the object left of the dot: literalDog.</p>
+</blockquote>
+
+<pre><code class="language-javascript">function Dog(name) {
+    if (name) { this.name = name; }
+    this.speak = function() {
+        return this.name + " says woof";
+    }
+}
+
+var v = new Dog("Vincent");
+</code></pre>
+
+<blockquote>
+  <p>First of all, the use of the capitol “D” in Dog is only done by convention, this is <strong>not a requirement</strong> of the language.</p>
+</blockquote>
+
+<p>which obviously leads to</p>
+
+<blockquote>
+  <p>… <strong>any function</strong> in JavaScript can be used as a “constructor” …</p>
+</blockquote>
+
+<p>So, naturally</p>
+
+<blockquote>
+  <p>If Dog is just a regular function, why don’t we just call it normally? Why do we need to use the new keyword?</p>
+</blockquote>
+
+<p>Yeah man, why?</p>
+
+<blockquote>
+  <p>To answer that, we have to understand that every function in JavaScript has a concept of a <strong>prototype</strong>; which is, generally speaking, a representation of what the newly created instance should be.</p>
+</blockquote>
+
+<p>So, a function is an object. An object that uses this prototype concept to define itself. As a result, when we are calling the <code>new</code> reserved keyword, what happens is three of the following things.</p>
+
+<blockquote>
+  <p>Create an empty object;</p>
+</blockquote>
+
+<blockquote>
+  <p>set the new object’s prototype to point to the prototype;</p>
+</blockquote>
+
+<blockquote>
+  <p>and call the constructor method on the new object.</p>
+</blockquote>
+
+<blockquote>
+  <p>The reason for illustrating what the new keyword is doing is to highlight that it is not the same as <strong>classically inherited languages</strong>. In JavaScript, <em>new</em> is <strong>syntactic sugar</strong> and nothing else.</p>
+</blockquote>
+
+<p>I am not sure why but I really liked this explanation. JavaScript has a lot of interesting concepts that you don’t really need to master in order for everything to work.</p>
+
+<p>I went ahead with his example</p>
+
+<pre><code class="language-javascript">function Dog(name){
+if (name) { this.name = name; }
+this.speak = function() {
+return this.name + " says woof";
+}
+}
+</code></pre>
+
+<p>and then I used it the regular way that I am used to</p>
+
+<pre><code class="language-javascript">var doggo = new Dog("Thunder");
+doggo.speak();
+&gt; "Thunder says woof"
+</code></pre>
+
+<p>but I also implemented it the new way. I am not used to creating objects this way, but it adds to my javascript knowledge for sure</p>
+
+<pre><code class="language-javascript">var otherDoggo = Object.create(Dog.prototype); // step 1 and step 2
+otherDoggo.constructor("Thunder"); // step 3
+otherDoggo.speak();
+&gt; "Thunder says woof"
+</code></pre>
+
+<p>To be honest with you, I would prefer to use it this way just because it allows me to context switch between other concepts and javascript way faster. Seeing the <code>new</code> keyword almost automatically makes me think in a wrong way.</p>
+
+<p>To which the author of the article made a note</p>
+
+<blockquote>
+  <p>There are some people in the JavaScript community who feel that syntactic sugar like the new keyword does more harm than good and choose not to use it at all. However, with ECMAScript 6 (ES6) pushing for more syntactic sugar surrounding OOP, it is unlikely that it will lose favor on a wider scale.</p>
+</blockquote>
+
+<p>and that is so. People prefer to write shorter syntax but I believe it makes learning such a weird language a bit more challenging. Which is fine.</p>
+
+<p>A side issue — which is prevelant everywhere in software — nobody goes back and fixes all of the old tutorials. As a result JavaScript evolves but the answers you get when you search on google or stackoverflow can be from any date.</p>
+
+<p>What if you are following some JavaScript tutorial and trying to understand some concepts. None of the tutorials ever state that JavaScript implementation is browser specific and environment specific. Yes … the various vendors are finally becoming similar but there are small differences. Afterall, the vendors are simply implementing <a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a>.</p>
+
+<p>You still see these differences in 2018. For example, if I go back to the same article as I linked above, the text expects you to see something like</p>
+
+<pre><code class="language-javascript">&gt; console.log(Dog.prototype);
+{
+    constructor: Dog(name) {
+        if (name) { this.name = name; }
+    },
+    name: "Bubbles",
+    speak: function() {
+        return this.name + " says woof";
+    },
+    __proto__: Object { ... }
+}
+</code></pre>
+
+<p>but what you see in most up-to-date firefox is</p>
+
+<p><img src="/assets/images/2018-10-20/firefox-Screen-Shot-2018-10-20-at-11.49.27.png" alt="web developer tools output from firefox october 2018" style="max-width:100%;" /></p>
+
+<p>whereas in chrome you see</p>
+
+<p><img src="/assets/images/2018-10-20/chrome-Screen-Shot-2018-10-20-at-12.09.05.png" alt="web developer tools output from chrome october 2018" style="max-width: 100%" /></p>
+
+<p>so my strategy my dear friend would be to understand the fundamentals. This way, you can adjust the syntax based on your environment. Unfortunately this will be so until all vendors catch up (if ever). Looking back on the past few years — I trully believed we would have it standardized by now.</p>
+
+<hr />
+
+<p>Another thing, if you read the previous essay, that I wanted to improve my understanding in was the indirect invocation below</p>
+
+<pre><code class="language-javascript">function Runner(name) {
+  console.log(this instanceof Rabbit); // =&gt; true
+  this.name = name;
+}
+function Rabbit(name, countLegs) {
+  console.log(this instanceof Rabbit); // =&gt; true
+  // Indirect invocation. Call parent constructor.
+  Runner.call(this, name);
+  this.countLegs = countLegs;
+}
+var myRabbit = new Rabbit('White Rabbit', 4);
+myRabbit; // { name: 'White Rabbit', countLegs: 4 }
+
+</code></pre>
+
+<p>specifically</p>
+
+<pre><code class="language-javascript">Runner.call(this, name);
+</code></pre>
+
+<p>Today I seem to have discovered that answer from the same article</p>
+
+<blockquote>
+  <p>The parent method will not be automatically called for you!  The trick is that we can’t simply call Animal() directly because the context inside that function will not be correct. Calling a function <strong>like that</strong> would typically set this inside the function to point to the window object, our default context.</p>
+</blockquote>
+
+<p>and if you recall JavaScript has several ways to invoke functions. It is important to understand because <code>this</code> is set during invocation. Thus, that is exactly how this type of function invocation in JavaScript works.</p>
+
+<blockquote>
+  <p>… Instead, we have to <strong>manually</strong> call the Animal constructor function while changing its context to point to our new Dog instance.</p>
+</blockquote>
+
+<pre><code class="language-javascript">function Animal(age) {
+    if (age) { this.age = age; }
+
+    var alive = true;
+    this.isAlive = function() { return alive; }
+    this.die = function() { alive = false; }
+}
+Animal.prototype.age = 1;
+
+function Dog(name) {
+    if (name) { this.name = name; }
+}
+</code></pre>
+
+<pre><code class="language-javascript">function Animal(age) { /* ... */ }
+Animal.prototype.age = 1;
+
+function Dog(name) { /* ... */ }
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+
+Dog.prototype.name = "Bubbles";
+// The remainder of Dog.prototype members...
+
+var v = new Dog("Vincent");
+</code></pre>
+
+<blockquote>
+  <p>The key to understanding this relationship is understanding that the <strong>prototype object</strong> is a <strong>fall back mechanism</strong>.</p>
+</blockquote>
+
+<blockquote>
+  <p>[i]f the current instance object (v) does not have an age property directly on it JavaScript will “fall back” to the first prototype (Dog.prototype) and look for age there. If that object doesn’t have an age property, JavaScript will “fall back” to the next prototype, in this case Animal.prototype (defined by the __proto__ member of Dog.prototype). There it is! JavaScript found a member called age on the Animal.prototype and will use that value.</p>
+</blockquote>
+
+<blockquote>
+  <p>This structure is referred to as the prototype chain and falling back to successive prototypes <strong>is the mechanism by which JavaScript creates inheritance</strong>.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="polymorphism">Polymorphism</h2>
+
+<blockquote>
+  <p>But this is not exactly polymorphism since the two functions do not share a name or form (different method signatures). To show how JavaScript supports this concept we need another example.</p>
+</blockquote>
+
+<blockquote>
+  <p>Notice how the Animal object has an age property. This is great, but perhaps we want the age to always be represented in “human years” (which we’ll assume is the default).</p>
+</blockquote>
+
+<p>So</p>
+
+<pre><code class="language-javascript">Animal.prototype.getAge = function() { return this.age; }
+</code></pre>
+
+<p>and consequently</p>
+
+<pre><code class="language-javascript">Dog.prototype.getAge = function() {
+    var dogYears = Animal.prototype.getAge.apply(this);
+    return (dogYears * 7);
+}
+</code></pre>
+
+<p>Thus both <code>Dog</code> and <code>Animal</code> have <code>getAge()</code> but the functionality is a bit different. I’ll let the author explain as they do a good job</p>
+
+<blockquote>
+  <p>There are a couple things to note in the example above. First, we must use the method as it is defined on the Animal.prototype in order to call the parent method. If we try to simply call this.getAge() JavaScript will think we want the Dog.prototype.getAge method and we’ll enter a recursive, infinite loop! Second, we have to use the apply method of the getAge function object in order to switch the context again. Remember, if we were to simply call the method as is (Animal.prototype.getAge()) then the context will be the object on the left side of the dot: Animal.prototype. It will not be our Dog instance!</p>
+</blockquote>
+
+<blockquote>
+  <p>Once we have retrieved the stored age value, we can simply return that value multiplied by 7. In this manner <strong>we are able to achieve polymorphism</strong> by having a method with the same name and same function signature, but with different implementations depending on the type of object (Animal versus Dog versus Cat).</p>
+</blockquote>
+
+<p>While we are able to write code that looks something like</p>
+
+<pre><code class="language-javascript">class Dog extends Animal {
+  constructor(name, age) {
+    super(age);  // Call parent method of the same name
+    if (name) { this._name = name; }
+  }
+
+  get name() {
+    return this._name + " (the dog)";
+  }
+
+  set name(value) {
+    this._name = value.toLowerCase();
+  }
+
+  speak() {
+    return this.name + " says woof";
+  }
+}
+</code></pre>
+
+<hr />
+
+<p>It is nice to know the prototypical background of the language. It is the foundation of the language and how it fundamentally  works. This way it does not matter which abstractions are built on top — you simply adjust =)</p>
+
+<p>I had a lot of issues learning JavaScript as I was coming from a typical accredited computer science background. JavaScript is this frankenstein of a language that dominates the present software terrain. However, the varied implementation by vendors is less than ideal for its stability to teach new staff and overall well being of the language. I wish there was a better management of outdated information. JavaScript is constantly changing so I am not sure if this is possible in this never ending race.</p>
+
+<p>Reminds me of the issues that people had surrounding learning Ruby and Ruby on Rails: the various syntactic magic that goes behind the scenes. I don’t think all of this magic is an issue in JavaScript environment for one big reason — JavaScript is free and all you need is a browser. Nobody to pay any fees; nothing to install; do not need to pay for an IDE. Plus, you get to take all of the invested development hours and use it for free.</p>
+
+<p>Can’t say the same for Ruby on Rails or any other language or framework.</p>
+
+<p>See you next time</p>
+:ET

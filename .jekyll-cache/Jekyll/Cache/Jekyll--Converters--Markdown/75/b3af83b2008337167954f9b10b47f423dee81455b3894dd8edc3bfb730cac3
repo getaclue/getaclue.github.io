@@ -1,0 +1,135 @@
+I"1<ul>
+  <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors</li>
+  <li>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS</li>
+  <li>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes</li>
+  <li>http://crockford.com/javascript/prototypal.html</li>
+  <li>http://javascript.info/class-patterns</li>
+  <li>https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/</li>
+  <li>http://crockford.com/javascript/private.html</li>
+  <li>https://www.gamedev.net/blogs/entry/2265481-oop-is-dead-long-live-oop/</li>
+</ul>
+
+<pre><code class="language-javascript">function Runner(name) {
+  console.log(this instanceof Rabbit); // =&gt; true
+  this.name = name;
+}
+function Rabbit(name, countLegs) {
+  console.log(this instanceof Rabbit); // =&gt; true
+  // Indirect invocation. Call parent constructor.
+  Runner.call(this, name);
+  this.countLegs = countLegs;
+}
+var myRabbit = new Rabbit('White Rabbit', 4);
+myRabbit; // { name: 'White Rabbit', countLegs: 4 }
+
+</code></pre>
+
+<pre><code class="language-javascript">function Vehicle(type, wheelsCount) {
+  if (!(this instanceof Vehicle)) {
+    throw Error('Error: Incorrect invocation');
+  }
+  this.type = type;
+  this.wheelsCount = wheelsCount;
+  return this;
+}
+// Constructor invocation
+var car = new Vehicle('Car', 4);
+car.type               // =&gt; 'Car'
+car.wheelsCount        // =&gt; 4
+car instanceof Vehicle // =&gt; true
+// Function invocation. Generates an error.
+var brokenCar = Vehicle('Broken Car', 3);
+</code></pre>
+
+<pre><code class="language-javascript">function Foo () {
+  console.log(this instanceof Foo); // =&gt; true
+  this.property = 'Default Value';
+}
+// Constructor invocation
+var fooInstance = new Foo();
+fooInstance.property; // =&gt; 'Default Value'
+</code></pre>
+
+<pre><code class="language-javascript">function Foo () {
+  console.log(this instanceof Foo); // =&gt; true
+  this.property = 'Default Value';
+}
+// Constructor invocation
+var fooInstance = new Foo();
+fooInstance.property; // =&gt; 'Default Value'
+</code></pre>
+
+<p>vs.</p>
+
+<pre><code class="language-javascript">class Bar {
+  constructor() {
+    console.log(this instanceof Bar); // =&gt; true
+    this.property = 'Default Value';
+  }
+}
+// Constructor invocation
+var barInstance = new Bar();
+barInstance.property; // =&gt; 'Default Value'
+</code></pre>
+
+<pre><code class="language-javascript">function multiply(number) {
+  'use strict';
+  return this * number;
+}
+// create a bound function with context
+var double = multiply.bind(2);
+// invoke the bound function
+double(3);  // =&gt; 6
+double(10); // =&gt; 20
+</code></pre>
+
+<blockquote>
+  <p>Contrary to .apply() and .call() methods (see 5.), which invokes the function right away, the .bind() method only returns a new function that it supposed to be invoked later with a pre-configured this.
+.bind() makes a permanent context link and will always keep it. A bound function cannot change its linked context when using .call() or .apply() with a different context, or even a rebound doesn’t have any effect.</p>
+</blockquote>
+
+<pre><code class="language-javascript">var numbers = {
+  array: [3, 5, 10],
+  getNumbers: function() {
+    return this.array;
+  }
+};
+// Create a bound function
+var boundGetNumbers = numbers.getNumbers.bind(numbers);
+boundGetNumbers(); // =&gt; [3, 5, 10]
+// Extract method from object
+var simpleGetNumbers = numbers.getNumbers;
+simpleGetNumbers(); // =&gt; undefined or throws an error in strict mode
+</code></pre>
+
+<blockquote>
+  <p>Because the function invocation has the biggest impart on this, from now on do not ask yourself:</p>
+</blockquote>
+
+<blockquote>
+  <pre><code>Where is this taken from?
+</code></pre>
+</blockquote>
+
+<blockquote>
+  <p>but do ask yourself:</p>
+</blockquote>
+
+<blockquote>
+  <pre><code>How is the function invoked?
+</code></pre>
+</blockquote>
+
+<blockquote>
+  <p>For an arrow function ask yourself:</p>
+</blockquote>
+
+<blockquote>
+  <pre><code>What is this where the arrow function is defined?
+</code></pre>
+</blockquote>
+
+<p>JavaScript is kind of funny.</p>
+
+<p>See you next time!</p>
+:ET
