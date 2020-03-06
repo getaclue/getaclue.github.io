@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2020-03-04T18:03:04-05:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Keeping up with keeping up</title><link href="https://getaclue.me/b/2020/03/keeping-up-in-software" rel="alternate" type="text/html" title="Keeping up with keeping up" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>https://getaclue.me/b/2020/03/keeping-up-in-software</id><content type="html" xml:base="https://getaclue.me/b/2020/03/keeping-up-in-software">&lt;p&gt;If you are not producing projects, writing, or contributing socially and you are a software person, are you growing? I have been experiencing a bit of FOMO. You see, last year I kind of went on a social diet of sorts and reduced my presence on social platforms. One of the negative outcomes of this, is my lack of output during this time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://getaclue.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://getaclue.me/" rel="alternate" type="text/html" /><updated>2020-03-05T20:54:58-05:00</updated><id>https://getaclue.me/</id><title type="html">Alex Kluew</title><subtitle>Personal website and blog of Alex Kluew</subtitle><entry><title type="html">Ruby on rails used to be fun</title><link href="https://getaclue.me/b/2020/03/ruby-on-rails" rel="alternate" type="text/html" title="Ruby on rails used to be fun" /><published>2020-03-05T00:00:00-05:00</published><updated>2020-03-05T00:00:00-05:00</updated><id>https://getaclue.me/b/2020/03/ruby-on-rails</id><content type="html" xml:base="https://getaclue.me/b/2020/03/ruby-on-rails">&lt;p&gt;It is fun to be creating in the programming language that is trending. Ruby on Rails was trending among the software craftsperson community throughout the 2010s and in the late 2000s. And I say ruby on rails &lt;em&gt;not&lt;/em&gt; ruby. Personally, I do not happen to care very much for Ruby. It looks the same as Python and even is written using similar syntax and notation. However, it just so happens that ruby on rails was built using Ruby. It provided quick way to create projects while being the talk of everyone. The most productive framework if you may. Part of the fun was that everyone was creating using it. As a result, you could find people using ruby on rails in many places and you feel a sense of community without being in one.&lt;/p&gt;
+
+&lt;p&gt;Among the fun experience, ruby on rails also provided various tools and features that came out of the box. This would cut down the development time extremely short and increase developer productivity. However, as the time went on and the framework stabilized, the craze died down and trend moved elsewhere. People and companies stopped using ruby on rails and moved on to JavaScript or other languages and frameworks. That is the purpose of trends, to move to the next one… &lt;em&gt;not&lt;/em&gt; all of them moved because of trends … I know.&lt;/p&gt;
+
+&lt;p&gt;It makes sense that ruby on rails was &lt;em&gt;the king&lt;/em&gt; for a while. JavaScript (among other frameworks and languages) was not where it is in 2020 and Nodejs was not even a thing. Let alone having LTS releases of Nodejs that enterprise could use and rely on.&lt;/p&gt;
+
+&lt;p&gt;Now, I am talking from MY experience and my day-to-day programming. Or should I say ranting about my experience with ruby on rails.&lt;/p&gt;
+
+&lt;p&gt;The biggest negative I found, while working on rails, is that the systems usually turn into spaghetti code. I’ve seen this happen time after time first hand. This type of environment is definitely not fun to untangle or add features to. It becomes &lt;em&gt;work&lt;/em&gt; minus the fun. Second, rails is fairly resource intensive and for a good reason – it comes with a lot of utility out of the box. Third, making rails fast is possible but requires some rolling up of the sleeves and jumping into the framework specific adjustments. Fourth, and this one is kind of my pet peeve … having ruby on rails work differently from its intension, from convention over configuration, is a headache. Moreover, you should be familiar with enough of the framework as to not damage other parts that you may be modifying.&lt;/p&gt;
+
+&lt;p&gt;Don’t get me wrong, ruby on rails is still my goto for starting new projects but it is not as fun as it used to be. I want to be working on problems not debating if I should ditch ruby on rails for something else. I do wonder if it is laziness at this point or familiarity that is preventing me from jumping ruby ship. There is far less people using it and far less excitement talking to other programmers using the framework. It is harder to find like minded people. It seems that DHH from Basecamp is the only one that is still spearheading how awesome and relevant ruby on rails is. It is his investment after all.&lt;/p&gt;
+
+&lt;p&gt;Sure you can have any of these problems in any other language or framework. And sure, my problems listed above can be fixed by refactoring, reading the documents, staying with the convention, and just doing the work. When you start fixing the problems, it becomes additional work that someone has to do that is hard to sell to a manager. All of this to say, is that it removes the fun for me.&lt;/p&gt;
+
+&lt;p&gt;I’ve been thinking this for some time now and wanted to put it in words and archive it. Perhaps if I was still being paid to work with ruby or on ruby on rails, I would have a different opinion. I’ll continue to take on ruby on rails projects but I am on the lookout for new frameworks and languages … at least for personal projects and quick prototypes. I want to explore python and I would like to give Go a go ;-)&lt;/p&gt;
+
+&lt;p&gt;Speaking of python, django seems be a good contender and to fit the need of ruby on rails. My current plan is to slowly learn python and django if there is time. Anndddd… nodejs and javascript are good too and are widely used. I’ll see how my new projets go =)&lt;/p&gt;
+
+&lt;p&gt;There… out of my head. Heh.&lt;/p&gt;</content><author><name></name></author><category term="ruby on rails" /><category term="software engineering" /><category term="misc" /><category term="random" /><summary type="html">Ruby is not really fun anymore</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://getaclue.me/" /></entry><entry><title type="html">Keeping up with keeping up</title><link href="https://getaclue.me/b/2020/03/keeping-up-in-software" rel="alternate" type="text/html" title="Keeping up with keeping up" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>https://getaclue.me/b/2020/03/keeping-up-in-software</id><content type="html" xml:base="https://getaclue.me/b/2020/03/keeping-up-in-software">&lt;p&gt;If you are not producing projects, writing, or contributing socially and you are a software person, are you growing? I have been experiencing a bit of FOMO. You see, last year I kind of went on a social diet of sorts and reduced my presence on social platforms. One of the negative outcomes of this, is my lack of output during this time.&lt;/p&gt;
 
 &lt;p&gt;Now you see, I have had output at work but that does not satisfy me. I don’t have a thing that I can show or talk about that is interesting on average.&lt;/p&gt;
 
@@ -878,41 +896,4 @@
     &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry><entry><title type="html">Untitled</title><link href="https://getaclue.me/b/2018/10/untitled" rel="alternate" type="text/html" title="Untitled" /><published>2018-10-17T00:00:00-04:00</published><updated>2018-10-17T00:00:00-04:00</updated><id>https://getaclue.me/b/2018/10/untitled</id><content type="html" xml:base="https://getaclue.me/b/2018/10/untitled">&lt;blockquote&gt;
-  &lt;p&gt;“If big tech companies are going to turn their back on the DoD, this country is going to be in trouble,” said Bezos on stage at the Wired25 conference in San Francisco on Monday.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I can view this comment through my Canadian glasses =) Having worked in academia, private, and, now, government environments at various levels — I can definitely appreciate the intricacies that go behind the scenes.&lt;/p&gt;
-
-&lt;p&gt;While we &lt;strong&gt;are&lt;/strong&gt; different countries, we follow similar implementations of organizational structures. We most likely use similar enterprise hardware and software. I also assume that applications of these things are similar in US and Canada. I further assume that such organizations have similar goals (perhaps different strategies).&lt;/p&gt;
-
-&lt;p&gt;So when I see something like the following&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It has already worked with the DoD and multiple law enforcement agencies have used its facial recognition system – Rekognition. Amazon employees and civil liberties organizations &lt;strong&gt;claimed that the software could be used [to] violate human rights&lt;/strong&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;it makes me stop and think about the various things that could be going on during these discussions. Things that are not even about the technology &lt;em&gt;per se&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Organizations, like a government or some equivalent, usually &lt;a href=&quot;https://en.wikipedia.org/wiki/Request_for_proposal&quot;&gt;need&lt;/a&gt; something. These needs are then distributed down their vines using the appropriate channels. So if a need &lt;strong&gt;was&lt;/strong&gt; distributed then that means a bunch of things happened and it was approved. Where am I going with this? While I am using very big generalities, I am just trying to say that maybe other angles could be explored.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I found the following article on &lt;a href=&quot;https://en.wikipedia.org/wiki/AV1&quot;&gt;AOMedia Video 1&lt;/a&gt; — very confusing at first.&lt;/p&gt;
-
-&lt;p&gt;AV1 is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;… meant to succeed its predecessor VP9 and compete with HEVC/H.265 from the Moving Picture Experts Group.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The confusing part was that Apple is involved in the HEVC/H.265 format AND in this format (because they are part of Alliance for Open Media). But as I read on I realized why:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;HEVC/H.265 is royalty &lt;em&gt;bearing&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;AV1 is royalty &lt;em&gt;free&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So that makes sence =)&lt;/p&gt;
-
-&lt;p&gt;Also noticing that I am spending way too much on these and that was never the intention. I keep editing or deleting. My focus is on interview prep. Anywho, see you next time =)&lt;/p&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="software engineering" /><category term="personal development" /></entry></feed>
