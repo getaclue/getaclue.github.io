@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Ruby on rails used to be fun'
+title: "Five years of ruby on rails"
 categories:
   - ruby on rails
   - software engineering
@@ -11,11 +11,11 @@ status: publish
 type: post
 published: true
 meta: {}
-image: ''
-excerpt: 'Ruby is not really fun anymore'
+image: ""
+excerpt: "Five years of ruby on rails"
 dateCreated: 2020-03-05 11:46:44
 datePublished: 2020-03-05 20:48:18
-dateModified: 2020-03-05 20:48:18
+dateModified: 2020-03-08 23:09:00
 ---
 
 It is fun to be creating in the programming language that is trending. Ruby on Rails was trending among the software craftsperson community throughout the 2010s and in the late 2000s. And I say ruby on rails _not_ ruby. Personally, I do not happen to care very much for Ruby. It looks the same as Python and even is written using similar syntax and notation. However, it just so happens that ruby on rails was built using Ruby. It provided quick way to create projects while being the talk of everyone. The most productive framework if you may. Part of the fun was that everyone was creating using it. As a result, you could find people using ruby on rails in many places and you feel a sense of community without being in one.
