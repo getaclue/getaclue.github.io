@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2019-03-17 15:25:00
+dateModified: 2020-03-09 12:29:11
 datePublished: 2018-10-08 14:14:19
 dateCreated: 2018-08-21 15:58:31
 ---
@@ -26,6 +26,10 @@ Welcome to my little corner of the Internet. This place is my collection of thin
 - [Honours BSc in Psychology](https://socialsciences.uottawa.ca/programs/undergraduate-course-sequences/honours-bsc-psychology)
 - open to new opportunities in remote / Hamilton / Toronto / GTA <a href="mailto:info@getaclue.me?subject=Available%20Opportunity%20in%20Toronto%20or%20remote" title="hire me">hire me</a>
 - life-long interest in software engineering discipline
+
+## Services offered
+
+Please see [services offered page](/services).
 
 ## Technology I am familiar with:
 
@@ -65,7 +69,7 @@ I enjoy knowledge for its own sake. I explore other disciplines to understand ou
 
 I am also interested in business and entrepreneurship. Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
 
-[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:style="max-width:100%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo 'Ontario Summer Company 2014 Entrepreneurial Grant')
+[![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:style="max-width:100%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo "Ontario Summer Company 2014 Entrepreneurial Grant")
 
 ### Recruiter?
 
