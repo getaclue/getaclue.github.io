@@ -7,15 +7,15 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-03-09 14:04:40
+dateModified: 2020-03-12 06:00:45
 datePublished: 2018-08-21 15:58:31
 dateCreated: 2018-08-21 15:58:31
 ---
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
 As I continue my path as a software craftsman, I will try to maintain an ongoing record of my work. I'm always happy to chat about my current or previous work. It is listed in no particular order at this moment. Thus, this page itself is a work in progress.
 
@@ -29,6 +29,8 @@ Regular communications to keep client relations via emails, telephone, or in per
 
 <mark> Technologies used to build : </mark> JavaScript, HTML5, CSS5, VB.NET, ASP.NET
 
+---
+
 ## [lastminutelaura.ca](https://lastminutelaura.ca)
 
 ### 2019 - Present
@@ -36,6 +38,8 @@ Regular communications to keep client relations via emails, telephone, or in per
 Wordpress platform modified to be an e-commerce store. [Stripe](https://stripe.com/en-ca) checkout for recurring memberships for supporters. [Discource](https://www.discourse.org/) forums platform. See [lastminutelaura.ca](https://lastminutelaura.ca).
 
 <mark> Technologies used to build : </mark> Wordpress, Stripe, Discource, Linode VPS
+
+---
 
 ## Daily Vibes
 
@@ -47,90 +51,41 @@ From the idea to the requirements phase all the way until the currently paused s
 
 <mark> Technologies used to build : </mark> Native Swift, Core Data, Xcode, Git, Sketch, Premiere Pro, Photoshop, worked on the app during iOS 10 to iOS 13.
 
+#### Code samples :
+
 1. [Swift Code Sample](https://github.com/dailyvibes/dailyvibes.ios.swift)
 2. [Reactjs + Javascript Code Sample](https://github.com/dailyvibes/dailyvibes.front.end)
 3. [dailyvibes.ca website Code Sample](https://github.com/getaclue/dailyvibes.ca)
-4. [Homepage backup version 2](https://dailyvibes.surge.sh)
-5. [Homepage backup version 1](https://mystifying-franklin-7d7d19.netlify.com/)
 
----
+#### Links :
 
 - [Kickstarter campaign](https://www.kickstarter.com/projects/471588901/daily-vibes)
 - [ProductHunt upcoming](https://www.producthunt.com/upcoming/daily-vibes/)
 - [Backstory](https://gist.github.com/getaclue/f1a3b6be4bf5a25d931a0b0bc6099885)
+- [Homepage backup version 2](https://dailyvibes.surge.sh)
+- [Homepage backup version 1](https://mystifying-franklin-7d7d19.netlify.com/)
 - ~~[Mainpage](https://dailyvibes.ca)~~ <mark>Offline</mark>
 
-<div id="carouselExampleControls002" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li data-target="#carouselExampleControls002" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="1"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="2"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="3"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="4"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="5"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="6"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="7"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="8"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src='/assets/images/2020-03-02/IMG_0455.PNG' alt="First slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0456.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0457.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0458.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0459.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0460.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0461.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0462.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0463.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0464.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0465.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0466.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0467.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0469.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0470.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-02/IMG_0471.PNG" alt="Second slide" style="max-width:30%;">
-    </div>
-  </div>
-   <a class="carousel-control-prev" href="#carouselExampleControls002" role="button" data-slide="prev" style="background-color:#eee">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls002" role="button" data-slide="next" style="background-color:#eee">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+#### Screenshots :
+
+[screenshot](/assets/images/2020-03-02/IMG_0455.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0456.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0457.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0458.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0459.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0460.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0461.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0462.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0463.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0464.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0465.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0466.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0467.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0469.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0470.PNG)
+[screenshot](/assets/images/2020-03-02/IMG_0471.PNG)
+
+---
 
 ## Elderoost
 
@@ -140,8 +95,12 @@ Solo developer project. Responsible for product and design development. Software
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, PostgreSQL, PostGIS, Elasticsearch, DigitalOcean VPS, Javascript, HTML5, CSS3, SASS, Cron jobs, Git, Github, Puppeteer
 
+#### Links :
+
 - [Homepage](https://elderoost.herokuapp.com/?ref=getaclue.me) <mark>This version only has 2 data points added.</mark>
 - ~~[Homepage](https://elderoost.com)~~ Offline
+
+---
 
 ## [Screenhole.net](https://screenhole.net)
 
@@ -151,7 +110,9 @@ Freelance project. I helped with API development, bug fixes, quick project proto
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Swift, Reactjs, Nodejs, Heroku, Javascript, HTML5, CSS3, Slack
 
-![Snapper Mac Prototype]({{"assets/images/2020-03-09/snapper_001.png" | relative_url}}){:style="max-width:100%"}
+<!-- ![Snapper Mac Prototype]({{"assets/images/2020-03-09/snapper_001.png" | relative_url}}){:style="max-width:100%"} -->
+
+---
 
 ## [Pttrns](https://pttrns.com)
 
@@ -161,6 +122,8 @@ Freelance project. Aided new owner and previous owner during company transition.
 
 <mark> Technologies used to build : </mark> Ruby, oAuth, Stripe, Git, Javascript, HTML5, CSS3, Github, Heroku, AWS, Docker, Slack
 
+---
+
 ## [betalist.com](https://betalist.com)
 
 ### January 2018 - August 2018
@@ -168,6 +131,8 @@ Freelance project. Aided new owner and previous owner during company transition.
 Freelance project. Aided in features, bug fixes, and implementing a CI for a test suite.
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, oAuth, Git, Javascript, HTML5, CSS3, Github
+
+---
 
 ## iwillreviewyourcode.com
 
@@ -179,28 +144,7 @@ Software service that would review 1000 lines of code for 9.99\$ Call to action 
 
 - ~~[Homepage](https://iwillreviewyourcode.com)~~ <mark>Offline</mark>
 
-<div id="carouselExampleControls004" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li data-target="#carouselExampleControls004" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleControls004" data-slide-to="1"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src='/assets/projects/iwillreviewyourcode/iwillreviewyourcode-jan-2018.png' alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://cdn-pro.dprcdn.net/files/acc_603419/Xitn2i" alt="Second slide">
-    </div>
-  </div>
-   <a class="carousel-control-prev" href="#carouselExampleControls004" role="button" data-slide="prev" style="background-color:#eee">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls004" role="button" data-slide="next" style="background-color:#eee">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+[screenshot](https://cdn-pro.dprcdn.net/files/acc_603419/Xitn2i) [screenshot](/assets/projects/iwillreviewyourcode/iwillreviewyourcode-jan-2018.png)
 
 ## Youtube Videos
 
@@ -210,7 +154,9 @@ Created daily movies about our life and published online. In other words... vlog
 
 - [Youtube channel](https://www.youtube.com/channel/UCJkHRtROA1RHjaQn_wBMocQ)
 
-![lauraandalex vlogs youtube channel]({{"/assets/projects/youtube/youtube-main-jan-2018.png" | relative_url}}){:style="max-width:100%"}
+<!-- ![lauraandalex vlogs youtube channel]({{"/assets/projects/youtube/youtube-main-jan-2018.png" | relative_url}}){:style="max-width:100%"} -->
+
+---
 
 ## Scheduling App
 
@@ -225,6 +171,8 @@ The features of the application included real-time scheduling of business hours,
 
 <mark> Technologies used to build : </mark> Ember.js, Ruby, Ruby on Rails, PostgreSQL, Heroku, Redis, Sidekiq, Surge.sh, Travis CI, Mobile First Design, Agile Development, Github Project
 
+---
+
 ## Startup Weekend
 
 ### Winter 2017
@@ -232,6 +180,8 @@ The features of the application included real-time scheduling of business hours,
 Team project. A website for a [local startup weekend event](https://www.facebook.com/events/1270558846372280/), Winter 2017 edition. The website was promoted along the University of Ottawa campus as marketing material about the event.
 
 - [View code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/W2017)
+
+---
 
 ## Hive
 
@@ -245,6 +195,8 @@ The codebase was ported from Angularjs to Emberjs. Held weekly meetings with the
 
 <mark> Technologies used to build : </mark> Emberjs, Ruby, Ruby on Rails, PostgreSQL, Travis CI, Heroku, HTML5, CSS3, Agile Development, Github, Git
 
+---
+
 ## Startup Weekend
 
 ### Fall 2016
@@ -254,6 +206,8 @@ Team project. A website for a [local startup weekend event](https://www.facebook
 <mark> Technologies used to build : </mark> Javascript, Nodejs, CSS3, HTML5, Git, Github
 
 - [View Code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/F2016)
+
+---
 
 ## IBM
 
@@ -265,6 +219,8 @@ I've also helped IBM @ Ottawa host hacking health initiative.
 
 <mark> Technologies used to build : </mark> JavaScript, HTML5, CSS3, Java, Nodejs, Reviewboard, Slack, IBM Rational Suite
 
+---
+
 ## [uOttawa SESA](https://uottawa-sesa.ca/)
 
 ### Winter 2015 - Spring 2017
@@ -275,7 +231,9 @@ Team project. Web-app that was dedicated to the activities of a student software
 
 - [View code](https://github.com/sesa-uottawa/uottawasesa)
 
-![uOttawa SESA]({{"/assets/projects/uottawa-sesa/uottawa-sesa-jan-2018.png" | relative_url}}){:style="max-width:100%"}
+<!-- ![uOttawa SESA]({{"/assets/projects/uottawa-sesa/uottawa-sesa-jan-2018.png" | relative_url}}){:style="max-width:100%"} -->
+
+---
 
 ## Teldio
 
@@ -283,7 +241,9 @@ Team project. Web-app that was dedicated to the activities of a student software
 
 At Teldio, I joined as a co-op student and then I was employed as a part-time employee. I was tasked with working on their D3M product -- a real-time network builder tool. I've created a custom tokenizer and parser for PDF documents; worked on AWS S3 uploading and downloading for clients; various feature work; typical bug work and testing.
 
-<mark> Technologies used to build : </mark> Ruby, Ruby on Rails, JavaScript, HTML5, CSS3, AWS, Heroku, Marionettejs
+<mark> Technologies used to build : </mark> Ruby, Ruby on Rails, JavaScript, HTML5, CSS3, AWS, Heroku, Marionettejs, Backbonejs
+
+---
 
 ## [Jekyll Theme](https://getaclue.github.io/mdl-jekyll/)
 
@@ -295,6 +255,8 @@ Solo project. I was extremely excited to see the Google's Material Design Lite l
 
 - [View code](https://github.com/getaclue/mdl-jekyll)
 
+---
+
 ## [First web app](https://getaclue-evtbckwl.herokuapp.com/)
 
 ### Fall 2014
@@ -304,6 +266,8 @@ Solo project. This was my first web-app project built using Ruby on Rails and ho
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Bootstrap, HTML5, CSS3, Heroku, Git, Github
 
 - [View Code](https://github.com/getaclue/survey_app)
+
+---
 
 ## E-commerce
 
