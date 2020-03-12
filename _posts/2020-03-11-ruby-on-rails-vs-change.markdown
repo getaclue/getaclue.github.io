@@ -26,10 +26,20 @@ Just today, instead of learning something new ... I spent the time and put my of
 
 It is much more simple and pleasurable to be doing something known, like putting a ruby on rails project on heroku, rather than learning a new language or framework. In the queue I have python, django, and nodejs. I put nodejs last because I am familiar with node and javascript.
 
+I've also put up the most recent, version 2, front page for dailyvibes.ca that was offline. I used [surge.sh](https://surge.sh) for that. And I also found version 1 of the front page, which I put up on [netlify](https://netlify.com).
+
+> Visit [version 2](https://dailyvibes.surge.sh) and [version 1](https://mystifying-franklin-7d7d19.netlify.com)
+
 ---
 
 In addition, I have registered on [upwork](https://www.upwork.com/o/profiles/users/~01efcdfcc917b82687/), [freelancer](https://www.freelancer.com/u/getaclue1), and [fiver](https://www.fiverr.com/getaclue1). My current tangible goal is to make 600\$ usd extra per month. I think the goal is achievable. I have also reached out to my previous freelance employers. I figured I will have to do some leg work on upwork, freelancer, and fiver before I can achieve that number. I am new on those platforms so we will see how it goes. I heard that if you have good reviews, you will get work. So, I need to get some reviews under my belt.
 
 Current plan of attack : look for projects in Ruby on Rails, JavaScript, Java, and Swift on each platform. Find a posting that I like. Hit submit a proposal and write a proposal with a link back to this website.
 
-Potential employers will come to this website and see some of my work. So, putting Elderoost back online wasn't totally a waste of resources for today =)
+---
+
+Potential employers will come to this website and see some of my work. So, putting Elderoost, dailyvibes version 2, and dailyvibes version 1 back online wasn't totally a waste of resources for today =)
+
+links :
+
+- https://free-for.dev/

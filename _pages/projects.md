@@ -50,52 +50,15 @@ From the idea to the requirements phase all the way until the currently paused s
 1. [Swift Code Sample](https://github.com/dailyvibes/dailyvibes.ios.swift)
 2. [Reactjs + Javascript Code Sample](https://github.com/dailyvibes/dailyvibes.front.end)
 3. [dailyvibes.ca website Code Sample](https://github.com/getaclue/dailyvibes.ca)
+4. [Homepage backup version 2](https://dailyvibes.surge.sh)
+5. [Homepage backup version 1](https://mystifying-franklin-7d7d19.netlify.com/)
 
 ---
 
 - [Kickstarter campaign](https://www.kickstarter.com/projects/471588901/daily-vibes)
 - [ProductHunt upcoming](https://www.producthunt.com/upcoming/daily-vibes/)
 - [Backstory](https://gist.github.com/getaclue/f1a3b6be4bf5a25d931a0b0bc6099885)
-- ~~[Homepage](https://dailyvibes.ca)~~ <mark>Offline</mark>
-
-<div id="carouselExampleControls001" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li data-target="#carouselExampleControls001" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleControls001" data-slide-to="1"></li>
-    <li data-target="#carouselExampleControls001" data-slide-to="2"></li>
-    <li data-target="#carouselExampleControls001" data-slide-to="3"></li>
-    <li data-target="#carouselExampleControls001" data-slide-to="4"></li>
-    <li data-target="#carouselExampleControls001" data-slide-to="5"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src='/assets/projects/daily-vibes/dailyvibes-kickstarter-jan-2018.png' alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/projects/daily-vibes/dailyvibes-ph-jan-2018.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-03/dailyvibes-front-end-001.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-03/dailyvibes-front-end-002.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-03/dailyvibes-front-end-003.png" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-09/dailyvibes_001.png" alt="Second slide">
-    </div>
-  </div>
-   <a class="carousel-control-prev" href="#carouselExampleControls001" role="button" data-slide="prev" style="background-color:#eee">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls001" role="button" data-slide="next" style="background-color:#eee">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+- ~~[Mainpage](https://dailyvibes.ca)~~ <mark>Offline</mark>
 
 <div id="carouselExampleControls002" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
@@ -108,13 +71,9 @@ From the idea to the requirements phase all the way until the currently paused s
     <li data-target="#carouselExampleControls002" data-slide-to="6"></li>
     <li data-target="#carouselExampleControls002" data-slide-to="7"></li>
     <li data-target="#carouselExampleControls002" data-slide-to="8"></li>
-    <li data-target="#carouselExampleControls002" data-slide-to="9"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src='/assets/images/2020-03-03/dailyvibes.ca.png' alt="First slide" style="max-width:30%;">
-    </div>
-    <div class="carousel-item">
       <img class="d-block w-100" src='/assets/images/2020-03-02/IMG_0455.PNG' alt="First slide" style="max-width:30%;">
     </div>
     <div class="carousel-item">
@@ -183,33 +142,6 @@ Solo developer project. Responsible for product and design development. Software
 
 - [Homepage](https://elderoost.herokuapp.com/?ref=getaclue.me) <mark>This version only has 2 data points added.</mark>
 - ~~[Homepage](https://elderoost.com)~~ Offline
-
-<div id="carouselExampleControls003" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li data-target="#carouselExampleControls003" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleControls003" data-slide-to="1"></li>
-    <li data-target="#carouselExampleControls003" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src='/assets/images/2020-03-09/elderoost_front.gif' alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-09/elderoost_listing_001.gif" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-09/elderoost_listing_002.gif" alt="Third slide">
-    </div>
-  </div>
-   <a class="carousel-control-prev" href="#carouselExampleControls003" role="button" data-slide="prev" style="background-color:#eee">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls003" role="button" data-slide="next" style="background-color:#eee">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 
 ## [Screenhole.net](https://screenhole.net)
 
