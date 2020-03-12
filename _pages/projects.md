@@ -7,8 +7,9 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-03-04 18:00:36
+dateModified: 2020-03-09 14:04:40
 datePublished: 2018-08-21 15:58:31
+dateCreated: 2018-08-21 15:58:31
 ---
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -61,6 +62,10 @@ From the idea to the requirements phase all the way until the currently paused s
 <ol class="carousel-indicators">
     <li data-target="#carouselExampleControls001" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleControls001" data-slide-to="1"></li>
+    <li data-target="#carouselExampleControls001" data-slide-to="2"></li>
+    <li data-target="#carouselExampleControls001" data-slide-to="3"></li>
+    <li data-target="#carouselExampleControls001" data-slide-to="4"></li>
+    <li data-target="#carouselExampleControls001" data-slide-to="5"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -79,7 +84,7 @@ From the idea to the requirements phase all the way until the currently paused s
       <img class="d-block w-100" src="/assets/images/2020-03-03/dailyvibes-front-end-003.png" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/2020-03-03/dailyvibes-front-end-004.png" alt="Second slide">
+      <img class="d-block w-100" src="/assets/images/2020-03-09/dailyvibes_001.png" alt="Second slide">
     </div>
   </div>
    <a class="carousel-control-prev" href="#carouselExampleControls001" role="button" data-slide="prev" style="background-color:#eee">
@@ -176,19 +181,24 @@ Solo developer project. Responsible for product and design development. Software
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, PostgreSQL, PostGIS, Elasticsearch, DigitalOcean VPS, Javascript, HTML5, CSS3, SASS, Cron jobs, Git, Github, Puppeteer
 
-- ~~[Homepage](https://elderoost.com)~~ <mark>Offline</mark>
+- [Homepage](https://elderoost.herokuapp.com/?ref=getaclue.me) <mark>This version only has 2 data points added.</mark>
+- ~~[Homepage](https://elderoost.com)~~ Offline
 
 <div id="carouselExampleControls003" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
     <li data-target="#carouselExampleControls003" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleControls003" data-slide-to="1"></li>
+    <li data-target="#carouselExampleControls003" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src='/assets/projects/elderoost/elderoost-jan-2018.png' alt="First slide">
+      <img class="d-block w-100" src='/assets/images/2020-03-09/elderoost_front.gif' alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://cdn-pro.dprcdn.net/files/acc_603419/HF7VLE" alt="Second slide">
+      <img class="d-block w-100" src="/assets/images/2020-03-09/elderoost_listing_001.gif" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/assets/images/2020-03-09/elderoost_listing_002.gif" alt="Third slide">
     </div>
   </div>
    <a class="carousel-control-prev" href="#carouselExampleControls003" role="button" data-slide="prev" style="background-color:#eee">
@@ -208,6 +218,8 @@ Solo developer project. Responsible for product and design development. Software
 Freelance project. I helped with API development, bug fixes, quick project prototyping, and media Mac app. Mac app was able to record the screen and create a mp4 video; or to take simple screenshots. In either case, the media was then uploaded to AWS S3.
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Swift, Reactjs, Nodejs, Heroku, Javascript, HTML5, CSS3, Slack
+
+![Snapper Mac Prototype]({{"assets/images/2020-03-09/snapper_001.png" | relative_url}}){:style="max-width:100%"}
 
 ## [Pttrns](https://pttrns.com)
 
