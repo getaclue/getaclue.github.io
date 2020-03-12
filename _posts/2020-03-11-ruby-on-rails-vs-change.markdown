@@ -14,8 +14,8 @@ meta: {}
 image: ""
 excerpt: "Ruby on rails vs change"
 dateCreated: 2020-03-11 19:48:00
-datePublished: 2020-03-11 19:48:00
-dateModified: 2020-03-11 19:48:00
+datePublished: 2020-03-11 21:40:18
+dateModified: 2020-03-11 21:40:18
 ---
 
 I have a lot to thank for knowing ruby on rails. I wrote the previous article and it sounds so negative whenever I look at it. However, it is not meant to be that way. I was simply saying that I need a change for personal projects. One of the benefits from learning and using the framework has been learning about the internet. So my entire internet foundation and appreciation for it has been in parallel while working on rails. It is challenging to be looking at new tools and replacements for your familiar workflows.
