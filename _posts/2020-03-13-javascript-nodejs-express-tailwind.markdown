@@ -12,11 +12,11 @@ status: publish
 type: post
 published: true
 meta: {}
-image: ""
+image: "https://cdn-std.droplr.net/files/acc_603419/kkB0eL"
 excerpt: "In this article I will show you how to install TailwindCSS for use in a basic ExpressJS app"
 dateCreated: 2020-03-13 05:37:51
 datePublished: 2020-03-13 06:13:17
-dateModified: 2020-03-13 05:37:51
+dateModified: 2020-03-13 06:54:33
 ---
 
 In this article I will show you how to install [TailwindCSS](https://tailwindcss.com/docs/installation/) for use in a basic [ExpressJS](http://expressjs.com/) app. This nodejs project had no other dependencies as I just wanted to install [tailwindcss].
