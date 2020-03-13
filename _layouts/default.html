@@ -3,16 +3,23 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="en" >
-  {% include head.html %}  
+<html lang="en">
+  {% include head.html %}
   <body>
     <main role="main">
-	    
-	    {% include navigation.html %}
-	    
-        {{ content }}
-        	    
+      {% include navigation.html %} {{ content }}
     </main>
-            
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-106794469-1"
+    ></script>
+    <script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "UA-106794469-1", { anonymize_ip: !0 });
+    </script>
   </body>
 </html>
