@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "What to do before building authentication with ExpressJS app",
+      "url"      : "/2020/03/16/building-authentication-in-javascript",
+      "category" : "javascript, nodejs, expressjs, easy",
+      "tags"     : "javascript, nodejs, expressjs, easy",
+      "date"     : "2020-03-16 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "How to install TailwindCSS in ExpressJS app",
       "url"      : "/2020/03/13/javascript-nodejs-express-tailwind",
       "category" : "javascript, nodejs, tailwind, expressjs, easy",

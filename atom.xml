@@ -4,13 +4,126 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-03-13T09:54:59-04:00</updated>
+ <updated>2020-03-16T13:32:02-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
    <email>info@getaclue.me</email>
  </author>
 
+ 
+ <entry>
+   <title>What to do before building authentication with ExpressJS app</title>
+   <link href="getaclue.me/2020/03/16/building-authentication-in-javascript"/>
+   <updated>2020-03-16T00:00:00-04:00</updated>
+   <id>getaclue.me/2020/03/16/building-authentication-in-javascript</id>
+   <content type="html">&lt;p&gt;This weekend I wanted to play with &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;tailwindcss&lt;/a&gt; and what better way to do it then with a project. My project was going to be simple : &lt;strong&gt;write a tutorial on authentication in nodejs apps&lt;/strong&gt;. And I did complete the project, but I struggled to make it easy as possible to follow. I wrote this just so I could break down the next few entries. I ended up using a few packages that I absolutely couldn’t go without and that added to the scope. I also spent lots of time on research and seeing what is out there :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-03-16/lots_of_tabs.png&quot; alt=&quot;lots of tabs&quot; style=&quot;max-width:100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I figured that a good post prior to me re-doing the project would be to talk about thinking of authentication. I will be breaking down the project into smaller parts. I figured in this post, I will outline what I am thinking about.&lt;/p&gt;
+
+&lt;h2 id=&quot;authentication&quot;&gt;Authentication&lt;/h2&gt;
+
+&lt;h3 id=&quot;background-refresher&quot;&gt;Background refresher&lt;/h3&gt;
+
+&lt;p&gt;First thing that I did when beginning the project was go to &lt;a href=&quot;https://owasp.org/www-project-top-ten/&quot;&gt;OWASP&lt;/a&gt; and remind myself of the common pitfalls in authentication, and password storage. After all, if I am putting a tutorial out there I want it to be somewhat secure.&lt;/p&gt;
+
+&lt;p&gt;Links used in background refresher:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html&quot;&gt;https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html&quot;&gt;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html&quot;&gt;https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;decision-time&quot;&gt;Decision time&lt;/h3&gt;
+
+&lt;p&gt;I knew that I wanted to store the information in a database. I did not want to rely on a third party service. So, for data processing and database communication I opted for &lt;a href=&quot;https://sequelize.org&quot;&gt;sequilize&lt;/a&gt; package. &lt;a href=&quot;https://sequelize.org&quot;&gt;Sequilize&lt;/a&gt; is great in that you can switch databases and maintain data integrity because you describe all of your data in code in one place.&lt;/p&gt;
+
+&lt;p&gt;For this tutorial, I wanted to store username, email, and password. I did not want to store the password as plaintext for this tutorial even though I was trying to keep the tutorial simple. My goto solution for password encryption is usually the bcrypt algorithm. So, for this project, naturally, I decided to use the &lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;bcrypt&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;p&gt;I couldn’t decide if I wanted to teach about &lt;a href=&quot;https://www.npmjs.com/package/jsonwebtoken&quot;&gt;jwt&lt;/a&gt; tokens or session &lt;a href=&quot;https://expressjs.com/en/resources/middleware/cookie-parser.html&quot;&gt;cookies&lt;/a&gt;. Afterall, nowadays you need to be comfortable in both. So, I opted out for storing jwt token in the cookies. Using cookies is usually my default go-to because the technology is proven, safe, and reliable. Cookies have been here since the beginning on web apps.&lt;/p&gt;
+
+&lt;p&gt;However, as I proceeded through my project, I realized that this went beyond the scope of my initial tutorial. This added a level of authorization to our authentication tutorial. I finished this authorization not realizing that I will have to backtrack in my actual write up and create several tutorials out of it.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-connect-sequilize-to-expressjs-app&quot;&gt;How to connect Sequilize to ExpressJS app&lt;/h3&gt;
+
+&lt;p&gt;This tutorial will talk about the setup of sequilize and a simple model of our user that will be used in follow up tutorials. The user will contain username, password, and email attributes. Maybe… I will add token attribute and confirmation_token attributes for confirmation steps. Haven’t fully decided on this.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-add-authentication-to-expressjs-app-with-sequilize&quot;&gt;How to add authentication to ExpressJS app with Sequilize&lt;/h3&gt;
+
+&lt;p&gt;For the sake of my tutorial authentication will be split into : user sign up, user login, and user password reset. I will have to mention about &lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;bcrypt&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-add-authorization-to-expressjs-app-with-sequilize&quot;&gt;How to add authorization to ExpressJS app with Sequilize&lt;/h3&gt;
+
+&lt;p&gt;For this tutorial I will be mentioning the usage of &lt;a href=&quot;https://www.npmjs.com/package/jsonwebtoken&quot;&gt;jwt&lt;/a&gt; and session &lt;a href=&quot;https://expressjs.com/en/resources/middleware/cookie-parser.html&quot;&gt;cookies&lt;/a&gt;. These details kind of depend on the clients that will be using our API and whether or not we have an API. I used both to show the different ways of implementing authorization. Personally I prefer cookies as they have been battle tested in various environments, but sometimes for things like mobile apps, you need to use something like &lt;a href=&quot;https://www.npmjs.com/package/jsonwebtoken&quot;&gt;jwt&lt;/a&gt;. I simply saved my generated &lt;a href=&quot;https://www.npmjs.com/package/jsonwebtoken&quot;&gt;jwt&lt;/a&gt; token in our &lt;a href=&quot;https://expressjs.com/en/resources/middleware/cookie-parser.html&quot;&gt;cookies&lt;/a&gt; so that we can play with both :)&lt;/p&gt;
+
+&lt;p&gt;Here is what it looked like when finished :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-03-16/sign_in.png&quot; alt=&quot;sign in&quot; style=&quot;max-width:100%&quot; /&gt;
+&lt;img src=&quot;/assets/images/2020-03-16/sign_up.png&quot; alt=&quot;sign up&quot; style=&quot;max-width:100%&quot; /&gt;
+&lt;img src=&quot;/assets/images/2020-03-16/forgot_password.png&quot; alt=&quot;forgot password&quot; style=&quot;max-width:100%&quot; /&gt;
+&lt;img src=&quot;/assets/images/2020-03-16/profile.png&quot; alt=&quot;profile&quot; style=&quot;max-width:100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am not sure if I will have this UI for the written up tutorials or if I will come up with something else.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;PS: When most people think of authentication they actually are referring to authorization. So… you may have to explain this to your client. It is a good idea to have a walk through of the components that you need to build. You can create deliverables out of them.&lt;/p&gt;
+
+&lt;p&gt;The example above shows the authorization and authentication of a simple user profile using &lt;a href=&quot;https://www.npmjs.com/package/jsonwebtoken&quot;&gt;jwt&lt;/a&gt; and &lt;a href=&quot;https://expressjs.com/en/resources/middleware/cookie-parser.html&quot;&gt;cookies&lt;/a&gt;. The information is stored in a sqlite3 database in the local directory and is using &lt;a href=&quot;https://sequelize.org&quot;&gt;sequilize&lt;/a&gt; driver for data access. The ui is build using &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;tailwindcss&lt;/a&gt; (I have a tutorial on that tailwindcss which you can visit &lt;a href=&quot;https://getaclue.me/2020/03/13/javascript-nodejs-express-tailwind&quot;&gt;here&lt;/a&gt;). With the help of &lt;a href=&quot;https://www.npmjs.com/package/jsonwebtoken&quot;&gt;jwt&lt;/a&gt; our software is also ready to create an api for mobile or desktop clients if there was ever a need.&lt;/p&gt;
+
+&lt;p&gt;I was not tracking my time on this but it says I used about 3 hours this weekend in VS Code. Which includes writing in VS Code as well. So maybe divide in half? About 1 hour or 1.5 hours on this code for sure I would think.&lt;/p&gt;
+
+&lt;p&gt;links that I may or may not have used (ie tabs open at the time of writing this article):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?newwindow=1&amp;amp;ei=TX5tXpKkC-Gc_Qb9oKyoDQ&amp;amp;q=web+authorization&amp;amp;oq=web+authorization&amp;amp;gs_l=psy-ab.3..0l3j0i22i30l7.74208935.74213872..74213997...7.4..2.512.3222.11j2j3j1j1j1......0....1..gws-wiz.......0i71j0i67j0i131j0i273j0i10.8rqUb2ZDcL4&amp;amp;ved=0ahUKEwjS_tTjo5voAhVhTt8KHX0QC9UQ4dUDCAs&amp;amp;uact=5&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://owasp.org/www-project-top-ten/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#modern-algorithms&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?q=nodejs+authorization&amp;amp;oq=nodejs+authorization&amp;amp;aqs=chrome..69i57.6185j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jasonwatmore.com/post/2018/11/28/nodejs-role-based-authorization-tutorial-with-example-api&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?newwindow=1&amp;amp;ei=66VuXo_4NpHdtAbsxbhA&amp;amp;q=bcrypt+javascript&amp;amp;oq=bcrypt+javascript&amp;amp;gs_l=psy-ab.3..0l4j0i22i30l6.3087.4669..4924...0.2..0.281.1501.7j5j1......0....1..gws-wiz.......0i71j0i67.TeG0giixnYk&amp;amp;ved=0ahUKEwjPmYvavZ3oAhWRLs0KHewiDggQ4dUDCAs&amp;amp;uact=5&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?newwindow=1&amp;amp;q=middleware+node+j&amp;amp;spell=1&amp;amp;sa=X&amp;amp;ved=2ahUKEwip8eafwp3oAhVzds0KHelUDW0QBSgAegQIDRAm&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://expressjs.com/en/resources/middleware/cookie-session.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?q=jwt+res&amp;amp;oq=jwt+res&amp;amp;aqs=chrome..69i57.3131j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackabuse.com/authentication-and-authorization-with-jwts-in-express-js/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sohamkamani.com/blog/javascript/2019-03-29-node-jwt-authentication/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/jsonwebtoken&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?q=nodejs+response+authorization+header&amp;amp;oq=nodejs+response+authorization+header&amp;amp;aqs=chrome..69i57.8306j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/34589272/how-to-set-authorization-headers-with-nodejs-and-express&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?q=cookie-parser&amp;amp;oq=cookie-parser&amp;amp;aqs=chrome..69i57j69i60.247j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://riptutorial.com/node-js/example/21767/setting-cookies-with-cookie-parser&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/expressjs/expressjs_cookies.htm&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://handlebarsjs.com/guide/builtin-helpers.html#if&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tailwindcss.com/components/forms&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?q=nodejs+redirect+response&amp;amp;oq=nodejs+redirect+response&amp;amp;aqs=chrome..69i57.2927j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/11355366/how-to-redirect-users-browser-url-to-a-different-page-in-nodejs&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/search?q=build+middleweare&amp;amp;oq=build+middleweare&amp;amp;aqs=chrome..69i57.2198j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://expressjs.com/en/resources/middleware.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://expressjs.com/en/resources/middleware/cookie-parser.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/expressjs/cookie-parser/blob/master/test/cookieParser.js&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sequelize/sequelize&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sequelize.org/master/manual/polymorphic-associations.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sequelize.org/master/manual/model-querying-basics.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/40076638/compare-passwords-bcryptjs/40077486&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://teamtreehouse.com/library/install-and-use-sequelize-cli&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@zhhjoseph/getting-started-with-sequelize-dd6045f366e6&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://openclassrooms.com/en/courses/5614116-go-full-stack-with-node-js-express-and-mongodb/5656301-set-up-authentication-middleware&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackabuse.com/handling-authentication-in-express-js/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackabuse.com/implementing-user-authentication-the-right-way/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jkasun/stack-abuse-express-authentication/blob/master/app.js&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>How to install TailwindCSS in ExpressJS app</title>
