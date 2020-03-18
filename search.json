@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "How to install Sequelize in ExpressJS app with SQLite",
+      "url"      : "/2020/03/18/sequilize-javascript-express",
+      "category" : "javascript, nodejs, sequelize, expressjs, sqlite",
+      "tags"     : "javascript, nodejs, sequelize, expressjs, sqlite",
+      "date"     : "2020-03-18 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "What to do before building authentication with ExpressJS app",
       "url"      : "/2020/03/16/building-authentication-in-javascript",
       "category" : "javascript, nodejs, expressjs, easy",

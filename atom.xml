@@ -4,13 +4,177 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-03-16T13:32:02-04:00</updated>
+ <updated>2020-03-18T19:41:03-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
    <email>info@getaclue.me</email>
  </author>
 
+ 
+ <entry>
+   <title>How to install Sequelize in ExpressJS app with SQLite</title>
+   <link href="getaclue.me/2020/03/18/sequilize-javascript-express"/>
+   <updated>2020-03-18T00:00:00-04:00</updated>
+   <id>getaclue.me/2020/03/18/sequilize-javascript-express</id>
+   <content type="html">&lt;p&gt;Our goal for this project is to see this :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-03-18/goal-sequelize.png&quot; alt=&quot;Connection established.&quot; style=&quot;max-width:100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Start the project by making the src folder :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd dev/nodejs
+mkdir LeAppWriteup
+cd LeAppWriteup &amp;amp;&amp;amp; npm init
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;install the basic dependencies : express, &lt;a href=&quot;https://sequelize.org/v5/manual/getting-started.html&quot;&gt;sequelize&lt;/a&gt;, and sqlite.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install --save express
+npm install --save sequelize
+npm install --save sqlite3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I wanted to configure the database connection first, so I made a folder called &lt;code&gt;config&lt;/code&gt; and a file for database &lt;code&gt;db.js&lt;/code&gt;. In the file I wrote the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;// config/db.js
+const Sequelize = require(&quot;sequelize&quot;);
+
+const db = new Sequelize({
+  dialect: &quot;sqlite&quot;,
+  storage: &quot;leappwriteup.sqlite3&quot;
+});
+
+module.exports = db;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The configuration above basically follows the readme of the &lt;a href=&quot;https://sequelize.org/v5/manual/getting-started.html&quot;&gt;sequelize&lt;/a&gt; project. We are injecting the sequelize project, then we are instantiating a sequelize object that will use sqlite as its database. After this, I was ready to test the connections. All of the basic building blocks are there. The server, the database, and the connector. We test all three by running the following code in the &lt;code&gt;index.js&lt;/code&gt; file (our start file) :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;// index.js
+const express = require(&quot;express&quot;);
+const router = express.Router();
+const db = require(&quot;./config/db&quot;);
+
+// start db
+db.authenticate()
+  .then(result =&amp;gt; {
+    console.log(&quot;Connection established.&quot;);
+  })
+  .catch(error =&amp;gt; {
+    console.log(&quot;Unable to connect to db: &quot;, error);
+  });
+
+// start app
+const app = express();
+
+module.exports = app;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the code above we are first injecting the dependent packages : express and database, the code for which is from our text above. We then call the database to establish a connection. If everything works as expected I will see &lt;code&gt;Connection established.&lt;/code&gt; message. Otherwise, I will see the error for why it did not connect to the db. Finally, the express server is started and the entire app is exported for use elsewhere in the code.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;node index.js&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Run &lt;code&gt;node index.js&lt;/code&gt; and see your progress. You should see the successful message. Congratulations, you have connected your server to the database and created an empty &lt;code&gt;sqlite3&lt;/code&gt; database file. Otherwise, review your steps or send me a shout ;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This part is totally optional. To interact with the database, we better start off with modeling our data as per &lt;a href=&quot;https://sequelize.org/v5/manual/getting-started.html&quot;&gt;sequelize&lt;/a&gt; documents. I did it by creating the following file in the folder &lt;code&gt;models&lt;/code&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir models
+cd models &amp;amp;&amp;amp; touch user.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I then created the following code in the &lt;code&gt;user.js&lt;/code&gt; file :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;// models/user.js
+const sequelize = require(&quot;../config/db&quot;);
+const { DataTypes } = require(&quot;sequelize&quot;);
+
+const User = sequelize.define(&quot;User&quot;, {
+  email: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  password: {
+    type: DataTypes.TEXT,
+    allowNull: false
+  },
+  username: {
+    type: DataTypes.TEXT,
+    allowNull: false
+  },
+  token: {
+    type: DataTypes.TEXT,
+    allowNull: false
+  }
+});
+
+module.exports = User;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, test all of the code together by interacting with the database. I will do so by creating a seed file and running it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;touch ../config/db.seed.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the seed file I want to connect to the database and add one user to the database and save it. After doing that, I want to run my project again to ensure that the connection to the database is established.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;// config/db.seed.js
+const db = require(&quot;./db&quot;);
+const User = require(&quot;../models/user&quot;);
+
+const seed = async () =&amp;gt; {
+  await db.sync({ force: true });
+
+  const password = 'M&amp;lt;gC4[`Dqv}G``X&quot;Tg4XDbRrmWR46/ca';
+  const username = &quot;getaclue&quot;;
+  const email = &quot;info@getaclue.me&quot;;
+  const token = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6ImluZm9AZ2V0YWNsdWUubWUiLCJpYXQiOjE1MTYyMzkwMjJ9._lImbjluzsOJSy-hlDzEOasZRSd8YuQ_9hBmmCvSvp0`;
+
+  User.create({
+    password: password,
+    email: email,
+    username: username,
+    token: token
+  })
+    .then(user =&amp;gt; {
+      console.log(&quot;seeded user&quot;, user);
+
+      User.findOne({ where: { email: `${user.email}` } })
+        .then(user =&amp;gt; {
+          console.log(&quot;found in db after adding&quot;);
+          db.close();
+        })
+        .catch(error =&amp;gt; {
+          console.error(&quot;error looking for new user in db: &quot;, error);
+          db.close();
+        });
+    })
+    .catch(error =&amp;gt; {
+      console.error(&quot;failed to seed, &quot;, error);
+      db.close();
+    });
+};
+
+seed();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once everything is typed out, you can feel free to test everything once again. I ran the follow commands and made sure everything worked as expected.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;node config/db.seed.js
+node index.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is what your final folder structure should look like :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-03-18/final_file_structure.png&quot; alt=&quot;Final file structure&quot; style=&quot;max-width:100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have installed &lt;a href=&quot;https://sequelize.org/v5/manual/getting-started.html&quot;&gt;Sequelize&lt;/a&gt; and SQLite in my ExpressJS project; established the connection between ExpressJS and SQLite via &lt;a href=&quot;https://sequelize.org/v5/manual/getting-started.html&quot;&gt;Sequelize&lt;/a&gt;; created User’s table, added some data, and queried that data. From here on, steps like building out the api; authentication; and authorization can proceed.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>What to do before building authentication with ExpressJS app</title>
