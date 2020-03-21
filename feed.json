@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "getaclue.me/2020/03/21/bcrypt-expressjs-sequelize",
+            "title": "Simple Bcrypt ExpressJS example",
+            "summary": null,
+            "content_text": "I wanted to build an ExpressJS simple tool that will serve two functions :  hash a string using bcrypt and  compare a hashed and plain-text string using bcrypt to see if they match.JustificationThese two features are the building blocks for something like authentication in an app. If I was storing some string in my database, like a password, that I did not want anyone to read, I would have to encrypt the string. Something like bcrypt algorithm is a wonderful tool to do that. In this tutorial, I walk you through the two functions that would save a lot of headaches for you : hash and compare. Lets see what I did in the steps below.Limitations of bcryptThe resulting hashes will be 60 characters in length and composed of the following characters :  ./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$Create a new projectFirst, I created a new project running npm init.cd nodejsprojectsmkdir bcryptexamplecd bcryptexamplenpm initAfter that, I downloaded the two minimum dependencies :npm install express --savenpm install bcrypt --saveImplement bcrypt in expressjsNext, I created my express server with two public resources that process my two wanted functions for this project. The code of index.js simply looks like this :Finally, I launched my projectnode index.jsand began testing it by navigating to http://localhost:3000/hash/randomstringgoeshere to see the bcrypt hashed string as output by the server. To test the second function you need to input the hash and plain-text string manually. Like so :http://localhost:3000/compare/$2b$10$DB0melt1B.3Fn7MfXwC17OIevWVhtSgXMrINkg9M4SEHdFgM6Myqm/dasdasAnd that’s it. You now harness the power of using bcrypt in your ExpressJS projects. Feel free to read the documentations for bcrypt to see all of the options and customizations available out of the box. A prime example for using something like the bcrypt library is for password storage in your database.In a scenario, after receiving user input of a password, run the text through hash function and then save that string in your database rather than a plain-text password. Next, when you need to check if the encrypted password saved in your database matches a string, run the compare function to check do that check for you.If you are adding authentication or message encrypting to your app, you are already doing some custom coding. So, spend a few moments and make that code secure so that your users have a peace of mind when it comes to storing something sensitive on your app. Just be aware of the limitations of this library.",
+            "content_html": "<p>I wanted to build an <a href=\"https://expressjs.com/en/starter/hello-world.html\">ExpressJS</a> simple tool that will serve two functions :</p><ol>  <li>hash a string using bcrypt and</li>  <li>compare a hashed and plain-text string using <a href=\"https://www.npmjs.com/package/bcrypt\">bcrypt</a> to see if they match.</li></ol><h2 id=\"justification\">Justification</h2><p>These two features are the building blocks for something like authentication in an app. If I was storing some string in my database, like a password, that I did not want anyone to read, I would have to encrypt the string. Something like bcrypt algorithm is a wonderful tool to do that. In this tutorial, I walk you through the two functions that would save a lot of headaches for you : <code>hash</code> and <code>compare</code>. Lets see what I did in the steps below.</p><h2 id=\"limitations-of-bcrypt\">Limitations of bcrypt</h2><p>The resulting hashes will be 60 characters in length and composed of the following characters :</p><blockquote>  <p>./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$</p></blockquote><h2 id=\"create-a-new-project\">Create a new project</h2><p>First, I created a new project running <code>npm init</code>.</p><pre><code>cd nodejsprojectsmkdir bcryptexamplecd bcryptexamplenpm init</code></pre><p>After that, I downloaded the two minimum dependencies :</p><pre><code>npm install express --savenpm install bcrypt --save</code></pre><h2 id=\"implement-bcrypt-in-expressjs\">Implement <a href=\"https://www.npmjs.com/package/bcrypt\">bcrypt</a> in <a href=\"https://expressjs.com/en/starter/hello-world.html\">expressjs</a></h2><p>Next, I created my express server with two public resources that process my two wanted functions for this project. The code of <code>index.js</code> simply looks like this :</p><script src=\"https://gist.github.com/getaclue/62142f5b829c4594a2f13bff7505f90d.js\"></script><p>Finally, I launched my project</p><pre><code>node index.js</code></pre><p>and began testing it by navigating to <code>http://localhost:3000/hash/randomstringgoeshere</code> to see the bcrypt hashed string as output by the server. To test the second function you need to input the hash and plain-text string manually. Like so :</p><pre><code>http://localhost:3000/compare/$2b$10$DB0melt1B.3Fn7MfXwC17OIevWVhtSgXMrINkg9M4SEHdFgM6Myqm/dasdas</code></pre><p>And that’s it. You now harness the power of using <a href=\"https://www.npmjs.com/package/bcrypt\">bcrypt</a> in your <a href=\"https://expressjs.com/en/starter/hello-world.html\">ExpressJS</a> projects. Feel free to read the documentations for <a href=\"https://www.npmjs.com/package/bcrypt\">bcrypt</a> to see all of the options and customizations available out of the box. A prime example for using something like the bcrypt library is for password storage in your database.</p><p>In a scenario, after receiving user input of a password, run the text through <code>hash</code> function and then save that string in your database rather than a plain-text password. Next, when you need to check if the encrypted password saved in your database matches a string, run the <code>compare</code> function to check do that check for you.</p><hr /><p>If you are adding authentication or message encrypting to your app, you are already doing some custom coding. So, spend a few moments and make that code secure so that your users have a peace of mind when it comes to storing something sensitive on your app. Just be aware of the limitations of this library.</p>",
+            "url": "getaclue.me/2020/03/21/bcrypt-expressjs-sequelize",
+            
+            
+            
+            "tags": ["javascript","bcrypt","expressjs","example"],
+            
+            "date_published": "2020-03-21T00:00:00-04:00",
+            "date_modified": "2020-03-21T00:00:00-04:00",
+            
+                "author":  {
+                "name": "Alex Kluew",
+                "url": "https://getaclue.me",
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "getaclue.me/2020/03/18/sequilize-javascript-express",
             "title": "How to install Sequelize in ExpressJS app with SQLite",
             "summary": null,
@@ -846,30 +870,6 @@
             
             "date_published": "2018-01-12T00:00:00-05:00",
             "date_modified": "2018-01-12T00:00:00-05:00",
-            
-                "author":  {
-                "name": "Alex Kluew",
-                "url": "https://getaclue.me",
-                "avatar": null
-                }
-                
-            
-        },
-    
-        {
-            "id": "getaclue.me/2018/01/11/getting-familiar-w-testing",
-            "title": "Getting familiar with iOS testing",
-            "summary": null,
-            "content_text": "This will be a quick post, mainly a reference to some resource I’ve been using to get familiar with iOS testing and refactoring.Refactoring is fun because I get to exercise my software engineering muscles. This is one of the reasons that I like Swift so much. I get to apply my software engineering knowledge on my own projects 👏Testing on the whole is not difficult in iOS. However, when you add things like CoreData then it becomes a bit more chaotic to filter through.  Unit Tests and Test Driven Development (Xcode 8 and Swift 3)  Let’s Play: Refactor the Mega Controller!  Core Data Wrapper Class, Mocking and Unit Testing in Swift 3!  Updated: Protocol-Oriented MVVM in Swift 2.0  How not to get desperate with MVVM implementation  Unit Testing in Swift: Dependency Injection  Applying Unit Tests to MVVM with Swift  Unit Testing — UITableView  Different flavors of dependency injection in Swift  Cracking the Tests for Core Data  XCTest​Case /XCTest​Expectation /measure​Block()  iOS Theme ColoursCheers,Alex",
-            "content_html": "<p><img src=\"https://d.pr/i/YgH6dm/ayxzukbu17+\" alt=\"Testing image from https://pixabay.com/en/software-testing-service-762486/\" /></p><p>This will be a quick post, mainly a reference to some resource I’ve been using to get familiar with iOS testing and refactoring.</p><p>Refactoring is fun because I get to exercise my software engineering muscles. This is one of the reasons that I like Swift so much. I get to apply my software engineering knowledge on my own projects 👏</p><p>Testing on the whole is not difficult in iOS. However, when you add things like CoreData then it becomes a bit more chaotic to filter through.</p><ul>  <li><a href=\"https://medium.com/@Dougly/unit-tests-and-test-driven-development-xcode-8-and-swift-3-f6d43ecd4bd4\">Unit Tests and Test Driven Development (Xcode 8 and Swift 3)</a></li>  <li><a href=\"https://academy.realm.io/posts/andy-matuschak-refactor-mega-controller/\">Let’s Play: Refactor the Mega Controller!</a></li>  <li><a href=\"http://computingstories.com/swift%20stories/core-data-wrap-class-mocking.html\">Core Data Wrapper Class, Mocking and Unit Testing in Swift 3!</a></li>  <li><a href=\"https://www.natashatherobot.com/updated-protocol-oriented-mvvm-in-swift-2-0/\">Updated: Protocol-Oriented MVVM in Swift 2.0</a></li>  <li><a href=\"https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b\">How not to get desperate with MVVM implementation</a></li>  <li><a href=\"https://www.natashatherobot.com/unit-testing-swift-dependency-injection/\">Unit Testing in Swift: Dependency Injection</a></li>  <li><a href=\"https://medium.com/flawless-app-stories/applying-unit-tests-to-mvvm-with-swift-ba5a79df8a18\">Applying Unit Tests to MVVM with Swift</a></li>  <li><a href=\"https://medium.com/cocoaacademymag/unit-testing-uitableview-2387f3a42b4f\">Unit Testing — UITableView</a></li>  <li><a href=\"https://www.swiftbysundell.com/posts/different-flavors-of-dependency-injection-in-swift\">Different flavors of dependency injection in Swift</a></li>  <li><a href=\"https://medium.com/flawless-app-stories/cracking-the-tests-for-core-data-15ef893a3fee\">Cracking the Tests for Core Data</a></li>  <li><a href=\"http://nshipster.com/xctestcase/\">XCTest​Case /XCTest​Expectation /measure​Block()</a></li>  <li><a href=\"https://www.reddit.com/r/iOSthemes/comments/4zbhnk/question_anyone_know_the_hex_for_the_new_twitter/\">iOS Theme Colours</a></li></ul><p>Cheers,Alex</p>",
-            "url": "getaclue.me/2018/01/11/getting-familiar-w-testing",
-            
-            
-            
-            "tags": ["software development","software engineering","software quality assurance","productivity","growth","testing","resources"],
-            
-            "date_published": "2018-01-11T00:00:00-05:00",
-            "date_modified": "2018-01-11T00:00:00-05:00",
             
                 "author":  {
                 "name": "Alex Kluew",

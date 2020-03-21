@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Simple Bcrypt ExpressJS example",
+      "url"      : "/2020/03/21/bcrypt-expressjs-sequelize",
+      "category" : "nodejs, bcrypt, expressjs, example",
+      "tags"     : "javascript, bcrypt, expressjs, example",
+      "date"     : "2020-03-21 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "How to install Sequelize in ExpressJS app with SQLite",
       "url"      : "/2020/03/18/sequilize-javascript-express",
       "category" : "javascript, nodejs, sequelize, expressjs, sqlite",

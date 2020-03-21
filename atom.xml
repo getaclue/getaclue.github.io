@@ -4,13 +4,80 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-03-18T19:41:03-04:00</updated>
+ <updated>2020-03-21T11:30:18-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
    <email>info@getaclue.me</email>
  </author>
 
+ 
+ <entry>
+   <title>Simple Bcrypt ExpressJS example</title>
+   <link href="getaclue.me/2020/03/21/bcrypt-expressjs-sequelize"/>
+   <updated>2020-03-21T00:00:00-04:00</updated>
+   <id>getaclue.me/2020/03/21/bcrypt-expressjs-sequelize</id>
+   <content type="html">&lt;p&gt;I wanted to build an &lt;a href=&quot;https://expressjs.com/en/starter/hello-world.html&quot;&gt;ExpressJS&lt;/a&gt; simple tool that will serve two functions :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;hash a string using bcrypt and&lt;/li&gt;
+  &lt;li&gt;compare a hashed and plain-text string using &lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;bcrypt&lt;/a&gt; to see if they match.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;justification&quot;&gt;Justification&lt;/h2&gt;
+
+&lt;p&gt;These two features are the building blocks for something like authentication in an app. If I was storing some string in my database, like a password, that I did not want anyone to read, I would have to encrypt the string. Something like bcrypt algorithm is a wonderful tool to do that. In this tutorial, I walk you through the two functions that would save a lot of headaches for you : &lt;code&gt;hash&lt;/code&gt; and &lt;code&gt;compare&lt;/code&gt;. Lets see what I did in the steps below.&lt;/p&gt;
+
+&lt;h2 id=&quot;limitations-of-bcrypt&quot;&gt;Limitations of bcrypt&lt;/h2&gt;
+
+&lt;p&gt;The resulting hashes will be 60 characters in length and composed of the following characters :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;create-a-new-project&quot;&gt;Create a new project&lt;/h2&gt;
+
+&lt;p&gt;First, I created a new project running &lt;code&gt;npm init&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd nodejsprojects
+mkdir bcryptexample
+cd bcryptexample
+npm init
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After that, I downloaded the two minimum dependencies :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install express --save
+npm install bcrypt --save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;implement-bcrypt-in-expressjs&quot;&gt;Implement &lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;bcrypt&lt;/a&gt; in &lt;a href=&quot;https://expressjs.com/en/starter/hello-world.html&quot;&gt;expressjs&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Next, I created my express server with two public resources that process my two wanted functions for this project. The code of &lt;code&gt;index.js&lt;/code&gt; simply looks like this :&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/getaclue/62142f5b829c4594a2f13bff7505f90d.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Finally, I launched my project&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;node index.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and began testing it by navigating to &lt;code&gt;http://localhost:3000/hash/randomstringgoeshere&lt;/code&gt; to see the bcrypt hashed string as output by the server. To test the second function you need to input the hash and plain-text string manually. Like so :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://localhost:3000/compare/$2b$10$DB0melt1B.3Fn7MfXwC17OIevWVhtSgXMrINkg9M4SEHdFgM6Myqm/dasdas
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that’s it. You now harness the power of using &lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;bcrypt&lt;/a&gt; in your &lt;a href=&quot;https://expressjs.com/en/starter/hello-world.html&quot;&gt;ExpressJS&lt;/a&gt; projects. Feel free to read the documentations for &lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;bcrypt&lt;/a&gt; to see all of the options and customizations available out of the box. A prime example for using something like the bcrypt library is for password storage in your database.&lt;/p&gt;
+
+&lt;p&gt;In a scenario, after receiving user input of a password, run the text through &lt;code&gt;hash&lt;/code&gt; function and then save that string in your database rather than a plain-text password. Next, when you need to check if the encrypted password saved in your database matches a string, run the &lt;code&gt;compare&lt;/code&gt; function to check do that check for you.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you are adding authentication or message encrypting to your app, you are already doing some custom coding. So, spend a few moments and make that code secure so that your users have a peace of mind when it comes to storing something sensitive on your app. Just be aware of the limitations of this library.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>How to install Sequelize in ExpressJS app with SQLite</title>
