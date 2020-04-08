@@ -17,16 +17,17 @@ permalink: pretty
 google_analytics: UA-106794469-1
 google_site_verification: j_0ua6jd1va4oFzra32KpYStOsNq9Ve98QboLI-LAN0
 
-baseurl: ''
+baseurl: ""
 
-highlighter: none
+markdown: kramdown
+highlighter: rouge
 
 exclude:
   - .jekyll-cache
 
 compress_html:
   clippings: all
-  comments: ['<!-- ', ' -->']
+  comments: ["<!-- ", " -->"]
 
 sass:
   sass_dir: _sass
@@ -47,16 +48,16 @@ collections:
 
 defaults:
   - scope:
-      path: ''
+      path: ""
     values:
-      layout: 'default'
+      layout: "default"
   - scope:
-      path: ''
-      type: 'pages'
+      path: ""
+      type: "pages"
     values:
-      layout: 'page'
+      layout: "page"
   - scope:
-      path: ''
-      type: 'posts'
+      path: ""
+      type: "posts"
     values:
-      layout: 'post'
+      layout: "post"

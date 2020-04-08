@@ -37,16 +37,16 @@ The resulting hashes will be 60 characters in length and composed of the followi
 
 First, I created a new project running `npm init`.
 
-```
+{% highlight shell %}
 cd nodejsprojects
 mkdir bcryptexample
 cd bcryptexample
 npm init
-```
+{% endhighlight %}
 
 After that, I downloaded the two minimum dependencies :
 
-```
+```shell
 npm install express --save
 npm install bcrypt --save
 ```
@@ -59,7 +59,7 @@ Next, I created my express server with two public resources that process my two 
 
 Finally, I launched my project
 
-```
+```shell
 node index.js
 ```
 

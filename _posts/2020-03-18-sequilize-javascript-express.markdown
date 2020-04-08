@@ -25,7 +25,7 @@ Our goal for this project is to see this :
 
 Start the project by making the src folder :
 
-```
+```shell
 cd dev/nodejs
 mkdir LeAppWriteup
 cd LeAppWriteup && npm init
@@ -33,7 +33,7 @@ cd LeAppWriteup && npm init
 
 install the basic dependencies : express, [sequelize], and sqlite.
 
-```
+```shell
 npm install --save express
 npm install --save sequelize
 npm install --save sqlite3
@@ -47,7 +47,7 @@ const Sequelize = require("sequelize");
 
 const db = new Sequelize({
   dialect: "sqlite",
-  storage: "leappwriteup.sqlite3"
+  storage: "leappwriteup.sqlite3",
 });
 
 module.exports = db;
@@ -63,10 +63,10 @@ const db = require("./config/db");
 
 // start db
 db.authenticate()
-  .then(result => {
+  .then((result) => {
     console.log("Connection established.");
   })
-  .catch(error => {
+  .catch((error) => {
     console.log("Unable to connect to db: ", error);
   });
 
@@ -78,7 +78,9 @@ module.exports = app;
 
 In the code above we are first injecting the dependent packages : express and database, the code for which is from our text above. We then call the database to establish a connection. If everything works as expected I will see `Connection established.` message. Otherwise, I will see the error for why it did not connect to the db. Finally, the express server is started and the entire app is exported for use elsewhere in the code.
 
-> node index.js
+```shell
+node index.js
+```
 
 Run `node index.js` and see your progress. You should see the successful message. Congratulations, you have connected your server to the database and created an empty `sqlite3` database file. Otherwise, review your steps or send me a shout ;)
 
@@ -86,7 +88,7 @@ Run `node index.js` and see your progress. You should see the successful message
 
 This part is totally optional. To interact with the database, we better start off with modeling our data as per [sequelize] documents. I did it by creating the following file in the folder `models` :
 
-```
+```shell
 mkdir models
 cd models && touch user.js
 ```
@@ -101,20 +103,20 @@ const { DataTypes } = require("sequelize");
 const User = sequelize.define("User", {
   email: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
   },
   password: {
     type: DataTypes.TEXT,
-    allowNull: false
+    allowNull: false,
   },
   username: {
     type: DataTypes.TEXT,
-    allowNull: false
+    allowNull: false,
   },
   token: {
     type: DataTypes.TEXT,
-    allowNull: false
-  }
+    allowNull: false,
+  },
 });
 
 module.exports = User;
@@ -122,7 +124,7 @@ module.exports = User;
 
 Finally, test all of the code together by interacting with the database. I will do so by creating a seed file and running it.
 
-```
+```shell
 touch ../config/db.seed.js
 ```
 
@@ -145,22 +147,22 @@ const seed = async () => {
     password: password,
     email: email,
     username: username,
-    token: token
+    token: token,
   })
-    .then(user => {
+    .then((user) => {
       console.log("seeded user", user);
 
       User.findOne({ where: { email: `${user.email}` } })
-        .then(user => {
+        .then((user) => {
           console.log("found in db after adding");
           db.close();
         })
-        .catch(error => {
+        .catch((error) => {
           console.error("error looking for new user in db: ", error);
           db.close();
         });
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("failed to seed, ", error);
       db.close();
     });
@@ -171,7 +173,7 @@ seed();
 
 Once everything is typed out, you can feel free to test everything once again. I ran the follow commands and made sure everything worked as expected.
 
-```
+```shell
 node config/db.seed.js
 node index.js
 ```

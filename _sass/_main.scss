@@ -85,6 +85,7 @@ code {
   // background: #efefef;
   color: #111111;
   // border-radius: 1em;
+  font-family: "Inter", sans-serif;
 }
 
 pre code {
@@ -255,3 +256,5 @@ hr {
   // background: #0074d9;
   border: 5px solid #0074d9;
 }
+
+@import "minima";
