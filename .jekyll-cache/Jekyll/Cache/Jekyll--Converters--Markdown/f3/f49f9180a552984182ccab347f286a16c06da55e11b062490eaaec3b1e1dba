@@ -1,0 +1,156 @@
+I"ú@<p>Our goal for this project is to see this :</p>
+
+<p><img src="/assets/images/2020-03-18/goal-sequelize.png" alt="Connection established." style="max-width:100%" /></p>
+
+<p>Start the project by making the src folder :</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>dev/nodejs
+<span class="nb">mkdir </span>LeAppWriteup
+<span class="nb">cd </span>LeAppWriteup <span class="o">&amp;&amp;</span> npm init
+</code></pre></div></div>
+
+<p>install the basic dependencies : express, <a href="https://sequelize.org/v5/manual/getting-started.html">sequelize</a>, and sqlite.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--save</span> express
+npm <span class="nb">install</span> <span class="nt">--save</span> sequelize
+npm <span class="nb">install</span> <span class="nt">--save</span> sqlite3
+</code></pre></div></div>
+
+<p>I wanted to configure the database connection first, so I made a folder called <code class="highlighter-rouge">config</code> and a file for database <code class="highlighter-rouge">db.js</code>. In the file I wrote the following:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// config/db.js</span>
+<span class="kd">const</span> <span class="nx">Sequelize</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">sequelize</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sequelize</span><span class="p">({</span>
+  <span class="na">dialect</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sqlite</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">storage</span><span class="p">:</span> <span class="dl">"</span><span class="s2">leappwriteup.sqlite3</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">});</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">db</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The configuration above basically follows the readme of the <a href="https://sequelize.org/v5/manual/getting-started.html">sequelize</a> project. We are injecting the sequelize project, then we are instantiating a sequelize object that will use sqlite as its database. After this, I was ready to test the connections. All of the basic building blocks are there. The server, the database, and the connector. We test all three by running the following code in the <code class="highlighter-rouge">index.js</code> file (our start file) :</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// index.js</span>
+<span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">express</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">router</span> <span class="o">=</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Router</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">./config/db</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="c1">// start db</span>
+<span class="nx">db</span><span class="p">.</span><span class="nx">authenticate</span><span class="p">()</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Connection established.</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Unable to connect to db: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+  <span class="p">});</span>
+
+<span class="c1">// start app</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">app</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>In the code above we are first injecting the dependent packages : express and database, the code for which is from our text above. We then call the database to establish a connection. If everything works as expected I will see <code class="highlighter-rouge">Connection established.</code> message. Otherwise, I will see the error for why it did not connect to the db. Finally, the express server is started and the entire app is exported for use elsewhere in the code.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node index.js
+</code></pre></div></div>
+
+<p>Run <code class="highlighter-rouge">node index.js</code> and see your progress. You should see the successful message. Congratulations, you have connected your server to the database and created an empty <code class="highlighter-rouge">sqlite3</code> database file. Otherwise, review your steps or send me a shout ;)</p>
+
+<hr />
+
+<p>This part is totally optional. To interact with the database, we better start off with modeling our data as per <a href="https://sequelize.org/v5/manual/getting-started.html">sequelize</a> documents. I did it by creating the following file in the folder <code class="highlighter-rouge">models</code> :</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>models
+<span class="nb">cd </span>models <span class="o">&amp;&amp;</span> <span class="nb">touch </span>user.js
+</code></pre></div></div>
+
+<p>I then created the following code in the <code class="highlighter-rouge">user.js</code> file :</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// models/user.js</span>
+<span class="kd">const</span> <span class="nx">sequelize</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">../config/db</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">DataTypes</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">sequelize</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">User</span> <span class="o">=</span> <span class="nx">sequelize</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">"</span><span class="s2">User</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">email</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">DataTypes</span><span class="p">.</span><span class="nx">STRING</span><span class="p">,</span>
+    <span class="na">allowNull</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="na">password</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">DataTypes</span><span class="p">.</span><span class="nx">TEXT</span><span class="p">,</span>
+    <span class="na">allowNull</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="na">username</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">DataTypes</span><span class="p">.</span><span class="nx">TEXT</span><span class="p">,</span>
+    <span class="na">allowNull</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="na">token</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">type</span><span class="p">:</span> <span class="nx">DataTypes</span><span class="p">.</span><span class="nx">TEXT</span><span class="p">,</span>
+    <span class="na">allowNull</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">});</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">User</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Finally, test all of the code together by interacting with the database. I will do so by creating a seed file and running it.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch</span> ../config/db.seed.js
+</code></pre></div></div>
+
+<p>In the seed file I want to connect to the database and add one user to the database and save it. After doing that, I want to run my project again to ensure that the connection to the database is established.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// config/db.seed.js</span>
+<span class="kd">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">./db</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">User</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">../models/user</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">seed</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">await</span> <span class="nx">db</span><span class="p">.</span><span class="nx">sync</span><span class="p">({</span> <span class="na">force</span><span class="p">:</span> <span class="kc">true</span> <span class="p">});</span>
+
+  <span class="kd">const</span> <span class="nx">password</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">M&lt;gC4[`Dqv}G``X"Tg4XDbRrmWR46/ca</span><span class="dl">'</span><span class="p">;</span>
+  <span class="kd">const</span> <span class="nx">username</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">getaclue</span><span class="dl">"</span><span class="p">;</span>
+  <span class="kd">const</span> <span class="nx">email</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">info@getaclue.me</span><span class="dl">"</span><span class="p">;</span>
+  <span class="kd">const</span> <span class="nx">token</span> <span class="o">=</span> <span class="s2">`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6ImluZm9AZ2V0YWNsdWUubWUiLCJpYXQiOjE1MTYyMzkwMjJ9._lImbjluzsOJSy-hlDzEOasZRSd8YuQ_9hBmmCvSvp0`</span><span class="p">;</span>
+
+  <span class="nx">User</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+    <span class="na">password</span><span class="p">:</span> <span class="nx">password</span><span class="p">,</span>
+    <span class="na">email</span><span class="p">:</span> <span class="nx">email</span><span class="p">,</span>
+    <span class="na">username</span><span class="p">:</span> <span class="nx">username</span><span class="p">,</span>
+    <span class="na">token</span><span class="p">:</span> <span class="nx">token</span><span class="p">,</span>
+  <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">user</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">seeded user</span><span class="dl">"</span><span class="p">,</span> <span class="nx">user</span><span class="p">);</span>
+
+      <span class="nx">User</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span> <span class="na">where</span><span class="p">:</span> <span class="p">{</span> <span class="na">email</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="p">}</span><span class="s2">`</span> <span class="p">}</span> <span class="p">})</span>
+        <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">user</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">found in db after adding</span><span class="dl">"</span><span class="p">);</span>
+          <span class="nx">db</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+        <span class="p">})</span>
+        <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">"</span><span class="s2">error looking for new user in db: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+          <span class="nx">db</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+        <span class="p">});</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">"</span><span class="s2">failed to seed, </span><span class="dl">"</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+      <span class="nx">db</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+    <span class="p">});</span>
+<span class="p">};</span>
+
+<span class="nx">seed</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>Once everything is typed out, you can feel free to test everything once again. I ran the follow commands and made sure everything worked as expected.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node config/db.seed.js
+node index.js
+</code></pre></div></div>
+
+<p>Here is what your final folder structure should look like :</p>
+
+<p><img src="/assets/images/2020-03-18/final_file_structure.png" alt="Final file structure" style="max-width:100%" /></p>
+
+<p>I have installed <a href="https://sequelize.org/v5/manual/getting-started.html">Sequelize</a> and SQLite in my ExpressJS project; established the connection between ExpressJS and SQLite via <a href="https://sequelize.org/v5/manual/getting-started.html">Sequelize</a>; created Userâ€™s table, added some data, and queried that data. From here on, steps like building out the api; authentication; and authorization can proceed.</p>
+
+:ET
