@@ -85,7 +85,7 @@ code {
   // background: #efefef;
   color: #111111;
   // border-radius: 1em;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter var", sans-serif;
 }
 
 pre code {
@@ -130,8 +130,13 @@ header a.active {
 header,
 section,
 article {
-  padding: 1rem;
   max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media screen and (min-width: 600px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 blockquote {
@@ -212,9 +217,12 @@ header ul {
 main {
   display: flex;
   flex-wrap: wrap;
-  max-width: 60rem;
-  margin: 2rem auto;
-  padding: 1rem;
+
+  @media screen and (min-width: 600px) {
+    max-width: 60rem;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 45rem) {
@@ -236,6 +244,9 @@ main {
   .photos ul {
     margin-top: 0.5rem;
   }
+  header ul {
+    margin-left: 0;
+  }
 }
 
 // section {
@@ -256,5 +267,4 @@ hr {
   // background: #0074d9;
   border: 5px solid #0074d9;
 }
-
 @import "minima";

@@ -25,19 +25,19 @@ Our goal for this project is to see this :
 
 Start the project by making the src folder :
 
-```shell
+{% highlight shell %}
 cd dev/nodejs
 mkdir LeAppWriteup
 cd LeAppWriteup && npm init
-```
+{% endhighlight %}
 
 install the basic dependencies : express, [sequelize], and sqlite.
 
-```shell
+{% highlight shell %}
 npm install --save express
 npm install --save sequelize
 npm install --save sqlite3
-```
+{% endhighlight %}
 
 I wanted to configure the database connection first, so I made a folder called `config` and a file for database `db.js`. In the file I wrote the following:
 
@@ -78,9 +78,9 @@ module.exports = app;
 
 In the code above we are first injecting the dependent packages : express and database, the code for which is from our text above. We then call the database to establish a connection. If everything works as expected I will see `Connection established.` message. Otherwise, I will see the error for why it did not connect to the db. Finally, the express server is started and the entire app is exported for use elsewhere in the code.
 
-```shell
+{%highlight shell%}
 node index.js
-```
+{%endhighlight%}
 
 Run `node index.js` and see your progress. You should see the successful message. Congratulations, you have connected your server to the database and created an empty `sqlite3` database file. Otherwise, review your steps or send me a shout ;)
 
@@ -88,10 +88,10 @@ Run `node index.js` and see your progress. You should see the successful message
 
 This part is totally optional. To interact with the database, we better start off with modeling our data as per [sequelize] documents. I did it by creating the following file in the folder `models` :
 
-```shell
+{%highlight shell%}
 mkdir models
 cd models && touch user.js
-```
+{%endhighlight%}
 
 I then created the following code in the `user.js` file :
 
@@ -124,9 +124,9 @@ module.exports = User;
 
 Finally, test all of the code together by interacting with the database. I will do so by creating a seed file and running it.
 
-```shell
+{%highlight shell%}
 touch ../config/db.seed.js
-```
+{%endhighlight%}
 
 In the seed file I want to connect to the database and add one user to the database and save it. After doing that, I want to run my project again to ensure that the connection to the database is established.
 
@@ -138,10 +138,10 @@ const User = require("../models/user");
 const seed = async () => {
   await db.sync({ force: true });
 
-  const password = 'M<gC4[`Dqv}G``X"Tg4XDbRrmWR46/ca';
+  const password = `M<gC4['Dqv}G''X"Tg4XDbRrmWR46/ca`;
   const username = "getaclue";
   const email = "info@getaclue.me";
-  const token = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6ImluZm9AZ2V0YWNsdWUubWUiLCJpYXQiOjE1MTYyMzkwMjJ9._lImbjluzsOJSy-hlDzEOasZRSd8YuQ_9hBmmCvSvp0`;
+  const token = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6ImluZm9AZ2V0YWNsdWUubWUiLCJpYXQiOjE1MTYyMzkwMjJ9.\_lImbjluzsOJSy-hlDzEOasZRSd8YuQ_9hBmmCvSvp0`;
 
   User.create({
     password: password,
@@ -151,7 +151,6 @@ const seed = async () => {
   })
     .then((user) => {
       console.log("seeded user", user);
-
       User.findOne({ where: { email: `${user.email}` } })
         .then((user) => {
           console.log("found in db after adding");
@@ -173,10 +172,10 @@ seed();
 
 Once everything is typed out, you can feel free to test everything once again. I ran the follow commands and made sure everything worked as expected.
 
-```shell
+{%highlight shell%}
 node config/db.seed.js
 node index.js
-```
+{%endhighlight%}
 
 Here is what your final folder structure should look like :
 

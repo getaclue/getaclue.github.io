@@ -37,12 +37,12 @@ The resulting hashes will be 60 characters in length and composed of the followi
 
 First, I created a new project running `npm init`.
 
-{% highlight shell %}
+```shell
 cd nodejsprojects
 mkdir bcryptexample
 cd bcryptexample
 npm init
-{% endhighlight %}
+```
 
 After that, I downloaded the two minimum dependencies :
 
@@ -65,7 +65,7 @@ node index.js
 
 and began testing it by navigating to `http://localhost:3000/hash/randomstringgoeshere` to see the bcrypt hashed string as output by the server. To test the second function you need to input the hash and plain-text string manually. Like so :
 
-```
+```shell
 http://localhost:3000/compare/$2b$10$DB0melt1B.3Fn7MfXwC17OIevWVhtSgXMrINkg9M4SEHdFgM6Myqm/dasdas
 ```
 
