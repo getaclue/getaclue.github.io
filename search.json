@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Asciidoc vs. iBooks Author pdf output",
+      "url"      : "/2020/04/13/asciidoc-vs-ibooks-author",
+      "category" : "asciidoc, asciidoctor, ibooks author, example",
+      "tags"     : "asciidoc, asciidoctor, ibooks author, example",
+      "date"     : "2020-04-13 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Simple Bcrypt ExpressJS example",
       "url"      : "/2020/03/21/bcrypt-expressjs-sequelize",
       "category" : "nodejs, bcrypt, expressjs, example",
