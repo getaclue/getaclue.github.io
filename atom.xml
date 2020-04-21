@@ -4,7 +4,7 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-04-21T16:51:36-04:00</updated>
+ <updated>2020-04-21T18:02:06-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
@@ -3374,9 +3374,9 @@ x&lt;/li&gt;
  
  <entry>
    <title>How to make perfect iOS screenshots with a clean status bar in 2018</title>
-   <link href="getaclue.me/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane-tools-and-simulatorstatusmagic"/>
+   <link href="getaclue.me/clean-status-bar-fastlane-simulatorstatusmagic"/>
    <updated>2018-03-29T00:00:00-04:00</updated>
-   <id>getaclue.me/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic</id>
+   <id>getaclue.me/clean-status-bar-fastlane-simulatorstatusmagic</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hi friends,&lt;/p&gt;
@@ -3627,9 +3627,9 @@ You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twit
  
  <entry>
    <title>How to call Javascript debugger from Xcode? Can you?</title>
-   <link href="getaclue.me/how-to-call-js-debugger-from-xcode"/>
+   <link href="getaclue.me/javascript-in-xcode"/>
    <updated>2018-03-09T00:00:00-05:00</updated>
-   <id>getaclue.me/how-to-call-js-debugger-from-xcode</id>
+   <id>getaclue.me/javascript-in-xcode</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;hi-friends&quot;&gt;Hi friends,&lt;/h2&gt;

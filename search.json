@@ -366,7 +366,7 @@
     {
 
       "title"    : "How to make perfect iOS screenshots with a clean status bar in 2018",
-      "url"      : "/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane-tools-and-simulatorstatusmagic",
+      "url"      : "/clean-status-bar-fastlane-simulatorstatusmagic",
       "category" : "iOS, swift, Software Development, iOS App Development, Mobile App Development, fastlane.tools, SimulatorStatusMagic",
       "tags"     : "software development, software engineering, tutorial",
       "date"     : "2018-03-29 00:00:00 -0400",
@@ -388,7 +388,7 @@
     {
 
       "title"    : "How to call Javascript debugger from Xcode? Can you?",
-      "url"      : "/how-to-call-js-debugger-from-xcode",
+      "url"      : "/javascript-in-xcode",
       "category" : "iOS, swift, javascript",
       "tags"     : "software development, software engineering, productivity, growth, tutorial",
       "date"     : "2018-03-09 00:00:00 -0500",
