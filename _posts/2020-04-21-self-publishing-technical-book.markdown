@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Writing a self-published technical book"
+title: "Self-publishing a technical book"
 categories:
   - asciidoc
   - asciidoctor
@@ -17,8 +17,8 @@ meta: {}
 image: ""
 excerpt: "In this article I go over the steps to self-publish a technical book."
 dateCreated: 2020-04-21 15:14:17
-datePublished: 2020-04-21 15:49:29
-dateModified: 2020-04-21 15:49:29
+datePublished: 2020-04-21 16:48:05
+dateModified: 2020-04-21 16:48:05
 ---
 
 I began to write my `Learn Node.js` (working title) book last month. It is a self-published book project. The aim of the book is to help developers, switching to javascript and node.js, to hit the ground running by building and uploading a functional project. By going through the book you will be able to build features that modern javascript applications require.
@@ -48,9 +48,6 @@ To summarize:
 Oh yes, [leanpub] is another option if you would like to stick to markdown and not interested in learning the power of [asciidoc].
 
 Happy writing!
-
-<script src="https://gumroad.com/js/gumroad.js" async></script>
-<center><a class="gumroad-button" href="https://gum.co/RtFXDH">Buy my book</a></center>
 
 [asciidoc]: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 [asciidocfx]: https://www.asciidocfx.com/
