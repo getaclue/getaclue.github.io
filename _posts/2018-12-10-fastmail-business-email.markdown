@@ -1,16 +1,18 @@
 ---
 layout: post
-title: "How to quickly setup custom fastmail email account for your business domain"
+title: "Setup custom fastmail email account for your business domain"
 categories:
   - software engineering
   - email
   - fastmail
-  - business
+  - fastmail business
+  - fastmail dns
 tags:
   - software engineering
   - email
   - fastmail
-  - business
+  - fastmail business
+  - fastmail dns
 status: publish
 type: post
 published: true

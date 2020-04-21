@@ -102,6 +102,19 @@ Solo developer project. Responsible for product and design development. Software
 
 ---
 
+## ih8coding podcast experiment
+
+### February - April 2019
+
+Six episode podcast series surrounding the intersection of software, business, and people. Some language may not be suitable for work environments.
+
+#### Links :
+
+- [listen on spotify](https://open.spotify.com/show/5kUQQhpcXoWmw9Ckzsq2cP)
+- [listen on anchor](https://anchor.fm/ihatecoding)
+
+---
+
 ## [Screenhole.net](https://screenhole.net)
 
 ### April 2018 - August 2018
@@ -145,6 +158,8 @@ Software service that would review 1000 lines of code for 9.99\$ Call to action 
 - ~~[Homepage](https://iwillreviewyourcode.com)~~ <mark>Offline</mark>
 
 [screenshot](https://cdn-pro.dprcdn.net/files/acc_603419/Xitn2i) [screenshot](/assets/projects/iwillreviewyourcode/iwillreviewyourcode-jan-2018.png)
+
+---
 
 ## Youtube Videos
 
