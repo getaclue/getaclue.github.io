@@ -4,7 +4,7 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-04-13T16:44:48-04:00</updated>
+ <updated>2020-04-21T15:56:29-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
@@ -13,10 +13,58 @@
 
  
  <entry>
+   <title>Writing a self-published technical book</title>
+   <link href="getaclue.me/self-publishing-technical-book"/>
+   <updated>2020-04-21T00:00:00-04:00</updated>
+   <id>getaclue.me/self-publishing-technical-book</id>
+   <content type="html">&lt;p&gt;I began to write my &lt;code class=&quot;highlighter-rouge&quot;&gt;Learn Node.js&lt;/code&gt; (working title) book last month. It is a self-published book project. The aim of the book is to help developers, switching to javascript and node.js, to hit the ground running by building and uploading a functional project. By going through the book you will be able to build features that modern javascript applications require.&lt;/p&gt;
+
+&lt;p&gt;My current plan is to self publish and I will be doing that using &lt;a href=&quot;https://gumroad.com/&quot;&gt;gumroad&lt;/a&gt;; then I will upload a copy on iBooks store; and checkout amazon’s self publishing via kindle. In all three scenarios, a pdf output of the book is perfect. So, the final version of my book will be available for purchase in at least the pdf format. &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;Asciidoc&lt;/a&gt; documents are perfectly converted to pdf format using &lt;a href=&quot;https://asciidoctor.org/docs/asciidoctor-pdf/&quot;&gt;asciidoctor-pdf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gumroad.com/js/gumroad.js&quot;&gt;&lt;/script&gt;
+
+&lt;center&gt;&lt;a class=&quot;gumroad-button&quot; href=&quot;https://gum.co/RtFXDH&quot;&gt;Buy my book&lt;/a&gt;&lt;/center&gt;
+
+&lt;p&gt;I began writing my book using iBooks Author authoring tool with the intention of publishing the book on the iBooks store. However, as I progressed in my writing process, I realized that my book contained quite a bit of code blocks. I wrote about this &lt;a href=&quot;./asciidoc-vs-ibooks-author&quot;&gt;earlier&lt;/a&gt; but I ended up fully re-doing my work and switching away from iBooks Author authoring tool.&lt;/p&gt;
+
+&lt;p&gt;Quite honestly, lack of beautiful code blocks (once converted to pdf) is why I switched my writing into &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt; format. For images, so far I have been fortunate to use a combination of screenshots and adobe photoshop software.&lt;/p&gt;
+
+&lt;p&gt;For more involved diagrams, I opted out to use &lt;a href=&quot;http://plantuml.com/&quot;&gt;plantuml&lt;/a&gt; for diagram creation. It works pretty good and allows you to maintain your images in plain text format for backups or quick adjustments.&lt;/p&gt;
+
+&lt;p&gt;I spent a few hours killing time by working on the book cover marketing material. I found &lt;a href=&quot;https://www.freepik.com/&quot;&gt;https://www.freepik.com/&lt;/a&gt; to have many wonderful book cover mockups for free. There are also paid alternatives. Point is… finding a beautiful cover may take some time =)&lt;/p&gt;
+
+&lt;p&gt;To summarize:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;write using &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt; using &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;vs code&lt;/a&gt; or &lt;a href=&quot;https://www.asciidocfx.com/&quot;&gt;asciidocfx&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;convert &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt; to pdf using something like &lt;a href=&quot;https://asciidoctor.org/docs/asciidoctor-pdf/&quot;&gt;asciidoctor-pdf&lt;/a&gt; or &lt;a href=&quot;https://www.asciidocfx.com/&quot;&gt;asciidocfx&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To publish the pdf book on &lt;a href=&quot;https://gumroad.com/&quot;&gt;gumroad&lt;/a&gt; one just needs to make an account.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To publish the pdf book to iBooks, one needs to connect your iCloud, in iTunes Connect, to Apple Books &lt;a href=&quot;https://support.apple.com/en-us/HT201183&quot;&gt;like so&lt;/a&gt;. And then you need to download iTunes Producer to upload your book to their store.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To publish the pdf book to Amazon, one needs an amazon account and then head over to the &lt;a href=&quot;https://kdp.amazon.com/en_US&quot;&gt;kindle direct publishing&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Oh yes, &lt;a href=&quot;https://leanpub.com/&quot;&gt;leanpub&lt;/a&gt; is another option if you would like to stick to markdown and not interested in learning the power of &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy writing!&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>Asciidoc vs. iBooks Author pdf output</title>
-   <link href="getaclue.me/2020/04/13/asciidoc-vs-ibooks-author"/>
+   <link href="getaclue.me/asciidoc-vs-ibooks-author"/>
    <updated>2020-04-13T00:00:00-04:00</updated>
-   <id>getaclue.me/2020/04/13/asciidoc-vs-ibooks-author</id>
+   <id>getaclue.me/asciidoc-vs-ibooks-author</id>
    <content type="html">&lt;p&gt;I wanted to spend some time today on giving the &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt; format a try. I’m currently working on a book in iBooks Author and previewing the work as a pdf. The goal of this book is to be viewed the best in the pdf format. As far as I could tell, iBooks Author, does a good job on doing what I want it to do. However, formatting the code blocks takes some time and it looks a bit odd on the pdf output. Well, to be honest it doesn’t look that great as an epub either.&lt;/p&gt;
 
 &lt;p&gt;The way that I currently work is that I open &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;vs code&lt;/a&gt; to the specific code file that I am talking about in the book and copy that code. When I switch to the iBooks Author I paste the copied code by right clicking in the section to be pasted and selecting “Paste and Retain Style” option.&lt;/p&gt;
@@ -54,9 +102,9 @@
  
  <entry>
    <title>Simple Bcrypt ExpressJS example</title>
-   <link href="getaclue.me/2020/03/21/bcrypt-expressjs-sequelize"/>
+   <link href="getaclue.me/bcrypt-expressjs"/>
    <updated>2020-03-21T00:00:00-04:00</updated>
-   <id>getaclue.me/2020/03/21/bcrypt-expressjs-sequelize</id>
+   <id>getaclue.me/bcrypt-expressjs</id>
    <content type="html">&lt;p&gt;I wanted to build an &lt;a href=&quot;https://expressjs.com/en/starter/hello-world.html&quot;&gt;ExpressJS&lt;/a&gt; simple tool that will serve two functions :&lt;/p&gt;
 
 &lt;ol&gt;
@@ -121,9 +169,9 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bcrypt &lt;span class=
  
  <entry>
    <title>How to install Sequelize in ExpressJS app with SQLite</title>
-   <link href="getaclue.me/2020/03/18/sequilize-javascript-express"/>
+   <link href="getaclue.me/sequilize-javascript-express"/>
    <updated>2020-03-18T00:00:00-04:00</updated>
-   <id>getaclue.me/2020/03/18/sequilize-javascript-express</id>
+   <id>getaclue.me/sequilize-javascript-express</id>
    <content type="html">&lt;p&gt;Our goal for this project is to see this :&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2020-03-18/goal-sequelize.png&quot; alt=&quot;Connection established.&quot; style=&quot;max-width:100%&quot; /&gt;&lt;/p&gt;
@@ -277,9 +325,9 @@ node index.js&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>What to do before building authentication with ExpressJS app</title>
-   <link href="getaclue.me/2020/03/16/building-authentication-in-javascript"/>
+   <link href="getaclue.me/before-building-authentication-in-javascript"/>
    <updated>2020-03-16T00:00:00-04:00</updated>
-   <id>getaclue.me/2020/03/16/building-authentication-in-javascript</id>
+   <id>getaclue.me/before-building-authentication-in-javascript</id>
    <content type="html">&lt;p&gt;This weekend I wanted to play with &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;tailwindcss&lt;/a&gt; and what better way to do it then with a project. My project was going to be simple : &lt;strong&gt;write a tutorial on authentication in nodejs apps&lt;/strong&gt;. And I did complete the project, but I struggled to make it easy as possible to follow. I wrote this just so I could break down the next few entries. I ended up using a few packages that I absolutely couldn’t go without and that added to the scope. I also spent lots of time on research and seeing what is out there :&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2020-03-16/lots_of_tabs.png&quot; alt=&quot;lots of tabs&quot; style=&quot;max-width:100%&quot; /&gt;&lt;/p&gt;
@@ -390,9 +438,9 @@ node index.js&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>How to install TailwindCSS in ExpressJS app</title>
-   <link href="getaclue.me/2020/03/13/javascript-nodejs-express-tailwind"/>
+   <link href="getaclue.me/javascript-nodejs-expressjs-tailwindcss"/>
    <updated>2020-03-13T00:00:00-04:00</updated>
-   <id>getaclue.me/2020/03/13/javascript-nodejs-express-tailwind</id>
+   <id>getaclue.me/javascript-nodejs-expressjs-tailwindcss</id>
    <content type="html">&lt;p&gt;In this article I will show you how to install &lt;a href=&quot;https://tailwindcss.com/docs/installation/&quot;&gt;TailwindCSS&lt;/a&gt; for use in a basic &lt;a href=&quot;http://expressjs.com/&quot;&gt;ExpressJS&lt;/a&gt; app. This nodejs project had no other dependencies as I just wanted to install &lt;a href=&quot;https://tailwindcss.com/docs/installation/&quot;&gt;tailwindcss&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;After initializing the &lt;a href=&quot;http://expressjs.com/&quot;&gt;expressjs&lt;/a&gt; project, I added a folder that would host my stylesheet :&lt;/p&gt;
@@ -455,9 +503,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Ruby on rails vs change</title>
-   <link href="getaclue.me/2020/03/11/ruby-on-rails-vs-change"/>
+   <link href="getaclue.me/ruby-on-rails-vs-change"/>
    <updated>2020-03-11T00:00:00-04:00</updated>
-   <id>getaclue.me/2020/03/11/ruby-on-rails-vs-change</id>
+   <id>getaclue.me/ruby-on-rails-vs-change</id>
    <content type="html">&lt;p&gt;I have a lot to thank for knowing ruby on rails. I wrote the previous article and it sounds so negative whenever I look at it. However, it is not meant to be that way. I was simply saying that I need a change for personal projects. One of the benefits from learning and using the framework has been learning about the internet. So my entire internet foundation and appreciation for it has been in parallel while working on rails. It is challenging to be looking at new tools and replacements for your familiar workflows.&lt;/p&gt;
 
 &lt;p&gt;Just today, instead of learning something new … I spent the time and put my offline Elderoost project back online, and adjusting to heroku. This included uncoupling the database connectors and elasticsearch setup. My previous version ran on a standalone server. However, I don’t have a spare server running anymore (one of the reasons why project is down) so I put it up on heroku. I did not do a full recovery. For demonstration purposes, I put up 2 sample data points. I just wanted it to function and to showcase the software.&lt;/p&gt;
@@ -494,9 +542,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Five years of ruby on rails</title>
-   <link href="getaclue.me/2020/03/05/ruby-on-rails"/>
+   <link href="getaclue.me/ruby-on-rails"/>
    <updated>2020-03-05T00:00:00-05:00</updated>
-   <id>getaclue.me/2020/03/05/ruby-on-rails</id>
+   <id>getaclue.me/ruby-on-rails</id>
    <content type="html">&lt;p&gt;It is fun to be creating in the programming language that is trending. Ruby on Rails was trending among the software craftsperson community throughout the 2010s and in the late 2000s. And I say ruby on rails &lt;em&gt;not&lt;/em&gt; ruby. Personally, I do not happen to care very much for Ruby. It looks the same as Python and even is written using similar syntax and notation. However, it just so happens that ruby on rails was built using Ruby. It provided quick way to create projects while being the talk of everyone. The most productive framework if you may. Part of the fun was that everyone was creating using it. As a result, you could find people using ruby on rails in many places and you feel a sense of community without being in one.&lt;/p&gt;
 
 &lt;p&gt;Among the fun experience, ruby on rails also provided various tools and features that came out of the box. This would cut down the development time extremely short and increase developer productivity. However, as the time went on and the framework stabilized, the craze died down and trend moved elsewhere. People and companies stopped using ruby on rails and moved on to JavaScript or other languages and frameworks. That is the purpose of trends, to move to the next one… &lt;em&gt;not&lt;/em&gt; all of them moved because of trends … I know.&lt;/p&gt;
@@ -521,9 +569,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Keeping up with keeping up</title>
-   <link href="getaclue.me/2020/03/03/keeping-up-in-software"/>
+   <link href="getaclue.me/keeping-up-in-software"/>
    <updated>2020-03-03T00:00:00-05:00</updated>
-   <id>getaclue.me/2020/03/03/keeping-up-in-software</id>
+   <id>getaclue.me/keeping-up-in-software</id>
    <content type="html">&lt;p&gt;If you are not producing projects, writing, or contributing socially and you are a software person, are you growing? I have been experiencing a bit of FOMO. You see, last year I kind of went on a social diet of sorts and reduced my presence on social platforms. One of the negative outcomes of this, is my lack of output during this time.&lt;/p&gt;
 
 &lt;p&gt;Now you see, I have had output at work but that does not satisfy me. I don’t have a thing that I can show or talk about that is interesting on average.&lt;/p&gt;
@@ -558,9 +606,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Updates</title>
-   <link href="getaclue.me/2020/03/02/updates"/>
+   <link href="getaclue.me/updates"/>
    <updated>2020-03-02T00:00:00-05:00</updated>
-   <id>getaclue.me/2020/03/02/updates</id>
+   <id>getaclue.me/updates</id>
    <content type="html">&lt;h3 id=&quot;some-updates-since-last-post-on-december-2018&quot;&gt;Some updates since last post on December 2018&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -611,10 +659,10 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  </entry>
  
  <entry>
-   <title>How to quickly setup custom fastmail email account for your business domain</title>
-   <link href="getaclue.me/2018/12/10/how-to-quickly-setup-your-first-fastmail-email-account-for-your-business"/>
+   <title>Setup custom fastmail email account for your business domain</title>
+   <link href="getaclue.me/fastmail-business-email"/>
    <updated>2018-12-10T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/12/10/how-to-quickly-setup-your-first-fastmail-email-account-for-your-business</id>
+   <id>getaclue.me/fastmail-business-email</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-std.dprcdn.net/files/acc_603419/0hcE7y&quot; alt=&quot;Title of the article&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Last night, I activated the first business-y email account for our &lt;a href=&quot;https://cspray.ca&quot;&gt;cspray.ca&lt;/a&gt; project using &lt;a href=&quot;https://www.fastmail.com&quot;&gt;Fastmail&lt;/a&gt; email service. What I mean by that is — I wanted to send and receive email using something like: &lt;code class=&quot;highlighter-rouge&quot;&gt;info@cspray.ca&lt;/code&gt;&lt;/p&gt;
@@ -784,9 +832,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Binary trees</title>
-   <link href="getaclue.me/2018/10/30/binary-trees"/>
+   <link href="getaclue.me/binary-trees"/>
    <updated>2018-10-30T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/30/binary-trees</id>
+   <id>getaclue.me/binary-trees</id>
    <content type="html">&lt;!-- &lt;script src=&quot;https://d3js.org/d3.v5.min.js&quot;&gt;&lt;/script&gt; --&gt;
 
 &lt;h2 id=&quot;assume&quot;&gt;Assume:&lt;/h2&gt;
@@ -818,9 +866,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Position vs index</title>
-   <link href="getaclue.me/2018/10/26/position-vs-index"/>
+   <link href="getaclue.me/position-vs-index"/>
    <updated>2018-10-26T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/26/position-vs-index</id>
+   <id>getaclue.me/position-vs-index</id>
    <content type="html">&lt;p&gt;Have you ever wondered why you sometimes see &lt;code class=&quot;highlighter-rouge&quot;&gt;index&lt;/code&gt; and sometimes &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; keywords in code fragments?&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -901,9 +949,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Stacks October 25 2018</title>
-   <link href="getaclue.me/2018/10/25/stacks-october-25-2018"/>
+   <link href="getaclue.me/stacks-october-25-2018"/>
    <updated>2018-10-25T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/25/stacks-october-25-2018</id>
+   <id>getaclue.me/stacks-october-25-2018</id>
    <content type="html">&lt;p&gt;On “Implementing a Stack with a Singly Linked List”&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -977,9 +1025,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>October 20 2018</title>
-   <link href="getaclue.me/2018/10/20/october-20-2018"/>
+   <link href="getaclue.me/october-20-2018"/>
    <updated>2018-10-20T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/20/october-20-2018</id>
+   <id>getaclue.me/october-20-2018</id>
    <content type="html">&lt;p&gt;From &lt;a href=&quot;https://jordankasper.com/object-oriented-javascript-part-the-first/&quot;&gt;Object Oriented JavaScript (Part the First)&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;literalDog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;// declaration AND instantiation&lt;/span&gt;
@@ -1261,9 +1309,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>October 19 2018</title>
-   <link href="getaclue.me/2018/10/19/october-19-2018"/>
+   <link href="getaclue.me/october-19-2018"/>
    <updated>2018-10-19T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/19/october-19-2018</id>
+   <id>getaclue.me/october-19-2018</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors&lt;/li&gt;
   &lt;li&gt;https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS&lt;/li&gt;
@@ -1403,9 +1451,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>October 18 2018</title>
-   <link href="getaclue.me/2018/10/18/october-18-2018"/>
+   <link href="getaclue.me/october-18-2018"/>
    <updated>2018-10-18T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/18/october-18-2018</id>
+   <id>getaclue.me/october-18-2018</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://crockford.com/javascript/private.html&quot;&gt;Private Members in JavaScript&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1482,9 +1530,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Untitled</title>
-   <link href="getaclue.me/2018/10/17/untitled"/>
+   <link href="getaclue.me/untitled"/>
    <updated>2018-10-17T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/17/untitled</id>
+   <id>getaclue.me/untitled</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;“If big tech companies are going to turn their back on the DoD, this country is going to be in trouble,” said Bezos on stage at the Wired25 conference in San Francisco on Monday.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1528,9 +1576,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Fixing your weakness</title>
-   <link href="getaclue.me/2018/10/16/fixing-your-weaknesses"/>
+   <link href="getaclue.me/fixing-your-weaknesses"/>
    <updated>2018-10-16T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/16/fixing-your-weaknesses</id>
+   <id>getaclue.me/fixing-your-weaknesses</id>
    <content type="html">&lt;p&gt;After writing this &lt;a href=&quot;/blog/relationships-between-sets-series-progressions-and-sequences&quot;&gt;essay&lt;/a&gt; a few days ago, I could not stop thinking of figuring out where exactly my error is. Like I mentioned before, I understand the subject matter but not as deep as I would like to.&lt;/p&gt;
 
 &lt;p&gt;So, I began by looking backwards: I wanted to figure out during which course I was introduced to them first. I knew that it was around first or second year; and I knew that it was in Calculus. I did not remember if it was Calculus I or Calculus II. I could not remember but why struggle when you can look this up? Since my degree is from an accredited institution that provides accredited degrees — I can simply request this information or look it up. All of the courses and their description is fully published at uOttawa so this took me a few minutes.&lt;/p&gt;
@@ -1625,9 +1673,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Past few days</title>
-   <link href="getaclue.me/2018/10/15/past-few-days"/>
+   <link href="getaclue.me/past-few-days"/>
    <updated>2018-10-15T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/15/past-few-days</id>
+   <id>getaclue.me/past-few-days</id>
    <content type="html">&lt;p&gt;Mostly been doing a buncha practice and reviewing. You can probably skip reading this entry =) It is me sharing code I wrote and nothing crazy.&lt;/p&gt;
 
 &lt;p&gt;Followed along and made these things&lt;/p&gt;
@@ -1971,9 +2019,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Ceaser cipher and other things</title>
-   <link href="getaclue.me/2018/10/12/ceaser-cipher"/>
+   <link href="getaclue.me/ceaser-cipher"/>
    <updated>2018-10-12T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/12/ceaser-cipher</id>
+   <id>getaclue.me/ceaser-cipher</id>
    <content type="html">&lt;p&gt;Today, I was browing again in the &lt;a href=&quot;https://www.amazon.ca/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/&quot;&gt;textbook&lt;/a&gt; and for some reason I wanted to implement a simple Ceaser cipher. In the process, I also re-found-out that Strings are immutable in java. I suppose it makes sense then when StringBuilder and the such are used. I also found the following two statements interesting:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -2068,9 +2116,9 @@ yarn add tailwindcss&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Insertion Sort</title>
-   <link href="getaclue.me/2018/10/11/insertion-sort"/>
+   <link href="getaclue.me/insertion-sort"/>
    <updated>2018-10-11T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/11/insertion-sort</id>
+   <id>getaclue.me/insertion-sort</id>
    <content type="html">&lt;p&gt;Question: Suppose you have an algorithm that you are running that has multiple steps. When you are approximating, when do you add the runtimes and when do you multiply them?&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2174,9 +2222,9 @@ and an &lt;strong&gt;inner loop&lt;/strong&gt; that moves a newly considered ele
  
  <entry>
    <title>Relationships between sets, series, progressions, and sequences</title>
-   <link href="getaclue.me/2018/10/10/relationships-between-sets-series-progressions-and-sequences"/>
+   <link href="getaclue.me/relationships-between-sets-series-progressions-and-sequences"/>
    <updated>2018-10-10T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/10/relationships-between-sets-series-progressions-and-sequences</id>
+   <id>getaclue.me/relationships-between-sets-series-progressions-and-sequences</id>
    <content type="html">&lt;p&gt;Today I ended up exploring a topic that I didn’t expect: what is the difference between a sequence and a series.&lt;/p&gt;
 
 &lt;p&gt;While I memorized these contepts in my calculus days, I always felt something was missing in my core understanding. I think I figured out what was missing. It seems that I was confused, once again, around the ambiguity of the English language.&lt;/p&gt;
@@ -2253,9 +2301,9 @@ and an &lt;strong&gt;inner loop&lt;/strong&gt; that moves a newly considered ele
  
  <entry>
    <title>Trying out Aho–Corasick algorithm</title>
-   <link href="getaclue.me/2018/10/09/trying-out-aho-corasick-algorithm"/>
+   <link href="getaclue.me/aho-corasick-algorithm"/>
    <updated>2018-10-09T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/09/trying-out-aho-corasick-algorithm</id>
+   <id>getaclue.me/aho-corasick-algorithm</id>
    <content type="html">&lt;p&gt;Today I found &lt;a href=&quot;https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm&quot;&gt;Aho–Corasick algorithm&lt;/a&gt;. I was instantly hooked on wanting to try it out. Since I am spending more time with Java, most of the day was spent playing with an implementation of this algorithm &lt;em&gt;and maven&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;I will tell you what, I was pleasantly surprised so far. I need to spend some more time on this but it looks like a promising solution. I wanted to use something like this on the &lt;a href=&quot;https://elderoost.com/&quot;&gt;elderoost&lt;/a&gt; project. So, here is what my MVP looks like so far.&lt;/p&gt;
@@ -2351,9 +2399,9 @@ jenv: mvn: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
  
  <entry>
    <title>If you don't share your project, did you actually make it?</title>
-   <link href="getaclue.me/2018/10/08/if-you-dont-share-your-project-did-you-actually-make-it"/>
+   <link href="getaclue.me/if-you-dont-share-your-project-did-you-actually-make-it"/>
    <updated>2018-10-08T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/08/if-you-dont-share-your-project-did-you-actually-make-it</id>
+   <id>getaclue.me/if-you-dont-share-your-project-did-you-actually-make-it</id>
    <content type="html">&lt;p&gt;Today, I did a few quick fixes to the current layout of this website.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2458,9 +2506,9 @@ jenv: mvn: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
  
  <entry>
    <title>Easy to get into a pattern of asking questions</title>
-   <link href="getaclue.me/2018/10/06/easy-to-get-into-a-pattern-of-asking-questions"/>
+   <link href="getaclue.me/easy-to-get-into-a-pattern-of-asking-questions"/>
    <updated>2018-10-06T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/06/easy-to-get-into-a-pattern-of-asking-questions</id>
+   <id>getaclue.me/easy-to-get-into-a-pattern-of-asking-questions</id>
    <content type="html">&lt;p&gt;I like to open up &lt;a href=&quot;http://www.crackingthecodinginterview.com/&quot;&gt;The 6th edition of Cracking the Coding Interview&lt;/a&gt; from time to time. Mainly to keep an up-to-date cheat sheet of things to narrow down during job search. All of the recruiters use some variation of things that is in this book.&lt;/p&gt;
 
 &lt;p&gt;So, I opened it up today and got some quotes from that book in no particular order.&lt;/p&gt;
@@ -2517,9 +2565,9 @@ jenv: mvn: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
  
  <entry>
    <title>Swift package manager and links</title>
-   <link href="getaclue.me/2018/10/04/swift-package-manager-october-2018"/>
+   <link href="getaclue.me/swift-package-manager-october-2018"/>
    <updated>2018-10-04T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/04/swift-package-manager-october-2018</id>
+   <id>getaclue.me/swift-package-manager-october-2018</id>
    <content type="html">&lt;p&gt;Today I do not have a lot of time left for today. Instead of spending time grinding leetcode for the interviews, I wanted to study swift package manager (SPM). I am wanting to explore Swift and Java as my main [scripting/everything] language(s) moving forward. I’ve never tried SPM before and I’ve been using Swift for almost a year now (come November). So, I figured I should give it a shot and I even had an idea to implement.&lt;/p&gt;
 
 &lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
@@ -2753,9 +2801,9 @@ jenv: mvn: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
  
  <entry>
    <title>Will end-user applications ever be truly programmable?</title>
-   <link href="getaclue.me/2018/10/03/will-end-user-applications-ever-be-truly-programmable"/>
+   <link href="getaclue.me/will-end-user-applications-ever-be-truly-programmable"/>
    <updated>2018-10-03T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/03/will-end-user-applications-ever-be-truly-programmable</id>
+   <id>getaclue.me/will-end-user-applications-ever-be-truly-programmable</id>
    <content type="html">&lt;p&gt;Over the past year, I’ve noticed a trend that I’m starting to accummulate a running list of blogs, articles, and people that I find interesting. A list that I curate and maintain manually — a practice that everyone prior to SAAS explosion used to be intimately familiar with: using bookmarks.&lt;/p&gt;
 
 &lt;p&gt;Why am I going back to doing this? I jumped in just like everyone else on the social media train that started moving in the early 2000s.&lt;/p&gt;
@@ -2844,9 +2892,9 @@ jenv: mvn: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
  
  <entry>
    <title>October 2018 Challenge</title>
-   <link href="getaclue.me/2018/10/02/october-2018-challenge"/>
+   <link href="getaclue.me/october-2018-challenge"/>
    <updated>2018-10-02T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/02/october-2018-challenge</id>
+   <id>getaclue.me/october-2018-challenge</id>
    <content type="html">&lt;p&gt;So, I’ve decided to do a few challenges for the month of October:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2871,9 +2919,9 @@ jenv: mvn: &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;not found
  
  <entry>
    <title>On Discrete Mathematics For Computer Science</title>
-   <link href="getaclue.me/2018/10/01/on-discrete-mathematics-for-computer-science"/>
+   <link href="getaclue.me/on-discrete-mathematics-for-computer-science"/>
    <updated>2018-10-01T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/10/01/on-discrete-mathematics-for-computer-science</id>
+   <id>getaclue.me/on-discrete-mathematics-for-computer-science</id>
    <content type="html">&lt;p&gt;I just ran into &lt;a href=&quot;http://condor.depaul.edu/sepp/ICME-13.Epp.pdf&quot;&gt;“Discrete Mathematics For Computer Science”&lt;/a&gt; by Susanna S. Epp (13th International Congress on Mathematical Education Hamburg, 24-31 July 2016). The piece resonated with me and I decided to note some reflections from my own experience down.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;I added my own emphasis to the quotes below.&lt;/strong&gt;&lt;/p&gt;
@@ -3029,9 +3077,9 @@ x&lt;/li&gt;
  
  <entry>
    <title>More frequent updates</title>
-   <link href="getaclue.me/2018/09/29/more-frequent-updates"/>
+   <link href="getaclue.me/more-frequent-updates"/>
    <updated>2018-09-29T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/09/29/more-frequent-updates</id>
+   <id>getaclue.me/more-frequent-updates</id>
    <content type="html">&lt;p&gt;Those of you that know me personally, know that I do a lot of little experiments and I like to reflect. I believe in engineering and science principles. They are at my core and drive me forward.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, I feel like I am not doing a good job in reflecting and sharing that with you. What happens usually is that I open up a blank canvas, such as this one, and just start writing. Usually I have a topic or a direction that motivates me to write. However, I do not consider if I will publish or delete the content at the time of writing it.&lt;/p&gt;
@@ -3152,9 +3200,9 @@ x&lt;/li&gt;
  
  <entry>
    <title>I have to come clean about my project</title>
-   <link href="getaclue.me/2018/06/10/i-have-to-come-clean-about-my-project"/>
+   <link href="getaclue.me/i-have-to-come-clean-about-my-project"/>
    <updated>2018-06-10T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/06/10/i-have-to-come-clean-about-my-project</id>
+   <id>getaclue.me/i-have-to-come-clean-about-my-project</id>
    <content type="html">&lt;p&gt;I have something to tell you and come clean about. I haven’t touched my beloved dailyvibes code base since April. And if I am being completely honest, I kind of lost steam in March. (To give you some context, I started thinking about the project in October and working on it last November. Since November I tried to ship something every 2 weeks.)&lt;/p&gt;
 
 &lt;p&gt;Everything was fine until about March. In March, I felt that I did not like where I was going, I was having a bad time, and I was losing project’s direction. I even had thoughts of abandoning it.&lt;/p&gt;
@@ -3232,9 +3280,9 @@ x&lt;/li&gt;
  
  <entry>
    <title>Would you let your mother use your software?</title>
-   <link href="getaclue.me/2018/05/11/would-you-let-your-mother-use-your-software"/>
+   <link href="getaclue.me/would-you-let-your-mother-use-your-software"/>
    <updated>2018-05-11T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/05/11/would-you-let-your-mother-use-your-software</id>
+   <id>getaclue.me/would-you-let-your-mother-use-your-software</id>
    <content type="html">&lt;p&gt;Would you let your mother use your software?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/V8kt2K&quot; alt=&quot;Oh and I am not trying to single anyone out in this photo btw&quot; /&gt;&lt;/p&gt;
@@ -3330,9 +3378,9 @@ x&lt;/li&gt;
  
  <entry>
    <title>How to make perfect iOS screenshots with a clean status bar in 2018</title>
-   <link href="getaclue.me/2018/03/29/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane-tools-and-simulatorstatusmagic"/>
+   <link href="getaclue.me/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane-tools-and-simulatorstatusmagic"/>
    <updated>2018-03-29T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/03/29/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic</id>
+   <id>getaclue.me/how-to-make-perfect-ios-screenshots-with-a-clean-status-bar-in-2018-using-fastlane.tools-and-simulatorstatusmagic</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hi friends,&lt;/p&gt;
@@ -3448,9 +3496,9 @@ x&lt;/li&gt;
  
  <entry>
    <title>Improving iOS performance with Xcode and Instruments for dummies</title>
-   <link href="getaclue.me/2018/03/24/improving-ios-performance-with-xcode-and-instruments-for-dummies"/>
+   <link href="getaclue.me/improving-ios-performance-with-xcode-and-instruments-for-dummies"/>
    <updated>2018-03-24T00:00:00-04:00</updated>
-   <id>getaclue.me/2018/03/24/improving-ios-performance-with-xcode-and-instruments-for-dummies</id>
+   <id>getaclue.me/improving-ios-performance-with-xcode-and-instruments-for-dummies</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/eVxYjd&quot; alt=&quot;Image for the post&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hi friend, is your app running a bit slow? Are you, perhaps, unsure what to do about it? Where do you start to investigate? Perhaps, like me, you started searching 🕵️‍️ in your code for something evident? (Only to realize that you are going down a never ending rabbit hole?)&lt;/p&gt;
@@ -3583,9 +3631,9 @@ You can find me on &lt;a href=&quot;https://twitter.com/getaclue_1&quot;&gt;twit
  
  <entry>
    <title>How to call Javascript debugger from Xcode? Can you?</title>
-   <link href="getaclue.me/2018/03/09/how-to-call-js-debugger-from-xcode"/>
+   <link href="getaclue.me/how-to-call-js-debugger-from-xcode"/>
    <updated>2018-03-09T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/03/09/how-to-call-js-debugger-from-xcode</id>
+   <id>getaclue.me/how-to-call-js-debugger-from-xcode</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/X7qI5E&quot; alt=&quot;How to call JS debugger from Xcode?&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;hi-friends&quot;&gt;Hi friends,&lt;/h2&gt;
@@ -3685,9 +3733,9 @@ Alex&lt;/p&gt;
  
  <entry>
    <title>January and February Reflections</title>
-   <link href="getaclue.me/2018/02/28/january-and-february-reflections"/>
+   <link href="getaclue.me/january-and-february-reflections"/>
    <updated>2018-02-28T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/02/28/january-and-february-reflections</id>
+   <id>getaclue.me/january-and-february-reflections</id>
    <content type="html">&lt;h2 id=&quot;hi-friends&quot;&gt;Hi friends,&lt;/h2&gt;
 
 &lt;p&gt;Can’t believe how quickly January and February came and went. I hope you’ve had a productive start to the year.&lt;/p&gt;
@@ -3846,9 +3894,9 @@ Alex&lt;/p&gt;
  
  <entry>
    <title>Ready to Submit</title>
-   <link href="getaclue.me/2018/01/12/ready-to-submit"/>
+   <link href="getaclue.me/ready-to-submit"/>
    <updated>2018-01-12T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/01/12/ready-to-submit</id>
+   <id>getaclue.me/ready-to-submit</id>
    <content type="html">&lt;p&gt;Happy Friday 👋&lt;/p&gt;
 
 &lt;p&gt;It is so easy to let this writing to get out of hand even though I promised to write more regularly. I’ve been chugging along with a lot of things since last update.&lt;/p&gt;
@@ -3905,9 +3953,9 @@ Alex&lt;/p&gt;
  
  <entry>
    <title>Getting familiar with iOS testing</title>
-   <link href="getaclue.me/2018/01/11/getting-familiar-w-testing"/>
+   <link href="getaclue.me/getting-familiar-w-testing"/>
    <updated>2018-01-11T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/01/11/getting-familiar-w-testing</id>
+   <id>getaclue.me/getting-familiar-w-testing</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://d.pr/i/YgH6dm/ayxzukbu17+&quot; alt=&quot;Testing image from https://pixabay.com/en/software-testing-service-762486/&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This will be a quick post, mainly a reference to some resource I’ve been using to get familiar with iOS testing and refactoring.&lt;/p&gt;
@@ -3941,9 +3989,9 @@ Alex&lt;/p&gt;
  
  <entry>
    <title>Another CoreData Day</title>
-   <link href="getaclue.me/2018/01/07/another-coredata-day"/>
+   <link href="getaclue.me/another-coredata-day"/>
    <updated>2018-01-07T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/01/07/Another-CoreData-day</id>
+   <id>getaclue.me/Another-CoreData-day</id>
    <content type="html">&lt;p&gt;So, today, I decided to implement the Sharing extension. Oh boy, did I not expect to lose all of the data but it was necessary. It turns out that if you want to, at a time in the future, to add things to your app, well then you may be in for some effort.&lt;/p&gt;
 
 &lt;p&gt;The best resource, hands down was this = &lt;a href=&quot;https://medium.com/@ales.musto/making-a-share-extension-that-accepts-text-and-urls-in-combination-with-coredata-swift-3-a0139c0f9800&quot;&gt;Making a Share Extension that accepts text and URLs in combination with CoreData Swift 3&lt;/a&gt;. If you don’t want to or don’t have time to learn about Core Data then you can just jump to that website. Follow it. And it will just work.&lt;/p&gt;
@@ -3986,9 +4034,9 @@ Alex&lt;/p&gt;
  
  <entry>
    <title>Apple TestFlight Registration Notes</title>
-   <link href="getaclue.me/2018/01/06/apple-testflight-notes"/>
+   <link href="getaclue.me/apple-testflight-notes"/>
    <updated>2018-01-06T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/01/06/apple-testflight-notes</id>
+   <id>getaclue.me/apple-testflight-notes</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/nauNKe&quot; alt=&quot;TestFlight image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Today, I crossed off one of the things that I wanted to do since December. I recorded my experience and thought process of registering for &lt;a href=&quot;https://developer.apple.com/testflight/&quot;&gt;TestFlight&lt;/a&gt;. This means that I went from nothing to having an App on the Apple App Store’s TestFlight section.&lt;/p&gt;
@@ -4039,9 +4087,9 @@ Alex&lt;/p&gt;
  
  <entry>
    <title>2018 Goals: More Regular Writings</title>
-   <link href="getaclue.me/2018/01/03/regular-writings"/>
+   <link href="getaclue.me/regular-writings"/>
    <updated>2018-01-03T00:00:00-05:00</updated>
-   <id>getaclue.me/2018/01/03/regular-writings</id>
+   <id>getaclue.me/regular-writings</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://cdn-pro.dprcdn.net/files/acc_603419/5Nw3As&quot; alt=&quot;Target goals image from https://pixabay.com/en/arrow-target-range-bullseye-sport-2889040/&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I had a few goals for 2017. Rather than having a year in a review post, I decided to narrow down my focus to software. At least two of  my goals related to software. I succeeded in achieving both of those goals.&lt;/p&gt;
@@ -4086,9 +4134,9 @@ Alex&lt;/p&gt;
  
  <entry>
    <title>Installing Yosemite on E8400</title>
-   <link href="getaclue.me/2014/12/21/installing-yosemite-on-e8400"/>
+   <link href="getaclue.me/installing-yosemite-on-e8400"/>
    <updated>2014-12-21T00:00:00-05:00</updated>
-   <id>getaclue.me/2014/12/21/Installing-Yosemite-on-E8400</id>
+   <id>getaclue.me/Installing-Yosemite-on-E8400</id>
    <content type="html">&lt;p&gt;First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.&lt;/p&gt;
 
 &lt;p&gt;Computer Hardware:&lt;/p&gt;
@@ -4136,9 +4184,9 @@ http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel
  
  <entry>
    <title>A different archival strategy for pictures on CentOS 7</title>
-   <link href="getaclue.me/2014/10/15/a-different-archival-strategy-for-pictures"/>
+   <link href="getaclue.me/a-different-archival-strategy-for-pictures"/>
    <updated>2014-10-15T00:00:00-04:00</updated>
-   <id>getaclue.me/2014/10/15/A-different-archival-strategy-for-pictures</id>
+   <id>getaclue.me/A-different-archival-strategy-for-pictures</id>
    <content type="html">&lt;p&gt;I decided to learn about bash scripting in order to encrypt all of my pictures and movies before uploading them. More specifically, I wanted individual encryption and not an encryption of an entire archive of pictures and movies.&lt;/p&gt;
 
 &lt;p&gt;This is an exercise in improving my backups. I have a habit of not downloading an entire archive because the size of an archive is typically large. To solve this problem, I want to mimick my entire library by preserving the file structure on a server. However, I wanted to have all of my files encrypted prior to having them uploaded.&lt;/p&gt;
@@ -4183,9 +4231,9 @@ http://tldp.org/LDP/abs/html/loops1.html
  
  <entry>
    <title>Installing Mono on CentOS 7</title>
-   <link href="getaclue.me/2014/10/11/installing-mono-on-centos-7"/>
+   <link href="getaclue.me/installing-mono-on-centos-7"/>
    <updated>2014-10-11T00:00:00-04:00</updated>
-   <id>getaclue.me/2014/10/11/Installing-Mono-on-CentOS-7</id>
+   <id>getaclue.me/Installing-Mono-on-CentOS-7</id>
    <content type="html">&lt;h1 id=&quot;obtain-necessary-gpg-keys&quot;&gt;Obtain necessary gpg keys&lt;/h1&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir Mono
 cd Mono
@@ -4232,9 +4280,9 @@ https://fedoraproject.org/wiki/EPEL/FAQ
  
  <entry>
    <title>Configuring SSH Server on CentOS 7</title>
-   <link href="getaclue.me/2014/10/08/configuring-ssh-on-centos-7"/>
+   <link href="getaclue.me/configuring-ssh-on-centos-7"/>
    <updated>2014-10-08T00:00:00-04:00</updated>
-   <id>getaclue.me/2014/10/08/Configuring-SSH-on-CentOS-7</id>
+   <id>getaclue.me/Configuring-SSH-on-CentOS-7</id>
    <content type="html">&lt;h1 id=&quot;display-all-install-packages-in-centos&quot;&gt;Display all install packages in CentOS&lt;/h1&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm -qa
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -4266,9 +4314,9 @@ https://gist.github.com/quintes/5153247
  
  <entry>
    <title>Using wget in CentOS 6.5</title>
-   <link href="getaclue.me/2014/04/30/using-wget"/>
+   <link href="getaclue.me/using-wget"/>
    <updated>2014-04-30T00:00:00-04:00</updated>
-   <id>getaclue.me/2014/04/30/Using-wget</id>
+   <id>getaclue.me/Using-wget</id>
    <content type="html">&lt;h1 id=&quot;using-wget-in-centos-65&quot;&gt;Using wget in CentOS 6.5&lt;/h1&gt;
 
 &lt;p&gt;First of all, everything that you need is here:&lt;/p&gt;
@@ -4320,9 +4368,9 @@ GNU/Linux
  
  <entry>
    <title>Installing XChat CentOS 6.5 for Beginners</title>
-   <link href="getaclue.me/2014/03/16/installing-xchat"/>
+   <link href="getaclue.me/installing-xchat"/>
    <updated>2014-03-16T00:00:00-04:00</updated>
-   <id>getaclue.me/2014/03/16/installing-xChat</id>
+   <id>getaclue.me/installing-xChat</id>
    <content type="html">&lt;h1 id=&quot;installing-xchat-for-total-beginners&quot;&gt;Installing XChat for Total Beginners&lt;/h1&gt;
 
 &lt;p&gt;Make a dir to install it in and go there&lt;/p&gt;
@@ -4396,9 +4444,9 @@ GNU/Linux
  
  <entry>
    <title>Configuring PrivateInternetAccess VPN</title>
-   <link href="getaclue.me/2014/03/16/configuring-pia"/>
+   <link href="getaclue.me/configuring-pia"/>
    <updated>2014-03-16T00:00:00-04:00</updated>
-   <id>getaclue.me/2014/03/16/configuring-PIA</id>
+   <id>getaclue.me/configuring-PIA</id>
    <content type="html">&lt;p&gt;#Installing OpenVPN and Configuring for PrivateInternetAccess#
 Go to /etc/&lt;/p&gt;
 
