@@ -25,10 +25,6 @@ I began to write my `Learn Node.js` (working title) book last month. It is a sel
 
 My current plan is to self publish and I will be doing that using [gumroad]; then I will upload a copy on iBooks store; and checkout amazon's self publishing via kindle. In all three scenarios, a pdf output of the book is perfect. So, the final version of my book will be available for purchase in at least the pdf format. [Asciidoc] documents are perfectly converted to pdf format using [asciidoctor-pdf].
 
-<script src="https://gumroad.com/js/gumroad.js"></script>
-
-<center><a class="gumroad-button" href="https://gum.co/RtFXDH">Buy my book</a></center>
-
 I began writing my book using iBooks Author authoring tool with the intention of publishing the book on the iBooks store. However, as I progressed in my writing process, I realized that my book contained quite a bit of code blocks. I wrote about this [earlier](./asciidoc-vs-ibooks-author) but I ended up fully re-doing my work and switching away from iBooks Author authoring tool.
 
 Quite honestly, lack of beautiful code blocks (once converted to pdf) is why I switched my writing into [asciidoc] format. For images, so far I have been fortunate to use a combination of screenshots and adobe photoshop software.
@@ -52,6 +48,9 @@ To summarize:
 Oh yes, [leanpub] is another option if you would like to stick to markdown and not interested in learning the power of [asciidoc].
 
 Happy writing!
+
+<script src="https://gumroad.com/js/gumroad.js" async></script>
+<center><a class="gumroad-button" href="https://gum.co/RtFXDH">Buy my book</a></center>
 
 [asciidoc]: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 [asciidocfx]: https://www.asciidocfx.com/
