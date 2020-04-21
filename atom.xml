@@ -4,7 +4,7 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-04-21T15:56:29-04:00</updated>
+ <updated>2020-04-21T16:20:18-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
@@ -20,10 +20,6 @@
    <content type="html">&lt;p&gt;I began to write my &lt;code class=&quot;highlighter-rouge&quot;&gt;Learn Node.js&lt;/code&gt; (working title) book last month. It is a self-published book project. The aim of the book is to help developers, switching to javascript and node.js, to hit the ground running by building and uploading a functional project. By going through the book you will be able to build features that modern javascript applications require.&lt;/p&gt;
 
 &lt;p&gt;My current plan is to self publish and I will be doing that using &lt;a href=&quot;https://gumroad.com/&quot;&gt;gumroad&lt;/a&gt;; then I will upload a copy on iBooks store; and checkout amazon’s self publishing via kindle. In all three scenarios, a pdf output of the book is perfect. So, the final version of my book will be available for purchase in at least the pdf format. &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;Asciidoc&lt;/a&gt; documents are perfectly converted to pdf format using &lt;a href=&quot;https://asciidoctor.org/docs/asciidoctor-pdf/&quot;&gt;asciidoctor-pdf&lt;/a&gt;.&lt;/p&gt;
-
-&lt;script src=&quot;https://gumroad.com/js/gumroad.js&quot;&gt;&lt;/script&gt;
-
-&lt;center&gt;&lt;a class=&quot;gumroad-button&quot; href=&quot;https://gum.co/RtFXDH&quot;&gt;Buy my book&lt;/a&gt;&lt;/center&gt;
 
 &lt;p&gt;I began writing my book using iBooks Author authoring tool with the intention of publishing the book on the iBooks store. However, as I progressed in my writing process, I realized that my book contained quite a bit of code blocks. I wrote about this &lt;a href=&quot;./asciidoc-vs-ibooks-author&quot;&gt;earlier&lt;/a&gt; but I ended up fully re-doing my work and switching away from iBooks Author authoring tool.&lt;/p&gt;
 
@@ -56,6 +52,10 @@
 &lt;p&gt;Oh yes, &lt;a href=&quot;https://leanpub.com/&quot;&gt;leanpub&lt;/a&gt; is another option if you would like to stick to markdown and not interested in learning the power of &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Happy writing!&lt;/p&gt;
+
+&lt;script src=&quot;https://gumroad.com/js/gumroad.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
+
+&lt;center&gt;&lt;a class=&quot;gumroad-button&quot; href=&quot;https://gum.co/RtFXDH&quot;&gt;Buy my book&lt;/a&gt;&lt;/center&gt;
 
 </content>
  </entry>
