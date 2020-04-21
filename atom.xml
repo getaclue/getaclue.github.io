@@ -4,7 +4,7 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-04-21T18:02:06-04:00</updated>
+ <updated>2020-04-21T19:29:52-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
@@ -42,14 +42,18 @@
     &lt;p&gt;To publish the pdf book on &lt;a href=&quot;https://gumroad.com/&quot;&gt;gumroad&lt;/a&gt; one just needs to make an account.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;To publish the pdf book to iBooks, one needs to connect your iCloud, in iTunes Connect, to Apple Books &lt;a href=&quot;https://support.apple.com/en-us/HT201183&quot;&gt;like so&lt;/a&gt;. And then you need to download iTunes Producer to upload your book to their store.&lt;/p&gt;
+    &lt;p&gt;To publish the pdf book to iBooks, one needs to connect your iCloud, in iTunes Connect, to Apple Books &lt;a href=&quot;https://support.apple.com/en-us/HT201183&quot;&gt;like so&lt;/a&gt;. And then you need to download iTunes Producer to upload your book to their store&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;To publish the pdf book to Amazon, one needs an amazon account and then head over to the &lt;a href=&quot;https://kdp.amazon.com/en_US&quot;&gt;kindle direct publishing&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Oh yes, &lt;a href=&quot;https://leanpub.com/&quot;&gt;leanpub&lt;/a&gt; is another option if you would like to stick to markdown and not interested in learning the power of &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;EDIT :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Turns out, to &lt;a href=&quot;http://help.leanpub.com/en/articles/2921549-what-formats-do-leanpub-books-come-in&quot;&gt;publish&lt;/a&gt; the pdf book on &lt;a href=&quot;https://leanpub.com/&quot;&gt;leanpub&lt;/a&gt; one just needs an account &lt;del&gt;Oh yes, &lt;a href=&quot;https://leanpub.com/&quot;&gt;leanpub&lt;/a&gt; is another option if you would like to stick to markdown and not interested in learning the power of &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt;.&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Happy writing!&lt;/p&gt;
 
