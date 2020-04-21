@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to call Javascript debugger from Xcode? Can you?'
+title: "How to call Javascript debugger from Xcode? Can you?"
 categories:
   - iOS
   - swift
@@ -15,8 +15,8 @@ status: publish
 type: post
 published: true
 meta: {}
-image: 'https://cdn-pro.dprcdn.net/files/acc_603419/2PWtsR'
-excerpt: 'In a previous release of ⭐️ Daily Vibes for iOS, 1.3.0, I added a natural language date parser.'
+image: "https://cdn-pro.dprcdn.net/files/acc_603419/2PWtsR"
+excerpt: "In a previous release of ⭐️ Daily Vibes for iOS, 1.3.0, I added a natural language date parser."
 datePublished: 2018-03-09 15:00:00
 dateModified: 2018-03-09 15:35:18
 redirect_from:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to make perfect iOS screenshots with a clean status bar in 2018'
+title: "How to make perfect iOS screenshots with a clean status bar in 2018"
 categories:
   - iOS
   - swift
@@ -17,8 +17,8 @@ status: publish
 type: post
 published: true
 meta: {}
-image: 'https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy'
-excerpt: 'Using fastlane.tools and SimulatorStatusMagic'
+image: "https://cdn-pro.dprcdn.net/files/acc_603419/oV4Piy"
+excerpt: "Using fastlane.tools and SimulatorStatusMagic"
 datePublished: 2018-03-30 09:15:27
 dateModified: 2018-03-30 09:45:29
 redirect_from:
