@@ -4,7 +4,7 @@
  <title>Alex Kluew</title>
  <link href="getaclue.me/atom.xml" rel="self"/>
  <link href="getaclue.me/"/>
- <updated>2020-04-21T16:20:18-04:00</updated>
+ <updated>2020-04-21T16:51:36-04:00</updated>
  <id>getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Writing a self-published technical book</title>
+   <title>Self-publishing a technical book</title>
    <link href="getaclue.me/self-publishing-technical-book"/>
    <updated>2020-04-21T00:00:00-04:00</updated>
    <id>getaclue.me/self-publishing-technical-book</id>
@@ -52,10 +52,6 @@
 &lt;p&gt;Oh yes, &lt;a href=&quot;https://leanpub.com/&quot;&gt;leanpub&lt;/a&gt; is another option if you would like to stick to markdown and not interested in learning the power of &lt;a href=&quot;https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/&quot;&gt;asciidoc&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Happy writing!&lt;/p&gt;
-
-&lt;script src=&quot;https://gumroad.com/js/gumroad.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
-
-&lt;center&gt;&lt;a class=&quot;gumroad-button&quot; href=&quot;https://gum.co/RtFXDH&quot;&gt;Buy my book&lt;/a&gt;&lt;/center&gt;
 
 </content>
  </entry>
