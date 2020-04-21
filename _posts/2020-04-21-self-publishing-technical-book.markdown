@@ -41,11 +41,13 @@ To summarize:
 
 - To publish the pdf book on [gumroad] one just needs to make an account.
 
-- To publish the pdf book to iBooks, one needs to connect your iCloud, in iTunes Connect, to Apple Books [like so](https://support.apple.com/en-us/HT201183). And then you need to download iTunes Producer to upload your book to their store.
+- To publish the pdf book to iBooks, one needs to connect your iCloud, in iTunes Connect, to Apple Books [like so](https://support.apple.com/en-us/HT201183). And then you need to download iTunes Producer to upload your book to their store
 
 - To publish the pdf book to Amazon, one needs an amazon account and then head over to the [kindle direct publishing](https://kdp.amazon.com/en_US)
 
-Oh yes, [leanpub] is another option if you would like to stick to markdown and not interested in learning the power of [asciidoc].
+EDIT :
+
+- Turns out, to [publish](http://help.leanpub.com/en/articles/2921549-what-formats-do-leanpub-books-come-in) the pdf book on [leanpub] one just needs an account ~~Oh yes, [leanpub] is another option if you would like to stick to markdown and not interested in learning the power of [asciidoc].~~
 
 Happy writing!
 
