@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: getaclue.me/sitemap.xml
+Sitemap: https://getaclue.me/sitemap.xml
