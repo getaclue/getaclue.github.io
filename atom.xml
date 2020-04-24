@@ -4,13 +4,70 @@
  <title>Alex Kluew</title>
  <link href="https://getaclue.me/atom.xml" rel="self"/>
  <link href="https://getaclue.me/"/>
- <updated>2020-04-24T09:05:15-04:00</updated>
+ <updated>2020-04-24T10:06:49-04:00</updated>
  <id>https://getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
    <email>info@getaclue.me</email>
  </author>
 
+ 
+ <entry>
+   <title>SEO Checklist</title>
+   <link href="https://getaclue.me/seo-checklist"/>
+   <updated>2020-04-24T00:00:00-04:00</updated>
+   <id>https://getaclue.me/seo-checklist</id>
+   <content type="html">&lt;style&gt;
+.task-list {
+  margin-left: 0;
+}
+.task-list-item {
+  list-style-type: none;
+  padding-left: 0;
+}
+.task-list-item-checkbox {
+  margin-right: 1rem;
+}
+&lt;/style&gt;
+
+&lt;p&gt;Here is a seo checklist that will help you stay on track with SEO on your website or application&lt;/p&gt;
+
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Switch To HTTPS&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Set Up &lt;a href=&quot;https://search.google.com/search-console&quot;&gt;Google Search Console&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Set Up Google Analytics&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Set Up &lt;a href=&quot;https://www.bing.com/toolbox/webmaster/&quot;&gt;Bing Webmaster Tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Create XML &lt;code class=&quot;highlighter-rouge&quot;&gt;Sitemap&lt;/code&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Create and add a &lt;code class=&quot;highlighter-rouge&quot;&gt;robots.txt&lt;/code&gt; file to your site&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Submit &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt; to &lt;a href=&quot;https://search.google.com/search-console&quot;&gt;Google Search Console&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Submit &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt; to &lt;a href=&quot;https://www.bing.com/toolbox/webmaster/&quot;&gt;Bing Webmaster Tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Fix Crawl Errors&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Fix Broken Links&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Fix Any Missing or Duplicate &lt;code class=&quot;highlighter-rouge&quot;&gt;Meta&lt;/code&gt; Tags&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Keep Your URLs Short, Descriptive&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Add Schema.org Description (where relevant)&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Use a Keyword Research Tool&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Optimize the Readability of Your Content&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Add Your Keyword to Your &lt;code class=&quot;highlighter-rouge&quot;&gt;Title&lt;/code&gt; Tag&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Add Your Keyword to Your &lt;code class=&quot;highlighter-rouge&quot;&gt;Meta&lt;/code&gt; Description&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Add Your Keyword to Your &lt;code class=&quot;highlighter-rouge&quot;&gt;H1&lt;/code&gt; Tag&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Include Your Keyword in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Body&lt;/code&gt; of the Page&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Find long-tail keyword variations and use in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Body&lt;/code&gt; of the Page&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Label Your Images with Descriptive &lt;code class=&quot;highlighter-rouge&quot;&gt;ALT&lt;/code&gt; Tags&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Use Internal Links&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Link to Authoritative Sites&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Reverse-Engineer Your Competitors’ Links and &lt;code class=&quot;highlighter-rouge&quot;&gt;Meta&lt;/code&gt; Tags, Keywords&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Make Sure Your Site Doesn’t Have Duplicate Content&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Claim Your Brand Name on as Many Social Networks as Possible&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Make Your Site Mobile Friendly&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Speed Up Your Site&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Using WordPress Software? Install Yoast SEO Plugin&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Add Social Sharing Images&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Add Tags and Categories&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Self-publishing a technical book</title>

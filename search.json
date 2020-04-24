@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "SEO Checklist",
+      "url"      : "/seo-checklist",
+      "category" : "SEO, checklist, SEO Checklist",
+      "tags"     : "SEO, checklist, SEO Checklist",
+      "date"     : "2020-04-24 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Self-publishing a technical book",
       "url"      : "/self-publishing-technical-book",
       "category" : "asciidoc, asciidoctor, ibooks author, example, writing tools, self-publish",
