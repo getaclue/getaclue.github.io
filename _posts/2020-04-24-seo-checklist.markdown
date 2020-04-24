@@ -30,7 +30,7 @@ dateModified: 2020-04-24 06:53:43
 }
 </style>
 
-Here is a checklist that will help you stay on track with SEO on your website or application
+Here is a seo checklist that will help you stay on track with SEO on your website or application
 
 - [ ] Switch To HTTPS
 - [ ] Set Up [Google Search Console]
