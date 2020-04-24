@@ -57,6 +57,15 @@ pre {
   margin: 1rem 0;
 }
 
+.post h1:first-child,
+.project h1:first-child,
+.photo h1:first-child {
+  margin-top: 0;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
 .post h2:first-child,
 .project h2:first-child,
 .photo h2:first-child {
