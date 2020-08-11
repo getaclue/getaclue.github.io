@@ -1,13 +1,13 @@
 ---
 layout: page
 title: What I’m doing now
-categories: ['now']
-tags: ['now']
+categories: ["now"]
+tags: ["now"]
 status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-03-06 09:53:39
+dateModified: 2020-08-11 12:29:39
 datePublished: 2020-03-06 09:53:39
 dateCreated: 2019-05-15 15:25:00
 ---
@@ -36,14 +36,83 @@ I am working on contract for Statistics Canada.
 
 We are focusing on [lastminutelaura.ca](https://lastminutelaura.ca) and [yt.com/lastminutelaura](https://youtube.com/lastminutelaura) growth.
 
-** Looking for extra work in Ruby, Javascript, Swift, or Java. Contact me if you have something in mind and we can chat about it =) **
+** Looking for extra work in Javascript, Ruby, Swift, or Java. Contact me if you have something in mind and we can chat about it =) **
 
 ## Best way(s) to reach me
 
-My most frequented social media platform of choice is [Twitter](https://twitter.com/alexkluew).
+My most frequented social media platform of choice is [Twitter](https://twitter.com/alexkluew_dev).
 
 If you want something more direct, you can slide into my DM's on the [Telegram Messenging Platform](https://t.me/getaclue).
 
 ---
 
-Updated March 6 2020, from Hamilton, Canada.
+👇 Send me an email 👇
+
+<div style="width: 100%;">
+  <form id="contactform" method="POST" action="https://formspree.io/info@getaclue.me">
+    <p><b>Email Address</b></p>
+    <input type="email" name="_replyto" placeholder="Your email address">
+    <p><b>Message</b></p>
+    <textarea placeholder="Your message" name="message"></textarea>
+    <input type="hidden" name="_subject" value="New message from getaclue.me website" />
+    <br />
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<style type="text/css">
+  #contactform input[type="email"] {
+    width: calc(100% - 20px);
+    height: 30px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #contactform textarea {
+    width: calc(100% - 30px);
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    padding: 15px;
+    resize: vertical;
+  }
+  #contactform input[type="submit"] {
+    display: inline-block;
+    width: 127px;
+    height: 42px;
+    background-color: #272727;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  #leftCol {
+    margin-bottom: 40px;
+    margin-right: 30px;
+    width: 100%;
+    text-align: center;
+    height: 700px;
+  }
+  @media screen and (min-width: 800px) {
+    #leftCol {
+        width: 40%;
+        float: left;
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+    #rightCol {
+      width: 55%;
+      float: right;
+    }
+  }
+  }
+</style>
+
+---
+
+Updated August 11 2020, from Hamilton, Canada.

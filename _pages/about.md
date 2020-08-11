@@ -1,31 +1,33 @@
 ---
 layout: page
-title: About Alex Kluew
+title: About
 categories: []
 tags: []
 status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-03-09 12:29:11
+dateModified: 2020-08-11 12:29:11
 datePublished: 2018-10-08 14:14:19
 dateCreated: 2018-08-21 15:58:31
 ---
 
-# Hello friend!
+# Hello friend 👋 I'm Alex
 
-Welcome to my little corner of the Internet. This place is my collection of things that I wanted to share. It is my own long-term social experiment. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
+Welcome to my little corner of the Internet. This place is my collection of things that I share. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
 
 ## Quick about me:
 
 - Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
 - live and work in beautiful Hamilton, Ontario
 - work for 🇨🇦 on contract
-- hold two complementary undergraduate degrees awarded from [University of Ottawa](https://www.uottawa.ca/en):
+- open to new opportunities in remote / Hamilton / Toronto / GTA / <a href="mailto:info@getaclue.me?subject=Available%20Opportunity%20in%20Toronto%20or%20remote" title="hire me">hire me</a>
+- life-long interest in software engineering discipline
+
+I also went to school and hold two complementary undergraduate degrees awarded from [University of Ottawa](https://www.uottawa.ca/en):
+
 - [BASc in Software Engineering](https://www.uottawa.ca/academic/info/regist/1516/calendars/programs/1459.html)
 - [Honours BSc in Psychology](https://socialsciences.uottawa.ca/programs/undergraduate-course-sequences/honours-bsc-psychology)
-- open to new opportunities in remote / Hamilton / Toronto / GTA <a href="mailto:info@getaclue.me?subject=Available%20Opportunity%20in%20Toronto%20or%20remote" title="hire me">hire me</a>
-- life-long interest in software engineering discipline
 
 ## Services offered
 
@@ -36,10 +38,9 @@ Please see [services offered page](/services).
 I am always learning and experimenting on my own time. My computer science foundation, coupled with software engineering training, allows me to jump into any code base and any language.
 
 - computer science foundation using Java and C
-- been enjoying Swift lately
+- enjoying JavaScript lately
 - familiar with Ruby (Ruby on Rails, Sinatra)
-- familiar with Javascript (React, React Native, Ember, ES2016, ES2017, and ES2018)
-  - familiar with jQuery [but I prefer to use Javascript](http://youmightnotneedjquery.com/) nowadays
+- familiar with Javascript (Node.js, React, React Native, Ember, ES2016, ES2017, and ES2018)
 - familiar with HTML5
 - familiar with CSS3/SASS/Less
 - familiar with multi-language and accessibility compliance
@@ -47,6 +48,7 @@ I am always learning and experimenting on my own time. My computer science found
 - familiar with cross-browser development
 - familiar with continuous deployment (codeship, travis, jenkins)
 - familiar in \*nix environments
+- familiar with Swift
 - able to work with Objective-C
 - new in iOS development (since November 2017)
 - new in OS X development (since April 2018)
@@ -70,112 +72,3 @@ I enjoy knowledge for its own sake. I explore other disciplines to understand ou
 I am also interested in business and entrepreneurship. Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
 
 [![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:style="max-width:100%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo "Ontario Summer Company 2014 Entrepreneurial Grant")
-
-### Recruiter?
-
-Thank you for stumbling upon me and reading this far. If I am looking for a job, then the following information may be useful for you. If I am not, then this is purely here for documentation.
-
-#### What should you know about me?
-
-- I like to work
-- I don't like to waste time (yours or mine)
-- I prefer to ask why not instead of why
-
-#### Why should you hire me?
-
-- I am reliable and honest
-- I listen to feedback and improve based on comments
-- I learn quickly and care about quality output
-
-#### What am I good at?
-
-- I will find a solution for the problem that I have at hand
-- I want everyone to succeed, thus I will provide honest advice
-- Connecting things together
-
-#### What am I bad at?
-
-- sometimes my solutions are complex
-- sometimes I struggle communicating ideas
-- algorithms
-
-#### What can I do for you?
-
-- Open to 6 months opportunities for others please send email
-  - first 3 months &mdash; for project knowledge (can be quicker and will thus spill into below)
-  - remaining 3 months &mdash; for output
-- I promise to give my best shot
-- If it does not work out, no hard feelings
-
-<div style="width: 100%; float: left; margin-top: 20px">
-  <hr />
-
-  <form id="contactform" method="POST" action="https://formspree.io/info@getaclue.me">
-    <p><b>Email Address</b></p>
-    <input type="email" name="_replyto" placeholder="Your email address">
-
-    <p><b>Message</b></p>
-    <textarea placeholder="Your message" name="message"></textarea>
-    <input type="hidden" name="_subject" value="New message from getaclue.me" />
-    <br />
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-
-<style type="text/css">
-  #contactform {
-    padding-top: 30px;
-  }
-
-  #contactform input[type="email"] {
-    width: calc(100% - 20px);
-    height: 30px;
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  #contactform textarea {
-    width: calc(100% - 30px);
-    height: 100px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-    padding: 15px;
-    resize: vertical;
-  }
-  #contactform input[type="submit"] {
-    display: inline-block;
-    width: 127px;
-    height: 42px;
-    background-color: #272727;
-    color: white;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 14px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  #leftCol {
-    margin-bottom: 40px;
-    margin-right: 30px;
-    width: 100%;
-    text-align: center;
-    height: 700px;
-  }
-  @media screen and (min-width: 800px) {
-    #leftCol {
-        width: 40%;
-        float: left;
-      }
-    }
-  }
-  @media screen and (min-width: 800px) {
-    #rightCol {
-      width: 55%;
-      float: right;
-    }
-  }
-  }
-</style>
