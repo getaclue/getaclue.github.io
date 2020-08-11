@@ -1,0 +1,105 @@
+I"�<p><em>
+(This is <a href="https://nownownow.com/about">a now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one</a>, too.)
+</em></p>
+
+<p>This page was mostly inspired by <a href="https://sivers.org/now">https://sivers.org/now</a>.</p>
+
+<h2 id="living-in-hamilton-canada">Living in Hamilton, Canada</h2>
+
+<p>I’ve been living in Hamilton since July 2019.</p>
+
+<h2 id="upcoming-near-future">Upcoming Near Future</h2>
+
+<p>N/A but hopefully writing on this website more often in 2020.</p>
+
+<h2 id="working-day-time">Working Day time</h2>
+
+<p>I am working on contract for Statistics Canada.</p>
+
+<p>** I am open to long term opportunities in remote / Hamilton / Toronto / GTA. **</p>
+
+<h2 id="work-after-hours">Work After hours</h2>
+
+<p>We are focusing on <a href="https://lastminutelaura.ca">lastminutelaura.ca</a> and <a href="https://youtube.com/lastminutelaura">yt.com/lastminutelaura</a> growth.</p>
+
+<p>** Looking for extra work in Javascript, Ruby, Swift, or Java. Contact me if you have something in mind and we can chat about it =) **</p>
+
+<h2 id="best-ways-to-reach-me">Best way(s) to reach me</h2>
+
+<p>My most frequented social media platform of choice is <a href="https://twitter.com/alexkluew_dev">Twitter</a>.</p>
+
+<p>If you want something more direct, you can slide into my DM’s on the <a href="https://t.me/getaclue">Telegram Messenging Platform</a>.</p>
+
+<hr />
+
+<p>👇 Send me an email 👇</p>
+
+<div style="width: 100%;">
+  <form id="contactform" method="POST" action="https://formspree.io/info@getaclue.me">
+    <p><b>Email Address</b></p>
+    <input type="email" name="_replyto" placeholder="Your email address" />
+    <p><b>Message</b></p>
+    <textarea placeholder="Your message" name="message"></textarea>
+    <input type="hidden" name="_subject" value="New message from getaclue.me website" />
+    <br />
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+
+<style type="text/css">
+  #contactform input[type="email"] {
+    width: calc(100% - 20px);
+    height: 30px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #contactform textarea {
+    width: calc(100% - 30px);
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    padding: 15px;
+    resize: vertical;
+  }
+  #contactform input[type="submit"] {
+    display: inline-block;
+    width: 127px;
+    height: 42px;
+    background-color: #272727;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  #leftCol {
+    margin-bottom: 40px;
+    margin-right: 30px;
+    width: 100%;
+    text-align: center;
+    height: 700px;
+  }
+  @media screen and (min-width: 800px) {
+    #leftCol {
+        width: 40%;
+        float: left;
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+    #rightCol {
+      width: 55%;
+      float: right;
+    }
+  }
+  }
+</style>
+
+<hr />
+
+<p>Updated August 11 2020, from Hamilton, Canada.</p>
+:ET
