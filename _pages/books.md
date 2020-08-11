@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books by Alex Kluew
+title: My Book
 categories: []
 tags: []
 status: publish
@@ -12,7 +12,7 @@ datePublished: 2020-08-11 12:29:11
 dateCreated: 2020-08-11 12:29:11
 ---
 
-Books that I wrote and released :
+Book that I wrote and released :
 
 ## Learn Node.js (2020)
 
