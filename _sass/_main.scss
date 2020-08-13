@@ -229,8 +229,8 @@ main {
 
   @media screen and (min-width: 600px) {
     max-width: 60rem;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 0 auto;
+    // padding: 1rem;
   }
 }
 
@@ -244,7 +244,7 @@ main {
   }
   header ul {
     border-bottom: 10px solid #0074d9;
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
   }
   nav ul {
     border-right: 0px;
