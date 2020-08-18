@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-08-11 12:29:39
+dateModified: 2020-08-18 18:46:25
 datePublished: 2020-03-06 09:53:39
 dateCreated: 2019-05-15 15:25:00
 ---
@@ -44,7 +44,7 @@ My most frequented social media platform of choice is [Twitter](https://twitter.
 
 If you want something more direct, you can slide into my DM's on the [Telegram Messenging Platform](https://t.me/getaclue).
 
----
+<hr style="border: 5px solid #F9B031;" />
 
 👇 Send me an email 👇
 
@@ -113,6 +113,6 @@ If you want something more direct, you can slide into my DM's on the [Telegram M
   }
 </style>
 
----
+<hr style="border: 5px solid #95ec8c;" />
 
-Updated August 11 2020, from Hamilton, Canada.
+Updated August 18 2020, from Hamilton, Canada.

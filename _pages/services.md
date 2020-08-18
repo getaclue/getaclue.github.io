@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-03-09 12:06:33
+dateModified: 2020-08-18 18:46:33
 datePublished: 2020-03-09 12:06:33
 dateCreated: 2020-03-09 12:06:33
 ---
@@ -24,7 +24,7 @@ I can perform the necessary competitor analysis and feasibility assessment of a 
 
 > Output available : competition analysis, feasibility analysis
 
----
+<hr style="border: 5px solid #95ec8c;" />
 
 # B. Requirements engineering
 
@@ -32,7 +32,7 @@ One aspect of progress in software development involves matching requirements to
 
 > Output available : requirements specifications; stakeholder analysis; user stories
 
----
+<hr style="border: 5px solid #6D40F5;" />
 
 # C. UX / UI design and development
 
@@ -40,7 +40,7 @@ The second most important aspect of translating your vision into reality is to h
 
 > Output available : ux wireframes, ui mockups
 
----
+<hr style="border: 5px solid #50E2CB;" />
 
 # D. Software development
 
@@ -48,7 +48,7 @@ Once the necessary software requirements and specification documents are produce
 
 > Output available : working software, code repository, deployed software, scripts, scraping, automation
 
----
+<hr style="border: 5px solid #F9B031;" />
 
 # E. Software verification
 
@@ -56,7 +56,7 @@ Did you just acquire software but need some someone to double check that it does
 
 > Output available : software verification document
 
----
+<hr style="border: 5px solid #5E85F9;" />
 
 # F. Other
 
