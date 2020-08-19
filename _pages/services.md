@@ -20,7 +20,7 @@ dateCreated: 2020-03-09 12:06:33
 
 - (a) condition or capability needed by a user to solve a problem or achieve an objective;
 - (b) condition or capability that must be met or possessed by a system or system component to satisfy a contract, standard, specification, or other formally imposed document;
-- (c) documented representation of a condition or capavility as in definition (a) or (b)
+- (c) documented representation of a condition or capability as in definition (a) or (b)
 
 ![How to measure software quality?]({{"assets/images/services/software-quality.png" | relative_url}})
 
