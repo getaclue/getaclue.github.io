@@ -22,7 +22,7 @@ This page was mostly inspired by [https://sivers.org/now](https://sivers.org/now
 
 I've been living in Hamilton since July 2019.
 
-## Upcoming Near Future
+<!-- ## Upcoming Near Future
 
 N/A but hopefully writing on this website more often in 2020.
 
@@ -36,7 +36,7 @@ I am working on contract for Statistics Canada.
 
 We are focusing on [lastminutelaura.ca](https://lastminutelaura.ca) and [yt.com/lastminutelaura](https://youtube.com/lastminutelaura) growth.
 
-** Looking for extra work in Javascript, Ruby, Swift, or Java. Contact me if you have something in mind and we can chat about it =) **
+** Looking for extra work in Javascript, Ruby, Swift, or Java. Contact me if you have something in mind and we can chat about it =) ** -->
 
 ## Best way(s) to reach me
 
