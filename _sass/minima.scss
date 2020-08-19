@@ -3,7 +3,7 @@
 // Define defaults for each variable.
 
 $base-font-family: "Inter", sans-serif !default;
-$base-font-size: 16pt !default;
+$base-font-size: 17px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 2.5 !default;
@@ -26,13 +26,6 @@ $content-width: 800px !default;
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
