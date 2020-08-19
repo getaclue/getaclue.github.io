@@ -1,0 +1,20 @@
+I"�<h2 id="my-books">My Books</h2>
+
+<p>Book that I wrote and released :</p>
+
+<h3 id="learn-nodejs-2020">Learn Node.js (2020)</h3>
+
+<p><img src="/assets/images/books/learn-nodejs.png" alt="Learn Node.js" /></p>
+
+<p><a href="https://learnnodejs.dev">Learn Node.js</a> – is a free book that I wrote about getting up to speed with fullstack javascript development during COVID-19 (March-May 2020). This book is perfect for someone who isn’t sure how everything in node.js works. In this book I outline the design and development of common application features using javascript. The implementation of which are then transferable to other projects and languages.</p>
+
+<h2 id="recommendations">Recommendations</h2>
+
+<p>Books that I think you should read</p>
+
+<h3 id="object-oriented-software-engineering-practical-software-development-using-uml-and-java-practical-software-development-using-uml-and-java-2004">Object-Oriented Software Engineering: Practical Software Development Using UML and Java: Practical Software Development using UML and Java (2004)</h3>
+
+<p><img src="/assets/images/books/lethbridge-book.png" alt="Object-Oriented Software Engineering: Practical Software Development Using UML and Java: Practical Software Development using UML and Java" /></p>
+
+<p><a target="_blank" href="https://www.amazon.com/gp/product/0077109082/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0077109082&amp;linkCode=as2&amp;tag=alexkluew-20&amp;linkId=48f45e12824716619379cd8ed9859925">Object-Oriented Software Engineering: Practical Software Development Using UML and Java</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=alexkluew-20&amp;l=am2&amp;o=1&amp;a=0077109082" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> (affiliate link) – really good book on software engineering and a must for anyone interested in this field. There is a heavy reliance on UML. You can get a lot out of this book without knowing much about Java.</p>
+:ET
