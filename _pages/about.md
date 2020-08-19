@@ -7,37 +7,37 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-08-11 12:29:11
+dateModified: 2020-08-19 12:29:11
 datePublished: 2018-10-08 14:14:19
 dateCreated: 2018-08-21 15:58:31
 ---
 
 # Hello friend 👋 I'm Alex
 
-Welcome to my little corner of the Internet. This place is my collection of things that I share. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
+Welcome to my little corner of the Internet. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
 
 ## Quick about me:
 
-- Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
-- live and work in beautiful Hamilton, Ontario
-- work for 🇨🇦 on contract
-- open to new opportunities in remote / Hamilton / Toronto / GTA / <a href="mailto:info@getaclue.me?subject=Available%20Opportunity%20in%20Toronto%20or%20remote" title="hire me">hire me</a>
-- life-long interest in software engineering discipline
+- I am a Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
+- I live in beautiful Hamilton, Ontario
+- I work remotely for Government of Canada on contract
 
 I also went to school and hold two complementary undergraduate degrees awarded from [University of Ottawa](https://www.uottawa.ca/en):
 
-- [BASc in Software Engineering](https://www.uottawa.ca/academic/info/regist/1516/calendars/programs/1459.html)
-- [Honours BSc in Psychology](https://socialsciences.uottawa.ca/programs/undergraduate-course-sequences/honours-bsc-psychology)
+- [one in Software Engineering](https://www.uottawa.ca/academic/info/regist/1516/calendars/programs/1459.html)
+- [one in Psychology](https://socialsciences.uottawa.ca/programs/undergraduate-course-sequences/honours-bsc-psychology)
 
-## Services offered
+## How can I help?
 
-Please see [services offered page](/services).
+I am a software engineer at heart. That means that I am trained to solve customer's business problems by the systematic development and evolution of large, high-quality software systems within cost, time, and other constraints.
 
-## Technology I am familiar with:
+Please see my [services offered page](/services). You can always contact me about a special case.
 
-I am always learning and experimenting on my own time. My computer science foundation, coupled with software engineering training, allows me to jump into any code base and any language.
+## With what technology?
 
-- computer science foundation using Java and C
+I am always learning and experimenting on my own time. My computer science foundation, coupled with software engineering training, allows me to quickly jump into any code base and any language.
+
+<!-- - computer science foundation using Java and C
 - enjoying JavaScript lately
 - familiar with Ruby (Ruby on Rails, Sinatra)
 - familiar with Javascript (Node.js, React, React Native, Ember, ES2016, ES2017, and ES2018)
@@ -51,7 +51,7 @@ I am always learning and experimenting on my own time. My computer science found
 - familiar with Swift
 - able to work with Objective-C
 - new in iOS development (since November 2017)
-- new in OS X development (since April 2018)
+- new in OS X development (since April 2018) -->
 
 I am open to learning new technology.
 
@@ -72,3 +72,5 @@ I enjoy knowledge for its own sake. I explore other disciplines to understand ou
 I am also interested in business and entrepreneurship. Here is a video of my adventures during the <a href="https://www.ontario.ca/business-and-economy/start-summer-company-students">Ontario Summer Company 2014 Entrepreneurial Grant</a>:
 
 [![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:style="max-width:100%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo "Ontario Summer Company 2014 Entrepreneurial Grant")
+
+<!-- [Video Backup]({{'assets/videos/Get a Kluew Photography - Alex Kluew - Summer Company - 2014.mp4' | relative_url}}) -->
