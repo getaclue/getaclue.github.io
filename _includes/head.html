@@ -59,8 +59,8 @@
   {% if page.title %}
   <meta property="og:type" content="article" />
   {% endif %} {% if page.image %}
-  <meta property="og:image" content="{{page.image}}" />
-  <meta name="twitter:image" content="{{page.image}}" />
+  <meta property="og:image" content="{{page.image | absolute_url }}" />
+  <meta name="twitter:image" content="{{page.image | absolute_url}}" />
   {% else %} <meta name="og:image" content="{{ "/assets/social-image-banner.png"
   | absolute_url }}"> <meta name="twitter:image" content="{{
   "/assets/social-image-banner.png" | absolute_url }}"> {% endif %}{% for tag in
