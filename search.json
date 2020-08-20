@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Nodejs: Accept arguments from cli",
+      "url"      : "/nodejs-accept-arguments-from-cli",
+      "category" : "nodejs, tips",
+      "tags"     : "nodejs, tips",
+      "date"     : "2020-08-20 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Walking Away",
       "url"      : "/walking-away",
       "category" : "productivity, tips",
