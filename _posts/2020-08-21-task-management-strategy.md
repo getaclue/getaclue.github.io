@@ -8,7 +8,7 @@ type: post
 published: true
 meta: {}
 image: "/assets/images/2020-08-21/task-management-strategy.png"
-excerpt: "How to read input from the console? How to read input arguments provided by a user in the command line?"
+excerpt: "One thing is certain for me: keeping all the tasks in my head does not work long-term."
 dateCreated: 2020-08-20 06:29:34
 datePublished: 2020-08-20 06:29:34
 dateModified: 2020-08-20 06:29:34
