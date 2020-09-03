@@ -26,15 +26,23 @@ div[itemprop="articleBody"] {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cooper Hewitt";
+  src: url("../assets/fonts/CooperHewitt/CooperHewitt-Book.woff") format("woff"),
+    url("../assets/fonts/CooperHewitt/CooperHewitt-Book.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import url("https://rsms.me/inter/inter.css");
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Cooper Hewitt", "Inter", sans-serif;
 }
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "Inter var", sans-serif;
+    font-family: "Cooper Hewitt", "Inter var", sans-serif;
   }
 }
 
