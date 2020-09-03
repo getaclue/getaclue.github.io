@@ -12,7 +12,7 @@ datePublished: 2018-10-08 14:14:19
 dateCreated: 2018-08-21 15:58:31
 ---
 
-# Hello friend 👋 I'm Alex
+## Hello friend 👋 I'm Alex
 
 Welcome to my little corner of the Internet. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
 

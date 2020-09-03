@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+div[itemprop="articleBody"] {
+  max-width: 600px;
+}
+
 @font-face {
   font-family: "Playfair Display";
   src: url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2")
@@ -206,6 +210,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: "Playfair Display";
   line-height: 1;
   margin: 1rem 0;
   font-weight: 600;
@@ -310,6 +315,7 @@ article {
   display: flex;
   flex-direction: column;
   background: #ffffff;
+  align-items: center;
 }
 
 figcaption {
