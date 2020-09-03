@@ -315,7 +315,9 @@ article {
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  align-items: center;
+  @media screen and (min-width: 700px) {
+    align-items: center;
+  }
 }
 
 figcaption {
