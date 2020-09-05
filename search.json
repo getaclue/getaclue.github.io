@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Getting paid as a freelancer",
+      "url"      : "/getting-paid-as-a-freelancer",
+      "category" : "opinion",
+      "tags"     : "opinion",
+      "date"     : "2020-09-05 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Improving Portfolio",
       "url"      : "/improving-portfolio",
       "category" : "opinion",
