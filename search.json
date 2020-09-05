@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Improving Portfolio",
+      "url"      : "/improving-portfolio",
+      "category" : "opinion",
+      "tags"     : "opinion",
+      "date"     : "2020-09-04 00:00:00 -0400",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Task Management Strategy",
       "url"      : "/task-management-strategy",
       "category" : "productivity, tips",

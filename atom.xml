@@ -4,13 +4,58 @@
  <title>Alex Kluew</title>
  <link href="https://getaclue.me/atom.xml" rel="self"/>
  <link href="https://getaclue.me/"/>
- <updated>2020-09-03T19:02:08-04:00</updated>
+ <updated>2020-09-04T21:27:54-04:00</updated>
  <id>https://getaclue.me</id>
  <author>
    <name>Alex Kluew</name>
    <email>info@getaclue.me</email>
  </author>
 
+ 
+ <entry>
+   <title>Improving Portfolio</title>
+   <link href="https://getaclue.me/improving-portfolio"/>
+   <updated>2020-09-04T00:00:00-04:00</updated>
+   <id>https://getaclue.me/improving-portfolio</id>
+   <content type="html">&lt;p&gt;I feel like having your own portfolio on the web is a must for a software craftperson. I think that the old way of not needing a portfolio is not going to last.&lt;/p&gt;
+
+&lt;p&gt;If you want to compete for a remote position or have an online business, you need a portfolio of your work and services. The portfolio is a way to show your customer why they should pick you.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-a-portfolio-&quot;&gt;What is a portfolio ?&lt;/h2&gt;
+
+&lt;p&gt;To me, this website is my portfolio.&lt;/p&gt;
+
+&lt;p&gt;It is a collection of works and description of those works.&lt;/p&gt;
+
+&lt;h2 id=&quot;problems&quot;&gt;Problem(s)&lt;/h2&gt;
+
+&lt;p&gt;One of the challenges with having the portfolio is knowing what to put on it. After all, the portfolio is a public. Another challenge is to know what level of details to put into the descriptions. Who is the target reader? Does that matter?&lt;/p&gt;
+
+&lt;p&gt;For my portfolio, I started it all with a blog. As time went, and I developed skills, I added a projects section. I tried to explain each project via the technologies used, screenshots, and live links. I do not think that my descriptions fit my portfolio anymore. The projects page has become more than a wall of text.&lt;/p&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+
+&lt;p&gt;Now, it is time to improve my portfolio and add a case study section. This section will allow me to expand on each project in a systematic way. I will explore examples of case studies and then apply the approach to my projects.&lt;/p&gt;
+
+&lt;p&gt;At the moment, I will be incorporating &lt;a href=&quot;https://designthings.fun&quot;&gt;this guide&lt;/a&gt;, for emerging designers today, to my &lt;del&gt;website&lt;/del&gt; porfolio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-09-04/design-things.png&quot; alt=&quot;designthings.fun&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I will be using &lt;del&gt;three&lt;/del&gt; one of their checklists&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;del&gt;One for the entire website&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;One for a case study section on the website&lt;/li&gt;
+  &lt;li&gt;&lt;del&gt;One for website presentation&lt;/del&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I am excited to be exploring the case study improvement to my portfolio. I plan to do a retro on each of the closed projects and talk about them in depth.&lt;/p&gt;
+
+&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+
+&lt;p&gt;Portfolios are important and work on them never ends. I will be adding case studies. Maybe.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Task Management Strategy</title>
