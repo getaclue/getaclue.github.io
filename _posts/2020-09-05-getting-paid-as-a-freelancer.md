@@ -7,11 +7,11 @@ status: publish
 type: post
 published: true
 meta: {}
-image: ""
+image: "/assets/images/2020-09-05/getting-paid-as-a-freelancer.png"
 excerpt: "There are a few different ways that you can get paid as a freelancer. There is more work than there are workers."
 dateCreated: 2020-09-05 11:26:24
 datePublished: 2020-09-05 11:45:07
-dateModified: 2020-09-05 11:45:07
+dateModified: 2020-09-05 11:48:56
 ---
 
 ## Option 2
