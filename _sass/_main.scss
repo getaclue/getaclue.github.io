@@ -283,6 +283,8 @@ header ul {
 main {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
+  background: #efefef;
 
   @media screen and (min-width: 600px) {
     max-width: 60rem;
