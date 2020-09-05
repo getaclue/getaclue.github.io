@@ -115,7 +115,7 @@ pre {
 
 code,
 pre {
-  background: #efefef;
+  background: #e3e3e3;
   color: #111111;
   border-radius: 1em;
 }
@@ -324,7 +324,7 @@ article {
   min-width: 70%;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: #efefef;
   @media screen and (min-width: 700px) {
     align-items: center;
   }
