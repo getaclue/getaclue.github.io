@@ -74,3 +74,7 @@ I am also interested in business and entrepreneurship. Here is a video of my adv
 [![Ontario Summer Company 2014 Entrepreneurial Grant](https://cdn-pro.dprcdn.net/files/acc_603419/mlgG8){:style="max-width:100%"}](https://www.youtube.com/watch?v=UkWgyN8AKXo "Ontario Summer Company 2014 Entrepreneurial Grant")
 
 <!-- [Video Backup]({{'assets/videos/Get a Kluew Photography - Alex Kluew - Summer Company - 2014.mp4' | relative_url}}) -->
+
+## What am I doing now?
+
+Check out here [what I am doing now](/now).

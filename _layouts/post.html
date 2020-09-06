@@ -41,12 +41,13 @@ layout: default
     &middot; {% for tag in page.tags %} <a href="/tag/{{tag}}">{{tag}}</a>{%
     unless forloop.last %}, {% endunless %}{% endfor %}</span
   >
-  <hr style="border: 5px solid #2ed7fb;" />
+  <hr style="border: 5px solid #2ed7fb; width: 69%" />
   <style>
     .not-post-page-navigation {
       display: flex;
       justify-content: space-around;
       margin: 1em;
+      width: 100%;
     }
   </style>
   <div class="not-post-page-navigation">
@@ -54,17 +55,23 @@ layout: default
     <a href="{{page.previous.url}}" title="{{page.previous.title}}"
       >👈 {{page.previous.title}}</a
     >
-    {% endif %} {% if page.next.url %}
+    {% endif %} {% if page.next.url %}<br />
     <a href="{{page.next.url}}" title="{{page.next.title}}"
       >{{page.next.title}} 👉</a
     >
     {% endif %}
   </div>
-  <hr style="border: 5px solid #95ec8c;" />
+  <hr style="border: 5px solid #95ec8c; width: 69%" />
   <!--<span class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> &middot; {% for tag in page.tags %}
       <a class="post" href="/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
   -->
-  <center style="padding-top: 1rem;">
+  <script
+    async
+    data-uid="6893f61e23"
+    src="https://wondrous-experimenter-4427.ck.page/6893f61e23/index.js"
+  ></script>
+  <hr style="border: 5px solid #7ac5c5; width: 69%" />
+  <center style="padding-top: 1rem">
     ⭐️ <a href="https://learnnodejs.dev/">Learn Node.js</a> ⭐️
   </center>
 </article>

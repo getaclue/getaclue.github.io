@@ -57,7 +57,7 @@ body {
 }
 
 nav {
-  background: yellow;
+  background: #fbf1a9;
 }
 
 nav ul {
@@ -162,10 +162,10 @@ header {
   flex-basis: 10rem;
   flex-grow: 1;
   position: relative;
-  background: #eb1432;
+  background: #efefef;
 
   div {
-    background: #f5ac2f;
+    // background: #f5ac2f;
     img {
       width: 32px;
       @media screen and (min-width: 600px) {
@@ -319,6 +319,8 @@ main {
 
 // section {
 article {
+  height: 100%;
+  min-height: 100vh;
   flex-basis: 0;
   flex-grow: 999;
   min-width: 70%;

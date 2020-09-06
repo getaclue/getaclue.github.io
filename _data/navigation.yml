@@ -1,17 +1,13 @@
 links:
-  - title: Writing
-    url: /
-  - title: Search
-    url: /search
   - title: About
     url: /about
+  - title: Articles
+    url: /
   - title: Books
     url: /books
   - title: Projects
     url: /projects
+  - title: Search
+    url: /search
   - title: Services
     url: /services
-  - title: Now
-    url: /now
-  - title: Rss
-    url: /atom.xml
