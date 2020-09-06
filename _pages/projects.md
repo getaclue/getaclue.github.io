@@ -43,6 +43,8 @@ Wordpress platform modified to be an e-commerce store. [Stripe](https://stripe.c
 
 ## Daily Vibes
 
+![daily vibes screenshots](/assets/projects/daily-vibes/dailyvibesbanner.png){:style="border-radius:10px;"}
+
 ### November 2017 - December 2019
 
 Solo developer project. iOS app that was in the Apple store for two years. Currently offline and on pause. I've documented the building of my application in real time online.
@@ -89,11 +91,15 @@ From the idea to the requirements phase all the way until the currently paused s
 
 ## Elderoost
 
+![Elderoost screenshot](/assets/projects/elderoost/elderoostbanner.png){:style="border-radius:10px;"}
+
 ### July 2017 - October 2019
 
 Solo developer project. Responsible for product and design development. Software created to monitor performance of long term care homes by using media mentions and leaving reviews. Non-biased reviews within constraints of human social interactions. Offline until further notice.
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, PostgreSQL, PostGIS, Elasticsearch, DigitalOcean VPS, Javascript, HTML5, CSS3, SASS, Cron jobs, Git, Github, Puppeteer
+
+![Elderoost gif](/assets/projects/elderoost/elderoost-sample-view.gif){:style="border-radius:10px;"}
 
 #### Links :
 
@@ -103,6 +109,8 @@ Solo developer project. Responsible for product and design development. Software
 ---
 
 ## ih8coding podcast experiment
+
+![ihatecoding screenshot](/assets/projects/ihatecoding/ihatecodingbanner.png){:style="border-radius:10px;"}
 
 ### February - April 2019
 
@@ -117,17 +125,21 @@ Six episode podcast series surrounding the intersection of software, business, a
 
 ## [Screenhole.net](https://screenhole.net)
 
+![screenhole image](/assets/projects/screenhole/screenholebanner.png){:style="border-radius:10px;"}
+
 ### April 2018 - August 2018
 
 Freelance project. I helped with API development, bug fixes, quick project prototyping, and media Mac app. Mac app was able to record the screen and create a mp4 video; or to take simple screenshots. In either case, the media was then uploaded to AWS S3.
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Swift, Reactjs, Nodejs, Heroku, Javascript, HTML5, CSS3, Slack
 
-<!-- ![Snapper Mac Prototype]({{"assets/images/2020-03-09/snapper_001.png" | relative_url}}){:style="max-width:100%"} -->
+![Snapper Mac Prototype]({{"assets/images/2020-03-09/snapper_001.png" | relative_url}}){:style="border-radius:10px;"}
 
 ---
 
 ## [Pttrns](https://pttrns.com)
+
+![pttrns banner](/assets/projects/pttrns/pttrnsbanner.png){:style="border-radius:10px;"}
 
 ### November 2017 - August 2018
 
@@ -138,6 +150,8 @@ Freelance project. Aided new owner and previous owner during company transition.
 ---
 
 ## [betalist.com](https://betalist.com)
+
+![betalist.com banner](/assets/projects/betalist/betalistbanner.png){:style="border-radius:10px;"}
 
 ### January 2018 - August 2018
 
