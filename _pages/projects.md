@@ -163,6 +163,8 @@ Freelance project. Aided in features, bug fixes, and implementing a CI for a tes
 
 ## iwillreviewyourcode.com
 
+[![banner](/assets/projects/iwillreviewyourcode/iwillreviewyourcodecombanner.png){:style="border-radius:10px;"}](https://www.youtube.com/watch?v=fe1ld2XWRTM)
+
 ### October 2017 - December 2017
 
 Software service that would review 1000 lines of code for 9.99\$ Call to action was via the video and the promotion website that is listed below. Independent project.
@@ -170,6 +172,7 @@ Software service that would review 1000 lines of code for 9.99\$ Call to action 
 <mark> Technologies used to build : </mark> Nodejs, Bootstrap, Stripe, Google API, Git, Javascript, HTML5, CSS3, Cron jobs, Github, DigitalOcean VPS, Gitlab
 
 - ~~[Homepage](https://iwillreviewyourcode.com)~~ <mark>Offline</mark>
+- [ProductHunt Launch](https://www.producthunt.com/posts/iwillreviewyourcode)
 
 [screenshot](https://cdn-pro.dprcdn.net/files/acc_603419/Xitn2i) [screenshot](/assets/projects/iwillreviewyourcode/iwillreviewyourcode-jan-2018.png)
 
@@ -177,9 +180,11 @@ Software service that would review 1000 lines of code for 9.99\$ Call to action 
 
 ## Youtube Videos
 
+![banner](/assets/projects/youtube/youtubebanner.png){:style="border-radius:10px;"}
+
 ### August 2015 - October 2017
 
-Created daily movies about our life and published online. In other words... vlogging for a bit while we lived in Ottawa.
+Created 540 daily movies about our life and published online while we lived in Ottawa.
 
 - [Youtube channel](https://www.youtube.com/channel/UCJkHRtROA1RHjaQn_wBMocQ)
 
@@ -239,6 +244,8 @@ Team project. A website for a [local startup weekend event](https://www.facebook
 ---
 
 ## IBM
+
+![banner](/assets/projects/ibm/ibmbanner.png){:style="border-radius:10px;"}
 
 ### 2016
 

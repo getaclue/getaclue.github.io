@@ -22,6 +22,12 @@ Book that I wrote and released :
 
 [Learn Node.js](https://learnnodejs.dev) -- is a free book that I wrote about getting up to speed with fullstack javascript development during COVID-19 (March-May 2020). This book is perfect for someone who isn't sure how everything in node.js works. In this book I outline the design and development of common application features using javascript. The implementation of which are then transferable to other projects and languages.
 
+- [ProductHunt Launch](https://www.producthunt.com/posts/learn-node-js)
+- [IndieHackers Launch](https://www.indiehackers.com/post/learn-node-js-my-free-javascript-book-505a4ba3ee)
+- [r/node Launch](https://www.reddit.com/r/node/comments/hzm66v/learn_nodejs_my_free_javascript_book/?utm_source=share&utm_medium=web2x&context=3)
+- [r/SoftwareEngineering Launch](https://www.reddit.com/r/SoftwareEngineering/comments/hzmc8t/learn_nodejs_my_free_javascript_book/?utm_source=share&utm_medium=web2x&context=3)
+- [r/learnjavascript Launch](https://www.reddit.com/r/learnjavascript/comments/hzm0s3/learn_nodejs_my_free_javascript_book/?utm_source=share&utm_medium=web2x&context=3)
+
 ## Recommendations
 
 Books that I think you should read
