@@ -36,5 +36,9 @@ $on-laptop: 800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+.reading-time {
+  color: $grey-color;
+}
+
 // Import partials.
 @import "minima/base", "minima/layout", "minima/syntax-highlighting";

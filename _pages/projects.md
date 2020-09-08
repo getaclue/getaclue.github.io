@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Projects
+title: 🚧 Projects ⚒
 categories: []
 tags: []
 status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-03-12 06:00:45
+dateModified: 2020-09-08 18:45:24
 datePublished: 2018-08-21 15:58:31
 dateCreated: 2018-08-21 15:58:31
 ---
@@ -33,6 +33,8 @@ Regular communications to keep client relations via emails, telephone, or in per
 
 ## [lastminutelaura.ca](https://lastminutelaura.ca)
 
+![lml](/assets/projects/lastminutelaura/lml.png){:style="border-radius:10px;"}
+
 ### 2019 - Present
 
 Wordpress platform modified to be an e-commerce store. [Stripe](https://stripe.com/en-ca) checkout for recurring memberships for supporters. [Discource](https://www.discourse.org/) forums platform. See [lastminutelaura.ca](https://lastminutelaura.ca).
@@ -43,7 +45,7 @@ Wordpress platform modified to be an e-commerce store. [Stripe](https://stripe.c
 
 ## Daily Vibes
 
-![daily vibes screenshots](/assets/projects/daily-vibes/dailyvibesbanner.png){:style="border-radius:10px;"}
+![DV](/assets/projects/daily-vibes/hand-holding.png)
 
 ### November 2017 - December 2019
 
@@ -70,6 +72,8 @@ From the idea to the requirements phase all the way until the currently paused s
 
 #### Screenshots :
 
+![daily vibes screenshots](/assets/projects/daily-vibes/dailyvibesbanner.png){:style="border-radius:10px;"}
+
 [screenshot](/assets/images/2020-03-02/IMG_0455.PNG)
 [screenshot](/assets/images/2020-03-02/IMG_0456.PNG)
 [screenshot](/assets/images/2020-03-02/IMG_0457.PNG)
@@ -91,7 +95,9 @@ From the idea to the requirements phase all the way until the currently paused s
 
 ## Elderoost
 
-![Elderoost screenshot](/assets/projects/elderoost/elderoostbanner.png){:style="border-radius:10px;"}
+![Elderoost](/assets/projects/elderoost/elderoost-mbp.png)
+
+<!-- ![Elderoost screenshot](/assets/projects/elderoost/elderoostbanner.png){:style="border-radius:10px;"} -->
 
 ### July 2017 - October 2019
 
@@ -104,7 +110,7 @@ Solo developer project. Responsible for product and design development. Software
 #### Links :
 
 - [Homepage](https://elderoost.herokuapp.com/?ref=getaclue.me) <mark>This version only has 2 data points added.</mark>
-- ~~[Homepage](https://elderoost.com)~~ Offline
+- ~~Homepage~~ Offline
 
 ---
 
@@ -139,7 +145,9 @@ Freelance project. I helped with API development, bug fixes, quick project proto
 
 ## [Pttrns](https://pttrns.com)
 
-![pttrns banner](/assets/projects/pttrns/pttrnsbanner.png){:style="border-radius:10px;"}
+![pttrns.com](/assets/projects/pttrns/pttrns-mbp.png)
+
+<!-- ![pttrns banner](/assets/projects/pttrns/pttrnsbanner.png){:style="border-radius:10px;"} -->
 
 ### November 2017 - August 2018
 
@@ -151,7 +159,9 @@ Freelance project. Aided new owner and previous owner during company transition.
 
 ## [betalist.com](https://betalist.com)
 
-![betalist.com banner](/assets/projects/betalist/betalistbanner.png){:style="border-radius:10px;"}
+![betalist](/assets/projects/betalist/betalist-mbp.png)
+
+<!-- ![betalist.com banner](/assets/projects/betalist/betalistbanner.png){:style="border-radius:10px;"} -->
 
 ### January 2018 - August 2018
 
