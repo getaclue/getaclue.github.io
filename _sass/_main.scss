@@ -86,7 +86,7 @@ pre {
 .post h2,
 .post h3,
 .post h4 {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .post h1:first-child,
@@ -340,6 +340,10 @@ hr {
   margin: 1rem;
   // background: #0074d9;
   border: 5px solid #0074d9;
+}
+
+mark {
+  background: #fbf1a9;
 }
 
 @import "minima";
