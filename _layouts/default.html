@@ -6,9 +6,7 @@ layout: compress
 <html lang="en">
   {% include head.html %}
   <body>
-    <main role="main">
-      {% include navigation.html %} {{ content }}
-    </main>
+    <main role="main">{% include navigation.html %} {{ content }}</main>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-106794469-1"
@@ -26,5 +24,39 @@ layout: compress
       data-uid="f3fa648df8"
       src="https://wondrous-experimenter-4427.ck.page/f3fa648df8/index.js"
     ></script>
+    <!-- <script src="//widget.simplybook.me/v2/widget/widget.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (ev) => {
+        let widget = new SimplybookWidget({
+          widget_type: "contact-button",
+          url: "https:\/\/getacluesoftware.simplybook.me",
+          theme: "dainty",
+          theme_settings: {
+            timeline_show_end_time: "1",
+            timeline_hide_unavailable: "0",
+            sb_base_color: "#1d46a8",
+            secondary_color: "#e3ebf6",
+            sb_text_color: "#a1a1a1",
+            display_item_mode: "block",
+            body_bg_color: "#ffffff",
+            sb_background_image: "",
+            dark_font_color: "#1c1c1c",
+            light_font_color: "#ffffff",
+            sb_company_label_color: "#ffffff",
+            sb_cancellation_color: "#ff6b8e",
+            hide_img_mode: "0",
+          },
+          timeline: "modern",
+          datepicker: "top_calendar",
+          is_rtl: false,
+          app_config: { predefined: [] },
+          button_title: "Contact Me",
+          button_background_color: "#FBF0AD",
+          button_text_color: "#111111",
+          button_position: "right",
+          button_position_offset: "55%",
+        });
+      });
+    </script> -->
   </body>
 </html>

@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-08-19 12:29:11
+dateModified: 2020-09-10 12:23:05
 datePublished: 2018-10-08 14:14:19
 dateCreated: 2018-08-21 15:58:31
 ---
@@ -16,7 +16,7 @@ dateCreated: 2018-08-21 15:58:31
 
 Welcome to my little corner of the Internet. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
 
-## 📋 Quick about me:
+## 📌 Quick about me:
 
 - I am a Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
 - I live in beautiful Hamilton, Ontario
@@ -78,3 +78,7 @@ I am also interested in business and entrepreneurship. Here is a video of my adv
 ## 👀 What am I doing now?
 
 Check out here [what I am doing now](/now).
+
+## 📋 Resume
+
+Checkout my resume [here](/resume).

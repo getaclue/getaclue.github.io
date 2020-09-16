@@ -217,7 +217,7 @@ The features of the application included real-time scheduling of business hours,
 
 <hr style="margin-top:3rem;margin-bottom:3rem;"/>
 
-## Startup Weekend
+<!-- ## Startup Weekend
 
 ### Winter 2017
 
@@ -225,7 +225,7 @@ Team project. A <mark>website</mark> for a [local startup weekend event](https:/
 
 - [View code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/W2017)
 
-<hr style="margin-top:3rem;margin-bottom:3rem;"/>
+<hr style="margin-top:3rem;margin-bottom:3rem;"/> -->
 
 ## Hive
 
@@ -241,7 +241,7 @@ The codebase was ported from Angularjs to Emberjs. Held weekly meetings with the
 
 <hr style="margin-top:3rem;margin-bottom:3rem;"/>
 
-## Startup Weekend
+<!-- ## Startup Weekend
 
 ### Fall 2016
 
@@ -251,7 +251,7 @@ Team project. A <mark>website</mark> for a [local startup weekend event](https:/
 
 - [View Code](https://github.com/sesa-uottawa/startup-weekend-website/tree/master/F2016)
 
-<hr style="margin-top:3rem;margin-bottom:3rem;"/>
+<hr style="margin-top:3rem;margin-bottom:3rem;"/> -->
 
 ## IBM
 
@@ -265,7 +265,7 @@ I've also helped IBM @ Ottawa host hacking health initiative.
 
 <mark> Technologies used to build : </mark> JavaScript, HTML5, CSS3, Java, Nodejs, Reviewboard, Slack, IBM Rational Suite
 
-<hr style="margin-top:3rem;margin-bottom:3rem;"/>
+<!-- <hr style="margin-top:3rem;margin-bottom:3rem;"/>
 
 ## [uOttawa SESA](https://uottawa-sesa.ca/)
 
@@ -275,7 +275,7 @@ Team project. <mark>Web-app</mark> that was dedicated to the activities of a stu
 
 <mark> Technologies used to build : </mark> Ruby, Ruby on Rails, Bootstrap, HTML5, CSS3, Heroku
 
-- [View code](https://github.com/sesa-uottawa/uottawasesa)
+- [View code](https://github.com/sesa-uottawa/uottawasesa) -->
 
 <!-- ![uOttawa SESA]({{"/assets/projects/uottawa-sesa/uottawa-sesa-jan-2018.png" | relative_url}}){:style="max-width:100%"} -->
 
