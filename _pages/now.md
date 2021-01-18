@@ -7,7 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-08-18 18:46:25
+dateModified: 2021-01-18 12:29:02
 datePublished: 2020-03-06 09:53:39
 dateCreated: 2019-05-15 15:25:00
 ---
@@ -18,7 +18,7 @@ dateCreated: 2019-05-15 15:25:00
 
 This page was mostly inspired by [https://sivers.org/now](https://sivers.org/now).
 
-## Living in Hamilton, Canada
+## 📍 Living in Hamilton, Canada
 
 I've been living in Hamilton since July 2019.
 
@@ -38,7 +38,7 @@ We are focusing on [lastminutelaura.ca](https://lastminutelaura.ca) and [yt.com/
 
 ** Looking for extra work in Javascript, Ruby, Swift, or Java. Contact me if you have something in mind and we can chat about it =) ** -->
 
-## Best way(s) to reach me
+## 🗣 Best way(s) to reach me
 
 My most frequented social media platform of choice is [Twitter](https://twitter.com/alexkluew_dev).
 
@@ -46,73 +46,25 @@ If you want something more direct, you can slide into my DM's on the [Telegram M
 
 <hr style="border: 5px solid #F9B031;" />
 
-👇 Send me an email 👇
+## 👇 Contact Me 👇
 
 <div style="width: 100%;">
   <form id="contactform" method="POST" action="https://formspree.io/info@getaclue.me">
-    <p><b>Email Address</b></p>
-    <input type="email" name="_replyto" placeholder="Your email address">
-    <p><b>Message</b></p>
-    <textarea placeholder="Your message" name="message"></textarea>
-    <input type="hidden" name="_subject" value="New message from getaclue.me website" />
-    <br />
-    <input type="submit" value="Submit">
+    <div class="shadow sm:rounded-md sm:overflow-hidden">
+      <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+        <p><b>Email Address</b></p>
+        <input type="email" name="_replyto" placeholder="Your email address" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        <p><b>Message</b></p>
+        <textarea rows="3" placeholder="Your message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        <input type="hidden" name="_subject" value="New message from getaclue.me website" />
+        <br />
+        <input type="submit" value="Submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+      </div>
+    </div>
+
   </form>
 </div>
 
-<style type="text/css">
-  #contactform input[type="email"] {
-    width: calc(100% - 20px);
-    height: 30px;
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  #contactform textarea {
-    width: calc(100% - 30px);
-    height: 100px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-    padding: 15px;
-    resize: vertical;
-  }
-  #contactform input[type="submit"] {
-    display: inline-block;
-    width: 127px;
-    height: 42px;
-    background-color: #272727;
-    color: white;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 14px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  #leftCol {
-    margin-bottom: 40px;
-    margin-right: 30px;
-    width: 100%;
-    text-align: center;
-    height: 700px;
-  }
-  @media screen and (min-width: 800px) {
-    #leftCol {
-        width: 40%;
-        float: left;
-      }
-    }
-  }
-  @media screen and (min-width: 800px) {
-    #rightCol {
-      width: 55%;
-      float: right;
-    }
-  }
-  }
-</style>
-
 <hr style="border: 5px solid #95ec8c;" />
 
-Updated August 18 2020, from Hamilton, Canada.
+Updated January 18 2021, from Hamilton, Canada.

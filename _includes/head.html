@@ -82,12 +82,13 @@
   <meta name="twitter:title" content="{{ site.title }}" />
   <meta name="twitter:site" content="@{{ site.twitter_username }}" />
   <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+  <link href="/assets/tailwind.css" rel="stylesheet">
   {% if jekyll.environment == 'production' and site.google_analytics %} {%
   include analytics.html %} {% endif %}
-  <style>
+  <!-- <style>
     {% capture include_to_scssify %}
       {% include inline.scss %}
     {% endcapture %}
     {{ include_to_scssify | scssify }}
-  </style>
+  </style> -->
 </head>

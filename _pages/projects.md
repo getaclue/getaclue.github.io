@@ -7,21 +7,22 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-09-08 18:45:24
+dateModified: 2021-01-18 12:20:54
 datePublished: 2018-08-21 15:58:31
 dateCreated: 2018-08-21 15:58:31
 ---
-
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
 As I continue my path as a software craftsman, I will try to maintain an ongoing record of my work. I'm always happy to chat about my current or previous work. It is listed in no particular order at this moment. Thus, this page itself is a work in progress.
 
 ## Statistics Canada
 
-### 2016 - Present
+### 2020 - Present
+
+Web application developer.
+
+<mark> Technologies used to build : </mark> JavaScript, HTML5, CSS5, Adobe ColdFusion
+
+### 2016 - 2020
 
 Work on a custom <mark>enterprise e-learning</mark> platform. This work includes new feature work, maintenance, and regression testing. In addition to platform maintenance, I create e-learning content using HTML5, CSS3, and JavaScript for clients. Ensure that the work is WCAG accessible and language compliant.
 

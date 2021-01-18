@@ -12,7 +12,7 @@ datePublished: 2018-10-08 14:14:19
 dateCreated: 2018-08-21 15:58:31
 ---
 
-## Hello friend 👋 I'm Alex
+## Hello 👋 I'm Alex and I work with software
 
 Welcome to my little corner of the Internet. As all things go on the internet, unless mentioned otherwise, content that you may find here is not affiliated with my work or employer.
 
@@ -20,7 +20,7 @@ Welcome to my little corner of the Internet. As all things go on the internet, u
 
 - I am a Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
 - I live in beautiful Hamilton, Ontario
-- I work remotely for Government of Canada on contract
+- I am employed full-time
 
 I also went to school and hold two complementary undergraduate degrees awarded from [University of Ottawa](https://www.uottawa.ca/en):
 
@@ -37,10 +37,10 @@ Please see my [services offered page](/services). You can always contact me abou
 
 I am always learning and experimenting on my own time. My computer science foundation, coupled with software engineering training, allows me to quickly jump into any code base and any language.
 
-<!-- - computer science foundation using Java and C
+- computer science foundation using Java and C
 - enjoying JavaScript lately
 - familiar with Ruby (Ruby on Rails, Sinatra)
-- familiar with Javascript (Node.js, React, React Native, Ember, ES2016, ES2017, and ES2018)
+- familiar with Javascript (Next.js, Node.js, React, React Native, Ember, ES2016, ES2017, and ES2018)
 - familiar with HTML5
 - familiar with CSS3/SASS/Less
 - familiar with multi-language and accessibility compliance
@@ -51,7 +51,7 @@ I am always learning and experimenting on my own time. My computer science found
 - familiar with Swift
 - able to work with Objective-C
 - new in iOS development (since November 2017)
-- new in OS X development (since April 2018) -->
+- new in OS X development (since April 2018)
 
 I am open to learning new technology.
 

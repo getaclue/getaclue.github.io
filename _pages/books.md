@@ -7,16 +7,12 @@ status: publish
 type: page
 published: true
 meta: {}
-dateModified: 2020-08-11 12:29:11
+dateModified: 2021-01-18 12:20:35
 datePublished: 2020-08-11 12:29:11
 dateCreated: 2020-08-11 12:29:11
 ---
 
-## My Books
-
-Book that I wrote and released :
-
-### Learn Node.js (2020)
+## Learn Node.js (2020)
 
 ![Learn Node.js]({{"assets/images/books/learn-nodejs.png" | relative_url}})
 
