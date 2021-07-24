@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Alex Kluew</title>
+ <title>Alex</title>
  <link href="https://getaclue.me/atom.xml" rel="self"/>
  <link href="https://getaclue.me/"/>
- <updated>2021-01-18T14:52:02-05:00</updated>
+ <updated>2021-07-24T19:42:32-04:00</updated>
  <id>https://getaclue.me</id>
  <author>
-   <name>Alex Kluew</name>
-   <email>info@getaclue.me</email>
+   <name>Alex</name>
+   <email>alex.kluew@gmail.com</email>
  </author>
 
  
