@@ -60,4 +60,4 @@ My most frequented social media platform of choice is [Twitter](https://twitter.
 
 You can slide into my DM's on [Telegram](https://t.me/lastminutealex).
 
-And of course, [LinkedIn](www.linkedin.com/in/lastminutealex).
+And of course, [LinkedIn](https://www.linkedin.com/in/lastminutealex).
