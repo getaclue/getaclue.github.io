@@ -18,7 +18,7 @@ Welcome to my little corner of the Internet. As all things go on the internet, u
 
 ## 📌 Quick about me:
 
-- I am a Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
+- I am a Software Engineer, <a href="https://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>
 - I live in beautiful Hamilton, Ontario
 - I am employed full-time
 
@@ -59,7 +59,7 @@ I am open to learning new technology.
 
 Hello, friend. Alex here. I am a software engineering graduate living in Hamilton, Canada. I graduated magna cum laude from [University of Ottawa](https://www.uottawa.ca/en). I mention this because it means a lot to me. I was afraid of the challenges that come with completing an engineering degree curriculum. It took a lot of effort and hard work.
 
-I am interested in all aspects of the software engineering discipline. To prove my dedication beyond obtaining an accredited software engineering degree, I am in the process of obtaining my [professional engineering (P.Eng) license](https://en.wikipedia.org/wiki/Regulation_and_licensure_in_engineering#Canada_2). I am currently in the <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a> stage. As it is illegal in Canada to call yourself a Software Engineer without an engineering license, hopefully this shines some light on any confusion around my _Software Engineer, <a href="http://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>_ title.
+I am interested in all aspects of the software engineering discipline. To prove my dedication beyond obtaining an accredited software engineering degree, I am in the process of obtaining my [professional engineering (P.Eng) license](https://en.wikipedia.org/wiki/Regulation_and_licensure_in_engineering#Canada_2). I am currently in the <a href="https://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a> stage. As it is illegal in Canada to call yourself a Software Engineer without an engineering license, hopefully this shines some light on any confusion around my _Software Engineer, <a href="https://peo.on.ca/index.php?ci_id=2064&la_id=1" title="The Engineering Intern (EIT) Program">EIT</a>_ title.
 
 My career path has not been so straightforward. You can check out my [projects page](/projects) to see my adventures. The common denominator along all my various career paths has been people. I enjoy helping people and businesses solve their problems. I strive to leave whatever I work on in a better state than I found it. My life's goal is to be helpful to people by being great at creating and maintaining usable software.
 
