@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="https://www.w3.org/2005/Atom">
 
  <title>Alex</title>
  <link href="https://getaclue.me/atom.xml" rel="self"/>
  <link href="https://getaclue.me/"/>
- <updated>2021-07-25T10:16:51-04:00</updated>
+ <updated>2021-07-26T01:10:56-04:00</updated>
  <id>https://getaclue.me</id>
  <author>
    <name>Alex</name>
