@@ -1,0 +1,80 @@
+---
+layout: post
+title: 'October 18 2018'
+categories:
+  - computer science
+  - personal development
+tags:
+  - software engineering
+  - personal development
+status: publish
+type: post
+published: true
+meta: {}
+excerpt: ''
+dateCreated: 2018-10-18 23:39:01
+datePublished: 2018-10-18 23:39:01
+dateModified: 2018-10-20 10:32:01
+---
+
+[Private Members in JavaScript](https://crockford.com/javascript/private.html)
+
+> Private members are made by the constructor. Ordinary vars and parameters of the constructor become the private members.
+
+> They are attached to the object, but they are not accessible to the outside, nor are they accessible to the object's own public methods.
+
+> **By convention**, we make a private that variable. This is used to make the object available to the private methods.
+
+```javascript
+function someFunction(someParam) {
+  var that = this;
+}
+```
+
+> Private methods cannot be called by public methods. To make private methods useful, we need to introduce a privileged method.
+
+> A privileged method is able to access the private variables and methods, and is itself accessible to the public methods and the outside. **It is possible to delete or replace a privileged method**, but it is not possible to alter it, or to force it to give up its secrets.
+
+> This pattern of public, private, and privileged members is possible because JavaScript has closures.
+
+> Private and privileged members can **only be made** when an object is constructed. Public members can be added at any time.
+
+## Patterns: Public
+
+```javascript
+function Constructor(params) {
+  this.member = value;
+  this.publicMember = params;
+}
+
+Constructor.prototype.newMember = newValue;
+```
+
+## Patterns: Private
+
+```javascript
+function Constructor(args) {
+  var that = this;
+  var someMember = someValue;
+
+  function someFunction(someParam){
+    ...
+  }
+
+  // which is kind of syntactic sugar and is equivalent to
+
+  var member = function someFunction(someParam){
+  ...
+  }
+}
+```
+
+## Patterns: Privileged
+
+```javascript
+function Constructor(params) {
+  this.someMember = function someFunction(args) {
+    ...
+  }
+}
+```

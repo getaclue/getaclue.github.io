@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Walking Away"
+categories: ["productivity", "tips"]
+tags: ["productivity", "tips"]
+status: publish
+type: post
+published: true
+meta: {}
+image: ""
+excerpt: "Writing things down and creating smallest accomplishable tasks appear to aid in escaping this terrible mode."
+dateCreated: 2020-08-17 15:17:18
+datePublished: 2020-08-17 20:43:03
+dateModified: 2020-08-17 20:43:03
+---
+
+For the past few days, I have been writing on productivity and/or lack of it and I figured I would continue the thought process today.
+
+Sometimes I have a hard time with pausing and walking away from one project when time is up.
+
+I get caught up in the flow of the making process that, when the time comes, it makes switching to a different task appear to be a net negative. This is regardless of what the next task may be. My mind plays this trick on me saying that the flow state will not happen again today. Whereas, I know for a fact that one can get back into the flow state through patience, practice, and repetition.
+
+Why a net negative? I know that if I keep working on a task after the allocated time then I move away from productivity zone into the procrastination zone. I am doing busy work and ignoring work. In the immediate, I become happy to be creating but in the long-term I would prefer to walk away from the project and spend my time differently.
+
+Thus, I sometimes lose productivity by NOT walking away from working on a project. Breaking this rule is O.K. but I have to be aware of consequences.
+
+This becomes challenging when sticking to a strict, self-imposed schedule. I am much better with a fluid schedule that I fill in after the fact. A schedule is supposed to help me plan out my days and not cause anxiety.
+
+I am trying to bring more positivity into my life. I am increasing my positivity by being conscientious about my days. By procrastinating and not walking away from a project, I gain a negative feeling as I reflect on the activities.
+
+To address this hiccup and stick to schedules better, I am trying to be more deliberate in my productivity strategies.
+
+Now, when it is time to take a pause from a task, I note anything that is unfinished as pending items in my global list of tasks. If I have a large task, I write a summary so that recall is better when I re-read it. I know that my future self will thank me for writing things down.
+
+It is okay to take a pause and walk away. There will always be more work.
