@@ -1,6 +1,0 @@
-I"¥<h1 id="obtain-necessary-gpg-keys">Obtain necessary gpg keys</h1>
-<pre><code>mkdir Mono
-cd Mono
-wget http://download.mono-project.com/repo/xamarin.gpg
-</code></pre>
-:ET

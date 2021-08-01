@@ -1,4 +1,0 @@
-I"}<h1 id="display-all-install-packages-in-centos">Display all install packages in CentOS</h1>
-<pre><code>rpm -qa
-</code></pre>
-:ET
