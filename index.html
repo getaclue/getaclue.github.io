@@ -1,60 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cyberpunk">
-
+<html lang="en" id="getaclue">
 <head>
-  <meta charset="utf-8">
-  <title>08212021.com</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.10.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <title>getaclue.me</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="robots" content="noindex,nofollow" />
+  <style nonce="trunkmuzik">
+    html,
+    body {
+      color: #333;
+      font-family: 'Lucida Grande', 'Tahoma', 'Verdana', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    #header {
+      height: 30px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    #icon {
+      width: 30px;
+    }
+
+    .core {
+      margin: auto;
+      padding: 1em 0;
+      text-align: left;
+      width: 904px;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+
+    .footer {
+      border-top: 1px solid #ddd;
+      color: #777;
+      float: left;
+      font-size: 11px;
+      padding: 5px 8px 6px 0;
+      width: 904px;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
-    <div class="px-2 mx-2 navbar-start">
-      <span class="text-lg font-bold">
-        08212021.com
-      </span>
-    </div>
-    <div class="navbar-center hidden px-2 mx-2 lg:flex">
-      <div class="flex items-stretch">
-        <a class="btn btn-ghost btn-sm rounded-btn btn-disabled">
-          Home
-        </a>
-        <a class="btn btn-ghost btn-sm rounded-btn btn-disabled">
-          Itenary
-        </a>
-        <a class="btn btn-ghost btn-sm rounded-btn btn-disabled">
-          Audio
-        </a>
-        <a class="btn btn-ghost btn-sm rounded-btn btn-disabled">
-          Video
-        </a>
-        <a class="btn btn-ghost btn-sm rounded-btn btn-disabled">
-          Photo
-        </a>
-        <a class="btn btn-ghost btn-sm rounded-btn btn-disabled">
-          Contact
-        </a>
-        <a class="btn btn-ghost btn-sm rounded-btn btn-disabled">
-          Guest Book
-        </a>
-      </div>
-    </div>
+  <div class="core">
+    <h1>Alex Kluew, not a software engineer</h1>
+    <p>07/2021 : I have migrated to a new email address. If you are still using my old one, please contact me to find my new
+    one.</p>
+    <p><a id="back" href="//google.com/">Go Back</a></p>
+    <div class="footer"> Getaclue &#169; 2021 &#183; <a href="//google.com/">Help</a></div>
   </div>
-  <div class="hero min-h-screen bg-base-200">
-    <div class="text-center hero-content">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">
-          Hello there
-        </h1>
-        <p class="mb-5">
-          Welcome to 08212021.com
-        </p>
-        <button class="btn btn-primary btn-disabled">Get Started</button>
-      </div>
-    </div>
-  </div>
-
+  <script nonce="trunkmuzik">
+    document.getElementById("back").onclick = function () {
+      if (history.length > 1) {
+        history.back();
+        return false;
+      }
+    };
+  </script>
 </body>
 
 </html>
