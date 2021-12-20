@@ -37,7 +37,7 @@ dateCreated: 2020-09-10 12:23:18
     </div>
     <div class="entry">
       <div class="title">
-        <h3>2016 - Present</h3>
+        <h3>2016 - 2020</h3>
         <p>Technical Specialist, Statistics Canada</p>
       </div>
       <div class="body">
