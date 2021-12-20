@@ -1,0 +1,69 @@
+I""<h1 id="installing-xchat-for-total-beginners">Installing XChat for Total Beginners</h1>
+
+<p>Make a dir to install it in and go there</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir /some/path/
+cd /some/path/
+</code></pre></div></div>
+
+<p>Download the sourcecode (link used in March 2014) and place it in the newely created directory in the step above.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://xchat.org/files/source/2.8/xchat-2.8.8.tar.bz2
+http://xchat.org/files/source/2.8/xchat-2.8.8.tar.xz
+</code></pre></div></div>
+
+<p>Unpack the archive:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -xzvf xchat-x.x.x.tar.xz
+tar -xjvf xchat-x.x.x.tar.bz2
+</code></pre></div></div>
+
+<p>Go to the newely unpacked directory:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd xchat-2.8.8
+</code></pre></div></div>
+
+<p>Run the configuration script:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure
+</code></pre></div></div>
+
+<p>Compile the program:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+</code></pre></div></div>
+
+<p>Finally, install the program:</p>
+
+<p><code class="highlighter-rouge">
+make install
+</code>
+***</p>
+
+<h2 id="problems-ive-encountered-while-setting-up">Problems I’ve encountered while setting up</h2>
+
+<p>While trying to compile the source code, I’ve gotten the following error:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>configure: error: no acceptable C compiler found in $PATH
+</code></pre></div></div>
+
+<p>The solution? We are missing the gcc, which can be installed via the development tools kit. In my case, I didn’t solely look for the gcc but I installed the entire pack because I knew I would be using the tools eventually.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum groupinstall "Development tools"
+</code></pre></div></div>
+
+<p>Alternatively, this same command can be ran on Debian Base OS:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install build-essential
+</code></pre></div></div>
+
+<p>And yes, I did run all of this as root. If you are not root, place <code class="highlighter-rouge">sudo</code> in front of the commands that you have no direct access to and enter your password.</p>
+
+<p>(Side note, system information: <code class="highlighter-rouge">uname-a</code>)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Linux localhost.localdomain 2.6.32-431.11.2.el6.x86_64
+#1 SMP Tue Mar 25 19:59:55 UTC 2014
+x86_64
+GNU/Linux
+</code></pre></div></div>
+:ET

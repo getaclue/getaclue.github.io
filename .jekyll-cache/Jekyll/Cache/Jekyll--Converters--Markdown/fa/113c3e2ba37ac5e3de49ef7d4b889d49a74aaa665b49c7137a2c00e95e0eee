@@ -1,0 +1,72 @@
+I"�<p>Over the years, I’ve tried many different approaches to managing my life and the tasks that I have to do. One thing is certain for me: keeping all the tasks in my head does not work long-term. Moreover, as I add more tasks, it becomes impossible to remember all the details of each task in my brain.</p>
+
+<p>This used to ding my confidence as I thought that I could keep everything in my head. I saw no need for a system or a process for my task management. I thought that a task management system is something that you use for work and not for personal success.</p>
+
+<p>I know about biases and that while it may be true that I am good at remembering my tasks, I can always experiment and get better.</p>
+
+<p>I haven’t found a perfect solution that is digital or analogue. I switch between the two or complement digital with analogue (and vice versa). Commonly, I have a notebook near my reach and using Notes app on my Mac and iPhone. Regardless of the medium that I use, I ALWAYS date my tasks.</p>
+
+<p>Recently, I had an experiment from March to May 2020 where I went back to using simple paper post-it notes and nothing else.</p>
+
+<p><img src="https://cdn-std.droplr.net/files/acc_603419/NlqD8C" alt="Post it notes" /></p>
+
+<p>Using the post-it notes system was a visual and physical process. I could use post-it’s colours to separate, categorize, or group ideas. Post-its allowed me to glue important tasks to my monitor for visibility. I could spread my post-it cards and view my ideas on any physical surface. I thought I found a perfect system and was feeling productive.</p>
+
+<p>These paper post-its were helpful in keeping my thoughts in line while I was writing my first book, <a href="https://learnnodejs.dev">Learn Node.js</a>. I had an idea for the book but ideas for chapters and their structure were less clear.</p>
+
+<p>I had two post-it piles : to finish and finished. Every idea went into to finish pile. This pile would then grow and I would feel less anxious. In the individual post-it card, I was as descriptive as I could be about a task. The physical constraint of the post-it paper made sure that I was succinct. Then, as I progressed through my tasks I would cross out completed items and move them into the completed pile.</p>
+
+<p>Thus, I would reward myself twice:</p>
+
+<ul>
+  <li>(1) for completing a task by crossing it off and</li>
+  <li>(2) for placing a post-it card onto the completed pile and making the pile grow.</li>
+</ul>
+
+<p>Unfortunately, the post-it solution for tracking my life tasks died down around May 2020 when I completed my <a href="https://learnnodejs.dev">book</a>. I could not get into the habit of using post-it notes for everything else in my life.</p>
+
+<p>Since then, I’ve been keeping important tasks in my head once again. I finally caught myself in this bad loop. I know that keeping things in my head for a long time leads to burnout. Now, I am trying to offload these things and get back into order. After post-its, I was using a combination of Apple Notes and physical paper for managing my global tasks.</p>
+
+<p>I think that post-it solution works great for short-term. It failed to captivate me in the long-term. Physical transport of the cards was a big let down. As my list of post-its grew, it became not realistic to carry the pile with me. While in transit, I found myself using the Notes app and not a post-it even if I had them with me. The paper can be lost, whereas my data in the app will stay there. This method fell short as I would fail to transfer data from the note’s app into its own post-it when I was at home. I did not like the need for double processing.</p>
+
+<p>What I want from my task management process is to see my progress and to keep track of tasks. I think the best way to approach this problem for me is to separate the year into 52 weeks and 12 months. Then for each week separate it into 7 days. Finally, for each day track the tasks added and completed. The following day, move tasks that were not completed from one day to the next. Group all this by months. Ideally this process is digital.</p>
+
+<p>I am trying <a href="https://www.notion.so">Notion</a> application to envision my described perfect task management process. I tried to use Trello before Notion but I could not reproduce the functionality. Notion made realizing my idea easier to do. I made my application look like this :</p>
+
+<p><img src="https://cdn-std.droplr.net/files/acc_603419/37AlCw" alt="notion application folder format" /></p>
+
+<p>To summarize, the system breakdown looks like :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">[month #] &gt; [week #] &gt; [day #] &gt; [task(s)]</code></li>
+</ul>
+
+<p>Goals of system:</p>
+
+<ul>
+  <li>Streamline my productivity and increase positivity</li>
+  <li>Reduce daily stress and anxiety</li>
+  <li>Reduce reliance on my brain and offload data to an app</li>
+  <li>Use it for short-term and long-term task management</li>
+</ul>
+
+<p>Rules of system :</p>
+
+<ul>
+  <li>System depends on daily active use</li>
+  <li>In the morning, copy the data of previous day to the new day</li>
+  <li>Delete completed tasks from previous day</li>
+  <li>Go over the tasks in the To Do</li>
+  <li>Move tasks I think I will work on today to the top of the To Do list</li>
+  <li>Throughout the day, I add tasks as needed</li>
+  <li>Throughout the day, offload an idea from my head by creating it into a task</li>
+</ul>
+
+<p>Risks :</p>
+
+<ul>
+  <li>If my to do list gets huge I can see myself being overwhelmed and stop using the system</li>
+  <li>Reliance on Notion</li>
+  <li>Not sure how to archive progress</li>
+</ul>
+:ET

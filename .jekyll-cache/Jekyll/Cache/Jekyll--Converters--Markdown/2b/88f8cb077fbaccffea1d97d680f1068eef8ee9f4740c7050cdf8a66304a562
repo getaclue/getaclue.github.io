@@ -1,0 +1,52 @@
+I"`<p>Happy Friday 👋</p>
+
+<p>It is so easy to let this writing to get out of hand even though I promised to write more regularly. I’ve been chugging along with a lot of things since last update.</p>
+
+<p><em>I am still have trouble understanding how to use TestFlight</em>. I have done quite a bit of work over the past few days and I wanted to release it to the beta testers. However, I am currently stuck in this state:</p>
+
+<p><img src="https://d.pr/i/7jVbKS/Vve27WMfts+" alt="Stuck on these TestFlights" /></p>
+
+<p><img src="https://d.pr/i/Ade4Dd/XZMSnuzKCa+" alt="TestFlight Stuck on Ready to Submit Screen" /></p>
+
+<p>Basically I am stuck just like this person that wrote <a href="https://stackoverflow.com/q/44716499">TestFlight build on iTunes Connect stuck at ‘Ready to Submit’</a>. I’ve contacted some fellow iOS developers and am now doing what they suggested.</p>
+
+<p>What did I learn from them?</p>
+
+<ul>
+  <li>every new application version gets a review that you need to go through (which is exactly what is happening now from what I understand). I like <a href="https://semver.org">semver</a>, so technically this would be a <code class="highlighter-rouge">1.0.2</code> version. It has been primarily bug fixes and UI changes.</li>
+  <li>every new build, under a reviewed version, does not have to go through this process (apparently). So, this is what I am currently trying:</li>
+</ul>
+
+<p><img src="https://d.pr/i/8G17N9/9OFVGZcfuV+" alt="Trying to make the app live" /></p>
+
+<p>While, I am waiting for that to go through, I want to debug and figure out what is wrong with <code class="highlighter-rouge">1.0.2</code>.</p>
+
+<p><strong>UPDATE</strong>: After writing the original text, the solution did not work. Not sure what I am missing but here is what I’ve done:</p>
+
+<p><img src="https://d.pr/i/oztmDY/7rYtV1OYGc+" alt="TestFlight process" /></p>
+
+<p>Also, it also seems that information from bullet point #2 is funky. I changed the app back to <code class="highlighter-rouge">1.0.1</code> and changed build to <code class="highlighter-rouge">2</code> and, as you can see, the app is still in the “Ready for Submit” state.</p>
+
+<p>I’m going to continue with this and, in mean time, I think I am just going to contact Apple Support.</p>
+
+<hr />
+
+<p>PS. Yes, I did consult <a href="https://help.apple.com/itunes-connect/developer/#/dev78d0a8f87">View build status and metrics page</a> and <a href="https://help.apple.com/itunes-connect/developer/#/dev3d6869aff">app build statuses page</a>.</p>
+
+<p>I wish Apple would provide more information on this “Ready to Submit” state because this does not really help me at this point in the process 🤕 Why? Because by clicking on this link:</p>
+
+<p><img src="https://d.pr/i/Dy4n8t/zHHV2KGmdt+" alt="Click on this link" /></p>
+
+<p>Will bring me to:</p>
+
+<p><img src="https://d.pr/i/i0YRH9/sAGc3S3smm+" alt="Ready to Submit definition from Apple" /></p>
+
+<p>Which doesn’t really answer how to submit 🤕</p>
+
+<p>So, Daily Vibes is stuck somewhere here:</p>
+
+<p><img src="https://d.pr/i/W9e1HV/LS8BkWOfsq+" alt="Daily Vibes is stuck in one of these phases" /></p>
+
+<p>Cheers,
+Alex</p>
+:ET

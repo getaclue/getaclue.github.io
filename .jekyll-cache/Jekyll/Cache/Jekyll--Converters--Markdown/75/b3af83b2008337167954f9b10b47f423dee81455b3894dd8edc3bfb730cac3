@@ -1,0 +1,135 @@
+I"‘2<ul>
+  <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors</li>
+  <li>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS</li>
+  <li>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes</li>
+  <li>http://crockford.com/javascript/prototypal.html</li>
+  <li>http://javascript.info/class-patterns</li>
+  <li>https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/</li>
+  <li>http://crockford.com/javascript/private.html</li>
+  <li>https://www.gamedev.net/blogs/entry/2265481-oop-is-dead-long-live-oop/</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Runner</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">Rabbit</span><span class="p">);</span> <span class="c1">// =&gt; true</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">Rabbit</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">countLegs</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">Rabbit</span><span class="p">);</span> <span class="c1">// =&gt; true</span>
+  <span class="c1">// Indirect invocation. Call parent constructor.</span>
+  <span class="nx">Runner</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">countLegs</span> <span class="o">=</span> <span class="nx">countLegs</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">myRabbit</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Rabbit</span><span class="p">(</span><span class="dl">'</span><span class="s1">White Rabbit</span><span class="dl">'</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="nx">myRabbit</span><span class="p">;</span> <span class="c1">// { name: 'White Rabbit', countLegs: 4 }</span>
+
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Vehicle</span><span class="p">(</span><span class="nx">type</span><span class="p">,</span> <span class="nx">wheelsCount</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">Vehicle</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">throw</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error: Incorrect invocation</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">type</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">wheelsCount</span> <span class="o">=</span> <span class="nx">wheelsCount</span><span class="p">;</span>
+  <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// Constructor invocation</span>
+<span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vehicle</span><span class="p">(</span><span class="dl">'</span><span class="s1">Car</span><span class="dl">'</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="nx">car</span><span class="p">.</span><span class="nx">type</span>               <span class="c1">// =&gt; 'Car'</span>
+<span class="nx">car</span><span class="p">.</span><span class="nx">wheelsCount</span>        <span class="c1">// =&gt; 4</span>
+<span class="nx">car</span> <span class="k">instanceof</span> <span class="nx">Vehicle</span> <span class="c1">// =&gt; true</span>
+<span class="c1">// Function invocation. Generates an error.</span>
+<span class="kd">var</span> <span class="nx">brokenCar</span> <span class="o">=</span> <span class="nx">Vehicle</span><span class="p">(</span><span class="dl">'</span><span class="s1">Broken Car</span><span class="dl">'</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Foo</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">Foo</span><span class="p">);</span> <span class="c1">// =&gt; true</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">property</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Default Value</span><span class="dl">'</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// Constructor invocation</span>
+<span class="kd">var</span> <span class="nx">fooInstance</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Foo</span><span class="p">();</span>
+<span class="nx">fooInstance</span><span class="p">.</span><span class="nx">property</span><span class="p">;</span> <span class="c1">// =&gt; 'Default Value'</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Foo</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">Foo</span><span class="p">);</span> <span class="c1">// =&gt; true</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">property</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Default Value</span><span class="dl">'</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// Constructor invocation</span>
+<span class="kd">var</span> <span class="nx">fooInstance</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Foo</span><span class="p">();</span>
+<span class="nx">fooInstance</span><span class="p">.</span><span class="nx">property</span><span class="p">;</span> <span class="c1">// =&gt; 'Default Value'</span>
+</code></pre></div></div>
+
+<p>vs.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Bar</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">Bar</span><span class="p">);</span> <span class="c1">// =&gt; true</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">property</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Default Value</span><span class="dl">'</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// Constructor invocation</span>
+<span class="kd">var</span> <span class="nx">barInstance</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Bar</span><span class="p">();</span>
+<span class="nx">barInstance</span><span class="p">.</span><span class="nx">property</span><span class="p">;</span> <span class="c1">// =&gt; 'Default Value'</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span> <span class="p">{</span>
+  <span class="dl">'</span><span class="s1">use strict</span><span class="dl">'</span><span class="p">;</span>
+  <span class="k">return</span> <span class="k">this</span> <span class="o">*</span> <span class="nx">number</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// create a bound function with context</span>
+<span class="kd">var</span> <span class="nx">double</span> <span class="o">=</span> <span class="nx">multiply</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="c1">// invoke the bound function</span>
+<span class="nx">double</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>  <span class="c1">// =&gt; 6</span>
+<span class="nx">double</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="c1">// =&gt; 20</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Contrary to .apply() and .call() methods (see 5.), which invokes the function right away, the .bind() method only returns a new function that it supposed to be invoked later with a pre-configured this.
+.bind() makes a permanent context link and will always keep it. A bound function cannot change its linked context when using .call() or .apply() with a different context, or even a rebound doesnâ€™t have any effect.</p>
+</blockquote>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">array</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+  <span class="na">getNumbers</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">array</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="c1">// Create a bound function</span>
+<span class="kd">var</span> <span class="nx">boundGetNumbers</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">getNumbers</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span>
+<span class="nx">boundGetNumbers</span><span class="p">();</span> <span class="c1">// =&gt; [3, 5, 10]</span>
+<span class="c1">// Extract method from object</span>
+<span class="kd">var</span> <span class="nx">simpleGetNumbers</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">getNumbers</span><span class="p">;</span>
+<span class="nx">simpleGetNumbers</span><span class="p">();</span> <span class="c1">// =&gt; undefined or throws an error in strict mode</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Because the function invocation has the biggest impart on this, from now on do not ask yourself:</p>
+</blockquote>
+
+<blockquote>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Where is this taken from?
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>but do ask yourself:</p>
+</blockquote>
+
+<blockquote>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>How is the function invoked?
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote>
+  <p>For an arrow function ask yourself:</p>
+</blockquote>
+
+<blockquote>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>What is this where the arrow function is defined?
+</code></pre></div>  </div>
+</blockquote>
+
+<p>JavaScript is kind of funny.</p>
+
+<p>See you next time!</p>
+:ET

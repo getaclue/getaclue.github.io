@@ -1,0 +1,72 @@
+I"­<p><a href="https://crockford.com/javascript/private.html">Private Members in JavaScript</a></p>
+
+<blockquote>
+  <p>Private members are made by the constructor. Ordinary vars and parameters of the constructor become the private members.</p>
+</blockquote>
+
+<blockquote>
+  <p>They are attached to the object, but they are not accessible to the outside, nor are they accessible to the objectâ€™s own public methods.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>By convention</strong>, we make a private that variable. This is used to make the object available to the private methods.</p>
+</blockquote>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">someFunction</span><span class="p">(</span><span class="nx">someParam</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">that</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Private methods cannot be called by public methods. To make private methods useful, we need to introduce a privileged method.</p>
+</blockquote>
+
+<blockquote>
+  <p>A privileged method is able to access the private variables and methods, and is itself accessible to the public methods and the outside. <strong>It is possible to delete or replace a privileged method</strong>, but it is not possible to alter it, or to force it to give up its secrets.</p>
+</blockquote>
+
+<blockquote>
+  <p>This pattern of public, private, and privileged members is possible because JavaScript has closures.</p>
+</blockquote>
+
+<blockquote>
+  <p>Private and privileged members can <strong>only be made</strong> when an object is constructed. Public members can be added at any time.</p>
+</blockquote>
+
+<h2 id="patterns-public">Patterns: Public</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Constructor</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">member</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">publicMember</span> <span class="o">=</span> <span class="nx">params</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Constructor</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">newMember</span> <span class="o">=</span> <span class="nx">newValue</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="patterns-private">Patterns: Private</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Constructor</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">that</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">someMember</span> <span class="o">=</span> <span class="nx">someValue</span><span class="p">;</span>
+
+  <span class="kd">function</span> <span class="nx">someFunction</span><span class="p">(</span><span class="nx">someParam</span><span class="p">){</span>
+    <span class="p">...</span>
+  <span class="p">}</span>
+
+  <span class="c1">// which is kind of syntactic sugar and is equivalent to</span>
+
+  <span class="kd">var</span> <span class="nx">member</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">someFunction</span><span class="p">(</span><span class="nx">someParam</span><span class="p">){</span>
+  <span class="p">...</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="patterns-privileged">Patterns: Privileged</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Constructor</span><span class="p">(</span><span class="nx">params</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">someMember</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">someFunction</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET

@@ -1,0 +1,43 @@
+I"�<p>First and foremost… I like experimenting with different OS environment just so I stay familiar. Besides having Windows, CentOS, and Ubuntu running on my computer, I decided to give OS X another try.</p>
+
+<p>Computer Hardware:</p>
+
+<ul>
+  <li><a href="http://ark.intel.com/products/33910/Intel-Core2-Duo-Processor-E8400-6M-Cache-3_00-GHz-1333-MHz-FSB">Intel Core 2 Duo E8400</a></li>
+  <li><a href="www.gigabyte.com/products/product-page.aspx?pid=2615&amp;kw=GA-P31-DS3L">Gigabyte GA-P31-DS3L Motherboard</a></li>
+  <li><a href="http://www.newegg.ca/Product/Product.aspx?Item=N82E16814500187">Nvidia GTS450 Graphics card</a></li>
+  <li>4 gb DDR2 Ram (667 MHz)</li>
+</ul>
+
+<p>As you can see, my hardware is ‘old’ by today’s standards. However, I try to get the best bang for my buck without upgrading. I only upgrade my hardware when something fails. It has been working well so far. My computer is on 24/7/365 except for random reboots and power outages. I’ve had this PC on 24/7 since 2008. I’ve had it on 24/7/365 since 2010. I am on my second motherboard (lan failed on first one), second CPU cooler (by choice), and a 3rd GPU. This CPU is amazing.</p>
+
+<p>I have not installed OS X after purchasing a new graphic card <a href="http://www.newegg.ca/Product/Product.aspx?Item=N82E16814500187">Nvidia GTS450</a> earlier this year. I had an old 8600GTS before this graphic card. The prior graphic card had no problem with running OS X 10.6.</p>
+
+<p>I decided to give the <a href="http://tonymacx86.com/">hackintosh project</a> a shot. I installed <a href="http://tonymacx86.blogspot.ca/2010/04/iboot-multibeast-install-mac-os-x-on.html">OS X 10.6</a> at first. However, I noticed that my GTS450 was not being recognized. I did perform several troubleshooting steps. After searching for a bit, I found out that GTS450 support improved as of 10.7. At this point, I was debating on whether or not to install 10.7 or to jump to 10.10.</p>
+
+<p>I decided to jump to <a href="http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html">Yosemite 10.10</a> after reading the tonymacx86 forums. A number of users reported successful bootings with Fermi graphic cards. I used my macbook to download the upgrade and make a <a href="http://www.tonymacx86.com/downloads.php?do=file&amp;id=249">bootable USB</a>. The system did not boot until I added the following flags:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GraphicsEnabler=Yes, PCIRootUID=1, npci=0x2000
+</code></pre></div></div>
+
+<p>You can find out what each of these flags does <a href="http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html">here</a>. After the inital install everything booted smoothly. I then ran <a href="http://www.tonymacx86.com/downloads.php?do=file&amp;id=252">MultiBeast</a>. I followed the specifications for my motherboard and installed the appropriate drives. Everything worked after a restart. However, I noticed that my system experienced random freezes.</p>
+
+<p>There did not appear to be any pattern to the cause of the freeze. The freezing began by not responding to any key presses or mouse clicks. However, I was able to move the mouse across my dual screen setup. After some time, the mouse cursor finally disappeared from the display(s). The system then gives a black screen and instantaneously brings the Yosemite login screen. Upon entering my password and loading Yosemite, the bug report displayed a problem with my graphic card. I spent a few hours looking for a solution.</p>
+
+<p>Rather than troubleshooting a graphic card that is not natively supported by Apple (yet? will it be?), I am leaning towards upgrading my graphic card. I had previous problems with the graphic card. It is not able to support my two monitors at the maximum resolutions. I am really pushing its performance when I am editing images. Therefore, I am leaning towards upgrading my graphic card.</p>
+
+<p>Ultimately, I am going to purchase a graphic card that brings my hardware closer to the Mac specifications outlined by Apple AND drives my two monitors easily (at max. resolution).</p>
+
+<p>In conclusion, <a href="http://tonymacx86.com/">this group of people</a> has done a fantastic job in easing the installation of OS X on any Intel-based hardware. Their guides are phenomenal. The difference between installing OS X 10.6 and 10.10 is night and day. It used to take me hours (or days) to research, prepare, compile, and install - took me a few hours for 10.10.</p>
+
+<p>Not only do I have a working OS, but I also have a fully bootable USB that can be natively plugged into any Intel-based machine. Amazing.</p>
+
+<p>Resource used:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://www.tonymacx86.com/basics/104536-troubleshooting-issuing-boot-flags.html
+http://www.tonymacx86.com/basics/116220-do-i-need-graphicsenabler-injection-not.html
+http://www.tonymacx86.com/graphics/131937-chimera-hd-graphics-bootflags-igpenabler-igplatformid-igpdeviceid.html
+http://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html
+http://www.tonymacx86.com/445-unibeast-install-os-x-yosemite-any-supported-intel-based-pc.html
+</code></pre></div></div>
+:ET
